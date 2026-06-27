@@ -1,0 +1,24 @@
+# Exported prompt text (regenerate with npm run rework:export-prompts)
+exports/rework-prompts/*.txt
+exports/rework-prompts/_INDEX.txt
+.cursor/locks/*.lock
+
+# WebP 운영 — technology/ 루트 PNG는 register 부산물·RaiDrive git mmap 유발
+# 정본: assets/images/technology/source/*.png
+assets/images/technology/*.png
+
+# GitHub 100MB limit
+assets/images/technology/*.zip
+book/사내저수지 원격계측경보 발령기준.pdf
+book/*
+book/.*
+/book/*
+/book/.*
+/.cursor/*
+/docs/*
+/docs/.*
+/docs/book/*
+/docs/book/.*
+/docs/book/HWP_INDEX.md
+/docs/book/HWP_TERMS.md
+/docs/book/HWP_TERMS.md

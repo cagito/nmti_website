@@ -1,0 +1,87 @@
+# IMG-002 — 흙막이 계측 설치 대표 단면도
+# source: docs/52-IMG-002-전면재작성-프롬프트-정본.md · ## 12. AI 복붙용 통합 블록
+
+[계측 도면 검수자 — 상세 C0]
+너는 그림 디자이너가 아니라 토목 계측 도면 검수자다.
+계측 대상·센서명·설치 위치·기준점·측정 방향·단위·하중 전달 경로 중 하나라도 설명 못 하면 생성하지 마라.
+C0: (1)띠장·버팀보 흙 속 (2)앵커 LC 지중·정착장 (3)침하핀=지표침하계 (4)수위·간극 동형 관 (5)광파기 영향권 안 (6)기준점·측점 혼동 (7)공종 혼합 (8)임의 관리기준 (9)로거=센서 (10)단면·입면 무라벨 혼합 → REJECT.
+
+[DP-11~20 — IMG-070~102 · docs/59]
+수동~AI=운영방식(등급X). AI=HITL보조. 동적=fs·트리거·파형. MUX=순차. 변형률≠전체응력. 기둥축소≠단일변위계.
+온도=상관. 환경=위치조건. 이벤트≠상시. 대시보드=단위·상태·기준·이력. 장비연결≠판단조건.
+
+[DP-31~40 — docs/61 · 단순화=분리]
+틀리지 않게 단순하게. 주계측 3~5. 확대 1. 설치도=범례만. 지층≤3. 측정화살표만. 센서 크게·함체 작게. 제목 좁게. 올인원 금지.
+
+[DP-41~50 — docs/62 · 오해 제거]
+범례=본도 실재. 번호=위치흐름. 항목≠기기. 측점/센서 구분. 라벨+물리량. 영향권 보조선. 기준선 제한. 색상 고정. Q-READ.
+
+[DP-51~60 — docs/63 · 표현 정확성]
+대표단면 실재. 전체도 설치정확. 선·케이블 구분. 측량≠센서. 부착면. 자동/수동. 안정층. 설치도≠기준. 변위계 구분.
+
+[DP-61~80 — docs/65 · 유형·레이아웃]
+원리·설치·시스템·그래프 분리. 모르면 생략. 단순함=분리.
+
+[계측 도면 검수자 — 상세 C0]
+너는 그림 디자이너가 아니라 토목 계측 도면 검수자다.
+계측 대상·센서명·설치 위치·기준점·측정 방향·단위·하중 전달 경로 중 하나라도 설명 못 하면 생성하지 마라.
+C0: (1)띠장·버팀보 흙 속 (2)앵커 LC 지중·정착장 (3)침하핀=지표침하계 (4)수위·간극 동형 관 (5)광파기 영향권 안 (6)기준점·측점 혼동 (7)공종 혼합 (8)임의 관리기준 (9)로거=센서 (10)단면·입면 무라벨 혼합 → REJECT.
+
+[DP-11~20 — IMG-070~102 · docs/59]
+수동~AI=운영방식(등급X). AI=HITL보조. 동적=fs·트리거·파형. MUX=순차. 변형률≠전체응력. 기둥축소≠단일변위계.
+온도=상관. 환경=위치조건. 이벤트≠상시. 대시보드=단위·상태·기준·이력. 장비연결≠판단조건.
+
+[DP-31~40 — docs/61 · 단순화=분리]
+틀리지 않게 단순하게. 주계측 3~5. 확대 1. 설치도=범례만. 지층≤3. 측정화살표만. 센서 크게·함체 작게. 제목 좁게. 올인원 금지.
+
+[DP-41~50 — docs/62 · 오해 제거]
+범례=본도 실재. 번호=위치흐름. 항목≠기기. 측점/센서 구분. 라벨+물리량. 영향권 보조선. 기준선 제한. 색상 고정. Q-READ.
+
+[DP-51~60 — docs/63 · 표현 정확성]
+대표단면 실재. 전체도 설치정확. 선·케이블 구분. 측량≠센서. 부착면. 자동/수동. 안정층. 설치도≠기준. 변위계 구분.
+
+[DP-61~80 — docs/65 · 유형·레이아웃]
+원리·설치·시스템·그래프 분리. 모르면 생략. 단순함=분리.
+
+---
+
+이 그림은 토목 계측 기술도면이다.
+한 그림에는 하나의 계측 목적만 담는다.
+이 그림의 계측 목적은 단 하나다: 흙막이 굴착에 따른 배면지반·지하수·지보재·벽체·인접구조물 계측 설치 대표 단면
+센서·측점·계측기·시스템을 혼동하지 않는다.
+센서는 실제 설치 위치에만 배치한다.
+기준점·측정 방향·측정 물리량을 반드시 표시한다.
+가시설 단면은 배면 지반 | 벽체 | 굴착측으로 나눈다.
+띠장·버팀보·앵커 두부를 흙 속에 넣으면 폐기한다.
+어스앵커 하중계는 굴착측 두부의 반력판–하중계–앵커헤드 사이, 앵커 축과 동축이다.
+수위계와 간극수압계를 같은 장치로 그리면 폐기한다.
+틀릴 것 같으면 그리지 말고 별도 그림으로 분리한다.
+진동현식·VW·특정 센서 측정 방식을 라벨에 넣지 않는다.
+
+이 그림에서 가장 중요한 것은 앵커 하중계 위치다.
+어스앵커 하중계는 흙 속에 묻는 센서가 아니다.
+반드시 굴착측 앵커 두부의 반력판과 앵커헤드 사이에만 그린다.
+띠장과 버팀보도 흙 속에 넣지 않는다.
+지중경사계·지하수위·간극수압은 CIP/벽체 콘크리트 내부가 아니라 배면 지반 천공. 벽체 외측·설계 이격 (SOE-INST-01).
+센서형 다단식 지중경사계·지하수위계는 지표면(GL)에서 천공한다. 천공 개구부·케이싱 상단·well cap이 지표면에서 가시해야 한다 (BORE-GL-01 · docs/111).
+지표침하핀은 지표침하계가 아니다.
+자동 지표침하계를 그릴 때 침하판 주변은 다져진 토사. 콘크리트 패드·해칭 금지 (SETTLE-PLATE-01).
+지하수위계와 간극수압계는 같은 관측공이 아니다.
+이 중 하나라도 틀리면 그림 전체를 폐기한다.
+부분 수정하지 말고 전면 재작성한다.
+
+흙막이 계측 설치 대표 단면도를 전면 재작성한다. 기존 그림 부분 수정 금지.
+
+Title: 흙막이 계측 설치 대표 단면도
+Subtitle: Earth Retaining Wall Instrumentation Layout
+
+Cross-section left to right: adjacent building | backfill/retained ground | retaining wall | waling, anchor head, strut | excavation void (right).
+
+Critical: waling, strut, anchor load cell ONLY on excavation face. Anchor load cell between bearing plate and anchor head on exposed head — NEVER in ground, bond zone, or grout. Earth pressure cell on wall BACK face toward soil. Standpipe piezometer (open well from ground surface, GWL) ≠ pore pressure piezometer (short filter + seals at depth). Settlement pins labeled "지표침하 측점" or "지표침하핀" — NOT "지표침하계". Data logger = small field enclosure on surface, cables from auto sensors only — separate legend group "계측 시스템".
+
+SOE-INST-01: Inclinometer, standpipe, piezometer = backfill boreholes OUTSIDE wall/CIP concrete — not embedded inside wall. Design offset from wall face; no fixed 0.5m universal label.
+SETTLE-PLATE-01: If auto settlement gauge shown — compacted soil around plate; NO concrete pad/hatching constraining settlement.
+
+Show all 11 instruments per docs/52 §5. Legend per docs/52 §6. Mixed SOE: upper anchor + lower strut — label as representative example.
+
+2D Korean civil instrumentation plan drawing, white background, hatching for soil layers, thin leaders and Korean labels. 1920x1080. No brain, no vehicles, no 3D promo art.

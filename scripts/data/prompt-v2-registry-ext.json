@@ -1,0 +1,332 @@
+{
+  "005": {
+    "nodeId": "fields/retaining-excavation/adjacent-building",
+    "section": "4.1⑤",
+    "en": "Structural engineering cross-section of an adjacent old concrete building next to a retaining wall during deep excavation. Building stands ON original ground on continuous backfill soil — NOT floating, NOT at excavation bottom. On exterior wall: crack gauge perpendicular across a hairline crack. Structure tiltmeter surface-mounted on 1st-floor wall or foundation with brackets — NOT a ground post, NOT borehole inclinometer. Optional prism on roof corner; ATS on stable ground outside zone with dashed sight line. LEFT: building + soil gap L | CENTER: wall | RIGHT: excavation void only. Strict blueprint, white background. docs/14 §2 required. No brain."
+  },
+  "006": {
+    "nodeId": "fields/retaining-excavation",
+    "section": "4.1",
+    "en": "Four-stage deep excavation monitoring workflow diagram. LEFT: four mini cross-sections showing progressive excavation depth with retaining wall, wales, struts, anchors added each stage. RIGHT: flowchart loop: excavate → measure (inclinometer, load cell, water level) → evaluate against criteria → next stage. Strut load cells at wale joints only, not mid-span. White CAD style, no brain, no marketing UI."
+  },
+  "009": {
+    "nodeId": "fields/tunnel/rockbolt",
+    "section": "4.2",
+    "en": "Tunnel rockbolt and shotcrete stress monitoring cross-section at tunnel face. Horseshoe profile: rock mass | shotcrete lining | excavation void. 3-5 rockbolts inclined into rock toward crown and shoulders. Tension arrows along bolt axis. Inset: plate–load cell–nut assembly and strain gauge callout on bolt. NOT V-shaped bolt convergence, NOT 360° closure. White engineering schematic."
+  },
+  "010": {
+    "nodeId": "fields/tunnel/surface-subsidence",
+    "section": "4.2③",
+    "en": "Geotechnical cross-section of tunnel settlement trough. Deep underground: circular tunnel profile. Above tunnel: parabolic downward settlement curve on ground surface (settlement trough), dashed guide line showing maximum subsidence at centerline. Surface settlement pins on road. Vertical multi-point soil settlement gauge from surface down toward tunnel crown. Optional Automated Total Station on stable ground outside trough, line-of-sight to prism. 2D cross-section schematic only, white background. No scenic bridge, no 3D perspective."
+  },
+  "012": {
+    "nodeId": "fields/bridge/pier",
+    "section": "4.6",
+    "en": "Korean civil monitoring plan 2D cross-section: bridge pier with partial superstructure (deck, bearing, expansion joint). Structural tiltmeters on pier UPPER (θ1) and LOWER (θ2) faces with Δθ callout for rotation. Displacement gauge at bearing OR expansion joint for RELATIVE displacement — NOT standalone horizontal gauge on pier side alone. Prism on pier top, ATS outside influence zone, BM on stable ground away from footing. Multiple settlement GAUGES on footing — NOT pins. RIGHT: text summary list only, label 현장별 관리기준 적용. NO data flow diagram. White background. BRI-01: no retaining wall excavation."
+  },
+  "013": {
+    "nodeId": "fields/bridge/foundation-settlement",
+    "section": "4.6",
+    "en": "Bridge pile foundation settlement monitoring cross-section. Pile group in riverbed strata with settlement plate or benchmark at pile cap, micro-settlement arrows at pile tips, pier stem tilt meter responding to differential settlement. Time-settlement graph inset optional. 2D geotechnical schematic, white background. No scenic panorama, BRI-01."
+  },
+  "014": {
+    "nodeId": "fields/bridge/expansion-joint",
+    "section": "4.6",
+    "en": "Bridge expansion joint displacement monitoring schematic. Deck slab gap with joint meter (extensometer) measuring opening displacement parallel to joint. Both sides anchored to concrete deck. Optional bearing displacement transducer nearby. 2D technical drawing, white background. Not retaining wall context."
+  },
+  "017": {
+    "nodeId": "fields/slope/deformation",
+    "section": "4.3",
+    "en": "Slope surface deformation monitoring cross-section. Soil slope with inclinometer casing, surface settlement pins along slope crest and toe, ATS outside stable zone with prism targets on slope face. Displacement vectors downslope. White geotechnical schematic, no brain."
+  },
+  "018": {
+    "nodeId": "fields/slope/rainfall",
+    "section": "4.3",
+    "en": "Rainfall and groundwater correlation schematic for slope monitoring. Cross-section: slope with piezometer and water level well, rain gauge and weather station on pole at crest. Inset graph: rainfall bars vs groundwater level or displacement time series. Engineering chart style, white background."
+  },
+  "022": {
+    "nodeId": "fields/structural-safety",
+    "section": "4.4",
+    "en": "Existing structure safety monitoring overview (NOT new building construction). Aging concrete building or bridge with crack gauge, tilt meter, strain gauge, ATS prism targets. Distinct from fields/building IMG-100. White CAD schematic, no brain."
+  },
+  "023": {
+    "nodeId": "fields/railway",
+    "section": "4.10①",
+    "en": "Civil engineering cross-section layout of a railway track system for stability monitoring. Show the profiles of two steel rails fixed on concrete sleepers (ties) over a ballast gravel bed and soil subgrade stratum. Illustrate small wireless rail tiltmeters mounted directly onto the rail web and a vertical settlement gauge embedded inside the subgrade soil layer. Strict blueprint drawing style, white background. No train, no station, no scenic render, not bridge superstructure, not retaining excavation, no brain."
+  },
+  "024": {
+    "nodeId": "fields/dam",
+    "section": "4.9①",
+    "en": "Geotechnical cross-section schematic of a rockfill or concrete gravity dam. Left side: high reservoir water level (upstream). Right side: lower ground (downstream). Inside the dam core, illustrate a vertical plumb line system for structural deflection tracking, and multiple piezometers embedded in the foundation rock to monitor seepage pressure. Dashed phreatic line connecting piezometer tips. Seepage path to downstream toe (subtle). Korean label: 간극수압계. High-contrast engineering drawing style, white background. No scenic lake panorama, no brain. No vibrating wire, VW, or measurement-method labels."
+  },
+  "064": {
+    "nodeId": "fields/harbor/quay-wall",
+    "section": "4.9②",
+    "en": "Marine civil engineering cross-section of a port quay wall (concrete caisson or gravity wall). Right side: sea water with tidal levels (H.W.L / L.W.L). Left side: backfill soil mass behind the structure. Highlight structural tiltmeters on crest and earth pressure cells on rear wall face. Lateral displacement arrow toward the sea. Clean harbor engineering layout, white background. No seagulls, no scenic ocean poster."
+  },
+  "084": {
+    "nodeId": "fields/harbor/caisson",
+    "section": "4.9②",
+    "en": "Marine civil engineering cross-section of a port quay wall (concrete caisson). Right side: sea water with tidal levels. Left side: backfill soil mass behind the caisson. Highlight structural tiltmeters on the caisson crest and earth pressure cells attached to the rear vertical wall face facing the backfill soil. Lateral displacement arrow pointing toward the sea. Clean harbor engineering layout, white background. No seagulls, no brain."
+  },
+  "091": {
+    "nodeId": "sensors/borehole-extensometer",
+    "section": "4.5⑨",
+    "en": "Borehole cutaway detail of a multi-point borehole extensometer (MPBX) installed in a fractured rock mass. Show a single borehole containing three steel reference rods of varying lengths, each fixed to a mechanical anchor at different depths. The borehole head assembly features digital displacement transducers measuring the relative movement of each rod. NOT inclinometer casing with internal wheels. NOT bridge expansion joint meter. Technical documentation style, white background."
+  },
+  "029": {
+    "nodeId": "sensors/inclinometer",
+    "section": "4.5①",
+    "en": "Inclinometer data interpretation diagram. Vertical depth axis vs cumulative horizontal displacement profile curve showing deflection shape. Probe inside casing grooves schematic inset. Label 센서형 다단식 지중경사계. Engineering graph style, white background."
+  },
+  "032": {
+    "nodeId": "sensors/settlement-gauge",
+    "section": "4.5⑦",
+    "en": "Cross-section schematic of a soil settlement plate installation. Square steel base plate embedded at compacted soil subgrade level (NOT concrete pad or hatch), vertical reference rod inside protective outer casing up to ground surface. Digital displacement transducer or survey level at top detecting vertical displacement ΔH. Optional embankment fill above. Korean labels: 지표침하계, 침하판. SETTLE-PLATE-01: compacted soil around plate; no concrete constraining settlement. Labeled blueprint style, white background. Not a random pit in ground."
+  },
+  "035": {
+    "nodeId": "sensors/load-cell",
+    "section": "4.5⑤",
+    "en": "Geotechnical engineering diagram of a donut-shaped center-hole load cell on an earth anchor head. Heavy-duty cylindrical load cell sandwiched between anchor bearing plate and wedge head, anchor tendons through center hole. Large downward vertical arrows indicate high compressive load. Optional second panel: load cell at strut-to-wale joint end (compression), not strut mid-span. Technical blueprint, white background. No bathroom scale, no brain."
+  },
+  "036": {
+    "nodeId": "sensors/strain-gauge",
+    "section": "4.5④",
+    "en": "Engineering schematic of a strain gauge welded onto the flange of a steel structural H-beam. Cutaway view of cylindrical sensor body with strain-sensing element between end blocks. Directional arrows for mechanical strain (tension and compression vectors). Signal cable to external logger. Korean label: 변형률계. Clean technical line art, labeled components, white background. No electronic chip, no brain. No vibrating wire, VW, or measurement-method labels."
+  },
+  "038": {
+    "nodeId": "sensors/tilt-meter",
+    "section": "4.5⑥",
+    "en": "Technical illustration of a structural tiltmeter mounted on a vertical concrete wall via an L-shaped steel mounting bracket. Detail callout showing internal mechanism (gravitational pendulum or electrolytic tilt sensor) responding to micro-angular deviation θ. Label 구조물경사계 — NOT borehole inclinometer. Clean engineering manual style, white background."
+  },
+  "045": {
+    "nodeId": "instruments/datalogger/static",
+    "section": "4.8①",
+    "en": "Engineering schematic layout of an industrial geotechnical data logger. Cutaway or front-panel view inside a rugged IP65 wall-mount steel enclosure: central data acquisition module, multi-channel surge-protected terminal blocks, organized analog sensor cables entering through bottom cable glands, backup battery terminals. Clean wiring diagram style, white background. No brain icon, no home WiFi router, no brand logos."
+  },
+  "046": {
+    "nodeId": "instruments/communication/iot-gateway",
+    "section": "4.8②",
+    "en": "IoT gateway topology for geotechnical monitoring. Field data logger connected to industrial IoT gateway enclosure with antenna, forwarding packets to server via cellular or Ethernet. Linear block diagram: sensors → logger → gateway → server. No abstract cyber clouds, no brain, white background."
+  },
+  "047": {
+    "nodeId": "instruments/power/solar-power",
+    "section": "4.8③",
+    "en": "Engineering electrical one-line diagram of solar power for remote monitoring station. Heavy-duty industrial solar panel on steel pole bracket, cable down to MPPT charge controller inside locked battery box enclosure with deep-cycle battery bank, output to field data logger and communication load. Line-art schematic, labeled components, white background. No eco poster landscape, no brain."
+  },
+  "048": {
+    "nodeId": "instruments/communication/lte-remote",
+    "section": "4.8②",
+    "en": "Technical communication topology diagram for remote geotechnical monitoring. Outdoor telemetry enclosure with external omni-directional cellular antenna (LTE-M or LoRa) transmitting data packets through wireless network to cloud server database, ending at control room monitoring dashboard with time-series charts. Linear flowchart: field sensors → data logger → modem/antenna → server → dashboard. No abstract WiFi clouds, no brain, white background."
+  },
+  "049": {
+    "nodeId": "sensors/displacement-transducer",
+    "section": "4.5⑧",
+    "en": "Example displacement time-history graph for geotechnical monitoring. X-axis time (days), Y-axis displacement (mm). Measured curve, predicted dashed line, management limit horizontal lines. Simple engineering chart on white background — NOT building deflection unless labeled δ. No decorative 3D."
+  },
+  "050": {
+    "nodeId": "fields/soft-ground/settlement",
+    "section": "4.7",
+    "en": "Soil settlement time-history graph example. X-axis time (days), Y-axis settlement magnitude (mm, downward positive or negative per convention). Measured consolidation curve, predicted line, management criteria. For embankment/soft ground — NOT RC beam deflection (DEF-01). White chart background."
+  },
+  "051": {
+    "nodeId": "instruments/modes/overview",
+    "section": "4.8②",
+    "en": "Data acquisition scheduling schematic for automatic monitoring. Timeline or Gantt-style diagram showing logger polling intervals, sensor channels, storage events. Block diagram style, white background, no brain."
+  },
+  "052": {
+    "nodeId": "instruments/modes/overview",
+    "section": "4.8②",
+    "en": "Alarm threshold and notification flow diagram. Sensor reading compared to upper/lower limits, trigger levels, SMS/email alert path to operator. Rectangular blocks only, no brain icon, white background."
+  },
+  "053": {
+    "nodeId": "instruments/modes/overview",
+    "section": "4.8②",
+    "en": "Geotechnical monitoring report generation workflow. Data logger → database → report template → PDF output. Simple linear flowchart, white background."
+  },
+  "054": {
+    "nodeId": "instruments/modes/overview",
+    "section": "4.8②",
+    "en": "Multi-project monitoring organization chart. Site A/B/C data loggers feeding central server with project folders. Block diagram, white background, no marketing UI."
+  },
+  "055": {
+    "nodeId": "instruments/modes/overview",
+    "section": "4.8②",
+    "en": "Sensor calibration workflow diagram. Reference standard → field sensor → adjustment → verification log. Engineering QA flowchart, white background."
+  },
+  "056": {
+    "nodeId": "instruments/modes/overview",
+    "section": "4.8②",
+    "en": "Monitoring dashboard layout schematic. Time-series charts, map panel, alarm status table in control room screen wireframe. Minimal UI wireframe not glossy marketing mockup. White background."
+  },
+  "057": {
+    "nodeId": "instruments/modes/overview",
+    "section": "4.8②",
+    "en": "Field installation checklist flowchart for geotechnical instruments. Pre-drill → install → initial reading → baseline → handover. Simple boxes and arrows, white background."
+  },
+  "058": {
+    "nodeId": "sensors/remote-monitoring-system",
+    "section": "4.13",
+    "en": "Engineering block diagram representing the full architecture of an automated geotechnical monitoring system. The diagram flows linearly from left to right: 1. Physical embedded sensors (piezometers, strain gauges), 2. Heavy-duty multi-channel data logger unit powered by a solar panel module, 3. Wireless telemetry modem transmitting data packages via LTE-M/LoRa, 4. Cloud server receiving and processing database logs into a web dashboard interface. Pure technical line-art style on a solid white background. No abstract brain or futuristic neon concepts. NOT marketing smartphone UI hero."
+  },
+  "059": {
+    "nodeId": "instruments/modes/overview",
+    "section": "4.8②",
+    "en": "Management criteria setting schematic. Measured value vs three-tier limits (normal, caution, alarm) with example graph zones. Engineering chart style, white background."
+  },
+  "060": {
+    "nodeId": "instruments/modes/overview",
+    "section": "4.8②",
+    "en": "Data quality management flowchart. Raw data → validation → outlier flag → corrected dataset → archive. QA pipeline diagram, white background, no brain."
+  },
+  "061": {
+    "nodeId": "fields/tunnel/crown-settlement",
+    "section": "4.2①",
+    "en": "Tunnel crown settlement monitoring cross-section. Circular tunnel with shotcrete lining, crown settlement gauge inside lining with vertical displacement arrow. Dashed line to surface settlement pin. External leveling benchmark outside portal. Label: 천단침하 — separate from convergence (내공변위). NOT 360° invert closure. White CAD style."
+  },
+  "062": {
+    "nodeId": "fields/tunnel",
+    "section": "4.2",
+    "en": "Tunnel groundwater and pore pressure monitoring cross-section. Tunnel in saturated ground with standpipe water level well and piezometer filter tip in surrounding soil. Distinguish open G.W.L vs sealed pore pressure. White geotechnical schematic."
+  },
+  "063": {
+    "nodeId": "fields/tunnel/face-advance",
+    "section": "4.2",
+    "en": "Tunnel face advance monitoring schematic. NATM tunnel face with converging displacement vectors ahead of face, extensometer or prism targets on face, warning contour for face instability. 2D cross-section, white background."
+  },
+  "064": {
+    "nodeId": "fields/harbor",
+    "section": "4.4",
+    "en": "Harbor and coastal structure monitoring overview. Seawall or quay cross-section with displacement transducers, tilt meter, piezometer in reclaimed fill, tide gauge. NOT inland retaining excavation. White engineering schematic."
+  },
+  "065": {
+    "nodeId": "instruments/power/overview",
+    "section": "4.8③",
+    "en": "Remote monitoring power system overview one-line diagram. Solar panel, battery, AC mains input, AVR, wind generator options feeding data logger and modem. Block diagram with labeled paths, white background."
+  },
+  "066": {
+    "nodeId": "instruments/power/ac-mains",
+    "section": "4.8③",
+    "en": "AC mains power supply schematic for field monitoring station. Utility input → breaker → surge protector → UPS/AVR → logger and communication load. Electrical one-line diagram, white background."
+  },
+  "067": {
+    "nodeId": "instruments/power/avr",
+    "section": "4.8③",
+    "en": "Automatic voltage regulator (AVR) schematic in monitoring power chain. Input voltage fluctuation → AVR block → stabilized output to data logger. Simple electrical diagram, white background."
+  },
+  "068": {
+    "nodeId": "instruments/power/wind-power",
+    "section": "4.8③",
+    "en": "Small wind turbine power supplement for remote monitoring. Wind generator on pole → charge controller → battery bank → logger load. Engineering schematic, white background, no landscape poster."
+  },
+  "069": {
+    "nodeId": "instruments/power/battery",
+    "section": "4.8③",
+    "en": "Deep-cycle battery bank schematic for field monitoring. Locked enclosure with batteries, fuses, charge controller connections to solar/wind input and logger output. Wiring diagram style, white background."
+  },
+  "072": {
+    "nodeId": "instruments/modes/remote-automatic",
+    "section": "4.8②",
+    "en": "Technical communication topology diagram for remote geotechnical monitoring. Outdoor telemetry enclosure with external omni-directional cellular antenna transmitting data packets through wireless network to cloud server database, ending at control room monitoring dashboard with time-series charts. Linear flowchart: field sensors → data logger → modem/antenna → server → dashboard. No abstract WiFi clouds, no brain, white background."
+  },
+  "074": {
+    "nodeId": "instruments/modes/ai",
+    "section": "4.8②",
+    "en": "AI-assisted monitoring workflow block diagram. Sensor data → time-series storage → analysis engine → anomaly flag → human-in-the-loop review → report. NO biological brain, NO neural network graphic, NO robot face. Rectangular processing blocks only. White background."
+  },
+  "078": {
+    "nodeId": "fields/tunnel/rockbolt",
+    "section": "4.2④",
+    "en": "Engineering cross-section of a NATM tunnel support system. Show multiple rockbolts installed radially from the tunnel lining into the surrounding rock mass. Include a detailed callout diagram of a single rockbolt instrumented with a rockbolt load cell (axial load sensors along the bolt) to monitor ground anchoring force. Korean labels: 록볼트, 록볼트 축력계. Technical blueprint layout, labeled. Horseshoe profile: rock | shotcrete | excavation. NOT V-shaped bolt convergence, NOT 360° closure. No vibrating wire, VW, or measurement-method labels. White background, no brain."
+  },
+  "079": {
+    "nodeId": "fields/tunnel/shotcrete",
+    "section": "4.2⑤",
+    "en": "Geotechnical technical drawing of a tunnel shotcrete lining section. Illustrate a concrete matrix layer sprayed onto the excavation rock face. Embedded inside this shotcrete layer, show a shotcrete stress gauge (NATM stress cell) aligned tangential and radial to the tunnel arch to measure lining pressure. Strain gauges embedded in lining at crown and shoulder. Korean labels: 숏크리트, 숏크리트 응력계, 변형률계. Clean schematic line art. Rock | shotcrete(h) | excavation. NOT floating sensors. No vibrating wire, VW, or measurement-method labels. White background."
+  },
+  "080": {
+    "nodeId": "fields/tunnel/steel-support",
+    "section": "4.2",
+    "en": "Steel set (H-beam ribs) stress monitoring in NATM tunnel. Horseshoe section: rock | shotcrete | excavation. H-beam steel ribs at crown and sides with waist strut, strain gauges on flange, compression N arrows. NOT three vertical fence posts. White engineering schematic."
+  },
+  "081": {
+    "nodeId": "fields/building/column-shortening",
+    "section": "4.4①",
+    "en": "RC column axial shortening monitoring during building construction. Column cross-section with strain gauges or settlement gauge chain between floors measuring cumulative shortening. Korean label: 변형률계. Time-shortening graph inset. NOT soil settlement plate. White CAD style. No vibrating wire, VW, or measurement-method labels."
+  },
+  "082": {
+    "nodeId": "fields/building/stress-strain",
+    "section": "4.4①",
+    "en": "Building RC member stress-strain monitoring schematic. Beam or column with embedded or surface-mounted strain gauges, readout to logger. Stress arrows and ε labels. NOT geotechnical embankment. White engineering drawing."
+  },
+  "083": {
+    "nodeId": "fields/dam/strain",
+    "section": "4.7",
+    "en": "Dam body strain monitoring cross-section. Concrete dam with embedded strain gauges in dam body and foundation contact, strain vectors and logger connection. Phreatic line optional. White geotechnical schematic."
+  },
+  "084": {
+    "nodeId": "fields/harbor/structure",
+    "section": "4.4",
+    "en": "Harbor caisson or quay wall displacement monitoring. Coastal structure cross-section with displacement transducers on wall face, tilt meter, settlement points behind wall. Seawater side vs land side. White engineering schematic."
+  },
+  "085": {
+    "nodeId": "fields/bridge/deck-displacement",
+    "section": "4.6",
+    "en": "Bridge deck longitudinal and transverse displacement monitoring. Deck plan or section with joint meters at expansion joints, displacement transducers at bearings. BRI-01: no excavation background. White technical drawing."
+  },
+  "086": {
+    "nodeId": "fields/bridge/vibration",
+    "section": "4.6",
+    "en": "Bridge vibration monitoring schematic. Deck or pier with triaxial accelerometer, cable to dynamic logger, optional response spectrum inset graph. NOT explosion effects. White engineering style."
+  },
+  "087": {
+    "nodeId": "fields/bridge/seismic",
+    "section": "4.6",
+    "en": "Structure seismic response monitoring schematic. Building or bridge with strong-motion accelerographs, response spectrum graph inset, trigger threshold lines. White technical diagram, no disaster CGI."
+  },
+  "088": {
+    "nodeId": "fields/bridge/temperature",
+    "section": "4.6",
+    "en": "Structure temperature monitoring schematic. Concrete bridge deck or dam body with embedded thermocouples at multiple depths, seasonal temperature curve inset. White engineering drawing."
+  },
+  "096": {
+    "nodeId": "fields/retaining-excavation/surrounding-ground",
+    "section": "4.1④",
+    "en": "Cross-section geotechnical diagram focusing on retained ground behind a bracing wall during deep excavation. LEFT: existing building on original ground surface, settlement drawdown curve near the wall, vertical inclinometer casing and water level observation well embedded in the settlement zone. RIGHT of vertical retaining wall: open excavated construction floor (sole void). Show H and 2H distance callouts from excavation line. Four instruments on one section: inclinometer, surface settlement GAUGE with plate or rod sensor and vertical downward arrow (NOT settlement pin), piezometer filter tip (sealed), open standpipe water level — clearly distinguished. Engineering blueprint, white background. No excavation sandwiched between two buildings. No brain, no 3D render."
+  },
+  "089": {
+    "nodeId": "fields/slope/surface-tilt",
+    "section": "4.3②",
+    "en": "Civil engineering schematic of a soil slope monitoring setup. On the inclined ground surface, show a wireless surface tiltmeter unit fixed onto a concrete base pad. The diagram should illustrate the slope mass showing signs of downward movement vector, causing an angular tilt (θ) on the sensor. Stepped retaining or cut slope cross-section — NOT scenic mountain or forest. Pure engineering manual design, clean white background. No brain, no 3D render."
+  },
+  "090": {
+    "nodeId": "fields/slope/structural-displacement",
+    "section": "4.3③",
+    "en": "Structural layout diagram of a concrete retaining wall protecting a slope base. Show optical reflective target prisms anchored to the wall face, with a laser sightline extending from a remote automated total station outside the deformation zone. Illustrate structural displacement tracking parameters (ΔX, ΔY). Optional: displacement transducer across wall joint. Technical line-art style, white background. No river panorama, no excavation shoring background."
+  },
+  "092": {
+    "nodeId": "fields/foundation-pile/cast-in-place-pile",
+    "section": "4.11①",
+    "en": "Geotechnical cross-section diagram of a deep cast-in-place concrete pile foundation driven through soil layers into bedrock. Illustrate the interior of the vertical pile showing a steel rebar cage embedded with multiple sister-bar strain gauges at various depths to measure axial load distribution. Large downward vertical arrows at the pile head represent structural load. Korean labels: 변형률계, 말뚝. High-contrast engineering manual style, white background. NOT surface column only. NOT bridge pier group in river. No vibrating wire, VW, or measurement-method labels. [Soil Layering Rule] Top: loose sandy silt dot pattern; middle: soft marine clay horizontal dashed lines; bottom: weathered bedrock cross-hatch diagonal lines. Label ground surface GL."
+  },
+  "093": {
+    "nodeId": "fields/environmental-impact/noise-level",
+    "section": "4.11②",
+    "en": "Technical blueprint of an environmental impact monitoring station at a construction site boundary. Show a rugged outdoor monitoring pole equipped with an integrated sound level meter microphone (with a wind screen) and an optical dust concentration sensor inlet. The pole is located right next to the site construction fence facing adjacent residential buildings. Sensor cables run to a visible weatherproof data logger box on the pole. Labeled technical drawing style, clean light grey background. NOT air pollution graph only. NOT city marketing render."
+  },
+  "094": {
+    "nodeId": "instruments/modes/normal-mode",
+    "section": "4.12①",
+    "en": "Engineering flowchart illustrating the Normal/Routine Monitoring Mode of a geotechnical system. A horizontal timeline indicates data sampling triggers at fixed, equal intervals. Standard analog-to-digital data packets flow seamlessly from a field logger to a secure cloud server database. Inset reveals a stable, flat sensor data trend plot over time. Minimalist block-diagram style, high-contrast lines, white background. NOT clock icon only. NOT brain or hologram."
+  },
+  "095": {
+    "nodeId": "instruments/modes/realtime-mode",
+    "section": "4.12②",
+    "en": "Technical system topology diagram showing High-Speed Event/Real-time Monitoring Mode. At an explicit timeline point labeled Trigger Event, the data acquisition system switches to high-frequency continuous sampling. Illustrate densely packed signal wave lines transferring dynamic data vectors instantly to a warning dashboard. Includes a detail window of a sharp impulse waveform plot. Clean industrial logic chart, white background. NOT lightning bolt decoration. NOT explosion CGI. NOT brain."
+  },
+  "102": {
+    "nodeId": "instruments/modes/alarm-status",
+    "section": "4.12③",
+    "en": "Technical control flowchart of a geotechnical alarm triggering system. A data chart displays three horizontal dotted lines representing engineering thresholds: Caution, Warning, and Action levels. An escalating data plot breaks above the Action line, immediately routing a logic signal vector to an outdoor strobe siren horn and an automated SMS/Server alert block. Pure engineering schematic layout, white background. NOT abstract neon graphics. NOT SF movie warning popup. NOT brain."
+  }
+}

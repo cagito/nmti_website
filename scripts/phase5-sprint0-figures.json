@@ -1,0 +1,12 @@
+{
+  "$schema": "phase5-sprint0-figures v1",
+  "description": "Phase 5 blocker — Sprint0 FT-A/B heroes pillow → ai-reviewed (089~093).",
+  "source": "docs/31-NMTI-기술자료-Figure-출판품질-및-제작방식-통합-수정계획.md",
+  "figures": [
+    { "id": "IMG-089", "tier": "FT-A", "hero": true, "group": "sprint0" },
+    { "id": "IMG-090", "tier": "FT-A", "hero": true, "group": "sprint0" },
+    { "id": "IMG-091", "tier": "FT-A", "hero": true, "group": "sprint0" },
+    { "id": "IMG-092", "tier": "FT-A", "hero": true, "group": "sprint0" },
+    { "id": "IMG-093", "tier": "FT-B", "hero": true, "group": "sprint0" }
+  ]
+}

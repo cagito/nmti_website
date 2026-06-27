@@ -1,0 +1,76 @@
+{
+  "$schema": "phase1-p1-heroes v1",
+  "description": "Phase 1 — P1 hero·치명 노출 Figure (doc 31 §Phase 1). 외부 PNG(ai-reviewed/cad) 교체 대상.",
+  "source": "docs/31-NMTI-기술자료-Figure-출판품질-및-제작방식-통합-수정계획.md",
+  "heroes": [
+  {
+    "id": "IMG-001",
+    "tier": "FT-A",
+    "refs": ["docs/14-흙막이-굴착-계측-개념도-AI-생성-가이드라인.md", "docs/27-지표면-건물-안착-원칙.md"],
+    "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-001_가시설_계측_전체_개념도.md"
+  },
+  {
+    "id": "IMG-002",
+    "tier": "FT-A",
+    "refs": ["docs/19-IMG-002-흙막이-계측-대표-단면도-오류분석-및-재작업-계획.md", "docs/27-지표면-건물-안착-원칙.md"],
+    "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-002_흙막이_벽체_계측_배치도.md"
+  },
+  {
+    "id": "IMG-008",
+    "tier": "FT-B",
+    "refs": ["docs/20-IMG-008-터널-내공변위-오류분석-및-재작업-계획.md"],
+    "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-008_터널_전단면_내공변위_측정시스템.md",
+    "redline": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/redlines/IMG-008_redline_v8_외부PNG.md",
+    "priority": 1
+  },
+  {
+    "id": "IMG-015",
+    "tier": "FT-A",
+    "refs": ["docs/INSTRUMENTATION_DRAWING_RULES.md §3.12"],
+    "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-015_사면_계측_전체_개념도.md"
+  },
+  {
+    "id": "IMG-025",
+    "tier": "FT-B",
+    "refs": ["ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/09_지중경사계_센서형-다단식_표현_표준.md"],
+    "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-025_지중경사계_시스템_구성도.md"
+  },
+  {
+    "id": "IMG-027",
+    "tier": "FT-A",
+    "refs": ["docs/17-IMG-027-지중경사계-설치단면도-오류분석-및-재작업-계획.md", "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/09_지중경사계_센서형-다단식_표현_표준.md"],
+    "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-027_지중경사계_설치_단면도.md"
+  },
+  {
+    "id": "IMG-030",
+    "tier": "FT-A",
+    "refs": ["docs/30-NMTI-건설계측-기술자료-외부공학검증-대조-및-수정계획.md"],
+    "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-030_지하수위계_설치_개념도.md"
+  },
+  {
+    "id": "IMG-031",
+    "tier": "FT-A",
+    "refs": ["docs/30-NMTI-건설계측-기술자료-외부공학검증-대조-및-수정계획.md"],
+    "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-031_간극수압계_설치도.md"
+  },
+  {
+    "id": "IMG-034",
+    "tier": "FT-A",
+    "refs": ["docs/30-NMTI-건설계측-기술자료-외부공학검증-대조-및-수정계획.md"],
+    "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-034_토압계_설치_개념도.md"
+  },
+  {
+    "id": "IMG-062",
+    "tier": "FT-A",
+    "refs": ["docs/18-주변지반-계측-설치-단면도-수정-계획.md"],
+    "prompt": null,
+    "note": "002 ②③ 이형 상세 — earth-retaining-wall principle·data"
+  },
+  {
+    "id": "IMG-096",
+    "tier": "FT-A",
+    "refs": ["docs/18-주변지반-계측-설치-단면도-수정-계획.md"],
+    "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-096_주변지반_계측_설치_대표_단면도.md"
+  }
+  ]
+}

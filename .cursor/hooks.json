@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "node .cursor/hooks/session-lock-context.mjs"
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "node .cursor/hooks/check-workspace-lock.mjs",
+        "matcher": "patch-registry|build:images|build:content|generate-image-assets|register:figure|register-external|seed-image-review|sign-phase|verify:local|build:all",
+        "failClosed": false
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": "node .cursor/hooks/check-workspace-lock.mjs",
+        "matcher": "Write|StrReplace|Delete",
+        "failClosed": false
+      }
+    ]
+  }
+}

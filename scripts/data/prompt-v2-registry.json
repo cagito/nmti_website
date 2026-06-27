@@ -1,0 +1,192 @@
+{
+  "001": {
+    "nodeId": "fields/retaining-excavation",
+    "section": "4.1",
+    "en": "Overview cross-section of deep excavation retaining monitoring. LEFT: adjacent building on original ground, retained backfill with groundwater line. CENTER: retaining wall and wale. RIGHT: excavation void with struts. Callouts: inclinometer casing (label 센서형 다단식 지중경사계), water level well, piezometer, earth pressure cell, strut load cell at wale joint, anchor with load cell, settlement pin, crack gauge and structure tiltmeter on adjacent building, ATS sight line to prism. Right panel: brief legend list only — NO remote monitoring flowchart strip. docs/14 §2 required. White CAD, no brain."
+  },
+  "002": {
+    "nodeId": "fields/retaining-excavation/earth-retaining-wall",
+    "section": "4.1①",
+    "en": "Cross-section technical diagram of an earth retaining wall (CIP or H-pile) for deep excavation. On the left: retained ground with a phreatic groundwater line and optional adjacent building on original ground surface. On the right: excavated lower ground (sole void). Show an inclinometer casing (vertical pipe) in the wall, a water level observation well in the backfill, earth pressure cell on the wall face, and strain gauges on the wale. Clear engineering drawing style, numbered callouts, white background. No brain, no landscape, no cartoon."
+  },
+  "003": {
+    "nodeId": "fields/retaining-excavation/strut",
+    "section": "4.1②",
+    "en": "Detailed isometric or cross-section of a steel strut system in an excavation. Horizontal H-beam struts bracing against wales on the retaining wall. Cylindrical hydraulic load cell at strut-to-wale connection. Strain gauges on H-beam flange. Korean label: 변형률계. No abstract background, construction monitoring layout, white CAD style. No vibrating wire, VW, or measurement-method labels."
+  },
+  "004": {
+    "nodeId": "fields/retaining-excavation/anchor",
+    "section": "4.1③",
+    "en": "Engineering cross-section of an earth anchor through a retaining wall into stable ground. Tendon inclined downward ~20 degrees. Anchor head on wall face with donut-shaped load cell. Clear free length vs bonded grouted anchor zone. No open standpipe piezometer confusion."
+  },
+  "007": {
+    "nodeId": "fields/tunnel",
+    "section": "4.2",
+    "en": "Tunnel construction monitoring overview schematic. Cross-section showing NATM tunnel with crown settlement prisms, convergence targets on walls, surface settlement trough above, inclinometer in soil above tunnel, blast vibration geophone at surface. Internal upper arch view inset. White engineering style, no scenic landscape, no brain."
+  },
+  "008": {
+    "nodeId": "fields/tunnel/convergence",
+    "section": "4.2①",
+    "en": "Internal cross-section schematic of a NATM tunnel under construction. Upper arch only (U-shape), not full 360° closure at invert (road/rail occupies invert). Prisms at tunnel crown for settlement; reflective targets on left/right walls for convergence. Line of sight from Automated Total Station on stable bracket inside tunnel. Label no measurement at invert. White engineering schematic."
+  },
+  "011": {
+    "nodeId": "fields/bridge",
+    "section": "4.6",
+    "en": "Bridge monitoring overview schematic. Elevation or cross-section of bridge superstructure and substructure with callouts: pier tilt meter, abutment crack gauge, foundation settlement gauge, bearing displacement, ATS to deck prisms. NOT retaining wall excavation (BRI-01). White CAD style, no brain."
+  },
+  "015": {
+    "nodeId": "fields/slope",
+    "section": "4.3",
+    "en": "Slope monitoring overview cross-section. Unstable soil slope with inclinometer casing, surface settlement pins, piezometer, ATS outside stable zone with line-of-sight to prism on slope face. ATS instrument NOT on slope crest. White geotechnical schematic."
+  },
+  "016": {
+    "nodeId": "fields/slope/slip-surface",
+    "section": "4.3",
+    "en": "Geotechnical cross-section of unstable soil slope with arc-shaped slip surface (failure plane). Vertical inclinometer casing penetrates moving mass into stable bedrock. Localized horizontal displacement profile graph at slip intersection. Automated total station outside slope stable zone, line-of-sight to prism on slope face."
+  },
+  "019": {
+    "nodeId": "fields/soft-ground",
+    "section": "4.7",
+    "en": "Geotechnical cross-section of embankment construction over a thick soft clay layer. Trapezoidal soil embankment on top. At embankment-base interface: horizontal settlement plate. Inside soft clay: piezometer filter tip with pore water dissipating (consolidation arrows). At toe of embankment slope, outside fill: vertical inclinometer casing monitoring lateral soil movement. Optional layer settlement gauge chain. Korean labels: 간극수압계, 센서형 다단식 지중경사계. Labeled engineering manual style, 2D cross-section, white background. Not tunnel settlement trough. No building deflection LVDT. No vibrating wire, VW, or measurement-method labels."
+  },
+  "020": {
+    "nodeId": "fields/soft-ground/settlement",
+    "section": "4.7",
+    "en": "Soft ground settlement monitoring cross-section. Embankment load on soft clay with settlement plate at base, layer settlement gauge chain in clay, time-settlement graph inset showing consolidation curve. Korean: 침하, 압밀. Not building beam deflection. White schematic."
+  },
+  "021": {
+    "nodeId": "fields/soft-ground/lateral-flow",
+    "section": "4.7",
+    "en": "Lateral soil movement at embankment toe. Cross-section: trapezoidal embankment, soft clay layer, vertical inclinometer casing at toe outside fill slope monitoring horizontal displacement. Displacement arrows at toe. Not retaining wall excavation. White geotechnical drawing."
+  },
+  "097": {
+    "nodeId": "fields/tunnel/blast-vibration",
+    "section": "4.2②",
+    "en": "Technical blueprint: tunnel blast face generating seismic wave vectors through ground toward surface. Triaxial geophone pinned in soil at surface, cable to dynamic data logger. Small inset graph: Peak Particle Velocity (PPV) waveform. No explosion glamour, no brain icon, white background."
+  },
+  "025": {
+    "nodeId": "sensors/inclinometer",
+    "section": "4.5①",
+    "en": "Technical cutaway of inclinometer casing in borehole. Four internal orthogonal keyways (grooves). Digital inclinometer probe with upper/lower wheel assemblies inside grooves, signal cable to readout. Label 센서형 다단식 지중경사계 (full term). Small inset: tilt angle θ. Not a surface tiltmeter on a building. White background, no brain."
+  },
+  "026": {
+    "nodeId": "sensors/inclinometer",
+    "section": "4.5①",
+    "en": "Cross-section of inclinometer casing tube showing four internal orthogonal grooves (keyways). Groove detail callout. Engineering schematic for installation drawing. Label 센서형 다단식 지중경사계. White background."
+  },
+  "027": {
+    "nodeId": "sensors/inclinometer",
+    "section": "4.5①",
+    "en": "Geotechnical installation cross-section: inclinometer casing in borehole through soil slope with slip surface intersection. Sensor-type multi-level inclinometer label. Base embedment in stable layer. Horizontal displacement arrow at slip zone. NOT surface tiltmeter. White CAD style."
+  },
+  "028": {
+    "nodeId": "sensors/inclinometer",
+    "section": "4.5①",
+    "en": "Principle diagram: inclinometer probe wheels inside casing grooves measuring tilt angle θ and cumulative displacement profile. Engineering manual style. Label 센서형 다단식 지중경사계."
+  },
+  "030": {
+    "nodeId": "sensors/water-level-meter",
+    "section": "4.5⑧",
+    "en": "Cross-section of open standpipe water level observation well in borehole. Perforated or slotted pipe, groundwater surface visible inside tube (G.W.L). Dashed phreatic line in soil. NOT sealed piezometer filter tip. Korean: 지하수위계, 관측공. White blueprint, no brain."
+  },
+  "031": {
+    "nodeId": "sensors/piezometer",
+    "section": "4.5②",
+    "en": "Piezometer filter tip in borehole. Clean sand filter zone around porous tip, bentonite seal above, in soil stratum. Pore water pressure at tip — not an open standpipe water level. Comparison inset: piezometer vs observation well. Cross-section engineering detail, white background. Korean label: 간극수압계. No vibrating wire, VW, or measurement-method labels."
+  },
+  "033": {
+    "nodeId": "sensors/layer-settlement-gauge",
+    "section": "4.5⑦",
+    "en": "Cross-section of multi-point layer settlement gauge (magnet/settlement ring chain) on vertical rod in soft ground. Multiple measurement points at different depths. Settlement arrows at each level. Korean: 층별침하계. Not single surface pin only. White schematic."
+  },
+  "034": {
+    "nodeId": "sensors/earth-pressure-cell",
+    "section": "4.5⑧",
+    "en": "Earth pressure cell flat sensor mounted on retaining wall face in contact with soil. Normal earth pressure arrow perpendicular to wall. Cross-section: wall | backfill | cell. Korean: 토압계. Not load cell on anchor. White engineering drawing."
+  },
+  "037": {
+    "nodeId": "sensors/crack-meter",
+    "section": "4.5③",
+    "en": "Crack gauge installed perpendicular across a concrete wall crack. Anchors on both sides of crack, measurement axis crosses crack line. Displacement arrows. Not parallel to crack. Korean: 균열계. Engineering installation schematic, white background."
+  },
+  "039": {
+    "nodeId": "sensors/joint-meter",
+    "section": "4.5⑧",
+    "en": "Joint meter (extensometer) across bridge expansion joint gap. Displacement measurement parallel to joint opening direction. Both sides anchored to concrete. Korean: 신축계. White technical schematic."
+  },
+  "040": {
+    "nodeId": "sensors/displacement-transducer",
+    "section": "4.5⑧",
+    "en": "LVDT displacement transducer with rod across structural gap or crack. Axial displacement arrow along sensor axis. For building deflection: mounted under beam mid-span measuring vertical δ. Korean: 변위계. Not settlement plate. White background."
+  },
+  "041": {
+    "nodeId": "sensors/vibration-meter",
+    "section": "4.5⑧",
+    "en": "Triaxial geophone sensor pinned into soil at ground surface OR bolted to structure with X/Y/Z axis labels. Cable to dynamic data logger. Optional small PPV waveform inset. Korean: 진동계. No explosion effects. White schematic."
+  },
+  "042": {
+    "nodeId": "sensors/automated-total-station",
+    "section": "4.5⑧",
+    "en": "Automated total station on tripod in stable zone outside deformation area. Dashed line-of-sight to reflective prism target on structure or slope. Distinguish reference point (instrument) vs measurement point (prism). Korean: 자동광파기, 프리즘. White CAD style."
+  },
+  "043": {
+    "nodeId": "sensors/gnss",
+    "section": "4.5⑧",
+    "en": "GNSS base station antenna on stable monument and rover antenna on monitoring point. Radio link, coordinate displacement vectors. See book/GNSS.pdf style. Korean: 기준국, 이동국. No brain, white schematic."
+  },
+  "044": {
+    "nodeId": "sensors/weather-station",
+    "section": "4.5⑧",
+    "en": "Weather station on pole: rain gauge funnel, anemometer, temperature shield simplified icons. Cable to logger. Korean: 기상계측기, 강우, 풍속. Simple engineering layout, white background."
+  },
+  "070": {
+    "nodeId": "instruments/modes/manual",
+    "section": "4.8②",
+    "en": "Manual monitoring workflow schematic: field technician with readout device at sensor (inclinometer probe or gauge), clipboard or handheld readout, no automatic transmission. Korean: 수동 계측. Simple flowchart, no brain, white background."
+  },
+  "071": {
+    "nodeId": "instruments/modes/automatic",
+    "section": "4.8②",
+    "en": "Automatic monitoring schematic: sensors wired to field data logger, scheduled acquisition, local storage. Sensors → data logger → memory/SD. No remote cloud required. Korean: 자동 계측. White flowchart."
+  },
+  "073": {
+    "nodeId": "instruments/modes/smart",
+    "section": "4.8②",
+    "en": "Smart monitoring flowchart: sensor data → rules/threshold engine → automated alarm notifications. NO biological brain, NO neural network graphic. Rectangular processing blocks only. Korean: 스마트 계측, 경보. White background."
+  },
+  "075": {
+    "nodeId": "instruments/modes/overview",
+    "section": "4.8②",
+    "en": "Five-tier monitoring hierarchy diagram: manual → automatic → remote automatic → smart → AI-assisted review. Horizontal or vertical ladder. Each tier simple icon. NO brain for AI tier — use analysis block label. Korean: 계측 방식. White schematic."
+  },
+  "076": {
+    "nodeId": "instruments/datalogger/dynamic",
+    "section": "4.8①",
+    "en": "High-speed dynamic data acquisition unit for vibration monitoring. Rugged enclosure, multiple analog input channels, USB/Ethernet to PC, connection to triaxial geophones. Korean: 동적 데이터로거. Not home router, no brain."
+  },
+  "077": {
+    "nodeId": "instruments/datalogger/multiplexer",
+    "section": "4.8①",
+    "en": "Multiplexer (MUX) expansion schematic between static data logger and multiple analog geotechnical sensors (piezometers, strain gauges). Channel switching diagram. Korean: 멀티플렉서. Wiring layout, white background. No vibrating wire, VW, or measurement-method labels."
+  },
+  "098": {
+    "nodeId": "fields/harbor/tide-groundwater",
+    "section": "4.4",
+    "en": "Harbor/coastal cross-section: seawall or revetment, tidal water level variation, groundwater in reclaimed fill behind structure. Water level meter in tide zone, piezometer in fill, settlement monitoring. NOT retaining excavation between buildings. Korean: 조위, 지하수위, 호안. White geotechnical schematic."
+  },
+  "099": {
+    "nodeId": "fields/building/deflection",
+    "section": "4.4②",
+    "en": "Building RC beam-column cross-section with LVDT under beam mid-span measuring vertical deflection δ. Right panel: time-deflection graph with L/250 and L/360 limits. NO embankment settlement plate, NO settlement gauge, NO subsidence curve. Korean: 처짐, 변위계. DEF-01~04 compliance."
+  },
+  "100": {
+    "nodeId": "fields/building",
+    "section": "4.4①",
+    "en": "Building construction monitoring overview: RC frame under construction with callouts LVDT deflection, strain gauges on columns, crack gauge, tilt meter, ATS on adjacent buildings, load cell. KCS 3.9 five items panel. NO soil settlement graph. White CAD style."
+  },
+  "101": {
+    "nodeId": "fields/building/adjacent-building",
+    "section": "4.4③",
+    "en": "Building construction site with adjacent existing building. Crack gauge on neighbor facade, structure tiltmeter on bracket, ATS to roof prisms. NOT deep excavation retaining wall as main scene (distinct from IMG-005). BLD-ADJ-01. White schematic."
+  }
+}

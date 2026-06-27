@@ -1,0 +1,243 @@
+{
+  "files": [
+    {
+      "file": "GNSS.pdf",
+      "pdf_pair": null,
+      "prv_chars": 0,
+      "pdf_chars": 2930,
+      "keywords": {
+        "침하계": "sensors/settlement-gauge",
+        "GNSS": "sensors/gnss",
+        "GPS": "sensors/gnss",
+        "RTK": "sensors/gnss"
+      },
+      "file_nodes": [
+        "sensors/gnss"
+      ],
+      "preview": "스마트 메 가 포 트 침 하 관 리 시 스 템 www.ege.co.kr www.egeit.co.kr Geotech, 3·ICT & Expert (EGM-200) GNSS 기반 중앙 서버 (데이터 수집·분석) 리시버 LTE모뎀 배터리 태양광 패널 침하판 GNSS안테나 타이머  개요 GNSS 기반 측정 1 태양광 전원 사용 2 원격 자동화 측정 3 • 실시간 침하 측정 • 무선 및 자가 전원 • 무인 자동 계측 • 실시간 계측 데이터 표출 • 잔류침하량 분석 보고서 • 공항, 항만, 연약지반 등 1mm 정밀도 수준의 침하를 실시간으로"
+    },
+    {
+      "file": "KCS 11 10 15 시공 중 지반계측_(25. 12. 24).hwp",
+      "pdf_pair": "KCS 11 10 15 시공 중 지반계측_(25. 12. 24).pdf",
+      "prv_chars": 874,
+      "pdf_chars": 72645,
+      "keywords": {
+        "지중경사계": "sensors/inclinometer",
+        "지하수위계": "sensors/water-level-meter",
+        "간극수압계": "sensors/piezometer",
+        "침하계": "sensors/settlement-gauge",
+        "하중계": "sensors/load-cell",
+        "변위계": "sensors/displacement-transducer",
+        "내공변위": "fields/tunnel/convergence",
+        "천단침하": "fields/tunnel/crown-settlement",
+        "막장전방": "fields/tunnel/face-advance",
+        "발파진동": "fields/tunnel/blast-vibration",
+        "록볼트": "fields/tunnel/rockbolt",
+        "숏크리트": "fields/tunnel/shotcrete",
+        "하천제방": "fields/dam/river-levee",
+        "제방": "fields/dam",
+        "진동계": "sensors/vibration-meter",
+        "변형률계": "sensors/strain-gauge",
+        "계측책임자": "intro",
+        "흙막이": "fields/retaining-excavation",
+        "어스앵커": "fields/retaining-excavation/anchor",
+        "버팀보": "fields/retaining-excavation/strut",
+        "GNSS": "sensors/gnss",
+        "GPS": "sensors/gnss",
+        "가시설": "fields/retaining-excavation",
+        "댐계측": "fields/dam"
+      },
+      "file_nodes": [
+        "fields/retaining-excavation",
+        "sensors/inclinometer"
+      ],
+      "preview": "KCS 11 00 00 표준시방서 Korean Construction Specification 지반공사 KCS 11 10 15 : 2025 시공 중 지반계측 2025년 12월 24일 개정 http://www.kcsc.re.kr 건설기준 제정 또는 개정에 따른 경과 조치 이 기준은 발간 시점부터 사용하며, 이미 시행 중에 있는 설계용역이나 건설공사는 발주기관의 장이 필요하다고 인정하는 경우 종전에 적용하고 있는 기준을 그대로 사용할 수 있습니다. 건설기준 연혁 ∙ 건설기준은 건설기술진흥법 제44조 및 같은법 시행령 제65조에 따라 건"
+    },
+    {
+      "file": "KCS 24 99 05 교량계측시설(23.09).hwp",
+      "pdf_pair": "KCS 24 99 05 교량계측시설(23.09).pdf",
+      "prv_chars": 859,
+      "pdf_chars": 11269,
+      "keywords": {
+        "교량계측": "fields/bridge"
+      },
+      "file_nodes": [
+        "fields/bridge"
+      ],
+      "preview": "KCS 24 00 00 표준시방서 Korean Construction Specification 교량공사 KCS 24 99 05 : 2023 교량계측시설 2023년 9월 12일 개정 http://www.kcsc.re.kr 건설기준 제정 또는 개정에 따른 경과 조치 이 기준은 발간 시점부터 사용하며, 이미 시행 중에 있는 설계용역이나 건설공사는 발주기관의 장이 필요하다고 인정하는 경우 종전에 적용하고 있는 기준을 그대로 사용할 수 있습니다. 건설기준 연혁 ∙ 이 기준은 건설기준 코드체계 전환에 따라 기존 건설기준(설계기준, 표준시방서)"
+    },
+    {
+      "file": "KCS 54 20 25 댐 계측설비(18.08).hwp",
+      "pdf_pair": "KCS 54 20 25 댐 계측설비(18.08).pdf",
+      "prv_chars": 855,
+      "pdf_chars": 16703,
+      "keywords": {
+        "댐계측": "fields/dam",
+        "지하수위계": "sensors/water-level-meter",
+        "간극수압계": "sensors/piezometer",
+        "침하계": "sensors/settlement-gauge",
+        "변위계": "sensors/displacement-transducer",
+        "변형률계": "sensors/strain-gauge"
+      },
+      "file_nodes": [
+        "fields/dam",
+        "fields/dam/river-levee"
+      ],
+      "preview": "KCS 54 00 00 표준시방서 Korean Construction Specification 댐공사 KCS 54 20 25 : 2018 댐 댐계측설비 2018년 8월 30일 개정 http://www.kcsc.re.kr 건설기준 제·개정에 따른 경과 조치 이 기준은 발간 시점부터 사용하며, 이미 시행 중에 있는 설계용역이나 건설공사는 발주기관의 장이 필요하다고 인정하는 경우 종전에 적용하고 있는 기준을 그대로 사용할 수 있습니다. 건설기준 제・개정 연혁 ∙ 이 기준은 건설기준 코드체계 전환에 따라 기존 건설기준(설계기준, 표준시방서"
+    },
+    {
+      "file": "KDS 11 10 15 지반계측(25.12).hwp",
+      "pdf_pair": "KDS 11 10 15 지반계측(25.12).pdf",
+      "prv_chars": 872,
+      "pdf_chars": 43567,
+      "keywords": {
+        "지중경사계": "sensors/inclinometer",
+        "지하수위계": "sensors/water-level-meter",
+        "간극수압계": "sensors/piezometer",
+        "침하계": "sensors/settlement-gauge",
+        "로드셀": "fields/retaining-excavation/anchor",
+        "변위계": "sensors/displacement-transducer",
+        "내공변위": "fields/tunnel/convergence",
+        "천단침하": "fields/tunnel/crown-settlement",
+        "막장전방": "fields/tunnel/face-advance",
+        "발파진동": "fields/tunnel/blast-vibration",
+        "록볼트": "fields/tunnel/rockbolt",
+        "숏크리트": "fields/tunnel/shotcrete",
+        "강지보": "fields/tunnel/steel-support",
+        "하천제방": "fields/dam/river-levee",
+        "제방": "fields/dam",
+        "데이터로거": "sensors/datalogger",
+        "계측책임자": "intro",
+        "흙막이": "fields/retaining-excavation",
+        "GPS": "sensors/gnss",
+        "가시설": "fields/retaining-excavation"
+      },
+      "file_nodes": [
+        "fields/retaining-excavation",
+        "intro"
+      ],
+      "preview": "KDS 11 00 00 설계기준 Korean Design Standard 지반 설계기준 KDS 11 10 15 : 2025 지반계측 2025년 12월 24일 개정 http://www.kcsc.re.kr 건설기준 제정 또는 개정에 따른 경과 조치 이 기준은 발간 시점부터 사용하며, 이미 시행 중에 있는 설계용역이나 건설공사는 발주기관의 장이 필요하다고 인정하는 경우 종전에 적용하고 있는 기준을 그대로 사용할 수 있습니다. 건설기준 연혁 ∙ 이 기준은 건설기준 코드체계 전환(국토교통부 고시 제2016-438호, 2016년 7월 6일)에"
+    },
+    {
+      "file": "KDS 27 50 10 터널 계측(23.09).hwp",
+      "pdf_pair": "KDS 27 50 10 터널 계측(23.09).pdf",
+      "prv_chars": 889,
+      "pdf_chars": 10141,
+      "keywords": {
+        "터널 계측": "fields/tunnel",
+        "내공변위": "fields/tunnel/convergence",
+        "천단침하": "fields/tunnel/crown-settlement",
+        "발파진동": "fields/tunnel/blast-vibration",
+        "록볼트": "fields/tunnel/rockbolt",
+        "숏크리트": "fields/tunnel/shotcrete"
+      },
+      "file_nodes": [
+        "fields/tunnel",
+        "fields/tunnel/blast-vibration"
+      ],
+      "preview": "KDS 27 00 00 설계기준 Korean Design Standard 터널 설계기준 KDS 27 50 10 : 2023 터널 계측 2023년 9월 12일 개정 http://www.kcsc.re.kr 건설기준 제정 또는 개정에 따른 경과 조치 이 기준은 발간 시점부터 사용하며, 이미 시행 중에 있는 설계용역이나 건설공사는 발주기관의 장이 필요하다고 인정하는 경우 종전에 적용하고 있는 기준을 그대로 사용할 수 있습니다. 건설기준 연혁 ∙ 이 기준은 건설기준 코드체계 전환에 따라 기존 건설기준(설계기준, 표준시방서) 간 중복․ 상충을"
+    }
+  ],
+  "term_extract_hits": {
+    "가시설": [
+      "fields/retaining-excavation",
+      "fields/retaining-excavation"
+    ],
+    "간극수압계": [
+      "sensors/piezometer",
+      "sensors/piezometer"
+    ],
+    "강지보": [
+      "fields/tunnel/steel-support"
+    ],
+    "계측책임자": [
+      "intro",
+      "intro"
+    ],
+    "내공변위": [
+      "fields/tunnel/convergence",
+      "fields/tunnel/convergence"
+    ],
+    "데이터로거": [
+      "sensors/datalogger"
+    ],
+    "로드셀": [
+      "fields/retaining-excavation/anchor"
+    ],
+    "록볼트": [
+      "fields/tunnel/rockbolt",
+      "fields/tunnel/rockbolt"
+    ],
+    "막장전방": [
+      "fields/tunnel/face-advance",
+      "fields/tunnel/face-advance"
+    ],
+    "발파진동": [
+      "fields/tunnel/blast-vibration",
+      "fields/tunnel/blast-vibration"
+    ],
+    "변위계": [
+      "sensors/displacement-transducer",
+      "sensors/displacement-transducer"
+    ],
+    "숏크리트": [
+      "fields/tunnel/shotcrete",
+      "fields/tunnel/shotcrete"
+    ],
+    "지중경사계": [
+      "sensors/inclinometer",
+      "sensors/inclinometer"
+    ],
+    "지하수위계": [
+      "sensors/water-level-meter",
+      "sensors/water-level-meter"
+    ],
+    "천단침하": [
+      "fields/tunnel/crown-settlement",
+      "fields/tunnel/crown-settlement"
+    ],
+    "침하계": [
+      "sensors/settlement-gauge",
+      "sensors/settlement-gauge"
+    ],
+    "흙막이": [
+      "fields/retaining-excavation",
+      "fields/retaining-excavation"
+    ],
+    "변형률계": [
+      "sensors/strain-gauge"
+    ],
+    "하중계": [
+      "sensors/load-cell"
+    ]
+  },
+  "keyword_map_size": 31,
+  "nodes_matched": [
+    "fields/bridge",
+    "fields/dam",
+    "fields/dam/river-levee",
+    "fields/retaining-excavation",
+    "fields/retaining-excavation/anchor",
+    "fields/retaining-excavation/strut",
+    "fields/tunnel",
+    "fields/tunnel/blast-vibration",
+    "fields/tunnel/convergence",
+    "fields/tunnel/crown-settlement",
+    "fields/tunnel/face-advance",
+    "fields/tunnel/rockbolt",
+    "fields/tunnel/shotcrete",
+    "fields/tunnel/steel-support",
+    "intro",
+    "sensors/datalogger",
+    "sensors/displacement-transducer",
+    "sensors/gnss",
+    "sensors/inclinometer",
+    "sensors/load-cell",
+    "sensors/piezometer",
+    "sensors/settlement-gauge",
+    "sensors/strain-gauge",
+    "sensors/vibration-meter",
+    "sensors/water-level-meter"
+  ],
+  "missing_in_dictionary": []
+}

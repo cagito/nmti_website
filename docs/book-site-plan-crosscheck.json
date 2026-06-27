@@ -1,0 +1,211 @@
+{
+  "pdfs": [
+    {
+      "file": "01. 지표면 계측기 설치완료보고서.pdf",
+      "pages": 83,
+      "chars": 49438,
+      "keywords": {
+        "침하계": "sensors/settlement-gauge",
+        "GNSS": "sensors/gnss",
+        "GPS": "sensors/gnss"
+      },
+      "keyword_count": 3
+    },
+    {
+      "file": "03 계측계획도면.pdf",
+      "pages": 5,
+      "chars": 1,
+      "keywords": {},
+      "keyword_count": 0
+    },
+    {
+      "file": "1-150120_대구통합계측 준공보고서-본문.pdf",
+      "pages": 144,
+      "chars": 62071,
+      "keywords": {
+        "하중계": "sensors/load-cell",
+        "변형률계": "sensors/strain-gauge",
+        "데이터로거": "sensors/datalogger"
+      },
+      "keyword_count": 3
+    },
+    {
+      "file": "2-150120_대구통합계측 준공보고서-부록.pdf",
+      "pages": 297,
+      "chars": 117557,
+      "keywords": {
+        "변형률계": "sensors/strain-gauge",
+        "GPS": "sensors/gnss"
+      },
+      "keyword_count": 2
+    },
+    {
+      "file": "2. 유지관리계측 도면.pdf",
+      "pages": 23,
+      "chars": 1322,
+      "keywords": {
+        "간극수압계": "sensors/piezometer",
+        "변위계": "sensors/displacement-transducer",
+        "내공변위": "fields/tunnel/convergence",
+        "데이터로거": "sensors/datalogger"
+      },
+      "keyword_count": 4
+    },
+    {
+      "file": "3-150120_대구통합계측 준공도면.pdf",
+      "pages": 18,
+      "chars": 890,
+      "keywords": {
+        "변형률계": "sensors/strain-gauge"
+      },
+      "keyword_count": 1
+    },
+    {
+      "file": "[붙임] 1.새만금 방조제 유지관리 계측시스템 점검 보고서.pdf",
+      "pages": 49,
+      "chars": 20231,
+      "keywords": {
+        "지중경사계": "sensors/inclinometer",
+        "지하수위계": "sensors/water-level-meter",
+        "간극수압계": "sensors/piezometer",
+        "침하계": "sensors/settlement-gauge",
+        "데이터로거": "sensors/datalogger"
+      },
+      "keyword_count": 5
+    },
+    {
+      "file": "A3도면-설치및시공, 계측결과.pdf",
+      "pages": 4,
+      "chars": 9054,
+      "keywords": {},
+      "keyword_count": 0
+    },
+    {
+      "file": "GNSS.pdf",
+      "pages": 6,
+      "chars": 2930,
+      "keywords": {
+        "침하계": "sensors/settlement-gauge",
+        "GNSS": "sensors/gnss",
+        "GPS": "sensors/gnss"
+      },
+      "keyword_count": 3
+    },
+    {
+      "file": "계측계획도면.pdf",
+      "pages": 8,
+      "chars": 166,
+      "keywords": {},
+      "keyword_count": 0
+    },
+    {
+      "file": "광암교 계측계획서-수정-2.pdf",
+      "pages": 67,
+      "chars": 35258,
+      "keywords": {
+        "구조물경사계": "sensors/tilt-meter",
+        "데이터로거": "sensors/datalogger",
+        "GPS": "sensors/gnss"
+      },
+      "keyword_count": 3
+    },
+    {
+      "file": "도담영천 터널 계측 도면2.pdf",
+      "pages": 1,
+      "chars": 0,
+      "keywords": {},
+      "keyword_count": 0
+    },
+    {
+      "file": "도담영천 토공 계측 도면.pdf",
+      "pages": 1,
+      "chars": 0,
+      "keywords": {},
+      "keyword_count": 0
+    },
+    {
+      "file": "부록2. 계측기 사양 및 설치상세도.pdf",
+      "pages": 23,
+      "chars": 5444,
+      "keywords": {
+        "데이터로거": "sensors/datalogger"
+      },
+      "keyword_count": 1
+    },
+    {
+      "file": "붙임3. 유지관리계측도면(도영9).pdf",
+      "pages": 5,
+      "chars": 1,
+      "keywords": {},
+      "keyword_count": 0
+    },
+    {
+      "file": "사내저수지 원격계측경보 발령기준.pdf",
+      "pages": 186,
+      "chars": 119174,
+      "keywords": {
+        "변위계": "sensors/displacement-transducer"
+      },
+      "keyword_count": 1
+    },
+    {
+      "file": "스마트계측기(추가분) 설치·운영 용역_제안설명회.pdf",
+      "pages": 53,
+      "chars": 1,
+      "keywords": {},
+      "keyword_count": 0
+    },
+    {
+      "file": "영광 원격계측경보시스템 구축사업 (1).pdf",
+      "pages": 211,
+      "chars": 632403,
+      "keywords": {
+        "변위계": "sensors/displacement-transducer"
+      },
+      "keyword_count": 1
+    },
+    {
+      "file": "추가첨부2. 유지관리계측 도면(도담_영천6공구).pdf",
+      "pages": 1,
+      "chars": 0,
+      "keywords": {},
+      "keyword_count": 0
+    },
+    {
+      "file": "통합 자동화계측관리 및 모니터링 구축 사례집 공개용.pdf",
+      "pages": 161,
+      "chars": 26451,
+      "keywords": {
+        "지중경사계": "sensors/inclinometer",
+        "지하수위계": "sensors/water-level-meter",
+        "간극수압계": "sensors/piezometer",
+        "침하계": "sensors/settlement-gauge",
+        "하중계": "sensors/load-cell",
+        "변위계": "sensors/displacement-transducer",
+        "내공변위": "fields/tunnel/convergence",
+        "진동계": "sensors/vibration-meter",
+        "균열계": "sensors/crack-meter",
+        "구조물경사계": "sensors/tilt-meter",
+        "변형률계": "sensors/strain-gauge",
+        "데이터로거": "sensors/datalogger",
+        "GNSS": "sensors/gnss",
+        "GPS": "sensors/gnss",
+        "흙막이": "fields/retaining-excavation/earth-retaining-wall"
+      },
+      "keyword_count": 15
+    },
+    {
+      "file": "페이지 원본 2. 계측도면_그랑르피에드.pdf",
+      "pages": 1,
+      "chars": 11015,
+      "keywords": {
+        "지중경사계": "sensors/inclinometer",
+        "지하수위계": "sensors/water-level-meter",
+        "침하계": "sensors/settlement-gauge",
+        "변형률계": "sensors/strain-gauge"
+      },
+      "keyword_count": 4
+    }
+  ],
+  "web_image_count": 112
+}

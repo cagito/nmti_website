@@ -1,0 +1,26 @@
+---
+description: 최상위 website/web.config 절대 수정 금지 — IIS 500 방지
+alwaysApply: true
+---
+
+# 최상위 web.config 수정 금지 (필수)
+
+## 절대 규칙
+
+**`website/web.config`** (repo 루트, `homepage/`의 **상위** 폴더)는 **어떤 이유로도 수정하지 않는다.**
+
+- URL Rewrite 추가·변경 금지
+- SPA fallback 규칙 금지
+- mimeMap·customHeaders 등 **어떤 내용도** 편집·커밋 금지
+- “잠깐만 고치면 된다”는 예외 없음 — 과거에 **사이트 전체 HTTP 500** 유발
+
+## 허용 범위
+
+- **`homepage/web.config`만** 수정 가능 (MIME, defaultDocument 등 homepage 전용)
+- **`homepage/technology/`에는 `web.config` 두지 않음** (rewrite 미사용)
+- 기술자료 라우팅: **해시 URL** (`/homepage/technology/#nodeId`) — `dictionary.js` `nodePath()`
+
+## 작업 전 확인
+
+SPA·딥링크·404 이슈를 rewrite로 해결하려 하지 말 것.  
+상세: `docs/DEPLOYMENT-IIS.md`

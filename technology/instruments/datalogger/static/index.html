@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="정적 데이터 로거의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta property="og:title" content="정적 데이터 로거 | 건설 계측 기술 자료 | NMTI">
+  <meta property="og:description" content="정적 데이터 로거의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.nmti.co.kr/homepage/technology/instruments/datalogger/static/">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="https://www.nmti.co.kr/homepage/assets/images/technology/IMG-045_데이터로거-구성도_센서입력전원통신저장.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="정적 데이터 로거 | 건설 계측 기술 자료 | NMTI">
+  <meta name="twitter:description" content="정적 데이터 로거의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta name="twitter:image" content="https://www.nmti.co.kr/homepage/assets/images/technology/IMG-045_데이터로거-구성도_센서입력전원통신저장.webp">
+  <link rel="canonical" href="https://www.nmti.co.kr/homepage/technology/instruments/datalogger/static/">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.nmti.co.kr/homepage/sitemap.xml">
+  <title>정적 데이터 로거 | 건설 계측 기술 자료 | NMTI</title>
+  <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="/homepage/css/style.css?v=46">
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">
+  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://www.nmti.co.kr/homepage/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "건설 계측 기술 자료",
+          "item": "https://www.nmti.co.kr/homepage/technology/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "계측 시스템"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "데이터 로거",
+          "item": "https://www.nmti.co.kr/homepage/technology/instruments/datalogger/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "정적 데이터 로거",
+          "item": "https://www.nmti.co.kr/homepage/technology/instruments/datalogger/static/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "headline": "정적 데이터 로거",
+      "description": "정적 데이터 로거의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
+      "inLanguage": "ko-KR",
+      "dateModified": "2026-06-27",
+      "mainEntityOfPage": "https://www.nmti.co.kr/homepage/technology/instruments/datalogger/static/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "(주)신계측기술정보",
+        "url": "https://www.nmti.co.kr/homepage/"
+      },
+      "image": "https://www.nmti.co.kr/homepage/assets/images/technology/IMG-045_데이터로거-구성도_센서입력전원통신저장.webp",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "KCS 11 10 15:2025 시공 중 지반계측 §3.2.1",
+          "publisher": {
+            "@type": "Organization",
+            "name": "국가건설기준센터(KCSC)"
+          },
+          "url": "https://www.kcsc.re.kr"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "KCS 11 10 15:2025 시공 중 지반계측 §3.2.3",
+          "publisher": {
+            "@type": "Organization",
+            "name": "국가건설기준센터(KCSC)"
+          },
+          "url": "https://www.kcsc.re.kr"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.nmti.co.kr/homepage/technology/instruments/datalogger/static/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "대표 외형은?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "본 기술자료 Figure는 범용 산업용 소형 로거(LCD·단자 포트)를 표준으로 합니다. 선정 시 채널·프로토콜·전원·통신 호환을 우선합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "동적 로거와 병행?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "발파·진동 고속 계측은 동적 DAQ를 별도 두고, 침하·수위 등은 정적 로거로 운영하는 혼합 구성이 일반적입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "MUX 없이 가능한 채널 수?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "로거 내장 아날로그 채널(통상 8~16)과 디지털·버스 센서 수에 따릅니다. 초과 시 MUX 또는 추가 로거를 검토합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SD 카드 백업?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "통신 단절·서버 장애 대비 로컬 저장 후 재전송합니다. 카드 용량·보존 기간을 설계에 반영합니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">본문 바로가기</a>
+  <main id="main" class="tech-seo">
+    <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://www.nmti.co.kr/homepage/">홈</a><span aria-hidden="true"> / </span><a href="https://www.nmti.co.kr/homepage/technology/">건설 계측 기술 자료</a><span aria-hidden="true"> / </span><span>계측 시스템</span><span aria-hidden="true"> / </span><a href="https://www.nmti.co.kr/homepage/technology/instruments/datalogger/">데이터 로거</a><span aria-hidden="true"> / </span><span aria-current="page">정적 데이터 로거</span></nav>
+    <h1>정적 데이터 로거</h1>
+    <p class="lead">정적 데이터 로거의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.</p>
+    <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-045_데이터로거-구성도_센서입력전원통신저장.webp" alt="데이터로거 구성도 - 센서 입력, 전원, 통신, 저장 장치 구성" width="1200" height="675" loading="lazy" decoding="async"><figcaption>데이터로거 구성도 — 산업용 함체·센서입력·전원·통신·저장</figcaption></figure>
+    <section><h2>개요</h2><p><strong>정적 데이터로거</strong>는 변위·수위·하중·간극수압·온도 등 <strong>느리게 변하는 신호</strong>를 분~시간 단위로 스캔·저장하는 현장 계측 장치입니다. 토목·지반 자동계측에서 가장 널리 쓰이며, 본 기술자료 Figure는 <strong>범용 산업용 소형 로거</strong>(LCD·전면 단자 포트) 외형을 표준으로 합니다.</p><p>아날로그·디지털·SDI-12·RS-485 입력, 내부 스케줄러, SD·플래시 저장, 12V 전원, 이더넷·셀룰러 통신 옵션으로 구성됩니다. <strong>지중경사계</strong>·<strong>간극수압계</strong>·<strong>하중계</strong>·<strong>침하계</strong> 등 다채널 정적 센서와 직접 연동하며, 채널 부족 시 <strong>멀티플렉서</strong>로 확장합니다.</p></section>
+    <section><h2>측정 원리</h2><p>정적 로거는 프로그램(스캔 테이블)에 따라 채널을 순차 또는 병렬로 읽습니다. ADC 해상도·입력 범위·여기·필터가 측정 정밀도를 좌우하며, 전원·온도 드리프트는 캘리브레이션·보정으로 관리합니다. MUX 연결 시 스캔 한 주기에 모든 채널을 읽는 데 수 초~수 분이 소요될 수 있어, 계측 주기 설계에 MUX 지연을 반영합니다.</p><p>외형은 밝은 회색 배선판형 인클로저·12V 전원 포트·나사 단자 블록이 특징이며, 방수 함체 안에 설치해 야외 현장에서 운용합니다.</p></section>
+    <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.1 — 데이터로거 선정 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.3 — 온도 범위 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
+    <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#instruments/datalogger/static">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
+  </main>
+  <script type="module">
+    import { initFigureLightbox } from "/homepage/js/technology/figure-lightbox.js";
+    import { initImageProtection } from "/homepage/js/image-protection.js";
+    const main = document.getElementById("main");
+    initFigureLightbox(main);
+    initImageProtection(main);
+  </script>
+</body>
+</html>

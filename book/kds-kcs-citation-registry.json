@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "disclaimer": "※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.",
+  "documents": {
+    "KDS-11-10-15": {
+      "shortTitle": "KDS 11 10 15",
+      "fullTitle": "지반계측",
+      "edition": ":2025",
+      "publisher": "국가건설기준센터(KCSC)"
+    },
+    "KCS-11-10-15": {
+      "shortTitle": "KCS 11 10 15",
+      "fullTitle": "시공 중 지반계측",
+      "edition": ":2025",
+      "publisher": "국가건설기준센터(KCSC)"
+    },
+    "KDS-27-50-10": {
+      "shortTitle": "KDS 27 50 10",
+      "fullTitle": "터널 계측",
+      "edition": ":2023",
+      "publisher": "국가건설기준센터(KCSC)"
+    },
+    "KCS-24-99-05": {
+      "shortTitle": "KCS 24 99 05",
+      "fullTitle": "교량계측시설",
+      "edition": ":2023",
+      "publisher": "국가건설기준센터(KCSC)"
+    },
+    "KCS-54-20-25": {
+      "shortTitle": "KCS 54 20 25",
+      "fullTitle": "댐 계측설비",
+      "edition": ":2018",
+      "publisher": "국가건설기준센터(KCSC)"
+    }
+  },
+  "intro": [
+    { "grade": "A", "docId": "KDS-11-10-15", "cite": "§1", "label": "지반계측 설계 기준 총칙" },
+    { "grade": "B", "docId": "KCS-11-10-15", "cite": "§1", "label": "시공 중 지반계측 총칙" },
+    { "grade": "D", "docId": "KDS-11-10-15", "cite": "—", "label": "설계도서·계측관리계획서·발주처 기준" }
+  ],
+  "categories": {
+    "fields/retaining-excavation": [
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1.1", "label": "가시설·굴착 계측 항목" },
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3", "label": "시공 중 계측·관리" }
+    ],
+    "fields/tunnel": [
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1.5", "label": "터널 계측 항목" },
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "표 3.5-1", "label": "계측 빈도" },
+      { "grade": "C", "docId": "KDS-27-50-10", "cite": "§4.1.5", "label": "터널 계측 (참고)" }
+    ],
+    "fields/bridge": [
+      { "grade": "B", "docId": "KCS-24-99-05", "cite": "§3.1", "label": "교량 계측시설 시공" },
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1", "label": "교량·구조물 계측 일반" },
+      { "grade": "D", "docId": "KCS-24-99-05", "cite": "—", "label": "대구 3호선 통합 유지관리 10종" }
+    ],
+    "fields/slope": [
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1.2", "label": "사면·절토 계측" },
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3", "label": "시공 중 계측" }
+    ],
+    "fields/soft-ground": [
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1.4", "label": "연약지반·성토 계측" },
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3", "label": "시공 중 계측" }
+    ],
+    "fields/structural-safety": [
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1.6", "label": "구조물 안전계측" },
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3", "label": "시공·유지관리 계측" }
+    ],
+    "fields/railway": [
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1.7", "label": "철도·궤도 계측" },
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3", "label": "시공 중 계측" }
+    ],
+    "fields/dam": [
+      { "grade": "B", "docId": "KCS-54-20-25", "cite": "§3", "label": "댐·제방 계측설비" },
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1", "label": "댐·제체 계측 일반" }
+    ],
+    "fields/harbor": [
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1.8", "label": "항만·호안 계측" },
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3", "label": "시공 중 계측" }
+    ],
+    "fields/building": [
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.9", "label": "건축공사 계측" },
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1", "label": "구조물·건축 계측 일반" }
+    ],
+    "fields/foundation-pile": [
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1.9", "label": "기초·말뚝 계측" },
+      { "grade": "D", "docId": "KDS-11-10-15", "cite": "—", "label": "현장 시험·설계 축력·발주처 시방" }
+    ],
+    "fields/environmental-impact": [
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1.5", "label": "발파진동·소음 등 선택 항목" },
+      { "grade": "D", "docId": "KCS-11-10-15", "cite": "—", "label": "환경·민원 기준·발주처 지침" }
+    ]
+  },
+  "nodes": {
+    "fields/tunnel/blast-vibration": [
+      { "grade": "A", "docId": "KDS-11-10-15", "cite": "§4.1.5", "label": "발파진동 (선택 항목)" },
+      { "grade": "D", "docId": "KCS-11-10-15", "cite": "—", "label": "환경·진동 기준·발주처 지침" }
+    ],
+    "fields/bridge/temperature": [
+      { "grade": "B", "docId": "KCS-24-99-05", "cite": "§3.2", "label": "온도 계측" }
+    ],
+    "fields/bridge/seismic": [
+      { "grade": "B", "docId": "KCS-24-99-05", "cite": "§3.2", "label": "지진 응답 계측" }
+    ],
+    "fields/bridge/expansion-joint": [
+      { "grade": "B", "docId": "KCS-24-99-05", "cite": "§3.1", "label": "신축이음량" }
+    ],
+    "fields/bridge/strain-stress": [
+      { "grade": "B", "docId": "KCS-24-99-05", "cite": "§3.2", "label": "변형률·응력 계측" }
+    ],
+    "fields/bridge/deflection": [
+      { "grade": "B", "docId": "KCS-24-99-05", "cite": "§3.2", "label": "처짐 계측" },
+      { "grade": "B", "docId": "KDS-11-10-15", "cite": "§4.2.1.6", "label": "교량 정·동적 처짐" }
+    ],
+    "fields/bridge/cable-tension": [
+      { "grade": "B", "docId": "KCS-24-99-05", "cite": "§3.2", "label": "케이블 장력" },
+      { "grade": "B", "docId": "KDS-11-10-15", "cite": "§4.2.1.9", "label": "주파수·케이블 장력" },
+      { "grade": "D", "docId": "KCS-24-99-05", "cite": "—", "label": "대구 3호선 유지관리 실무" }
+    ],
+    "fields/bridge/wind": [
+      { "grade": "B", "docId": "KCS-24-99-05", "cite": "§3.2", "label": "풍하중·동적 계측" },
+      { "grade": "D", "docId": "KCS-24-99-05", "cite": "—", "label": "대구 3호선 풍향풍속 사례" }
+    ],
+    "fields/bridge/bearing-displacement": [
+      { "grade": "B", "docId": "KCS-24-99-05", "cite": "§3.2", "label": "받침부 변위" }
+    ],
+    "sensors/deflection-gauge": [
+      { "grade": "B", "docId": "KDS-11-10-15", "cite": "§4.2.1.6", "label": "처짐계·변위변환기" }
+    ],
+    "sensors/cable-tension-meter": [
+      { "grade": "B", "docId": "KDS-11-10-15", "cite": "§4.2.1.9", "label": "케이블 장력 측정" }
+    ],
+    "sensors/stress-free-strain-gauge": [
+      { "grade": "D", "docId": "KCS-24-99-05", "cite": "—", "label": "무응력계·크리프 보정" }
+    ],
+    "fields/dam/temperature": [
+      { "grade": "B", "docId": "KCS-54-20-25", "cite": "§3.2", "label": "온도 계측" }
+    ],
+    "fields/dam/seismic": [
+      { "grade": "B", "docId": "KCS-54-20-25", "cite": "§3.2", "label": "지진 계측" }
+    ],
+    "fields/dam/strain": [
+      { "grade": "B", "docId": "KCS-54-20-25", "cite": "§3.2", "label": "변형률 계측" }
+    ],
+    "fields/dam/tilt": [
+      { "grade": "B", "docId": "KCS-54-20-25", "cite": "§3.2", "label": "기울기 계측" }
+    ],
+    "fields/dam/leakage": [
+      { "grade": "B", "docId": "KCS-54-20-25", "cite": "§3.2", "label": "유량·누수 계측" }
+    ],
+    "fields/building/deflection": [
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.9.1.1", "label": "처짐 계측" }
+    ],
+    "fields/building/column-shortening": [
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.9", "label": "기둥 축소량" }
+    ],
+    "instruments/modes/manual": [
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "표 3.5-1", "label": "수동계측 빈도" }
+    ],
+    "instruments/modes/automatic": [
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.2", "label": "자동계측 전환" }
+    ],
+    "instruments/modes/remote-automatic": [
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.1.2", "label": "원격 전송·시스템 구축" }
+    ],
+    "instruments/modes/smart": [
+      { "grade": "D", "docId": "KCS-11-10-15", "cite": "§3.2.4", "label": "알람·경보 운영 (기준 연계)" }
+    ],
+    "instruments/modes/ai": [
+      { "grade": "E", "docId": "KDS-11-10-15", "cite": "—", "label": "일반 관행 — 기준 보조·예측 분석" }
+    ],
+    "instruments/data-management": [
+      { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.2.4", "label": "보고·경보·데이터 운영" },
+      { "grade": "D", "docId": "KCS-11-10-15", "cite": "—", "label": "발주처·계측관리계획서 보고 요건" }
+    ]
+  },
+  "prefixDefaults": [
+    {
+      "prefix": "sensors/",
+      "sources": [
+        { "grade": "A", "docId": "KDS-11-10-15", "cite": "표 4.1-1", "label": "계측기 분류·용도" },
+        { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.2", "label": "센서·데이터로거 선정" }
+      ]
+    },
+    {
+      "prefix": "instruments/datalogger/",
+      "sources": [
+        { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.2.1", "label": "데이터로거 선정" },
+        { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.2.3", "label": "온도 범위" }
+      ]
+    },
+    {
+      "prefix": "instruments/communication/",
+      "sources": [
+        { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.1.2", "label": "계측시스템·원격 전송" },
+        { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.2.4", "label": "알람경보 전송" }
+      ]
+    },
+    {
+      "prefix": "instruments/power/",
+      "sources": [
+        { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3.1.2", "label": "전력 공급 계획" },
+        { "grade": "D", "docId": "KCS-11-10-15", "cite": "—", "label": "현장 전원·설계 시방" }
+      ]
+    },
+    {
+      "prefix": "instruments/modes/",
+      "sources": [
+        { "grade": "B", "docId": "KCS-11-10-15", "cite": "§3", "label": "계측 방식·빈도" },
+        { "grade": "A", "docId": "KDS-11-10-15", "cite": "§1.3", "label": "관리 용어·기준" }
+      ]
+    }
+  ]
+}

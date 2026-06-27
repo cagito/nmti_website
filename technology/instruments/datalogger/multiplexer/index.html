@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="멀티플렉서의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta property="og:title" content="멀티플렉서 | 건설 계측 기술 자료 | NMTI">
+  <meta property="og:description" content="멀티플렉서의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.nmti.co.kr/homepage/technology/instruments/datalogger/multiplexer/">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="https://www.nmti.co.kr/homepage/assets/images/technology/IMG-077_멀티플렉서-구성도_체인센서순차스캔.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="멀티플렉서 | 건설 계측 기술 자료 | NMTI">
+  <meta name="twitter:description" content="멀티플렉서의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta name="twitter:image" content="https://www.nmti.co.kr/homepage/assets/images/technology/IMG-077_멀티플렉서-구성도_체인센서순차스캔.webp">
+  <link rel="canonical" href="https://www.nmti.co.kr/homepage/technology/instruments/datalogger/multiplexer/">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.nmti.co.kr/homepage/sitemap.xml">
+  <title>멀티플렉서 | 건설 계측 기술 자료 | NMTI</title>
+  <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="/homepage/css/style.css?v=46">
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">
+  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://www.nmti.co.kr/homepage/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "건설 계측 기술 자료",
+          "item": "https://www.nmti.co.kr/homepage/technology/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "계측 시스템"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "데이터 로거",
+          "item": "https://www.nmti.co.kr/homepage/technology/instruments/datalogger/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "멀티플렉서",
+          "item": "https://www.nmti.co.kr/homepage/technology/instruments/datalogger/multiplexer/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "headline": "멀티플렉서",
+      "description": "멀티플렉서의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
+      "inLanguage": "ko-KR",
+      "dateModified": "2026-06-27",
+      "mainEntityOfPage": "https://www.nmti.co.kr/homepage/technology/instruments/datalogger/multiplexer/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "(주)신계측기술정보",
+        "url": "https://www.nmti.co.kr/homepage/"
+      },
+      "image": "https://www.nmti.co.kr/homepage/assets/images/technology/IMG-077_멀티플렉서-구성도_체인센서순차스캔.webp",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "KCS 11 10 15:2025 시공 중 지반계측 §3.2.1",
+          "publisher": {
+            "@type": "Organization",
+            "name": "국가건설기준센터(KCSC)"
+          },
+          "url": "https://www.kcsc.re.kr"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "KCS 11 10 15:2025 시공 중 지반계측 §3.2.3",
+          "publisher": {
+            "@type": "Organization",
+            "name": "국가건설기준센터(KCSC)"
+          },
+          "url": "https://www.kcsc.re.kr"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.nmti.co.kr/homepage/technology/instruments/datalogger/multiplexer/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "MUX 없이 지중경사계?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "소자 수가 로거 채널 이내이면 직결 가능하나, 심도 10m 이상 체인은 MUX가 일반적입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "동적 DAQ에 MUX?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "고속 동시 샘플링이 목적이면 MUX 순차 스캔은 부적합합니다. 동적은 전용 다채널 입력 모듈을 사용합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "대표 제품?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "정적 로거·MUX 조합은 제조사별 배선 가이드를 따릅니다. 본 Figure는 특정 브랜드가 아닌 범용 산업용 외형을 사용합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "스캔 지연은?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MUX 순차 읽기로 한 주기가 길어질 수 있습니다. 채널당 유효 주기가 목표 빈도를 만족하는지 검증합니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">본문 바로가기</a>
+  <main id="main" class="tech-seo">
+    <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://www.nmti.co.kr/homepage/">홈</a><span aria-hidden="true"> / </span><a href="https://www.nmti.co.kr/homepage/technology/">건설 계측 기술 자료</a><span aria-hidden="true"> / </span><span>계측 시스템</span><span aria-hidden="true"> / </span><a href="https://www.nmti.co.kr/homepage/technology/instruments/datalogger/">데이터 로거</a><span aria-hidden="true"> / </span><span aria-current="page">멀티플렉서</span></nav>
+    <h1>멀티플렉서</h1>
+    <p class="lead">멀티플렉서의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.</p>
+    <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-077_멀티플렉서-구성도_체인센서순차스캔.webp" alt="멀티플렉서(MUX) 구성도 - 체인 센서·순차 스캔·정적 로거 채널 확장" width="1200" height="675" loading="lazy" decoding="async"><figcaption>MUX — 지중경사·VW 체인 → 순차 스캔 → 정적 로거</figcaption></figure>
+    <section><h2>개요</h2><p><strong>멀티플렉서(MUX)</strong>는 정적 데이터로거의 제한된 아날로그 입력을 확장해, 다수 센서 신호를 <strong>순차 스캔</strong>으로 로거에 전달하는 장치입니다. <strong>지중경사계</strong> 깊이별 소자·VW <strong>간극수압계</strong>·다점 변위 센서처럼 채널 수가 많은 체인형 센서에 필수적입니다.</p><p>센서 체인 → MUX → 데이터로거 순으로 연결하며, 로거가 MUX 채널을 제어해 한 번에 하나(또는 소수)의 센서를 읽습니다. 본 페이지 Figure(IMG-077)처럼 체인형 센서 종단이 MUX를 거쳐 로거로 수렴하는 토폴로지가 표준입니다.</p></section>
+    <section><h2>측정 원리</h2><p>MUX는 아날로그 스위치 배열로 공용 Excitation·Sense 라인을 센서마다 전환합니다. 로거 프로그램에서 채널 목록·안정화 시간(settling time)·Excitation 시간을 설정합니다. 스캔 주기 = (채널 수 × 채널당 읽기 시간)이므로, 깊이 30m 지중경사계(30소자)는 MUX 지연이 전체 주기를 좌우합니다.</p><p>배선은 <strong>체인(직렬)</strong> 토폴로지가 일반적이며, 중앙 허브에서 별도 방사형 배선은 피합니다. MUX·로거·센서 Excitation 전압·케이블 저항·접지 루프를 함께 점검합니다.</p></section>
+    <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.1 — 데이터로거 선정 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.3 — 온도 범위 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
+    <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#instruments/datalogger/multiplexer">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
+  </main>
+  <script type="module">
+    import { initFigureLightbox } from "/homepage/js/technology/figure-lightbox.js";
+    import { initImageProtection } from "/homepage/js/image-protection.js";
+    const main = document.getElementById("main");
+    initFigureLightbox(main);
+    initImageProtection(main);
+  </script>
+</body>
+</html>

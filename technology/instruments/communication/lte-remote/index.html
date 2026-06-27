@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="LTE M2M의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta property="og:title" content="LTE M2M | 건설 계측 기술 자료 | NMTI">
+  <meta property="og:description" content="LTE M2M의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.nmti.co.kr/homepage/technology/instruments/communication/lte-remote/">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="https://www.nmti.co.kr/homepage/assets/images/technology/IMG-048_LTE-M2M-통신-구성도_센서로거모뎀서버웹모바일.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LTE M2M | 건설 계측 기술 자료 | NMTI">
+  <meta name="twitter:description" content="LTE M2M의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta name="twitter:image" content="https://www.nmti.co.kr/homepage/assets/images/technology/IMG-048_LTE-M2M-통신-구성도_센서로거모뎀서버웹모바일.webp">
+  <link rel="canonical" href="https://www.nmti.co.kr/homepage/technology/instruments/communication/lte-remote/">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.nmti.co.kr/homepage/sitemap.xml">
+  <title>LTE M2M | 건설 계측 기술 자료 | NMTI</title>
+  <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="/homepage/css/style.css?v=46">
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">
+  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://www.nmti.co.kr/homepage/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "건설 계측 기술 자료",
+          "item": "https://www.nmti.co.kr/homepage/technology/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "계측 시스템"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "통신·전송",
+          "item": "https://www.nmti.co.kr/homepage/technology/instruments/communication/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "LTE M2M",
+          "item": "https://www.nmti.co.kr/homepage/technology/instruments/communication/lte-remote/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "headline": "LTE M2M",
+      "description": "LTE M2M의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
+      "inLanguage": "ko-KR",
+      "dateModified": "2026-06-27",
+      "mainEntityOfPage": "https://www.nmti.co.kr/homepage/technology/instruments/communication/lte-remote/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "(주)신계측기술정보",
+        "url": "https://www.nmti.co.kr/homepage/"
+      },
+      "image": "https://www.nmti.co.kr/homepage/assets/images/technology/IMG-048_LTE-M2M-통신-구성도_센서로거모뎀서버웹모바일.webp",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "KCS 11 10 15:2025 시공 중 지반계측 §3.1.2",
+          "publisher": {
+            "@type": "Organization",
+            "name": "국가건설기준센터(KCSC)"
+          },
+          "url": "https://www.kcsc.re.kr"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "KCS 11 10 15:2025 시공 중 지반계측 §3.2.4",
+          "publisher": {
+            "@type": "Organization",
+            "name": "국가건설기준센터(KCSC)"
+          },
+          "url": "https://www.kcsc.re.kr"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.nmti.co.kr/homepage/technology/instruments/communication/lte-remote/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "LTE M2M과 IoT 게이트웨이 차이는?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "게이트웨이는 다로거 집계·프로토콜 변환, LTE M2M 모뎀 은 셀룰러 송신 장치입니다. 규모에 따라 게이트웨이→모뎀 또는 로거→모뎀 직결을 선택합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5G가 필요한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "대부분 계측은 LTE Cat-M·NB-IoT·일반 LTE M2M으로 충분합니다. 초고빈도·대용량 영상은 별도 검토합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "터널 내부는?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "막장 근처·통신구·중계 안테나·광케이블 혼용 등 현장별 대안이 필요합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SIM 다중화?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "가용성 향상을 위해 이중 SIM·통신사 분산을 검토합니다. 링크 다운 시 로컬 버퍼가 필수입니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">본문 바로가기</a>
+  <main id="main" class="tech-seo">
+    <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://www.nmti.co.kr/homepage/">홈</a><span aria-hidden="true"> / </span><a href="https://www.nmti.co.kr/homepage/technology/">건설 계측 기술 자료</a><span aria-hidden="true"> / </span><span>계측 시스템</span><span aria-hidden="true"> / </span><a href="https://www.nmti.co.kr/homepage/technology/instruments/communication/">통신·전송</a><span aria-hidden="true"> / </span><span aria-current="page">LTE M2M</span></nav>
+    <h1>LTE M2M</h1>
+    <p class="lead">LTE M2M의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.</p>
+    <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-048_LTE-M2M-통신-구성도_센서로거모뎀서버웹모바일.webp" alt="LTE M2M 통신 구성도 - LTE M2M — 로컬 버퍼·재전송·APN·ACK (Phase AD)" width="1200" height="675" loading="lazy" decoding="async"><figcaption>LTE M2M 통신 구성도 — 로거·모뎀·망·서버·클라이언트</figcaption></figure>
+    <section><h2>개요</h2><p><strong>LTE M2M</strong>은 현장 데이터로거·IoT 게이트웨이에 연결된 <strong>LTE M2M 모뎀</strong>을 통해 계측 데이터를 이동통신망(M2M 전용 SIM·Cat-M/NB-IoT 등)으로 중앙 서버·클라우드에 전송하는 구성입니다. 인프라가 제한된 터널·굴착·사면 현장에서 <strong>원격 자동계측</strong>의 핵심 통신 수단입니다.</p></section>
+    <section><h2>측정 원리</h2><p><strong>LTE M2M 모뎀</strong>과 외부 안테나로 IP 링크를 구성하고, 로거(RS-232/Ethernet) 또는 게이트웨이가 TCP/UDP·MQTT 등으로 서버에 접속합니다. 다수 로거는 게이트웨이 뒤단 1회선 M2M, 단일 로거는 모뎀 직결을 선택합니다. 신호 약화 구간은 외부 안테나·중계기를 검토합니다.</p></section>
+    <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.1.2 — 계측시스템·원격 전송 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.4 — 알람경보 전송 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
+    <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#instruments/communication/lte-remote">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
+  </main>
+  <script type="module">
+    import { initFigureLightbox } from "/homepage/js/technology/figure-lightbox.js";
+    import { initImageProtection } from "/homepage/js/image-protection.js";
+    const main = document.getElementById("main");
+    initFigureLightbox(main);
+    initImageProtection(main);
+  </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+import { readFileSync, readdirSync, existsSync, writeFileSync, statSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+import { atomicWriteUtf8 } from './lib/atomic-write.mjs';
+import { runLocked } from './lib/run-locked.mjs';
+
+const NO_LOCK = process.argv.includes('--no-lock');
+
+function generateImageAssets() {
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const root = join(__dirname, '..');
+const imgDir = join(root, 'assets', 'images', 'technology');
+const reviewedDir = join(imgDir, 'reviewed');
+const registryPath = join(root, 'scripts', 'image-review-registry.json');
+const masterPath = join(
+  root,
+  'ImageWorks',
+  'NMTI_Engineering_Image_Prompt_Package_v1',
+  '03_IMAGE_MASTER_LIST.json'
+);
+
+const masterList = JSON.parse(readFileSync(masterPath, 'utf8'));
+const metaById = new Map(masterList.map((item) => [item.id, item]));
+const registry = existsSync(registryPath)
+  ? JSON.parse(readFileSync(registryPath, 'utf8'))
+  : {};
+
+const canonicalPath = join(__dirname, 'canonical-image-png.json');
+const canonicalPng = existsSync(canonicalPath)
+  ? JSON.parse(readFileSync(canonicalPath, 'utf8'))
+  : {};
+
+function defaultCaption(item) {
+  return item.title + ' — ' + item.purpose;
+}
+
+function canonicalWebpName(id) {
+  const canonical = canonicalPng[id];
+  return canonical ? canonical.replace(/\.png$/i, '.webp') : `${id}.webp`;
+}
+
+function listWebpHits(id) {
+  const hits = [];
+  for (const dir of [reviewedDir, imgDir]) {
+    if (!existsSync(dir)) continue;
+    for (const file of readdirSync(dir)) {
+      if (!(file === `${id}.webp` || file.startsWith(id + '_')) || !file.endsWith('.webp')) {
+        continue;
+      }
+      const abs = join(dir, file);
+      hits.push({
+        file,
+        mtime: statSync(abs).mtimeMs,
+        rel:
+          dir === reviewedDir
+            ? 'assets/images/technology/reviewed/' + file
+            : 'assets/images/technology/' + file
+      });
+    }
+  }
+  return hits;
+}
+
+function findWebp(id) {
+  const hits = listWebpHits(id);
+  if (!hits.length) return null;
+
+  const preferred = canonicalPng[id] ? canonicalWebpName(id) : null;
+  if (preferred) {
+    const match = hits.find((h) => h.file === preferred);
+    if (match) return match.rel;
+    console.warn(`WARN ${id}: canonical WebP missing (${preferred})`);
+  }
+
+  if (hits.length === 1) return hits[0].rel;
+
+  hits.sort((a, b) => b.mtime - a.mtime);
+  console.warn(`WARN ${id}: multiple WebP (${hits.length}), using newest ${hits[0].file}`);
+  return hits[0].rel;
+}
+
+/** @type {Record<string, object>} */
+const assets = {};
+for (const item of masterList) {
+  const id = item.id;
+  const reg = registry[id] || {};
+  if (reg.status === 'rejected') continue;
+  const webpPath = findWebp(id);
+  if (!webpPath) continue;
+
+  const meta = metaById.get(id);
+  const alt = reg.alt || (meta ? meta.title + ' - ' + meta.purpose : id);
+  const caption = reg.caption || meta?.caption || (meta ? defaultCaption(meta) : id);
+  const title = reg.title || meta?.title || id;
+  const status = reg.status || 'pending';
+  const reviewGrade = reg.reviewGrade ?? null;
+  const reviewDoc = reg.reviewDoc || `docs/IMAGE_REVIEW_LOG.md#${id}`;
+  const prohibitedErrors = reg.prohibitedErrors || [];
+
+  const entry = {
+    title,
+    alt,
+    caption,
+    status,
+    reviewGrade,
+    reviewDoc,
+    prohibitedErrors,
+    wireframeReplace: reg.wireframeReplace === true,
+    requiresReaudit: reg.requiresReaudit === true,
+    productionMethod: reg.productionMethod || null,
+    webp: webpPath
+  };
+
+  assets[id] = entry;
+}
+
+function esc(str) {
+  if (str == null) return '';
+  return String(str).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+}
+
+function escArray(arr) {
+  if (!arr?.length) return '[]';
+  return (
+    '[\n' +
+    arr.map((s) => "      '" + esc(s) + "'").join(',\n') +
+    '\n    ]'
+  );
+}
+
+const assetLines = Object.entries(assets)
+  .map(function ([id, a]) {
+    const parts = [
+      "    title: '" + esc(a.title) + "'",
+      "    alt: '" + esc(a.alt) + "'",
+      "    caption: '" + esc(a.caption) + "'",
+      "    status: '" + esc(a.status) + "'",
+      '    reviewGrade: ' + (a.reviewGrade ? "'" + esc(a.reviewGrade) + "'" : 'null'),
+      "    reviewDoc: '" + esc(a.reviewDoc) + "'",
+      '    prohibitedErrors: ' + escArray(a.prohibitedErrors),
+      '    wireframeReplace: ' + (a.wireframeReplace ? 'true' : 'false'),
+      '    requiresReaudit: ' + (a.requiresReaudit ? 'true' : 'false'),
+      "    productionMethod: " + (a.productionMethod ? "'" + esc(a.productionMethod) + "'" : 'null')
+    ];
+    if (a.webp) parts.splice(1, 0, "    webp: '" + a.webp + "'");
+    return "  '" + id + "': {\n" + parts.join(',\n') + '\n  }';
+  })
+  .join(',\n');
+
+const defaultOg =
+  assets['IMG-058']?.webp ||
+  assets['IMG-001']?.webp ||
+  'assets/images/technology/IMG-001_가시설-계측-전체-개념도_굴착단면계측항목.webp';
+
+const out = `/** Auto-generated by scripts/generate-image-assets.mjs — do not edit by hand */
+export const IMAGE_ASSETS = {
+${assetLines}
+};
+
+const DEFAULT_OG = '${defaultOg}';
+const APPROVED_GRADES = new Set(['PASS', 'MINOR_FIX']);
+
+/** 운영 노출 허용 여부 — TECHNICAL_IMAGE_STANDARD.md */
+export function isImageApproved(asset) {
+  if (!asset) return false;
+  if (asset.wireframeReplace) return false;
+  if (asset.requiresReaudit) return false;
+  return asset.status === 'reviewed' && APPROVED_GRADES.has(asset.reviewGrade);
+}
+
+export function resolveImage(imageId, overrides) {
+  if (!imageId && overrides?.imageId) imageId = overrides.imageId;
+  const asset = imageId ? IMAGE_ASSETS[imageId] : null;
+  if (!asset) return null;
+  if (!isImageApproved(asset)) return null;
+  const primary = asset.webp;
+  const resolved = {
+    src: primary,
+    alt: asset.alt,
+    caption: asset.caption,
+    imageId: imageId,
+    title: asset.title,
+    status: asset.status,
+    reviewGrade: asset.reviewGrade,
+    reviewDoc: asset.reviewDoc
+  };
+  if (overrides?.caption) resolved.caption = overrides.caption;
+  if (overrides?.figureNo != null) resolved.figureNo = overrides.figureNo;
+  return resolved;
+}
+
+export function defaultOgImage() {
+  return DEFAULT_OG;
+}
+`;
+
+const outPath = join(root, 'js', 'technology', 'images.js');
+atomicWriteUtf8(outPath, out);
+console.log('Wrote', outPath, '(' + Object.keys(assets).length + ' images)');
+}
+
+if (NO_LOCK) {
+  generateImageAssets();
+} else {
+  runLocked('build', 'generate-image-assets', generateImageAssets);
+}

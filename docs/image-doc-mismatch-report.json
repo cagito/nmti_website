@@ -1,0 +1,20 @@
+{
+  "generated": "2026-06-27",
+  "total": 1,
+  "bySeverity": {
+    "mismatch": 0,
+    "review": 0,
+    "warn": 0,
+    "info": 1
+  },
+  "issues": [
+    {
+      "severity": "info",
+      "category": "히어로 공용",
+      "id": "IMG-064",
+      "node": "",
+      "message": "3개 노드 공용: fields/harbor, fields/harbor/quay-wall, fields/harbor/surrounding-ground",
+      "refs": []
+    }
+  ]
+}

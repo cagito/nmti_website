@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="배터리의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta property="og:title" content="배터리 | 건설 계측 기술 자료 | NMTI">
+  <meta property="og:description" content="배터리의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.nmti.co.kr/homepage/technology/instruments/power/battery/">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="https://www.nmti.co.kr/homepage/assets/images/technology/IMG-069_배터리-축전-시스템_용량종류모니터링.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="배터리 | 건설 계측 기술 자료 | NMTI">
+  <meta name="twitter:description" content="배터리의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.">
+  <meta name="twitter:image" content="https://www.nmti.co.kr/homepage/assets/images/technology/IMG-069_배터리-축전-시스템_용량종류모니터링.webp">
+  <link rel="canonical" href="https://www.nmti.co.kr/homepage/technology/instruments/power/battery/">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.nmti.co.kr/homepage/sitemap.xml">
+  <title>배터리 | 건설 계측 기술 자료 | NMTI</title>
+  <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="/homepage/css/style.css?v=46">
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">
+  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://www.nmti.co.kr/homepage/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "건설 계측 기술 자료",
+          "item": "https://www.nmti.co.kr/homepage/technology/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "계측 시스템"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "전원 구성",
+          "item": "https://www.nmti.co.kr/homepage/technology/instruments/power/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "배터리",
+          "item": "https://www.nmti.co.kr/homepage/technology/instruments/power/battery/"
+        }
+      ]
+    },
+    {
+      "@type": "TechArticle",
+      "headline": "배터리",
+      "description": "배터리의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
+      "inLanguage": "ko-KR",
+      "dateModified": "2026-06-27",
+      "mainEntityOfPage": "https://www.nmti.co.kr/homepage/technology/instruments/power/battery/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "(주)신계측기술정보",
+        "url": "https://www.nmti.co.kr/homepage/"
+      },
+      "image": "https://www.nmti.co.kr/homepage/assets/images/technology/IMG-069_배터리-축전-시스템_용량종류모니터링.webp",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "KCS 11 10 15:2025 시공 중 지반계측 §3.1.2",
+          "publisher": {
+            "@type": "Organization",
+            "name": "국가건설기준센터(KCSC)"
+          },
+          "url": "https://www.kcsc.re.kr"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.nmti.co.kr/homepage/technology/instruments/power/battery/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "시가전 vs LiFePO₄?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "부하·자립·온도·비용을 비교해 선정합니다. 리튬은 BMS 필수입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "몇 일 자립?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "계획서·기상·통신 중요도에 따라 3~7일 이상을 검토합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "DoD란?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "방전 깊이(Depth of Discharge)입니다. 과방전을 줄이려면 제어기 하한·Ah 여유를 설계합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "온도 영향?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "저온·고온에서 용량·수명이 변합니다. 함체 환기·보온과 BMS(리튬)를 검토합니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">본문 바로가기</a>
+  <main id="main" class="tech-seo">
+    <nav class="breadcrumb" aria-label="breadcrumb"><a href="https://www.nmti.co.kr/homepage/">홈</a><span aria-hidden="true"> / </span><a href="https://www.nmti.co.kr/homepage/technology/">건설 계측 기술 자료</a><span aria-hidden="true"> / </span><span>계측 시스템</span><span aria-hidden="true"> / </span><a href="https://www.nmti.co.kr/homepage/technology/instruments/power/">전원 구성</a><span aria-hidden="true"> / </span><span aria-current="page">배터리</span></nav>
+    <h1>배터리</h1>
+    <p class="lead">배터리의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.</p>
+    <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-069_배터리-축전-시스템_용량종류모니터링.webp" alt="배터리·축전 시스템 - 용량·종류·DoD·모니터링" width="1200" height="675" loading="lazy" decoding="async"><figcaption>배터리·축전 시스템 — AGM·LiFePO₄·용량 산정</figcaption></figure>
+    <section><h2>개요</h2><p><strong>배터리</strong>는 태양광·풍력·AC 정류 간 전원 변동을 흡수하고, 야간·흐림·통신 피크 시 데이터로거·모뎀에 전력을 공급하는 축전 장치입니다. 납축 AGM/Gel과 LiFePO₄가 현장에서 널리 쓰입니다.</p></section>
+    <section><h2>측정 원리</h2><p>용량(Ah) ≈ (자립 일수 × 일일 소비 Ah) ÷ 허용 DoD. 동절기·장기 흐림을 반영해 1.3~1.5배 여유를 둡니다. BMS·충전제어기가 과충전·과방전·역극성을 보호하며, LiFePO₄는 사이클·경량·저온 정책이 기종별로 다릅니다.</p></section>
+    <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.1.2 — 전력 공급 계획 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 — 현장 전원·설계 시방 <span class="tech-sources__grade">[D]</span> <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
+    <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#instruments/power/battery">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
+  </main>
+  <script type="module">
+    import { initFigureLightbox } from "/homepage/js/technology/figure-lightbox.js";
+    import { initImageProtection } from "/homepage/js/image-protection.js";
+    const main = document.getElementById("main");
+    initFigureLightbox(main);
+    initImageProtection(main);
+  </script>
+</body>
+</html>

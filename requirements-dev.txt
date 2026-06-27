@@ -1,0 +1,2 @@
+# Optional dev dependencies for SVG figure pipeline
+cairosvg>=2.7.0

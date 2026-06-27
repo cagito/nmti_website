@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/sensors/inclinometer/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.92</priority>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/retaining-excavation/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-001_가시설-계측-전체-개념도_굴착단면계측항목.webp</image:loc>
+      <image:title>가시설·흙막이</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/retaining-excavation/earth-retaining-wall/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.94</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-002_흙막이-계측-설치-대표-단면도.webp</image:loc>
+      <image:title>흙막이 벽체</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/retaining-excavation/strut/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-003_버팀보-하중계-설치-개념도_띠장접합부축압축.webp</image:loc>
+      <image:title>버팀보</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/retaining-excavation/anchor/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-004_어스앵커-하중계-설치-개념도_앵커두부정착구.webp</image:loc>
+      <image:title>어스앵커</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/retaining-excavation/adjacent-building/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-005_주변건물-균열-경사-계측도_굴착주변건물배치.webp</image:loc>
+      <image:title>주변건물</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/retaining-excavation/surrounding-ground/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-096_주변지반-계측-설치-대표-단면도_굴착영향권복합.webp</image:loc>
+      <image:title>주변지반</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-007_터널-계측-전체-개념도_NATM단면주요계측항목.webp</image:loc>
+      <image:title>터널</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/surface-subsidence/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-010_터널-지표침하-계측도_침하계자동광파기배치.webp</image:loc>
+      <image:title>지표·지중침하</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/crown-settlement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-061_천단침하계-외부-수준점-계측-개념도.webp</image:loc>
+      <image:title>천단침하</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/convergence/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-008_터널-전단면-내공변위-측정시스템_상부아치내공변위.webp</image:loc>
+      <image:title>내공변위</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/ground-displacement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-025_지중경사계-시스템-구성도_ProbeCableReadoutCasing.webp</image:loc>
+      <image:title>지중변위</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/face-advance/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-063_막장전방-선행변위-계측-개념도_막장전방지반.webp</image:loc>
+      <image:title>막장전방 선행변위</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/rockbolt/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-078_록볼트-축력-계측-개념도_축력계변형률계.webp</image:loc>
+      <image:title>록볼트 축력</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/shotcrete/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-079_숏크리트-응력-변형-계측-개념도_변형률계매립.webp</image:loc>
+      <image:title>숏크리트</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/blast-vibration/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-097_터널-발파진동-영향권-계측-개념도_PPV측점배치.webp</image:loc>
+      <image:title>발파진동·영향권</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/steel-support/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-080_강지보-응력-계측-개념도_스틸세트변형률계.webp</image:loc>
+      <image:title>강지보 응력</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/tunnel/construction-phase/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-111_external.webp</image:loc>
+      <image:title>건설기간 계측</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-011_교량-계측-전체-개념도_상부구조교각교대기초.webp</image:loc>
+      <image:title>교량</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/pier/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-012_교각-변위-경사-계측도_상하부경사계변위계.webp</image:loc>
+      <image:title>교각</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/abutment/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-038_구조물-경사계-설치도_벽체교각표면.webp</image:loc>
+      <image:title>교대</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/foundation-settlement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-013_교량-기초-침하-계측도_침하계수위계변위계.webp</image:loc>
+      <image:title>기초침하</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/strain-stress/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-107_교량-변형률-응력-계측도_PSC강재휨응력.webp</image:loc>
+      <image:title>변형률·응력</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/deflection/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-103_교량-상부구조-처짐-계측도_거더처짐계δ.webp</image:loc>
+      <image:title>처짐</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/expansion-joint/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-014_교량-신축이음부-신축량-계측도_신축이음계핑거형.webp</image:loc>
+      <image:title>신축이음량</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/cable-tension/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-105_교량-케이블장력-계측도_사장교주파수법.webp</image:loc>
+      <image:title>케이블 장력</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/bearing-displacement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-110_교량-받침부-변위-계측도_슬라이드회전.webp</image:loc>
+      <image:title>받침부 변위</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/wind/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-109_교량-풍향풍속-계측도_주탑교면.webp</image:loc>
+      <image:title>풍하중</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/vibration/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-086_교량-진동-계측-개념도_가속도계통행응답.webp</image:loc>
+      <image:title>진동</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/temperature/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-088_구조물-온도-계측-개념도_온도계수화열계절.webp</image:loc>
+      <image:title>온도</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/bridge/seismic/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-087_구조물-지진-계측-개념도_강진동응답스펙트럼.webp</image:loc>
+      <image:title>지진</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/slope/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-015_사면-계측-전체-개념도_활동면지중경사계지하수위계.webp</image:loc>
+      <image:title>사면</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/slope/ground-displacement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-015_사면-계측-전체-개념도_활동면지중경사계지하수위계.webp</image:loc>
+      <image:title>지중변위</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/slope/surface-tilt/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-089_사면-지표경사-계측-개념도_지표경사계pad콘크리트.webp</image:loc>
+      <image:title>지표경사</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/slope/structural-displacement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-090_사면-구조물-변위-계측-개념도_옹벽프리즘ATS.webp</image:loc>
+      <image:title>구조물 변위</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/slope/groundwater/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-015_사면-계측-전체-개념도_활동면지중경사계지하수위계.webp</image:loc>
+      <image:title>지하수위</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/slope/slip-surface/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-016_원호활동면-계측-해석도_원호파괴지중경사계프로파일.webp</image:loc>
+      <image:title>활동면</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/slope/rainfall/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-018_강우-지하수위-변위-상관도_강우후수위상승변위증가.webp</image:loc>
+      <image:title>강우</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/slope/drainage/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-015_사면-계측-전체-개념도_활동면지중경사계지하수위계.webp</image:loc>
+      <image:title>배수시설</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/soft-ground/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-019_연약지반-계측-전체-개념도_성토침하간극수압측방유동.webp</image:loc>
+      <image:title>연약 지반</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/soft-ground/settlement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-020_압밀-침하-계측-개념도_시간침하간극수압소산.webp</image:loc>
+      <image:title>침하</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/soft-ground/layer-settlement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-019_연약지반-계측-전체-개념도_성토침하간극수압측방유동.webp</image:loc>
+      <image:title>층별침하</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/soft-ground/pore-pressure/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-019_연약지반-계측-전체-개념도_성토침하간극수압측방유동.webp</image:loc>
+      <image:title>간극수압</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/soft-ground/lateral-flow/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-021_측방유동-계측도_연약층측방변위경사계.webp</image:loc>
+      <image:title>측방유동</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/structural-safety/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-022_구조물-안전계측-전체-개념도_균열경사진동변위.webp</image:loc>
+      <image:title>구조물 안전</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/structural-safety/crack/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-022_구조물-안전계측-전체-개념도_균열경사진동변위.webp</image:loc>
+      <image:title>균열</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/structural-safety/tilt/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-022_구조물-안전계측-전체-개념도_균열경사진동변위.webp</image:loc>
+      <image:title>경사</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/structural-safety/displacement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-022_구조물-안전계측-전체-개념도_균열경사진동변위.webp</image:loc>
+      <image:title>변위</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/structural-safety/vibration/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-022_구조물-안전계측-전체-개념도_균열경사진동변위.webp</image:loc>
+      <image:title>진동</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/railway/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-023_철도-노반-계측-개념도_침하진동변위계측.webp</image:loc>
+      <image:title>철도</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/railway/track-settlement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-023_철도-노반-계측-개념도_침하진동변위계측.webp</image:loc>
+      <image:title>노반침하</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/railway/track-displacement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-023_철도-노반-계측-개념도_침하진동변위계측.webp</image:loc>
+      <image:title>궤도변위</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/railway/adjacent-construction/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-023_철도-노반-계측-개념도_침하진동변위계측.webp</image:loc>
+      <image:title>인접공사 영향</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/railway/construction-phase/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-112_external.webp</image:loc>
+      <image:title>건설기간 계측</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-024_댐-안전관리-계측-체계도_필댐6항목데이터흐름.webp</image:loc>
+      <image:title>댐·제방</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/leakage/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-024_댐-안전관리-계측-체계도_필댐6항목데이터흐름.webp</image:loc>
+      <image:title>침투·누수</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/pore-pressure/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-024_댐-안전관리-계측-체계도_필댐6항목데이터흐름.webp</image:loc>
+      <image:title>수위·수압</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/settlement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-024_댐-안전관리-계측-체계도_필댐6항목데이터흐름.webp</image:loc>
+      <image:title>침하</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/displacement/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-024_댐-안전관리-계측-체계도_필댐6항목데이터흐름.webp</image:loc>
+      <image:title>변위</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/strain/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-083_댐-변형률-계측-개념도_제체매립SG.webp</image:loc>
+      <image:title>응력·변형률</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/tilt/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-033_층별침하계-개념도_자석링기준관층별침하.webp</image:loc>
+      <image:title>기울기</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/temperature/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-088_구조물-온도-계측-개념도_온도계수화열계절.webp</image:loc>
+      <image:title>온도</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/seismic/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-087_구조물-지진-계측-개념도_강진동응답스펙트럼.webp</image:loc>
+      <image:title>지진</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/river-levee/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-024_댐-안전관리-계측-체계도_필댐6항목데이터흐름.webp</image:loc>
+      <image:title>하천제방</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/dam/construction-phase/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-113_external.webp</image:loc>
+      <image:title>건설기간 계측</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/harbor/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-064_항만-호안-계측-전체-개념도_케이슨옹벽주변지반.webp</image:loc>
+      <image:title>항만·해안</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/harbor/structure/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-084_항만구조물-변위-계측-개념도_케이슨안벽변위계.webp</image:loc>
+      <image:title>항만구조물</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/harbor/quay-wall/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-064_항만-호안-계측-전체-개념도_케이슨옹벽주변지반.webp</image:loc>
+      <image:title>안벽</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/harbor/caisson/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-084_항만구조물-변위-계측-개념도_케이슨안벽변위계.webp</image:loc>
+      <image:title>케이슨</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/harbor/surrounding-ground/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-064_항만-호안-계측-전체-개념도_케이슨옹벽주변지반.webp</image:loc>
+      <image:title>주변지반</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/harbor/tide-groundwater/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-098_항만-호안-조위지하수-계측-개념도_외해사석매립지하수위.webp</image:loc>
+      <image:title>조위·지하수</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/building/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-100_건축공사-계측-전체-개념도_KCS39처짐축소균열.webp</image:loc>
+      <image:title>건축·인접 구조물</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/building/deflection/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-099_건축-구조물-처짐-계측-개념도_RC골조LVDT처짐그래프.webp</image:loc>
+      <image:title>처짐</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/building/column-shortening/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-081_기둥-축소량-계측-개념도_수직변형률계.webp</image:loc>
+      <image:title>기둥 축소량</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/building/crack/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-037_균열계-설치-개념도_균열양측앵커변위측정.webp</image:loc>
+      <image:title>균열</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/building/adjacent-building/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-101_건축공사-주변건물-계측-개념도_신축인접균열경사ATS.webp</image:loc>
+      <image:title>주변건물</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/building/stress-strain/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-082_건축-응력변형률-계측-개념도_중대부재하중계.webp</image:loc>
+      <image:title>응력·변형률</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/foundation-pile/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-092_말뚝-축력-변형률-지중-단면도_CIP철근망변형률계.webp</image:loc>
+      <image:title>기초·말뚝</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/foundation-pile/cast-in-place-pile/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-092_말뚝-축력-변형률-지중-단면도_CIP철근망변형률계.webp</image:loc>
+      <image:title>현장타설말뚝</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/foundation-pile/precast-pile/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-092_말뚝-축력-변형률-지중-단면도_CIP철근망변형률계.webp</image:loc>
+      <image:title>기성말뚝</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/environmental-impact/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-093_환경-소음-분진-경계-계측주_펜스소음PM로거.webp</image:loc>
+      <image:title>환경·민원</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/environmental-impact/noise-level/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-093_환경-소음-분진-경계-계측주_펜스소음PM로거.webp</image:loc>
+      <image:title>소음</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/fields/environmental-impact/dust-concentration/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-093_환경-소음-분진-경계-계측주_펜스소음PM로거.webp</image:loc>
+      <image:title>분진</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/water-level-meter/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-030_지하수위계-설치-개념도_관측공수위센서케이블보호함.webp</image:loc>
+      <image:title>지하수위계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/piezometer/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-031_간극수압계-설치도_필터그라우트케이블.webp</image:loc>
+      <image:title>간극수압계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/settlement-gauge/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-032_침하판-침하계-설치-개념도_성토하부연장봉보호관.webp</image:loc>
+      <image:title>침하계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/layer-settlement-gauge/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-033_층별침하계-개념도_자석링기준관층별침하.webp</image:loc>
+      <image:title>층별침하계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/earth-pressure-cell/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-034_토압계-설치-개념도_흙막이배면성토부.webp</image:loc>
+      <image:title>토압계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/load-cell/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-035_하중계-설치-개념도_버팀보앵커하중전달.webp</image:loc>
+      <image:title>하중계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/strain-gauge/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-036_변형률계-설치-개념도_철근강재표면부착.webp</image:loc>
+      <image:title>변형률계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/stress-free-strain-gauge/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-108_무응력계-설치-개념도_크리프보정.webp</image:loc>
+      <image:title>무응력계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/crack-meter/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-037_균열계-설치-개념도_균열양측앵커변위측정.webp</image:loc>
+      <image:title>균열계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/tilt-meter/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-038_구조물-경사계-설치도_벽체교각표면.webp</image:loc>
+      <image:title>구조물경사계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/joint-meter/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-039_신축계-설치-개념도_이음부조인트상대변위.webp</image:loc>
+      <image:title>신축이음계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/cable-tension-meter/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-106_케이블장력계-주파수법-설치-개념도.webp</image:loc>
+      <image:title>케이블장력계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/borehole-extensometer/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-091_다점지중변위계-MPBX-설치-개념도_보링다점앵커.webp</image:loc>
+      <image:title>다점지중변위계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/displacement-transducer/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-040_변위계-설치-개념도_기준점대상점변위측정.webp</image:loc>
+      <image:title>변위계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/deflection-gauge/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-104_처짐계-설치-측정-개념도_LVDT와이어.webp</image:loc>
+      <image:title>처짐계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/vibration-meter/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-041_진동계-설치-개념도_구조물지반3축방향.webp</image:loc>
+      <image:title>진동계</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/automated-total-station/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-042_자동광파기-계측-개념도_TotalStation프리즘좌표변위.webp</image:loc>
+      <image:title>자동광파기</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/gnss/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-043_GNSS-변위-계측-개념도_기준국이동국서버연결.webp</image:loc>
+      <image:title>GNSS</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/weather-station/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-044_기상계측기-구성도_강우량풍향온습도기압.webp</image:loc>
+      <image:title>기상계측기</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/modes/overview/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-075_계측-방식-5단계-계층도_수동자동원격스마트AI.webp</image:loc>
+      <image:title>계측 방식 개요</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/modes/manual/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-070_수동-계측-개념도_현장방문리드아웃기록.webp</image:loc>
+      <image:title>수동 계측</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/modes/automatic/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-071_자동-계측-개념도_로거현장저장주기.webp</image:loc>
+      <image:title>자동 계측</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/modes/remote-automatic/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-072_원격-자동계측-개념도_현장통신서버모니터링.webp</image:loc>
+      <image:title>원격 자동계측</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/modes/smart/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-073_스마트-계측-개념도_플랫폼경보보고로그.webp</image:loc>
+      <image:title>스마트 계측</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/modes/ai/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-074_AI-계측-개념도_이상탐지예측HITL.webp</image:loc>
+      <image:title>AI 계측</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/modes/normal-mode/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-094_상시-계측-모드-흐름도_등간격트리거stabletrend.webp</image:loc>
+      <image:title>상시 계측 모드</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/modes/realtime-mode/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-095_실시간-이벤트-계측-모드-토폴로지_고속샘플링impulse.webp</image:loc>
+      <image:title>실시간·이벤트 계측</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/modes/alarm-status/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-102_경보-알림-상태-제어-흐름도_threshold경광SMS.webp</image:loc>
+      <image:title>경보·알림 상태</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/datalogger/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-045_데이터로거-구성도_센서입력전원통신저장.webp</image:loc>
+      <image:title>데이터 로거 개요</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/datalogger/static/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-045_데이터로거-구성도_센서입력전원통신저장.webp</image:loc>
+      <image:title>정적 데이터 로거</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/datalogger/dynamic/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-076_동적-데이터로거-구성도_모듈형DAQ고속샘플링.webp</image:loc>
+      <image:title>동적 데이터 로거</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/datalogger/multiplexer/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-077_멀티플렉서-구성도_체인센서순차스캔.webp</image:loc>
+      <image:title>멀티플렉서</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/communication/iot-gateway/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-046_IoT-게이트웨이-구성도_현장센서서버통신중계.webp</image:loc>
+      <image:title>IoT 게이트웨이</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/communication/lte-remote/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-048_LTE-M2M-통신-구성도_센서로거모뎀서버웹모바일.webp</image:loc>
+      <image:title>LTE M2M</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/power/overview/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-065_현장-계측-전원-통합-구성도_태양광풍력AC배터리.webp</image:loc>
+      <image:title>전원 개요</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/power/solar-power/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-047_태양광-전원-시스템-구성도_패널컨트롤러배터리로거.webp</image:loc>
+      <image:title>태양광 전원</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/power/ac-mains/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-066_상시-전원-AC-인입_배전반차단기정류.webp</image:loc>
+      <image:title>상시 전원</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/power/avr/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-067_AVR-자동전압조정기_입력출력안정화.webp</image:loc>
+      <image:title>AVR</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/power/wind-power/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-068_풍력-하이브리드-전원_태양광풍력배터리.webp</image:loc>
+      <image:title>풍력 발전</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/power/battery/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-069_배터리-축전-시스템_용량종류모니터링.webp</image:loc>
+      <image:title>배터리</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/sensors/remote-monitoring-system/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-058_통합-계측-플랫폼-아키텍처_센서로거서버DB웹모바일.webp</image:loc>
+      <image:title>원격 모니터링</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.nmti.co.kr/homepage/technology/instruments/data-management/</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://www.nmti.co.kr/homepage/assets/images/technology/IMG-056_웹-대시보드-구성도_지도센서목록그래프이벤트로그.webp</image:loc>
+      <image:title>데이터 관리</image:title>
+    </image:image>
+  </url>
+</urlset>

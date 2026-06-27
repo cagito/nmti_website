@@ -1,0 +1,35 @@
+---
+description: 최상위 — 에이전트·코드 SVG Figure 생성 금지 (기술자료 IMG-###)
+alwaysApply: true
+---
+
+# 에이전트·코드 SVG Figure 생성 금지 (필수)
+
+## 절대 규칙
+
+**기술자료 Figure(IMG-###)를 SVG로 그리지 않는다.**
+
+- Python/JS로 SVG XML 작성 금지 (`*_svg.py`, `<path>`·`<text>` 단면도)
+- `scripts/render-svg-figures.py` 실행·확장 금지
+- 「SVG 소스 → cairosvg → PNG」 파이프라인 신규·수정 금지
+- 사용자가 「SVG로 그려줘」 요청 시 — **거부** 후 PNG 절차 안내
+
+**이유:** 에이전트 SVG는 CAD·계측관리계획서 수준 품질·물리 정합·가독성을 안정적으로 충족하지 못함.
+
+상세: `docs/16-기술자료-이미지-에이전트-SVG-생성-금지.md` · `AGENTS.md`
+
+## 허용
+
+| 구분 | 허용 |
+|------|------|
+| 홈페이지 UI | `index.html` `<symbol>`·CSS 장식 SVG |
+| Figure 산출 | 인간 CAD·Illustrator, 또는 AI+§14 프롬프트+**인간 검수** → **PNG** |
+| 블록 다이어그램 | Pillow `render-p3` 등 (단면 CAD 아님) |
+| 레거시 | ~~`technology/svg/`~~ **삭제됨** — PNG만 |
+
+## Figure 재작업 시
+
+1. INSTRUMENTATION · `docs/14` §2 확인
+2. 인간 또는 검수 가능한 AI → PNG (≥1920×1080)
+3. `assets/images/technology/IMG-###_*.png` + `source/`
+4. `convert-technology-webp.py` → `generate-image-assets.mjs` → audit

@@ -1,0 +1,93 @@
+{
+  "$schema": "phase2-p2-heroes v1",
+  "description": "Phase 2 — P2 hero·터널·교량 (doc 31 §Phase 2). 외부 PNG(ai-reviewed/cad) 교체 대상.",
+  "source": "docs/31-NMTI-기술자료-Figure-출판품질-및-제작방식-통합-수정계획.md",
+  "heroes": [
+    {
+      "id": "IMG-004",
+      "tier": "FT-A",
+      "priority": 1,
+      "refs": ["docs/26-IMG-004-어스앵커-하중계-오류분석-및-재작업-계획.md"],
+      "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-004_어스앵커_하중계_설치_개념도.md"
+    },
+    {
+      "id": "IMG-005",
+      "tier": "FT-A",
+      "priority": 2,
+      "refs": ["docs/15-IMG-005-주변건물-균열경사-오류분석-및-재작업-계획.md", "docs/27-지표면-건물-안착-원칙.md"],
+      "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-005_주변건물_균열_경사_계측도.md"
+    },
+    {
+      "id": "IMG-078",
+      "tier": "FT-B",
+      "priority": 3,
+      "refs": ["docs/21-IMG-078-009-록볼트-축력-오류분석-및-재작업-계획.md"],
+      "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-078_록볼트_축력_계측_개념도.md"
+    },
+    {
+      "id": "IMG-079",
+      "tier": "FT-B",
+      "priority": 4,
+      "refs": ["docs/22-IMG-079-숏크리트-응력-변형-오류분석-및-재작업-계획.md"],
+      "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-079_숏크리트_응력_변형_계측_개념도.md"
+    },
+    {
+      "id": "IMG-097",
+      "tier": "FT-B",
+      "priority": 5,
+      "refs": ["docs/23-IMG-097-터널-발파진동-영향권-계측-오류분석-및-재작업-계획.md"],
+      "prompt": "ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-097_터널_발파진동_영향권_계측_개념도.md"
+    },
+    {
+      "id": "IMG-038",
+      "tier": "FT-A",
+      "priority": 6,
+      "refs": ["docs/INSTRUMENTATION_DRAWING_RULES.md §3.10"],
+      "prompt": null
+    },
+    {
+      "id": "IMG-042",
+      "tier": "FT-B",
+      "priority": 7,
+      "refs": ["docs/INSTRUMENTATION_DRAWING_RULES.md §3.13"],
+      "prompt": null
+    },
+    {
+      "id": "IMG-043",
+      "tier": "FT-B",
+      "priority": 8,
+      "refs": ["ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/07_GNSS_이미지_가이드.md"],
+      "prompt": null
+    },
+    {
+      "id": "IMG-061",
+      "tier": "FT-A",
+      "priority": 9,
+      "refs": ["docs/06-터널-히어로-및-콘텐츠-API.md"],
+      "prompt": null,
+      "note": "천단침하·외부 수준점 — IMG-008·010과 분리"
+    },
+    {
+      "id": "IMG-063",
+      "tier": "FT-A",
+      "priority": 10,
+      "refs": ["docs/06-터널-히어로-및-콘텐츠-API.md"],
+      "prompt": null,
+      "note": "막장전방 선행변위 hero"
+    },
+    {
+      "id": "IMG-085",
+      "tier": "FT-B",
+      "priority": 11,
+      "refs": ["docs/INSTRUMENTATION_DRAWING_RULES.md §3.23"],
+      "prompt": null
+    },
+    {
+      "id": "IMG-086",
+      "tier": "FT-B",
+      "priority": 12,
+      "refs": ["docs/INSTRUMENTATION_DRAWING_RULES.md §3.23"],
+      "prompt": null
+    }
+  ]
+}

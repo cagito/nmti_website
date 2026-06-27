@@ -1,0 +1,129 @@
+{
+  "generated": "2026-06-26",
+  "base": "https://www.nmti.co.kr",
+  "edge": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+  "total": 12,
+  "screenshots": 12,
+  "entries": [
+    {
+      "nodeId": "fields/bridge",
+      "imageId": "IMG-011",
+      "group": "bridge",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_bridge__IMG-011.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/bridge",
+      "verifiedAt": "2026-06-26T02:47:40.517Z"
+    },
+    {
+      "nodeId": "fields/bridge/pier",
+      "imageId": "IMG-012",
+      "group": "bridge",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_bridge_pier__IMG-012.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/bridge/pier",
+      "verifiedAt": "2026-06-26T02:47:42.573Z"
+    },
+    {
+      "nodeId": "fields/bridge/abutment",
+      "imageId": "IMG-038",
+      "group": "bridge",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_bridge_abutment__IMG-038.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/bridge/abutment",
+      "verifiedAt": "2026-06-26T02:47:44.537Z"
+    },
+    {
+      "nodeId": "fields/bridge/foundation-settlement",
+      "imageId": "IMG-013",
+      "group": "bridge",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_bridge_foundation-settlement__IMG-013.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/bridge/foundation-settlement",
+      "verifiedAt": "2026-06-26T02:47:46.034Z"
+    },
+    {
+      "nodeId": "fields/bridge/expansion-joint",
+      "imageId": "IMG-014",
+      "group": "bridge",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_bridge_expansion-joint__IMG-014.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/bridge/expansion-joint",
+      "verifiedAt": "2026-06-26T02:47:47.461Z"
+    },
+    {
+      "nodeId": "fields/bridge/vibration",
+      "imageId": "IMG-086",
+      "group": "bridge",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_bridge_vibration__IMG-086.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/bridge/vibration",
+      "verifiedAt": "2026-06-26T02:47:48.796Z"
+    },
+    {
+      "nodeId": "fields/bridge/temperature",
+      "imageId": "IMG-088",
+      "group": "bridge",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_bridge_temperature__IMG-088.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/bridge/temperature",
+      "verifiedAt": "2026-06-26T02:47:50.428Z"
+    },
+    {
+      "nodeId": "fields/bridge/seismic",
+      "imageId": "IMG-087",
+      "group": "bridge",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_bridge_seismic__IMG-087.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/bridge/seismic",
+      "verifiedAt": "2026-06-26T02:47:51.749Z"
+    },
+    {
+      "nodeId": "fields/bridge/deck-displacement",
+      "imageId": "IMG-085",
+      "group": "bridge",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_bridge_deck-displacement__IMG-085.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/bridge/deck-displacement",
+      "verifiedAt": "2026-06-26T02:47:53.101Z"
+    },
+    {
+      "nodeId": "fields/retaining-excavation",
+      "imageId": "IMG-001",
+      "group": "retaining",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_retaining-excavation__IMG-001.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/retaining-excavation",
+      "verifiedAt": "2026-06-26T02:47:54.620Z"
+    },
+    {
+      "nodeId": "fields/retaining-excavation/earth-retaining-wall",
+      "imageId": "IMG-002",
+      "group": "retaining",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_retaining-excavation_earth-retaining-wall__IMG-002.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/retaining-excavation/earth-retaining-wall",
+      "verifiedAt": "2026-06-26T02:47:56.107Z"
+    },
+    {
+      "nodeId": "fields/retaining-excavation/surrounding-ground",
+      "imageId": "IMG-096",
+      "group": "retaining",
+      "method": "edge-spa",
+      "screenshot": true,
+      "file": "fields_retaining-excavation_surrounding-ground__IMG-096.png",
+      "url": "https://www.nmti.co.kr/homepage/technology/#fields/retaining-excavation/surrounding-ground",
+      "verifiedAt": "2026-06-26T02:47:57.731Z"
+    }
+  ]
+}

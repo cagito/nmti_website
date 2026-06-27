@@ -1,0 +1,409 @@
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+          ㈜신계측기술정보 
+NEW MEASURING TECHNOLOGY INFORMATION CO., LTD. 
+
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+C / O / N / T / E / N / T / S 
+1.   회사연혁  BRIEF HISTORY                                                      
+2.   조직도  COMPANY SYSTEM                                                   
+3.   해외기술 협력업체  OVERSEAS COOPERATION                    
+4.   기술자보유현황  ENGINEERS RETENTION STATUS               
+5.   사업범위  OVERVIEW                                                             
+6. 주요실적  ACTUAL                        
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+회      사      명 ㈜ 신계측기술정보 (NEW MEASURING TECHNOLOGY INFORMATION CO., LTD.) 
+사업자등록번호 108-81-66678 
+대   표   이   사 황 인 섭 (nmti@naver.com) 
+업               종 토목계측, 무역, 계측기 제조 및 도•소매 
+설   립   일   자 2004년 6월 10일 설립 
+주               소 서울특별시 금천구 가산디지털1로 84  403호(에이스하이엔드8차) 
+전               화 02-865-2188~9 
+회 사 개 요 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+조  직  도 
+대표이사 
+해외 
+ 기술 
+자문 
+경영 
+지원 
+유지관리 
+계측사업 업 무 관 리    
+재
+하 
+시
+험 
+계 
+측 
+용 
+역 
+ 
+기
+술
+영
+업
+부 
+경 
+영 
+지 
+원 
+부 
+기
+술
+관
+리
+부 
+무  역, 생산 
+계 
+측 
+기 
+생 
+산 
+센 
+서 
+수 
+출 
+입 
+고객 
+주주 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+해외 기술 협력업체   Overseas Cooperation 
+업   체   명 종      목 
+① 日本   (株) 東京測器硏究所      토목계측기 제작, 특수계측전문 
+② 日本   SHOWASOKKI CO., LTD      진동계 및 진동측정 
+③ 日本   SHOWA CO., LTD      토목계측기 제작, 특수계측전문 
+④ 日本   日本   (株)計測 TECHNO 東京      토목계측기 실험 및 연구분석 
+⑤ 日本   TOKYO ROPE MFG CO.,LTD      강구조물 비파괴 검사. 건전성 진단 
+⑥ 日本    TOHODENTAN         환경 및 수질측정장비 제작  
+⑦ 日本   計測檢査(株)                               비파괴검사 및 계측유지관리 컨설팅  
+⑧ 日本 (株) G.R.I       재하시험(연직) 외 
+⑨ 日本 KATSUJIMA       지진계관련 장비 제작  계측용역, 분석 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+사업분야    OVERVIEW 
+분  야 내  용 
+상품용역 
+(무 역,생산) 
+- 각종 Strain Gauge 수입 판매 
+- 산업용 Sensor 수입 판매 
+- 토목용 Sensor 수입 판매 
+- 각종 토목센서 개발 및 제작 
+기술 용역  
+(계 측 관 리) 
+- 흙막이 가시설 구조물 계측 관리 
+- 연약지반 계측 관리 
+- 교량 계측 관리 
+- 터널 구조물 계측 관리 
+- 계측 분석 관리 
+- 자동계측 SYSTEM 구축 
+- 자동계측 SOFTWARE 연동 
+- 유지관리 계측 
+- 계측 컨설팅 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+사업분야    OVERVIEW 
+가시설 계측 
+설계 계획단계에서 예측한 흙막이 가시설의 변형, 응력을 상회하는 과대한 변형 및 응력이 시공중에 발생한다든지 Strut 
+또는  A n c h o r의 축 력 이 증 대 하 는 이 상 이 발 견 될 시에  시 공 관 리 를 함 으 로 써 가 시 설 의 과 대 한 변 
+형 및 붕괴를 방지한다.  
+개  요 
+목  적 
+주변시설 및 지반의 침하, 균열발생 방지  
+공사 중 소음, 진동, 대기오염, 수질오염(지하수, 지표수)등 공해방지  
+본체구조 시공을 위한 작업공간 확보 및 작업대로서의 안정성 확보  
+지하 매설물의 안전한 보호 및 유지관리 대책 수립  
+현장 전경 하중계 설치 자동화 구축 및 데이터 획득 건물경사계 설지 
+
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+사업분야    OVERVIEW 
+교량 유지관리 계측시스템 
+개  요 
+시공단계에서부터 유지관리 계측시스템을 구축하여 교량 완공 후의 초기상태를 파악하고, 장기적인 계측을 통
+하여  교량의  거동을  모니터링 ( M o n i t o r i n g )함으로써 ,  공용  기간  동안  지속적인  유지  
+관리를 수행하여야 한다.  
+교량 구조물의 기능성 및 건전성 평가 
+경제성을 포함한 통합적 유지관리의 최적화 
+교량의 사용수명 연장과 향후 잔존수명의 예측 
+교량의 사용성 증대 
+목  적 
+
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+사업분야    OVERVIEW 
+케이블 장력측정 
+개  요 
+케이블은 휨강성(flexural rigidity) 이 거의 없기 때문에 압축력(compression)을 받지 못하고 오로지 장력
+(tension)만을 받는 부재이다. 케이블을 구조부재로 사용한 구조물 및 교량(현수교, 사장교, 닐슨교 등)의 케
+이블 장력이 구조물 형상에 민감하게 영향을 주기 때문에 가설 중 뿐만 아니라 완성 후 및 공용중에도 케이블 
+장력의 계측은 필수라 할 수 있다. 또한 시공 단계별 장력의 변화는 시공 상태를 나타내는  중요한  
+자료가 된다. 
+목  적 
+케이블을 구조부재료 사용한 구조물의 케이블의 장력을 지속적으로 측정하여 구조계의 안전을 도모한다. 
+장력변화 확인과 상세구조해석 및 내하력 평가 
+유지관리 기초자료 활용 
+진동가속도계 설치 행어타격계 진동측정 장력계 분석 
+
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+사업분야    OVERVIEW 
+구조물 진동측정 
+진동측정 
+설계 시에 주변 환경과 관련한 진동영향을 평가함은 물론 사용 중인 구조물에 과다한 진동이 발생한 경우 
+원인을 분석하고 해결책을 강구하여야 한다. 이에 진동에 따른 영향이 발생하였는지의 여부를 판단하는데 
+그 목적이 있다.  
+구조물 특성파악 가속도계 설치 가속도 측정 FFT 데이터 분석 
+목  적 
+동적 계측을 통하여 동적특성 파악(모드형상, 고유주기) 및 동적특성의 변화를 주기적으로 계측하여 
+구조물의 내구성 진단자료 구축  
+
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+사업분야    OVERVIEW 
+피로계측 
+공용성을 저하시키는 하나의 원인으로 피로균열을 들 수 있다. 구조물에 외력이 장시간에 걸쳐서 반복작용하고, 많은 
+경우 진동을 수반할 경우 실제 파단은 설계 인장강도 보다 매우 작은 항복점 이하의 응력 하에서 발생한다. 구조물의 
+장기적인 피로계측을 시행하여 내구성 및 사용성 등 을 검토하여 유지보수 시 기초적인 자료로 활용 한다.  
+개  요 
+목  적 
+하중에 의한 구조물의 내구성 및 사용성 검토 
+설계피로응력과 허용피로응력의 검토 
+ST11 Rain (04/17)
+2 2
+3 3
+7
+14 16 13 12
+0
+13 11
+50
+298
+871
+1499
+45526
+0
+1
+10
+100
+1000
+10000
+100000
+136 128 121 113 106 98 91 83 75 68 60 53 45 38 30 23 15 8
+Stress Range (kgf/ ㎠)
+Number of Occurrence
+변형률계 설치 측정장비 구축 Data 분석(예) 
+피로시험 측정장비 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+사업분야    OVERVIEW 
+교량 재하시험 및 내하력평가 
+개  요 
+교량 또는 선정된 부재의 실제 구조거동과 안전성을 평가하는 효과적인 수단으로서, 시공도면이 없어 구조
+해석만으로는 정확하게 모델링 할 수 없는 기존교량이나 시공도면과 구조계산서가 있다 하더라도 구성재
+료의 전반적인 내구성저하와 균열, 박리, 철근부식 등으로 활하중에 대한 구조거동이 의심스러운 교량에 
+대하여 내하력에  대한 더 실제적인  평가가 이루어 질 수 있다고 판단되는  경우 적용하는  것이다.  
+목  적 
+변형률계 설치 처짐계 설치 가속도계 설치 시스템 구축 
+교량의 실제 정적 및 동적 거동 평가  
+처짐, 진동 등에 대한 사용성 검토  
+새로운 해석방법 및 설계기법의 검증  
+교량의 결함원인의 분석 및 규명  
+해석에 의한 내하력이 작은 경우 실제거동에 따른 내하력을 결정하여 교량운영의 
+경제성 향상  
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+주요실적    ACTUAL 
+NO. 과  업  명 과 업 내 용 
+1   제2진도대교 유지관리 계측시스템 구축 
+2   어등대교 유지관리 계측시스템 구축 
+3   옥동교 위험교량 개축공사 합성거동계측 
+4   신공항여객터미널 유지관리 계측시스템 구축 
+5   청담대교 유지관리 계측시스템 구축 
+6   영종도신공항터미널전면고가교 유지관리 계측시스템 구축 
+7   방화대교 유지관리 계측시스템 구축 
+8   신단양대교 유지관리 계측시스템 구축 
+9   지하철 동대문 역사 광변형 계측시스템 구축 
+10   구조실험동 신축 센서 설치 및 계측시스템 구축 
+11   인천국제공항 여객터미널 용접부 응력감시시스템 구축 
+12   한국표준과학연구원내 화학동 계측 시스템구축 유지관리 계측시스템 구축 
+시공중 및 유지관리 장기계측-1 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+주요실적    ACTUAL 
+NO. 과  업  명 과 업 내 용 
+13   당산철교 유지관리 계측시스템 구축 
+14   SK 서울저유소(T-2기지) 사면 계측시스템 구축 
+15   금강철교(신탄진) 유지관리 계측시스템 구축 
+16   ADD 방폭시설물 유지관리 계측시스템 구축 
+17   광안대로 2공구(부산) 센서 설치 및 수화열 계측 
+18   초락대교 시공중 및 유지관리 계측시스템 구축 
+19   구포대교 장기 계측 용역 
+20   남도대교 유지관리 계측시스템 구축 
+21   영종대교 유지관리 계측시스템 교체 및 설치 
+22    운남대교 시공중 및 유지관리 계측센서 설치 
+23   영덕1교, 2교, 3교 시공중 및 유지관리 계측시스템 구축 
+24   한강교량 온라인 안전감시시스템 현장 점검 용역 유지관리 계측시스템  보수 및 운용 
+시공중 및 유지관리 장기계측-2 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+주요실적    ACTUAL 
+건축구조물 계측 
+NO. 과  업  명 과 업 내 용 
+1   잠원동 건축물(빌라) 진동 시험 
+2   신세계 백화점 진동 및 변위 측정용역 
+3   기초구조물 변위측정 3차원 변위 측정 
+4   대림역사 3차원 변위 측정 용역 
+6   잠원동 빌라 진동 측정 
+7   잠원동 빌라 진동 측정 
+8   대우증권빌딩 균열 및 응력측정 
+9   구로공단역사 및 신대방역사 삼차원측정기설치 
+11   목동 한빛교회 경사계 설치용역 
+12   방배동 사원아파트 경사계 설치용역 
+13   목동 삼성 쉐르빌 지하주차장 계측기 설치공사 
+14   신세계 백화점 슬라브 처짐평가 장치 개선공사 
+15   명동성당 균열 및 경사계 계측 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+주요실적    ACTUAL 
+케이블 장력측정 
+NO. 과  업  명 과 업 내 용 
+1   부산 월드컵 경기장 케이블 장력 측정 
+2   올림픽 체조경기장 케이블 장력 측정 
+3   전주 월드컵 경기장 케이블 장력 측정 
+4   제주 월드컵 경기장 케이블 장력 측정 
+5   상암동 월드컵 경기장 케이블 장력 측정 
+6   인천 문학 월드컵 경기장 케이블 장력 측정 
+7   보도육교 케이블 장력 측정 
+8   올림픽대교 케이블 장력 측정 
+9   청담대교 케이블 장력 측정 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+주요실적    ACTUAL 
+가시설계측-1 
+NO. 과 업 명 과 업 내 용 
+1 광양제철소 5CGL 신축공사 가시설계측 
+2 여천LG 정유공장 지반침하 및 
+구조물계측 
+3 속리산 국립공원 사면계측  
+4 마산빌딩 신축공사 가시설계측 
+5 대치동 업무시설 신축공사 가시설계측 
+6 시민광장(광화문~숭례문)조성공사 가시설계측 및 
+평판재하시험 
+7 ㈜진로 이천공장 지중침하계 설치 
+8 복정동 국공립보육시설 신축공사 가시설계측 
+9 부산신항 남컨부두 가호안 축조공사  계측설계 
+10 쎄덱 신사동 사옥 신축공사 가시설계측 
+11 잠실빗물펌프장 보수공사 경사 및변위계측 
+12 청담동 근린생활시설 신축공사 가시설계측 
+13 일진전기㈜ 4-14블록 평판재하시험 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+주요실적    ACTUAL 
+가시설계측-2 
+NO. 과 업 명 과 업 내 용 
+14 을지로4가 지하철 환기구 이설공사 가시설계측 
+15 파주시 금촌 하수관거 정비공사 가시설계측 
+16 광명시 하안동 노벨빌딩 신축공사 가시설계측 및 평판재하시험 
+17 문산 폐수종말처리시설 설치사업 가시설계측 및 평판재하시험 
+18 파주 현대모비스 신축공사 평판재하시험 
+19 종로 S/N TOWER 신축공사 가시설계측 및 평판재하시험 
+20 청운대학교 기숙사 신축공사 가시설계측 
+21 신길빗물펌프장 증축공사 가시설계측 
+22 구로동 주상복합APT 신축공사 가시설계측 
+23 서초구 서초동 일석빌딩 신축공사 가시설계측 
+24 파주 페트라빌리아 신축공사 가시설계측 및 평판재하시험 
+25 대방동 근린생활시설 신축공사 가시설계측 
+26 방이동 서현 D&C빌딩 신축공사 가시설계측 
+27 정자동 봉우빌딩 신축공사 가시설계측 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+주요실적    ACTUAL 
+재하시험 및 내하력평가-1 
+NO. 과  업  명 과 업 내 용 
+1  경신교외 3개교량 재하시험 
+2  소업교 & 철상교 재하시험 
+3  광주소재 교량 재하시험 
+4  구로큰길 지하차도 재하시험 
+5  양화대교 재하시험 
+6  신국교 & 제2차수교 재하시험 
+7  매죽2교 재하시험 
+8  정양교 재하시험 
+9  서창 과선교외 2개소 재하시험 
+10  청담대교 재하시험 
+11  한남대교(성능개선 확장부) 재하시험 
+12  잠실철교 재하시험 
+13  한탄천교 외 재하시험 
+14  고속철도 오송교, 연제교 재하시험 
+15  학산교 외 1개소 재하시험 
+16  중랑 하단 ㅣ.C 재하시험 
+17  송추교 외 1개소 재하시험 
+18  신공항 고속도로 내 교량 3개소 재하시험 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+주요실적    ACTUAL 
+재하시험 및 내하력평가-2 
+NO. 과  업  명 과 업 내 용 
+19 수서I.C(서울시 순환 고속도로) 재하시험 
+20 덕신교 재하시험(보수보강 전, 우) 
+21 동작2교 재하시험 
+22 산본I.C(서울시 순환 고속도로) 재하시험 
+23 모래말 다리 재하시험 
+24 덕신교 재하시험 
+25 정릉천 재하시험 
+26 수서I.C 재하시험  
+27 동작2교 재하시험 
+28 구포대교 재하시험 
+29 산본 I.C 재하시험 
+30 대황교천교 재하시험 
+31 구로고가교 외 재하시험 
+32 달서교 외 2개소 재하시험 
+33 부안고가교 재하시험 
+34 안양천교외3개교량 재하시험 
+35 범일과선교 재하시험 
+36 영등포역고가교외1교량 재하시험 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+주요실적    ACTUAL 
+특수계측 및 기타과업 
+NO. 과  업  명 과 업 내 용 
+1   황령산터널 균열계측 
+2   영종도 지하차도 균열측정 
+3   군자 상당 I.C 장기 균열계측용역 
+4   동부제강부두 균열 및 경사 측정 
+6   부산항 자성대 부두 선박충돌시험 
+7   진해항 부두 접안시설 선박충돌시험 
+9   청담대교 슈반력 측정 사하중 슈반력 측정 
+10   중부내륙고속도로 개단면 파형강관 계측 
+11   금강철교 온도계측 
+12   상도터널 계측기 설치용역 
+13   도로 포장체 변형률 측정 
+14   반도체 인장테스트 장비개발 중소기업기술혁신 국책과제 
+15   프리캐스트 콘크리트 방음벽 기초 차량충돌하중에 대한 시험 
+16   고속철도 진동 및 처짐 측정 진동 및 처짐 측정 
+17   LCD 패널 파괴시험 응력분포도 측정 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+보유장비 
+장  비  명 규   격 수 량 제 작 자 
+(설치년도) 
+Dry Oven GP-220A 1 set CARBOLITE(2001) 
+Constant Temp & Humidity Chamber  THT-540A 1 set ILSHIN ENG(2001) 
+Function Generator FG 502 1 set TEKTRONIX(98) 
+Multi Meter 187 1 set FLUKE(2004) 
+각도 측정 시험기 KB-25 1 set IMB(2001) 
+압력 측정 시험기 SS-30 1 set SENSYS(2001) 
+Power Supply PS 503A 1 set TEKTRONIX(2001) 
+초음파 세척기 S-200 1 set NTT社(2001) 
+Strain Calibrator SB-10 1 set MM社(2000) 
+DATA LOGGER TDS-302 2 set TML(2000) 
+Inclinometer OYO 4471 2 set OYO(2000) 
+Strain Meter TC-31K 2 set TML(2005) 
+동적 측정 장비 PCD-300A 5 set KYOWA(2004) 
+Water level meter WL-50 3set YAMAYO(2001) 
+K Y O N G G I I N S T I T U T E OF  T E C H N O L O G Y. 
+NEW MEASURING  TECHNOLOGY  INFORMATION  CO.,LTD. 
+감 사 합 니 다. 
