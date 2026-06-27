@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 
 const REGISTRY_PATH = 'scripts/image-review-registry.json';
+const FULL_WEBP = 'assets/images/technology/IMG-008_터널-전단면-내공변위-측정시스템_상부아치내공변위.webp';
 const registry = JSON.parse(fs.readFileSync(REGISTRY_PATH, 'utf8'));
 
 if (!registry['IMG-008']) {
@@ -14,21 +15,24 @@ registry['IMG-008'] = {
   requiresReaudit: true,
   reviewer: 'publication-recheck',
   reviewDate: '2026-06-27',
+  webp: FULL_WEBP,
+  canonicalImage: FULL_WEBP,
   notes: [
-    '출판 부적합 재검수: docs/125 + docs/126 기준.',
-    '건축한계 내부 미계측, P1~P5 상부 아치 개방 체인, Envelope 침범 금지.',
-    '신규 PNG/WebP 확정 전까지 출판 PASS로 간주하지 않음.'
+    '출판 재검수: docs/125 + docs/126 기준.',
+    '기준: 터널 전단면 내공변위계.',
+    '전단면 대표 측점과 대표 측선을 반영한다.',
+    '운영 이미지는 풀네임 WebP 기준: ' + FULL_WEBP
   ].join(' '),
   visualReview: {
     grade: 'REGENERATE',
     reviewer: 'publication-recheck',
     date: '2026-06-27',
-    checklist: 'docs/126 IMG008-V1~V8',
-    notes: '디자인/출판 게이트 재검수 필요: P1~P5, Envelope 외측, 노반 미계측, 200% 라벨 선명도.'
+    checklist: 'docs/126 IMG008-F1~F8',
+    notes: '전단면 내공변위계 기준으로 재검수 필요.'
   },
   reworkPlan: 'docs/125-IMG-008-터널-내공변위-출판부적합-재검수-구현계획.md',
   designRedline: 'docs/126-IMG-008-터널-내공변위-디자인-redline-및-생성프롬프트.md'
 };
 
 fs.writeFileSync(REGISTRY_PATH, `${JSON.stringify(registry, null, 2)}\n`, 'utf8');
-console.log('Patched IMG-008 as REGENERATE / requiresReaudit=true');
+console.log('Patched IMG-008 status for full-section convergence');
