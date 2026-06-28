@@ -6,8 +6,10 @@ REM NMTI website git sync helper
 REM - Pulls latest main branch every 60 seconds.
 REM - Press R during wait to run immediately.
 REM - Press Q to quit.
-REM - Uses text-based image staging files, not binary PNG/JPG files.
-REM - Runs managed image renderers only when source is newer or output is missing.
+REM - Image transfer rule:
+REM     ChatGPT uploads text staging files such as *.webp.b64.
+REM     git-sync decodes them into same-name *.webp files locally.
+REM - This script does NOT render images on every sync cycle.
 REM ============================================================
 
 set "BRANCH=main"
@@ -34,7 +36,7 @@ echo ============================================================
 echo [%date% %time%] git-sync start
 echo ============================================================
 
-echo [1/6] Pull latest source...
+echo [1/5] Pull latest source...
 git pull origin %BRANCH%
 if errorlevel 1 (
   echo [ERROR] git pull failed.
@@ -42,7 +44,7 @@ if errorlevel 1 (
 )
 
 echo.
-echo [2/6] Apply text-based WebP staging files...
+echo [2/5] Apply text-based WebP staging files...
 powershell -NoProfile -ExecutionPolicy Bypass -Command ^
   "$ErrorActionPreference='Stop';" ^
   "$root = Join-Path (Get-Location) '%IMAGE_ROOT%';" ^
@@ -72,7 +74,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
   "      [System.IO.File]::WriteAllBytes($target, $bytes);" ^
   "      Remove-Item $backup -Force -ErrorAction SilentlyContinue;" ^
   "      if ($deleteAfterApply) { Remove-Item $src.FullName -Force -ErrorAction SilentlyContinue }" ^
-  "      Write-Host ('[WEBP] applied text staging ' + $src.FullName + ' -> ' + $target);" ^
+  "      Write-Host ('[WEBP] decoded ' + $src.FullName + ' -> ' + $target);" ^
   "      $changed++;" ^
   "    } catch {" ^
   "      if (Test-Path $backup) { Move-Item $backup $target -Force }" ^
@@ -82,28 +84,14 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command ^
   "    Write-Host ('[ERROR] failed staging file ' + $src.FullName + ': ' + $_.Exception.Message);" ^
   "  }" ^
   "}" ^
-  "Write-Host ('[WEBP] staged replacements: ' + $changed);"
+  "Write-Host ('[WEBP] decoded replacements: ' + $changed);"
 if errorlevel 1 (
   echo [ERROR] image staging failed.
   exit /b 1
 )
 
 echo.
-echo [3/6] Render managed images only if needed...
-if exist "scripts\render-managed-images.py" (
-  python scripts\render-managed-images.py
-  if errorlevel 1 (
-    py -3 scripts\render-managed-images.py
-  )
-  if errorlevel 1 (
-    echo [WARN] managed image renderer failed. Continue.
-  )
-) else (
-  echo [SKIP] scripts\render-managed-images.py not found
-)
-
-echo.
-echo [4/6] Install npm dependencies if node_modules is missing...
+echo [3/5] Install npm dependencies if node_modules is missing...
 if not exist "node_modules" (
   npm install
   if errorlevel 1 (
@@ -112,7 +100,7 @@ if not exist "node_modules" (
 )
 
 echo.
-echo [5/6] Build images...
+echo [4/5] Build images...
 if "%RUN_BUILD%"=="1" (
   npm run build:images
   if errorlevel 1 (
@@ -123,7 +111,7 @@ if "%RUN_BUILD%"=="1" (
 )
 
 echo.
-echo [6/6] Verify content...
+echo [5/5] Verify content...
 if "%RUN_VERIFY%"=="1" (
   npm run verify:content
   if errorlevel 1 (
