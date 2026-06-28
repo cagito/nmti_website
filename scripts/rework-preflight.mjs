@@ -44,7 +44,7 @@ if (!idArg) {
 
 const id = idArg;
 const registryPath = join(REWORK_ROOT, 'scripts', 'image-review-registry.json');
-const canonicalPath = join(REWORK_ROOT, 'scripts', 'canonical-image-png.json');
+const canonicalPath = join(REWORK_ROOT, 'scripts', 'canonical-image-webp.json');
 const policyPath = join(REWORK_ROOT, 'scripts', 'figure-production-policy.json');
 const registry = JSON.parse(readFileSync(registryPath, 'utf8'));
 const canonical = JSON.parse(readFileSync(canonicalPath, 'utf8'));
@@ -74,7 +74,7 @@ if (!reg) errors.push('registry에 없음');
 if (!fig) errors.push('figure-production-policy에 없음');
 if (!phase) warns.push('rework W1~W11 목록 밖 ID');
 
-if (!canonName) errors.push('canonical-image-png.json에 파일명 없음');
+if (!canonName) errors.push('canonical-image-webp.json에 파일명 없음');
 else ok.push(`canonical: ${canonName}`);
 
 const rl = REDLINE_CANONICAL[id];

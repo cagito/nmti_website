@@ -1,17 +1,48 @@
-# IMG-048 redline v2 — LTE M2M (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-048 redline — LTE M2M 통신 구성도 (외부 PNG)
 
-**대상:** `instruments/communication/lte-remote` · ZIP-AUD-42 · **LTE-BUF-01**  
-**정본:** [97 §2](../../../docs/97-Phase-AD-복붙-프롬프트-정본.md)  
-**판정:** MAJOR_FIX
+> **image-knowledge:** [`통신·게이트웨이-역할`](../../../docs/image-knowledge/29-통신·게이트웨이-역할.md)
+> **prompt:** `prompts/IMG-048_LTE_원격계측_통신_구성도.md` · **scaffold:** `npm run scaffold:redline-stubs`
+
+## 0. 레이아웃
+
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| L1 | 로거 **로컬 저장** · 두절 시 재전송 | ☐ | 직렬만 |
-| L2 | APN/VPN · 방화벽 · API · **ACK** | ☐ | 생략 |
-| L3 | 웹/모바일 = **클라이언트** (로거 직접 제어 X) | ☐ | 로거 직결 UI |
-| L4 | RSSI · 지연 · 누락 패킷 모니터링 | ☐ | 생략 |
-| L5 | 모뎀 **경보 판정 X** | ☐ | 모뎀이 판정 |
+| Q1 | 순서 화살표: 계측 센서 → 데이터로거 → IoT 게이트웨이 → 서버. | ☐ | |
+| Q2 | 로거: 「수집·저장·1차 변환」 · 함체 실루엣(P0-3). | ☐ | |
+| Q3 | GW: 「중계·변환·재전송」 · 버퍼 (로컬 저장과 구분). | ☐ | |
+| Q4 | 시간 동기 · GW ≠ 판정 callout. | ☐ | |
+| Q5 | (048) LTE · (058) 전원·통신·모드 계층. | ☐ | |
+| Q6 | 뇌·AI 회로 · 사이버펑크 구름. (금지) | ☐ | |
+| Q7 | 빈 접속함 = 로거. (금지) | ☐ | |
+| Q8 | 게이트웨이 = 데이터로거 라벨. (금지) | ☐ | |
+
+<!-- /redline-scaffold:v1 -->
+
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`통신·게이트웨이-역할`](../../../docs/image-knowledge/29-통신·게이트웨이-역할.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **센서→로거→GW→서버** 순서?
+- [ ] **로컬 저장 vs GW 버퍼** 구분?
+- [ ] **GW ≠ 관리기준 판정**?
+- [ ] **시간 동기** 표시?
+- [ ] **뇌·구름·브랜드** 없음?
+- [ ] WebP only?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
-| 검수자 | | 일자 | | 등급 | PASS / REGENERATE |
+| 항목 | 값 |
+|------|-----|
+| 검수자 | |
+| 일자 | |
+| 등급 | PASS / REGENERATE |

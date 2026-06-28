@@ -102,7 +102,7 @@ ALT = CSV의 Title + " - " + Purpose (`generate-image-assets.mjs`가 생성)
 ### 사면 리프 (IMG-089·090) — PNG pending
 
 - **089** `fields/slope/surface-tilt` — 지표 **pad** tiltmeter · θ · **≠ 지중경사계**
-- **090** `fields/slope/structural-displacement` — 옹벽 **프리즘** · ATS **부동점 밖**
+- **090** `fields/slope/structural-displacement` — 옹벽 **와이어식 변위계 주** · (선택) ATS inset · [127 DISP-ATS-01](../../docs/127-변위계측-자동광파기-남용방지-및-와이어식-우선-표준.md)
 - docs/36 §4.3②③ · §5.1 Feedback Loop
 
 ### 철도 리프 (IMG-023 · §4.10①)

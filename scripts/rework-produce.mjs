@@ -24,7 +24,7 @@ const registry = JSON.parse(
   readFileSync(join(root, 'scripts', 'image-review-registry.json'), 'utf8'),
 );
 const canonical = JSON.parse(
-  readFileSync(join(root, 'scripts', 'canonical-image-png.json'), 'utf8'),
+  readFileSync(join(root, 'scripts', 'canonical-image-webp.json'), 'utf8'),
 );
 
 const idArg = (() => {

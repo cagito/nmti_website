@@ -61,6 +61,15 @@
       "keyword_count": 1
     },
     {
+      "file": "[바이텍코리아]금강2교 계측시스템구축 최종보고서.pdf",
+      "pages": 181,
+      "chars": 5987,
+      "keywords": {
+        "데이터로거": "sensors/datalogger"
+      },
+      "keyword_count": 1
+    },
+    {
       "file": "[붙임] 1.새만금 방조제 유지관리 계측시스템 점검 보고서.pdf",
       "pages": 49,
       "chars": 20231,
@@ -90,6 +99,13 @@
         "GPS": "sensors/gnss"
       },
       "keyword_count": 3
+    },
+    {
+      "file": "guide-to-instrumentation.pdf",
+      "pages": 52,
+      "chars": 88044,
+      "keywords": {},
+      "keyword_count": 0
     },
     {
       "file": "계측계획도면.pdf",
@@ -122,6 +138,34 @@
       "chars": 0,
       "keywords": {},
       "keyword_count": 0
+    },
+    {
+      "file": "도시철도_건설시_안전,_경제성을_고려한_수동_및_자동계측기_설계기준_연구___공무원_직접수행_학술용역_보고서.pdf",
+      "pages": 129,
+      "chars": 113803,
+      "keywords": {
+        "지중경사계": "sensors/inclinometer",
+        "지하수위계": "sensors/water-level-meter",
+        "간극수압계": "sensors/piezometer",
+        "침하계": "sensors/settlement-gauge",
+        "하중계": "sensors/load-cell",
+        "변위계": "sensors/displacement-transducer",
+        "내공변위": "fields/tunnel/convergence",
+        "천단침하": "fields/tunnel/crown-settlement",
+        "지중변위": "fields/tunnel/ground-displacement",
+        "자동광파기": "sensors/automated-total-station",
+        "진동계": "sensors/vibration-meter",
+        "균열계": "sensors/crack-meter",
+        "구조물경사계": "sensors/tilt-meter",
+        "변형률계": "sensors/strain-gauge",
+        "데이터로거": "sensors/datalogger",
+        "하천제방": "fields/dam/river-levee",
+        "록볼트": "fields/tunnel/rockbolt",
+        "흙막이": "fields/retaining-excavation/earth-retaining-wall",
+        "어스앵커": "fields/retaining-excavation/anchor",
+        "버팀보": "fields/retaining-excavation/strut"
+      },
+      "keyword_count": 20
     },
     {
       "file": "부록2. 계측기 사양 및 설치상세도.pdf",

@@ -1,33 +1,45 @@
-# IMG-039 redline v2 — 신축계 설치 개념도 (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-039 redline — 신축계 설치 개념도 (외부 PNG)
 
-**대상:** `sensors/joint-meter` · FT-B · ZIP-AUD-20 · CLS-01  
-**정본:** [docs/81 AA-1d](../../../docs/81-외부-ZIP-신규-심각오류-10종-Phase-AA-수정계획.md) · [IMAGE_REGENERATION_PROMPTS §039](../../../docs/IMAGE_REGENERATION_PROMPTS.md)  
-**판정:** **REGENERATE**
+> **image-knowledge:** [`신축·변위계-구조부재`](../../../docs/image-knowledge/23-신축·변위계-구조부재.md)
+> **prompt:** `prompts/IMG-039_신축계_설치_개념도.md` · **scaffold:** `npm run scaffold:redline-stubs`
 
----
+## 0. 레이아웃
 
-## P0 — CLS-01
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| J1 | 계측 = **두 고정점 사이 상대변위 ΔL** | ☐ | 절대변위·혼합 |
-| J2 | 고정측·이동측 브라켓 **분리** | ☐ | 브라켓 모호 |
-| J3 | 측정축 방향 표시 | ☐ | 방향 생략 |
-| J4 | **≠ 신축이음계** (교량 사례 별도 패널) | ☐ | 동일 센서 표현 |
-| J5 | **≠ 균열계** (균열폭 별도) | ☐ | 혼합 범례 |
-| J6 | **≠ LVDT** 동일 범주 | ☐ | LVDT·신축계 묶음 |
-| J7 | 그래프 = **상대변위-시간** | ☐ | 복합 미정의 |
+| Q1 | 신축: 이음부 · 양측 고정 · 와이어·측정축 · +/− 또는 신축량 라벨. | ☐ | |
+| Q2 | 변위: 고정점–이동점 · 와이어/LVDT · 1방향 화살표. | ☐ | |
+| Q3 | 「설계·관리기준은 현장별」 각주. | ☐ | |
+| Q4 | 라벨: `신축이음계`, `신축이음량`, `와이어식 변위계`, `LVDT`, `신축이음`. | ☐ | |
+| Q5 | 3축 XYZ 화살표 묶음. (금지) | ☐ | |
+| Q6 | ATS hero. (금지) | ☐ | |
+| Q7 | 프리즘만 (광학망 없이). (금지) | ☐ | |
 
-## P1
+<!-- /redline-scaffold:v1 -->
 
-- [ ] 제목 「구조물 신축계 설치 개념도」
-- [ ] 조인트·균열·이음부 **적용 예시 구분**
-- [ ] 온도 = 보조 요인
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`신축·변위계-구조부재`](../../../docs/image-knowledge/23-신축·변위계-구조부재.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **와이어·1축**(신축) 또는 **와이어/LVDT**(변위)?
+- [ ] **3축·ATS** 없음?
+- [ ] **+/− 또는 신축량** 표기(014)?
+- [ ] WebP only?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
 | 항목 | 값 |
-|------|------|
+|------|-----|
 | 검수자 | |
 | 일자 | |
 | 등급 | PASS / REGENERATE |

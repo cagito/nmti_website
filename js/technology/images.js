@@ -127,7 +127,11 @@ export const IMAGE_ASSETS = {
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-006',
-    prohibitedErrors: [],
+    prohibitedErrors: [
+      '버팀보 정중앙 하중계',
+      'IMG-002와 동일 대표 단면도 역할 중복',
+      '뇌·홍보 UI'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
@@ -164,7 +168,8 @@ export const IMAGE_ASSETS = {
       'Extension Tube 체인 누락',
       '센서가 터널 중앙에 부유',
       '라이닝 연속 센서 튜브형 내공변위',
-      'Kit가 전체 변형 프로파일 자동 산정'
+      'Kit가 전체 변형 프로파일 자동 산정',
+      'P1~P5만으로 전단면 대표 표현'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -183,7 +188,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'pillow'
   },
   'IMG-010': {
     title: '터널 지표침하 계측도',
@@ -281,8 +286,8 @@ export const IMAGE_ASSETS = {
   'IMG-015': {
     title: '사면 계측 전체 개념도',
     webp: 'assets/images/technology/IMG-015_사면-계측-전체-개념도_활동면지중경사계지하수위계.webp',
-    alt: '사면 계측 전체 개념도 - 사면 활동면, 센서형 다단식 지중경사계, 지하수위계 배치',
-    caption: '사면 계측 전체 개념도 — 활동면·센서형 다단식 지중경사계(기반암 근입)·G.W.L·간극수압·프리즘·부동점 자동광파기',
+    alt: '사면 계측 전체 개념도 - 활동면, 센서형 다단식 지중경사계, 지하수위계 배치',
+    caption: '사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · (선택) 광학망',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-015',
@@ -314,7 +319,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'pillow'
   },
   'IMG-017': {
     title: '평면활동면 계측 해석도',
@@ -331,20 +336,19 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'pillow'
   },
   'IMG-018': {
     title: '강우-지하수위-변위 상관도',
-    webp: 'assets/images/technology/IMG-018_external.webp',
+    webp: 'assets/images/technology/IMG-018_강우-지하수위-변위-상관도_강우후수위상승변위증가.webp',
     alt: '강우-지하수위-변위 상관도 - 강우 후 수위 상승과 변위 증가 흐름',
     caption: '강우-지하수위-변위 상관도 — 강우 후 수위 상승과 변위 증가 흐름',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-018',
     prohibitedErrors: [
-      '강우→지하수위→변위 단일 인과 확정',
-      '고정 시간지연 일반값',
-      '상관관계를 원인 확정으로 표기'
+      '상관=인과 확정',
+      '고정 지연시간'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -442,7 +446,7 @@ export const IMAGE_ASSETS = {
     title: '댐 안전관리 계측 체계도',
     webp: 'assets/images/technology/IMG-024_댐-안전관리-계측-체계도_필댐6항목데이터흐름.webp',
     alt: '댐 안전관리 계측 체계도 - 필댐 6항목·침윤선·누수·데이터 흐름',
-    caption: '댐 안전관리 계측 체계도 — 필댐 6항목·침윤선·누수·데이터 흐름',
+    caption: '댐 안전관리 계측 체계 — 필댐 6항목·7단계 데이터 흐름 (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-024',
@@ -541,16 +545,15 @@ export const IMAGE_ASSETS = {
   },
   'IMG-029': {
     title: '지중경사계 데이터 해석도',
-    webp: 'assets/images/technology/IMG-029_external.webp',
-    alt: '센서형 다단식 지중경사계 데이터 해석도 - Incremental/Cumulative 변위 그래프와 활동면',
-    caption: '센서형 다단식 지중경사계 데이터 해석도 — Incremental/Cumulative 변위 그래프와 활동면',
+    webp: 'assets/images/technology/IMG-029_지중경사계-데이터-해석도_IncrementalCumulative활동면.webp',
+    alt: '센서형 다단식 지중경사계 데이터 해석 - 변위 집중 구간과 활동면 추정 구간',
+    caption: '센서형 다단식 지중경사계 데이터 해석도 — 변위 집중·활동면 추정 분리',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-029',
     prohibitedErrors: [
-      '최대 누적변위 깊이 = 활동면',
-      '단일 그래프로 활동면 확정',
-      '최대변위 심도와 활동면 동일 의미'
+      '최대변위깊이=활동면',
+      '단일 IPI 확정'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -732,7 +735,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'pillow'
   },
   'IMG-040': {
     title: '변위계 설치 개념도',
@@ -749,7 +752,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'pillow'
   },
   'IMG-041': {
     title: '진동계 설치 개념도',
@@ -764,7 +767,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'pillow'
   },
   'IMG-042': {
     title: '자동광파기 계측 개념도',
@@ -793,7 +796,7 @@ export const IMAGE_ASSETS = {
     caption: 'GNSS 변위 계측 개념도 — 기준국·이동국·RTK·중앙 서버·3D 변위',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-044',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-043',
     prohibitedErrors: [
       '기준국을 변형 구간에 배치',
       '이동국·기준국 역할 역전',
@@ -805,11 +808,11 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'pillow'
   },
   'IMG-044': {
     title: '기상계측기 구성도',
-    webp: 'assets/images/technology/IMG-044_external.webp',
+    webp: 'assets/images/technology/IMG-044_기상계측기-구성도_강우량풍향온습도기압.webp',
     alt: '기상계측기 구성도 - 강우량, 풍향풍속, 온습도, 기압 센서',
     caption: '기상계측기 구성도 — 강우량, 풍향풍속, 온습도, 기압 센서',
     status: 'reviewed',
@@ -817,7 +820,7 @@ export const IMAGE_ASSETS = {
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-044',
     prohibitedErrors: [
       '장애물 무시 임의 설치',
-      '기상-변위 상관을 인과 단정',
+      '기상-변위 상관=인과',
       '설치 높이·이격 미표시'
     ],
     wireframeReplace: false,
@@ -847,16 +850,16 @@ export const IMAGE_ASSETS = {
   },
   'IMG-046': {
     title: 'IoT 게이트웨이 구성도',
-    webp: 'assets/images/technology/IMG-046_external.webp',
+    webp: 'assets/images/technology/IMG-046_IoT-게이트웨이-구성도_현장센서서버통신중계.webp',
     alt: 'IoT 게이트웨이 구성도 - 현장 센서와 서버 사이 통신 중계',
     caption: 'IoT 게이트웨이 구성도 — 현장 센서와 서버 사이 통신 중계',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-046',
     prohibitedErrors: [
-      '게이트웨이=데이터로거 동일 장치',
-      '게이트웨이가 이상판정·관리기준 판정',
-      '로거 저장 vs GW 버퍼 미구분'
+      'GW=로거 동일',
+      'GW 관리기준 판정',
+      '로컬저장 vs GW버퍼 미구분'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -871,10 +874,8 @@ export const IMAGE_ASSETS = {
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-047',
     prohibitedErrors: [
-      '패널→충전→배터리→로거 직렬만',
-      '부하 산정 없이 12V 배터리만',
-      '무정전 장기 운전 보장 암시',
-      '접지 단일 배터리만'
+      '무정전 보장 암시',
+      '부하 산정 없이 12V만'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -903,16 +904,16 @@ export const IMAGE_ASSETS = {
   },
   'IMG-049': {
     title: '변위 그래프 예시',
-    webp: 'assets/images/technology/IMG-049_external.webp',
+    webp: 'assets/images/technology/IMG-049_변위-그래프-예시_관리기준선실시간추세.webp',
     alt: '변위 그래프 예시 - 변위 시계열 — 방향·상대변위·속도·현장별 기준 (Phase AD)',
     caption: '변위 그래프 예시 — 관리기준선과 실시간 변위 추세 그래프',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-049',
     prohibitedErrors: [
-      '단일 ±기준선을 보편 기준처럼',
-      '단일 변위계로 옹벽 전체 안정 판정',
-      '기준점 안정성·변위속도 누락'
+      '단일 ±기준선 보편화',
+      '단일계=전체 안정',
+      '기준점·속도 누락'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -920,17 +921,16 @@ export const IMAGE_ASSETS = {
   },
   'IMG-050': {
     title: '침하 그래프 예시',
-    webp: 'assets/images/technology/IMG-050_external.webp',
+    webp: 'assets/images/technology/IMG-050_침하-그래프-예시_시간침하곡선예측선.webp',
     alt: '침하 그래프 예시 - 침하-시간 계측 및 예측 — 해석법·성토단계 (Phase AD)',
     caption: '침하-시간 계측 및 예측 개념도 — 측정·해석·성토단계',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-050',
     prohibitedErrors: [
-      '측정값 선형 외삽=최종침하',
-      '침하판·연장봉을 기준점처럼',
-      '압밀 해석법 없이 예측선',
-      '성토단계·잔류침하 누락'
+      '선형외삽 예측',
+      '침하판=기준점',
+      '보편 관리기준'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -938,16 +938,15 @@ export const IMAGE_ASSETS = {
   },
   'IMG-051': {
     title: '간극수압 소산 그래프',
-    webp: 'assets/images/technology/IMG-051_external.webp',
+    webp: 'assets/images/technology/IMG-051_간극수압-소산-그래프_성토단계상승소산.webp',
     alt: '간극수압 소산 그래프 - 간극수압 Δu·초기 정수압·심도별 소산 (Phase AD)',
     caption: '간극수압 소산 그래프 — 성토 단계와 간극수압 상승/소산',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-051',
     prohibitedErrors: [
-      '모든 성토단계 동일 u 패턴',
-      'Δu·초기 정수압 미구분',
-      '소산만으로 압밀 완료 단정'
+      '단계별 동일곡선',
+      'G.W.L=piezo'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -955,17 +954,15 @@ export const IMAGE_ASSETS = {
   },
   'IMG-052': {
     title: '하중 변화 그래프',
-    webp: 'assets/images/technology/IMG-052_external.webp',
+    webp: 'assets/images/technology/IMG-052_하중-변화-그래프_버팀보하중경보기준선.webp',
     alt: '하중 변화 그래프 - 버팀보 하중 — 단계별 설계축력·프리로드 (Phase AD)',
     caption: '하중 변화 그래프 — 버팀보 하중 변화와 경보 기준선',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-052',
     prohibitedErrors: [
-      '전 단계 동일 수평 기준선',
-      '단계별 설계축력 미표시',
-      '하중 급감=안전 암시',
-      '프리로드·온도 영향 누락'
+      '전단계 동일 기준선',
+      '하중감소=안전'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -973,17 +970,15 @@ export const IMAGE_ASSETS = {
   },
   'IMG-053': {
     title: '진동 계측 그래프',
-    webp: 'assets/images/technology/IMG-053_external.webp',
+    webp: 'assets/images/technology/IMG-053_진동-계측-그래프_PPV기준선표현.webp',
     alt: '진동 계측 그래프 - 진동 PPV — 3축·주파수·축 통일 (Phase AD)',
     caption: '진동 계측 그래프 — 진동속도 PPV와 기준선 표현',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-053',
     prohibitedErrors: [
-      '이벤트 번호와 시간축 혼합',
-      'PPV 단일 점만',
-      '3축·주파수·지속시간 누락',
-      '가속도·속도 단위 혼동'
+      '축 혼동',
+      '보편 PPV 기준'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -991,17 +986,15 @@ export const IMAGE_ASSETS = {
   },
   'IMG-054': {
     title: '경보 단계 프로세스',
-    webp: 'assets/images/technology/IMG-054_external.webp',
+    webp: 'assets/images/technology/IMG-054_경보-단계-프로세스_정상주의경고위험조치.webp',
     alt: '경보 단계 프로세스 - 경보 프로세스 — QC·결측·현장확인·해제 (Phase AD)',
     caption: '경보 단계 프로세스 — 정상-주의-경고-위험-조치 흐름',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-054',
     prohibitedErrors: [
-      '정상→위험→조치 선형만',
-      '데이터 품질검증 선행 없음',
-      '결측·센서이상=초과 혼동',
-      '위험→조치완료 자동'
+      '선형 4단계만',
+      '초과=위험 단정'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1009,16 +1002,15 @@ export const IMAGE_ASSETS = {
   },
   'IMG-055': {
     title: '모바일 경보 알림 화면',
-    webp: 'assets/images/technology/IMG-055_external.webp',
+    webp: 'assets/images/technology/IMG-055_모바일-경보-알림-화면_휴대폰경보표현.webp',
     alt: '모바일 경보 알림 화면 - 모바일 경보 — 상태·지속·추세·조치 로그 (Phase AD)',
     caption: '모바일 경보 알림 화면 — 실제 휴대폰 알림창 형태의 경보 표현',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-055',
     prohibitedErrors: [
-      '색상 알림만으로 조치 가능 암시',
-      '통신·센서 상태 누락',
-      '조치 이력·해제조건 없음'
+      '색상만 경보',
+      '실사 휴대폰'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1033,13 +1025,8 @@ export const IMAGE_ASSETS = {
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-057',
     prohibitedErrors: [
-      '실제 URL·회사 로고',
-      '과도한 대시보드 장식·광고 배너',
-      '읽을 수 없는 한글 라벨',
-      '전 센서 초록 점',
-      '그래프 단위·시간축 없음',
-      '지도·목록·이벤트 상태 불일치',
-      '결측·통신두절 미표시'
+      '전 센서 초록',
+      '축·단위 없는 그래프'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1047,13 +1034,16 @@ export const IMAGE_ASSETS = {
   },
   'IMG-057': {
     title: '자동 보고서 생성 흐름도',
-    webp: 'assets/images/technology/IMG-057_external.webp',
+    webp: 'assets/images/technology/IMG-057_자동-보고서-생성-흐름도_계측데이터PDF보고서.webp',
     alt: '자동 보고서 생성 흐름도 - 계측 데이터에서 PDF 보고서까지',
     caption: '자동 보고서 생성 흐름도 — 계측 데이터에서 PDF 보고서까지',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-057',
-    prohibitedErrors: [],
+    prohibitedErrors: [
+      '설치 체크리스트 혼동',
+      '빈 클라우드 박스'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
@@ -1078,16 +1068,16 @@ export const IMAGE_ASSETS = {
   },
   'IMG-059': {
     title: '관리기준 설정 개념도',
-    webp: 'assets/images/technology/IMG-059_external.webp',
+    webp: 'assets/images/technology/IMG-059_관리기준-설정-개념도_센서별기준치경보조건.webp',
     alt: '관리기준 설정 개념도 - 센서별 기준치와 경보 조건 설정',
     caption: '관리기준 설정 개념도 — 센서별 기준치와 경보 조건 설정',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-059',
     prohibitedErrors: [
-      '모든 센서 동일 정상/주의/경고 로직',
-      '출처 없는 관리기준 수치',
-      '기준 초과=구조물 위험 단정'
+      '모든 센서 동일 경보',
+      '출처 없는 수치',
+      '자동 삭제'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1095,15 +1085,15 @@ export const IMAGE_ASSETS = {
   },
   'IMG-060': {
     title: '데이터 품질관리 흐름도',
-    webp: 'assets/images/technology/IMG-060_external.webp',
+    webp: 'assets/images/technology/IMG-060_데이터-품질관리-흐름도_수집검증보정분석보고.webp',
     alt: '데이터 품질관리 흐름도 - 수집-검증-보정-분석-보고 절차',
     caption: '데이터 품질관리 흐름도 — 수집-검증-보정-분석-보고 절차',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-060',
     prohibitedErrors: [
-      '수집 직후 이상치 자동 삭제·보간',
-      '원본 미보존 QC 흐름'
+      '이상치 자동 삭제',
+      '원본 미보존'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1179,7 +1169,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'pillow'
   },
   'IMG-065': {
     title: '현장 계측 전원 통합 구성도',
@@ -1202,7 +1192,10 @@ export const IMAGE_ASSETS = {
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-066',
-    prohibitedErrors: [],
+    prohibitedErrors: [
+      '빈 박스·PPT 와이어프레임',
+      '뇌·실사 풍경'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
@@ -1215,7 +1208,10 @@ export const IMAGE_ASSETS = {
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-067',
-    prohibitedErrors: [],
+    prohibitedErrors: [
+      '빈 박스·PPT 와이어프레임',
+      '뇌·실사 풍경'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
@@ -1228,7 +1224,10 @@ export const IMAGE_ASSETS = {
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-068',
-    prohibitedErrors: [],
+    prohibitedErrors: [
+      '빈 박스·PPT 와이어프레임',
+      '뇌·실사 풍경'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
@@ -1241,7 +1240,10 @@ export const IMAGE_ASSETS = {
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-069',
-    prohibitedErrors: [],
+    prohibitedErrors: [
+      '빈 박스·PPT 와이어프레임',
+      '뇌·실사 풍경'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
@@ -1332,7 +1334,10 @@ export const IMAGE_ASSETS = {
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-076',
-    prohibitedErrors: [],
+    prohibitedErrors: [
+      'CR1000X 정적로거 혼동',
+      '제조사 모델명'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
@@ -1345,7 +1350,10 @@ export const IMAGE_ASSETS = {
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-077',
-    prohibitedErrors: [],
+    prohibitedErrors: [
+      '동시 측정 표현',
+      'VW·진동현식 라벨'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
@@ -1370,7 +1378,7 @@ export const IMAGE_ASSETS = {
     title: '숏크리트 응력·변형 계측 개념도',
     webp: 'assets/images/technology/IMG-079_숏크리트-응력-변형-계측-개념도_변형률계매립.webp',
     alt: '숏크리트 응력·변형 계측 개념도 - 변형률계 매립·라이닝 부담',
-    caption: '숏크리트 — 변형률계 매립·응력 발현',
+    caption: '숏크리트 응력·변형 — 매립 SG·응력계 (v3 AI)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-079',
@@ -1414,7 +1422,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'pillow'
   },
   'IMG-082': {
     title: '건축 응력·변형률 계측 개념도',
@@ -1516,18 +1524,16 @@ export const IMAGE_ASSETS = {
   },
   'IMG-090': {
     title: '사면 구조물 변위 계측 개념도',
-    webp: 'assets/images/technology/IMG-090_사면-구조물-변위-계측-개념도_옹벽프리즘ATS.webp',
-    alt: '사면 구조물 변위 계측 개념도 - 옹벽·낙석방지 구조물 — 프리즘·ATS',
-    caption: '사면 구조물 변위 — 프리즘·ATS·부동점',
+    webp: 'assets/images/technology/IMG-090_사면-구조물-변위-계측-개념도_배면사면와이어식변위계.webp',
+    alt: '사면 구조물 변위 계측 - 배면 사면 와이어식 변위계와 옹벽 프리즘 측점',
+    caption: '사면 구조물 변위 계측 — 배면 사면 와이어식 변위계 · 옹벽 프리즘 · ΔX/ΔY',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-090',
     prohibitedErrors: [
-      '사면 외부 ATS 부동점 누락',
-      '풍경 hero',
-      'ATS 옹벽·사면 꼭대기 부착 (SLO-STR-01)',
-      '프리즘 측점 누락',
-      '시준선(점선) 누락',
+      '옹벽 전면·벽체에 와이어식 변위계 부착 (SLO-WIRE-01)',
+      'ATS만 hero — 와이어식 변위계 없음 (DISP-ATS-01)',
+      'ATS 옹벽·사면 꼭대기 부착',
       '흙막이 굴착·교량 풍경 맥락'
     ],
     wireframeReplace: false,
@@ -1589,8 +1595,8 @@ export const IMAGE_ASSETS = {
   'IMG-096': {
     title: '가시설 주변지반 계측 설치 대표 단면도',
     webp: 'assets/images/technology/IMG-096_주변지반-계측-설치-대표-단면도_굴착영향권복합.webp',
-    alt: '주변지반 계측 설치 대표 단면도 - 굴착 영향권 복합 단면, 센서형 다단식 지중경사계·침하·간극수압·지하수위',
-    caption: '주변지반 — 센서형 다단식 지중경사계·침하·간극수압·지하수위 4종 동시 배치·H·2H',
+    alt: '주변지반 계측 설치 대표 단면도 - 굴착 영향권, 센서형 다단식 지중경사계·침하·간극수압·지하수위',
+    caption: '가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-096',
@@ -1615,7 +1621,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'pillow'
   },
   'IMG-097': {
     title: '터널 발파진동·영향권 계측 개념도',
@@ -1669,8 +1675,8 @@ export const IMAGE_ASSETS = {
   'IMG-100': {
     title: '건축공사 계측 전체 개념도',
     webp: 'assets/images/technology/IMG-100_건축공사-계측-전체-개념도_KCS39처짐축소균열.webp',
-    alt: '건축공사 계측 전체 개념도 - KCS 3.9 처짐·축소·균열·주변건물·응력 통합',
-    caption: '건축공사 계측 — KCS 3.9 5항목 통합 개념도',
+    alt: '건축공사 계측 전체 개념도 - KCS 3.9 처짐 축소 균열',
+    caption: '건축공사 계측 전체 개념도 — LVDT·변형률·균열·경사·하중 (KCS 3.9)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-100',
@@ -1684,9 +1690,9 @@ export const IMAGE_ASSETS = {
   },
   'IMG-101': {
     title: '건축공사 주변건물 계측 개념도',
-    webp: 'assets/images/technology/IMG-101_건축공사-주변건물-계측-개념도_신축인접균열경사ATS.webp',
-    alt: '건축공사 주변건물 계측 개념도 - 신축 현장·인접 건물 균열·경사·ATS',
-    caption: '건축공사 주변건물 — 신축·인접 균열·경사·ATS',
+    webp: 'assets/images/technology/IMG-101_건축공사-주변건물-계측-개념도_신축인접균열경사.webp',
+    alt: '건축공사 주변건물 계측 - 신축 현장 인접 건물 균열 경사',
+    caption: '건축공사 주변건물 계측 — 균열·경사·와이어식 변위(주)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-101',
@@ -1751,7 +1757,7 @@ export const IMAGE_ASSETS = {
     title: '교량 상부구조 처짐 계측도',
     webp: 'assets/images/technology/IMG-103_교량-상부구조-처짐-계측도_거더처짐계δ.webp',
     alt: '교량 상부구조 처짐 계측도 - 거더·PSC 연직변위 δ · 처짐계·광파 — ≠침하계',
-    caption: '교량 처짐 — δ·처짐계·L/600 예시',
+    caption: '교량 처짐 δ — 거더 하부 처짐계·와이어/LVDT (DISP-ATS-01)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-103',

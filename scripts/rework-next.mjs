@@ -8,7 +8,7 @@ import { REWORK_ROOT, REDLINE_CANONICAL, PHASES } from './lib/rework-phases.mjs'
 import { getQuickstart } from './lib/rework-quickstarts.mjs';
 
 const registryPath = join(REWORK_ROOT, 'scripts', 'image-review-registry.json');
-const canonicalPath = join(REWORK_ROOT, 'scripts', 'canonical-image-png.json');
+const canonicalPath = join(REWORK_ROOT, 'scripts', 'canonical-image-webp.json');
 const registry = JSON.parse(readFileSync(registryPath, 'utf8'));
 const canonical = JSON.parse(readFileSync(canonicalPath, 'utf8'));
 

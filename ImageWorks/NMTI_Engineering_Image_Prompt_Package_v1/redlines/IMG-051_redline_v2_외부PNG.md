@@ -1,17 +1,47 @@
-# IMG-051 redline v2 — 간극수압 소산 (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-051 redline — 간극수압 소산 그래프 (외부 PNG)
 
-**대상:** `sensors/piezometer` · ZIP-AUD-45 · **PIEZO-DISS-01**  
-**정본:** [97 §5](../../../docs/97-Phase-AD-복붙-프롬프트-정본.md)  
-**판정:** MAJOR_FIX
+> **image-knowledge:** [`경보·그래프·대시보드-표현`](../../../docs/image-knowledge/28-경보·그래프·대시보드-표현.md)
+> **prompt:** `prompts/IMG-051_간극수압_소산_그래프.md` · **scaffold:** `npm run scaffold:redline-stubs`
+
+## 0. 레이아웃
+
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| P1 | Y축: **Δu** 또는 **u** 명확 | ☐ | 혼동 |
-| P2 | 초기 정수압 vs **과잉간극수압** | ☐ | 동일 곡선만 |
-| P3 | 성토 단계 **시점** · 심도별 가능 주석 | ☐ | 모든 단계 동일 패턴 |
-| P4 | 배수재·배수거리 주석 | ☐ | 생략 |
-| P5 | 소산만으로 **압밀 완료 단정 X** | ☐ | 완료 단정 |
+| Q1 | 축·단위·범례 · 시간축. | ☐ | |
+| Q2 | 관리기준(예시) · 현장별 각주. | ☐ | |
+| Q3 | 경보 단계 색·라벨(054). | ☐ | |
+| Q4 | 판정 주체 = 엔지니어/서버 · GW 중계 callout. | ☐ | |
+| Q5 | (018 상관) 점선 지체 · 상관≠인과. | ☐ | |
+| Q6 | 뇌·AI·사이버 회로 hero. (금지) | ☐ | |
+| Q7 | 스마트폰 실사 · 브랜드 앱. (금지) | ☐ | |
+| Q8 | GW 블록 내부 관리기준선. (금지) | ☐ | |
+
+<!-- /redline-scaffold:v1 -->
+
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`경보·그래프·대시보드-표현`](../../../docs/image-knowledge/28-경보·그래프·대시보드-표현.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **(예시)·현장별** 표기?
+- [ ] **축·범례·단위**?
+- [ ] **GW 판정** 없음?
+- [ ] **센서 단면·뇌** 없음?
+- [ ] WebP only?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
-| 검수자 | | 일자 | | 등급 | PASS / REGENERATE |
+| 항목 | 값 |
+|------|-----|
+| 검수자 | |
+| 일자 | |
+| 등급 | PASS / REGENERATE |

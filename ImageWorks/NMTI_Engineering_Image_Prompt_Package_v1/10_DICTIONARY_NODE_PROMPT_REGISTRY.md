@@ -65,7 +65,7 @@
 | `fields/slope` | IMG-015 | §3.12 | §4.3 |
 | `fields/slope/slip-surface` | IMG-016 | 활동면 | §4.3① |
 | `fields/slope/surface-tilt` | IMG-089 | 지표경사계 · pad | §4.3② |
-| `fields/slope/structural-displacement` | IMG-090 | 옹벽·ATS·프리즘 | §4.3③ |
+| `fields/slope/structural-displacement` | IMG-090 | 옹벽·**와이어식 변위계** · (보조) ATS | §4.3③ · [127](../../docs/127-변위계측-자동광파기-남용방지-및-와이어식-우선-표준.md) |
 | `fields/slope/rainfall` | IMG-018 | `IMG-018` | — |
 | `fields/soft-ground` | IMG-019 | `IMG-019` v2 | §4.7 |
 | `fields/soft-ground/settlement` | IMG-020 | `IMG-020` | §4.7 |

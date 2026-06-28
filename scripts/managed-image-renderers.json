@@ -1,9 +1,0 @@
-[
-  {
-    "id": "IMG-111",
-    "enabled": true,
-    "script": "scripts/render-img111-construction.py",
-    "output": "assets/images/technology/IMG-111_external.webp",
-    "reason": "터널 건설중 계측 개념도 deterministic render"
-  }
-]

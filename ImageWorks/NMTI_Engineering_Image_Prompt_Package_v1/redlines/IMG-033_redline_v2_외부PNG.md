@@ -1,17 +1,47 @@
-# IMG-033 redline v2 — 층별침하계 (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-033 redline — 층별침하계 개념도 (외부 PNG)
 
-**대상:** `sensors/settlement-gauge` · ZIP-AUD-36 · **MAG-RING-01**  
-**정본:** [93 §6](../../../docs/93-Phase-AC-복붙-프롬프트-정본.md)  
-**판정:** **REGENERATE**
+> **image-knowledge:** [`지표침하·층별침하-계측`](../../../docs/image-knowledge/12-지표침하·층별침하-계측.md)
+> **prompt:** `prompts/IMG-033_층별침하계_개념도.md` · **scaffold:** `npm run scaffold:redline-stubs`
+
+## 0. 레이아웃
+
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| M1 | 기준관 = **고정 통로** | ☐ | 역할 모호 |
-| M2 | 자석링 = **지층 동행** | ☐ | 로거 |
-| M3 | 프로브 = **링 위치 탐지** | ☐ | 생략 |
-| M4 | 층별침하 = **초기 대비 변위** | ☐ | 절대 오해 |
-| M5 | 자석링 ≠ 로거 **직결** | ☐ | 케이블 직결 |
+| Q1 | 지표면 라벨. | ☐ | |
+| Q2 | 지표침하계 또는 층별침하 casing (목적 1종). | ☐ | |
+| Q3 | 하향 침하 방향(Teal). | ☐ | |
+| Q4 | (터널) 측정단면 · 부동점 주석. | ☐ | |
+| Q5 | (층별) 보링·magnet 노드 다점. | ☐ | |
+| Q6 | 침하핀 = 지표침하계. (금지) | ☐ | |
+| Q7 | 지하수위계 동일 관측공. (금지) | ☐ | |
+| Q8 | 프리즘·ATS 를 침하 유일 수단으로. (금지) | ☐ | |
+
+<!-- /redline-scaffold:v1 -->
+
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`지표침하·층별침하-계측`](../../../docs/image-knowledge/12-지표침하·층별침하-계측.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **지표침하계·층별·침하핀** 역할 구분?
+- [ ] **하향 침하**·**지표면** 표기?
+- [ ] 천단·내공·G.W.L 혼입 없음?
+- [ ] 침하핀을 센서로 오인하지 않음?
+- [ ] WebP?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
-| 검수자 | | 일자 | | 등급 | PASS / REGENERATE |
+| 항목 | 값 |
+|------|-----|
+| 검수자 | |
+| 일자 | |
+| 등급 | PASS / REGENERATE |

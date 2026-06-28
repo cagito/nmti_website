@@ -21,8 +21,8 @@ const LOCK_DIR = join(ROOT, '.cursor', 'locks');
 const heldByProcess = new Map();
 
 export const LOCK_SCOPES = {
-  registry: 'image-review-registry · canonical-image-png · policy JSON',
-  images: 'assets/images/technology PNG/WebP/source',
+  registry: 'image-review-registry · canonical-image-webp · policy JSON',
+  images: 'assets/images/technology WebP/source',
   build: 'images.js · content-data · sitemap generators',
   full: 'registry + images + build (단일 쓰기 세션)',
 };

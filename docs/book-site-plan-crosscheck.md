@@ -9,7 +9,7 @@
 
 | 항목 | 값 |
 |------|-----|
-| 대상 PDF | 21건 |
+| 대상 PDF | 24건 |
 | 웹 Figure (IMG) | 112종 |
 
 ## PDF별 키워드 매칭
@@ -40,6 +40,9 @@
 ### `3-150120_대구통합계측 준공도면.pdf` (18p)
 - **변형률계** → `sensors/strain-gauge`
 
+### `[바이텍코리아]금강2교 계측시스템구축 최종보고서.pdf` (181p)
+- **데이터로거** → `sensors/datalogger`
+
 ### `[붙임] 1.새만금 방조제 유지관리 계측시스템 점검 보고서.pdf` (49p)
 - **간극수압계** → `sensors/piezometer`
 - **데이터로거** → `sensors/datalogger`
@@ -55,6 +58,9 @@
 - **GPS** → `sensors/gnss`
 - **침하계** → `sensors/settlement-gauge`
 
+### `guide-to-instrumentation.pdf` (52p)
+- 추출 키워드 없음 (스캔 PDF·이미지 위주 가능)
+
 ### `계측계획도면.pdf` (8p)
 - 추출 키워드 없음 (스캔 PDF·이미지 위주 가능)
 
@@ -68,6 +74,28 @@
 
 ### `도담영천 토공 계측 도면.pdf` (1p)
 - 추출 키워드 없음 (스캔 PDF·이미지 위주 가능)
+
+### `도시철도_건설시_안전,_경제성을_고려한_수동_및_자동계측기_설계기준_연구___공무원_직접수행_학술용역_보고서.pdf` (129p)
+- **간극수압계** → `sensors/piezometer`
+- **구조물경사계** → `sensors/tilt-meter`
+- **균열계** → `sensors/crack-meter`
+- **내공변위** → `fields/tunnel/convergence`
+- **데이터로거** → `sensors/datalogger`
+- **록볼트** → `fields/tunnel/rockbolt`
+- **버팀보** → `fields/retaining-excavation/strut`
+- **변위계** → `sensors/displacement-transducer`
+- **변형률계** → `sensors/strain-gauge`
+- **어스앵커** → `fields/retaining-excavation/anchor`
+- **자동광파기** → `sensors/automated-total-station`
+- **지중경사계** → `sensors/inclinometer`
+- **지중변위** → `fields/tunnel/ground-displacement`
+- **지하수위계** → `sensors/water-level-meter`
+- **진동계** → `sensors/vibration-meter`
+- **천단침하** → `fields/tunnel/crown-settlement`
+- **침하계** → `sensors/settlement-gauge`
+- **하중계** → `sensors/load-cell`
+- **하천제방** → `fields/dam/river-levee`
+- **흙막이** → `fields/retaining-excavation/earth-retaining-wall`
 
 ### `부록2. 계측기 사양 및 설치상세도.pdf` (23p)
 - **데이터로거** → `sensors/datalogger`

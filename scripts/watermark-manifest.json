@@ -20,7 +20,7 @@
     "watermarked": true
   },
   "assets/images/technology/IMG-006_굴착-단계별-계측-흐름도_1단계최종굴착계측.png": {
-    "sha256": "ee4a97bd9cff1b258b3a9a16d1357c4a3811b35b855b56b99e76c9727d838842",
+    "sha256": "f21985e565d5f72defa722da0f6ded04a444146ff3f21a9a13b77c2b1445aca3",
     "watermarked": true
   },
   "assets/images/technology/IMG-007_터널-계측-전체-개념도_NATM단면주요계측항목.png": {
@@ -68,7 +68,7 @@
     "watermarked": true
   },
   "assets/images/technology/IMG-018_강우-지하수위-변위-상관도_강우후수위상승변위증가.png": {
-    "sha256": "333c52f2931025462bd534b1672dee069c79d74da4371ddc52169d55d533b674",
+    "sha256": "ad2c3034d0e303a78afa51c381a3b1f4cb8721b8e986c4ccad8b911e2135a59d",
     "watermarked": true
   },
   "assets/images/technology/IMG-019_연약지반-계측-전체-개념도_성토침하간극수압측방유동.png": {
@@ -112,7 +112,7 @@
     "watermarked": true
   },
   "assets/images/technology/IMG-029_지중경사계-데이터-해석도_IncrementalCumulative활동면.png": {
-    "sha256": "dbfc6a0d8ad44ac53acecdce32ce0e1e9ca63f81f1b205b7a7aedcab9546e147",
+    "sha256": "07973c405f76b1ef845791b6cd28c639c00bc8f1ae7d091f29ed8b11a455e370",
     "watermarked": true
   },
   "assets/images/technology/IMG-030_지하수위계-설치-개념도_관측공수위센서케이블보호함.png": {
@@ -172,7 +172,7 @@
     "watermarked": true
   },
   "assets/images/technology/IMG-044_기상계측기-구성도_강우량풍향온습도기압.png": {
-    "sha256": "02f20e756ab2fd748478ca46f913361424682bc9bc6e2bb8d7f122f2f9d4ccd4",
+    "sha256": "ec0a2defabe6df38c14e45de56a5101a833ed368bd1fefbe4db1520b3df1e709",
     "watermarked": true
   },
   "assets/images/technology/IMG-045_데이터로거-구성도_센서입력전원통신저장.png": {
@@ -180,11 +180,11 @@
     "watermarked": true
   },
   "assets/images/technology/IMG-046_IoT-게이트웨이-구성도_현장센서서버통신중계.png": {
-    "sha256": "da1ffa2adaa4ea02626c8f8aa29f2e13d445ba0d28902feac69f19f827f66ae3",
+    "sha256": "ddff3052905f2a7fc5a6f9b09e40f4dbfc6bd89ac9a5ed2d07ce92863d8cf381",
     "watermarked": true
   },
   "assets/images/technology/IMG-047_태양광-전원-시스템-구성도_패널컨트롤러배터리로거.png": {
-    "sha256": "a435beb0febf94b67ba9ddc0d78008819a9e524cf5493a932a4dd985f31cb4e6",
+    "sha256": "18128913d41d0eb48b0e05d2d54049e22572d0f4482ff43d049b5508b2bcfb4b",
     "watermarked": true
   },
   "assets/images/technology/IMG-048_LTE-M2M-통신-구성도_센서로거모뎀서버웹모바일.png": {
@@ -192,39 +192,39 @@
     "watermarked": true
   },
   "assets/images/technology/IMG-049_변위-그래프-예시_관리기준선실시간추세.png": {
-    "sha256": "c7b2725fa1d96e4b9076d6058bbd62bc7304f8eb30983b010156506c558e541f",
+    "sha256": "6a19b7709626672835d638827ac5d32de78076304b21fa851a0a7684a05efc99",
     "watermarked": true
   },
   "assets/images/technology/IMG-050_침하-그래프-예시_시간침하곡선예측선.png": {
-    "sha256": "f435d356c2142876de658e54c9c1e39662ac90690b0a89f03bb392e10e74488f",
+    "sha256": "8de6a041d454573be141a17c1531b61c8e734929e4f97d0be4b47bc3a8a26a7f",
     "watermarked": true
   },
   "assets/images/technology/IMG-051_간극수압-소산-그래프_성토단계상승소산.png": {
-    "sha256": "d5f1512ae379391325a77d0c042939206cb4fc5a3c6b0f18d05f83df2ed4f7d8",
+    "sha256": "13dce69b75df7002150b156d6e549bb18ef6f8b38e6bbfc736144321fddae2e6",
     "watermarked": true
   },
   "assets/images/technology/IMG-052_하중-변화-그래프_버팀보하중경보기준선.png": {
-    "sha256": "d18f3df127942867e2528847c965e9d7b30dc742c10514fd3e664d72340ac7a3",
+    "sha256": "77bb6fedaf9ad3c9f1b4d70dfb59b5403234d4dbf4fcc05e2b47025c27168c2e",
     "watermarked": true
   },
   "assets/images/technology/IMG-053_진동-계측-그래프_PPV기준선표현.png": {
-    "sha256": "6eefa3aba03a8fccc9c5c0a06f74647c89d170c727b4202afe98831eb7abe635",
+    "sha256": "fecb17a968cd44176332f280428945076c6ca96b79eb75ee0238b299dd5eba0d",
     "watermarked": true
   },
   "assets/images/technology/IMG-054_경보-단계-프로세스_정상주의경고위험조치.png": {
-    "sha256": "8c6998d900aa0f51a3a006e2ae98b52b69723dd7ac52ef1e86114d7a9fbe3e49",
+    "sha256": "9ee423459b3c3e76f08b09f990c9007c308c45747466d5a4039dd31f49f06f22",
     "watermarked": true
   },
   "assets/images/technology/IMG-055_모바일-경보-알림-화면_휴대폰경보표현.png": {
-    "sha256": "3ca7e9e43c43294e012664e3d3fb7c5186627ab6c1034bd3912a361a1196f414",
+    "sha256": "d5cc7de45a5094f8cbf5f4c7acf602afdd7ee520791c14096a3e78f9e11a17a8",
     "watermarked": true
   },
   "assets/images/technology/IMG-056_웹-대시보드-구성도_지도센서목록그래프이벤트로그.png": {
-    "sha256": "87b150c0bd97cfb709d9d69139ef584c31300402e4f727437e24da94b3f1b693",
+    "sha256": "fa80d7b9710ea6ecd74775f892295efa13209f24d9fc9eb45f36106ecb0dabe5",
     "watermarked": true
   },
   "assets/images/technology/IMG-057_자동-보고서-생성-흐름도_계측데이터PDF보고서.png": {
-    "sha256": "b46a87cc0acad34877536f6ccea6a1f59a09d44718c517add80236e3270dddee",
+    "sha256": "8ae296d3532d408e593b37b9daa09772e265e2ac138ebae68ecd4539c2cebd84",
     "watermarked": true
   },
   "assets/images/technology/IMG-058_통합-계측-플랫폼-아키텍처_센서로거서버DB웹모바일.png": {
@@ -232,11 +232,11 @@
     "watermarked": true
   },
   "assets/images/technology/IMG-059_관리기준-설정-개념도_센서별기준치경보조건.png": {
-    "sha256": "2b72c7371f52f821fd4e44e707bee1275836ddbed087d8762f62295486eff67e",
+    "sha256": "2feb4b43dfb2b08a7efe83f77a0640c670ef1d4e7ab561877a416f86c1e6ca5b",
     "watermarked": true
   },
   "assets/images/technology/IMG-060_데이터-품질관리-흐름도_수집검증보정분석보고.png": {
-    "sha256": "f5472db0ea5f4389d7ab19a5508d4e367a340c8cb682dad8022e36f1d2dfcfe8",
+    "sha256": "522bf42cab85f5a683b7baa6d167a423a64ae51a7164d5a41824893d767da0ec",
     "watermarked": true
   },
   "assets/images/technology/IMG-061_천단침하계-외부-수준점-계측-개념도.png": {
@@ -260,19 +260,19 @@
     "watermarked": true
   },
   "assets/images/technology/IMG-066_상시-전원-AC-인입_배전반차단기정류.png": {
-    "sha256": "62a7d2a1bbefd1d05c91731a24f56c3dee71384c57bfdc19183355aaa71c13f6",
+    "sha256": "c8baa9c9b03b416b995d902b3c09a8a7bb41e412b84f861c2ed9d7379b1c2988",
     "watermarked": true
   },
   "assets/images/technology/IMG-067_AVR-자동전압조정기_입력출력안정화.png": {
-    "sha256": "a2429240f26967b9435776899a3c15eb7d5a108764b667c0eecf43ebd39669b0",
+    "sha256": "81fa090d1286f56bda2697732cf0502a6c7b3d4ef7a88910120846221ae06177",
     "watermarked": true
   },
   "assets/images/technology/IMG-068_풍력-하이브리드-전원_태양광풍력배터리.png": {
-    "sha256": "3f70561283fd53e2d71f179283f86297a469e1c151541b30bf68f52fd8138cd7",
+    "sha256": "a1ce8d2e0f4a9ee7ba30e6c0515d7bbea0837646cdf0c1aff52ac1ae3de0efaa",
     "watermarked": true
   },
   "assets/images/technology/IMG-069_배터리-축전-시스템_용량종류모니터링.png": {
-    "sha256": "27d9b241de5da90779ff2bc678dd1b01330945a65ac7504a2f779bc6bd5a5947",
+    "sha256": "0f150767945de16e689b3355e422109885ff85a114dc42e4e3f8f2d215d3655f",
     "watermarked": true
   },
   "assets/images/technology/IMG-070_수동-계측-개념도_현장방문리드아웃기록.png": {
@@ -300,11 +300,11 @@
     "watermarked": true
   },
   "assets/images/technology/IMG-076_동적-데이터로거-구성도_모듈형DAQ고속샘플링.png": {
-    "sha256": "cc067059ebc70e5f665d36019e6ac7a9bbce633236d7a569bdde8cefe8a852ae",
+    "sha256": "60dd84e32b68f5b04e4c1913020824bbb463291a63acc3f45c725be05cd1e366",
     "watermarked": true
   },
   "assets/images/technology/IMG-077_멀티플렉서-구성도_체인센서순차스캔.png": {
-    "sha256": "028fff6cb7f1581abcd730cf17126f476906bb81a43b5a36f776363959321ac0",
+    "sha256": "e650e21a49024c573f2d8b82df543bb021ae31d0e9e01f76607f0977965c1bf8",
     "watermarked": true
   },
   "assets/images/technology/IMG-078_록볼트-축력-계측-개념도_축력계변형률계.png": {
@@ -433,6 +433,10 @@
   },
   "assets/images/technology/IMG-110_교량-받침부-변위-계측도_슬라이드회전.png": {
     "sha256": "93e0ca0ea58837a5e47fe9fc69fe97c308a55f5a4c702e3739821f7d9ae228ce",
+    "watermarked": true
+  },
+  "assets/images/technology/IMG-090_사면-구조물-변위-계측-개념도_배면사면와이어식변위계.png": {
+    "sha256": "ebfd05c1873f3b1ec6c8973cf04f389366f13fe2f27d082813acb49ac4373732",
     "watermarked": true
   }
 }

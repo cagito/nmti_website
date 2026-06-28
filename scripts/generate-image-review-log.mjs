@@ -9,11 +9,13 @@ import { atomicWriteUtf8 } from './lib/atomic-write.mjs';
 import { resolveNodeForImg } from './lib/img-node-map.mjs';
 import { resolveSourcesForNode } from './lib/resolve-citations.mjs';
 import { formatCiteShort } from './lib/format-cite-short.mjs';
+import { loadCanonicalMap, canonicalWebpName } from './lib/canonical-image.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const registryPath = join(ROOT, 'scripts', 'image-review-registry.json');
 const priority = JSON.parse(readFileSync(join(ROOT, 'scripts', 'image-review-priority.json'), 'utf8'));
 const registry = JSON.parse(readFileSync(registryPath, 'utf8'));
+const canonicalWebp = loadCanonicalMap(dirname(fileURLToPath(import.meta.url)));
 const master = JSON.parse(
   readFileSync(
     join(ROOT, 'ImageWorks', 'NMTI_Engineering_Image_Prompt_Package_v1', '03_IMAGE_MASTER_LIST.json'),
@@ -50,9 +52,10 @@ for (const item of master) {
   const r = registry[id] || {};
   const nodeId = resolveNodeForImg(id, item.category);
   const cite = formatCiteShort(resolveSourcesForNode(nodeId).sources);
+  const fileLabel = canonicalWebp[id] ? canonicalWebpName(id, canonicalWebp) : `${id}_*.webp`;
   lines.push(`<a id="${id}"></a>`, '', `### ${id} ${item.title}`, '');
   lines.push('| 항목 | 내용 |', '|------|------|');
-  lines.push(`| 파일명 | \`${id}_*.png\` |`);
+  lines.push(`| 파일명 | \`${fileLabel}\` |`);
   lines.push(`| 사용 페이지 | dictionary \`imageId\` 참조 노드 (\`${nodeId}\`) |`);
   lines.push(`| KDS/KCS 근거 | ${cite} |`);
   lines.push(`| 관련 계측기 | ${item.category} |`);

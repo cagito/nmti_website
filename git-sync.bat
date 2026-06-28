@@ -7,8 +7,8 @@ REM - Pulls latest main branch every 60 seconds.
 REM - Press R during wait to run immediately.
 REM - Press Q to quit.
 REM - Image transfer rule:
-REM     ChatGPT uploads text staging files such as *.webp.b64.
-REM     git-sync decodes them into same-name *.webp files locally.
+REM     ChatGPT uploads text staging files such as *.webp.b64.part001.
+REM     git-sync merges parts and decodes them into same-name *.webp files locally.
 REM - This script does NOT render images on every sync cycle.
 REM ============================================================
 
@@ -20,6 +20,10 @@ set "RUN_VERIFY=0"
 set "DELETE_STAGING_AFTER_APPLY=0"
 
 cd /d "%~dp0"
+if errorlevel 1 (
+  echo [ERROR] cannot cd to repo root.
+  exit /b 1
+)
 
 :LOOP
 call :RUN_ONCE
@@ -44,47 +48,12 @@ if errorlevel 1 (
 )
 
 echo.
-echo [2/5] Apply text-based WebP staging files...
-powershell -NoProfile -ExecutionPolicy Bypass -Command ^
-  "$ErrorActionPreference='Stop';" ^
-  "$root = Join-Path (Get-Location) '%IMAGE_ROOT%';" ^
-  "$deleteAfterApply = '%DELETE_STAGING_AFTER_APPLY%' -eq '1';" ^
-  "if (!(Test-Path $root)) { Write-Host '[SKIP] image root not found:' $root; exit 0 }" ^
-  "$suffixes = @('.webp.b64','.webp.txt','.img64','.b64');" ^
-  "$changed = 0;" ^
-  "$sources = Get-ChildItem $root -Recurse -File | Where-Object { $n=$_.Name.ToLowerInvariant(); ($suffixes | ForEach-Object { $n.EndsWith($_) }) -contains $true };" ^
-  "foreach ($src in $sources) {" ^
-  "  $name = $src.Name;" ^
-  "  $lower = $name.ToLowerInvariant();" ^
-  "  $base = $null;" ^
-  "  foreach ($s in $suffixes) { if ($lower.EndsWith($s)) { $base = $name.Substring(0, $name.Length - $s.Length); break } }" ^
-  "  if ([string]::IsNullOrWhiteSpace($base)) { continue }" ^
-  "  $target = Join-Path $src.DirectoryName ($base + '.webp');" ^
-  "  if (!(Test-Path $target)) { Write-Host ('[SKIP] no matching webp target: ' + $target); continue }" ^
-  "  try {" ^
-  "    $b64 = [System.IO.File]::ReadAllText($src.FullName, [Text.Encoding]::UTF8);" ^
-  "    $b64 = ($b64 -replace '\s','');" ^
-  "    if ([string]::IsNullOrWhiteSpace($b64)) { throw 'empty base64 staging file' }" ^
-  "    $bytes = [Convert]::FromBase64String($b64);" ^
-  "    $isWebp = $bytes.Length -ge 12 -and [Text.Encoding]::ASCII.GetString($bytes,0,4) -eq 'RIFF' -and [Text.Encoding]::ASCII.GetString($bytes,8,4) -eq 'WEBP';" ^
-  "    if (!$isWebp) { throw 'decoded bytes are not WebP RIFF/WEBP' }" ^
-  "    $backup = $target + '.bak';" ^
-  "    Copy-Item $target $backup -Force;" ^
-  "    try {" ^
-  "      [System.IO.File]::WriteAllBytes($target, $bytes);" ^
-  "      Remove-Item $backup -Force -ErrorAction SilentlyContinue;" ^
-  "      if ($deleteAfterApply) { Remove-Item $src.FullName -Force -ErrorAction SilentlyContinue }" ^
-  "      Write-Host ('[WEBP] decoded ' + $src.FullName + ' -> ' + $target);" ^
-  "      $changed++;" ^
-  "    } catch {" ^
-  "      if (Test-Path $backup) { Move-Item $backup $target -Force }" ^
-  "      throw" ^
-  "    }" ^
-  "  } catch {" ^
-  "    Write-Host ('[ERROR] failed staging file ' + $src.FullName + ': ' + $_.Exception.Message);" ^
-  "  }" ^
-  "}" ^
-  "Write-Host ('[WEBP] decoded replacements: ' + $changed);"
+echo [2/5] Decode text-based WebP staging files...
+if "%DELETE_STAGING_AFTER_APPLY%"=="1" (
+  powershell -NoProfile -ExecutionPolicy Bypass -File ".\scripts\apply-webp-staging.ps1" -ImageRoot "%IMAGE_ROOT%" -DeleteAfterApply
+) else (
+  powershell -NoProfile -ExecutionPolicy Bypass -File ".\scripts\apply-webp-staging.ps1" -ImageRoot "%IMAGE_ROOT%"
+)
 if errorlevel 1 (
   echo [ERROR] image staging failed.
   exit /b 1

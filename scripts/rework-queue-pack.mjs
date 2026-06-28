@@ -38,7 +38,7 @@ mkdirSync(redlineOut, { recursive: true });
 mkdirSync(promptOut, { recursive: true });
 
 const canonical = JSON.parse(
-  readFileSync(join(root, 'scripts', 'canonical-image-png.json'), 'utf8'),
+  readFileSync(join(root, 'scripts', 'canonical-image-webp.json'), 'utf8'),
 );
 
 const lines = [

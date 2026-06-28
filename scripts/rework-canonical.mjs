@@ -17,12 +17,12 @@ if (!id) {
   process.exit(1);
 }
 
-const canonicalPath = join(REWORK_ROOT, 'scripts', 'canonical-image-png.json');
+const canonicalPath = join(REWORK_ROOT, 'scripts', 'canonical-image-webp.json');
 const canonical = JSON.parse(readFileSync(canonicalPath, 'utf8'));
 const name = canonical[id];
 
 if (!name) {
-  console.error(`${id}: canonical-image-png.json에 없음`);
+  console.error(`${id}: canonical-image-webp.json에 없음`);
   process.exit(1);
 }
 

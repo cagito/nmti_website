@@ -1,28 +1,46 @@
-# IMG-037 redline v2 — 균열계 설치 개념도 (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-037 redline — 균열계 설치 개념도 (외부 PNG)
 
-**대상:** `sensors/crack-meter` · FT-B · ZIP-AUD-18  
-**정본:** [docs/81 AA-2e](../../../docs/81-외부-ZIP-신규-심각오류-10종-Phase-AA-수정계획.md) · [IMAGE_REGENERATION_PROMPTS §037](../../../docs/IMAGE_REGENERATION_PROMPTS.md)  
-**판정:** **MAJOR_FIX**
+> **image-knowledge:** [`균열·변형률-계측-표현`](../../../docs/image-knowledge/22-균열·변형률-계측-표현.md)
+> **prompt:** `prompts/IMG-037_균열계_설치_개념도.md` · **scaffold:** `npm run scaffold:redline-stubs`
 
----
+## 0. 레이아웃
 
-## P0
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| K1 | 측정 = **균열폭 변화** (주 역할) | ☐ | 전단·단차·회전 단정 |
-| K2 | **측정 한계** 주석 (전단·단차·회전 = 별도 계측) | ☐ | 균열계만으로 전체 변형 |
-| K3 | ≠ 변위계 · ≠ 신축계(039) | ☐ | CLS 혼동 |
+| Q1 | 균열: 2 anchor · 균열 · 측정축 화살표. | ☐ | |
+| Q2 | 변형률: 게이지 · 부재 · 측정축 · (필요) 온도계 inset. | ☐ | |
+| Q3 | 구조물 표면 close-up — 지표면·1층 맥락(P0-1 건물 시). | ☐ | |
+| Q4 | 라벨: `균열계`, `변형률계`, `균열`, `측정축`. | ☐ | |
+| Q5 | 지중경사계 · IPI. (금지) | ☐ | |
+| Q6 | 프리즘=균열계. (금지) | ☐ | |
+| Q7 | 와이어식=균열 (신축이음 →23). (금지) | ☐ | |
 
-## P1
+<!-- /redline-scaffold:v1 -->
 
-- [ ] 앵커·베이스 플레이트 현실적 표현
-- [ ] 데이터로거 = 함체(P0-3)
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`균열·변형률-계측-표현`](../../../docs/image-knowledge/22-균열·변형률-계측-표현.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **양측 anchor**(균열) 또는 **게이지 방향**(변형률)?
+- [ ] **지중형·IPI** 없음?
+- [ ] ATS·프리즘 hero 없음?
+- [ ] VW 라벨 없음?
+- [ ] WebP only?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
 | 항목 | 값 |
-|------|------|
+|------|-----|
 | 검수자 | |
 | 일자 | |
 | 등급 | PASS / REGENERATE |

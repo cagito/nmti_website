@@ -12,7 +12,7 @@ export const GUARD_RULES = [
     scope: 'registry',
     test: (p) =>
       /(^|\/)scripts\/image-review-registry\.json$/.test(p) ||
-      /(^|\/)scripts\/canonical-image-png\.json$/.test(p) ||
+      /(^|\/)scripts\/canonical-image-webp\.json$/.test(p) ||
       /(^|\/)scripts\/figure-production-policy\.json$/.test(p),
   },
   {

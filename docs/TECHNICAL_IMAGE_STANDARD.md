@@ -203,7 +203,7 @@ Figure·프롬프트·검수 기록에 **국가건설기준(KDS/KCS) 조항**을
 |------|------|
 | **금지** | 에이전트·`render-svg-figures.py`·`*_svg.py`로 IMG Figure SVG 작성·변환 |
 | **금지** | Pillow `ImageDraw`·에이전트 SVG로 **단면 CAD 「그림 그리기」** |
-| **대안** | ref·book·§14 프롬프트 → **인간/검수 AI → PNG** → WebP |
+| **대안** | ref·book·§14 프롬프트 → **인간/검수 AI → WebP** |
 | **계측기 표시** | 단면 위 **기호(번호·지시선)** — 장식 아이콘·실사 금지 |
 | **블록 다이어그램** | 045·048·070 등 — Pillow 허용 (단면 CAD 아님) |
 
@@ -223,7 +223,7 @@ Figure·프롬프트·검수 기록에 **국가건설기준(KDS/KCS) 조항**을
 
 | 규칙 | 내용 |
 |------|------|
-| **FT-A/B** | 단면·복합 개념도 — **CAD·검수 AI PNG만** · Pillow `render-*.py` **금지** |
+| **FT-A/B** | 단면·복합 개념도 — **CAD·검수 AI WebP만** · Pillow `render-*.py` **금지** |
 | **FT-C** | 블록·흐름·그래프 — Pillow 허용 · 출판 게이트(V1~V4) 적용 |
 | **이중 게이트** | `reviewGrade: PASS` = **기술 게이트** + **`visualReview` 출판 게이트** |
 | **CI** | `npm run audit:figure-production` (Phase 5 `--strict`) |
@@ -369,14 +369,17 @@ npm run audit:images                          # 운영 반영 전 필수
 
 ```text
 assets/images/technology/
-  source/          # AI 생성 원본·작업 중 (운영 미사용)
+  source/          # AI/CAD 검수 통과 WebP 원본 (canonical)
   reviewed/        # 기술 검수 통과본 (권장 배포 경로)
   rejected/        # 사용 금지 보관
-  IMG-###.webp     # WebP (운영)
-  IMG-###_*.png    # 레거시 배포 경로 (reviewed/ 미복사 시)
+  IMG-###_*.webp   # WebP (운영·SPA·SEO 유일 배포 형식)
 ```
 
-**마이그레이션:** 신규·재생성 이미지는 `reviewed/`에 저장 후 레지스트리 `status: reviewed`로 등록한다. 레거시 `technology/*.png`는 점진 이전한다.
+**WebP-only (2026-06-27):** `technology/` 전 구역(루트·`source/`·`reviewed/`)에서 **PNG 사용·보관 금지**. 생성·등록·출판은 **WebP만**. stray PNG는 `python scripts/purge-technology-png.py`로 제거.
+
+**등록:** `npm run register:figure -- --input …/IMG-###_….webp` → `technology/` + `source/` 동시 복사 → `generate-image-assets.mjs`.
+
+**공식 파일명:** `scripts/canonical-image-webp.json`
 
 ---
 
@@ -388,7 +391,7 @@ assets/images/technology/
 |------|------|
 | `id` | IMG-### |
 | `title` | 한글 제목 |
-| `png` / `webp` | 배포 경로 |
+| `webp` | 배포 경로 (유일) |
 | `alt` | 접근성·검색 (설치 위치·측정량 포함) |
 | `caption` | figcaption (원리 한 줄) |
 | `status` | `pending` \| `source` \| `reviewed` \| `rejected` |

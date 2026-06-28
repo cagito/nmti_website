@@ -110,10 +110,11 @@
     },
     "IMG-009": {
       "tier": "FT-B",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "pillow",
+      "targetMethod": "pillow",
       "migrationPhase": "P2",
-      "hero": false
+      "hero": false,
+      "renderScript": "render-img009-tunnel-support-v4.py"
     },
     "IMG-010": {
       "tier": "FT-A",
@@ -168,10 +169,11 @@
     },
     "IMG-017": {
       "tier": "FT-B",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "pillow",
+      "targetMethod": "pillow",
       "migrationPhase": "P3",
-      "hero": false
+      "hero": false,
+      "renderScript": "render-img017-planar-slip-v4.py"
     },
     "IMG-018": {
       "tier": "FT-C",
@@ -331,24 +333,27 @@
     },
     "IMG-039": {
       "tier": "FT-A",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "pillow",
+      "targetMethod": "pillow",
       "migrationPhase": "P2",
-      "hero": false
+      "hero": false,
+      "renderScript": "render-img039-joint-meter-v4.py"
     },
     "IMG-040": {
       "tier": "FT-A",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "pillow",
+      "targetMethod": "pillow",
       "migrationPhase": "P2",
-      "hero": false
+      "hero": false,
+      "renderScript": "render-img040-lvdt-v4.py"
     },
     "IMG-041": {
       "tier": "FT-A",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "pillow",
+      "targetMethod": "pillow",
       "migrationPhase": "P2",
-      "hero": false
+      "hero": false,
+      "renderScript": "render-img041-vibration-meter-v4.py"
     },
     "IMG-042": {
       "tier": "FT-B",
@@ -360,11 +365,11 @@
     },
     "IMG-043": {
       "tier": "FT-B",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "pillow",
+      "targetMethod": "pillow",
       "migrationPhase": "P2",
       "hero": true,
-      "renderScript": "render-p1-blockers.py"
+      "renderScript": "render-img043-gnss-v4.py"
     },
     "IMG-044": {
       "tier": "FT-C",
@@ -514,11 +519,11 @@
     },
     "IMG-064": {
       "tier": "FT-A",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "pillow",
+      "targetMethod": "pillow",
       "migrationPhase": "P2",
       "hero": true,
-      "renderScript": "render-datalogger-figures.py"
+      "renderScript": "render-img064-harbor-v4.py"
     },
     "IMG-065": {
       "tier": "FT-C",
@@ -650,11 +655,11 @@
     },
     "IMG-081": {
       "tier": "FT-B",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "pillow",
+      "targetMethod": "pillow",
       "migrationPhase": "P3",
       "hero": false,
-      "renderScript": "render-field-heroes.py"
+      "renderScript": "render-img081-column-shortening-v4.py"
     },
     "IMG-082": {
       "tier": "FT-B",
@@ -714,11 +719,11 @@
     },
     "IMG-096": {
       "tier": "FT-A",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "pillow",
+      "targetMethod": "pillow",
       "migrationPhase": "P1",
       "hero": true,
-      "renderScript": "render-inclinometer-ground.py"
+      "renderScript": "render-img096-surrounding-ground-v4.py"
     },
     "IMG-097": {
       "tier": "FT-B",
@@ -908,5 +913,10 @@
       "migrationPhase": "P3",
       "hero": true
     }
+  },
+  "IMG-016": {
+    "currentMethod": "pillow",
+    "targetMethod": "pillow",
+    "renderScript": "render-img016-circular-slip-v4.py"
   }
 }

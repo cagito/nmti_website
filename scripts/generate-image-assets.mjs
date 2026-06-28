@@ -3,6 +3,7 @@ import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { atomicWriteUtf8 } from './lib/atomic-write.mjs';
 import { runLocked } from './lib/run-locked.mjs';
+import { loadCanonicalMap, canonicalWebpName } from './lib/canonical-image.mjs';
 
 const NO_LOCK = process.argv.includes('--no-lock');
 
@@ -25,18 +26,10 @@ const registry = existsSync(registryPath)
   ? JSON.parse(readFileSync(registryPath, 'utf8'))
   : {};
 
-const canonicalPath = join(__dirname, 'canonical-image-png.json');
-const canonicalPng = existsSync(canonicalPath)
-  ? JSON.parse(readFileSync(canonicalPath, 'utf8'))
-  : {};
+const canonicalWebp = loadCanonicalMap(__dirname);
 
 function defaultCaption(item) {
   return item.title + ' — ' + item.purpose;
-}
-
-function canonicalWebpName(id) {
-  const canonical = canonicalPng[id];
-  return canonical ? canonical.replace(/\.png$/i, '.webp') : `${id}.webp`;
 }
 
 function listWebpHits(id) {
@@ -65,7 +58,7 @@ function findWebp(id) {
   const hits = listWebpHits(id);
   if (!hits.length) return null;
 
-  const preferred = canonicalPng[id] ? canonicalWebpName(id) : null;
+  const preferred = canonicalWebp[id] ? canonicalWebpName(id, canonicalWebp) : null;
   if (preferred) {
     const match = hits.find((h) => h.file === preferred);
     if (match) return match.rel;

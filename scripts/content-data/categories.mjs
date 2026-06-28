@@ -133,7 +133,7 @@ export const CATEGORY_SECTIONS = {
     sectionImages: {
       principle: {
         id: 'IMG-008',
-        caption: '터널 전단면 내공변위 — P1~P5 측점·측선·기준 측정선, 건축한계, 노반 Open',
+        caption: '터널 전단면 내공변위 — P1~P11 내공변위계·대표 측선·기준 측정선, 건축한계, 노반 Open',
         figureNo: 2
       },
       installation: {
@@ -216,7 +216,7 @@ export const CATEGORY_SECTIONS = {
   'fields/slope': {
     tagline: '비탈면 내부·표면 변위와 지하수·강우를 연계한 활동면·붕괴 위험 판단',
     overview:
-      '<p><strong>사면</strong>은 비탈면 내부와 표면의 변위, 지하수위, 강우 조건을 관측하여 활동면 위치와 붕괴 가능성을 판단하는 계측입니다. 사면 불안정은 강우, 지하수위 상승, 절토·성토, 풍화, 배수 불량 등이 결합되어 발생합니다.</p><p><strong>지중경사계</strong>로 활동면 위치와 변위 진행성을 확인하고, <strong>지하수위계</strong>, <strong>간극수압계</strong>, <strong>기상계측기</strong>로 변위 원인을 추적합니다. 절대 변위보다 <strong>변위속도</strong>와 가속 여부가 중요하며, 강우 후 속도 증가·특정 심도 집중은 활동면 형성·진행성 파괴 가능성을 시사합니다. <strong>GNSS</strong>, <strong>자동광파기</strong>, <strong>균열계</strong>로 표면·암반 균열을 보완합니다.</p>',
+      '<p><strong>사면</strong>은 비탈면 내부와 표면의 변위, 지하수위, 강우 조건을 관측하여 활동면 위치와 붕괴 가능성을 판단하는 계측입니다. 사면 불안정은 강우, 지하수위 상승, 절토·성토, 풍화, 배수 불량 등이 결합되어 발생합니다.</p><p><strong>센서형 다단식 지중경사계</strong>로 활동면 위치와 변위 진행성을 확인하고, <strong>지하수위계</strong>, <strong>간극수압계</strong>, <strong>지표침하계</strong>, <strong>기상계측기</strong>로 변위 원인을 추적합니다. 절대 변위보다 <strong>변위속도</strong>와 가속 여부가 중요하며, 강우 후 속도 증가·특정 심도 집중은 활동면 형성·진행성 파괴 가능성을 시사합니다. <strong>배면 사면</strong>은 <strong>와이어식 변위계</strong>로, 옹벽 본체는 <strong>프리즘</strong>·<strong>균열계</strong>로 보완하며, 공사 중에만 광학 측량망을 선택 병행합니다.</p>',
     purpose: [
       { title: '활동면 추정', body: '<strong>지중경사계</strong> 변위 집중 심도로 활동면 위치를 추정합니다.' },
       { title: '진행성 추적', body: '변위량·변위속도를 시계열로 관리하고 가속 여부를 판단합니다.' },
@@ -230,7 +230,7 @@ export const CATEGORY_SECTIONS = {
       '예상 활동면 하부 안정층까지 지중경사계를 설치하고 측정축을 정의합니다.',
       '지하수위계·간극수압계를 취약 지층·배수 경로에 배치합니다.',
       '기상계측기(강우량계)를 현장 대표 지점에 설치합니다.',
-      '표면 변위가 크면 GNSS·자동광파기·균열계를 보완합니다.',
+      '배면 사면 변위가 크면 와이어식 변위계를, 옹벽 본체는 프리즘·균열계로 보완합니다.',
       '원격계측시스템으로 강우·야간·휴일 고빈도 모니터링을 설정합니다.'
     ],
     constructionPhases: {
@@ -513,12 +513,12 @@ export const CATEGORY_SECTIONS = {
   'fields/building': {
     tagline: '시공 중 건축구조물의 처짐·축소·균열·인접영향·응력을 KCS 3.9 기준으로 관리',
     overview:
-      '<p><strong>건축·인접 구조물</strong>은 고층·장경간 건축물 시공 중 구조물의 처짐, 기둥 축소량, 균열, 주변건물 영향, 응력·변형률을 측정하여 시공 안전과 품질을 확보하는 계측입니다(KCS 3.9). 준공 후 건물 계측을 위한 시공 과정 계측기 설치·측정을 포함합니다.</p><p>준공 이후 장기 운영·교량·댐 등 구조물의 변위·균열·진동 모니터링은 <a href="#fields/structural-safety">구조물 안전</a> 항목과 연계합니다.</p><p><strong>침하계</strong>, <strong>변형률계</strong>, <strong>균열계</strong>, <strong>구조물경사계</strong>, <strong>하중계</strong>, <strong>자동광파기</strong>를 조합하여 구조 거동을 통합 해석합니다. 온도·지하수위·하중 변동과 시간 동기화가 해석의 기본입니다.</p>',
+      '<p><strong>건축·인접 구조물</strong>은 고층·장경간 건축물 시공 중 구조물의 처짐, 기둥 축소량, 균열, 주변건물 영향, 응력·변형률을 측정하여 시공 안전과 품질을 확보하는 계측입니다(KCS 3.9). 준공 후 건물 계측을 위한 시공 과정 계측기 설치·측정을 포함합니다.</p><p>준공 이후 장기 운영·교량·댐 등 구조물의 변위·균열·진동 모니터링은 <a href="#fields/structural-safety">구조물 안전</a> 항목과 연계합니다.</p><p><strong>와이어식/LVDT 처짐계</strong>, <strong>변형률계</strong>, <strong>균열계</strong>, <strong>구조물경사계</strong>, <strong>하중계</strong>를 조합하여 구조 거동을 통합 해석합니다. 온도·지하수위·하중 변동과 시간 동기화가 해석의 기본입니다.</p>',
     purpose: [
-      { title: '처짐', body: '장경간 구조물의 처짐을 <strong>침하계</strong>·<strong>자동광파기</strong>로 관리합니다.' },
+      { title: '처짐', body: '장경간 구조물의 처짐을 <strong>와이어식/LVDT 처짐계</strong>로 관리합니다.' },
       { title: '기둥 축소량', body: '초고층 건물 기둥·코아벽체 축소를 <strong>변형률계</strong>·변위계로 측정합니다.' },
       { title: '균열', body: '안전에 유해한 균열을 <strong>균열계</strong>로 감시합니다.' },
-      { title: '주변건물', body: '굴착·진동 등 인접 영향을 <strong>균열계</strong>·<strong>구조물경사계</strong>·광파기로 확인합니다.' },
+      { title: '주변건물', body: '굴착·진동 등 인접 영향을 <strong>균열계</strong>·<strong>구조물경사계</strong>·<strong>와이어식 변위계</strong>로 확인합니다.' },
       { title: '응력·변형률', body: '중대 부재의 응력·변형률을 <strong>하중계</strong>·<strong>변형률계</strong>로 평가합니다.' }
     ],
     principle:
@@ -545,7 +545,7 @@ export const CATEGORY_SECTIONS = {
     data: {
       headers: ['항목', '계측기', '해석'],
       rows: [
-        ['처짐', '침하계, 광파기', '설계 처짐·수렴'],
+        ['처짐', '와이어/LVDT, 처짐계', '설계 처짐·수렴'],
         ['기둥 축소', '변형률계, 변위계', '층별 축소 누적'],
         ['균열', '균열계', '폭·속도 추세'],
         ['주변건물', '균열계, 경사계', '인접 공사 영향'],
@@ -558,10 +558,10 @@ export const CATEGORY_SECTIONS = {
       { q: '구조물 안전과 차이는?', a: '건축·인접 구조물은 KCS 3.9에 따른 시공 중·준공 연계 계측에 초점을 둡니다. 운영 중 장기 모니터링은 <a href="#fields/structural-safety">구조물 안전</a> 항목과 연계합니다.' },
       { q: '기둥 축소량은 언제 측정하나요?', a: 'KCS에 따라 매 층 승장 시 최소 1회 실시하는 것이 원칙입니다. 콘크리트 수화·탈형에 따른 축소 추세를 누적 관리합니다.' },
       { q: '처짐과 균열 중 무엇이 우선인가요?', a: '고층·장스팬은 처짐·기둥 축소가 시공성에 직결되고, 균열은 응력·구속 문제를 봅니다. 설계 단계별로 중점이 달라집니다.' },
-      { q: '인접 건물은 흙막이와 같은 센서인가요?', a: '원리는 유사하나 건축 구조 응답에 맞게 균열계·경사·자동광파기 배치를 조정합니다. 흙막이 hero(005)와 구분합니다.' }
+      { q: '인접 건물은 흙막이와 같은 센서인가요?', a: '원리는 유사하나 건축 구조 응답에 맞게 균열계·경사·와이어식 변위계 배치를 조정합니다. 흙막이 hero(005)와 구분합니다.' }
     ],
     sectionImages: {
-      principle: ['IMG-022']
+      principle: ['IMG-100']
     }
   },
   'fields/foundation-pile': {

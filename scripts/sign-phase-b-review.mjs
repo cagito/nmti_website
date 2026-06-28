@@ -13,7 +13,7 @@ const registryPath = join(root, 'scripts', 'image-review-registry.json');
 const registry = JSON.parse(readFileSync(registryPath, 'utf8'));
 
 const ALL_IDS = ['IMG-024', 'IMG-089', 'IMG-090', 'IMG-091'];
-const VERSION = { 'IMG-024': 'v3', 'IMG-089': 'v3', 'IMG-090': 'v3', 'IMG-091': 'v3' };
+const VERSION = { 'IMG-024': 'v3', 'IMG-089': 'v3', 'IMG-090': 'v5', 'IMG-091': 'v3' };
 
 const dryRun = process.argv.includes('--dry-run');
 const idArg = process.argv.find((a, i) => process.argv[i - 1] === '--id');

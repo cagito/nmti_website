@@ -1,15 +1,13 @@
 #!/usr/bin/env node
 /**
- * Register externally produced PNG or WebP (CAD / AI-reviewed) for an IMG-### figure.
+ * Register externally produced WebP (CAD / AI-reviewed) for an IMG-### figure.
  *
  * Usage:
- *   node scripts/register-external-figure.mjs --id IMG-008 --input path/to.png \
+ *   node scripts/register-external-figure.mjs --id IMG-008 --input path/to.webp \
  *     --method ai-reviewed --reviewer "홍길동" \
  *     --visual-grade PASS [--tech-grade PASS] [--notes "..."] [--dry-run]
  *
- * WebP-only 운영: --input path/to.webp → technology/ + source/ 복사, convert 생략
- *
- * Steps: validate → copy asset + source/ → update registry & policy → images.js
+ * Steps: validate → copy WebP to technology/ + source/ → update registry & policy → images.js
  */
 import { readFileSync, existsSync, readdirSync, copyFileSync, mkdirSync } from 'fs';
 import { join, dirname, basename } from 'path';
@@ -19,6 +17,7 @@ import { createRequire } from 'module';
 import { atomicWriteUtf8 } from './lib/atomic-write.mjs';
 import { runLocked } from './lib/run-locked.mjs';
 import { clearWireframeReplace } from './lib/wireframe-gate.mjs';
+import { loadCanonicalMap, canonicalWebpName } from './lib/canonical-image.mjs';
 
 const require = createRequire(import.meta.url);
 let sizeOf;
@@ -29,17 +28,17 @@ try {
 }
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const SCRIPTS_DIR = join(ROOT, 'scripts');
 const IMG_DIR = join(ROOT, 'assets', 'images', 'technology');
 const SOURCE_DIR = join(IMG_DIR, 'source');
 const POLICY_PATH = join(ROOT, 'scripts', 'figure-production-policy.json');
 const REGISTRY_PATH = join(ROOT, 'scripts', 'image-review-registry.json');
-const CANONICAL_PATH = join(ROOT, 'scripts', 'canonical-image-png.json');
 const APPROVED = new Set(['PASS', 'MINOR_FIX']);
 const HERO_MIN_W = 1920;
 const HERO_MIN_H = 1080;
 
 function usage(exit = 1) {
-  console.error(`Usage: node scripts/register-external-figure.mjs --id IMG-### --input <png> \\
+  console.error(`Usage: node scripts/register-external-figure.mjs --id IMG-### --input <webp> \\
   --method ai-reviewed|cad --reviewer <name> --visual-grade PASS|MINOR_FIX \\
   [--tech-grade PASS|MINOR_FIX] [--notes "..."] [--dry-run]`);
   process.exit(exit);
@@ -68,19 +67,15 @@ function parseArgs(argv) {
 }
 
 function resolveTargetFilename(id, canonical, ext) {
-  if (canonical[id]) {
-    const base = canonical[id];
-    if (ext === '.webp' && /\.png$/i.test(base)) return base.replace(/\.png$/i, '.webp');
-    if (ext === '.png' && /\.webp$/i.test(base)) return base.replace(/\.webp$/i, '.png');
-    return base;
-  }
+  if (ext !== '.webp') return null;
+  if (canonical[id]) return canonicalWebpName(id, canonical);
   const prefix = `${id}_`;
   const hits = readdirSync(IMG_DIR).filter(
-    (f) => f.startsWith(prefix) && f.toLowerCase().endsWith(ext),
+    (f) => f.startsWith(prefix) && f.toLowerCase().endsWith('.webp'),
   );
   if (hits.length === 1) return hits[0];
   if (hits.length > 1) return hits.sort()[0];
-  return ext === '.webp' ? `${id}_external.webp` : `${id}_external.png`;
+  return `${id}_external.webp`;
 }
 
 function run(cmd, args) {
@@ -109,12 +104,11 @@ if (args.techGrade && !APPROVED.has(args.techGrade)) {
   process.exit(1);
 }
 
-const inputExt = basename(args.input).match(/\.(png|webp)$/i)?.[0]?.toLowerCase();
+const inputExt = basename(args.input).match(/\.webp$/i)?.[0]?.toLowerCase();
 if (!inputExt) {
-  console.error('Input must be .png or .webp:', args.input);
+  console.error('Input must be .webp (technology is WebP-only):', args.input);
   process.exit(1);
 }
-const isWebp = inputExt === '.webp';
 
 if (!existsSync(args.input)) {
   console.error('Input file not found:', args.input);
@@ -123,9 +117,7 @@ if (!existsSync(args.input)) {
 
 const policy = JSON.parse(readFileSync(POLICY_PATH, 'utf8'));
 const registry = JSON.parse(readFileSync(REGISTRY_PATH, 'utf8'));
-const canonical = existsSync(CANONICAL_PATH)
-  ? JSON.parse(readFileSync(CANONICAL_PATH, 'utf8'))
-  : {};
+const canonical = loadCanonicalMap(SCRIPTS_DIR);
 
 const fig = policy.figures[id];
 const reg = registry[id];
@@ -152,7 +144,7 @@ if (sizeOf) {
     console.error(`Hero ${dim.width}×${dim.height} < ${HERO_MIN_W}×${HERO_MIN_H}`);
     process.exit(1);
   }
-  console.log(`Input: ${dim.width}×${dim.height} (${inputExt})`);
+  console.log(`Input: ${dim.width}×${dim.height} (webp)`);
 }
 
 const targetName = resolveTargetFilename(id, canonical, inputExt);
@@ -190,7 +182,7 @@ reg.visualReview = {
   grade: args.visualGrade,
   reviewer: args.reviewer,
   date: today,
-  notes: args.notes ?? `외부 ${isWebp ? 'WebP' : 'PNG'} 등록 (${args.method})`,
+  notes: args.notes ?? `외부 WebP 등록 (${args.method})`,
   gates: ['V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'V7'],
 };
 if (args.method !== 'pillow') clearWireframeReplace(reg);
@@ -202,19 +194,11 @@ atomicWriteUtf8(REGISTRY_PATH, `${JSON.stringify(registry, null, 2)}\n`);
 atomicWriteUtf8(POLICY_PATH, `${JSON.stringify(policy, null, 2)}\n`);
 
 if (!canonical[id]) {
-  const canonEntry =
-    isWebp && /\.webp$/i.test(targetName)
-      ? targetName.replace(/\.webp$/i, '.png')
-      : targetName;
-  canonical[id] = canonEntry;
-  atomicWriteUtf8(CANONICAL_PATH, `${JSON.stringify(canonical, null, 2)}\n`);
-}
-
-if (isWebp) {
-  console.log('WebP input — skip convert-technology-webp.py');
-} else {
-  console.log('Running convert-technology-webp.py …');
-  run('python', ['scripts/convert-technology-webp.py', '--force']);
+  canonical[id] = targetName;
+  atomicWriteUtf8(
+    join(SCRIPTS_DIR, 'canonical-image-webp.json'),
+    `${JSON.stringify(canonical, null, 2)}\n`,
+  );
 }
 
 console.log('Running generate-image-assets.mjs …');

@@ -55,7 +55,7 @@
 |---|---|
 | 터널 단면 | 말굽형 또는 일반 NATM형 단면 |
 | 라이닝 | 단면 외곽 구조선 명확 |
-| 대표 측점 | 상부, 측벽부, 하부를 포함한 전단면 측점 |
+| 대표 측점 | **P1~P11 내공변위계** — 좌·우 측벽·스프링라인·궁부 |
 | 대표 측선 | 수평, 수직, 대각 또는 이에 준하는 전단면 대표 측선 |
 | 변위 개념 | 내공 수렴/확대 방향 화살표 |
 | 우측 패널 | 측점 개념, 대표 측선, 측정 목적 설명 |
@@ -99,7 +99,7 @@ This figure must explain full-section tunnel convergence measurement, not upper-
 
 Layout:
 - Left 70%: tunnel cross-section with clear lining.
-- Place representative measurement points around the tunnel section so that the figure reads as full-section convergence monitoring.
+- Place **eleven (11) measurement points P1 through P11** as convergence meters on the tunnel lining (left wall, springlines, crown, right wall).
 - Show representative measurement lines across the section, including horizontal, vertical, and diagonal or equivalent representative lines.
 - The figure should clearly communicate that the tunnel section as a whole is monitored for convergence and deformation.
 - Show simple arrows indicating inward displacement / convergence concept.
@@ -108,7 +108,7 @@ Layout:
 Korean labels:
 - 터널 라이닝
 - 전단면 내공변위
-- 대표 측점
+- 대표 측점 P1~P11
 - 대표 측선
 - 수평 측선
 - 수직 측선
@@ -130,6 +130,7 @@ Design:
 Do not draw upper-arch-only chain.
 Do not make it look like crown settlement monitoring.
 Do not show only P1 to P5 on the upper arch.
+Do not use fewer than 11 labeled convergence measurement points when depicting the v10 standard layout.
 Do not draw server, data logger, mobile app, dashboard, or communication flow.
 Do not use vibrating wire, VW, product names, brand logos, or real site names.
 Do not use neon, cyberpunk, fantasy machine parts, biological brain, AI abstract network, workers, faces, or unreadable Korean text.

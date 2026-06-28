@@ -80,11 +80,11 @@ check('technology/index.html cache bust', () => {
   return ok('technology/index.html app.js?v=' + m[1]);
 });
 
-check('canonical-image-png.json', () => {
-  if (!existsSync(join(ROOT, 'scripts/canonical-image-png.json'))) {
-    return fail('canonical-image-png.json', 'missing');
+check('canonical-image-webp.json', () => {
+  if (!existsSync(join(ROOT, 'scripts/canonical-image-webp.json'))) {
+    return fail('canonical-image-webp.json', 'missing');
   }
-  return ok('canonical-image-png.json');
+  return ok('canonical-image-webp.json');
 });
 
 check('deploy manifest includes book PDF', () => {

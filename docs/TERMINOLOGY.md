@@ -14,7 +14,7 @@
 node scripts/validate-terminology.mjs
 node scripts/validate-citations.mjs
 node scripts/build-content-data.mjs
-node scripts/generate-image-assets.mjs   # PNG·WebP 스캔 → images.js
+node scripts/generate-image-assets.mjs   # WebP 스캔 → images.js
 ```
 
 이미지 현황·등급: [docs/image-audit.md](./image-audit.md) · 잔여: [docs/07-미구현-백로그.md](./07-미구현-백로그.md)  

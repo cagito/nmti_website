@@ -13,7 +13,7 @@ const registry = JSON.parse(
   readFileSync(join(REWORK_ROOT, 'scripts', 'image-review-registry.json'), 'utf8'),
 );
 const canonical = JSON.parse(
-  readFileSync(join(REWORK_ROOT, 'scripts', 'canonical-image-png.json'), 'utf8'),
+  readFileSync(join(REWORK_ROOT, 'scripts', 'canonical-image-webp.json'), 'utf8'),
 );
 
 const phaseArg = (() => {

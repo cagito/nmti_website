@@ -1,18 +1,47 @@
-# IMG-056 redline v2 — 웹 대시보드 (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-056 redline — 웹 대시보드 구성도 (외부 PNG)
 
-**대상:** `instruments/modes/smart` · ZIP-AUD-50 · **DASH-STATE-01**  
-**정본:** [97 §10](../../../docs/97-Phase-AD-복붙-프롬프트-정본.md)  
-**판정:** **REGENERATE**
+> **image-knowledge:** [`경보·그래프·대시보드-표현`](../../../docs/image-knowledge/28-경보·그래프·대시보드-표현.md)
+> **prompt:** `prompts/IMG-056_웹_대시보드_구성도.md` · **scaffold:** `npm run scaffold:redline-stubs`
+
+## 0. 레이아웃
+
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| W1 | 지도 = 평면/현장도 기반 **위치** | ☐ | 형식 배치만 |
-| W2 | 목록: 항목·단위·상태·**최근 수신** | ☐ | 이름만 |
-| W3 | 그래프: 단위·시간·초기치·**관리기준** | ☐ | 축 없음 |
-| W4 | 이벤트: 센서/통신/조치 **구분** | ☐ | 단일 로그 |
-| W5 | 지도·목록·로그 **상태색 일관** | ☐ | 불일치 |
-| W6 | 결측·두절·저전압·이상 **별도** | ☐ | 전부 초록 |
+| Q1 | 축·단위·범례 · 시간축. | ☐ | |
+| Q2 | 관리기준(예시) · 현장별 각주. | ☐ | |
+| Q3 | 경보 단계 색·라벨(054). | ☐ | |
+| Q4 | 판정 주체 = 엔지니어/서버 · GW 중계 callout. | ☐ | |
+| Q5 | (018 상관) 점선 지체 · 상관≠인과. | ☐ | |
+| Q6 | 뇌·AI·사이버 회로 hero. (금지) | ☐ | |
+| Q7 | 스마트폰 실사 · 브랜드 앱. (금지) | ☐ | |
+| Q8 | GW 블록 내부 관리기준선. (금지) | ☐ | |
+
+<!-- /redline-scaffold:v1 -->
+
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`경보·그래프·대시보드-표현`](../../../docs/image-knowledge/28-경보·그래프·대시보드-표현.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **(예시)·현장별** 표기?
+- [ ] **축·범례·단위**?
+- [ ] **GW 판정** 없음?
+- [ ] **센서 단면·뇌** 없음?
+- [ ] WebP only?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
-| 검수자 | | 일자 | | 등급 | PASS / REGENERATE |
+| 항목 | 값 |
+|------|-----|
+| 검수자 | |
+| 일자 | |
+| 등급 | PASS / REGENERATE |

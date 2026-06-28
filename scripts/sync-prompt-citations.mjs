@@ -63,7 +63,16 @@ for (const [imgId, entry] of byImg) {
   const { sources } = resolveSourcesForNode(nodeId);
   const block = formatSourcesBlock(sources, { nodeId });
   const body = readFileSync(target, 'utf8');
+  if (!body.trim()) {
+    console.warn('SKIP empty prompt (no overwrite):', rel);
+    missing += 1;
+    continue;
+  }
   const next = injectCitationBlock(body, block);
+  if (!next.trim()) {
+    console.error('ABORT would empty prompt:', rel);
+    process.exit(1);
+  }
   if (next === body && body.includes(CITATION_SYNC_START)) {
     skipped += 1;
     continue;

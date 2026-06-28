@@ -1,17 +1,46 @@
-# IMG-019 redline v2 — 연약지반 성토부 계측기 설치 배치도 (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-019 redline — 연약지반 성토부 계측기 설치 배치도 (외부 PNG)
 
-**대상:** `fields/soft-ground` · ZIP-AUD-32 · **SOFT-LAYOUT-01**  
-**정본:** [93 §2](../../../docs/93-Phase-AC-복붙-프롬프트-정본.md) · [109 표준](../../../docs/109-IMG-019-연약지반-성토부-계측기-설치-배치도-표현-표준.md)  
-**판정:** **REGENERATE**
+> **image-knowledge:** [`연약지반·압밀-계측`](../../../docs/image-knowledge/27-연약지반·압밀-계측.md)
+> **prompt:** `prompts/IMG-019_연약지반_계측_전체_개념도.md` · **scaffold:** `npm run scaffold:redline-stubs`
+
+## 0. 레이아웃
+
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| L1 | **2D 설치 배치** — 흐름도·아이콘 나열 X | ☐ | 개념도만 |
-| L2 | 지표침하판·핀 · Sand Mat · GL | ☐ | 생략 |
-| L3 | **센서형 다단식 지중경사계** — 안정층 근입 | ☐ | 단독 「지중경사계」 |
-| L4 | piezo **tip** · G.W.L **관측공** 분리 | ☐ | 동형 관 |
-| L5 | 로거·서버·UI **없음** | ☐ | 대시보드 hero |
+| Q1 | 지표면 · 연약층/성토 구분. | ☐ | |
+| Q2 | 목적 1종 계기 + 측정 방향. | ☐ | |
+| Q3 | (piezo) 필터·밀봉 inset — [05](./05-간극수압계-설치-개념.md). | ☐ | |
+| Q4 | (침하) 하향 화살표 · 층별=보링축 callout. | ☐ | |
+| Q5 | 「설계·계획서·표 3.1-1」 각주. | ☐ | |
+| Q6 | 굴착 가시설 띠장·앵커. (금지) | ☐ | |
+| Q7 | 다목적 019 hero 재사용. (금지) | ☐ | |
+| Q8 | 임의 관리기준선 invent. (금지) | ☐ | |
+
+<!-- /redline-scaffold:v1 -->
+
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`연약지반·압밀-계측`](../../../docs/image-knowledge/27-연약지반·압밀-계측.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **One 목적**·SOE **혼합 없음**?
+- [ ] G.W.L≠piezo · 침하핀≠센서?
+- [ ] **019 다목적 hero** 아님?
+- [ ] WebP only?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
-| 검수자 | | 일자 | | 등급 | PASS / REGENERATE |
+| 항목 | 값 |
+|------|-----|
+| 검수자 | |
+| 일자 | |
+| 등급 | PASS / REGENERATE |

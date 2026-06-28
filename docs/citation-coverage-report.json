@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-06-27T06:28:24.305Z",
+  "generatedAt": "2026-06-27T10:08:23.779Z",
   "nodes": 126,
   "missingSources": 0,
   "emptySources": 0,
   "registryOrphans": 0,
-  "promptMissing": 0,
-  "errors": 0,
+  "promptMissing": 2,
+  "errors": 2,
   "warnings": 0,
-  "issues": []
+  "issues": [
+    {
+      "file": "prompts/IMG-049_변위_그래프_예시.md",
+      "line": 0,
+      "message": "근거 기준 블록 없음 — npm run sync:prompt-citations",
+      "severity": "error"
+    },
+    {
+      "file": "prompts/IMG-002_흙막이_벽체_계측_배치도.md",
+      "line": 0,
+      "message": "근거 기준 블록 없음 — npm run sync:prompt-citations",
+      "severity": "error"
+    }
+  ]
 }

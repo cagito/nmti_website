@@ -2,7 +2,7 @@
 
 이 저장소(`homepage/`) 작업 시 **반드시** 아래를 따릅니다.
 
-**최종 상태·운영:** [docs/10-최종-완료-및-운영-가이드.md](./docs/10-최종-완료-및-운영-가이드.md) (115노드 · SEO 114 · 마스터 102 · PNG 102 · verify:local PASS)
+**최종 상태·운영:** [docs/10-최종-완료-및-운영-가이드.md](./docs/10-최종-완료-및-운영-가이드.md) (115노드 · SEO 114 · 마스터 102 · WebP 102 · verify:local PASS)
 
 ### 다중 Cursor 동시 작업 (LOCK-01)
 
@@ -22,6 +22,35 @@
 - 기술자료 각 페이지 **「근거 기준」** 블록: [40-출처표기계획](./40-KCS-KDS-출처-표기-통합-계획.md) · `book/kds-kcs-citation-registry.json`
 - ImageWorks 프롬프트 §근거 기준: `npm run sync:prompt-citations`
 - 상세: [docs/TERMINOLOGY.md](./docs/TERMINOLOGY.md)
+
+### book/ PDF 이미지 작성 기준서 (`docs/image-knowledge/`)
+
+> Figure·도면·설치 개념도 작업 전 **`book/` PDF 근거** 실행 규칙. PDF 요약이 아니라 잘못 그리지 않게 막는 제약 문서.
+
+1. [00-공통-이미지-작성-원칙.md](./docs/image-knowledge/00-공통-이미지-작성-원칙.md)
+2. 해당 주제 `docs/image-knowledge/NN-*.md`
+3. [source-index.md](./docs/image-knowledge/source-index.md)
+4. ImageWorks prompt / redline · registry
+
+```bash
+npm run catalog:book-pdf           # PDF manifest·색인 갱신
+npm run build:gap-matrix
+npm run patch:instr-image-knowledge
+npm run patch:registry-image-knowledge
+npm run sync:prompt-image-knowledge-links
+npm run sync:prompt-image-rules
+npm run sync:redline-image-knowledge
+npm run extract:kds-figure-rules
+npm run patch:image-knowledge-from-kds
+npm run scaffold:redline-stubs
+npm run validate:book-rules-coverage
+npm run validate:image-knowledge
+npm run validate:instr-image-knowledge
+```
+
+- **`book/` 외 자료를 image-knowledge 근거로 쓰지 않는다** (라벨만 `book/KDS-KCS_용어기준.md` 허용).
+- **통합 계획:** [130 book→이미지규칙](./docs/130-book-콘텐츠-이미지작성규칙-반영-실행계획.md) · INSTR §3 ↔ image-knowledge 역링크 · prompts `## 실행 규칙`
+- 기존 P0 검수([51](./docs/51-계측-도면-검수-공통-원칙.md), [TECHNICAL](./docs/TECHNICAL_IMAGE_STANDARD.md))와 **병행** — 충돌 시 작업 중단.
 
 ### P0 최상위 — Figure 그리기 (모든 단면·AI·CAD 선행)
 
@@ -56,6 +85,8 @@
 - **CLS-01:** 지중경사계 ≠ 구조물경사계 · 지하수위계 ≠ 간극수압계 · 균열계 ≠ 변위계 · AMTS ≠ 프리즘 · **MPBX(091) ≠ 지중경사계 ≠ 신축계(039)** — [28 §2](./docs/28-NMTI-건설계측-기술자료-이미지-공학-감사-보고서.md) · [36 §4.5⑨](./docs/36-AI-이미지-생성-엔지니어링-프롬프트-가이드.md)
 - **AUTO-01:** manual probe/sounder **hero 금지** · well cap·junction box는 **자동형 허용** — [TECHNICAL §0.4](./docs/TECHNICAL_IMAGE_STANDARD.md) · [INSTRUMENTATION §3.24](./docs/INSTRUMENTATION_DRAWING_RULES.md)
 - **SETTLE-01:** **지표침하핀**(측량 표식) ≠ **지표침하계**(센서) ≠ **프리즘/ATS 측점** — [42](./docs/42-지표침하핀-지표침하계-구분-및-자동계측-정책.md) · [74 메뉴·링크 계획](./docs/74-지표침하계-메뉴·본문링크-추가계획.md) · [66](./docs/66-ZIP105-문서-정합-수정-보고.md)
+- **DISP-ATS-01:** 변위·처짐·신축 **기본 = 와이어식 변위계·LVDT·침하계·내공변위계** — **ATS는 IMG-042·광학망·공사중 맥락만** · 개념도 ATS 남발 금지 — [127](./docs/127-변위계측-자동광파기-남용방지-및-와이어식-우선-표준.md) · [09 image-knowledge](./docs/image-knowledge/09-변위·광학계측-표현-기준.md) · [128 통합계획](./docs/128-디자인-원칙-문서-통합-반영-실행계획.md)
+- **SLO-WIRE-01:** **와이어식 변위계 = 배면 사면** — **옹벽 전면·벽체 부착 금지** · 옹벽 = **프리즘(측점)** — [129](./docs/129-사면-옹벽-와이어식-변위계-배면사면-표준.md) · **IMG-090**
 - **WATERMARK-01:** 큰 Figure·hero **우하단 NMTI 로고 합성** + 우클릭·드래그 억제 — [76 계획](./docs/76-이미지-워터마크-보호-통합-계획.md) · [77 완료](./docs/77-이미지-워터마크-보호-구현-완료-보고.md)
 - **METHOD-01:** Figure 라벨에 **진동현식·VW·특정 측정 방식** **금지** — 계측기 **종류명**만
 - **BRI-EJ-13:** **신축이음계 = 와이어식** 필수 — [52](./docs/52-교량-신축이음계-계측-표현-표준.md)
@@ -69,7 +100,7 @@
 
 ### Figure 출판 품질·제작 방식 (FT-A/B — P0)
 
-- **FT-A/B**(단면·복합 개념도): Pillow `render-*.py`·`*_draw.py` **재렌더 금지** — `cad` / `ai-reviewed` PNG만
+- **FT-A/B**(단면·복합 개념도): 에이전트 **GenerateImage** · Pillow `render-*.py` · SVG→WebP **허용** — P0·redline 선행 · WebP 등록
 - **FT-C**(블록·흐름): Pillow 허용 · 출판 게이트 [IMAGE_AUDIT_CHECKLIST §5.1](./docs/IMAGE_AUDIT_CHECKLIST.md)
 - **PASS** = 기술 게이트 + **`visualReview`** 출판 게이트
 - 정본: [31-출판품질-통합수정계획](./docs/31-NMTI-기술자료-Figure-출판품질-및-제작방식-통합-수정계획.md) · `scripts/figure-production-policy.json` · `npm run audit:figure-production`
@@ -81,18 +112,19 @@
 - **Figure 재작도 (PNG):** [108](./docs/108-PNG-재작도-제작자-마스터-인덱스.md) · [119 Handoff](./docs/119-PNG-재작도-프로그램-운영-Handoff.md) · `rework:check` · `rework:handoff` · `rework:done` · W1: `patch:registry-phase-a` → `sign:phase-a`
 - **P0 와이어프레임 14종:** [122](./docs/122-Pillow-와이어프레임-Figure-출판품질-통합-수정계획.md) · [123 체크리스트](./docs/123-P0-와이어프레임-14종-실행-체크리스트.md) · `wireframeReplace` + `requiresReaudit` → SPA·SEO hero **placeholder** · `npm run rework:p0` · `rework:pillow` · `rework:done` 후 자동 해제
 
-## ⛔ 최우선: 에이전트·코드 SVG Figure 생성 금지
+## 에이전트 Figure 생성 (허용)
 
-> **기술자료 Figure(IMG-###)를 SVG로 그리지 않는다.** 에이전트·`render-svg-figures.py`·`*_svg.py` **전면 금지**.  
-> 상세: [docs/16-기술자료-이미지-에이전트-SVG-생성-금지.md](./docs/16-기술자료-이미지-에이전트-SVG-생성-금지.md)
+> **Cursor 에이전트가 IMG-### Figure를 생성·등록할 수 있다.** P0·WebP-only·registry 잠금은 유지.  
+> 상세: [docs/16-기술자료-이미지-에이전트-SVG-생성-금지.md](./docs/16-기술자료-이미지-에이전트-SVG-생성-금지.md) · `.cursor/rules/agent-figure-generation.mdc`
 
-| 금지 | 대안 |
+| 방식 | 용도 |
 |------|------|
-| Python/에이전트 SVG XML 작성 | 인간 CAD·Illustrator 또는 AI+§14 프롬프트 → **PNG** |
-| `render-svg-figures.py` | PNG → `convert-technology-webp.py` → `generate-image-assets.mjs` |
-| 「SVG v1」「SVG canonical」 신규 작업 | INSTRUMENTATION + IMAGE_AUDIT_CHECKLIST 검수 |
+| **GenerateImage** | AI 래스터 (프롬프트 + §36 §1.0) |
+| **Pillow** `render-*.py` | FT-A/B/C · FT-A/B는 `--force-legacy-pillow` 필요 시 |
+| **SVG → WebP** | `render-svg-figures.py` · `*_svg.py` |
+| **등록** | `npm run register:figure -- --input …webp` → `sync:images` |
 
-**허용:** `index.html` UI `<symbol>` SVG만 (기술 Figure 아님).
+**허용:** `index.html` UI `<symbol>` SVG (기술 Figure와 별도).
 
 ---
 
@@ -137,12 +169,13 @@ node scripts/generate-technology-seo-pages.mjs
 node scripts/generate-sitemap-technology.mjs
 ```
 
-- **canonical PNG:** `scripts/canonical-image-png.json` — 동일 IMG-ID 중복 시 공식 파일명 우선 (`generate-image-assets.mjs`). 교체 후 `validate-image-master.mjs` · 상세 [docs/09-GNSS-book-PDF-및-검증-가이드.md](./docs/09-GNSS-book-PDF-및-검증-가이드.md) §3
+- **canonical WebP:** `scripts/canonical-image-webp.json` — 동일 IMG-ID 중복 시 공식 파일명 우선 (`generate-image-assets.mjs`). 교체 후 `validate-image-master.mjs` · 상세 [docs/09-GNSS-book-PDF-및-검증-가이드.md](./docs/09-GNSS-book-PDF-및-검증-가이드.md) §3
+- **WebP-only:** `assets/images/technology/` 전체 PNG **금지** · `python scripts/purge-technology-png.py` · [TECHNICAL §3](./docs/TECHNICAL_IMAGE_STANDARD.md)
 - **통합 검증:** `npm run verify:local` (배포 전) · `npm run verify:content` (재작도 중) · `npm run rework:prompt` (Figure 복붙) · `npm run verify:deploy` · `npm run verify:production` (**13건**, FTP 후)
 
 ### ⛔ 기술자료 이미지 (필독 — 생성·수정 전)
 
-**SVG Figure 생성 금지:** [16-에이전트-SVG-생성-금지.md](./docs/16-기술자료-이미지-에이전트-SVG-생성-금지.md) · `.cursor/rules/no-agent-svg-figures.mdc` — `render-svg-figures` · `*_svg.py` **실행·작성하지 않음**.
+**에이전트 Figure:** [16-에이전트-생성-가이드.md](./docs/16-기술자료-이미지-에이전트-SVG-생성-금지.md) · `.cursor/rules/agent-figure-generation.mdc`
 
 기술자료 이미지를 생성하거나 수정하기 전 **반드시** 다음 문서를 먼저 확인한다.
 
@@ -175,7 +208,7 @@ node scripts/generate-sitemap-technology.mjs
 - **주변지반 hero** = **IMG-096** — **REGENERATE v4** · [57](./docs/57-IMG-096-가시설-주변지반-계측-표현-표준.md) · [110](./docs/110-IMG-096-옹벽삭제-가시설-주변지반-재작업-계획.md) · **옹벽·Sand Mat 삭제** · SOE-SURR-01
 - **IMG-062** = 지하수위·간극수압 (`earth-retaining-wall` principle·data).
 - **IMG-045** = 데이터로거 구성도 (`sensors/datalogger` hero). **레거시 산업용** — `npm run render:p3` PASS — [06 가이드](./ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/06_데이터로거_CR1000X_이미지_가이드.md)
-- **IMG-008** = 터널 전단면 내공변위 (`fields/tunnel/convergence`). **PASS Phase Z** — P1~P5 측점·측선·기준 측정선 · [77-Phase Z](./docs/77-외부-ZIP-전수검수-신규-심각오류-10종-및-수정계획.md) · `render-phase-z.py`
+- **IMG-008** = 터널 전단면 내공변위 (`fields/tunnel/convergence`). **PASS v10 (2026-06-27)** — **P1~P11** 내공변위계·대표 측선 · [126 redline](./docs/126-IMG-008-터널-내공변위-디자인-redline-및-생성프롬프트.md) · ai-reviewed WebP
 - **IMG-061** = 천단침하 (`fields/tunnel/crown-settlement`). **TUN-CROWN** [49](./docs/49-터널-천단침하-계측-표현-표준.md) · **v2 PASS** [50](./docs/50-IMG-061-천단침하-수정계획.md) ✅. 내공변위(IMG-008)·지표침하(IMG-010)와 구분.
 - **IMG-078** = 록볼트 축력 hero. **PASS (v2)** — [21-IMG-078·009](docs/21-IMG-078-009-록볼트-축력-오류분석-및-재작업-계획.md)
 - **IMG-009** = 지보재 경량 배치. **PASS (v2)** — hero **078/079 분리**
@@ -184,7 +217,7 @@ node scripts/generate-sitemap-technology.mjs
 - **IMG-063** = 막장전방 선행변위 (`fields/tunnel/face-advance`). 히어로 전용 — IMG-007 참고용.
 - **IMG-043** = GNSS 변위 계측 (`sensors/gnss` hero). **PASS** — `book/GNSS.pdf`·[07_GNSS_이미지_가이드](./ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/07_GNSS_이미지_가이드.md) · [INSTRUMENTATION §3.13](./docs/INSTRUMENTATION_DRAWING_RULES.md)
 - **IMG-015** = 사면 계측 전체 개념도 (`fields/slope` hero). **PASS** — [INSTRUMENTATION §3.12](./docs/INSTRUMENTATION_DRAWING_RULES.md)
-- **IMG-089·090** = 사면 지표경사·구조물변위 — Sprint0 Pillow PASS · **v2 redline 미검수** · [36 §4.3②③](./docs/36-AI-이미지-생성-엔지니어링-프롬프트-가이드.md) · 재작도 권장
+- **IMG-089·090** = 사면 지표경사·구조물변위 — **090 = SLO-WIRE-01** (와이어=배면 사면 · 옹벽=프리즘) · [129](./docs/129-사면-옹벽-와이어식-변위계-배면사면-표준.md) · [36 §4.3②③](./docs/36-AI-이미지-생성-엔지니어링-프롬프트-가이드.md)
 - **IMG-024** = 댐 hero — v3 프롬프트 · **redline v2** · Pillow PASS · **픽셀 미검수** · [39](./docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md) · [36 §4.9①](./docs/36-AI-이미지-생성-엔지니어링-프롬프트-가이드.md) · 재작도 권장
 - **IMG-064·084** = 항만·케이슨 — v2 · **REGENERATE** 권장 · [36 §4.9②](./docs/36-AI-이미지-생성-엔지니어링-프롬프트-가이드.md) · 노드 `quay-wall`/`caisson`
 - **IMG-023** = 철도 hero — v2 · [36 §4.9③](./docs/36-AI-이미지-생성-엔지니어링-프롬프트-가이드.md)

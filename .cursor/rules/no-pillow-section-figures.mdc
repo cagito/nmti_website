@@ -1,34 +1,8 @@
 ---
-description: FT-A/B Figure — Pillow 단면·복합 개념도 코드 렌더 금지
-alwaysApply: true
+description: (폐기) no-pillow-section-figures — agent-figure-generation.mdc 로 대체
+alwaysApply: false
 ---
 
-# Pillow FT-A/B Figure 생성 금지 (필수)
+# 폐기
 
-## 절대 규칙
-
-**FT-A(단면·설치 CAD)·FT-B(복합 개념도) Figure를 Pillow `ImageDraw` / `render-*.py`로 그리거나 덮어쓰지 않는다.**
-
-- `scripts/lib/*_draw.py`로 **단면·설치도·다패널 개념도** 신규·재렌더 **금지**
-- `render-p1` · `render-phase5` · `render-img008-*` · `render-retaining-audit-fixes` 등 **FT-A/B ID 재실행 금지**
-- `render_guard.enforce_render_policy`가 **exit 2** — `--force-legacy-pillow` 없이 우회 금지
-
-**이유:** Pillow Figure는 공학 assert는 통과해도 **계측관리계획서 삽입 품질(출판 게이트)** 미달 — IMG-008·002·031 등 재발.
-
-상세: `docs/31-NMTI-기술자료-Figure-출판품질-및-제작방식-통합-수정계획.md` · `scripts/figure-production-policy.json`
-
-## 허용
-
-| 구분 | 허용 |
-|------|------|
-| **FT-C** 블록·흐름·그래프 | `render:p3` · `render:power` · `render:modes` 등 |
-| **FT-A/B 산출** | redline + ImageWorks 프롬프트 → **인간 검수 AI PNG / CAD** |
-| 검증 | `npm run audit:figure-production` |
-
-## Figure 재작업 시 (FT-A/B)
-
-1. `figure-production-policy.json`에서 tier·migrationPhase 확인
-2. ImageWorks 프롬프트 + INSTRUMENTATION + redline
-3. PNG ≥1920×1080 → `assets/images/technology/source/`
-4. `visualReview` + `productionMethod: ai-reviewed` → registry
-5. `npm run audit:figure-production:strict` 통과 후 배포
+Pillow FT-A/B·에이전트 렌더는 **`agent-figure-generation.mdc`** 를 따른다. 본 규칙은 비활성(`alwaysApply: false`).

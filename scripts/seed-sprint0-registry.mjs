@@ -9,7 +9,7 @@ import { atomicWriteUtf8 } from './lib/atomic-write.mjs';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const policyPath = join(ROOT, 'scripts', 'figure-production-policy.json');
 const registryPath = join(ROOT, 'scripts', 'image-review-registry.json');
-const canonicalPath = join(ROOT, 'scripts', 'canonical-image-png.json');
+const canonicalPath = join(ROOT, 'scripts', 'canonical-image-webp.json');
 const masterPath = join(
   ROOT,
   'ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/03_IMAGE_MASTER_LIST.json'
@@ -99,14 +99,14 @@ const FIGURES = [
 ];
 
 const CANONICAL = {
-  'IMG-089': 'IMG-089_사면-지표경사-계측-개념도_지표경사계pad콘크리트.png',
-  'IMG-090': 'IMG-090_사면-구조물-변위-계측-개념도_옹벽프리즘ATS.png',
-  'IMG-091': 'IMG-091_다점지중변위계-MPBX-설치-개념도_보링다점앵커.png',
-  'IMG-092': 'IMG-092_말뚝-축력-변형률-지중-단면도_CIP철근망변형률계.png',
-  'IMG-093': 'IMG-093_환경-소음-분진-경계-계측주_펜스소음PM로거.png',
-  'IMG-094': 'IMG-094_상시-계측-모드-흐름도_등간격트리거stabletrend.png',
-  'IMG-095': 'IMG-095_실시간-이벤트-계측-모드-토폴로지_고속샘플링impulse.png',
-  'IMG-102': 'IMG-102_경보-알림-상태-제어-흐름도_threshold경광SMS.png'
+  'IMG-089': 'IMG-089_사면-지표경사-계측-개념도_지표경사계pad콘크리트.webp',
+  'IMG-090': 'IMG-090_사면-구조물-변위-계측-개념도_배면사면와이어식변위계.webp',
+  'IMG-091': 'IMG-091_다점지중변위계-MPBX-설치-개념도_보링다점앵커.webp',
+  'IMG-092': 'IMG-092_말뚝-축력-변형률-지중-단면도_CIP철근망변형률계.webp',
+  'IMG-093': 'IMG-093_환경-소음-분진-경계-계측주_펜스소음PM로거.webp',
+  'IMG-094': 'IMG-094_상시-계측-모드-흐름도_등간격트리거stabletrend.webp',
+  'IMG-095': 'IMG-095_실시간-이벤트-계측-모드-토폴로지_고속샘플링impulse.webp',
+  'IMG-102': 'IMG-102_경보-알림-상태-제어-흐름도_threshold경광SMS.webp'
 };
 
 const master = JSON.parse(readFileSync(masterPath, 'utf8'));

@@ -13,30 +13,30 @@
 | IMG-003 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-004 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-005 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-006 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-006 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-007 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-008 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-009 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
+| IMG-008 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
+| IMG-009 | PASS | reviewed | 2026-06-28 | P1 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-010 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-011 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-011 | PASS | reviewed | 2026-06-28 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-012 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-013 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-014 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
-| IMG-015 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-016 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-017 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-018 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-015 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-016 | PASS | reviewed | 2026-06-28 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-017 | PASS | reviewed | 2026-06-28 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-018 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-019 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-020 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-021 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-022 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.6 · KCS 11 10 15:2025 §3 | — |
 | IMG-023 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.7 · KCS 11 10 15:2025 §3 | — |
-| IMG-024 | PASS | reviewed | 2026-06-26 | P0 | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-024 | PASS | reviewed | 2026-06-28 | P0 | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-025 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-026 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-027 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-028 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-029 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-029 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-030 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-031 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-032 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
@@ -46,49 +46,49 @@
 | IMG-036 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-037 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-038 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-039 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-040 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-041 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-039 | PASS | reviewed | 2026-06-28 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-040 | PASS | reviewed | 2026-06-28 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-041 | PASS | reviewed | 2026-06-28 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-042 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-043 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-044 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-045 | PASS | reviewed | 2026-06-26 | P0 | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 | — |
-| IMG-046 | PASS | reviewed | 2026-06-26 | P1 | KCS 11 10 15:2025 §3.1.2 · KCS 11 10 15:2025 §3.2.4 | — |
-| IMG-047 | PASS | reviewed | 2026-06-26 | P1 | KCS 11 10 15:2025 §3.1.2 | — |
-| IMG-048 | PASS | reviewed | 2026-06-26 | P1 | KCS 11 10 15:2025 §3.1.2 · KCS 11 10 15:2025 §3.2.4 | — |
-| IMG-049 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-050 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-051 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-052 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-053 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-054 | PASS | reviewed | 2026-06-26 | P0 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
-| IMG-055 | PASS | reviewed | 2026-06-26 | P1 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
-| IMG-056 | PASS | reviewed | 2026-06-26 | P0 | — | — |
-| IMG-057 | PASS | reviewed | 2026-06-26 | — | — | — |
-| IMG-058 | PASS | reviewed | 2026-06-26 | P0 | KCS 11 10 15:2025 §3.1.2 | — |
-| IMG-059 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-060 | PASS | reviewed | 2026-06-26 | P1 | — | — |
+| IMG-043 | PASS | reviewed | 2026-06-28 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-044 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-045 | PASS | reviewed | 2026-06-27 | P0 | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 | — |
+| IMG-046 | PASS | reviewed | 2026-06-27 | P1 | KCS 11 10 15:2025 §3.1.2 · KCS 11 10 15:2025 §3.2.4 | — |
+| IMG-047 | PASS | reviewed | 2026-06-27 | P1 | KCS 11 10 15:2025 §3.1.2 | — |
+| IMG-048 | PASS | reviewed | 2026-06-27 | P1 | KCS 11 10 15:2025 §3.1.2 · KCS 11 10 15:2025 §3.2.4 | — |
+| IMG-049 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-050 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-051 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-052 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-053 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-054 | PASS | reviewed | 2026-06-27 | P0 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
+| IMG-055 | PASS | reviewed | 2026-06-27 | P1 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
+| IMG-056 | PASS | reviewed | 2026-06-27 | P0 | — | — |
+| IMG-057 | PASS | reviewed | 2026-06-27 | — | — | — |
+| IMG-058 | PASS | reviewed | 2026-06-27 | P0 | KCS 11 10 15:2025 §3.1.2 | — |
+| IMG-059 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-060 | PASS | reviewed | 2026-06-27 | P1 | — | — |
 | IMG-061 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-062 | PASS | reviewed | 2026-06-22 | P2 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-063 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-064 | PASS | reviewed | 2026-06-26 | P2 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
+| IMG-064 | PASS | reviewed | 2026-06-28 | P2 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
 | IMG-065 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.1.2 | — |
-| IMG-066 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.1.2 | — |
-| IMG-067 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.1.2 | — |
-| IMG-068 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.1.2 | — |
-| IMG-069 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.1.2 | — |
+| IMG-066 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.1.2 | — |
+| IMG-067 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.1.2 | — |
+| IMG-068 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.1.2 | — |
+| IMG-069 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.1.2 | — |
 | IMG-070 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
 | IMG-071 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
 | IMG-072 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
 | IMG-073 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
 | IMG-074 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
 | IMG-075 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
-| IMG-076 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 | — |
-| IMG-077 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 | — |
+| IMG-076 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 | — |
+| IMG-077 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 | — |
 | IMG-078 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-079 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
+| IMG-079 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-080 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-081 | PASS | reviewed | 2026-06-26 | P0 | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-081 | PASS | reviewed | 2026-06-28 | P0 | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-082 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-083 | PASS | reviewed | 2026-06-26 | — | KCS 54 20 25:2018 §3.2 | — |
 | IMG-084 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
@@ -96,28 +96,28 @@
 | IMG-086 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
 | IMG-087 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
 | IMG-088 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
-| IMG-089 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-090 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-091 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-092 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.9 | — |
-| IMG-093 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 | — |
-| IMG-096 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-089 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-090 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-091 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-092 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.9 | — |
+| IMG-093 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.1.5 | — |
+| IMG-096 | PASS | reviewed | 2026-06-28 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-097 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 | — |
 | IMG-098 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
 | IMG-099 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.9.1.1 | — |
-| IMG-100 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
-| IMG-101 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
-| IMG-094 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
-| IMG-095 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
-| IMG-102 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
-| IMG-103 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 · KDS 11 10 15:2025 §4.2.1.6 | — |
-| IMG-104 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.2.1.6 | — |
-| IMG-105 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 · KDS 11 10 15:2025 §4.2.1.9 | — |
-| IMG-106 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.2.1.9 | — |
-| IMG-107 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
-| IMG-108 | PASS | reviewed | 2026-06-26 | — | — | — |
-| IMG-109 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
-| IMG-110 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
+| IMG-100 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-101 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-094 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
+| IMG-095 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
+| IMG-102 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
+| IMG-103 | PASS | reviewed | 2026-06-27 | — | KCS 24 99 05:2023 §3.2 · KDS 11 10 15:2025 §4.2.1.6 | — |
+| IMG-104 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.2.1.6 | — |
+| IMG-105 | PASS | reviewed | 2026-06-27 | — | KCS 24 99 05:2023 §3.2 · KDS 11 10 15:2025 §4.2.1.9 | — |
+| IMG-106 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.2.1.9 | — |
+| IMG-107 | PASS | reviewed | 2026-06-27 | — | KCS 24 99 05:2023 §3.2 | — |
+| IMG-108 | PASS | reviewed | 2026-06-27 | — | — | — |
+| IMG-109 | PASS | reviewed | 2026-06-27 | — | KCS 24 99 05:2023 §3.2 | — |
+| IMG-110 | PASS | reviewed | 2026-06-27 | — | KCS 24 99 05:2023 §3.2 | — |
 | IMG-111 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-112 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.1.7 · KCS 11 10 15:2025 §3 | — |
 | IMG-113 | PASS | reviewed | 2026-06-27 | — | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 | — |
@@ -132,7 +132,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-001_*.png` |
+| 파일명 | `IMG-001_가시설-계측-전체-개념도_굴착단면계측항목.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/가시설 |
@@ -161,13 +161,13 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-002_*.png` |
+| 파일명 | `IMG-002_흙막이-계측-설치-대표-단면도.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | PNG canonical v7 · 11종·②③ 이형·앵커 두부·토압 방향. legacySvgSource 수정 금지 (doc 16). · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | PNG canonical v7 · 11종·②③ 이형·앵커 두부·토압 방향. legacySvgSource 수정 금지 (doc 16). |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -210,7 +210,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-003_*.png` |
+| 파일명 | `IMG-003_버팀보-하중계-설치-개념도_띠장접합부축압축.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/가시설 |
@@ -231,13 +231,13 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-004_*.png` |
+| 파일명 | `IMG-004_어스앵커-하중계-설치-개념도_앵커두부정착구.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v3: 굴착측 두부 조립(지지링·반력판–LC–헤드)·T/P 분리·정착장 내부 금지. · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v3: 굴착측 두부 조립(지지링·반력판–LC–헤드)·T/P 분리·정착장 내부 금지. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -269,7 +269,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-005_*.png` |
+| 파일명 | `IMG-005_주변건물-균열-경사-계측도_굴착주변건물배치.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/가시설 |
@@ -303,20 +303,27 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-006_*.png` |
+| 파일명 | `IMG-006_굴착-단계별-계측-흐름도_1단계최종굴착계측.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | P1 Sprint1 v3 ai-reviewed — 4단계 굴착·계측 루프·누적변위 그래프 · docs/122 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+
+**금지 오류 대조:**
+
+- 버팀보 정중앙 하중계
+- IMG-002와 동일 대표 단면도 역할 중복
+- 뇌·홍보 UI
 
 <a id="IMG-007"></a>
 
@@ -324,7 +331,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-007_*.png` |
+| 파일명 | `IMG-007_터널-계측-전체-개념도_NATM단면주요계측항목.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 |
 | 관련 계측기 | 분야별/터널 |
@@ -353,20 +360,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-008_*.png` |
+| 파일명 | `IMG-008_터널-전단면-내공변위-측정시스템_상부아치내공변위.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel/convergence`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 |
 | 관련 계측기 | 분야별/터널 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | ai-reviewed PASS — Z-1a 연속 튜브 오류. 재작도: redline v8+v9. docs/77. |
+| 기술 오류 | v10 ai-reviewed — 내공변위계 11점(P1~P11), 전단면 대표 측점·측선, 노반 Open. docs/126·redline v10. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent Phase Z |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent v10 |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | Phase Z ZIP-AUD fix — Pillow v+1 |
 
 **금지 오류 대조:**
@@ -377,6 +384,7 @@
 - 센서가 터널 중앙에 부유
 - 라이닝 연속 센서 튜브형 내공변위
 - Kit가 전체 변형 프로파일 자동 산정
+- P1~P5만으로 전단면 대표 표현
 
 <a id="IMG-009"></a>
 
@@ -384,21 +392,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-009_*.png` |
+| 파일명 | `IMG-009_록볼트-축력-숏크리트-응력-계측도_지보재거동센서.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 |
 | 관련 계측기 | 분야별/터널 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP — 숏크리트 응력계 공중 부유. MAJOR_FIX. docs/77 Phase Z-2a · Phase Z PASS |
+| 기술 오류 | v4 Pillow/WebP PASS — IMG-009는 지보재 계측 위치 보조도, 록볼트 축력(IMG-078)·숏크리트 응력(IMG-079) 전용 Figure와 분리 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent Phase Z |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | Phase Z ZIP-AUD fix — Pillow v+1 |
+| 검수자 | Codex Pillow render + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 Pillow/WebP — 숏크리트 계기 공중 부유 제거, 록볼트 축력·숏크리트 응력 역할 분리 |
 
 **금지 오류 대조:**
 
@@ -410,7 +418,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-010_*.png` |
+| 파일명 | `IMG-010_터널-지표침하-계측도_침하계자동광파기배치.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 |
 | 관련 계측기 | 분야별/터널 |
@@ -431,7 +439,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-011_*.png` |
+| 파일명 | `IMG-011_교량-계측-전체-개념도_상부구조교각교대기초.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/교량 |
@@ -444,7 +452,7 @@
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
+| 검수일 | 2026-06-28 |
 | 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
 
 **금지 오류 대조:**
@@ -458,7 +466,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-012_*.png` |
+| 파일명 | `IMG-012_교각-변위-경사-계측도_상하부경사계변위계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/교량 |
@@ -491,7 +499,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-013_*.png` |
+| 파일명 | `IMG-013_교량-기초-침하-계측도_침하계수위계변위계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/교량 |
@@ -524,7 +532,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-014_*.png` |
+| 파일명 | `IMG-014_교량-신축이음부-신축량-계측도_신축이음계핑거형.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/교량 |
@@ -555,20 +563,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-015_*.png` |
+| 파일명 | `IMG-015_사면-계측-전체-개념도_활동면지중경사계지하수위계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/slope`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | ai-reviewed PASS — Z-1b 확정 활동면·3~5m. 재작도: redline v2. docs/77. |
+| 기술 오류 | DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent Phase Z |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | Phase Z ZIP-AUD fix — Pillow v+1 |
 
 **금지 오류 대조:**
@@ -587,21 +595,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-016_*.png` |
+| 파일명 | `IMG-016_원호활동면-계측-해석도_원호파괴지중경사계프로파일.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/slope`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 2차 — 최대변위 심도=활동면 1:1 단정. REGENERATE. redline v2 미검수. docs/81 AA-1a · docs/85 · interim body expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 Pillow/WebP PASS — 추정 원호활동면, 전단변형 집중 구간, 활동면 추정 구간, 안정해석 검토 모식도 분리. 최대변위=활동면 및 IPI 단독 확정 표현 제거 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | Codex Pillow render + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 Pillow/WebP — INTERP-01, SLOPE-01, IPI-EMBED, G.W.L≠piezo, 최대변위=활동면 금지 대조 PASS |
 
 **금지 오류 대조:**
 
@@ -615,21 +623,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-017_*.png` |
+| 파일명 | `IMG-017_평면활동면-계측-해석도_암반사면평면파괴.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/slope`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 2차 — 무한사면식↔프로파일 직결. REGENERATE. redline v2 미검수. docs/81 AA-1b · docs/85 · interim body expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 Pillow/WebP PASS — 추정 평면활동면, 안정성 검토식, IPI 프로파일, G.W.L·간극수압 병행 검토 분리 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | Codex Pillow render + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 Pillow/WebP — 해석식=활동면 확정, 변위 최대=평면활동면 단정, IPI 단독 확정 표현 제거 |
 
 **금지 오류 대조:**
 
@@ -643,27 +651,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-018_*.png` |
+| 파일명 | `IMG-018_강우-지하수위-변위-상관도_강우후수위상승변위증가.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/slope`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 2차 — 상관=인과 확정. MAJOR_FIX. redline v2 미검수. docs/81 AA-2a · docs/85 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint5 v3 — INTERP-01 상관분석·지체·인과 단정 금지 · docs/87 §1 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 강우→지하수위→변위 단일 인과 확정
-- 고정 시간지연 일반값
-- 상관관계를 원인 확정으로 표기
+- 상관=인과 확정
+- 고정 지연시간
 
 <a id="IMG-019"></a>
 
@@ -671,7 +678,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-019_*.png` |
+| 파일명 | `IMG-019_연약지반-계측-전체-개념도_성토침하간극수압측방유동.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/soft-ground`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/연약지반 |
@@ -706,7 +713,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-020_*.png` |
+| 파일명 | `IMG-020_압밀-침하-계측-개념도_시간침하간극수압소산.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/soft-ground`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/연약지반 |
@@ -734,7 +741,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-021_*.png` |
+| 파일명 | `IMG-021_측방유동-계측도_연약층측방변위경사계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/soft-ground`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/연약지반 |
@@ -762,7 +769,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-022_*.png` |
+| 파일명 | `IMG-022_구조물-안전계측-전체-개념도_균열경사진동변위.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/structural-safety`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.6 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/구조물 |
@@ -783,7 +790,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-023_*.png` |
+| 파일명 | `IMG-023_철도-노반-계측-개념도_침하진동변위계측.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/railway`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.7 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/철도 |
@@ -811,21 +818,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-024_*.png` |
+| 파일명 | `IMG-024_댐-안전관리-계측-체계도_필댐6항목데이터흐름.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/dam`) |
 | KDS/KCS 근거 | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/댐 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 4차 — 누수=제체 내부 센서. REGENERATE. docs/92 Phase AC-1a DAM-LEAK-01 · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 local-corrected PASS — v3 기준 제조사 문자 제거, 제목 보강, 침하 그래프 음수·하향 누적 보정 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | Codex local correction + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 local-corrected — DAM-01 침하 방향 보정, 제조사 문자 제거 |
 
 **금지 오류 대조:**
 
@@ -847,13 +854,13 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-025_*.png` |
+| 파일명 | `IMG-025_지중경사계-시스템-구성도_ProbeCableReadoutCasing.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/inclinometer`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/지중경사계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase 5 v2: IPI 다점·4홈 casing·안정층 Base·자동 로거 체인. 수동 프로브는 비교 inset만. · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | Phase 5 v2: IPI 다점·4홈 casing·안정층 Base·자동 로거 체인. 수동 프로브는 비교 inset만. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -878,7 +885,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-026_*.png` |
+| 파일명 | `IMG-026_지중경사계-케이싱-단면도_GuideGroove4방향ProbeWheel.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/inclinometer`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/지중경사계 |
@@ -906,13 +913,13 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-027_*.png` |
+| 파일명 | `IMG-027_지중경사계-설치-단면도_보링그라우트안정층활동면.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/inclinometer`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/지중경사계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase 5 v2: → 화살표·Base 4m 근입·보링·그라우트·센서형 다단식. · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | Phase 5 v2: → 화살표·Base 4m 근입·보링·그라우트·센서형 다단식. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -938,7 +945,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-028_*.png` |
+| 파일명 | `IMG-028_지중경사계-측정-원리도_기울기누적변위계산.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/inclinometer`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/지중경사계 |
@@ -967,27 +974,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-029_*.png` |
+| 파일명 | `IMG-029_지중경사계-데이터-해석도_IncrementalCumulative활동면.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/inclinometer`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/지중경사계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 3차 — 최대 누적변위 깊이=활동면. REGENERATE. redline v2 미검수. docs/90 · docs/91 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint5 v3 — 변위집중≠활동면·간격변위 · docs/91 §2 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 최대 누적변위 깊이 = 활동면
-- 단일 그래프로 활동면 확정
-- 최대변위 심도와 활동면 동일 의미
+- 최대변위깊이=활동면
+- 단일 IPI 확정
 
 <a id="IMG-030"></a>
 
@@ -995,13 +1001,13 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-030_*.png` |
+| 파일명 | `IMG-030_지하수위계-설치-개념도_관측공수위센서케이블보호함.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/water-level-meter`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/지하수위계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase 5 v2: well cap·screen·filter pack·bentonite seal·submersible logger. · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | Phase 5 v2: well cap·screen·filter pack·bentonite seal·submersible logger. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -1024,13 +1030,13 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-031_*.png` |
+| 파일명 | `IMG-031_간극수압계-설치도_필터그라우트케이블.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/piezometer`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/간극수압계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase 5 v2: filter zone·grout seals·junction box·logger. ≠ 개방 관. · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | Phase 5 v2: filter zone·grout seals·junction box·logger. ≠ 개방 관. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -1053,7 +1059,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-032_*.png` |
+| 파일명 | `IMG-032_침하판-침하계-설치-개념도_성토하부연장봉보호관.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/settlement-gauge`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/침하계 |
@@ -1080,7 +1086,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-033_*.png` |
+| 파일명 | `IMG-033_층별침하계-개념도_자석링기준관층별침하.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/dam/tilt`) |
 | KDS/KCS 근거 | KCS 54 20 25:2018 §3.2 |
 | 관련 계측기 | 센서별/층별침하계 |
@@ -1108,7 +1114,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-034_*.png` |
+| 파일명 | `IMG-034_토압계-설치-개념도_흙막이배면성토부.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/earth-pressure-cell`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/토압계 |
@@ -1138,13 +1144,13 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-035_*.png` |
+| 파일명 | `IMG-035_하중계-설치-개념도_버팀보앵커하중전달.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/load-cell`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/하중계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase 5 v2: ① 띠장-버팀보 접합부 축압축 ② 앵커 두부 LC. · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | Phase 5 v2: ① 띠장-버팀보 접합부 축압축 ② 앵커 두부 LC. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -1167,7 +1173,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-036_*.png` |
+| 파일명 | `IMG-036_변형률계-설치-개념도_철근강재표면부착.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/strain-gauge`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/변형률계 |
@@ -1195,7 +1201,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-037_*.png` |
+| 파일명 | `IMG-037_균열계-설치-개념도_균열양측앵커변위측정.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/crack-meter`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/균열계 |
@@ -1225,7 +1231,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-038_*.png` |
+| 파일명 | `IMG-038_구조물-경사계-설치도_벽체교각표면.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/tilt-meter`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/구조물경사계 |
@@ -1255,21 +1261,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-039_*.png` |
+| 파일명 | `IMG-039_신축계-설치-개념도_이음부조인트상대변위.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/joint-meter`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/신축계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 2차 — 신축계·이음계·LVDT·균열계 혼합. REGENERATE. redline v2 미검수. docs/81 AA-1d · docs/85 · interim body expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 Pillow/WebP PASS — 두 고정점 사이 상대변위 ΔL 1축 목적, 고정측·이동측 브라켓과 측정축 분리 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | Codex Pillow render + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 Pillow/WebP — 신축계·LVDT·균열계 동일 범례 혼합 제거, 3축 동시 측정 표현 제거 |
 
 **금지 오류 대조:**
 
@@ -1283,21 +1289,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-040_*.png` |
+| 파일명 | `IMG-040_변위계-설치-개념도_기준점대상점변위측정.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/displacement-transducer`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/변위계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 3차 — LVDT 기준점·축·stroke 누락. MAJOR_FIX. redline v2 미검수. docs/90 · docs/91 · interim body expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 Pillow/WebP PASS — 안정 기준점·이동 대상점 분리, 측정축=변위방향, stroke 중립·브라켓 유격·영점/온도 보정 표시 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | Codex Pillow render + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 Pillow/WebP — 기준점 불안, 측정축 불일치, stroke·브라켓 유격 누락, 신축계(039) 혼동 제거 |
 
 **금지 오류 대조:**
 
@@ -1311,21 +1317,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-041_*.png` |
+| 파일명 | `IMG-041_진동계-설치-개념도_구조물지반3축방향.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/vibration-meter`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/진동계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP — 가속도·진동속도 단위 혼재. MAJOR_FIX. docs/77 Phase Z-2c · Phase Z PASS · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 |
+| 기술 오류 | v4 Pillow/WebP PASS — 구조물 고정형과 지반 매설형 분리, 가속도(m/s²·gal·g)와 PPV(mm/s) 단위 분리 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
+| 검수자 | Codex Pillow render + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 Pillow/WebP — 가속도 단위 mm/s 혼입 제거, 그래프 축 분리 |
 
 **금지 오류 대조:**
 
@@ -1337,7 +1343,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-042_*.png` |
+| 파일명 | `IMG-042_자동광파기-계측-개념도_TotalStation프리즘좌표변위.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/automated-total-station`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/자동광파기 |
@@ -1368,21 +1374,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-043_*.png` |
+| 파일명 | `IMG-043_GNSS-변위-계측-개념도_기준국이동국서버연결.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/gnss`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/GNSS |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP — 기준국→이동국 시준 점선. MAJOR_FIX. docs/77 Phase Z-2d · Phase Z PASS · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 |
+| 기술 오류 | v4 Pillow/WebP PASS — 기준국은 안정 지반, 이동국은 계측 대상 2점 이상, RTK/차분·무선 통신·중앙 서버 흐름 분리 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
+| 검수자 | Codex Pillow render + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 Pillow/WebP — GNSS 기준국 직접 시준·광학식 측량 요소·제조사 표기 제거 |
 
 **금지 오류 대조:**
 
@@ -1400,26 +1406,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-044_*.png` |
+| 파일명 | `IMG-044_기상계측기-구성도_강우량풍향온습도기압.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/weather-station`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 센서별/기상계측기 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 3차 — 기상계 임의 설치·상관=인과. MAJOR_FIX. redline v2 미검수. docs/90 · docs/91 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint6 v3 — WX-SITE-01 강우·풍속·온습·기압·보조자료·지체 callout |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
 - 장애물 무시 임의 설치
-- 기상-변위 상관을 인과 단정
+- 기상-변위 상관=인과
 - 설치 높이·이격 미표시
 
 <a id="IMG-045"></a>
@@ -1428,20 +1434,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-045_*.png` |
+| 파일명 | `IMG-045_데이터로거-구성도_센서입력전원통신저장.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/datalogger/static`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 |
 | 관련 계측기 | 시스템/데이터로거 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | render:p3 v2 LOGGER-SIG-01 — 센서 신호 형식별 입력 분리 · docs/91 §3 · interim FT-C PASS |
+| 기술 오류 | P1-1 v3 ai-reviewed — LOGGER-SIG-01·센서입력·전원·통신·저장 · redline v2 · docs/91 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
@@ -1460,27 +1466,27 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-046_*.png` |
+| 파일명 | `IMG-046_IoT-게이트웨이-구성도_현장센서서버통신중계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/communication/iot-gateway`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.1.2 · KCS 11 10 15:2025 §3.2.4 |
 | 관련 계측기 | 시스템/게이트웨이 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 3차 — 로거=게이트웨이 혼동. MAJOR_FIX. redline v2 미검수. docs/90 · docs/91 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint6 v3 — GW-ROLE-01 로거↔GW 분리·버퍼·시간동기·판정≠GW |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 게이트웨이=데이터로거 동일 장치
-- 게이트웨이가 이상판정·관리기준 판정
-- 로거 저장 vs GW 버퍼 미구분
+- GW=로거 동일
+- GW 관리기준 판정
+- 로컬저장 vs GW버퍼 미구분
 
 <a id="IMG-047"></a>
 
@@ -1488,28 +1494,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-047_*.png` |
+| 파일명 | `IMG-047_태양광-전원-시스템-구성도_패널컨트롤러배터리로거.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/power/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.1.2 |
 | 관련 계측기 | 시스템/전원 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 5차 — 태양광 부하·자율운전일·LVD·SPD 누락. MAJOR_FIX. docs/96 Phase AD-2 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint3 v3 — SOLAR-SIZE-01 MPPT·LVD·SPD·부하·자율운전일 · docs/97 §1 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 패널→충전→배터리→로거 직렬만
-- 부하 산정 없이 12V 배터리만
-- 무정전 장기 운전 보장 암시
-- 접지 단일 배터리만
+- 무정전 보장 암시
+- 부하 산정 없이 12V만
 
 <a id="IMG-048"></a>
 
@@ -1517,20 +1521,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-048_*.png` |
+| 파일명 | `IMG-048_LTE-M2M-통신-구성도_센서로거모뎀서버웹모바일.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/communication/lte-remote`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.1.2 · KCS 11 10 15:2025 §3.2.4 |
 | 관련 계측기 | 시스템/통신 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 5차 — LTE 직렬 흐름만. MAJOR_FIX. docs/96 Phase AD-2 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1-1 v3 ai-reviewed — LTE-BUF-01·버퍼·APN/VPN·ACK · redline v2 · docs/97 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
@@ -1549,27 +1553,27 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-049_*.png` |
+| 파일명 | `IMG-049_변위-그래프-예시_관리기준선실시간추세.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 데이터/그래프 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 5차 — 변위 단일 ±기준선. MAJOR_FIX. docs/96 Phase AD-2 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint6 v3 — DISP-GRAPH-01 상대변위·기준점·속도·예시 기준선 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 단일 ±기준선을 보편 기준처럼
-- 단일 변위계로 옹벽 전체 안정 판정
-- 기준점 안정성·변위속도 누락
+- 단일 ±기준선 보편화
+- 단일계=전체 안정
+- 기준점·속도 누락
 
 <a id="IMG-050"></a>
 
@@ -1577,28 +1581,27 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-050_*.png` |
+| 파일명 | `IMG-050_침하-그래프-예시_시간침하곡선예측선.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 데이터/그래프 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 5차 — 침하 단순 외삽=예측. REGENERATE. docs/96 Phase AD-1a · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint7 v3 — GRAPH-PRED-01 해석예측·성토마커·BM·예시기준 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 측정값 선형 외삽=최종침하
-- 침하판·연장봉을 기준점처럼
-- 압밀 해석법 없이 예측선
-- 성토단계·잔류침하 누락
+- 선형외삽 예측
+- 침하판=기준점
+- 보편 관리기준
 
 <a id="IMG-051"></a>
 
@@ -1606,27 +1609,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-051_*.png` |
+| 파일명 | `IMG-051_간극수압-소산-그래프_성토단계상승소산.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 데이터/그래프 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 5차 — 간극수압 이상화 소산. MAJOR_FIX. docs/96 Phase AD-2 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint7 v3 — PIEZO-DISS-01 단계별 상승소산·초정수압 분리 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 모든 성토단계 동일 u 패턴
-- Δu·초기 정수압 미구분
-- 소산만으로 압밀 완료 단정
+- 단계별 동일곡선
+- G.W.L=piezo
 
 <a id="IMG-052"></a>
 
@@ -1634,28 +1636,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-052_*.png` |
+| 파일명 | `IMG-052_하중-변화-그래프_버팀보하중경보기준선.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 데이터/그래프 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 5차 — 하중 동일 수평 기준선. REGENERATE. docs/96 Phase AD-1b · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint7 v3 — LOAD-STAGE-01 단별 기준·프리로드·급감 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 전 단계 동일 수평 기준선
-- 단계별 설계축력 미표시
-- 하중 급감=안전 암시
-- 프리로드·온도 영향 누락
+- 전단계 동일 기준선
+- 하중감소=안전
 
 <a id="IMG-053"></a>
 
@@ -1663,28 +1663,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-053_*.png` |
+| 파일명 | `IMG-053_진동-계측-그래프_PPV기준선표현.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 데이터/그래프 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 5차 — PPV 이벤트·시간 혼합. MAJOR_FIX. docs/96 Phase AD-2 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint7 v3 — VIB-GRAPH-01 PPV성분·이벤트·예시기준 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 이벤트 번호와 시간축 혼합
-- PPV 단일 점만
-- 3축·주파수·지속시간 누락
-- 가속도·속도 단위 혼동
+- 축 혼동
+- 보편 PPV 기준
 
 <a id="IMG-054"></a>
 
@@ -1692,28 +1690,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-054_*.png` |
+| 파일명 | `IMG-054_경보-단계-프로세스_정상주의경고위험조치.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/alarm-status`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/경보 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 5차 — 경보 선형 색상만. REGENERATE. docs/96 Phase AD-1c · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint7 v3 — ALARM-FLOW-01 QC·별도상태·해제조건 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 정상→위험→조치 선형만
-- 데이터 품질검증 선행 없음
-- 결측·센서이상=초과 혼동
-- 위험→조치완료 자동
+- 선형 4단계만
+- 초과=위험 단정
 
 <a id="IMG-055"></a>
 
@@ -1721,27 +1717,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-055_*.png` |
+| 파일명 | `IMG-055_모바일-경보-알림-화면_휴대폰경보표현.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/alarm-status`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/경보 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 5차 — 모바일 초과 알림만. MAJOR_FIX. docs/96 Phase AD-2 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint7 v3 — MOB-ALARM-01 확인·조치·감사로그 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 색상 알림만으로 조치 가능 암시
-- 통신·센서 상태 누락
-- 조치 이력·해제조건 없음
+- 색상만 경보
+- 실사 휴대폰
 
 <a id="IMG-056"></a>
 
@@ -1749,31 +1744,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-056_*.png` |
+| 파일명 | `IMG-056_웹-대시보드-구성도_지도센서목록그래프이벤트로그.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/smart`) |
 | KDS/KCS 근거 | — |
 | 관련 계측기 | 시스템/대시보드 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 5차 — 대시보드 형식만. REGENERATE. docs/96 Phase AD-1d · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint3 v3 — DASH-STATE-01 지도·목록·그래프·이벤트 상태 일치 · docs/97 §10 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 실제 URL·회사 로고
-- 과도한 대시보드 장식·광고 배너
-- 읽을 수 없는 한글 라벨
-- 전 센서 초록 점
-- 그래프 단위·시간축 없음
-- 지도·목록·이벤트 상태 불일치
-- 결측·통신두절 미표시
+- 전 센서 초록
+- 축·단위 없는 그래프
 
 <a id="IMG-057"></a>
 
@@ -1781,20 +1771,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-057_*.png` |
+| 파일명 | `IMG-057_자동-보고서-생성-흐름도_계측데이터PDF보고서.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/smart`) |
 | KDS/KCS 근거 | — |
 | 관련 계측기 | 시스템/보고서 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | P1 Sprint3 v3 — 계측→PDF 보고서 자동 생성 흐름 · docs/122 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+
+**금지 오류 대조:**
+
+- 설치 체크리스트 혼동
+- 빈 클라우드 박스
 
 <a id="IMG-058"></a>
 
@@ -1802,20 +1798,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-058_*.png` |
+| 파일명 | `IMG-058_통합-계측-플랫폼-아키텍처_센서로거서버DB웹모바일.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/remote-automatic`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.1.2 |
 | 관련 계측기 | 시스템/통합 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Sprint 0 §4.13 E2E — 5 INSTRUMENT_SUBGROUPS blocks · solar · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | P1-1 v2 ai-reviewed — §4.13 E2E 5블록·solar · ARCH-01 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | ARCH-01~03 · INSTRUMENTATION §3.36 |
 
 **금지 오류 대조:**
@@ -1831,27 +1827,27 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-059_*.png` |
+| 파일명 | `IMG-059_관리기준-설정-개념도_센서별기준치경보조건.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 시스템/관리기준 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 4차 — 관리기준 단일 표 일반화. REGENERATE. docs/92 Phase AC-1d · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 · interim SPA expose (pillow webp) · 2026-06-27 |
+| 기술 오류 | P1 Sprint4 v3 — THRESH-01 항목별·누적/속도·시공/유지 · docs/93 §10 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
 
-- 모든 센서 동일 정상/주의/경고 로직
-- 출처 없는 관리기준 수치
-- 기준 초과=구조물 위험 단정
+- 모든 센서 동일 경보
+- 출처 없는 수치
+- 자동 삭제
 
 <a id="IMG-060"></a>
 
@@ -1859,26 +1855,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-060_*.png` |
+| 파일명 | `IMG-060_데이터-품질관리-흐름도_수집검증보정분석보고.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/smart`) |
 | KDS/KCS 근거 | — |
 | 관련 계측기 | 시스템/데이터품질 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP — 이상치 자동 제거·보간 흐름. MAJOR_FIX. docs/77 Phase Z-2e · Phase Z PASS · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | P1 Sprint4 v3 — QC 원본보존·플래그·보정분리 · Phase Z |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent Phase Z |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | Phase Z ZIP-AUD fix — Pillow v+1 |
 
 **금지 오류 대조:**
 
-- 수집 직후 이상치 자동 삭제·보간
-- 원본 미보존 QC 흐름
+- 이상치 자동 삭제
+- 원본 미보존
 
 <a id="IMG-061"></a>
 
@@ -1886,7 +1882,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-061_*.png` |
+| 파일명 | `IMG-061_천단침하계-외부-수준점-계측-개념도.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel/crown-settlement`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 |
 | 관련 계측기 | 분야/터널 |
@@ -1920,7 +1916,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-062_*.png` |
+| 파일명 | `IMG-062_지하수위-간극수압-계측도.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/가시설 |
@@ -1949,7 +1945,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-063_*.png` |
+| 파일명 | `IMG-063_막장전방-선행변위-계측-개념도_막장전방지반.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel/face-advance`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 |
 | 관련 계측기 | 분야별/터널 |
@@ -1970,21 +1966,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-064_*.png` |
+| 파일명 | `IMG-064_항만-호안-계측-전체-개념도_케이슨옹벽주변지반.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/harbor/quay-wall`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/항만·호안 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 케이슨·육측 뒤채움·해측 조위·11종 계측기·범례 — 최초 배포 PASS · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 |
+| 기술 오류 | v4 Pillow/WebP PASS — 좌=육측·중=케이슨/안벽·우=해측으로 재작도, 조위선·G.W.L·간극수압 분리 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
+| 검수자 | Codex Pillow render + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 Pillow/WebP — HAR-Q01~Q03 및 19-image-knowledge 대조 |
 
 **금지 오류 대조:**
 
@@ -1999,7 +1995,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-065_*.png` |
+| 파일명 | `IMG-065_현장-계측-전원-통합-구성도_태양광풍력AC배터리.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/power/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.1.2 |
 | 관련 계측기 | 시스템/전원 |
@@ -2020,20 +2016,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-066_*.png` |
+| 파일명 | `IMG-066_상시-전원-AC-인입_배전반차단기정류.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/power/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.1.2 |
 | 관련 계측기 | 시스템/전원 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | P1 Sprint2 v3 ai-reviewed — AC 인입·배전반·서지·DC · docs/122 §4 P1-A |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+
+**금지 오류 대조:**
+
+- 빈 박스·PPT 와이어프레임
+- 뇌·실사 풍경
 
 <a id="IMG-067"></a>
 
@@ -2041,20 +2043,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-067_*.png` |
+| 파일명 | `IMG-067_AVR-자동전압조정기_입력출력안정화.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/power/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.1.2 |
 | 관련 계측기 | 시스템/전원 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | P1 Sprint2 v3 ai-reviewed — AVR 입력출력 안정화 · docs/122 §4 P1-A |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+
+**금지 오류 대조:**
+
+- 빈 박스·PPT 와이어프레임
+- 뇌·실사 풍경
 
 <a id="IMG-068"></a>
 
@@ -2062,20 +2070,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-068_*.png` |
+| 파일명 | `IMG-068_풍력-하이브리드-전원_태양광풍력배터리.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/power/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.1.2 |
 | 관련 계측기 | 시스템/전원 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | P1 Sprint2 v3 ai-reviewed — 태양광+풍력 하이브리드 · docs/122 §4 P1-A |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+
+**금지 오류 대조:**
+
+- 빈 박스·PPT 와이어프레임
+- 뇌·실사 풍경
 
 <a id="IMG-069"></a>
 
@@ -2083,20 +2097,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-069_*.png` |
+| 파일명 | `IMG-069_배터리-축전-시스템_용량종류모니터링.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/power/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.1.2 |
 | 관련 계측기 | 시스템/전원 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | P1 Sprint2 v3 ai-reviewed — 배터리 용량·SOC 모니터링 · docs/122 §4 P1-A |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+
+**금지 오류 대조:**
+
+- 빈 박스·PPT 와이어프레임
+- 뇌·실사 풍경
 
 <a id="IMG-070"></a>
 
@@ -2104,19 +2124,19 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-070_*.png` |
+| 파일명 | `IMG-070_수동-계측-개념도_현장방문리드아웃기록.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint2 v2 — 현장방문·리드아웃·측정일지 · redline v2 · docs/36 §4.8② · Phase D W10 — redline v2 PASS · docs/113 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | CodexQA |
+| 검수자 | Human-Reviewer |
 | 검수일 | 2026-06-27 |
 | 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
 
@@ -2126,19 +2146,19 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-071_*.png` |
+| 파일명 | `IMG-071_자동-계측-개념도_로거현장저장주기.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint2 v2 — 센서→로거→현장저장·수집주기 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | CodexQA |
+| 검수자 | Human-Reviewer |
 | 검수일 | 2026-06-27 |
 | 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
 
@@ -2148,20 +2168,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-072_*.png` |
+| 파일명 | `IMG-072_원격-자동계측-개념도_현장통신서버모니터링.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint2 v2 — 현장→LTE→서버→대시보드 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | CodexQA |
+| 검수자 | Human-Reviewer |
 | 검수일 | 2026-06-27 |
+| 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
 
 <a id="IMG-073"></a>
 
@@ -2169,20 +2190,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-073_*.png` |
+| 파일명 | `IMG-073_스마트-계측-개념도_플랫폼경보보고로그.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint2 v2 — 플랫폼·경보·보고·로그 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | CodexQA |
+| 검수자 | Human-Reviewer |
 | 검수일 | 2026-06-27 |
+| 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
 
 <a id="IMG-074"></a>
 
@@ -2190,20 +2212,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-074_*.png` |
+| 파일명 | `IMG-074_AI-계측-개념도_이상탐지예측HITL.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint2 v2 — 이상탐지·HITL 검토 · redline v2 · 뇌 금지 · Phase D W10 — redline v2 PASS · docs/113 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | CodexQA |
+| 검수자 | Human-Reviewer |
 | 검수일 | 2026-06-27 |
+| 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
 
 <a id="IMG-075"></a>
 
@@ -2211,19 +2234,19 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-075_*.png` |
+| 파일명 | `IMG-075_계측-방식-5단계-계층도_수동자동원격스마트AI.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/overview`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint2 v2 — 5단계 계층·포함관계 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | CodexQA |
+| 검수자 | Human-Reviewer |
 | 검수일 | 2026-06-27 |
 | 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
 
@@ -2233,21 +2256,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-076_*.png` |
+| 파일명 | `IMG-076_동적-데이터로거-구성도_모듈형DAQ고속샘플링.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/datalogger/static`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 |
 | 관련 계측기 | 시스템/데이터로거 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | render:datalogger-system v2 — D1 샘플링·트리거·채널분리 · docs/112 §11 · interim FT-C PASS |
+| 기술 오류 | P1 Sprint4 v3 — 모듈형 DAQ·IEPE·고속샘플링·PPV · docs/112 §11 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
+
+**금지 오류 대조:**
+
+- CR1000X 정적로거 혼동
+- 제조사 모델명
 
 <a id="IMG-077"></a>
 
@@ -2255,21 +2283,26 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-077_*.png` |
+| 파일명 | `IMG-077_멀티플렉서-구성도_체인센서순차스캔.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/datalogger/static`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 |
 | 관련 계측기 | 시스템/데이터로거 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | P1 Sprint5 v3 — MOD-06 MUX 순차 스캔·채널 체인 · docs/122 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
+
+**금지 오류 대조:**
+
+- 동시 측정 표현
+- VW·진동현식 라벨
 
 <a id="IMG-078"></a>
 
@@ -2277,7 +2310,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-078_*.png` |
+| 파일명 | `IMG-078_록볼트-축력-계측-개념도_축력계변형률계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel/rockbolt`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 |
 | 관련 계측기 | 분야별/터널 |
@@ -2304,20 +2337,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-079_*.png` |
+| 파일명 | `IMG-079_숏크리트-응력-변형-계측-개념도_변형률계매립.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel/shotcrete`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 |
 | 관련 계측기 | 분야별/터널 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 4차 — 숏크리트=지반압 전체 평가. REGENERATE. docs/92 Phase AC-1h · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | TUN-SC v3 — 암반|숏크리트|굴착 · SG 매립 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
@@ -2332,7 +2365,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-080_*.png` |
+| 파일명 | `IMG-080_강지보-응력-계측-개념도_스틸세트변형률계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel/steel-support`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 |
 | 관련 계측기 | 분야별/터널 |
@@ -2359,21 +2392,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-081_*.png` |
+| 파일명 | `IMG-081_기둥-축소량-계측-개념도_수직변형률계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/building`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/건축 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 4차 — RF=모든 층 축소 직접 산정. REGENERATE. docs/92 Phase AC-1c · interim body expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 Pillow/WebP PASS — 층별 변형률계·온도계·시공단계 그래프를 분리하고, RF층·단일 로드 절대 기준 표현 제거 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | Codex Pillow render + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 Pillow/WebP — 수직 로드 하나로 전 층 축소 직접 측정, RF층 절대 기준, 크리프·건조수축·탄성축소 단순화 제거 |
 
 **금지 오류 대조:**
 
@@ -2387,7 +2420,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-082_*.png` |
+| 파일명 | `IMG-082_건축-응력변형률-계측-개념도_중대부재하중계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/building`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/건축 |
@@ -2408,7 +2441,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-083_*.png` |
+| 파일명 | `IMG-083_댐-변형률-계측-개념도_제체매립SG.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/dam/strain`) |
 | KDS/KCS 근거 | KCS 54 20 25:2018 §3.2 |
 | 관련 계측기 | 분야별/댐 |
@@ -2429,7 +2462,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-084_*.png` |
+| 파일명 | `IMG-084_항만구조물-변위-계측-개념도_케이슨안벽변위계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/harbor/caisson`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/항만 |
@@ -2451,7 +2484,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-085_*.png` |
+| 파일명 | `IMG-085_*.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/교량 |
@@ -2477,7 +2510,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-086_*.png` |
+| 파일명 | `IMG-086_교량-진동-계측-개념도_가속도계통행응답.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge/seismic`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.2 |
 | 관련 계측기 | 분야별/교량 |
@@ -2498,7 +2531,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-087_*.png` |
+| 파일명 | `IMG-087_구조물-지진-계측-개념도_강진동응답스펙트럼.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge/seismic`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.2 |
 | 관련 계측기 | 분야별/구조물 |
@@ -2519,7 +2552,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-088_*.png` |
+| 파일명 | `IMG-088_구조물-온도-계측-개념도_온도계수화열계절.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge/temperature`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.2 |
 | 관련 계측기 | 분야별/구조물 |
@@ -2540,20 +2573,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-089_*.png` |
+| 파일명 | `IMG-089_사면-지표경사-계측-개념도_지표경사계pad콘크리트.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/slope/surface-tilt`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Sprint0 Pillow PASS — v3 프롬프트·redline v2 미검수. 재작도 시 §4.3②·SLO-TILT. · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | v3 ai-reviewed PASS — redline v2 서명 2026-06-27 · docs/88 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Human-Reviewer |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | Phase B v3 ai-reviewed — redline 서명 |
 
 **금지 오류 대조:**
 
@@ -2570,28 +2604,27 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-090_*.png` |
+| 파일명 | `IMG-090_사면-구조물-변위-계측-개념도_배면사면와이어식변위계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/slope/structural-displacement`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Sprint0 Pillow PASS — v3 프롬프트·redline v2 미검수. 재작도 시 §4.3③·ATS 부동점. · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | v5 ai-reviewed PASS — redline v2 서명 2026-06-27 · docs/88 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Human-Reviewer |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | Phase B v5 ai-reviewed — redline 서명 |
 
 **금지 오류 대조:**
 
-- 사면 외부 ATS 부동점 누락
-- 풍경 hero
-- ATS 옹벽·사면 꼭대기 부착 (SLO-STR-01)
-- 프리즘 측점 누락
-- 시준선(점선) 누락
+- 옹벽 전면·벽체에 와이어식 변위계 부착 (SLO-WIRE-01)
+- ATS만 hero — 와이어식 변위계 없음 (DISP-ATS-01)
+- ATS 옹벽·사면 꼭대기 부착
 - 흙막이 굴착·교량 풍경 맥락
 
 <a id="IMG-091"></a>
@@ -2600,20 +2633,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-091_*.png` |
+| 파일명 | `IMG-091_다점지중변위계-MPBX-설치-개념도_보링다점앵커.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/borehole-extensometer`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 |
 | 관련 계측기 | 계측기/센서 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Sprint0 Pillow PASS — v3 프롬프트·redline v2 미검수. 재작도 시 §4.5⑨·MPX. · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | v3 ai-reviewed PASS — redline v2 서명 2026-06-27 · docs/88 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Human-Reviewer |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | Phase B v3 ai-reviewed — redline 서명 |
 
 **금지 오류 대조:**
 
@@ -2630,20 +2664,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-092_*.png` |
+| 파일명 | `IMG-092_말뚝-축력-변형률-지중-단면도_CIP철근망변형률계.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/foundation-pile/cast-in-place-pile`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.9 |
 | 관련 계측기 | 분야별/기초말뚝 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Sprint 0 Pillow · CIP cage·변형률계·§2.4 해칭 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint3 v2 — CIP 말뚝·철근망·변형률계 · redline v2 · §4.11① · Phase D W10 — redline v2 PASS · docs/113 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
 
 **금지 오류 대조:**
@@ -2657,20 +2691,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-093_*.png` |
+| 파일명 | `IMG-093_환경-소음-분진-경계-계측주_펜스소음PM로거.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/environmental-impact/noise-level`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 |
 | 관련 계측기 | 분야별/환경민원 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Sprint 0 Pillow · 펜스·소음·PM·로거 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint3 v2 — 펜스·소음·분진·로거 · redline v2 · §4.11② · Phase D W10 — redline v2 PASS · docs/113 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
 
 **금지 오류 대조:**
@@ -2684,21 +2718,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-096_*.png` |
+| 파일명 | `IMG-096_주변지반-계측-설치-대표-단면도_굴착영향권복합.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/retaining-excavation/surrounding-ground`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase A W1 — 가시설 주변지반 v4 REGENERATE. MIX·옹벽삭제 · docs/57 · docs/110 · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 Pillow/WebP PASS — 흙막이 굴착 배면 주변지반 4종 배치, H=굴착깊이, 지표침하 측점 표기, 옹벽·Sand Mat·침하판·슬립면 제거 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | Codex Pillow render + visual review |
+| 검수일 | 2026-06-28 |
+| 금지 대조 | v4 Pillow/WebP — SOE-SURR-01, SETTLE-01, BORE-GL-01, SOE-INST-01 대조 PASS |
 
 **금지 오류 대조:**
 
@@ -2726,7 +2760,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-097_*.png` |
+| 파일명 | `IMG-097_터널-발파진동-영향권-계측-개념도_PPV측점배치.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel/blast-vibration`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 |
 | 관련 계측기 | 분야별/터널 |
@@ -2748,7 +2782,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-098_*.png` |
+| 파일명 | `IMG-098_항만-호안-조위지하수-계측-개념도_외해사석매립지하수위.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/harbor/tide-groundwater`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/항만·호안 |
@@ -2777,7 +2811,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-099_*.png` |
+| 파일명 | `IMG-099_건축-구조물-처짐-계측-개념도_RC골조LVDT처짐그래프.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/building/deflection`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.9.1.1 |
 | 관련 계측기 | 분야별/건축 |
@@ -2806,20 +2840,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-100_*.png` |
+| 파일명 | `IMG-100_건축공사-계측-전체-개념도_KCS39처짐축소균열.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/building`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/건축 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | render-building-audit-fixes.py · BLD-H-01 — IMG-022 교체 |
+| 기술 오류 | DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
@@ -2833,20 +2867,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-101_*.png` |
+| 파일명 | `IMG-101_건축공사-주변건물-계측-개념도_신축인접균열경사.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/building/adjacent-building`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/건축 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | render-building-audit-fixes.py · BLD-ADJ-01 — IMG-005(가시설) 분리 |
+| 기술 오류 | DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
@@ -2860,21 +2894,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-094_*.png` |
+| 파일명 | `IMG-094_상시-계측-모드-흐름도_등간격트리거stabletrend.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/normal-mode`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/운영모드 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Sprint 0 Pillow render — docs/36 §4 · pending ai-reviewed if FT-A/B · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint1 v2 ai-reviewed — 등간격 트리거·로거→클라우드·stable trend inset · redline v2 · docs/124 · Phase E W11 — Pillow 출판 검수 PASS · docs/116 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | Human-Reviewer |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | Phase E W11 — Pillow 출판 검수 PASS · docs/116 |
 
 **금지 오류 대조:**
 
@@ -2887,21 +2921,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-095_*.png` |
+| 파일명 | `IMG-095_실시간-이벤트-계측-모드-토폴로지_고속샘플링impulse.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/realtime-mode`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/운영모드 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Sprint 0 Pillow render — docs/36 §4 · pending ai-reviewed if FT-A/B · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint1 v2 ai-reviewed — Trigger Event·고속 샘플링·impulse 파형 · redline v2 · docs/124 · Phase E W11 — Pillow 출판 검수 PASS · docs/116 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | Human-Reviewer |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | Phase E W11 — Pillow 출판 검수 PASS · docs/116 |
 
 **금지 오류 대조:**
 
@@ -2914,21 +2948,21 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-102_*.png` |
+| 파일명 | `IMG-102_경보-알림-상태-제어-흐름도_threshold경광SMS.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`instruments/modes/alarm-status`) |
 | KDS/KCS 근거 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 |
 | 관련 계측기 | 시스템/운영모드 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Sprint 0 Pillow render — docs/36 §4 · pending ai-reviewed if FT-A/B · P0 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 · rework:done 후 해제 |
+| 기술 오류 | P0 Sprint1 v2 ai-reviewed — Caution/Warning/Action·경광등·SMS 알림 · redline v2 · docs/124 · Phase E W11 — Pillow 출판 검수 PASS · docs/116 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | Human-Reviewer |
+| 검수일 | 2026-06-27 |
+| 금지 대조 | Phase E W11 — Pillow 출판 검수 PASS · docs/116 |
 
 **금지 오류 대조:**
 
@@ -2942,20 +2976,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-103_*.png` |
+| 파일명 | `IMG-103_교량-상부구조-처짐-계측도_거더처짐계δ.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge/deflection`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.2 · KDS 11 10 15:2025 §4.2.1.6 |
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Bridge Daegu gap Pillow render — docs/61 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | BRI-DEF v2 — 처짐계 주 · ATS 보조 생략 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 
 **금지 오류 대조:**
 
@@ -2969,20 +3003,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-104_*.png` |
+| 파일명 | `IMG-104_처짐계-설치-측정-개념도_LVDT와이어.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/deflection-gauge`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.2.1.6 |
 | 관련 계측기 | 센서/처짐계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Bridge Daegu gap Pillow render — docs/61 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | AI Sprint2b — IMG-104 교량 확장 재작도 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 
 **금지 오류 대조:**
 
@@ -2995,20 +3029,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-105_*.png` |
+| 파일명 | `IMG-105_교량-케이블장력-계측도_사장교주파수법.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge/cable-tension`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.2 · KDS 11 10 15:2025 §4.2.1.9 |
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Bridge Daegu gap Pillow render — docs/61 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | AI Sprint2b — IMG-105 교량 확장 재작도 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 
 **금지 오류 대조:**
 
@@ -3021,20 +3055,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-106_*.png` |
+| 파일명 | `IMG-106_케이블장력계-주파수법-설치-개념도.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/cable-tension-meter`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.2.1.9 |
 | 관련 계측기 | 센서/케이블장력계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Bridge Daegu gap Pillow render — docs/61 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | AI Sprint2b — IMG-106 교량 확장 재작도 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 
 **금지 오류 대조:**
 
@@ -3048,20 +3082,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-107_*.png` |
+| 파일명 | `IMG-107_교량-변형률-응력-계측도_PSC강재휨응력.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge/strain-stress`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.2 |
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Bridge Daegu gap Pillow render — docs/61 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | AI Sprint2b — IMG-107 교량 확장 재작도 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 
 **금지 오류 대조:**
 
@@ -3074,20 +3108,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-108_*.png` |
+| 파일명 | `IMG-108_무응력계-설치-개념도_크리프보정.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`sensors/stress-free-strain-gauge`) |
 | KDS/KCS 근거 | — |
 | 관련 계측기 | 센서/무응력계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Bridge Daegu gap Pillow render — docs/61 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | AI Sprint2c — IMG-108 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 
 **금지 오류 대조:**
 
@@ -3099,20 +3133,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-109_*.png` |
+| 파일명 | `IMG-109_교량-풍향풍속-계측도_주탑교면.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge/wind`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.2 |
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Bridge Daegu gap Pillow render — docs/61 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | AI Sprint2c — IMG-109 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 
 **금지 오류 대조:**
 
@@ -3125,20 +3159,20 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-110_*.png` |
+| 파일명 | `IMG-110_교량-받침부-변위-계측도_슬라이드회전.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/bridge/bearing-displacement`) |
 | KDS/KCS 근거 | KCS 24 99 05:2023 §3.2 |
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Bridge Daegu gap Pillow render — docs/61 · Pillow 와이어프레임 교체 대기 — SPA 노출 차단(wireframeReplace) · docs/122 P1 · rework:done 후 해제 |
+| 기술 오류 | AI Sprint2c — IMG-110 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | Cursor Agent |
+| 검수일 | 2026-06-27 |
 
 **금지 오류 대조:**
 
@@ -3153,7 +3187,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-111_*.png` |
+| 파일명 | `IMG-111_external.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/tunnel`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 |
 | 관련 계측기 | 분야별/터널 |
@@ -3174,7 +3208,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-112_*.png` |
+| 파일명 | `IMG-112_external.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/railway`) |
 | KDS/KCS 근거 | KDS 11 10 15:2025 §4.1.7 · KCS 11 10 15:2025 §3 |
 | 관련 계측기 | 분야별/철도 |
@@ -3195,7 +3229,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| 파일명 | `IMG-113_*.png` |
+| 파일명 | `IMG-113_external.webp` |
 | 사용 페이지 | dictionary `imageId` 참조 노드 (`fields/dam`) |
 | KDS/KCS 근거 | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 |
 | 관련 계측기 | 분야별/댐 |

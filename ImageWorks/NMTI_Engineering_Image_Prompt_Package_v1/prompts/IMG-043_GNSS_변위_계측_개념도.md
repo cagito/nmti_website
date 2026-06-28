@@ -5,6 +5,10 @@
 > **AI (docs/36):** [§4.5⑧](../../docs/36-AI-이미지-생성-엔지니어링-프롬프트-가이드.md) · Prefix §2.1
 
 
+<!-- image-knowledge-links:v1 -->
+> **image-knowledge:** [00-공통](../../../docs/image-knowledge/00-공통-이미지-작성-원칙.md) · [GNSS-변위-계측](../../../docs/image-knowledge/07-GNSS-변위-계측.md)
+<!-- /image-knowledge-links:v1 -->
+
 > **필수 참고:** [book/GNSS.pdf](../../../book/GNSS.pdf) · [07_GNSS_이미지_가이드.md](../07_GNSS_이미지_가이드.md)  
 > 규칙: [INSTRUMENTATION_DRAWING_RULES.md](../../../docs/INSTRUMENTATION_DRAWING_RULES.md) §3.13
 
@@ -75,6 +79,28 @@ GNSS base station antenna on stable monument and rover antenna on monitoring poi
 
 ※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.
 <!-- /citation-sync:v1 -->
+
+<!-- image-rules-sync:v1 -->
+## 실행 규칙
+
+> **book/image-knowledge:** `docs/image-knowledge/07-GNSS-변위-계측.md` · §5·§6
+
+**반드시 그릴 요소:**
+- **기준국** + **이동국 ≥2** + **GNSS 안테나** 각각.
+- **중앙 서버** 블록.
+- **무선 통신** 화살표(안테나/수신기 → 서버).
+- **3D 변위** 벡터(ΔX·ΔY·ΔZ 또는 동·북·수직).
+- **위성** 간단 도식(선택).
+- **태양광** (원격 계측 표현, 선택).
+- 라벨: `기준국`, `이동국`, `GNSS 안테나`, `중앙 서버`, `3D 변위`.
+
+**절대 금지:**
+- EGE·EGM-200·NavStar·GMS800·**가격·연락처** (p.3–4).
+- **무선침하계** 를 GNSS **동의어**로 — p.2 혼재 설명이나 **Figure는 GNSS 안테나** 중심.
+- **AI 분석·앱 화면** hero (p.5).
+- **KCS ±1.0 mm** 를 **모든 GNSS** 에 단정(p.4 표 각주 — **특정 제품** 맥락).
+<!-- /image-rules-sync:v1 -->
+
 ## Phase Z (ZIP-AUD-07)
 
 - 위성 → 기준국 · 위성 → 이동국

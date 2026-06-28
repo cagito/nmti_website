@@ -20,6 +20,10 @@ console.log('\n── sync:images (WebP → images.js) ──\n');
 const webpCount = readdirSync(imgDir).filter((f) => f.endsWith('.webp')).length;
 const pngRoot = readdirSync(imgDir).filter((f) => f.endsWith('.png')).length;
 console.log(`technology/: ${webpCount} webp · ${pngRoot} png\n`);
+if (pngRoot > 0) {
+  console.error('FAIL: technology/ must be WebP-only. Run: python scripts/purge-technology-png.py');
+  process.exit(1);
+}
 
 runNode('scripts/generate-image-assets.mjs', ['--no-lock']);
 

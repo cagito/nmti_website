@@ -80,7 +80,7 @@ const checks = [
   {
     name: '내공변위 SEO',
     url: BASE + '/homepage/technology/fields/tunnel/convergence/',
-    must: ['상부 아치', 'IMG-008', '노반', '미계측', 'P1~P5', '개방', '건축한계', '기준 측정선', '측선', 'tech-seo-hero'],
+    must: ['전단면', 'IMG-008', '노반', '미계측', 'P1~P11', '건축한계', '기준 측정선', '측선', 'tech-seo-hero'],
     mustNot: ['ACE-TCS', 'ACE', 'P8', 'P1~P8', '360°', '진동현식']
   },
   {

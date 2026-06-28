@@ -1,30 +1,46 @@
-# IMG-020 redline v2 — 압밀 침하 계측 개념도 (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-020 redline — 압밀 침하 계측 개념도 (외부 PNG)
 
-**대상:** `fields/soft-ground` · FT-B · ZIP-AUD-14  
-**정본:** [docs/81 AA-2b](../../../docs/81-외부-ZIP-신규-심각오류-10종-Phase-AA-수정계획.md) · [IMAGE_REGENERATION_PROMPTS §020](../../../docs/IMAGE_REGENERATION_PROMPTS.md)  
-**판정:** **MAJOR_FIX** · SETTLE-01
+> **image-knowledge:** [`연약지반·압밀-계측`](../../../docs/image-knowledge/27-연약지반·압밀-계측.md)
+> **prompt:** `prompts/IMG-020_압밀_침하_계측_개념도.md` · **scaffold:** `npm run scaffold:redline-stubs`
 
----
+## 0. 레이아웃
 
-## P0
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| S1 | 침하판 = 성토 하부/원지반 + **연장봉** 지표 측정 | ☐ | 침하판 = BM |
-| S2 | BM = **성토 영향권 밖** 안정지반 | ☐ | BM 영향권 내 |
-| S3 | 침하량 = BM 대비 침하판 **표고 변화** | ☐ | 역할 혼동 |
-| S4 | 간극수압계 = 연약층 내 · **압밀 보조 해석** | ☐ | 침하 직접 측정 |
-| S5 | 즉시침하·1차압밀·2차압축 **구분 가능** | ☐ | 「침하 증가+수압 소산」만 |
+| Q1 | 지표면 · 연약층/성토 구분. | ☐ | |
+| Q2 | 목적 1종 계기 + 측정 방향. | ☐ | |
+| Q3 | (piezo) 필터·밀봉 inset — [05](./05-간극수압계-설치-개념.md). | ☐ | |
+| Q4 | (침하) 하향 화살표 · 층별=보링축 callout. | ☐ | |
+| Q5 | 「설계·계획서·표 3.1-1」 각주. | ☐ | |
+| Q6 | 굴착 가시설 띠장·앵커. (금지) | ☐ | |
+| Q7 | 다목적 019 hero 재사용. (금지) | ☐ | |
+| Q8 | 임의 관리기준선 invent. (금지) | ☐ | |
 
-## P1
+<!-- /redline-scaffold:v1 -->
 
-- [ ] 성토단계·간극수압·침하 **시간축 연결** 그래프
-- [ ] SETTLE-01: 지표침하핀 vs 지표침하계 혼동 없음
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`연약지반·압밀-계측`](../../../docs/image-knowledge/27-연약지반·압밀-계측.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **One 목적**·SOE **혼합 없음**?
+- [ ] G.W.L≠piezo · 침하핀≠센서?
+- [ ] **019 다목적 hero** 아님?
+- [ ] WebP only?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
 | 항목 | 값 |
-|------|------|
+|------|-----|
 | 검수자 | |
 | 일자 | |
 | 등급 | PASS / REGENERATE |

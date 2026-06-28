@@ -65,7 +65,7 @@ node scripts/generate-technology-seo-pages.mjs
 |------|---------|-------------------|
 | `crown-settlement` | IMG-061 | 천단침하 전용 Figure |
 | `surface-subsidence` | IMG-010 | 지표·지중침하 전용 caption |
-| `convergence` | IMG-008 | 내공변위 — **상부 아치 P1~P5** (360°·ACE 금지) |
+| `convergence` | IMG-008 | 내공변위 — **P1~P11** 전단면 (360°·ACE 금지) |
 | `ground-displacement` | IMG-025 | 지중변위 (지중경사계 시스템) |
 | `face-advance` | **IMG-063** | 막장전방 전용 Figure (2026-06-25 배포) + section IMG-040 |
 | `rockbolt` | **IMG-078** | 록볼트 축력 hero — **PASS v2** |

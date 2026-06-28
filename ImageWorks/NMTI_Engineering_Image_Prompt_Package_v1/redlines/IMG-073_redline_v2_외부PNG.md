@@ -1,14 +1,48 @@
-# IMG-073 redline v2 — 스마트 계측 (Phase P0)
+<!-- redline-scaffold:v1 -->
+# IMG-073 redline — 스마트 계측 개념도 (외부 PNG)
 
-**대상:** `instruments/modes/smart` · [59 DP-20](../../../docs/59-계측-운영-모드-구조-환경-AI-표현-표준.md) · ImageWorks `IMG-073_스마트_계측_개념도.md`
+> **image-knowledge:** [`통신·게이트웨이-역할`](../../../docs/image-knowledge/29-통신·게이트웨이-역할.md)
+> **prompt:** `prompts/IMG-073_스마트_계측_개념도.md` · **scaffold:** `npm run scaffold:redline-stubs`
+
+## 0. 레이아웃
+
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| S1 | 수집·관리기준·경보·보고·이벤트 로그 흐름 | ☐ | 대시보드 스크린샷만 |
-| S2 | 정상·주의·경고 단계 색·라벨 | ☐ | 장식만 |
-| S3 | 출판 품질 V1~V3 | ☐ | Pillow 박스 나열 |
-| S4 | **뇌·홀로그램·로봇 금지** | ☐ | 존재 |
+| Q1 | 순서 화살표: 계측 센서 → 데이터로거 → IoT 게이트웨이 → 서버. | ☐ | |
+| Q2 | 로거: 「수집·저장·1차 변환」 · 함체 실루엣(P0-3). | ☐ | |
+| Q3 | GW: 「중계·변환·재전송」 · 버퍼 (로컬 저장과 구분). | ☐ | |
+| Q4 | 시간 동기 · GW ≠ 판정 callout. | ☐ | |
+| Q5 | (048) LTE · (058) 전원·통신·모드 계층. | ☐ | |
+| Q6 | 뇌·AI 회로 · 사이버펑크 구름. (금지) | ☐ | |
+| Q7 | 빈 접속함 = 로거. (금지) | ☐ | |
+| Q8 | 게이트웨이 = 데이터로거 라벨. (금지) | ☐ | |
+
+<!-- /redline-scaffold:v1 -->
+
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`통신·게이트웨이-역할`](../../../docs/image-knowledge/29-통신·게이트웨이-역할.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **센서→로거→GW→서버** 순서?
+- [ ] **로컬 저장 vs GW 버퍼** 구분?
+- [ ] **GW ≠ 관리기준 판정**?
+- [ ] **시간 동기** 표시?
+- [ ] **뇌·구름·브랜드** 없음?
+- [ ] WebP only?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
-| 검수자 | | 일자 | | 등급 | PASS / REGENERATE |
+| 항목 | 값 |
+|------|-----|
+| 검수자 | |
+| 일자 | |
+| 등급 | PASS / REGENERATE |

@@ -7,8 +7,8 @@ set -u
 # - Press r during wait to run immediately.
 # - Press q to quit.
 # - Image transfer rule:
-#     ChatGPT uploads text staging files such as *.webp.b64.
-#     git-sync decodes them into same-name *.webp files locally.
+#     ChatGPT uploads text staging files such as *.webp.b64.part001.
+#     git-sync merges parts and decodes them into same-name *.webp files locally.
 # - This script does NOT render images on every sync cycle.
 # ============================================================
 
@@ -31,19 +31,6 @@ decode_base64_to_file() {
   fi
 }
 
-is_webp_file() {
-  local f="$1"
-  python - "$f" <<'PY'
-import sys
-p = sys.argv[1]
-with open(p, 'rb') as fp:
-    data = fp.read(12)
-if len(data) >= 12 and data[0:4] == b'RIFF' and data[8:12] == b'WEBP':
-    sys.exit(0)
-sys.exit(1)
-PY
-}
-
 apply_text_staging() {
   echo "[2/5] Apply text-based WebP staging files..."
 
@@ -52,60 +39,108 @@ apply_text_staging() {
     return 0
   fi
 
-  local changed=0
-  local tmp
-  tmp="$(mktemp 2>/dev/null || echo ".git-sync-tmp-webp")"
+  python - "$IMAGE_ROOT" "$DELETE_STAGING_AFTER_APPLY" <<'PY'
+import base64
+import hashlib
+import json
+import re
+import sys
+from pathlib import Path
 
-  while IFS= read -r -d '' src; do
-    local name base target backup
-    name="$(basename "$src")"
-    base=""
+root = Path(sys.argv[1])
+delete_after = sys.argv[2] == "1"
+changed = 0
+processed_parts = set()
 
-    case "$name" in
-      *.webp.b64) base="${name%.webp.b64}" ;;
-      *.webp.txt) base="${name%.webp.txt}" ;;
-      *.img64) base="${name%.img64}" ;;
-      *.b64) base="${name%.b64}" ;;
-      *) continue ;;
-    esac
+def is_webp(data):
+    return len(data) >= 12 and data[:4] == b"RIFF" and data[8:12] == b"WEBP"
 
-    [ -n "$base" ] || continue
-    target="$(dirname "$src")/$base.webp"
+def meta_get(meta, *names):
+    if not isinstance(meta, dict):
+        return None
+    for name in names:
+        if name in meta:
+            return meta[name]
+    return None
 
-    if [ ! -f "$target" ]; then
-      echo "[SKIP] no matching webp target: $target"
-      continue
-    fi
+def write_webp(target, data, meta, label):
+    if not is_webp(data):
+        raise ValueError("decoded bytes are not WebP RIFF/WEBP")
+    expected_sha = meta_get(meta, "sha256", "sha256Hex", "SHA256")
+    if expected_sha:
+        actual_sha = hashlib.sha256(data).hexdigest()
+        if actual_sha.lower() != str(expected_sha).lower():
+            raise ValueError(f"SHA-256 mismatch: expected {expected_sha}, actual {actual_sha}")
+    expected_size = meta_get(meta, "size", "bytes", "fileSize", "fileSizeBytes")
+    if expected_size and len(data) != int(expected_size):
+        raise ValueError(f"size mismatch: expected {expected_size} bytes, actual {len(data)} bytes")
+    target.parent.mkdir(parents=True, exist_ok=True)
+    backup = target.with_name(target.name + ".bak")
+    had_existing = target.exists()
+    if had_existing:
+        backup.write_bytes(target.read_bytes())
+    try:
+        target.write_bytes(data)
+        if backup.exists():
+            backup.unlink()
+        print(f"[WEBP] decoded {label} -> {target}")
+    except Exception:
+        if had_existing and backup.exists():
+            target.write_bytes(backup.read_bytes())
+            backup.unlink()
+        raise
 
-    if ! decode_base64_to_file "$src" "$tmp"; then
-      echo "[ERROR] failed to decode base64: $src"
-      rm -f "$tmp"
-      continue
-    fi
+for manifest in root.rglob("*.webp.b64.parts.json"):
+    try:
+        target = manifest.with_name(manifest.name[:-len(".b64.parts.json")])
+        meta = json.loads(manifest.read_text(encoding="utf-8"))
+        pattern = re.compile(re.escape(target.name + ".b64.part") + r"(\d+)$")
+        parts = []
+        for candidate in manifest.parent.iterdir():
+            match = pattern.match(candidate.name)
+            if match and candidate.is_file():
+                parts.append((int(match.group(1)), candidate))
+        parts.sort(key=lambda item: item[0])
+        if not parts:
+            raise ValueError(f"no part files found for {manifest.name}")
+        expected_parts = meta_get(meta, "parts", "partCount", "count")
+        if expected_parts and len(parts) != int(expected_parts):
+            raise ValueError(f"part count mismatch: expected {expected_parts}, actual {len(parts)}")
+        b64 = "".join(part.read_text(encoding="utf-8") for _, part in parts)
+        data = base64.b64decode(re.sub(r"\s+", "", b64), validate=True)
+        write_webp(target, data, meta, str(manifest) + " parts")
+        changed += 1
+        for _, part in parts:
+            processed_parts.add(part)
+            if delete_after:
+                part.unlink(missing_ok=True)
+        if delete_after:
+            manifest.unlink(missing_ok=True)
+    except Exception as exc:
+        print(f"[ERROR] failed part staging {manifest}: {exc}")
 
-    if ! is_webp_file "$tmp"; then
-      echo "[ERROR] decoded bytes are not WebP: $src"
-      rm -f "$tmp"
-      continue
-    fi
+suffixes = [".webp.b64", ".webp.txt", ".img64", ".b64"]
+for src in root.rglob("*"):
+    if not src.is_file() or src in processed_parts:
+        continue
+    lower = src.name.lower()
+    suffix = next((s for s in suffixes if lower.endswith(s)), None)
+    if not suffix:
+        continue
+    try:
+        base = src.name[:-len(suffix)]
+        target = src.with_name(base + ".webp")
+        b64 = re.sub(r"\s+", "", src.read_text(encoding="utf-8"))
+        data = base64.b64decode(b64, validate=True)
+        write_webp(target, data, None, str(src))
+        changed += 1
+        if delete_after:
+            src.unlink(missing_ok=True)
+    except Exception as exc:
+        print(f"[ERROR] failed staging file {src}: {exc}")
 
-    backup="$target.bak"
-    cp -f "$target" "$backup"
-    if cp -f "$tmp" "$target"; then
-      rm -f "$backup"
-      if [ "$DELETE_STAGING_AFTER_APPLY" = "1" ]; then
-        rm -f "$src"
-      fi
-      echo "[WEBP] decoded $src -> $target"
-      changed=$((changed + 1))
-    else
-      mv -f "$backup" "$target"
-      echo "[ERROR] failed to replace target: $target"
-    fi
-    rm -f "$tmp"
-  done < <(find "$IMAGE_ROOT" -type f \( -name '*.b64' -o -name '*.img64' -o -name '*.webp.b64' -o -name '*.webp.txt' \) -print0)
-
-  echo "[WEBP] decoded replacements: $changed"
+print(f"[WEBP] staged replacements: {changed}")
+PY
 }
 
 run_once() {

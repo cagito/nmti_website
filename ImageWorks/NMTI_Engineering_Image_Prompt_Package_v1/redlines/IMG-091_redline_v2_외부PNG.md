@@ -1,48 +1,46 @@
-# IMG-091 redline v2 — 다점지중변위계 MPBX (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-091 redline — 다점지중변위계 (MPBX) 설치 개념도 (외부 PNG)
 
-**대상:** `sensors/borehole-extensometer` hero · FT-A  
-**정본:** [docs/36 §4.5⑨](../../../docs/36-AI-이미지-생성-엔지니어링-프롬프트-가이드.md) · [INSTRUMENTATION §3.29](../../../docs/INSTRUMENTATION_DRAWING_RULES.md) · MPX-01~03  
-**프롬프트:** [IMG-091](../prompts/IMG-091_다점지중변위계_MPBX_설치_개념도.md) v3  
-**선행:** [sprint0](./IMG-089-093_sprint0_redline_v1_외부PNG.md)
+> **image-knowledge:** [`MPBX·지중변위-표현`](../../../docs/image-knowledge/25-MPBX·지중변위-표현.md)
+> **prompt:** `prompts/IMG-091_다점지중변위계_MPBX_설치_개념도.md` · **scaffold:** `npm run scaffold:redline-stubs`
 
----
+## 0. 레이아웃
 
-## P0 — MPBX 정체성 (MPX-01~03)
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
 
-| # | 검수 | PASS | FAIL |
-|---|------|------|------|
-| M1 | **단일 보링** cutaway (암반·대절토) | ☐ | 평면 나열 |
-| M2 | **3점 이상** measuring rods — **길이 상이** | ☐ | 단일 막대 |
-| M3 | 각 rod **기계식 앵커** at depth | ☐ | 앵커 없음 |
-| M4 | **Head block** — rod별 LVDT/변위계 | ☐ | head 없음 |
-| M5 | **≠ 센서형 다단식 지중경사계** (4홈·휠) | ☐ | IPI 혼동 |
-| M6 | **≠ 신축계(039)** — 교량 이음부 gap | ☐ | bridge EJ |
-
-## P1 — 측정·케이블
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| D1 | 깊이별 **상대 변위** 화살표 | ☐ | 수평만·미표기 |
-| D2 | rod = **인장** 축 방향 변위 (앵커 기준) | ☐ | 침하핀형 |
-| C1 | (선택) head → **현장 계측함** — P0-3 | ☐ | 서버 흐름 |
+| Q1 | GL · well cap · 천공축. | ☐ | |
+| Q2 | ≥2~3 anchor node · rod 연결 · head block. | ☐ | |
+| Q3 | 축방향 변위 화살표(Teal) · base = 안정층 각주. | ☐ | |
+| Q4 | 라벨: `다점지중변위계`, `앵커`, `로드`, `헤드`, `지표면`. | ☐ | |
+| Q5 | 4홈 inclinometer casing · 프로브 휠. (금지) | ☐ | |
+| Q6 | 지중경사계 제목·범례. (금지) | ☐ | |
+| Q7 | 신축이음·교량 이음. (금지) | ☐ | |
 
-## P0-2 — 관로 (해당 시)
+<!-- /redline-scaffold:v1 -->
 
-| # | 검수 | PASS | FAIL |
-|---|------|------|------|
-| G1 | 보링 **지표면(GL)에서 연속** | ☐ | 중간에서만 시작 |
-| G2 | 지표 **well cap** 표기 | ☐ | 끊김 |
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
 
-## 해상도·금지
+> **정본:** [`MPBX·지중변위-표현`](../../../docs/image-knowledge/25-MPBX·지중변위-표현.md) · `npm run sync:redline-image-knowledge`
 
-- [ ] ≥ 1920×1080 · 2D CAD · **한글 라벨** `다점지중변위계`
-- [ ] 3D 암반 질감·뇌 **없음**
-- [ ] Pillow·SVG **금지** (재작도)
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **IPI casing·프로브** 없음?
+- [ ] **≥2 anchor**·**rod·head**?
+- [ ] **GL·well cap** 가시?
+- [ ] **039·신축** 없음?
+- [ ] WebP only?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
 | 항목 | 값 |
-|------|------|
+|------|-----|
 | 검수자 | |
 | 일자 | |
 | 등급 | PASS / REGENERATE |

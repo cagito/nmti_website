@@ -1,17 +1,47 @@
-# IMG-023 redline v2 — 철도 노반 계측 (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-023 redline — 철도 노반 계측 개념도 (외부 PNG)
 
-**대상:** `fields/railway` · ZIP-AUD-33 · **RAIL-MEAS-01**  
-**정본:** [93 §3](../../../docs/93-Phase-AC-복붙-프롬프트-정본.md) · [95 §3](../../../docs/95-Phase-AC-IMG별-오류분석-및-재작업-계획.md)  
-**판정:** **REGENERATE**
+> **image-knowledge:** [`철도·궤도-계측-표현`](../../../docs/image-knowledge/20-철도·궤도-계측-표현.md)
+> **prompt:** `prompts/IMG-023_철도_노반_계측_개념도.md` · **scaffold:** `npm run scaffold:redline-stubs`
+
+## 0. 레이아웃
+
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| R1 | 궤도/도상/노반/지반 **4영역** | ☐ | 혼합 |
-| R2 | 궤도틀림 = 고저·방향·궤간·수평 | ☐ | 단순 침하만 |
-| R3 | 레일 변위 ≠ **노반 침하** | ☐ | 동일 그래프 |
-| R4 | 진동 **설치 위치** 명시 | ☐ | 아이콘만 |
-| R5 | 그래프 **항목별 분리** | ☐ | 단일 축 혼합 |
+| Q1 | 궤道 축단면 — 2 rail · sleeper · ballast · subgrade. | ☐ | |
+| Q2 | 목적별 1종 — 경사계 또는 침하계(hero 분리). | ☐ | |
+| Q3 | 하향/수평 변위 방향(Teal). | ☐ | |
+| Q4 | 「설계도서·선로 기준」 각주. | ☐ | |
+| Q5 | 라벨: `레일`, `침목`, `道床`, `노반`, `경사계`, `지표침하계`, `궤道`. | ☐ | |
+| Q6 | 역·열차·풍경. (금지) | ☐ | |
+| Q7 | 교량 superstructure. (금지) | ☐ | |
+| Q8 | ATS 본체 hero. (금지) | ☐ | |
+
+<!-- /redline-scaffold:v1 -->
+
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`철도·궤도-계측-표현`](../../../docs/image-knowledge/20-철도·궤도-계측-표현.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **축단면**·레일·道床·노반?
+- [ ] 침하·변위 **역할·위치** 분리?
+- [ ] 열차·역·교량 없음?
+- [ ] ATS hero 없음?
+- [ ] WebP?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
-| 검수자 | | 일자 | | 등급 | PASS / REGENERATE |
+| 항목 | 값 |
+|------|-----|
+| 검수자 | |
+| 일자 | |
+| 등급 | PASS / REGENERATE |

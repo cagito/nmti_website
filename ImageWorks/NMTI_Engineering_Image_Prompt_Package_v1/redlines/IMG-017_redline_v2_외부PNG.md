@@ -1,31 +1,48 @@
-# IMG-017 redline v2 — 평면활동면 계측 해석도 (외부 PNG)
+<!-- redline-scaffold:v1 -->
+# IMG-017 redline — 평면활동면 계측 해석도 (외부 PNG)
 
-**대상:** `fields/slope` · FT-B · ZIP-AUD-12  
-**정본:** [docs/81 AA-1b](../../../docs/81-외부-ZIP-신규-심각오류-10종-Phase-AA-수정계획.md) · [IMAGE_REGENERATION_PROMPTS §017](../../../docs/IMAGE_REGENERATION_PROMPTS.md)  
-**판정:** **REGENERATE**
+> **image-knowledge:** [`사면·비탈면-계측-배치`](../../../docs/image-knowledge/13-사면·비탈면-계측-배치.md)
+> **prompt:** `prompts/IMG-017_평면활동면_계측_해석도.md` · **scaffold:** `npm run scaffold:redline-stubs`
 
----
+## 0. 레이아웃
 
-## P0 — INTERP-01
+- 16:9 · **1920×1080** · 흰 배경 · 한글 라벨
+- Pillow·에이전트 SVG **금지** — 외부 AI/CAD + 육안 PASS
+
+## 1. 강제 지시문 (image-knowledge §5·§6)
 
 | # | 검수 | PASS | FAIL |
 |---|------|------|------|
-| I1 | 「추정 평면활동면」·「불연속면 기반 잠재활동면」 | ☐ | 확정 평면활동면 |
-| I2 | 무한사면식 = **안정성 검토식** (≠ 계측 산정식) | ☐ | 해석식↔프로파일 직결 |
-| I3 | IPI = 활동 가능 심도 **확인 자료**만 | ☐ | 변위 최대지점 = 활동면 |
-| I4 | 절리·층리·단층·수위·강우·균열 **병행 검토** | ☐ | IPI 단독 |
-| I5 | IPI 3소 목적 분리 (후방·교차·안정) | ☐ | 동일 목적 3소 |
-| I6 | 관리기준 = 「현장별 기준 적용」 | ☐ | 일반 수치 단정 |
+| Q1 | 비탈면 단면 + 지표면. | ☐ | |
+| Q2 | ≥2종 계측기(IPI + 지하수위/침하/프리즘 등) — 개념도 시 주·보조 구분. | ☐ | |
+| Q3 | 활동면 점선(추정). | ☐ | |
+| Q4 | 하강 방향 수평변위 화살표(단일 방향). | ☐ | |
+| Q5 | G.W.L (지하수위계 맥락). | ☐ | |
+| Q6 | 사면 내부 광파기·ATS hero. (금지) | ☐ | |
+| Q7 | 옹벽 전면 와이어식 변위계(배면 성토만 — repo 129). (금지) | ☐ | |
+| Q8 | 3분할 가시설 SOE. (금지) | ☐ | |
 
-## P1
+<!-- /redline-scaffold:v1 -->
 
-- [ ] 간극수압 U — 지하수 조건과 연결 (단순 상향 화살표만 금지)
-- [ ] `센서형 다단식 지중경사계`
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`사면·비탈면-계측-배치`](../../../docs/image-knowledge/13-사면·비탈면-계측-배치.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **사면 횡단** hero?
+- [ ] IPI·수위·침하 **2종 이상**·역할 분리?
+- [ ] 광파기 **사면 외부**?
+- [ ] 활동면 **점선·추정**?
+- [ ] G.W.L≠간극수압?
+- [ ] WebP?
+<!-- /image-knowledge-redline:v1 -->
 
 ## 서명
 
 | 항목 | 값 |
-|------|------|
+|------|-----|
 | 검수자 | |
 | 일자 | |
 | 등급 | PASS / REGENERATE |
