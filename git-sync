@@ -7,19 +7,7 @@ set -u
 # - Press r during wait to run immediately.
 # - Press q to quit.
 # - Uses text-based image staging files, not binary PNG/JPG files.
-#
-# Text staging rule:
-#   If an existing .webp target exists and a same-base text staging file
-#   exists, this script decodes the staging file and replaces the .webp.
-#
-# Supported staging file names:
-#   foo.b64       -> foo.webp
-#   foo.img64     -> foo.webp
-#   foo.webp.b64  -> foo.webp
-#   foo.webp.txt  -> foo.webp
-#
-# Staging file content:
-#   Base64 text of a WebP binary.
+# - Runs managed image renderer scripts such as IMG-111.
 # ============================================================
 
 BRANCH="${BRANCH:-main}"
@@ -38,7 +26,6 @@ has_cmd() {
 decode_base64_to_file() {
   local src="$1"
   local dst="$2"
-
   if base64 --help 2>&1 | grep -q -- '--decode'; then
     base64 --decode "$src" > "$dst"
   else
@@ -60,7 +47,7 @@ PY
 }
 
 apply_text_staging() {
-  echo "[2/5] Apply text-based WebP staging files..."
+  echo "[2/6] Apply text-based WebP staging files..."
 
   if [ ! -d "$IMAGE_ROOT" ]; then
     echo "[SKIP] image root not found: $IMAGE_ROOT"
@@ -123,28 +110,39 @@ apply_text_staging() {
   echo "[WEBP] staged replacements: $changed"
 }
 
+render_managed_images() {
+  echo "[3/6] Render managed images..."
+  if [ -f "scripts/render-img111-construction.py" ]; then
+    python -m pip show Pillow >/dev/null 2>&1 || python -m pip install Pillow || true
+    python scripts/render-img111-construction.py || echo "[WARN] IMG-111 renderer failed. Continue."
+  else
+    echo "[SKIP] no managed renderer scripts"
+  fi
+}
+
 run_once() {
   echo
   echo "============================================================"
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] git-sync start"
   echo "============================================================"
 
-  echo "[1/5] Pull latest source..."
+  echo "[1/6] Pull latest source..."
   if ! git pull origin "$BRANCH"; then
     echo "[ERROR] git pull failed."
     return 1
   fi
 
   apply_text_staging || return 1
+  render_managed_images || true
 
   echo
-  echo "[3/5] Install npm dependencies if node_modules is missing..."
+  echo "[4/6] Install npm dependencies if node_modules is missing..."
   if [ ! -d "node_modules" ]; then
     npm install || echo "[WARN] npm install failed. Continue."
   fi
 
   echo
-  echo "[4/5] Build images..."
+  echo "[5/6] Build images..."
   if [ "$RUN_BUILD" = "1" ]; then
     npm run build:images || echo "[WARN] npm run build:images failed. Continue."
   else
@@ -152,7 +150,7 @@ run_once() {
   fi
 
   echo
-  echo "[5/5] Verify content..."
+  echo "[6/6] Verify content..."
   if [ "$RUN_VERIFY" = "1" ]; then
     npm run verify:content || echo "[WARN] npm run verify:content failed. Continue."
   else
