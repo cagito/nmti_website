@@ -7,24 +7,7 @@ REM - Pulls latest main branch every 60 seconds.
 REM - Press R during wait to run immediately.
 REM - Press Q to quit.
 REM - Uses text-based image staging files, not binary PNG/JPG files.
-REM
-REM Text staging rule:
-REM   If an existing .webp target exists and a same-base text staging file
-REM   exists, this script decodes the staging file and replaces the .webp.
-REM
-REM Supported staging file names:
-REM   foo.b64       -> foo.webp
-REM   foo.img64     -> foo.webp
-REM   foo.webp.b64  -> foo.webp
-REM   foo.webp.txt  -> foo.webp
-REM
-REM Staging file content:
-REM   Base64 text of a WebP binary.
-REM
-REM Example:
-REM   assets\images\technology\IMG-008_xxx.webp exists
-REM   assets\images\technology\IMG-008_xxx.b64 is pulled from git
-REM   -> this script decodes IMG-008_xxx.b64 and replaces IMG-008_xxx.webp
+REM - Runs managed image renderer scripts such as IMG-111.
 REM ============================================================
 
 set "BRANCH=main"
@@ -51,7 +34,7 @@ echo ============================================================
 echo [%date% %time%] git-sync start
 echo ============================================================
 
-echo [1/5] Pull latest source...
+echo [1/6] Pull latest source...
 git pull origin %BRANCH%
 if errorlevel 1 (
   echo [ERROR] git pull failed.
@@ -59,7 +42,7 @@ if errorlevel 1 (
 )
 
 echo.
-echo [2/5] Apply text-based WebP staging files...
+echo [2/6] Apply text-based WebP staging files...
 powershell -NoProfile -ExecutionPolicy Bypass -Command ^
   "$ErrorActionPreference='Stop';" ^
   "$root = Join-Path (Get-Location) '%IMAGE_ROOT%';" ^
@@ -106,7 +89,28 @@ if errorlevel 1 (
 )
 
 echo.
-echo [3/5] Install npm dependencies if node_modules is missing...
+echo [3/6] Render managed images...
+if exist "scripts\render-img111-construction.py" (
+  python -m pip show Pillow >nul 2>nul
+  if errorlevel 1 (
+    echo [INFO] Pillow not found. Installing Pillow...
+    python -m pip install Pillow
+  )
+  python scripts\render-img111-construction.py
+  if errorlevel 1 (
+    py -3 -m pip show Pillow >nul 2>nul
+    if errorlevel 1 py -3 -m pip install Pillow
+    py -3 scripts\render-img111-construction.py
+  )
+  if errorlevel 1 (
+    echo [WARN] IMG-111 renderer failed. Continue.
+  )
+) else (
+  echo [SKIP] no managed renderer scripts
+)
+
+echo.
+echo [4/6] Install npm dependencies if node_modules is missing...
 if not exist "node_modules" (
   npm install
   if errorlevel 1 (
@@ -115,7 +119,7 @@ if not exist "node_modules" (
 )
 
 echo.
-echo [4/5] Build images...
+echo [5/6] Build images...
 if "%RUN_BUILD%"=="1" (
   npm run build:images
   if errorlevel 1 (
@@ -126,7 +130,7 @@ if "%RUN_BUILD%"=="1" (
 )
 
 echo.
-echo [5/5] Verify content...
+echo [6/6] Verify content...
 if "%RUN_VERIFY%"=="1" (
   npm run verify:content
   if errorlevel 1 (
