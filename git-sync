@@ -7,7 +7,7 @@ set -u
 # - Press r during wait to run immediately.
 # - Press q to quit.
 # - Uses text-based image staging files, not binary PNG/JPG files.
-# - Runs managed image renderer scripts such as IMG-111.
+# - Runs managed image renderers only when source is newer or output is missing.
 # ============================================================
 
 BRANCH="${BRANCH:-main}"
@@ -111,12 +111,11 @@ apply_text_staging() {
 }
 
 render_managed_images() {
-  echo "[3/6] Render managed images..."
-  if [ -f "scripts/render-img111-construction.py" ]; then
-    python -m pip show Pillow >/dev/null 2>&1 || python -m pip install Pillow || true
-    python scripts/render-img111-construction.py || echo "[WARN] IMG-111 renderer failed. Continue."
+  echo "[3/6] Render managed images only if needed..."
+  if [ -f "scripts/render-managed-images.py" ]; then
+    python scripts/render-managed-images.py || echo "[WARN] managed image renderer failed. Continue."
   else
-    echo "[SKIP] no managed renderer scripts"
+    echo "[SKIP] scripts/render-managed-images.py not found"
   fi
 }
 
