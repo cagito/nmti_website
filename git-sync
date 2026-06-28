@@ -6,8 +6,10 @@ set -u
 # - Pulls latest main branch every 60 seconds.
 # - Press r during wait to run immediately.
 # - Press q to quit.
-# - Uses text-based image staging files, not binary PNG/JPG files.
-# - Runs managed image renderers only when source is newer or output is missing.
+# - Image transfer rule:
+#     ChatGPT uploads text staging files such as *.webp.b64.
+#     git-sync decodes them into same-name *.webp files locally.
+# - This script does NOT render images on every sync cycle.
 # ============================================================
 
 BRANCH="${BRANCH:-main}"
@@ -18,10 +20,6 @@ RUN_VERIFY="${RUN_VERIFY:-0}"
 DELETE_STAGING_AFTER_APPLY="${DELETE_STAGING_AFTER_APPLY:-0}"
 
 cd "$(dirname "$0")"
-
-has_cmd() {
-  command -v "$1" >/dev/null 2>&1
-}
 
 decode_base64_to_file() {
   local src="$1"
@@ -47,7 +45,7 @@ PY
 }
 
 apply_text_staging() {
-  echo "[2/6] Apply text-based WebP staging files..."
+  echo "[2/5] Apply text-based WebP staging files..."
 
   if [ ! -d "$IMAGE_ROOT" ]; then
     echo "[SKIP] image root not found: $IMAGE_ROOT"
@@ -98,7 +96,7 @@ apply_text_staging() {
       if [ "$DELETE_STAGING_AFTER_APPLY" = "1" ]; then
         rm -f "$src"
       fi
-      echo "[WEBP] applied text staging $src -> $target"
+      echo "[WEBP] decoded $src -> $target"
       changed=$((changed + 1))
     else
       mv -f "$backup" "$target"
@@ -107,16 +105,7 @@ apply_text_staging() {
     rm -f "$tmp"
   done < <(find "$IMAGE_ROOT" -type f \( -name '*.b64' -o -name '*.img64' -o -name '*.webp.b64' -o -name '*.webp.txt' \) -print0)
 
-  echo "[WEBP] staged replacements: $changed"
-}
-
-render_managed_images() {
-  echo "[3/6] Render managed images only if needed..."
-  if [ -f "scripts/render-managed-images.py" ]; then
-    python scripts/render-managed-images.py || echo "[WARN] managed image renderer failed. Continue."
-  else
-    echo "[SKIP] scripts/render-managed-images.py not found"
-  fi
+  echo "[WEBP] decoded replacements: $changed"
 }
 
 run_once() {
@@ -125,23 +114,22 @@ run_once() {
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] git-sync start"
   echo "============================================================"
 
-  echo "[1/6] Pull latest source..."
+  echo "[1/5] Pull latest source..."
   if ! git pull origin "$BRANCH"; then
     echo "[ERROR] git pull failed."
     return 1
   fi
 
   apply_text_staging || return 1
-  render_managed_images || true
 
   echo
-  echo "[4/6] Install npm dependencies if node_modules is missing..."
+  echo "[3/5] Install npm dependencies if node_modules is missing..."
   if [ ! -d "node_modules" ]; then
     npm install || echo "[WARN] npm install failed. Continue."
   fi
 
   echo
-  echo "[5/6] Build images..."
+  echo "[4/5] Build images..."
   if [ "$RUN_BUILD" = "1" ]; then
     npm run build:images || echo "[WARN] npm run build:images failed. Continue."
   else
@@ -149,7 +137,7 @@ run_once() {
   fi
 
   echo
-  echo "[6/6] Verify content..."
+  echo "[5/5] Verify content..."
   if [ "$RUN_VERIFY" = "1" ]; then
     npm run verify:content || echo "[WARN] npm run verify:content failed. Continue."
   else
