@@ -1,0 +1,181 @@
+#!/usr/bin/env bash
+set -u
+
+# ============================================================
+# NMTI website git sync helper (Git Bash / macOS / Linux)
+# - Pulls latest main branch every 60 seconds.
+# - Press r during wait to run immediately.
+# - Press q to quit.
+# - Uses text-based image staging files, not binary PNG/JPG files.
+#
+# Text staging rule:
+#   If an existing .webp target exists and a same-base text staging file
+#   exists, this script decodes the staging file and replaces the .webp.
+#
+# Supported staging file names:
+#   foo.b64       -> foo.webp
+#   foo.img64     -> foo.webp
+#   foo.webp.b64  -> foo.webp
+#   foo.webp.txt  -> foo.webp
+#
+# Staging file content:
+#   Base64 text of a WebP binary.
+# ============================================================
+
+BRANCH="${BRANCH:-main}"
+WAIT_SECONDS="${WAIT_SECONDS:-60}"
+IMAGE_ROOT="${IMAGE_ROOT:-assets/images/technology}"
+RUN_BUILD="${RUN_BUILD:-1}"
+RUN_VERIFY="${RUN_VERIFY:-0}"
+DELETE_STAGING_AFTER_APPLY="${DELETE_STAGING_AFTER_APPLY:-0}"
+
+cd "$(dirname "$0")"
+
+has_cmd() {
+  command -v "$1" >/dev/null 2>&1
+}
+
+decode_base64_to_file() {
+  local src="$1"
+  local dst="$2"
+
+  if base64 --help 2>&1 | grep -q -- '--decode'; then
+    base64 --decode "$src" > "$dst"
+  else
+    base64 -d "$src" > "$dst"
+  fi
+}
+
+is_webp_file() {
+  local f="$1"
+  python - "$f" <<'PY'
+import sys
+p = sys.argv[1]
+with open(p, 'rb') as fp:
+    data = fp.read(12)
+if len(data) >= 12 and data[0:4] == b'RIFF' and data[8:12] == b'WEBP':
+    sys.exit(0)
+sys.exit(1)
+PY
+}
+
+apply_text_staging() {
+  echo "[2/5] Apply text-based WebP staging files..."
+
+  if [ ! -d "$IMAGE_ROOT" ]; then
+    echo "[SKIP] image root not found: $IMAGE_ROOT"
+    return 0
+  fi
+
+  local changed=0
+  local tmp
+  tmp="$(mktemp 2>/dev/null || echo ".git-sync-tmp-webp")"
+
+  while IFS= read -r -d '' src; do
+    local name base target backup
+    name="$(basename "$src")"
+    base=""
+
+    case "$name" in
+      *.webp.b64) base="${name%.webp.b64}" ;;
+      *.webp.txt) base="${name%.webp.txt}" ;;
+      *.img64) base="${name%.img64}" ;;
+      *.b64) base="${name%.b64}" ;;
+      *) continue ;;
+    esac
+
+    [ -n "$base" ] || continue
+    target="$(dirname "$src")/$base.webp"
+
+    if [ ! -f "$target" ]; then
+      echo "[SKIP] no matching webp target: $target"
+      continue
+    fi
+
+    if ! decode_base64_to_file "$src" "$tmp"; then
+      echo "[ERROR] failed to decode base64: $src"
+      rm -f "$tmp"
+      continue
+    fi
+
+    if ! is_webp_file "$tmp"; then
+      echo "[ERROR] decoded bytes are not WebP: $src"
+      rm -f "$tmp"
+      continue
+    fi
+
+    backup="$target.bak"
+    cp -f "$target" "$backup"
+    if cp -f "$tmp" "$target"; then
+      rm -f "$backup"
+      if [ "$DELETE_STAGING_AFTER_APPLY" = "1" ]; then
+        rm -f "$src"
+      fi
+      echo "[WEBP] applied text staging $src -> $target"
+      changed=$((changed + 1))
+    else
+      mv -f "$backup" "$target"
+      echo "[ERROR] failed to replace target: $target"
+    fi
+    rm -f "$tmp"
+  done < <(find "$IMAGE_ROOT" -type f \( -name '*.b64' -o -name '*.img64' -o -name '*.webp.b64' -o -name '*.webp.txt' \) -print0)
+
+  echo "[WEBP] staged replacements: $changed"
+}
+
+run_once() {
+  echo
+  echo "============================================================"
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] git-sync start"
+  echo "============================================================"
+
+  echo "[1/5] Pull latest source..."
+  if ! git pull origin "$BRANCH"; then
+    echo "[ERROR] git pull failed."
+    return 1
+  fi
+
+  apply_text_staging || return 1
+
+  echo
+  echo "[3/5] Install npm dependencies if node_modules is missing..."
+  if [ ! -d "node_modules" ]; then
+    npm install || echo "[WARN] npm install failed. Continue."
+  fi
+
+  echo
+  echo "[4/5] Build images..."
+  if [ "$RUN_BUILD" = "1" ]; then
+    npm run build:images || echo "[WARN] npm run build:images failed. Continue."
+  else
+    echo "[SKIP] RUN_BUILD=0"
+  fi
+
+  echo
+  echo "[5/5] Verify content..."
+  if [ "$RUN_VERIFY" = "1" ]; then
+    npm run verify:content || echo "[WARN] npm run verify:content failed. Continue."
+  else
+    echo "[SKIP] RUN_VERIFY=0"
+  fi
+
+  echo
+  echo "[STATUS]"
+  git status --short
+
+  echo
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] git-sync done"
+}
+
+while true; do
+  run_once
+  echo
+  echo "[WAIT] $WAIT_SECONDS seconds. Press r = run now, q = quit."
+  read -r -t "$WAIT_SECONDS" -n 1 key || key="r"
+  echo
+  case "$key" in
+    q|Q) echo "git-sync stopped."; exit 0 ;;
+    r|R|"") continue ;;
+    *) continue ;;
+  esac
+done
