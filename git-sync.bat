@@ -7,7 +7,7 @@ REM - Pulls latest main branch every 60 seconds.
 REM - Press R during wait to run immediately.
 REM - Press Q to quit.
 REM - Uses text-based image staging files, not binary PNG/JPG files.
-REM - Runs managed image renderer scripts such as IMG-111.
+REM - Runs managed image renderers only when source is newer or output is missing.
 REM ============================================================
 
 set "BRANCH=main"
@@ -89,24 +89,17 @@ if errorlevel 1 (
 )
 
 echo.
-echo [3/6] Render managed images...
-if exist "scripts\render-img111-construction.py" (
-  python -m pip show Pillow >nul 2>nul
+echo [3/6] Render managed images only if needed...
+if exist "scripts\render-managed-images.py" (
+  python scripts\render-managed-images.py
   if errorlevel 1 (
-    echo [INFO] Pillow not found. Installing Pillow...
-    python -m pip install Pillow
-  )
-  python scripts\render-img111-construction.py
-  if errorlevel 1 (
-    py -3 -m pip show Pillow >nul 2>nul
-    if errorlevel 1 py -3 -m pip install Pillow
-    py -3 scripts\render-img111-construction.py
+    py -3 scripts\render-managed-images.py
   )
   if errorlevel 1 (
-    echo [WARN] IMG-111 renderer failed. Continue.
+    echo [WARN] managed image renderer failed. Continue.
   )
 ) else (
-  echo [SKIP] no managed renderer scripts
+  echo [SKIP] scripts\render-managed-images.py not found
 )
 
 echo.
