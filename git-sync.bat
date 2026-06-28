@@ -6,19 +6,25 @@ REM NMTI website git sync helper
 REM - Pulls latest main branch every 60 seconds.
 REM - Press R during wait to run immediately.
 REM - Press Q to quit.
-REM - If a non-webp image with the same base name as an existing .webp
-REM   exists, it replaces the .webp target.
+REM - Uses text-based image staging files, not binary PNG/JPG files.
+REM
+REM Text staging rule:
+REM   If an existing .webp target exists and a same-base text staging file
+REM   exists, this script decodes the staging file and replaces the .webp.
+REM
+REM Supported staging file names:
+REM   foo.b64       -> foo.webp
+REM   foo.img64     -> foo.webp
+REM   foo.webp.b64  -> foo.webp
+REM   foo.webp.txt  -> foo.webp
+REM
+REM Staging file content:
+REM   Base64 text of a WebP binary.
 REM
 REM Example:
 REM   assets\images\technology\IMG-008_xxx.webp exists
-REM   assets\images\technology\IMG-008_xxx.png is pulled from git
-REM   -> this script converts/copies IMG-008_xxx.png to IMG-008_xxx.webp
-REM
-REM Conversion order:
-REM   1) If source binary is already WebP, copy directly.
-REM   2) If ImageMagick 'magick' exists, convert to WebP.
-REM   3) If 'cwebp' exists, convert to WebP.
-REM   4) Otherwise, warn and keep the current .webp unchanged.
+REM   assets\images\technology\IMG-008_xxx.b64 is pulled from git
+REM   -> this script decodes IMG-008_xxx.b64 and replaces IMG-008_xxx.webp
 REM ============================================================
 
 set "BRANCH=main"
@@ -26,6 +32,7 @@ set "WAIT_SECONDS=60"
 set "IMAGE_ROOT=assets\images\technology"
 set "RUN_BUILD=1"
 set "RUN_VERIFY=0"
+set "DELETE_STAGING_AFTER_APPLY=0"
 
 cd /d "%~dp0"
 
@@ -52,62 +59,49 @@ if errorlevel 1 (
 )
 
 echo.
-echo [2/5] Replace matching WebP files from same-name image sources...
+echo [2/5] Apply text-based WebP staging files...
 powershell -NoProfile -ExecutionPolicy Bypass -Command ^
   "$ErrorActionPreference='Stop';" ^
   "$root = Join-Path (Get-Location) '%IMAGE_ROOT%';" ^
+  "$deleteAfterApply = '%DELETE_STAGING_AFTER_APPLY%' -eq '1';" ^
   "if (!(Test-Path $root)) { Write-Host '[SKIP] image root not found:' $root; exit 0 }" ^
-  "$exts = @('.png','.jpg','.jpeg','.bmp','.tif','.tiff','.avif','.webp.new','.new','.src');" ^
-  "$magick = (Get-Command magick -ErrorAction SilentlyContinue);" ^
-  "$cwebp = (Get-Command cwebp -ErrorAction SilentlyContinue);" ^
+  "$suffixes = @('.webp.b64','.webp.txt','.img64','.b64');" ^
   "$changed = 0;" ^
-  "$sources = Get-ChildItem $root -Recurse -File | Where-Object { $n=$_.Name.ToLowerInvariant(); ($exts | ForEach-Object { $n.EndsWith($_) }) -contains $true };" ^
+  "$sources = Get-ChildItem $root -Recurse -File | Where-Object { $n=$_.Name.ToLowerInvariant(); ($suffixes | ForEach-Object { $n.EndsWith($_) }) -contains $true };" ^
   "foreach ($src in $sources) {" ^
   "  $name = $src.Name;" ^
+  "  $lower = $name.ToLowerInvariant();" ^
   "  $base = $null;" ^
-  "  foreach ($e in $exts) { if ($name.ToLowerInvariant().EndsWith($e)) { $base = $name.Substring(0, $name.Length - $e.Length); break } }" ^
+  "  foreach ($s in $suffixes) { if ($lower.EndsWith($s)) { $base = $name.Substring(0, $name.Length - $s.Length); break } }" ^
   "  if ([string]::IsNullOrWhiteSpace($base)) { continue }" ^
   "  $target = Join-Path $src.DirectoryName ($base + '.webp');" ^
-  "  if (!(Test-Path $target)) { continue }" ^
-  "  if ($src.FullName -ieq $target) { continue }" ^
-  "  $bytes = [System.IO.File]::ReadAllBytes($src.FullName);" ^
-  "  $isWebp = $bytes.Length -ge 12 -and [Text.Encoding]::ASCII.GetString($bytes,0,4) -eq 'RIFF' -and [Text.Encoding]::ASCII.GetString($bytes,8,4) -eq 'WEBP';" ^
-  "  $backup = $target + '.bak';" ^
-  "  Copy-Item $target $backup -Force;" ^
+  "  if (!(Test-Path $target)) { Write-Host ('[SKIP] no matching webp target: ' + $target); continue }" ^
   "  try {" ^
-  "    if ($isWebp) {" ^
-  "      Copy-Item $src.FullName $target -Force;" ^
-  "      Write-Host ('[WEBP] copied ' + $src.FullName + ' -> ' + $target);" ^
+  "    $b64 = [System.IO.File]::ReadAllText($src.FullName, [Text.Encoding]::UTF8);" ^
+  "    $b64 = ($b64 -replace '\s','');" ^
+  "    if ([string]::IsNullOrWhiteSpace($b64)) { throw 'empty base64 staging file' }" ^
+  "    $bytes = [Convert]::FromBase64String($b64);" ^
+  "    $isWebp = $bytes.Length -ge 12 -and [Text.Encoding]::ASCII.GetString($bytes,0,4) -eq 'RIFF' -and [Text.Encoding]::ASCII.GetString($bytes,8,4) -eq 'WEBP';" ^
+  "    if (!$isWebp) { throw 'decoded bytes are not WebP RIFF/WEBP' }" ^
+  "    $backup = $target + '.bak';" ^
+  "    Copy-Item $target $backup -Force;" ^
+  "    try {" ^
+  "      [System.IO.File]::WriteAllBytes($target, $bytes);" ^
   "      Remove-Item $backup -Force -ErrorAction SilentlyContinue;" ^
+  "      if ($deleteAfterApply) { Remove-Item $src.FullName -Force -ErrorAction SilentlyContinue }" ^
+  "      Write-Host ('[WEBP] applied text staging ' + $src.FullName + ' -> ' + $target);" ^
   "      $changed++;" ^
-  "      continue;" ^
+  "    } catch {" ^
+  "      if (Test-Path $backup) { Move-Item $backup $target -Force }" ^
+  "      throw" ^
   "    }" ^
-  "    if ($magick) {" ^
-  "      & magick $src.FullName -quality 92 $target;" ^
-  "      if ($LASTEXITCODE -ne 0) { throw 'magick conversion failed' }" ^
-  "      Write-Host ('[WEBP] magick converted ' + $src.FullName + ' -> ' + $target);" ^
-  "      Remove-Item $backup -Force -ErrorAction SilentlyContinue;" ^
-  "      $changed++;" ^
-  "      continue;" ^
-  "    }" ^
-  "    if ($cwebp) {" ^
-  "      & cwebp -q 92 $src.FullName -o $target;" ^
-  "      if ($LASTEXITCODE -ne 0) { throw 'cwebp conversion failed' }" ^
-  "      Write-Host ('[WEBP] cwebp converted ' + $src.FullName + ' -> ' + $target);" ^
-  "      Remove-Item $backup -Force -ErrorAction SilentlyContinue;" ^
-  "      $changed++;" ^
-  "      continue;" ^
-  "    }" ^
-  "    Move-Item $backup $target -Force;" ^
-  "    Write-Host ('[WARN] matching source found but no converter: ' + $src.FullName);" ^
   "  } catch {" ^
-  "    if (Test-Path $backup) { Move-Item $backup $target -Force }" ^
-  "    Write-Host ('[ERROR] failed to replace ' + $target + ' from ' + $src.FullName + ': ' + $_.Exception.Message);" ^
+  "    Write-Host ('[ERROR] failed staging file ' + $src.FullName + ': ' + $_.Exception.Message);" ^
   "  }" ^
   "}" ^
-  "Write-Host ('[WEBP] replacements: ' + $changed);"
+  "Write-Host ('[WEBP] staged replacements: ' + $changed);"
 if errorlevel 1 (
-  echo [ERROR] image replacement failed.
+  echo [ERROR] image staging failed.
   exit /b 1
 )
 
