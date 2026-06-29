@@ -1026,11 +1026,11 @@
   {
     "id": "IMG-103",
     "category": "분야별/교량",
-    "title": "교량 상부구조 처짐 계측도",
-    "purpose": "거더·PSC 연직변위 δ · 처짐계·광파 — ≠침하계",
+    "title": "교량 상부구조 GNSS 처짐 계측도",
+    "purpose": "경간 상부 GNSS 이동국 · 수직변위 ΔZ → 처짐량 δ — ≠와이어식 hero",
     "priority": "A",
     "prompt_file": "prompts/IMG-103_교량_상부구조_처짐_계측도.md",
-    "caption": "교량 처짐 — δ·처짐계·L/600 예시",
+    "caption": "교량 GNSS 처짐 — 경간 상부 ΔZ·처짐량 δ (v3)",
     "standard_ref_node": "fields/bridge/deflection"
   },
   {

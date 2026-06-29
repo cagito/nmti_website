@@ -1,7 +1,7 @@
 <!-- redline-scaffold:v1 -->
 # IMG-021 redline — 측방유동 계측도 (외부 PNG)
 
-> **image-knowledge:** [`지하굴착-흙막이-계측-단면`](../../../docs/image-knowledge/03-지하굴착-흙막이-계측-단면.md)
+> **image-knowledge:** [`연약지반·압밀-계측`](../../../docs/image-knowledge/27-연약지반·압밀-계측.md)
 > **prompt:** `prompts/IMG-021_측방유동_계측도.md` · **scaffold:** `npm run scaffold:redline-stubs`
 
 ## 0. 레이아웃
@@ -27,17 +27,14 @@
 <!-- image-knowledge-redline:v1 -->
 ## image-knowledge §13 (book 실행 규칙)
 
-> **정본:** [`지하굴착-흙막이-계측-단면`](../../../docs/image-knowledge/03-지하굴착-흙막이-계측-단면.md) · `npm run sync:redline-image-knowledge`
+> **정본:** [`연약지반·압밀-계측`](../../../docs/image-knowledge/27-연약지반·압밀-계측.md) · `npm run sync:redline-image-knowledge`
 
 **육안 검수 — image-knowledge §13과 1:1:**
 
-- [ ] Figure 목적이 **흙막이 계측 배치** 하나로 고정(또는 하중계 등 단일 목적 분리)되었는가?
-- [ ] KCS 3.10.3.1의 **설치 위치** 규칙과 모순되지 않는가?
-- [ ] 지하수위·간극수압·G.W.L 혼동이 없는가?
-- [ ] 앵커·버팀보 LC가 **굴착측 두부**인가?
-- [ ] PDF에 없는 3분할·브랜드·장비명을 넣지 않았는가?
-- [ ] 굴착심도·지표면이 표시되었는가?
-- [ ] WebP 출력·SVG/PNG 운영본 금지를 지시했는가?
+- [ ] **One 목적**·SOE **혼합 없음**?
+- [ ] G.W.L≠piezo · 침하핀≠센서?
+- [ ] **019 다목적 hero** 아님?
+- [ ] WebP only?
 <!-- /image-knowledge-redline:v1 -->
 
 ## 서명

@@ -110,11 +110,10 @@
     },
     "IMG-009": {
       "tier": "FT-B",
-      "currentMethod": "pillow",
-      "targetMethod": "pillow",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P2",
-      "hero": false,
-      "renderScript": "render-img009-tunnel-support-v4.py"
+      "hero": false
     },
     "IMG-010": {
       "tier": "FT-A",
@@ -125,7 +124,7 @@
     },
     "IMG-011": {
       "tier": "FT-C",
-      "currentMethod": "pillow",
+      "currentMethod": "ai-reviewed",
       "targetMethod": "pillow",
       "migrationPhase": "P4",
       "hero": true,
@@ -162,18 +161,17 @@
     },
     "IMG-016": {
       "tier": "FT-B",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P3",
       "hero": false
     },
     "IMG-017": {
       "tier": "FT-B",
-      "currentMethod": "pillow",
-      "targetMethod": "pillow",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P3",
-      "hero": false,
-      "renderScript": "render-img017-planar-slip-v4.py"
+      "hero": false
     },
     "IMG-018": {
       "tier": "FT-C",
@@ -280,8 +278,8 @@
     },
     "IMG-032": {
       "tier": "FT-A",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P2",
       "hero": false
     },
@@ -333,27 +331,24 @@
     },
     "IMG-039": {
       "tier": "FT-A",
-      "currentMethod": "pillow",
-      "targetMethod": "pillow",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P2",
-      "hero": false,
-      "renderScript": "render-img039-joint-meter-v4.py"
+      "hero": false
     },
     "IMG-040": {
       "tier": "FT-A",
-      "currentMethod": "pillow",
-      "targetMethod": "pillow",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P2",
-      "hero": false,
-      "renderScript": "render-img040-lvdt-v4.py"
+      "hero": false
     },
     "IMG-041": {
       "tier": "FT-A",
-      "currentMethod": "pillow",
-      "targetMethod": "pillow",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P2",
-      "hero": false,
-      "renderScript": "render-img041-vibration-meter-v4.py"
+      "hero": false
     },
     "IMG-042": {
       "tier": "FT-B",
@@ -365,11 +360,10 @@
     },
     "IMG-043": {
       "tier": "FT-B",
-      "currentMethod": "pillow",
-      "targetMethod": "pillow",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P2",
-      "hero": true,
-      "renderScript": "render-img043-gnss-v4.py"
+      "hero": true
     },
     "IMG-044": {
       "tier": "FT-C",
@@ -519,11 +513,10 @@
     },
     "IMG-064": {
       "tier": "FT-A",
-      "currentMethod": "pillow",
-      "targetMethod": "pillow",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P2",
-      "hero": true,
-      "renderScript": "render-img064-harbor-v4.py"
+      "hero": true
     },
     "IMG-065": {
       "tier": "FT-C",
@@ -647,19 +640,17 @@
     },
     "IMG-080": {
       "tier": "FT-B",
-      "currentMethod": "ai-reviewed",
-      "targetMethod": "ai-reviewed",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P2",
-      "hero": true,
-      "renderScript": "render-field-heroes.py"
+      "hero": true
     },
     "IMG-081": {
       "tier": "FT-B",
-      "currentMethod": "pillow",
-      "targetMethod": "pillow",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P3",
-      "hero": false,
-      "renderScript": "render-img081-column-shortening-v4.py"
+      "hero": false
     },
     "IMG-082": {
       "tier": "FT-B",
@@ -719,11 +710,10 @@
     },
     "IMG-096": {
       "tier": "FT-A",
-      "currentMethod": "pillow",
-      "targetMethod": "pillow",
+      "currentMethod": "cad",
+      "targetMethod": "cad",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-img096-surrounding-ground-v4.py"
+      "hero": true
     },
     "IMG-097": {
       "tier": "FT-B",

@@ -122,15 +122,18 @@ export const IMAGE_ASSETS = {
   'IMG-006': {
     title: '굴착 단계별 계측 흐름도',
     webp: 'assets/images/technology/IMG-006_굴착-단계별-계측-흐름도_1단계최종굴착계측.webp',
-    alt: '굴착 단계별 계측 흐름도 - 1~최종 굴착 단계별 단면·계측 운영 루프·누적변위 (끝단 하중계)',
-    caption: '굴착 단계별 계측 흐름도 — 단계별 굴착·계측·판정·누적 변위 예시',
+    alt: '굴착 단계별 계측 흐름도 - 4단계 굴착저면·지중경사계·지하수위·어스앵커 하중계',
+    caption: '굴착 단계별 계측 흐름도 v3 — 4단계·IPI·G.W.L·어스앵커 LC(③④)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-006',
     prohibitedErrors: [
-      '버팀보 정중앙 하중계',
+      '버팀보·지반앵커·지보재 하중계',
+      '수평(3·9시)·5시 앵커 관통',
+      '지중·굴착공중 하중계',
       'IMG-002와 동일 대표 단면도 역할 중복',
-      '뇌·홍보 UI'
+      '누적변위 그래프·로거 제품 사진 hero',
+      '생성 시 로고·워터마크'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -188,7 +191,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'pillow'
+    productionMethod: 'cad'
   },
   'IMG-010': {
     title: '터널 지표침하 계측도',
@@ -206,14 +209,18 @@ export const IMAGE_ASSETS = {
   'IMG-011': {
     title: '교량 계측 전체 개념도',
     webp: 'assets/images/technology/IMG-011_교량-계측-전체-개념도_상부구조교각교대기초.webp',
-    alt: '교량 계측 전체 개념도 - 10종 센서(변형률·처짐·케이블장력계·풍하동 등)',
-    caption: '교량 계측 전체 개념도 — 상부구조·교각·교대·기초, 10종 계측(⑥ 케이블장력계·④ 처짐계 등)',
+    alt: '교량 계측 전체 개념도 - 사장교형 10종(변형률·처짐·케이블장력·경사·기초침하 등)',
+    caption: '교량 계측 전체 개념도 v3 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-011',
     prohibitedErrors: [
       '흙막이·굴착 단면 (BRI-01)',
-      '종·횡변위 3축 주계측'
+      '종·횡변위 3축 주계측',
+      '일반 거더교·사장교 혼재',
+      '⑩ 침하·광파 단일 아이콘 혼동',
+      '우측 패널 내부 감사 코드 노출',
+      '생성 시 로고·워터마크'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -319,7 +326,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'pillow'
+    productionMethod: 'cad'
   },
   'IMG-017': {
     title: '평면활동면 계측 해석도',
@@ -336,7 +343,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'pillow'
+    productionMethod: 'cad'
   },
   'IMG-018': {
     title: '강우-지하수위-변위 상관도',
@@ -357,8 +364,8 @@ export const IMAGE_ASSETS = {
   'IMG-019': {
     title: '연약지반 성토부 계측기 설치 배치도',
     webp: 'assets/images/technology/IMG-019_연약지반-계측-전체-개념도_성토침하간극수압측방유동.webp',
-    alt: '연약지반 성토부 계측기 설치 배치도 - 성토·연약지층 계측기 실제 설치 배치 2D 단면 (SOFT-LAYOUT-01)',
-    caption: '연약지반 성토부 계측기 설치 배치도 — 지표침하·IPI·piezo·G.W.L·토압',
+    alt: '연약지반 성토부 계측기 설치 배치도 - Sand Mat·지표침하판·핀·IPI·간극수압·지중침하',
+    caption: '연약지반 성토부 계측기 설치 배치도 v3 — IPI·piezo tip·지중침하·지하수위·토압',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-019',
@@ -609,7 +616,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'cad'
   },
   'IMG-033': {
     title: '층별침하계 개념도',
@@ -735,7 +742,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'pillow'
+    productionMethod: 'cad'
   },
   'IMG-040': {
     title: '변위계 설치 개념도',
@@ -752,7 +759,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'pillow'
+    productionMethod: 'cad'
   },
   'IMG-041': {
     title: '진동계 설치 개념도',
@@ -767,7 +774,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'pillow'
+    productionMethod: 'cad'
   },
   'IMG-042': {
     title: '자동광파기 계측 개념도',
@@ -808,7 +815,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'pillow'
+    productionMethod: 'cad'
   },
   'IMG-044': {
     title: '기상계측기 구성도',
@@ -1169,7 +1176,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'pillow'
+    productionMethod: 'cad'
   },
   'IMG-065': {
     title: '현장 계측 전원 통합 구성도',
@@ -1405,7 +1412,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'ai-reviewed'
+    productionMethod: 'cad'
   },
   'IMG-081': {
     title: '기둥 축소량 계측 개념도',
@@ -1422,7 +1429,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'pillow'
+    productionMethod: 'cad'
   },
   'IMG-082': {
     title: '건축 응력·변형률 계측 개념도',
@@ -1621,7 +1628,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'pillow'
+    productionMethod: 'cad'
   },
   'IMG-097': {
     title: '터널 발파진동·영향권 계측 개념도',
@@ -1754,17 +1761,21 @@ export const IMAGE_ASSETS = {
     productionMethod: 'ai-reviewed'
   },
   'IMG-103': {
-    title: '교량 상부구조 처짐 계측도',
+    title: '교량 상부구조 GNSS 처짐 계측도',
     webp: 'assets/images/technology/IMG-103_교량-상부구조-처짐-계측도_거더처짐계δ.webp',
-    alt: '교량 상부구조 처짐 계측도 - 거더·PSC 연직변위 δ · 처짐계·광파 — ≠침하계',
-    caption: '교량 처짐 δ — 거더 하부 처짐계·와이어/LVDT (DISP-ATS-01)',
+    alt: '교량 상부구조 GNSS 처짐 계측도 - 경간 상부 이동국 수직변위 ΔZ',
+    caption: '교량 GNSS 처짐 — 경간 상부 ΔZ·처짐량 δ (v3, 와이어식 hero 아님)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-103',
     prohibitedErrors: [
       '침하판·지표침하계 hero',
       '성토 단면',
-      'Y축 침하량'
+      'Y축 침하량',
+      '하부 와이어식 처짐계 hero (DEF-GNSS-04)',
+      '교각 측면/중간 GNSS (DEF-GNSS-05)',
+      '와이어+GNSS 동시 주계측 (DEF-GNSS-06)',
+      '생성 시 로고·워터마크'
     ],
     wireframeReplace: false,
     requiresReaudit: false,

@@ -190,52 +190,10 @@ def render_048() -> None:
 
 
 def render_006() -> None:
-    """굴착 단계별 계측 흐름도 v2."""
-    from lib.datalogger_draw import draw_legacy_logger_block_icon
+    """굴착 단계별 계측 흐름도 v3 — docs/58."""
+    from lib.excavation_flow_draw import render_img006
 
-    img, draw = new_canvas()
-    draw_title(draw, "굴착 단계별 계측 흐름도", "단계별 굴착 · 계측 · 관리기준 · 누적 변위")
-
-    stages = ["① 1단계", "② 2단계", "③ 3단계", "④ 최종"]
-    for i, st in enumerate(stages):
-        y = 170 + i * 125
-        draw.rounded_rectangle([60, y, 700, y + 95], outline=_hex(C["navy"]), width=2)
-        draw_label(draw, st, (88, y + 48), load_font(17, bold=True), anchor="lm")
-        depth = 28 + i * 22
-        draw.rectangle([200, y + 95 - depth, 660, y + 95], fill=_hex(C["enc_dark"]), outline=_hex(C["navy"]), width=1)
-        draw.line([(260, y + 20), (260, y + 95)], fill=_hex(C["navy"]), width=4)
-        if i >= 1:
-            draw.line([(360, y + 48), (560, y + 48)], fill=_hex(C["teal"]), width=7)
-            draw_label(draw, "버팀보", (460, y + 28), load_font(12), fill=C["teal"])
-        draw_label(draw, f"굴착 GL-{depth}cm", (520, y + 48), load_font(13), fill=C["gray"])
-
-    draw_label(draw, "계측 운영 루프", (1080, 170), load_font(22, bold=True))
-    loop_y = 260
-    draw_legacy_logger_block_icon(draw, 820, loop_y, 200, 125, font=load_font(15, bold=True))
-    for i, (lab, ox) in enumerate([("기준 비교", 1080), ("경보 판정", 1280), ("다음 굴착", 1480)]):
-        draw.rounded_rectangle([ox, loop_y + 20, ox + 160, loop_y + 90], fill=_hex(C["light"]), outline=_hex(C["navy"]), width=2)
-        draw_label(draw, lab, (ox + 80, loop_y + 55), load_font(15, bold=True))
-        if i == 0:
-            draw_arrow(draw, 1020, loop_y + 62, ox, loop_y + 55, width=2)
-        else:
-            draw_arrow(draw, ox - 120, loop_y + 55, ox, loop_y + 55, width=2)
-
-    x0, y0, x1, y1 = 820, 480, 1700, 820
-    draw.rounded_rectangle([x0, y0, x1, y1], outline=_hex(C["navy"]), width=2)
-    draw_label(draw, "누적 변위 (예시)", (1260, 510), load_font(20, bold=True))
-    ix, iy = x0 + 50, y0 + 80
-    iw, ih = x1 - x0 - 80, y1 - y0 - 120
-    draw.line([(ix, iy + ih), (ix + iw, iy + ih)], fill=_hex(C["navy"]), width=2)
-    draw.line([(ix, iy), (ix, iy + ih)], fill=_hex(C["navy"]), width=2)
-    draw.line([(ix, iy + int(ih * 0.7)), (ix + iw, iy + int(ih * 0.7))], fill=_hex(C["green"]), width=1)
-    pts = []
-    for i in range(iw):
-        t = i / max(iw - 1, 1)
-        pts.append((ix + i, iy + ih - int((0.15 * t + 0.05 * t**2) * ih)))
-    if len(pts) > 1:
-        draw.line(pts, fill=_hex(C["teal"]), width=3)
-
-    save(img, "IMG-006_굴착-단계별-계측-흐름도_1단계최종굴착계측.png")
+    save(render_img006(), "IMG-006_굴착-단계별-계측-흐름도_1단계최종굴착계측.png")
 
 
 def render_064() -> None:

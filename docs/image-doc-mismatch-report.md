@@ -1,26 +1,29 @@
 # 이미지 ↔ 문서 불일치 추출 보고서
 
-> 생성: `node scripts/audit-image-doc-mismatch.mjs` · 2026-06-27
+> 생성: `node scripts/audit-image-doc-mismatch.mjs` · 2026-06-29
 
 | 심각도 | 건수 |
 |--------|------|
 | **mismatch** (명확 불일치) | 0 |
-| **review** (PASS vs 문서 C·금지요소) | 1 |
-| **warn** | 8 |
+| **review** (PASS vs 문서 C·금지요소) | 0 |
+| **warn** | 12 |
 | **info** | 1 |
 
 ---
 
-## 조건부 PASS
-
-### REVIEW · `IMG-006`
-
-PASS이나 금지 오류 3종 등록 — PNG가 실제로 회피했는지 육안·체크리스트 확인 필요
-- 버팀보 정중앙 하중계
-- IMG-002와 동일 대표 단면도 역할 중복
-- 뇌·홍보 UI
-
 ## 마스터-caption
+
+### WARN · `IMG-006`
+
+03_IMAGE_MASTER_LIST caption ≠ images.js caption
+- master: 굴착 단계별 계측 흐름도 — 단계별 굴착·계측·판정·누적 변위 예시…
+- images: 굴착 단계별 계측 흐름도 v3 — 4단계·IPI·G.W.L·어스앵커 LC(③④)…
+
+### WARN · `IMG-011`
+
+03_IMAGE_MASTER_LIST caption ≠ images.js caption
+- master: 교량 계측 전체 개념도 — 상부구조·교각·교대·기초, 10종 계측(⑥ 케이블장력계·④ 처짐계 등)…
+- images: 교량 계측 전체 개념도 v3 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측…
 
 ### WARN · `IMG-015`
 
@@ -28,11 +31,23 @@ PASS이나 금지 오류 3종 등록 — PNG가 실제로 회피했는지 육안
 - master: 사면 계측 전체 개념도 — 활동면·센서형 다단식 지중경사계(기반암 근입)·G.W.L·간극수압·프리즘·부동점 자동광파기…
 - images: 사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · (선택) 광학망…
 
+### WARN · `IMG-019`
+
+03_IMAGE_MASTER_LIST caption ≠ images.js caption
+- master: 연약지반 성토부 계측기 설치 배치도 — 지표침하·IPI·piezo·G.W.L·토압…
+- images: 연약지반 성토부 계측기 설치 배치도 v3 — IPI·piezo tip·지중침하·지하수위·토압…
+
 ### WARN · `IMG-024`
 
 03_IMAGE_MASTER_LIST caption ≠ images.js caption
 - master: 댐 안전관리 계측 체계도 — 필댐 6항목·침윤선·누수·데이터 흐름…
-- images: 댐 안전관리 계측 체계 — 필댐 6항목·7단계 데이터 흐름 (v3)…
+- images: 댐 안전관리 계측 체계 — 필댐 6항목·7단계 데이터 흐름 (v4)…
+
+### WARN · `IMG-029`
+
+03_IMAGE_MASTER_LIST caption ≠ images.js caption
+- master: 센서형 다단식 지중경사계 데이터 해석도 — Incremental/Cumulative 변위 그래프와 활동면…
+- images: 센서형 다단식 지중경사계 데이터 해석도 — 변위 집중·활동면 추정 분리…
 
 ### WARN · `IMG-079`
 
@@ -67,8 +82,8 @@ PASS이나 금지 오류 3종 등록 — PNG가 실제로 회피했는지 육안
 ### WARN · `IMG-103`
 
 03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 교량 처짐 — δ·처짐계·L/600 예시…
-- images: 교량 처짐 δ — 거더 하부 처짐계·와이어/LVDT (DISP-ATS-01)…
+- master: 교량 GNSS 처짐 — 경간 상부 ΔZ·처짐량 δ (v3)…
+- images: 교량 GNSS 처짐 — 경간 상부 ΔZ·처짐량 δ (v3, 와이어식 hero 아님)…
 
 ## 히어로 공용
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render IMG-011 bridge monitoring overview v2."""
+"""Render IMG-011 bridge monitoring overview v3."""
 from __future__ import annotations
 
 import argparse

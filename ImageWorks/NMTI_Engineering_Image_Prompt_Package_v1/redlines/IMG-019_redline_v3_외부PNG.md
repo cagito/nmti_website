@@ -19,3 +19,16 @@
 - [ ] 센서 **아이콘 나열** · 공중 부유
 - [ ] piezo = standpipe · 지표침하핀 = 지표침하계
 - [ ] IPI 과얕 · 「지중경사계」단독 라벨
+
+<!-- image-knowledge-redline:v1 -->
+## image-knowledge §13 (book 실행 규칙)
+
+> **정본:** [`연약지반·압밀-계측`](../../../docs/image-knowledge/27-연약지반·압밀-계측.md) · `npm run sync:redline-image-knowledge`
+
+**육안 검수 — image-knowledge §13과 1:1:**
+
+- [ ] **One 목적**·SOE **혼합 없음**?
+- [ ] G.W.L≠piezo · 침하핀≠센서?
+- [ ] **019 다목적 hero** 아님?
+- [ ] WebP only?
+<!-- /image-knowledge-redline:v1 -->
