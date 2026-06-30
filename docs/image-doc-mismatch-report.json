@@ -1,13 +1,128 @@
 {
   "generated": "2026-06-30",
-  "total": 1,
+  "total": 12,
   "bySeverity": {
     "mismatch": 0,
     "review": 0,
-    "warn": 0,
+    "warn": 11,
     "info": 1
   },
   "issues": [
+    {
+      "severity": "warn",
+      "category": "마스터-caption",
+      "id": "IMG-016",
+      "node": "",
+      "message": "03_IMAGE_MASTER_LIST caption ≠ images.js caption",
+      "refs": [
+        "master: 원호활동면 계측 해석도 — 원호파괴와 센서형 다단식 지중경사계 변위 프로파일 관계…",
+        "images: 원호활동면 — IPI 프로파일·활동면 추정 후보 (단독 확정 금지)…"
+      ]
+    },
+    {
+      "severity": "warn",
+      "category": "마스터-caption",
+      "id": "IMG-070",
+      "node": "",
+      "message": "03_IMAGE_MASTER_LIST caption ≠ images.js caption",
+      "refs": [
+        "master: 수동 계측 — 현장 방문·휴대 장비·측정일지…",
+        "images: KCS 수동계측 — 현장 방문·휴대 장비·교차 검증…"
+      ]
+    },
+    {
+      "severity": "warn",
+      "category": "마스터-caption",
+      "id": "IMG-071",
+      "node": "",
+      "message": "03_IMAGE_MASTER_LIST caption ≠ images.js caption",
+      "refs": [
+        "master: 자동 계측 — 로거·주기 수집·현장 저장…",
+        "images: KCS 자동계측 — 수집·저장·(선택) 전송·표출 연계…"
+      ]
+    },
+    {
+      "severity": "warn",
+      "category": "마스터-caption",
+      "id": "IMG-072",
+      "node": "",
+      "message": "03_IMAGE_MASTER_LIST caption ≠ images.js caption",
+      "refs": [
+        "master: 원격 자동계측 — LTE·서버·웹·경보…",
+        "images: NMTI 운영 확장 — LTE·서버·원격 모니터링 (KCS 분류 아님)…"
+      ]
+    },
+    {
+      "severity": "warn",
+      "category": "마스터-caption",
+      "id": "IMG-073",
+      "node": "",
+      "message": "03_IMAGE_MASTER_LIST caption ≠ images.js caption",
+      "refs": [
+        "master: 스마트 계측 — 운영 플랫폼·단계별 경보…",
+        "images: NMTI 운영 확장 — 플랫폼·단계별 경보 (KCS 분류 아님)…"
+      ]
+    },
+    {
+      "severity": "warn",
+      "category": "마스터-caption",
+      "id": "IMG-074",
+      "node": "",
+      "message": "03_IMAGE_MASTER_LIST caption ≠ images.js caption",
+      "refs": [
+        "master: AI 계측 — 분석 엔진·검토·보조 의사결정…",
+        "images: AI 보조 분석 — HITL·법정기준 보조 (≠ KCS 계측방식)…"
+      ]
+    },
+    {
+      "severity": "warn",
+      "category": "마스터-title",
+      "id": "IMG-074",
+      "node": "",
+      "message": "마스터 title \"AI 계측 개념도\" ≠ images.js \"AI 보조 분석 개념도\"",
+      "refs": []
+    },
+    {
+      "severity": "warn",
+      "category": "마스터-caption",
+      "id": "IMG-075",
+      "node": "",
+      "message": "03_IMAGE_MASTER_LIST caption ≠ images.js caption",
+      "refs": [
+        "master: 계측 방식 5단계 — 하위 포함·능력 누적…",
+        "images: 계측 방식 — KCS 수집·전송·NMTI 확장·런타임 (MOD-01)…"
+      ]
+    },
+    {
+      "severity": "warn",
+      "category": "마스터-title",
+      "id": "IMG-075",
+      "node": "",
+      "message": "마스터 title \"계측 방식 5단계 계층도\" ≠ images.js \"계측 방식 3층 분류도\"",
+      "refs": []
+    },
+    {
+      "severity": "warn",
+      "category": "마스터-caption",
+      "id": "IMG-104",
+      "node": "",
+      "message": "03_IMAGE_MASTER_LIST caption ≠ images.js caption",
+      "refs": [
+        "master: 처짐계 — LVDT·와이어 (≠침하판)…",
+        "images: 처짐계 설치 — LVDT·와이어 접촉식 δ (≠ GNSS hero·≠침하계)…"
+      ]
+    },
+    {
+      "severity": "warn",
+      "category": "본문-hero",
+      "id": "sensors/deflection-gauge",
+      "node": "",
+      "message": "개요에 IMG-103 언급 — hero는 IMG-104",
+      "refs": [
+        "IMG-103",
+        "IMG-104"
+      ]
+    },
     {
       "severity": "info",
       "category": "히어로 공용",
