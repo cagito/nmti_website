@@ -26,7 +26,7 @@
 | IMG-016 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-017 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-018 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-019 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
+| IMG-019 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-020 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-021 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-022 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.6 · KCS 11 10 15:2025 §3 | — |
@@ -691,14 +691,14 @@
 | 관련 계측기 | 분야별/연약지반 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v3 PASS — docs/109 SOFT-LAYOUT-01 · Pillow render_img019 · 설치 배치 단면도 |
+| 기술 오류 | v4 ai-reviewed PASS (2026-06-30) — SOFT-LAYOUT-01·설치 배치 단면도·BORE-GL-01·piezo tip · docs/109 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
-| 검수일 | 2026-06-29 |
+| 검수일 | 2026-06-30 |
 | 금지 대조 | v3 SOFT-LAYOUT-01 redline v3 · docs/109 |
 
 **금지 오류 대조:**
@@ -1981,7 +1981,7 @@
 | 관련 계측기 | 분야별/항만·호안 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v6 ai-reviewed HAR-Q01~03·육측|케이슨|해측·G.W.L≠간극·BORE-GL-01·LOGO-01 2026-06-30 |
+| 기술 오류 | v7 ai-reviewed PASS (2026-06-30) — HAR-Q01~03·육측|케이슨|해측·조위≠G.W.L≠간극·반력 바닥모서리·BORE-GL-01·로거 생략 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -1989,7 +1989,7 @@
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
 | 검수일 | 2026-06-30 |
-| 금지 대조 | v6 ai-reviewed — 3분할·조위·G.W.L·간극수압 분리·IPI GL 가시 |
+| 금지 대조 | v7 ai-reviewed — 3분할·조위·G.W.L·간극 분리·반력 바닥모서리·IPI GL 가시·로거 생략 |
 
 **금지 오류 대조:**
 

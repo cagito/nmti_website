@@ -1620,9 +1620,9 @@
     "title": "하중계 설치 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-035 · docs/165-IMG-035-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
-    "reviewDate": "2026-06-22",
-    "reviewer": "Phase 5 Pillow v2 — STR-01 strut vs anchor LC",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/191-IMG-035-v4-재생성-기록.md · docs/180 · docs/181 §IMG-035",
+    "reviewDate": "2026-06-30",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -1631,7 +1631,7 @@
       "옆면 장식처럼 배치",
       "strut LC와 anchor LC 혼동"
     ],
-    "notes": "Phase 5 v2: ① 띠장-버팀보 접합부 축압축 ② 앵커 두부 LC.",
+    "notes": "v4 ai-reviewed PASS (2026-06-30) — STR-01·LOAD-02 버팀보 접합부 LC·앵커 ANC-CLOCK T/P · prohibitedErrors 유지",
     "prohibitedVerified": true,
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
@@ -1642,8 +1642,8 @@
     "visualReview": {
       "grade": "PASS",
       "reviewer": "agent",
-      "date": "2026-06-29",
-      "notes": "P0 REGENERATE v3 — ①띠장-버팀보 접합부 축압축 ②앵커두부 ANC-CLOCK T/P · docs/132 §5.1",
+      "date": "2026-06-30",
+      "notes": "P0 v4 ai-reviewed — STR-01·LOAD-02 버팀보 접합부 LC·앵커 ANC-CLOCK T/P 분리 · docs/180",
       "gates": [
         "V1",
         "V2",
@@ -1655,7 +1655,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-29",
+    "migrationCompletedDate": "2026-06-30",
     "zipAuditId": "ZIP-AUD-25",
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "§3.2·§3.7·STR-01",

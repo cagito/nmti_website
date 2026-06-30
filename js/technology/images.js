@@ -365,10 +365,10 @@ export const IMAGE_ASSETS = {
     title: '연약지반 성토부 계측기 설치 배치도',
     webp: 'assets/images/technology/IMG-019_연약지반-계측-전체-개념도_성토침하간극수압측방유동.webp',
     alt: '연약지반 성토부 계측기 설치 배치도 - Sand Mat·지표침하판·핀·IPI·간극수압·지중침하',
-    caption: '연약지반 성토부 계측기 설치 배치도 v3 — IPI·piezo tip·지중침하·지하수위·토압',
+    caption: '연약지반 성토부 계측기 설치 배치도 v4 — IPI·piezo tip·지중침하·지하수위·토압',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-019',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-019 · docs/109-IMG-019-연약지반-성토부-계측기-설치-배치도-표현-표준.md · docs/189-IMG-019-v4-재생성-기록.md · docs/184',
     prohibitedErrors: [
       '간극수압계를 침하계처럼 표현',
       '측방유동 단순 수평화살표만',
@@ -1169,7 +1169,7 @@ export const IMAGE_ASSETS = {
     caption: '항만·호안 계측 전체 개념도 — 케이슨·안벽 구조물과 육측·해측 지반·조위·지하수 계측',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-064',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-064 · docs/190-IMG-064-v7-재생성-기록.md · docs/184',
     prohibitedErrors: [
       '케이슨·옹벽·주변지반 구분 누락',
       '조위선·지하수위선 혼동',
