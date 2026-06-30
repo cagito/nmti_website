@@ -18,6 +18,7 @@ import { spawnSync } from 'child_process';
 import { copyFileSync, existsSync, mkdirSync, statSync, writeFileSync } from 'fs';
 import { dirname, join, relative } from 'path';
 import { fileURLToPath } from 'url';
+import { atomicWriteUtf8 } from './lib/atomic-write.mjs';
 import { anyPathNeedsBuild } from './lib/git-sync-utils.mjs';
 import { resolveNewestAction, STRONG_SYNC_DEFAULTS } from './lib/git-sync-resolve.mjs';
 import { findCrossSessionBlock } from './lib/workspace-lock.mjs';
@@ -193,7 +194,7 @@ function backupFile(path) {
 }
 
 function writeLastRun(payload) {
-  writeFileSync(LAST_RUN_PATH, JSON.stringify(payload, null, 2) + '\n', 'utf8');
+  atomicWriteUtf8(LAST_RUN_PATH, JSON.stringify(payload, null, 2) + '\n');
 }
 
 function appendLogFile() {
