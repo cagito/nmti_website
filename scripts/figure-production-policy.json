@@ -168,7 +168,7 @@
     },
     "IMG-017": {
       "tier": "FT-B",
-      "currentMethod": "cad",
+      "currentMethod": "ai-reviewed",
       "targetMethod": "cad",
       "migrationPhase": "P3",
       "hero": false

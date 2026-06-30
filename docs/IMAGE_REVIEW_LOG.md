@@ -47,7 +47,7 @@
 | IMG-037 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-038 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-039 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-040 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-040 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-041 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-042 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-043 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
@@ -1302,21 +1302,23 @@
 | 관련 계측기 | 센서별/변위계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 Pillow/WebP PASS — 안정 기준점·이동 대상점 분리, 측정축=변위방향, stroke 중립·브라켓 유격·영점/온도 보정 표시 |
+| 기술 오류 | v5 ai-reviewed LVDT-01 — 기준점·이동부·측정축·stroke·브래킷 유격·온도·영점 보정 · ≠039 · NO ATS hero · LOGO-01 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex CAD redraw |
-| 검수일 | 2026-06-29 |
-| 금지 대조 | v4 Pillow/WebP — 기준점 불안, 측정축 불일치, stroke·브라켓 유격 누락, 신축계(039) 혼동 제거 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v5 ai-reviewed — LVDT-01·DISP-ATS-01·≠039·기준점 완전고정 가정 금지 콜아웃 |
 
 **금지 오류 대조:**
 
 - 기준점 항상 완전 고정 가정
 - 측정축 무관 부착
 - stroke·브라켓 유격 미표시
+- ATS·프리즘 hero
+- 신축계(039) 혼동
 
 <a id="IMG-041"></a>
 

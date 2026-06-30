@@ -343,7 +343,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'cad'
+    productionMethod: 'ai-reviewed'
   },
   'IMG-018': {
     title: '강우-지하수위-변위 상관도',
@@ -755,7 +755,9 @@ export const IMAGE_ASSETS = {
     prohibitedErrors: [
       '기준점 항상 완전 고정 가정',
       '측정축 무관 부착',
-      'stroke·브라켓 유격 미표시'
+      'stroke·브라켓 유격 미표시',
+      'ATS·프리즘 hero',
+      '신축계(039) 혼동'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
