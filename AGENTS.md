@@ -6,7 +6,7 @@
 
 ### DOC-CANON-01 — Git 추적 정본
 
-> Figure·프롬프트 **판정 근거**는 [CANONICAL_DOC_INDEX](./docs/CANONICAL_DOC_INDEX.md) Tier A·B 문서만 사용. FTP 전용·미추적 docs는 판정 금지. [208 반경계획](./docs/208-문서-정본-충돌-반경계획-DOC-CANON-01.md)
+> Figure·프롬프트 **판정 근거**는 [CANONICAL_DOC_INDEX](./docs/CANONICAL_DOC_INDEX.md) Tier A·B 문서만 사용. FTP 전용·미추적 docs는 판정 금지. [208 반경계획](./docs/208-문서-정본-충돌-반경계획-DOC-CANON-01.md) (C1~C5 ✅) · **잔여 충돌:** [210 DOC-CANON-02](./docs/210-문서간-충돌-잔여-수정계획-DOC-CANON-02.md) (ATS-56 · SYNC-005 · P2 큐)
 
 ### 다중 Cursor 동시 작업 (LOCK-01)
 
