@@ -1,24 +1,13 @@
 {
   "generated": "2026-06-30",
-  "total": 2,
+  "total": 1,
   "bySeverity": {
     "mismatch": 0,
     "review": 0,
-    "warn": 1,
+    "warn": 0,
     "info": 1
   },
   "issues": [
-    {
-      "severity": "warn",
-      "category": "본문-hero",
-      "id": "sensors/deflection-gauge",
-      "node": "",
-      "message": "개요에 IMG-103 언급 — hero는 IMG-104",
-      "refs": [
-        "IMG-103",
-        "IMG-104"
-      ]
-    },
     {
       "severity": "info",
       "category": "히어로 공용",

@@ -6,18 +6,10 @@
 |--------|------|
 | **mismatch** (명확 불일치) | 0 |
 | **review** (PASS vs 문서 C·금지요소) | 0 |
-| **warn** | 1 |
+| **warn** | 0 |
 | **info** | 1 |
 
 ---
-
-## 본문-hero
-
-### WARN · `sensors/deflection-gauge`
-
-개요에 IMG-103 언급 — hero는 IMG-104
-- IMG-103
-- IMG-104
 
 ## 히어로 공용
 
