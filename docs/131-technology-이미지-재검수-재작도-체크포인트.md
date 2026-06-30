@@ -9,34 +9,59 @@
 - 이미지가 바뀌면 반드시 `IMAGE_REVIEW_LOG`, `image-review-registry.json`, 관련 `docs/image-knowledge/*`, redline/프롬프트 근거를 함께 갱신한다.
 - `reviewGrade: PASS`는 기술 게이트와 출판 게이트를 모두 통과한 경우에만 유지한다.
 - 중단 시 이 문서의 “현재 작업”과 “다음 작업”부터 재개한다.
+- `reviewGrade: DELETE` 이미지는 노출 경로에 남기지 않는다.
 
 ## 우선순위 큐
 
 | 순번 | ID | 상태 | 핵심 사유 |
 |---:|---|---|---|
-| 1 | IMG-024 | 완료 | v4 운영 WebP 반영, 제조사 문자 제거·침하 방향 보정 |
-| 2 | IMG-064 | 완료 | v4 운영 WebP 반영, 육측|구조물|해측 방향 재작도 |
-| 3 | IMG-084 | 다음 | 항만구조물 변위, REGENERATE 권장 |
-| 4 | IMG-091 | 대기 | MPBX, 지중경사계·신축계 혼동 방지 |
-| 5 | IMG-007 | 대기 | 터널 전체, 측점·측선·기준점 분리 |
+| 1 | IMG-025 | 진행 | 지중경사계 하단 안정층 기준 0 mm 그래프 재작도, 페이지 노출 영향 큼 |
+| 2 | IMG-085 | 대기 | `reviewGrade: DELETE`; IMG-110 대체 후 잔여 노출 차단 필요 |
+| 3 | IMG-007 | 대기 | 터널 전체도: 천단침하·내공변위·지중변위·지보재 계측 측점/측선 분리 필요 |
+| 4 | IMG-084 | 보류 | 항만구조물 변위, v6 PASS이나 후순위 유지 |
+| 5 | IMG-091 | 보류 | MPBX, 지중경사계·신축계 혼동 방지 재확인 |
 
 ## 현재 작업
 
 | 항목 | 내용 |
 |---|---|
-| ID | IMG-064 |
-| 단계 | IMG-064 완료, IMG-084 착수 전 |
-| 산출물 | `assets/images/technology/IMG-064_항만-호안-계측-전체-개념도_케이슨옹벽주변지반.webp` |
-| 검증 | `npm run build:images` PASS, `npm run audit:images` PASS, `node scripts/validate-image-master.mjs` OK |
+| ID | IMG-025 |
+| 단계 | 1차 코드 수정 완료, 이미지 재생성·registry/log 갱신 대기 |
+| 수정 파일 | `scripts/lib/inclinometer_system_draw.py` |
+| 수정 요지 | mini graph를 하단 안정층 0 mm 기준의 누적 상대변위 곡선으로 변경 |
+| 다음 작업 | `python scripts/render-phase5-sensors.py --id 025 --force-legacy-pillow` 실행 후 운영 PNG/WebP 재생성, registry·IMAGE_REVIEW_LOG 갱신 |
 
-## IMG-024 감사 메모
+## IMG-025 감사 메모
+
+- 대상: `assets/images/technology/IMG-025_지중경사계-시스템-구성도_ProbeCableReadoutCasing.*`
+- 기존 오류: 우측 해석 그래프가 하단 안정층에서 큰 변위를 갖는 형태로 표현될 수 있음.
+- 수정 기준: 안정층/Base 지점은 개념도 기준 `0 mm`이며, 상부로 갈수록 누적 상대변위가 증가하는 예시 곡선으로 표현한다.
+- 주석 필수: “최대 위치는 지반·하중·시공조건별 상이”.
+- 금지: 하부 50 m에서 최대변위, 지중경사계를 침하계처럼 표현, 수동 probe/리드아웃을 hero로 격상.
+
+## IMG-085 감사 메모
+
+- registry 상태: `status: rejected`, `reviewGrade: DELETE`, `supersededBy: IMG-110`.
+- 기존 오류: 종·횡·3축 변위 혼합, deck-displacement 바인딩 충돌.
+- 처리 원칙: 재작도보다 노출 차단이 우선이다.
+- 다음 작업: technology routing, docs, manifest, prompt/export 잔여 참조를 점검하고 실제 노출 경로는 IMG-110으로 통일한다.
+
+## IMG-007 감사 메모
+
+- 대상: 터널 계측 전체 개념도.
+- 기존 금지오류: 천단침하와 내공변위 동일 측선, 지중변위계를 록볼트처럼 표현, 숏크리트·강지보 응력계 동일 센서화.
+- 수정 기준: NATM 단면에서 천단침하점, 내공변위 측선, 지중변위계, 록볼트축력계, 숏크리트응력계를 서로 다른 측점·측선·기준점으로 분리한다.
+
+## 완료 이력
+
+### IMG-024
 
 - 근거 문서: `docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md`, `docs/32-IMG-024-댐-계측-개념도-오류분석-및-재작업-계획.md`, `docs/image-knowledge/15-댐-계측-배치.md`.
 - 유지할 요소: 필댐 단면, 저수위, 간극수압계, 침윤선, 누수·탁도, 침하, 수평변위, 데이터 흐름 7단계.
 - 수정할 요소: 데이터로거/함체의 제조사·브랜드성 문자 제거, 전체 제목 가시성 보강, 침하 카드 그래프를 침하 증가 방향(하향 또는 음수 누적)으로 정렬.
 - 금지: 품질 임의 저하, PNG/JPG 운영 등록, 근거 없는 센서 추가, 진동현식·VW 등 특정 측정 방식 라벨 추가.
 
-## IMG-064 감사 메모
+### IMG-064
 
 - 근거 문서: `docs/image-knowledge/19-항만·호안-계측-배치.md`, `docs/112-Phase-D-복붙-프롬프트-정본.md`, `ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/prompts/IMG-064_항만-호안-계측-전체-개념도.md`.
 - 기존 오류: 운영 WebP가 `해측|케이슨|육측` 방향으로 그려져 문서 기준 `육측|구조물|해측`과 반대.
@@ -67,4 +92,9 @@
 - IMG-064 v4 후보 생성·운영 교체 완료: `assets/images/technology/IMG-064_항만-호안-계측-전체-개념도_케이슨옹벽주변지반.webp`.
 - IMG-064 registry·`IMAGE_REVIEW_LOG`·`figure-production-policy.json`을 v4 Pillow/WebP 기준으로 갱신.
 - IMG-064 검증: `npm run build:images` PASS, `npm run audit:images` PASS, `node scripts/validate-image-master.mjs` OK.
-- 다음 재개 지점: `IMG-084` 근거 문서와 현재 WebP 확인.
+
+### 2026-06-30
+
+- 우선순위 큐를 TOP3 재검수 체계로 재정렬: IMG-025 → IMG-085 → IMG-007.
+- IMG-025 `scripts/lib/inclinometer_system_draw.py` 수정: mini graph를 하단 안정층 0 mm 기준 누적 상대변위로 변경.
+- 다음 재개 지점: IMG-025 이미지 재생성 및 registry/log 갱신.
