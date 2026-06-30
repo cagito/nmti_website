@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply WATERMARK-01 to all technology Figure PNGs."""
+"""Apply WATERMARK-01 to technology Figure files (post-process only — never in AI/CAD generation)."""
 from __future__ import annotations
 
 import argparse

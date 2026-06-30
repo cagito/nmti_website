@@ -15,6 +15,15 @@
 3. 각 파일의 `최종 생성 프롬프트`를 이미지 생성 AI에 입력한다.
 4. 생성 결과물은 아래 규칙으로 저장한다.
 
+## WATERMARK-01 (생성 금지)
+
+> [183-정본](../../docs/183-이미지-생성-워터마크-금지-정본.md)
+
+- **AI/CAD/GenerateImage:** NMTI 로고·워터마크 **그리지 않음**
+- **source/:** 워터마크 없는 WebP 정본
+- **배포 전:** `watermark-figures.bat` (또는 `npm run watermark:figures`) 일괄 후처리
+- `npm run sync:prompt-watermark` — prompts 공통 블록 갱신
+
 ## 저장 규칙
 - 웹 배포: `assets/images/technology/IMG-###_설명-slug.png`
 - 예: `IMG-008_터널-전단면-내공변위-측정시스템_상부아치내공변위.png`

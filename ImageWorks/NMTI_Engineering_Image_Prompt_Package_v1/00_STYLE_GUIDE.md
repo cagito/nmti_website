@@ -163,10 +163,18 @@
 
 1. **지반·구조 배치** — 가시설(좌=배면→우=굴착) · 터널(지하→지상 침하) · 댐(좌=상류→우=하류) · 항만(좌=매립→우=바다) · 철도(노반 단면)
 2. **센서 부착** — 변형률=용접 · 하중계=관통 도넛 · 경사계=L브래킷 · MPBX=다점 강봉+앵커(≠ inclinometer)
-3. **네거티브** — 사람·스마트폰·뇌·SF 빛무리 없음
+3. **네거티브** — 사람·스마트폰·뇌·SF 빛무리·**NMTI 로고·워터마크** 없음
 4. **라인 아트** — 사실적 흙·바위 텍스처·그라데이션 최소 · CAD blueprint
 
 부분 오류: docs/36 **§5.1 Feedback Loop**
 
+## WATERMARK-01 (LOGO-01) — 생성 시 로고 금지
+
+> [183-정본](../../docs/183-이미지-생성-워터마크-금지-정본.md) · docs/36 §1.0c
+
+- **GenerateImage·AI·CAD:** NMTI 로고·워터마크·브랜드 마크 **금지**
+- **source WebP:** 워터마크 없는 정본
+- **배포:** `watermark-figures.bat` · `npm run watermark:figures` 일괄 후처리만
+
 ## 공통 Negative Prompt
-AI풍, cartoon, cute, character, mascot, human face, worker portrait, brain, biological organ, fantasy, glowing neon, cyberpunk, excessive gradient, unrealistic construction site, messy text, unreadable labels, distorted Korean text, random symbols, actual city map, real company logo except NMTI placeholder, location-specific station names, photographic clutter
+AI풍, cartoon, cute, character, mascot, human face, worker portrait, brain, biological organ, fantasy, glowing neon, cyberpunk, excessive gradient, unrealistic construction site, messy text, unreadable labels, distorted Korean text, random symbols, actual city map, real company logo, NMTI logo, watermark, brand mark in generation, location-specific station names, photographic clutter
