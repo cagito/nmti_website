@@ -3141,7 +3141,7 @@
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "P0 Sprint2 v2 — 5단계 계층·포함관계 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합)",
+    "notes": "v7 ai-reviewed MOD-01 — 4행 병렬 블록(179 §1.1)·진화 사다리 제거 · docs/220",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -3151,7 +3151,7 @@
       "grade": "PASS",
       "reviewer": "agent",
       "date": "2026-06-30",
-      "notes": "v6 MOD-01 3층4층 분류 REGENERATE",
+      "notes": "v7 MOD-01 4행 병렬 블록·진화 사다리 제거",
       "gates": [
         "V1",
         "V2",
