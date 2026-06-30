@@ -44,7 +44,7 @@
 | IMG-034 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-035 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-036 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-037 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-037 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-038 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-039 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-040 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
@@ -1214,15 +1214,15 @@
 | 관련 계측기 | 센서별/균열계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 ai-reviewed CRACK-01 · 균열폭+전단단차회전 한계 · docs/138 · 2026-06-29 |
+| 기술 오류 | v5 ai-reviewed CRACK-01·LOGO-01·균열폭δ수직·docs/138 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v5 ai-reviewed — CRACK-01·측정축 수직·전단단차회전 별도 |
 
 **금지 오류 대조:**
 

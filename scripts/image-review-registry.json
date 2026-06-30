@@ -3712,23 +3712,27 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-082",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Cursor-Agent",
+    "reviewDate": "2026-06-30",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
-    "prohibitedErrors": [],
-    "notes": "render-building-audit-fixes.py v2 — LC·SG·하중변형 그래프",
-    "figureTier": "FT-B",
+    "prohibitedErrors": [
+      "균열계 hero 혼입 (IMG-037 분리)",
+      "IPI·와이어식·ATS 혼입",
+      "VW·진동현식 METHOD-01 라벨"
+    ],
+    "notes": "v5 ai-reviewed 변형률+하중계+온도·하중ε그래프·LOGO-01 2026-06-30",
+    "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P3",
-    "hero": false,
+    "hero": true,
     "renderScript": "render-field-heroes.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-30",
+      "notes": "v5 ai-reviewed 변형률+하중계+온도·하중ε그래프·LOGO-01 2026-06-30",
       "gates": [
         "V1",
         "V2",
@@ -3740,7 +3744,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-30",
     "imageKnowledgeTopic": "22-균열·변형률-계측-표현.md"
   },
   "IMG-083": {
