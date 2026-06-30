@@ -1,4 +1,4 @@
-# Exported prompt text (regenerate with npm run rework:export-prompts)
+﻿# Exported prompt text (regenerate with npm run rework:export-prompts)
 exports/rework-prompts/*.txt
 exports/rework-prompts/_INDEX.txt
 .cursor/locks/*.lock
@@ -10,12 +10,12 @@ logs/git-sync/
 # ?�본: assets/images/technology/source/*.png
 assets/images/technology/*.png
 
-# ??�� ???�동 백업 (scripts/lib/technology-image-backup.mjs)
+# ??�� ???�동 백업 (scripts/lib/technology-image-backup.mjs)
 assets/images/technology/backup/
 
 # GitHub 100MB limit
 assets/images/technology/*.zip
-book/?�내?�?��? ?�격계측경보 발령기�?.pdf
+book/?�내?�?��? ?�격계측경보 발령기�?.pdf
 book/*
 book/.*
 /book/*
@@ -27,6 +27,7 @@ book/.*
 !docs/image-knowledge/**
 # DOC-CANON-01: agent canonical docs (must be Git-tracked)
 !docs/[0-9]*.md
+!docs/[1-9][0-9]*.md
 !docs/TERMINOLOGY.md
 !docs/TECHNICAL_IMAGE_STANDARD.md
 !docs/INSTRUMENTATION_DRAWING_RULES.md

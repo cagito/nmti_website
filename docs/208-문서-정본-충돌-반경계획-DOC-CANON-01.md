@@ -1,4 +1,4 @@
-# 문서 정본 충돌 반경계획 (DOC-CANON-01)
+﻿# 문서 정본 충돌 반경계획 (DOC-CANON-01)
 
 **수립:** 2026-06-30  
 **입력:** Git `cagito/nmti_website` 심각 충돌 5건 감사  
@@ -118,7 +118,7 @@
 > |------|-----|
 > | **현재 판정** | PASS (vN ai-reviewed) |
 > | **registry** | reviewGrade=PASS · requiresReaudit=false |
-> | **과거** | REGENERATE (ZIP-AUD-11) → **resolved 2026-06-30** · [187](./187-…md) |
+> | **과거** | REGENERATE (ZIP-AUD-11) → **resolved 2026-06-30** · `docs/187-IMG-###-vN-재생성-기록.md` |
 > | **재작도 금지** | 본 문서 REGENERATE 문구는 **역사** — 무시 |
 ```
 

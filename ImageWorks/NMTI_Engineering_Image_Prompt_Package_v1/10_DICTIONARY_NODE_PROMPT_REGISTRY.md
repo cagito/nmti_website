@@ -39,7 +39,7 @@
 | `fields/tunnel/ground-displacement` | IMG-025 | 지중경사계 맥락 | §4.2③ |
 | `fields/tunnel/ground-displacement` | IMG-025 | 지중경사계 맥락 | §4.5① |
 | `fields/tunnel/face-advance` | IMG-063 | `IMG-063` | — |
-| `fields/tunnel/rockbolt` | IMG-078 | [21](../../docs/21-IMG-078·009-록볼트-축력-오류분석-및-재작업-계획.md) | §4.2④ |
+| `fields/tunnel/rockbolt` | IMG-078 | [21](../../docs/21-IMG-078-009-록볼트-축력-오류분석-및-재작업-계획.md) | §4.2④ |
 | `fields/tunnel/shotcrete` | IMG-079 | [22](../../docs/22-IMG-079-숏크리트-응력-변형-오류분석-및-재작업-계획.md) | §4.2⑤ |
 | `fields/tunnel/blast-vibration` | IMG-097 | [23](../../docs/23-IMG-097-터널-발파진동-영향권-오류분석-및-재작업-계획.md) | §4.2② |
 | `fields/tunnel/steel-support` | IMG-080 | `IMG-080` | — |

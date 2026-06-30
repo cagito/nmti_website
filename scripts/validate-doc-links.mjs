@@ -43,9 +43,22 @@ function resolveLink(fromFile, raw) {
   if (target.startsWith('/')) return join(ROOT, target.replace(/^\//, ''));
   if (target.startsWith('book/')) return join(ROOT, target);
   const fromNorm = fromFile.replace(/\\/g, '/');
-  if (fromNorm.includes('/ImageWorks/') && /^(?:\.\.\/)+docs\//.test(target)) {
-    const docTail = target.replace(/^(\.\.\/)+docs\//, '');
-    return join(ROOT, 'docs', docTail);
+  if (fromNorm.includes('/ImageWorks/')) {
+    const docsMatch = target.match(/^(?:\.\.\/)+docs\/(.+)$/);
+    if (docsMatch) {
+      const tail = docsMatch[1].replace(/078·009/g, '078-009');
+      return join(ROOT, 'docs', tail);
+    }
+    if (target === './05-간극수압계-설치-개념.md') {
+      return join(ROOT, 'docs/image-knowledge/05-간극수압계-설치-개념.md');
+    }
+    const upNum = target.match(/^\.\.\/(\d{2,3}-.+\.md)$/);
+    if (upNum) return join(ROOT, 'docs', upNum[1]);
+    const dotNum = target.match(/^\.\/(\d{2,3}-.+\.md)$/);
+    if (dotNum) return join(ROOT, 'docs', dotNum[1]);
+    if (/^\.\/(TECHNICAL_|IMAGE_|INSTRUMENTATION)/.test(target)) {
+      return join(ROOT, 'docs', target.slice(2));
+    }
   }
   return resolve(dirname(fromFile), target);
 }

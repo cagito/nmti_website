@@ -55,7 +55,7 @@
 
 - 도면은 **계측기 종류**(간극수압계·변형률계·신축이음계 등)·**설치 위치**·**측정 물리량**만 표현
 - 진동현식(VW) 인터페이스는 **고가·현장 채택 감소** — OEM·방식이 다양하므로 Figure에서 **방식 단정 금지**
-- 정본: [TECHNICAL P0-10](./TECHNICAL_IMAGE_STANDARD.md) · [IMAGE_REJECT M-01](./IMAGE_REJECT_CHECKLIST.md)
+- 정본: [TECHNICAL P0-10](../../docs/TECHNICAL_IMAGE_STANDARD.md) · [IMAGE_REJECT M-01](../../docs/IMAGE_REJECT_CHECKLIST.md)
 
 ## 터널 내공변위 (IMG-008) 전용
 
