@@ -76,7 +76,7 @@ export const IMAGE_ASSETS = {
     caption: '어스앵커 하중계 설치 개념도 — 굴착측 노출 앵커 두부 하중계(지지링·반력판–하중계–앵커헤드–강연선) 구성',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-004 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-004 · docs/164-IMG-004-v7-재생성-기록.md · docs/54-IMG-004-어스앵커-하중계-설치-표현-표준.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-004 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-004 · docs/186-IMG-016-004-3-4순위-재작도-실행계획.md · docs/54-IMG-004-어스앵커-하중계-설치-표현-표준.md · docs/83-어스앵커-하중계-ANC-CLOCK-정본.md',
     prohibitedErrors: [
       '하중계를 지반 내부에 배치',
       '정착장·그라우트체 내부에 하중계',
@@ -93,7 +93,7 @@ export const IMAGE_ASSETS = {
       '앵커 시계 3시/9시 오류'
     ],
     wireframeReplace: false,
-    requiresReaudit: false,
+    requiresReaudit: true,
     productionMethod: 'ai-reviewed'
   },
   'IMG-005': {
@@ -318,14 +318,14 @@ export const IMAGE_ASSETS = {
     caption: '원호활동면 — IPI 프로파일·활동면 추정 후보 (단독 확정 금지)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-016 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-016 · docs/167-IMG-016-v5-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-016 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-016 · docs/186-IMG-016-004-3-4순위-재작도-실행계획.md · docs/132-계측이미지-분야별-금지표현-정본.md',
     prohibitedErrors: [
       '최대 변위 깊이 = 활동면 위치',
       '지중경사계 단독으로 원호활동면 확정',
       '추정선과 실측선 동일 의미'
     ],
     wireframeReplace: false,
-    requiresReaudit: false,
+    requiresReaudit: true,
     productionMethod: 'ai-reviewed'
   },
   'IMG-017': {

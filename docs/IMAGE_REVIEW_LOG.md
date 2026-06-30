@@ -11,19 +11,19 @@
 | IMG-001 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-002 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-003 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-004 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-004 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | 예 |
 | IMG-005 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-006 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-007 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-008 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-009 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-010 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-011 | PASS | reviewed | 2026-06-29 | P0 | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | 예 |
+| IMG-011 | PASS | reviewed | 2026-06-30 | P0 | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-012 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-013 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-014 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-015 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-016 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-016 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | 예 |
 | IMG-017 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-018 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-019 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
@@ -237,11 +237,11 @@
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v3: 굴착측 두부 조립(지지링·반력판–LC–헤드)·T/P 분리·정착장 내부 금지. |
+| 기술 오류 | S1 4순위 (186) — v7 PASS 유지·픽셀 회귀 검수 대기 · 목표 v8 REGENERATE · LC=굴착측 두부·ANC-CLOCK 1~7시·T/P 분리 · prohibitedErrors 유지 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
-| 수정 지시 | — |
+| 수정 지시 | INSTRUMENTATION_DRAWING_RULES 재검수 |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | Phase 6 formal — Pillow v3·doc 26 EXC-01 |
 | 검수일 | 2026-06-22 |
@@ -448,15 +448,15 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | S0-B — v5 REGENERATE 대기 · BRI-OV 10종·부재 대응·BRI-01 · docs/185 |
+| 기술 오류 | S0-B v5 ai-reviewed PASS — 사장교 10종 BRI-OV·⑩-A/B 분리·받침·δ 주경간·LOGO-01 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
-| 수정 지시 | INSTRUMENTATION_DRAWING_RULES 재검수 |
+| 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
-| 검수일 | 2026-06-29 |
-| 금지 대조 | S0-B — 교량 hero 픽셀 회귀 검수 FAIL 시 v5 전면 재작성 |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v5 ai-reviewed — BRI-01·내부감사문구·⑩ 혼동 0건 (agent) |
 
 **금지 오류 대조:**
 
@@ -608,11 +608,11 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 v5 ai-reviewed — INTERP-01 추정 원호활동면·최대변위≠활동면·IPI 단독확정 금지 · prohibitedErrors 유지 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | S1 3순위 (186) — v5 PASS 유지·INTERP-01 회귀 검수 대기 · 목표 v6 · 추정 원호활동면·최대변위≠활동면·IPI 단독확정 금지 · prohibitedErrors 유지 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
-| 수정 지시 | — |
+| 수정 지시 | INSTRUMENTATION_DRAWING_RULES 재검수 |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
 | 검수일 | 2026-06-29 |
