@@ -16,7 +16,7 @@
     "purpose": "[좌]인접건물|배면|벽체|[우]굴착 단면+11종 계측기(데이터로거 포함), 흐름도 금지",
     "priority": "A",
     "prompt_file": "prompts/IMG-002_흙막이_벽체_계측_배치도.md",
-    "caption": "흙막이 계측 설치 대표 단면 — 11종·ANC-CLOCK (v6)",
+    "caption": "흙막이 계측 설치 대표 단면 — SOE 3분할·ANC-CLOCK·11종 (v8)",
     "standard_ref_node": "fields/retaining-excavation"
   },
   {
@@ -56,7 +56,7 @@
     "purpose": "1~최종 굴착 단계별 단면·계측 운영 루프·누적변위 (끝단 하중계)",
     "priority": "B",
     "prompt_file": "prompts/IMG-006_굴착_단계별_계측_흐름도.md",
-    "caption": "굴착 단계별 계측 흐름도 v4 — 4단계·IPI·G.W.L·어스앵커 LC(③④)",
+    "caption": "굴착 단계별 계측 흐름도 v5 — 4단계·IPI·G.W.L·어스앵커 LC(③④)",
     "standard_ref_node": "fields/retaining-excavation"
   },
   {
