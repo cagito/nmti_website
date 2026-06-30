@@ -11,7 +11,7 @@
 | IMG-001 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-002 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-003 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-004 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | 예 |
+| IMG-004 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-005 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-006 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-007 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
@@ -237,14 +237,14 @@
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | S1 4순위 (186) — v7 PASS 유지·픽셀 회귀 검수 대기 · 목표 v8 REGENERATE · LC=굴착측 두부·ANC-CLOCK 1~7시·T/P 분리 · prohibitedErrors 유지 |
+| 기술 오류 | S1-B v8 ai-reviewed PASS (2026-06-30) — ANC-CLOCK 굴착측 두부 LC·반력판-LC-헤드·T/P 분리·자유장/정착장 · prohibitedErrors 유지 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
-| 수정 지시 | INSTRUMENTATION_DRAWING_RULES 재검수 |
+| 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Phase 6 formal — Pillow v3·doc 26 EXC-01 |
-| 검수일 | 2026-06-22 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
 | 금지 대조 | EXC-01·§3.2 — anchor_head_draw 5-panel |
 
 **금지 오류 대조:**
