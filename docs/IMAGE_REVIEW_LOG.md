@@ -2249,7 +2249,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 5단계 계층·포함관계 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) |
+| 기술 오류 | v7 ai-reviewed MOD-01 — 4행 병렬 블록(179 §1.1)·진화 사다리 제거 · docs/220 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
