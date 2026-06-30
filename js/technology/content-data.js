@@ -15025,7 +15025,7 @@ const CONTENT = {
     "title": "처짐계",
     "tagline": "접촉식 처짐계(LVDT·와이어) — ≠ GNSS 경간 중앙 hero",
     "sections": {
-      "overview": "<p><strong>처짐계</strong>는 거더·PSC 박스·보·슬래브 등 구조 부재의 <strong>연직 처짐량 δ</strong>를 <strong>접촉식</strong>으로 측정합니다. LVDT, 와이어, ring type 변위변환기·측량 프리즘 보조가 사용됩니다. <strong>침하계</strong>(지반·기초 침하)와 구분됩니다.</p><p>교량 <strong>경간 중앙 GNSS 처짐(ΔZ→δ)</strong> hero는 <a href=\"#fields/bridge/deflection\">교량 처짐</a>(IMG-103) 전용입니다. 본 센서 페이지는 LVDT·와이어 등 <strong>국부·재하시험·동적</strong> 처짐에 초점을 둡니다. 건축은 <a href=\"#fields/building/deflection\">처짐</a> 항목과 연계합니다.</p>",
+      "overview": "<p><strong>처짐계</strong>는 거더·PSC 박스·보·슬래브 등 구조 부재의 <strong>연직 처짐량 δ</strong>를 <strong>접촉식</strong>으로 측정합니다. LVDT, 와이어, ring type 변위변환기·측량 프리즘 보조가 사용됩니다. <strong>침하계</strong>(지반·기초 침하)와 구분됩니다.</p><p>교량 <strong>경간 중앙 GNSS 처짐(ΔZ→δ)</strong>는 <a href=\"#fields/bridge/deflection\">교량 처짐</a> 노드 hero 전용입니다. 본 센서 페이지는 LVDT·와이어 등 <strong>국부·재하시험·동적</strong> 처짐에 초점을 둡니다. 건축은 <a href=\"#fields/building/deflection\">처짐</a> 항목과 연계합니다.</p>",
       "purpose": [
         {
           "title": "처짐 δ",

@@ -1,24 +1,13 @@
 {
   "generated": "2026-06-30",
-  "total": 3,
+  "total": 2,
   "bySeverity": {
     "mismatch": 0,
     "review": 0,
-    "warn": 2,
+    "warn": 1,
     "info": 1
   },
   "issues": [
-    {
-      "severity": "warn",
-      "category": "마스터-caption",
-      "id": "IMG-015",
-      "node": "",
-      "message": "03_IMAGE_MASTER_LIST caption ≠ images.js caption",
-      "refs": [
-        "master: 사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · (선택) 광학망…",
-        "images: 사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · 프리즘(선택)…"
-      ]
-    },
     {
       "severity": "warn",
       "category": "본문-hero",

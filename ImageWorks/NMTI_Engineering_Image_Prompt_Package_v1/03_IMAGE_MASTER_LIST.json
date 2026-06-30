@@ -146,7 +146,7 @@
     "purpose": "사면 활동면, 센서형 다단식 지중경사계, 지하수위계 배치",
     "priority": "A",
     "prompt_file": "prompts/IMG-015_사면_계측_전체_개념도.md",
-    "caption": "사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · (선택) 광학망",
+    "caption": "사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · 프리즘(선택)",
     "standard_ref_node": "fields/slope"
   },
   {
