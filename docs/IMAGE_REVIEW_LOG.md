@@ -12,15 +12,15 @@
 | IMG-002 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-003 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-004 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-005 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-005 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-006 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-007 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-008 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-009 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-010 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-011 | PASS | reviewed | 2026-06-30 | P0 | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
-| IMG-012 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
-| IMG-013 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-012 | PASS | reviewed | 2026-06-30 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-013 | PASS | reviewed | 2026-06-30 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-014 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-015 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-016 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
@@ -275,14 +275,14 @@
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4c SETTLE-01 — 배면 침하핀 제거 · §14·§3.18 · doc 41 |
+| 기술 오류 | ATS-SUB-01 P1 v5 ai-reviewed (2026-06-30) — ATS·시준선 제거 · VIEW-01 입면/단면 · 배면 지표침하 측점 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Phase 6 formal — v3·doc 15 BLD Q0 |
-| 검수일 | 2026-06-22 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
 | 금지 대조 | BLD-01~04·§3.18 — 구조물경사계 외벽·프리즘 분리·C0 지표면 |
 
 **금지 오류 대조:**
@@ -479,14 +479,14 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v2 BRI-PIER PASS — 경사·상대·절대·기초침하 분리 (docs/46) |
+| 기술 오류 | ATS-SUB-01 P1 v4 ai-reviewed (2026-06-30) — ATS 제거 · BRI-PIER · 프리즘·GNSS |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
 | 금지 대조 | BRI-PIER-01~11 redline v2 — 측면 단독 변위계·흐름도 0건 |
 
 **금지 오류 대조:**
@@ -512,14 +512,14 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v2 BRI-FND PASS — 침하 측점·지표침하계·ATS 분리 (docs/48) |
+| 기술 오류 | ATS-SUB-01 P1 v4 ai-reviewed (2026-06-30) — ATS caption 제거 · BRI-FND · 침하 측점·지표침하계 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
 | 금지 대조 | BRI-FND-01~11 redline v2 — 침하계·흐름도·측면 변위계 0건 |
 
 **금지 오류 대조:**

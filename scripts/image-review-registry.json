@@ -208,9 +208,9 @@
     "title": "주변건물 균열·경사 계측도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-005 · docs/203-IMG-005-v4c-재생성-기록.md · docs/56 · docs/202 · docs/181 §IMG-005",
-    "reviewDate": "2026-06-22",
-    "reviewer": "Phase 6 formal — v3·doc 15 BLD Q0",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-005 · docs/209-ATS-SUB-01-P1-재생성-기록.md · docs/56 · docs/207 · docs/181 §IMG-005",
+    "reviewDate": "2026-06-30",
+    "reviewer": "agent",
     "auditPriority": "P1",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -224,7 +224,7 @@
       "§3.1 배면·굴착 공간 역전 (건물 부양)",
       "배면 지표침하핀·T자 측점 (SETTLE-01)"
     ],
-    "notes": "v4c SETTLE-01 — 배면 침하핀 제거 · §14·§3.18 · doc 41",
+    "notes": "ATS-SUB-01 P1 v5 ai-reviewed (2026-06-30) — ATS·시준선 제거 · VIEW-01 입면/단면 · 배면 지표침하 측점",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "BLD-01~04·§3.18 — 구조물경사계 외벽·프리즘 분리·C0 지표면",
@@ -532,9 +532,9 @@
     "title": "교각 변위·경사 계측도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-012",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Cursor-Agent",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-012 · docs/209-ATS-SUB-01-P1-재생성-기록.md · docs/45 · docs/207",
+    "reviewDate": "2026-06-30",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -547,7 +547,7 @@
       "우측 데이터 흐름도 (BRI-PIER-09)",
       "관리기준 그래프 일반 수치 mm·° (BRI-PIER-10)"
     ],
-    "notes": "v2 BRI-PIER PASS — 경사·상대·절대·기초침하 분리 (docs/46)",
+    "notes": "ATS-SUB-01 P1 v4 ai-reviewed (2026-06-30) — ATS 제거 · BRI-PIER · 프리즘·GNSS",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "BRI-PIER-01~11 redline v2 — 측면 단독 변위계·흐름도 0건",
@@ -558,9 +558,9 @@
     "hero": false,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "v2 BRI-PIER — 경사·상대·절대·기초침하 분리, 흐름도 제거",
+      "reviewer": "agent",
+      "date": "2026-06-30",
+      "notes": "ATS-SUB-01 P1 v4 — ATS 제거 · BRI-PIER · 프리즘·GNSS · docs/207",
       "gates": [
         "V1",
         "V2",
@@ -572,7 +572,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-30",
     "imageKnowledgeTopic": "14-교량-계측시스템-설치.md"
   },
   "IMG-013": {
@@ -580,9 +580,9 @@
     "title": "교량 기초 침하 계측 배치도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-013",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Cursor-Agent",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-013 · docs/209-ATS-SUB-01-P1-재생성-기록.md · docs/47 · docs/207",
+    "reviewDate": "2026-06-30",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -595,7 +595,7 @@
       "침하 그래프 보편 mm 임계 (BRI-FND-08)",
       "우측 데이터 흐름도 (BRI-FND-09)"
     ],
-    "notes": "v2 BRI-FND PASS — 침하 측점·지표침하계·ATS 분리 (docs/48)",
+    "notes": "ATS-SUB-01 P1 v4 ai-reviewed (2026-06-30) — ATS caption 제거 · BRI-FND · 침하 측점·지표침하계",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "BRI-FND-01~11 redline v2 — 침하계·흐름도·측면 변위계 0건",
@@ -606,9 +606,9 @@
     "hero": false,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "v2 BRI-FND — 침하 측점·지표침하계·ATS 분리, 흐름도 제거",
+      "reviewer": "agent",
+      "date": "2026-06-30",
+      "notes": "ATS-SUB-01 P1 v4 — ATS caption 제거 · BRI-FND · docs/207",
       "gates": [
         "V1",
         "V2",
@@ -620,7 +620,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-30",
     "imageKnowledgeTopic": "14-교량-계측시스템-설치.md"
   },
   "IMG-014": {
