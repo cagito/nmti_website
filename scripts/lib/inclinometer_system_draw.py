@@ -15,6 +15,27 @@ SOIL2 = "#C4A574"
 ROCK = "#9CA3AF"
 
 
+def _dashed_line(draw: ImageDraw.ImageDraw, points: list[tuple[int, int]], *, fill: str, width: int = 2, dash: int = 8, gap: int = 6) -> None:
+    """Draw a dashed polyline using Pillow primitive line segments."""
+    for (x1, y1), (x2, y2) in zip(points, points[1:]):
+        dx = x2 - x1
+        dy = y2 - y1
+        length = math.hypot(dx, dy)
+        if length == 0:
+            continue
+        ux = dx / length
+        uy = dy / length
+        pos = 0.0
+        while pos < length:
+            end = min(pos + dash, length)
+            sx = int(round(x1 + ux * pos))
+            sy = int(round(y1 + uy * pos))
+            ex = int(round(x1 + ux * end))
+            ey = int(round(y1 + uy * end))
+            draw.line([(sx, sy), (ex, ey)], fill=fill, width=width)
+            pos += dash + gap
+
+
 def render_img025(draw: ImageDraw.ImageDraw, font_title: ImageFont.ImageFont) -> None:
     draw_label(draw, "센서형 다단식 지중경사계 시스템 구성도", (W // 2, 48), font_title)
     draw_label(
@@ -100,14 +121,52 @@ def render_img025(draw: ImageDraw.ImageDraw, font_title: ImageFont.ImageFont) ->
     draw_label(draw, "Probe", (950, 615), load_font(11))
     draw_label(draw, "(운영 hero 아님)", (1030, 640), load_font(12), fill=C["orange"])
 
-    # Depth vs displacement mini graph
+    # Depth vs displacement mini graph — stable base is 0 mm by definition for this concept figure.
     gx0, gy0 = 1240, 540
     draw.rounded_rectangle([gx0, gy0, 1820, 900], outline=_hex(C["navy"]), width=2)
-    draw_label(draw, "누적 수평변위 vs 깊이 (예시)", (1530, gy0 + 28), load_font(18, bold=True))
-    draw.line([(gx0 + 40, gy0 + 320), (gx0 + 520, gy0 + 320)], fill=_hex(C["gray"]), width=1)
-    draw.line([(gx0 + 120, gy0 + 60), (gx0 + 120, gy0 + 320)], fill=_hex(C["gray"]), width=1)
-    draw_label(draw, "깊이", (1530, gy0 + 340), load_font(14), fill=C["gray"])
-    draw_label(draw, "변위", (gx0 + 50, gy0 + 200), load_font(14), fill=C["gray"], anchor="mm")
-    pts_g = [(gx0 + 120 + i * 18, gy0 + 200 - int(80 * math.sin(i / 4))) for i in range(22)]
-    for i in range(len(pts_g) - 1):
-        draw.line([pts_g[i], pts_g[i + 1]], fill=_hex(C["teal"]), width=3)
+    draw_label(draw, "하단 기준 누적 상대변위 vs 깊이", (1530, gy0 + 26), load_font(18, bold=True))
+
+    chart_x = gx0 + 105
+    chart_y = gy0 + 70
+    chart_w = 390
+    chart_h = 230
+    max_disp = 50
+    max_depth = 50
+
+    # Grid and axes
+    for d in range(0, 51, 10):
+        y = chart_y + int(chart_h * d / max_depth)
+        draw.line([(chart_x, y), (chart_x + chart_w, y)], fill=_hex("#D1D5DB"), width=1)
+        draw_label(draw, f"{d}", (chart_x - 24, y), load_font(11), fill=C["gray"])
+    for v in range(0, 51, 10):
+        x = chart_x + int(chart_w * v / max_disp)
+        draw.line([(x, chart_y), (x, chart_y + chart_h)], fill=_hex("#E5E7EB"), width=1)
+        draw_label(draw, f"{v}", (x, chart_y - 14), load_font(11), fill=C["gray"])
+    draw.line([(chart_x, chart_y), (chart_x, chart_y + chart_h)], fill=_hex(C["navy"]), width=2)
+    draw.line([(chart_x, chart_y), (chart_x + chart_w, chart_y)], fill=_hex(C["navy"]), width=2)
+    draw_label(draw, "누적 상대변위(mm)", (chart_x + chart_w // 2, chart_y - 36), load_font(13, bold=True), fill=C["teal"])
+    draw_label(draw, "깊이(m)", (chart_x - 56, chart_y + chart_h // 2), load_font(13, bold=True), fill=C["navy"])
+
+    def map_point(depth: int, disp: float) -> tuple[int, int]:
+        x = chart_x + int(chart_w * disp / max_disp)
+        y = chart_y + int(chart_h * depth / max_depth)
+        return x, y
+
+    depths = [50, 45, 40, 35, 30, 25, 20, 15, 10, 5, 0]
+    a_disp = [0, 3, 5, 8, 12, 17, 22, 27, 32, 36, 38]
+    b_disp = [0, 4, 8, 13, 18, 24, 30, 35, 38, 42, 44]
+    pts_a = [map_point(d, v) for d, v in zip(depths, a_disp)]
+    pts_b = [map_point(d, v) for d, v in zip(depths, b_disp)]
+    for p1, p2 in zip(pts_a, pts_a[1:]):
+        draw.line([p1, p2], fill=_hex(C["teal"]), width=3)
+    _dashed_line(draw, pts_b, fill=_hex(C["navy"]), width=3)
+    for x, y in pts_a[::2]:
+        draw.ellipse([x - 3, y - 3, x + 3, y + 3], fill=_hex(C["teal"]))
+    for x, y in pts_b[::2]:
+        draw.ellipse([x - 3, y - 3, x + 3, y + 3], fill=_hex(C["navy"]))
+
+    base_y_graph = map_point(50, 0)[1]
+    draw_label(draw, "안정층 기준점: 0 mm", (chart_x + 110, base_y_graph + 18), load_font(12, bold=True), fill=C["navy"])
+    draw_label(draw, "A축 예시", (gx0 + 560, gy0 + 134), load_font(12), fill=C["teal"])
+    draw_label(draw, "B축 예시", (gx0 + 560, gy0 + 162), load_font(12), fill=C["navy"])
+    draw_label(draw, "※ 최대 위치는 지반·하중·시공조건별 상이", (1530, gy0 + 332), load_font(12), fill=C["gray"])
