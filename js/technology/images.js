@@ -318,14 +318,14 @@ export const IMAGE_ASSETS = {
     caption: '원호활동면 — IPI 프로파일·활동면 추정 후보 (단독 확정 금지)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-016 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-016 · docs/186-IMG-016-004-3-4순위-재작도-실행계획.md · docs/132-계측이미지-분야별-금지표현-정본.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-016 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-016 · docs/187-IMG-016-v6-재생성-기록.md · docs/186-IMG-016-004-3-4순위-재작도-실행계획.md',
     prohibitedErrors: [
       '최대 변위 깊이 = 활동면 위치',
       '지중경사계 단독으로 원호활동면 확정',
       '추정선과 실측선 동일 의미'
     ],
     wireframeReplace: false,
-    requiresReaudit: true,
+    requiresReaudit: false,
     productionMethod: 'ai-reviewed'
   },
   'IMG-017': {

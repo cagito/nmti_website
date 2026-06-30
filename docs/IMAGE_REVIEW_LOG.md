@@ -23,7 +23,7 @@
 | IMG-013 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-014 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-015 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-016 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | 예 |
+| IMG-016 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-017 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-018 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-019 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
@@ -608,14 +608,14 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | S1 3순위 (186) — v5 PASS 유지·INTERP-01 회귀 검수 대기 · 목표 v6 · 추정 원호활동면·최대변위≠활동면·IPI 단독확정 금지 · prohibitedErrors 유지 |
+| 기술 오류 | S1-A v6 ai-reviewed PASS (2026-06-30) — INTERP-01 추정 원호활동면·전단변형 집중 구간·안정해석 검토 분리·단일 IPI 확정 금지 · prohibitedErrors 유지 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
-| 수정 지시 | INSTRUMENTATION_DRAWING_RULES 재검수 |
+| 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
-| 검수일 | 2026-06-29 |
+| 검수일 | 2026-06-30 |
 | 금지 대조 | v4 Pillow/WebP — INTERP-01, SLOPE-01, IPI-EMBED, G.W.L≠piezo, 최대변위=활동면 금지 대조 PASS |
 
 **금지 오류 대조:**
