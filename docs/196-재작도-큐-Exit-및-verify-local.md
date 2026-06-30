@@ -35,7 +35,7 @@
 | book-stage3 · heroes | 17/17 · 10/10 |
 | doc-links | 3701 internal OK |
 
-**비차단 참고:** `audit:book` 1건 — 지중경사계 이중 콘텐츠 canonical (구조/운영, exit 0 유지)
+**비차단 참고:** ~~`audit:book` 지중경사계 이중 콘텐츠~~ → **✅ 2026-06-30** `SKIP_IDS` 복구 · 중복 SEO 삭제
 
 ---
 
@@ -55,7 +55,7 @@
 
 1. ~~**P1 DOC_FIX**~~ — ✅ [197](./197-P1-DOC_FIX-마스터동기화-및-배포준비.md)
 2. ~~**verify:deploy**~~ — ✅
-3. ~~**verify:production**~~ — ✅ 28/28 [198](./198-배포-Exit-및-verify-production.md)
+3. ~~**verify:production**~~ — ✅ 30/30 [198](./198-배포-Exit-및-verify-production.md)
 4. **선택** — git commit · WebP 워터마크 정책 · `audit:book` inclinometer canonical
 
 ---

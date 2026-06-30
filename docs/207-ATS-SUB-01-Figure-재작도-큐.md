@@ -7,17 +7,19 @@
 
 | IMG | 노드 | 조치 | 상태 |
 |-----|------|------|------|
-| **005** | `adjacent-building` | 프리즘·균열·경사만 — ATS 본체·복합 라벨 삭제 | ⏳ REGENERATE |
-| **012** | `bridge/pier` | 경사계·GNSS — ATS 삭제 | ⏳ REGENERATE |
-| **013** | `bridge/foundation-settlement` | 침하계·측점·GNSS — ATS caption 삭제 | ⏳ REGENERATE |
+| **005** | `adjacent-building` | 프리즘·균열·경사만 — ATS 본체·복합 라벨 삭제 | ✅ v5 (2026-06-30) |
+| **012** | `bridge/pier` | 경사계·GNSS — ATS 삭제 | ✅ v4 (2026-06-30) |
+| **013** | `bridge/foundation-settlement` | 침하계·측점·GNSS — ATS caption 삭제 | ✅ v4 (2026-06-30) |
 
 ## P2
 
 | IMG | 조치 | 상태 |
 |-----|------|------|
-| **015** | 사면 개념도 ATS 패널 삭제 | ⏳ |
-| **001** | callout ATS 감사 | ⏳ |
-| **090** | 와이어·프리즘만 | ⏳ |
+| **015** | 사면 개념도 ATS 패널 삭제 | ✅ v5 (2026-06-30) |
+| **001** | callout ATS 감사 — G-16 · 픽셀 유지 | ✅ (2026-06-30) |
+| **090** | 와이어·프리즘만 | ✅ v6 (2026-06-30) |
+
+기록: [211 P2](./211-ATS-SUB-01-P2-재생성-기록.md)
 
 ## 유지
 

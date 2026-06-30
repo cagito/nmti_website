@@ -1,6 +1,6 @@
-# 배포 Exit — verify:production 28/28 (2026-06-30)
+# 배포 Exit — verify:production 30/30 (2026-06-30)
 
-**게이트:** `npm run verify:production` exit 0 · **28/28 OK**
+**게이트:** `npm run verify:production` exit 0 · **30/30 OK**
 
 ---
 
@@ -15,7 +15,7 @@
 ## 2. 운영 검증 (2026-06-30)
 
 ```bash
-npm run verify:production   # 28/28 OK
+npm run verify:production   # 30/30 OK
 ```
 
 | 이전 FAIL | 수정 | 결과 |
@@ -23,7 +23,7 @@ npm run verify:production   # 28/28 OK
 | 흙막이 주변지반 SEO | IMG-032 제거 | OK |
 | 항만 주변지반 SEO | IMG-032 → 030·031 | OK |
 
-전체 28건: 홈 · inclinometer · SPA · SEO 13 · GNSS PDF · Phase5 4 · BRI 8 · 기타
+전체 30건: 홈 · inclinometer · SPA · SEO 13 · GNSS PDF · Phase5 4 · BRI 8 · INCL-SEO 2 · 기타
 
 ---
 
@@ -33,7 +33,7 @@ npm run verify:production   # 28/28 OK
 |--------|------|
 | `verify:local` | PASS (2026-06-30) |
 | `verify:deploy` | PASS |
-| `verify:production` | **28/28** |
+| `verify:production` | **30/30** |
 | `audit:images:strict` | 0 errors |
 | `audit:image-doc` | mismatch 0 · review 0 |
 
@@ -42,7 +42,7 @@ npm run verify:production   # 28/28 OK
 ## 4. 잔여 (비차단·선택)
 
 - WebP 워터마크 후처리 — `watermark:figures`는 PNG 전용; WebP-only 운영 중
-- `audit:book` 지중경사계 이중 콘텐츠 canonical (구조/운영 1건)
+- ~~`audit:book` 지중경사계 이중 콘텐츠~~ → **✅ 2026-06-30** (`SKIP_IDS` · 중복 SEO 제거)
 - git commit/push — 사용자 요청 시
 
 ---

@@ -14,10 +14,10 @@
 | 해소 | C1~C5 | Git 추적 · PASS/REGENERATE · 19·26 ARCHIVE · 건설중 | ✅ CI |
 | **잔여 P0** | **ATS-56** | `docs/56` ATS 개념 아이콘 vs 206·prompt v5·registry | ✅ Phase A (2026-06-30) |
 | **잔여 P1** | **SYNC-005** | IMG-005 `image-rules-sync` ← 건축공사(17) · 지표침하계 필수 vs 본문 금지 | ✅ map→31 · sync |
-| **잔여 P1** | **ATS-P2** | 015·001·090 프롬프트·레지스트리 `(선택) ATS` | ⏳ |
+| **잔여 P1** | **ATS-P2** | 015·001·090 프롬프트·레지스트리 `(선택) ATS` | ✅ [211](./211-ATS-SUB-01-P2-재생성-기록.md) |
 | **잔여 P2** | **CANON-EXT** | `CANONICAL_STATUS`·validator 4종만 감시 | ✅ 7종 (005·012·013 추가) |
-| **잔여 P2** | **DOC-NUM** | `docs/131`×3 · `docs/153`×2 번호 중복 | ⏳ |
-| **잔여 P3** | **MISC** | 180 vs registry · deflection-gauge 103/104 · IMG-085 · book 사진 | ⏳ |
+| **잔여 P2** | **DOC-NUM** | `docs/131`×3 · `docs/153`×2 번호 중복 | ✅ 2026-06-30 |
+| **잔여 P3** | **MISC** | 180 vs registry · deflection-gauge 103/104 · IMG-085 · book 사진 | ✅ 2026-06-30 |
 
 **DOC-CANON-02 한 줄:**
 
@@ -125,9 +125,9 @@ rg -n "자동광파기|시준선|Total Station" docs/56-IMG-005*.md
 
 | 충돌 | 조치 |
 |------|------|
-| **131×3** | [CANONICAL_DOC_INDEX](./CANONICAL_DOC_INDEX.md) §「131 역할 구분」표 추가 — P0 공통 / 디자인가이드 / 재검수 체크포인트 |
-| **153×2** | `153-IMG-109-…` → **`154-IMG-109-…` 리네임** (또는 153은 용어만·109는 45번대로 이관) · 링크 일괄 치환 · `validate:doc-links` |
-| **180 vs registry** | 180 상단 각주: **「완료 판정 = registry · 개별 18x 기록」** · S0 표 주기적 ✅ 갱신 (수동) |
+| **131×3** | ✅ [CANONICAL_DOC_INDEX](./CANONICAL_DOC_INDEX.md) §「131 역할 구분」 |
+| **153×2** | ✅ `153-IMG-109` → [218-IMG-109-…](./218-IMG-109-교량-풍향풍속-표현-표준.md) · `153` = 건설중 용어만 |
+| **180 vs registry** | ✅ 180 상단 각주: **「완료 판정 = registry · 개별 18x 기록」** |
 
 **Exit E:** `validate:doc-links:strict` 0 broken · 131·153 링크 혼동 제거.
 
@@ -137,10 +137,10 @@ rg -n "자동광파기|시준선|Total Station" docs/56-IMG-005*.md
 
 | ID | 작업 | 담당 |
 |----|------|------|
-| **MISC-103** | `sensors/deflection-gauge` 본문 IMG-103 → **104** 또는 hero 교체 — [image-doc-mismatch](./image-doc-mismatch-report.md) | content-data |
-| **MISC-085** | IMG-085 WebP 등록 또는 hero placeholder 정책 | registry |
-| **BOOK-EJ** | `book/신축이음계 설치사진1~4.png` — [image-knowledge/23](./image-knowledge/23-신축·변위계-구조부재.md) **참고 사진 인덱스** · IMG-014·039 prompt 근거 링크 (gitignore 유지) | image-knowledge |
-| **TIER-C** | docs/19·26 — 본문 첫 50줄 외 **「과거 판정」** 접기 또는 `validate-archive-banner.mjs` (배너 없으면 FAIL) | docs |
+| **MISC-103** | ✅ `deflection-gauge` hero=IMG-104 · GNSS(103) 교차참조 — [197](./197-P1-DOC_FIX-마스터동기화-및-배포준비.md) |
+| **MISC-085** | ✅ IMG-085 DELETE · IMG-110 대체 — [157](./157-계측이론-정합성-Phase-H-Handoff.md) |
+| **BOOK-EJ** | ✅ [23 §14](./image-knowledge/23-신축·변위계-구조부재.md) · [source-index](./image-knowledge/source-index.md) · IMG-014·039 prompt · **A-1 v5** [214](./214-IMG-014-v5-재생성-기록.md) |
+| **TIER-C** | ✅ docs/19·26 ARCHIVE 배너 · `validate-archive-banner.mjs` · `verify:local` 편입 |
 
 ---
 
@@ -148,10 +148,10 @@ rg -n "자동광파기|시준선|Total Station" docs/56-IMG-005*.md
 
 | # | 스크립트 | 내용 |
 |---|----------|------|
-| G1 | `validate-prompt-rules-consistency.mjs` **신규** | Figure 전용 표준(56·54…) 금지어가 동일 IMG `image-rules-sync` **필수**에 있으면 FAIL |
-| G2 | `validate-ats-scope.mjs` **확장** | ImageWorks `prompts/IMG-005·012·013·015·090·101` — `자동광파기` 허용 패턴 외 FAIL |
-| G3 | `validate-doc-ats-policy.mjs` **신규(선택)** | `docs/56`·Figure 표준 md — DENY 노드 맥락에서 ATS **필수** 문구 탐지 |
-| G4 | `verify:local` 편입 | G1·G2 strict (G3는 경고 후 strict) |
+| G1 | `validate-prompt-rules-consistency.mjs` **신규** | ✅ `prompt-rules-consistency.json` · 6 IMG |
+| G2 | `validate-ats-scope.mjs` **확장** | ✅ prompts 005·012·013·015·090·101 |
+| G3 | `validate-doc-ats-policy.mjs` **신규** | ✅ deny-figure 표준 4종 ATS 필수 문구 탐지 |
+| G4 | `verify:local` 편입 | ✅ G1·G2 strict |
 
 ---
 
@@ -179,7 +179,7 @@ rg -n "자동광파기|시준선|Total Station" docs/56-IMG-005*.md
 | **SYNC-005** | IMG-005 `image-rules-sync` — 지표침하계 필수 없음 · map→topic 18 |
 | **ATS-P2** | 207 P2 ✅ · `validate:ats-scope:strict` |
 | **CANON-EXT** | WATCH ≥8 · `validate:figure-status:strict` 0 |
-| **DOC-NUM** | 153 중복 해소 · CANONICAL_INDEX 131 표 |
+| **DOC-NUM** | ✅ 153→218 · CANONICAL §131·§153 · doc-links 0 broken |
 | **운영** | `verify:local` · `verify:production` 유지 |
 
 ---
@@ -195,13 +195,14 @@ rg -n "자동광파기|시준선|Total Station" docs/56-IMG-005*.md
 
 ---
 
-## 12. 즉시 다음 액션 (승인 시)
+## 12. 즉시 다음 액션
 
-1. **Phase A** — `docs/56` §0·§1·§2 ATS 삭제 (픽셀 재작도 **불필요** — v5 유지)  
-2. **Phase B** — `image-knowledge/18` 신규 + map 변경 + `sync:prompt-image-rules`  
-3. IMG-005 prompt — **CANONICAL_STATUS** + ATS-SUB-01 블록 통합 (Phase D 선행 1건)  
-4. **Phase C** — 207 P2 착수 (015 → 090 → 001)  
-5. `CANONICAL_DOC_INDEX` · `AGENTS.md` — 본 계획(210) 링크
+**DOC-CANON-02 Exit (2026-06-30)** — [219 완료 보고](./219-문서-충돌-정리-완료-보고.md)
+
+1. ~~Phase A~G~~ ✅  
+2. ~~Phase C 207 P2~~ ✅ [211](./211-ATS-SUB-01-P2-재생성-기록.md)  
+3. **운영:** `verify:quick` · `verify:predeploy` · 배포 후 `verify:production`  
+4. **미커밋:** commit·push — 사용자 요청 시
 
 ---
 

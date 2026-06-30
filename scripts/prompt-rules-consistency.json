@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "description": "Figure 전용 표준 금지어가 image-rules-sync 필수(반드시 그릴)에 오염되면 FAIL — DOC-CANON-02 Phase G1 · SYNC-005",
+  "rules": {
+    "IMG-005": {
+      "standard": "docs/56-IMG-005-주변건물-균열경사-표현-표준.md",
+      "forbiddenInRequired": [
+        "자동광파기",
+        "Total Station",
+        "시준선",
+        "지표침하계",
+        "광학망"
+      ],
+      "requiredInDeny": ["자동광파기", "ATS", "Total Station"]
+    },
+    "IMG-012": {
+      "standard": "docs/45-교각-경사-변위-계측-표현-표준.md",
+      "forbiddenInRequired": ["자동광파기", "Total Station", "ATS"],
+      "requiredInDeny": ["자동광파기", "ATS", "Total Station"]
+    },
+    "IMG-013": {
+      "standard": "docs/47-교량-기초-침하-계측-표현-표준.md",
+      "forbiddenInRequired": ["자동광파기", "Total Station", "ATS"],
+      "requiredInDeny": ["자동광파기", "ATS", "Total Station"]
+    },
+    "IMG-015": {
+      "standard": "docs/INSTRUMENTATION_DRAWING_RULES.md",
+      "forbiddenInRequired": ["자동광파기", "Total Station", "ATS"],
+      "requiredInDeny": ["자동광파기", "ATS", "Total Station"]
+    },
+    "IMG-090": {
+      "standard": "docs/129-사면-옹벽-와이어식-변위계-배면사면-표준.md",
+      "forbiddenInRequired": ["자동광파기", "Total Station", "ATS"],
+      "requiredInDeny": ["자동광파기", "ATS", "Total Station"]
+    },
+    "IMG-101": {
+      "standard": "docs/image-knowledge/17-건축공사-계측-배치.md",
+      "forbiddenInRequired": ["자동광파기", "Total Station"]
+    }
+  }
+}

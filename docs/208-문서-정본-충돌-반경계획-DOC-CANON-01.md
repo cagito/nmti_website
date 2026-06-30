@@ -1,4 +1,4 @@
-﻿# 문서 정본 충돌 반경계획 (DOC-CANON-01)
+# 문서 정본 충돌 반경계획 (DOC-CANON-01)
 
 **수립:** 2026-06-30  
 **입력:** Git `cagito/nmti_website` 심각 충돌 5건 감사  
@@ -249,18 +249,18 @@
 
 ---
 
-## 7. 즉시 다음 액션 (승인 시)
+## 7. 즉시 다음 액션
 
-1. **`.gitignore` Phase 0.1** 패치 + `docs/CANONICAL_DOC_INDEX.md`  
-2. **`git add -f`** 180·181·153·187·192·199·188·208 + push `cagito/nmti_website`  
-3. **docs/19·26** ARCHIVE 배너  
-4. **`validate-doc-links`** ImageWorks 확장 스캐폴드  
-5. **IMG-016·096** `CANONICAL_STATUS` 블록 추가 (전 Figure 템플릿)
+**DOC-CANON-01 Exit (2026-06-30)** — C1~C5 ✅ · [219](./219-문서-충돌-정리-완료-보고.md)
+
+운영: `validate:canonical-docs:strict` · `validate:figure-status:strict` (WATCH 20)
 
 ---
 
 ## 8. 연계
 
+- [212 DOC-CANON-03 정본 복구·상태값 반영계획](./212-문서-정본-복구-상태값-충돌-반영계획.md) — 외부 「Git 문서 충돌 정리」프롬프트 통합
+- [210 DOC-CANON-02 잔여 수정계획](./210-문서간-충돌-잔여-수정계획-DOC-CANON-02.md) — ATS·sync
 - [98 다중 Cursor 충돌방지](./98-다중-Cursor-동시작업-충돌방지.md)
 - [206 ATS-SUB-01](./206-자동광파기-지하공사-전용-표현-통합-적용-계획.md)
 - [10 운영 가이드](./10-최종-완료-및-운영-가이드.md)
