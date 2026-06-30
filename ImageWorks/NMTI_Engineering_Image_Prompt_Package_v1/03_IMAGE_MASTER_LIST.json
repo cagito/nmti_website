@@ -106,7 +106,7 @@
     "purpose": "상부구조, 교각, 교대, 기초 계측 항목 정리",
     "priority": "A",
     "prompt_file": "prompts/IMG-011_교량_계측_전체_개념도.md",
-    "caption": "교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측",
+    "caption": "교량 계측 전체 개념도 v5 — 사장교·상부구조→받침→교각/교대→기초·10종 계측",
     "standard_ref_node": "fields/bridge"
   },
   {
@@ -156,7 +156,7 @@
     "purpose": "원호파괴와 센서형 다단식 지중경사계 변위 프로파일 관계",
     "priority": "A",
     "prompt_file": "prompts/IMG-016_원호활동면_계측_해석도.md",
-    "caption": "원호활동면 계측 해석도 — 원호파괴와 센서형 다단식 지중경사계 변위 프로파일 관계",
+    "caption": "원호활동면 — IPI 프로파일·활동면 추정 후보 (단독 확정 금지)",
     "standard_ref_node": "fields/slope"
   },
   {
@@ -186,7 +186,7 @@
     "purpose": "성토·연약지층 계측기 실제 설치 배치 2D 단면 (SOFT-LAYOUT-01)",
     "priority": "A",
     "prompt_file": "prompts/IMG-019_연약지반_계측_전체_개념도.md",
-    "caption": "연약지반 성토부 계측기 설치 배치도 v3 — IPI·piezo tip·지중침하·지하수위·토압",
+    "caption": "연약지반 성토부 계측기 설치 배치도 v4 — IPI·piezo tip·지중침하·지하수위·토압",
     "standard_ref_node": "fields/soft-ground"
   },
   {
@@ -697,7 +697,7 @@
     "purpose": "현장 방문·리드아웃·현장 기록",
     "priority": "A",
     "prompt_file": "prompts/IMG-070_수동_계측_개념도.md",
-    "caption": "수동 계측 — 현장 방문·휴대 장비·측정일지",
+    "caption": "KCS 수동계측 — 현장 방문·휴대 장비·교차 검증",
     "standard_ref_node": "instruments/modes/overview"
   },
   {
@@ -707,7 +707,7 @@
     "purpose": "데이터로거·현장 저장·수집 주기",
     "priority": "A",
     "prompt_file": "prompts/IMG-071_자동_계측_개념도.md",
-    "caption": "자동 계측 — 로거·주기 수집·현장 저장",
+    "caption": "KCS 자동계측 — 수집·저장·(선택) 전송·표출 연계",
     "standard_ref_node": "instruments/modes/overview"
   },
   {
@@ -717,7 +717,7 @@
     "purpose": "현장·통신·서버·원격 모니터링",
     "priority": "A",
     "prompt_file": "prompts/IMG-072_원격_자동계측_개념도.md",
-    "caption": "원격 자동계측 — LTE·서버·웹·경보",
+    "caption": "NMTI 운영 확장 — LTE·서버·원격 모니터링 (KCS 분류 아님)",
     "standard_ref_node": "instruments/modes/overview"
   },
   {
@@ -727,27 +727,27 @@
     "purpose": "플랫폼·경보·보고·이벤트 로그",
     "priority": "A",
     "prompt_file": "prompts/IMG-073_스마트_계측_개념도.md",
-    "caption": "스마트 계측 — 운영 플랫폼·단계별 경보",
+    "caption": "NMTI 운영 확장 — 플랫폼·단계별 경보 (KCS 분류 아님)",
     "standard_ref_node": "instruments/modes/overview"
   },
   {
     "id": "IMG-074",
     "category": "시스템/계측방식",
-    "title": "AI 계측 개념도",
+    "title": "AI 보조 분석 개념도",
     "purpose": "이상탐지·예측·HITL 보조",
     "priority": "A",
     "prompt_file": "prompts/IMG-074_AI_계측_개념도.md",
-    "caption": "AI 계측 — 분석 엔진·검토·보조 의사결정",
+    "caption": "AI 보조 분석 — HITL·법정기준 보조 (≠ KCS 계측방식)",
     "standard_ref_node": "instruments/modes/overview"
   },
   {
     "id": "IMG-075",
     "category": "시스템/계측방식",
-    "title": "계측 방식 5단계 계층도",
+    "title": "계측 방식 3층 분류도",
     "purpose": "수동·자동·원격·스마트·AI 포함 관계",
     "priority": "A",
     "prompt_file": "prompts/IMG-075_계측_방식_5단계_계층도.md",
-    "caption": "계측 방식 5단계 — 하위 포함·능력 누적",
+    "caption": "계측 방식 — KCS 수집·전송·NMTI 확장·런타임 (MOD-01)",
     "standard_ref_node": "instruments/modes/overview"
   },
   {
@@ -940,7 +940,7 @@
     "prompt_version": "v4",
     "standard_ref": "docs/57-IMG-096-가시설-주변지반-계측-표현-표준.md",
     "rework_plan": "docs/110-IMG-096-옹벽삭제-가시설-주변지반-재작업-계획.md",
-    "caption": "가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v5)",
+    "caption": "가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v6)",
     "standard_ref_node": "fields/retaining-excavation/surrounding-ground"
   },
   {
@@ -1040,7 +1040,7 @@
     "purpose": "LVDT·와이어 — 구조 처짐 전용",
     "priority": "A",
     "prompt_file": "prompts/IMG-104_처짐계_설치_개념도.md",
-    "caption": "처짐계 — LVDT·와이어 (≠침하판)",
+    "caption": "처짐계 설치 — LVDT·와이어 접촉식 δ (≠ GNSS hero·≠침하계)",
     "standard_ref_node": "sensors/deflection-gauge"
   },
   {

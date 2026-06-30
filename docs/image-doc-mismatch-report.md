@@ -6,7 +6,7 @@
 |--------|------|
 | **mismatch** (명확 불일치) | 0 |
 | **review** (PASS vs 문서 C·금지요소) | 1 |
-| **warn** | 14 |
+| **warn** | 1 |
 | **info** | 1 |
 
 ---
@@ -19,90 +19,6 @@ PASS이나 금지 오류 3종 등록 — PNG가 실제로 회피했는지 육안
 - 균열계 hero 혼입 (IMG-037 분리)
 - IPI·와이어식·ATS 혼입
 - VW·진동현식 METHOD-01 라벨
-
-## 마스터-caption
-
-### WARN · `IMG-011`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측…
-- images: 교량 계측 전체 개념도 v5 — 사장교·상부구조→받침→교각/교대→기초·10종 계측…
-
-### WARN · `IMG-016`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 원호활동면 계측 해석도 — 원호파괴와 센서형 다단식 지중경사계 변위 프로파일 관계…
-- images: 원호활동면 — IPI 프로파일·활동면 추정 후보 (단독 확정 금지)…
-
-### WARN · `IMG-019`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 연약지반 성토부 계측기 설치 배치도 v3 — IPI·piezo tip·지중침하·지하수위·토압…
-- images: 연약지반 성토부 계측기 설치 배치도 v4 — IPI·piezo tip·지중침하·지하수위·토압…
-
-### WARN · `IMG-070`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 수동 계측 — 현장 방문·휴대 장비·측정일지…
-- images: KCS 수동계측 — 현장 방문·휴대 장비·교차 검증…
-
-### WARN · `IMG-071`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 자동 계측 — 로거·주기 수집·현장 저장…
-- images: KCS 자동계측 — 수집·저장·(선택) 전송·표출 연계…
-
-### WARN · `IMG-072`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 원격 자동계측 — LTE·서버·웹·경보…
-- images: NMTI 운영 확장 — LTE·서버·원격 모니터링 (KCS 분류 아님)…
-
-### WARN · `IMG-073`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 스마트 계측 — 운영 플랫폼·단계별 경보…
-- images: NMTI 운영 확장 — 플랫폼·단계별 경보 (KCS 분류 아님)…
-
-### WARN · `IMG-074`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: AI 계측 — 분석 엔진·검토·보조 의사결정…
-- images: AI 보조 분석 — HITL·법정기준 보조 (≠ KCS 계측방식)…
-
-## 마스터-title
-
-### WARN · `IMG-074`
-
-마스터 title "AI 계측 개념도" ≠ images.js "AI 보조 분석 개념도"
-
-## 마스터-caption
-
-### WARN · `IMG-075`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 계측 방식 5단계 — 하위 포함·능력 누적…
-- images: 계측 방식 — KCS 수집·전송·NMTI 확장·런타임 (MOD-01)…
-
-## 마스터-title
-
-### WARN · `IMG-075`
-
-마스터 title "계측 방식 5단계 계층도" ≠ images.js "계측 방식 3층 분류도"
-
-## 마스터-caption
-
-### WARN · `IMG-096`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v5)…
-- images: 가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v6)…
-
-### WARN · `IMG-104`
-
-03_IMAGE_MASTER_LIST caption ≠ images.js caption
-- master: 처짐계 — LVDT·와이어 (≠침하판)…
-- images: 처짐계 설치 — LVDT·와이어 접촉식 δ (≠ GNSS hero·≠침하계)…
 
 ## 본문-hero
 
