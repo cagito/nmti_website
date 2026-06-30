@@ -4952,12 +4952,12 @@
     "migrationPhase": "P3",
     "hero": true,
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-30",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-27",
-      "notes": "터널 건설중 계측 hero — ai-reviewed",
+      "reviewer": "agent",
+      "date": "2026-06-30",
+      "notes": "v2 Tier Q1 — 건설중 제목·내공·천단·지표 3영역 분리",
       "gates": [
         "V1",
         "V2",
