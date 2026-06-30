@@ -6,10 +6,18 @@
 |--------|------|
 | **mismatch** (명확 불일치) | 0 |
 | **review** (PASS vs 문서 C·금지요소) | 0 |
-| **warn** | 1 |
+| **warn** | 2 |
 | **info** | 1 |
 
 ---
+
+## 마스터-caption
+
+### WARN · `IMG-015`
+
+03_IMAGE_MASTER_LIST caption ≠ images.js caption
+- master: 사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · (선택) 광학망…
+- images: 사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · 프리즘(선택)…
 
 ## 본문-hero
 
