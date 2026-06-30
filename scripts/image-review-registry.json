@@ -4177,7 +4177,7 @@
     "notes": "DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략",
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
-    "productionMethodTarget": "pillow",
+    "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P1",
     "hero": true,
     "renderScript": "render-building-audit-fixes.py",
@@ -4186,9 +4186,9 @@
     "prohibitedVerifiedNote": "§10·IMAGE_REVIEW_LOG 육안 체크리스트 완료",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략",
+      "reviewer": "agent",
+      "date": "2026-06-30",
+      "notes": "v5 ai-reviewed BLD-H-01·DISP-ATS-01·KCS39콜아웃·P0-1지표면 2026-06-30",
       "gates": [
         "V1",
         "V2",
@@ -4200,7 +4200,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-30",
     "caption": "건축공사 계측 전체 개념도 — LVDT·변형률·균열·경사·하중 (KCS 3.9)",
     "alt": "건축공사 계측 전체 개념도 - KCS 3.9 처짐 축소 균열",
     "imageKnowledgeTopic": "IMG-100-건축공사-계측-전체-개념도.md"
