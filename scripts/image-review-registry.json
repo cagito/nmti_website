@@ -4121,8 +4121,8 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-099",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Cursor-Agent",
+    "reviewDate": "2026-06-30",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -4131,21 +4131,21 @@
       "침하계·침하판 — LVDT·처짐계 아님 (DEF-03)",
       "Y축 침하량·예측 침하·임의 -50mm (DEF-04)"
     ],
-    "notes": "render-building-deflection-audit-fixes.py · DEF-01~04 수정 완료",
+    "notes": "v5 ai-reviewed DEF-01~04·LVDT·L/250·P0-1 2026-06-30",
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
-    "productionMethodTarget": "pillow",
+    "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P1",
     "hero": true,
     "renderScript": "render-building-audit-fixes.py",
     "prohibitedVerified": true,
-    "prohibitedVerifiedDate": "2026-06-26",
-    "prohibitedVerifiedNote": "§10·IMAGE_REVIEW_LOG 육안 체크리스트 완료",
+    "prohibitedVerifiedDate": "2026-06-30",
+    "prohibitedVerifiedNote": "v5 ai-reviewed — DEF-01~04·LVDT·L/250·P0-1",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-30",
+      "notes": "v5 ai-reviewed DEF-01~04·LVDT·L/250·P0-1 2026-06-30",
       "gates": [
         "V1",
         "V2",
@@ -4157,7 +4157,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-30",
     "imageKnowledgeTopic": "17-건축공사-계측-배치.md"
   },
   "IMG-100": {
@@ -4165,7 +4165,7 @@
     "title": "건축공사 계측 전체 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/image-knowledge/IMG-100-건축공사-계측-전체-개념도.md",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-100",
     "reviewDate": "2026-06-30",
     "reviewer": "agent",
     "auditPriority": null,
