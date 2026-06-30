@@ -178,17 +178,20 @@ npm run validate:instr-image-knowledge
 
 ```bash
 node scripts/validate-terminology.mjs   # KDS/KCS 용어 검증 (콘텐츠 수정 후)
-npm run build:images                  # 레지스트리 → IMAGE_REVIEW_LOG → images.js
-npm run audit:images                  # 운영 반영 전 필수 — 미승인 이미지 차단 검증
+npm run validate:content-phrases        # 179 forbidden/required (content-data/*.mjs)
 node scripts/build-content-data.mjs
 node scripts/generate-technology-seo-pages.mjs
+npm run validate:content-audit          # 179 부록 A — SEO HTML 14페이지 spot-check
+npm run validate:figure-captions-179    # 179 §9 — registry caption/alt 정본
 node scripts/generate-sitemap-technology.mjs
+npm run build:images                  # 레지스트리 → IMAGE_REVIEW_LOG → images.js
+npm run audit:images                  # 운영 반영 전 필수 — 미승인 이미지 차단 검증
 ```
 
 - **canonical WebP:** `scripts/canonical-image-webp.json` — 동일 IMG-ID 중복 시 공식 파일명 우선 (`generate-image-assets.mjs`). 교체 후 `validate-image-master.mjs` · 상세 [docs/09-GNSS-book-PDF-및-검증-가이드.md](./docs/09-GNSS-book-PDF-및-검증-가이드.md) §3
 - **WebP-only:** `assets/images/technology/` 전체 PNG **금지** · `python scripts/purge-technology-png.py` · [TECHNICAL §3](./docs/TECHNICAL_IMAGE_STANDARD.md)
 - **삭제 백업:** `technology/` Figure 삭제·교체 전 **`assets/images/technology/backup/`** 에 타임스탬프 복사 — `npm run delete:tech-image` · `.cursor/rules/technology-image-backup.mdc`
-- **통합 검증:** `npm run verify:local` (배포 전) · `npm run verify:content` (재작도 중) · `npm run verify:deploy` · `npm run verify:production` (**28/28**, FTP 후) · Exit [178](./docs/178-통합-프로그램-Exit.md)
+- **콘텐츠 정합 (179):** [179-technology-html-콘텐츠-정합-수정-계획.md](./docs/179-technology-html-콘텐츠-정합-수정-계획.md) · `validate:content-phrases` · `validate:content-audit` · `verify:local`에 편입
 
 ### ⛔ 기술자료 이미지 (필독 — 생성·수정 전)
 

@@ -138,7 +138,7 @@
     "expose:interim-heroes": "node scripts/patch-registry-interim-hero-expose.mjs",
     "expose:interim-body": "node scripts/patch-registry-interim-body-expose.mjs",
     "expose:interim-all": "node scripts/patch-registry-interim-hero-expose.mjs && node scripts/patch-registry-interim-body-expose.mjs",
-    "build:images": "node scripts/seed-image-review-registry.mjs && node scripts/seed-figure-production-registry.mjs && node scripts/seed-phase1-migration.mjs && node scripts/patch-registry-phase5-6.mjs && node scripts/mark-prohibited-verified.mjs && node scripts/generate-image-review-log.mjs && node scripts/generate-image-assets.mjs",
+    "build:images": "node scripts/seed-image-review-registry.mjs && node scripts/seed-figure-production-registry.mjs && node scripts/seed-phase1-migration.mjs && node scripts/patch-registry-phase5-6.mjs && node scripts/mark-prohibited-verified.mjs && node scripts/generate-image-review-log.mjs && node scripts/patch-registry-figure-captions-179.mjs && node scripts/generate-image-assets.mjs",
     "register:figure": "node scripts/register-external-figure.mjs",
     "seed:phase1": "node scripts/seed-phase1-migration.mjs",
     "seed:phase2": "node scripts/seed-phase2-migration.mjs",

@@ -25,7 +25,7 @@ export const IMAGE_ASSETS = {
     caption: '흙막이 계측 설치 대표 단면 — 11종·ANC-CLOCK (v6)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-002 · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-002 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-002 · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
     prohibitedErrors: [
       '건물 기초 아래 굴착 공동·배면 빈 공간',
       '버팀보·굴착저가 배면·건물 아래',
@@ -76,7 +76,7 @@ export const IMAGE_ASSETS = {
     caption: '어스앵커 하중계 설치 개념도 — 굴착측 노출 앵커 두부 하중계(지지링·반력판–하중계–앵커헤드–강연선) 구성',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-004 · docs/164-IMG-004-v7-재생성-기록.md · docs/54-IMG-004-어스앵커-하중계-설치-표현-표준.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-004 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-004 · docs/164-IMG-004-v7-재생성-기록.md · docs/54-IMG-004-어스앵커-하중계-설치-표현-표준.md',
     prohibitedErrors: [
       '하중계를 지반 내부에 배치',
       '정착장·그라우트체 내부에 하중계',
@@ -126,7 +126,7 @@ export const IMAGE_ASSETS = {
     caption: '굴착 단계별 계측 흐름도 v4 — 4단계·IPI·G.W.L·어스앵커 LC(③④)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-006 · docs/169-IMG-006-v4-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-006 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-006 · docs/169-IMG-006-v4-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
     prohibitedErrors: [
       '버팀보·지반앵커·지보재 하중계',
       '수평(3·9시)·5시 앵커 관통',
@@ -213,7 +213,7 @@ export const IMAGE_ASSETS = {
     caption: '교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
     prohibitedErrors: [
       '흙막이·굴착 단면 (BRI-01)',
       '종·횡변위 3축 주계측',
@@ -314,11 +314,11 @@ export const IMAGE_ASSETS = {
   'IMG-016': {
     title: '원호활동면 계측 해석도',
     webp: 'assets/images/technology/IMG-016_원호활동면-계측-해석도_원호파괴지중경사계프로파일.webp',
-    alt: '원호활동면 계측 해석도 - 원호파괴와 센서형 다단식 지중경사계 변위 프로파일 관계',
-    caption: '원호활동면 계측 해석도 — 원호파괴와 센서형 다단식 지중경사계 변위 프로파일 관계',
+    alt: '원호활동면 계측 해석 - IPI 변위 프로파일·활동면 추정 후보',
+    caption: '원호활동면 — IPI 프로파일·활동면 추정 후보 (단독 확정 금지)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-016 · docs/167-IMG-016-v5-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-016 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-016 · docs/167-IMG-016-v5-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
     prohibitedErrors: [
       '최대 변위 깊이 = 활동면 위치',
       '지중경사계 단독으로 원호활동면 확정',
@@ -456,7 +456,7 @@ export const IMAGE_ASSETS = {
     caption: '댐 안전관리 계측 체계 — 필댐 6항목·7단계 데이터 흐름 (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md',
+    reviewDoc: 'docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-024 · docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md',
     prohibitedErrors: [
       '침하 그래프 -20mm=경보 -60mm=관리기준 역전 (DAM-01)',
       '침윤선 파선과 피에조 수두 불일치 (DAM-02)',
@@ -661,7 +661,7 @@ export const IMAGE_ASSETS = {
     caption: '하중계 설치 — 버팀보 띠장 접합부(끝단) 축방향·어스앵커 두부 인장',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/165-IMG-035-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-035 · docs/165-IMG-035-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
     prohibitedErrors: [
       '버팀보 정중앙 하중계',
       '축방향과 무관한 설치',
@@ -1258,8 +1258,8 @@ export const IMAGE_ASSETS = {
   'IMG-070': {
     title: '수동 계측 개념도',
     webp: 'assets/images/technology/IMG-070_수동-계측-개념도_현장방문리드아웃기록.webp',
-    alt: '수동 계측 개념도 - 현장 방문·리드아웃·현장 기록',
-    caption: '수동 계측 — 현장 방문·휴대 장비·측정일지',
+    alt: 'KCS 수동계측 개념도 - 현장 방문·리드아웃·측정일지',
+    caption: 'KCS 수동계측 — 현장 방문·휴대 장비·교차 검증',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-070',
@@ -1271,8 +1271,8 @@ export const IMAGE_ASSETS = {
   'IMG-071': {
     title: '자동 계측 개념도',
     webp: 'assets/images/technology/IMG-071_자동-계측-개념도_로거현장저장주기.webp',
-    alt: '자동 계측 개념도 - 데이터로거·현장 저장·수집 주기',
-    caption: '자동 계측 — 로거·주기 수집·현장 저장',
+    alt: 'KCS 자동계측 개념도 - 센서·로거·수집·저장·(선택) 전송',
+    caption: 'KCS 자동계측 — 수집·저장·(선택) 전송·표출 연계',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-071',
@@ -1284,8 +1284,8 @@ export const IMAGE_ASSETS = {
   'IMG-072': {
     title: '원격 자동계측 개념도',
     webp: 'assets/images/technology/IMG-072_원격-자동계측-개념도_현장통신서버모니터링.webp',
-    alt: '원격 자동계측 개념도 - 현장·통신·서버·원격 모니터링',
-    caption: '원격 자동계측 — LTE·서버·웹·경보',
+    alt: 'NMTI 원격 자동계측 - 현장·LTE·서버·웹 모니터링',
+    caption: 'NMTI 운영 확장 — LTE·서버·원격 모니터링 (KCS 분류 아님)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-072',
@@ -1297,8 +1297,8 @@ export const IMAGE_ASSETS = {
   'IMG-073': {
     title: '스마트 계측 개념도',
     webp: 'assets/images/technology/IMG-073_스마트-계측-개념도_플랫폼경보보고로그.webp',
-    alt: '스마트 계측 개념도 - 플랫폼·경보·보고·이벤트 로그',
-    caption: '스마트 계측 — 운영 플랫폼·단계별 경보',
+    alt: 'NMTI 스마트 계측 - 플랫폼·경보·보고·이벤트 로그',
+    caption: 'NMTI 운영 확장 — 플랫폼·단계별 경보 (KCS 분류 아님)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-073',
@@ -1308,10 +1308,10 @@ export const IMAGE_ASSETS = {
     productionMethod: 'ai-reviewed'
   },
   'IMG-074': {
-    title: 'AI 계측 개념도',
+    title: 'AI 보조 분석 개념도',
     webp: 'assets/images/technology/IMG-074_AI-계측-개념도_이상탐지예측HITL.webp',
-    alt: 'AI 계측 개념도 - 이상탐지·예측·HITL 보조',
-    caption: 'AI 계측 — 분석 엔진·검토·보조 의사결정',
+    alt: 'AI 보조 분석 개념도 - 이상탐지·HITL·법정기준 비대체',
+    caption: 'AI 보조 분석 — HITL·법정기준 보조 (≠ KCS 계측방식)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-074',
@@ -1321,10 +1321,10 @@ export const IMAGE_ASSETS = {
     productionMethod: 'ai-reviewed'
   },
   'IMG-075': {
-    title: '계측 방식 5단계 계층도',
+    title: '계측 방식 3층 분류도',
     webp: 'assets/images/technology/IMG-075_계측-방식-5단계-계층도_수동자동원격스마트AI.webp',
-    alt: '계측 방식 5단계 계층도 - 수동·자동·원격·스마트·AI 포함 관계',
-    caption: '계측 방식 5단계 — 하위 포함·능력 누적',
+    alt: '계측 방식 3층 분류 - KCS 수집·전송·NMTI 확장·런타임 모드',
+    caption: '계측 방식 — KCS 수집·전송·NMTI 확장·런타임 (MOD-01)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-075',
@@ -1606,7 +1606,7 @@ export const IMAGE_ASSETS = {
     caption: '가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v5)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/158-IMG-096-v5-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-096 · docs/158-IMG-096-v5-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
     prohibitedErrors: [
       '잠재 슬립면·활동면 원호 (MIX-01)',
       '옹벽형 영구 구조·캡 (MIX-01)',
@@ -1786,8 +1786,8 @@ export const IMAGE_ASSETS = {
   'IMG-104': {
     title: '처짐계 설치·측정 개념도',
     webp: 'assets/images/technology/IMG-104_처짐계-설치-측정-개념도_LVDT와이어.webp',
-    alt: '처짐계 설치·측정 개념도 - LVDT·와이어 — 구조 처짐 전용',
-    caption: '처짐계 — LVDT·와이어 (≠침하판)',
+    alt: '처짐계 설치 개념도 - LVDT·와이어·국부 처짐 (≠ IMG-103 GNSS)',
+    caption: '처짐계 설치 — LVDT·와이어 접촉식 δ (≠ GNSS hero·≠침하계)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-104',

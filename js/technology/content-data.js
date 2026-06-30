@@ -17765,7 +17765,7 @@ const CONTENT = {
     "sectionImages": {
       "principle": {
         "id": "IMG-075",
-        "caption": "계측 방식 — KCS 수집·전송·NMTI 확장·런타임 (≠ 5단계 등급)",
+        "caption": "계측 방식 — KCS 수집·전송·NMTI 확장·런타임 (MOD-01)",
         "figureNo": 2
       }
     },
