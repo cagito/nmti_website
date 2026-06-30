@@ -91,7 +91,7 @@
 | IMG-081 | PASS | reviewed | 2026-06-30 | P0 | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-082 | PASS | reviewed | 2026-06-30 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-083 | PASS | reviewed | 2026-06-26 | — | KCS 54 20 25:2018 §3.2 | — |
-| IMG-084 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
+| IMG-084 | PASS | reviewed | 2026-06-30 | — | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
 | IMG-085 | DELETE | rejected | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-086 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
 | IMG-087 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
@@ -2481,15 +2481,21 @@
 | 관련 계측기 | 분야별/항만 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 |
+| 기술 오류 | v6 ai-reviewed HAR-STR-01·δxyz·반력계모서리·평면inset·LOGO-01 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v6 ai-reviewed — 구조물 변위 단일목적·064 개요 분리 |
+
+**금지 오류 대조:**
+
+- IMG-064 개요도와 동일 복합 혼합
+- 반력계 벽체 중앙 부착
+- ATS·교량·댐 혼입
 
 <a id="IMG-085"></a>
 

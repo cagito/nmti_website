@@ -759,7 +759,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'cad'
+    productionMethod: 'ai-reviewed'
   },
   'IMG-041': {
     title: '진동계 설치 개념도',
@@ -1469,7 +1469,11 @@ export const IMAGE_ASSETS = {
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-084',
-    prohibitedErrors: [],
+    prohibitedErrors: [
+      'IMG-064 개요도와 동일 복합 혼합',
+      '반력계 벽체 중앙 부착',
+      'ATS·교량·댐 혼입'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
