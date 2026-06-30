@@ -1,0 +1,84 @@
+{
+  "description": "179 부록 A — 생성 SEO HTML spot-check (nodeId → technology/**/index.html)",
+  "globalForbidden": [
+    "수동→자동→원격→스마트→AI",
+    "5단계 계측",
+    "활동면 확정",
+    "초당 수십~수백 Hz로 고속"
+  ],
+  "pages": [
+    {
+      "nodeId": "instruments/modes/overview",
+      "html": "technology/instruments/modes/overview/index.html",
+      "required": ["KCS", "NMTI", "운영 확장", "AI 보조"]
+    },
+    {
+      "nodeId": "instruments/modes/automatic",
+      "html": "technology/instruments/modes/automatic/index.html",
+      "required": ["자동", "전송", "KCS"]
+    },
+    {
+      "nodeId": "instruments/modes/manual",
+      "html": "technology/instruments/modes/manual/index.html",
+      "required": ["수동", "KCS"],
+      "forbidden": ["수동→자동"]
+    },
+    {
+      "nodeId": "instruments/modes/ai",
+      "html": "technology/instruments/modes/ai/index.html",
+      "required": ["AI 보조", "KCS"],
+      "forbidden": ["AI 계측 방식"]
+    },
+    {
+      "nodeId": "instruments/modes/smart",
+      "html": "technology/instruments/modes/smart/index.html",
+      "required": ["KCS", "운영"]
+    },
+    {
+      "nodeId": "instruments/modes/realtime-mode",
+      "html": "technology/instruments/modes/realtime-mode/index.html",
+      "required": ["이벤트", "운영 모드"]
+    },
+    {
+      "nodeId": "fields/bridge/deflection",
+      "html": "technology/fields/bridge/deflection/index.html",
+      "required": ["경간 중앙", "ΔZ", "GNSS", "IMG-103"],
+      "forbidden": ["IMG-104_"]
+    },
+    {
+      "nodeId": "fields/slope/slip-surface",
+      "html": "technology/fields/slope/slip-surface/index.html",
+      "required": ["추정 후보"]
+    },
+    {
+      "nodeId": "fields/dam",
+      "html": "technology/fields/dam/index.html",
+      "required": ["filter tip", "piezometric", "G.W.L"]
+    },
+    {
+      "nodeId": "fields/dam/pore-pressure",
+      "html": "technology/fields/dam/pore-pressure/index.html",
+      "required": ["filter tip", "G.W.L", "침윤선과 동일하지 않"]
+    },
+    {
+      "nodeId": "fields/dam/settlement",
+      "html": "technology/fields/dam/settlement/index.html",
+      "required": ["침하", "아래 방향"]
+    },
+    {
+      "nodeId": "fields/dam/leakage",
+      "html": "technology/fields/dam/leakage/index.html",
+      "required": ["배수갤러리", "집수부"]
+    },
+    {
+      "nodeId": "fields/bridge",
+      "html": "technology/fields/bridge/index.html",
+      "required": ["부재", "nodeId", "경간 중앙"]
+    },
+    {
+      "nodeId": "sensors/deflection-gauge",
+      "html": "technology/sensors/deflection-gauge/index.html",
+      "required": ["IMG-103", "IMG-104", "GNSS", "접촉식"]
+    }
+  ]
+}

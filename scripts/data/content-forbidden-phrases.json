@@ -1,0 +1,56 @@
+{
+  "forbidden": [
+    {
+      "id": "MOD-01",
+      "pattern": "수동→자동→원격→스마트→AI",
+      "message": "KCS 계측방식 등급 화살표 — 3층 분류(수집·전송·NMTI 확장) 사용"
+    },
+    {
+      "id": "MOD-01b",
+      "pattern": "5단계 계측",
+      "message": "5단계 계층 표현 금지 — overview tagline/principle 확인"
+    },
+    {
+      "id": "MOD-02",
+      "pattern": "AI 계측은",
+      "files": ["instruments.mjs"],
+      "message": "「AI 보조 분석」으로 — KCS 계측방식 아님"
+    },
+    {
+      "id": "MOD-03",
+      "pattern": "초당 수십~수백 Hz로 고속",
+      "message": "이벤트별 rate 상이 — 일반화 금지"
+    },
+    {
+      "id": "SLO-01",
+      "pattern": "활동면 확정",
+      "files": ["leaves-part3.mjs"],
+      "message": "「활동면 추정 후보」 톤 사용"
+    }
+  ],
+  "forbiddenInNode": {
+    "fields/bridge/deflection": [
+      {
+        "id": "BRI-01",
+        "fields": ["principle", "installation"],
+        "patterns": ["LVDT", "와이어식", "IMG-104"],
+        "message": "GNSS hero 전용 — 접촉식은 deflection-gauge"
+      },
+      {
+        "id": "BRI-02",
+        "fields": ["principle", "installation"],
+        "patterns": ["1/4 span", "1/4 경간"],
+        "message": "경간 중앙 1점만 — 1/4 경간 금지"
+      }
+    ]
+  },
+  "requiredInNode": {
+    "instruments/modes/overview": ["KCS", "운영 확장", "NMTI"],
+    "instruments/modes/automatic": ["자동 수집", "전송"],
+    "instruments/modes/ai": ["AI 보조", "KCS"],
+    "fields/bridge/deflection": ["경간 중앙", "ΔZ", "GNSS"],
+    "fields/slope/slip-surface": ["추정 후보"],
+    "fields/bridge": ["부재", "경간 중앙", "nodeId"],
+    "sensors/deflection-gauge": ["GNSS", "IMG-103", "IMG-104"]
+  }
+}

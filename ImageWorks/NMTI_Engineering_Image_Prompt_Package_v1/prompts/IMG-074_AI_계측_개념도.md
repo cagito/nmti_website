@@ -2,10 +2,10 @@
 > **image-knowledge:** [00-공통](../../../docs/image-knowledge/00-공통-이미지-작성-원칙.md) · [경보·그래프·대시보드-표현](../../../docs/image-knowledge/28-경보·그래프·대시보드-표현.md)
 <!-- /image-knowledge-links:v1 -->
 
-# IMG-074 - AI 계측 개념도
+# IMG-074 - AI 보조 분석 개념도
 
 ## 목적
-시계열 → 분석 엔진 → HITL 검토 (KDS·KCS 기준 대체 아님)
+시계열 → 분석 엔진 → HITL 검토 (KDS·KCS **법정 기준 대체 아님** · **≠ KCS 계측방식**)
 
 ## 노드
 `instruments/modes/ai`
@@ -17,7 +17,7 @@
 
 **Prefix:** docs/36 §2.1
 
-Engineering schematic: time-series sensor data → analysis/rules engine block (rectangular, labeled) → human-in-the-loop review checkpoint → alarm output. Flowchart only — NOT biological brain, NOT robot face, NOT matrix background. Korean: AI 계측, 시계열, 분석, 검토, 경보. White background.
+Engineering schematic: time-series sensor data → analysis/rules engine block (rectangular, labeled) → human-in-the-loop review checkpoint → alarm output. Flowchart only — NOT biological brain, NOT robot face, NOT matrix background. Korean: AI 보조 분석, 시계열, 분석, 검토, 경보. White background.
 
 ## 최종 생성 프롬프트 (v2 — docs/36 §4.8②)
 
