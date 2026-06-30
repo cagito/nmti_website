@@ -23,6 +23,9 @@ const registry = JSON.parse(readFileSync(REGISTRY, 'utf8'));
 const WATCH = [
   { id: 'IMG-002', prompt: 'IMG-002_흙막이_벽체_계측_배치도.md' },
   { id: 'IMG-004', prompt: 'IMG-004_어스앵커_하중계_설치_개념도.md' },
+  { id: 'IMG-005', prompt: 'IMG-005_주변건물_균열_경사_계측도.md' },
+  { id: 'IMG-012', prompt: 'IMG-012_교각_변위_경사_계측도.md' },
+  { id: 'IMG-013', prompt: 'IMG-013_교량_기초_침하_계측도.md' },
   { id: 'IMG-016', prompt: 'IMG-016_원호활동면_계측_해석도.md' },
   { id: 'IMG-096', prompt: 'IMG-096_주변지반_계측_설치_대표_단면도.md' }
 ];
