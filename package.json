@@ -155,7 +155,7 @@
     "validate:heroes": "node scripts/validate-heroes.mjs",
     "validate:seo-titles": "node scripts/validate-seo-titles.mjs",
     "validate:seo-heroes": "npm run validate:heroes",
-    "verify:local": "npm run validate:rework-redlines:strict && npm run validate:rework-prompts:strict && npm run audit:images:strict && npm run audit:figure-production:strict && node scripts/validate-image-master.mjs && npm run validate:heroes && npm run validate:seo-titles && npm run validate:terminology && npm run validate:ats-scope:strict && npm run validate:content-phrases && npm run validate:content-audit && npm run validate:figure-captions-179 && npm run validate:citations && npm run validate:content-source && npm run validate:content-sections && npm run validate:book-rules-coverage && npm run crosscheck:book-plans && npm run audit:book && npm run audit:book-stage3:strict && npm run audit:book-stage3-heroes:strict && npm run audit:book-scan-pdfs && npm run audit:img008 && npm run audit:img032 && npm run audit:img043 && npm run audit:image-doc && npm run validate:doc-links:strict",
+    "verify:local": "npm run validate:rework-redlines:strict && npm run validate:rework-prompts:strict && npm run audit:images:strict && npm run audit:figure-production:strict && node scripts/validate-image-master.mjs && npm run validate:heroes && npm run validate:seo-titles && npm run validate:terminology && npm run validate:ats-scope:strict && npm run validate:canonical-docs:strict && npm run validate:figure-status:strict && npm run validate:content-phrases && npm run validate:content-audit && npm run validate:figure-captions-179 && npm run validate:citations && npm run validate:content-source && npm run validate:content-sections && npm run validate:book-rules-coverage && npm run crosscheck:book-plans && npm run audit:book && npm run audit:book-stage3:strict && npm run audit:book-stage3-heroes:strict && npm run audit:book-scan-pdfs && npm run audit:img008 && npm run audit:img032 && npm run audit:img043 && npm run audit:image-doc && npm run validate:doc-links:strict",
     "verify:content": "npm run validate:rework-redlines:strict && npm run validate:rework-prompts:strict && npm run audit:images:rework && npm run audit:figure-production:strict && node scripts/validate-image-master.mjs && npm run validate:heroes && npm run validate:seo-titles && npm run validate:terminology && npm run validate:content-phrases && npm run validate:content-audit && npm run validate:figure-captions-179 && npm run validate:citations && npm run validate:content-source && npm run validate:content-sections && npm run validate:book-rules-coverage && npm run crosscheck:book-plans && npm run audit:book && npm run audit:book-stage3:strict && npm run audit:book-stage3-heroes:strict && npm run audit:book-scan-pdfs && npm run audit:img008 && npm run audit:img032 && npm run audit:img043 && npm run audit:image-doc && npm run validate:doc-links:strict",
     "verify:deploy": "node scripts/verify-deploy-artifacts.mjs",
     "verify:production": "node scripts/verify-production.mjs",
@@ -175,6 +175,10 @@
     "validate:figure-captions-179": "node scripts/validate-figure-captions-179.mjs",
     "validate:doc-links": "node scripts/validate-doc-links.mjs",
     "validate:doc-links:strict": "node scripts/validate-doc-links.mjs --strict",
+    "validate:canonical-docs": "node scripts/validate-canonical-docs-tracked.mjs",
+    "validate:canonical-docs:strict": "node scripts/validate-canonical-docs-tracked.mjs --strict",
+    "validate:figure-status": "node scripts/validate-figure-status-consistency.mjs",
+    "validate:figure-status:strict": "node scripts/validate-figure-status-consistency.mjs --strict",
     "sync:master-captions": "node scripts/sync-master-captions.mjs",
     "validate:citations": "node scripts/validate-citations.mjs"
   }

@@ -1,0 +1,46 @@
+# Canonical Document Index (DOC-CANON-01)
+
+**갱신:** 2026-06-30  
+**정본:** [208 반경계획](./208-문서-정본-충돌-반경계획-DOC-CANON-01.md)
+
+> Git `origin/main`에 **반드시 추적**되어야 하는 에이전트·Figure 판정 문서 목록.  
+> `npm run validate:canonical-docs` 로 검증.
+
+## Tier A — Figure 판정·금지조건 (필수)
+
+| 파일 | 역할 |
+|------|------|
+| [180-technology-이미지-전수-재검수-수정계획.md](./180-technology-이미지-전수-재검수-수정계획.md) | 112 WebP 전수 재검수 마스터 |
+| [181-이미지별-계측오류-금지조건-정본.md](./181-이미지별-계측오류-금지조건-정본.md) | IMG별 §0~7 금지·PASS |
+| [182-분야별-계측이미지-PASS-기준.md](./182-분야별-계측이미지-PASS-기준.md) | 분야별 5게이트 |
+| [131-P0-이미지-재작성-공통-프롬프트-정본.md](./131-P0-이미지-재작성-공통-프롬프트-정본.md) | P0 공통 프롬프트 |
+| [132-계측이미지-분야별-금지표현-정본.md](./132-계측이미지-분야별-금지표현-정본.md) | 분야별 금지 |
+| [51-계측-도면-검수-공통-원칙.md](./51-계측-도면-검수-공통-원칙.md) | P0 검수 |
+| [TECHNICAL_IMAGE_STANDARD.md](./TECHNICAL_IMAGE_STANDARD.md) | Figure 출판 표준 |
+| [INSTRUMENTATION_DRAWING_RULES.md](./INSTRUMENTATION_DRAWING_RULES.md) | 설치·라벨 |
+| [IMAGE_AUDIT_CHECKLIST.md](./IMAGE_AUDIT_CHECKLIST.md) | 출판 게이트 |
+| [IMAGE_REVIEW_LOG.md](./IMAGE_REVIEW_LOG.md) | 검수 이력 |
+
+## Tier B — 용어·운영
+
+| 파일 | 역할 |
+|------|------|
+| [153-계측문서-용어-정본-건설중-계측.md](./153-계측문서-용어-정본-건설중-계측.md) | 건설중 계측 용어 |
+| [10-최종-완료-및-운영-가이드.md](./10-최종-완료-및-운영-가이드.md) | 운영 진입점 |
+| [208-문서-정본-충돌-반경계획-DOC-CANON-01.md](./208-문서-정본-충돌-반경계획-DOC-CANON-01.md) | 본 색인·반경계획 |
+| [TERMINOLOGY.md](./TERMINOLOGY.md) | KDS/KCS 용어 |
+
+## Tier C — 역사 문서 (ARCHIVE · 판정 금지)
+
+| 파일 | 현재 정본 대신 |
+|------|----------------|
+| [19-IMG-002-…](./19-IMG-002-흙막이-계측-대표-단면도-오류분석-및-재작업-계획.md) | prompt IMG-002 · [199](./199-IMG-002-v8-재생성-기록.md) |
+| [26-IMG-004-…](./26-IMG-004-어스앵커-하중계-오류분석-및-재작업-계획.md) | prompt IMG-004 · [188](./188-IMG-004-v8-재생성-기록.md) |
+
+## 에이전트 읽기 순서
+
+1. ImageWorks prompt `CANONICAL_STATUS` · registry `reviewGrade`
+2. docs/181 §IMG-###
+3. Figure 전용 표준 (52·54·57…)
+4. docs/180 (큐·우선순위)
+5. Tier C — **역사만**

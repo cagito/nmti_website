@@ -55,6 +55,15 @@ const RULES = [
   }
 ];
 
+/** @type {{ pathPart: string, pattern: RegExp, message: string }[]} */
+const PATH_RULES = [
+  {
+    pathPart: `${path.sep}content-data${path.sep}`,
+    pattern: /건설기간\s*계측/,
+    message: '153 DOC-CANON: 대외 「건설기간 계측」금지 — 「건설중 계측」'
+  }
+];
+
 const SKIP_FILES = new Set(['validate-terminology.mjs']);
 const SKIP_PATH_PARTS = [
   'KDS-KCS_용어기준.md',
@@ -94,6 +103,17 @@ function scanFile(file) {
   lines.forEach((line, i) => {
     if (line.includes('terminology-ok')) return;
     for (const rule of RULES) {
+      if (rule.pattern.test(line)) {
+        violations.push({
+          file: rel,
+          line: i + 1,
+          message: rule.message,
+          text: line.trim().slice(0, 120)
+        });
+      }
+    }
+    for (const rule of PATH_RULES) {
+      if (!file.includes(rule.pathPart)) continue;
       if (rule.pattern.test(line)) {
         violations.push({
           file: rel,

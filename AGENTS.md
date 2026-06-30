@@ -4,6 +4,10 @@
 
 **최종 상태·운영:** [docs/10-최종-완료-및-운영-가이드.md](./docs/10-최종-완료-및-운영-가이드.md) · [178 통합 Exit](./docs/178-통합-프로그램-Exit.md) (126노드 · WebP 112 · `verify:local` PASS)
 
+### DOC-CANON-01 — Git 추적 정본
+
+> Figure·프롬프트 **판정 근거**는 [CANONICAL_DOC_INDEX](./docs/CANONICAL_DOC_INDEX.md) Tier A·B 문서만 사용. FTP 전용·미추적 docs는 판정 금지. [208 반경계획](./docs/208-문서-정본-충돌-반경계획-DOC-CANON-01.md)
+
 ### 다중 Cursor 동시 작업 (LOCK-01)
 
 > **2창 이상** 동시 구동 시 [98-충돌방지](./docs/98-다중-Cursor-동시작업-충돌방지.md) · `.cursor/rules/multi-cursor-coordination.mdc`

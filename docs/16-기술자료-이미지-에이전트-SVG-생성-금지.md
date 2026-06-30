@@ -34,10 +34,11 @@
 ## 3. 작업 절차
 
 1. `ImageWorks/.../prompts/IMG-###_*.md` · redline · §36 §1.0 블록
-2. 생성 (GenerateImage / Pillow / SVG) — hero **≥1920×1080**
-3. WebP → `assets/images/technology/source/IMG-###_*.webp`
+2. 생성 (GenerateImage / Pillow / SVG) — hero **≥1920×1080** · **[LOGO-01](./183-이미지-생성-워터마크-금지-정본.md) 로고·워터마크 금지**
+3. WebP → `assets/images/technology/source/IMG-###_*.webp` (**워터마크·로고 없음** — [183](./183-이미지-생성-워터마크-금지-정본.md))
 4. `npm run register:figure -- --id IMG-### --input …webp --method ai-reviewed --reviewer "…" --visual-grade PASS`
 5. `npm run sync:images` · `npm run audit:images` · 필요 시 `npm run build:content`
+6. 배포 전: `watermark-figures.bat` (또는 `npm run watermark:figures`) — **생성 단계에 로고 넣지 않음**
 
 **LOCK-01:** registry·Figure 등록 전 `npm run lock:status` — [98](./98-다중-Cursor-동시작업-충돌방지.md)
 
@@ -53,6 +54,7 @@
 ## 5. 금지 (변경 없음)
 
 - `website/web.config` (homepage 상위) 수정
+- **GenerateImage·CAD 생성본에 NMTI 로고·워터마크** — [183](./183-이미지-생성-워터마크-금지-정본.md)
 - P0 위반 Figure를 reviewed/PASS로 등록
 - 다중 Cursor 잠금 무시 registry 덮어쓰기
 

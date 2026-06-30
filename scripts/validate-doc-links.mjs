@@ -1,5 +1,5 @@
 /**
- * Validate internal markdown links in docs/ resolve to existing files.
+ * Validate internal markdown links in docs/ and ImageWorks resolve to existing files.
  * Usage: node scripts/validate-doc-links.mjs [--strict]
  */
 import { readFileSync, readdirSync, statSync, existsSync } from 'fs';
@@ -7,13 +7,18 @@ import { join, dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const DOCS = join(ROOT, 'docs');
 const STRICT = process.argv.includes('--strict');
+
+const SCAN_ROOTS = [
+  join(ROOT, 'docs'),
+  join(ROOT, 'ImageWorks', 'NMTI_Engineering_Image_Prompt_Package_v1')
+];
 
 const LINK_RE = /\[([^\]]*)\]\(([^)]+)\)/g;
 const SKIP_SCHEMES = /^(https?:|mailto:|#)/i;
 
 function walkMd(dir, out = []) {
+  if (!existsSync(dir)) return out;
   for (const name of readdirSync(dir)) {
     const p = join(dir, name);
     const st = statSync(p);
@@ -37,23 +42,30 @@ function resolveLink(fromFile, raw) {
   }
   if (target.startsWith('/')) return join(ROOT, target.replace(/^\//, ''));
   if (target.startsWith('book/')) return join(ROOT, target);
+  const fromNorm = fromFile.replace(/\\/g, '/');
+  if (fromNorm.includes('/ImageWorks/') && /^(?:\.\.\/)+docs\//.test(target)) {
+    const docTail = target.replace(/^(\.\.\/)+docs\//, '');
+    return join(ROOT, 'docs', docTail);
+  }
   return resolve(dirname(fromFile), target);
 }
 
 let errors = 0;
 let checked = 0;
 
-for (const file of walkMd(DOCS)) {
-  const text = readFileSync(file, 'utf8');
-  for (const m of text.matchAll(LINK_RE)) {
-    const href = m[2];
-    const resolved = resolveLink(file, href);
-    if (!resolved) continue;
-    checked += 1;
-    if (!existsSync(resolved)) {
-      const rel = file.slice(ROOT.length + 1).replace(/\\/g, '/');
-      console.error(`BROKEN: ${rel} → (${href})`);
-      errors += 1;
+for (const root of SCAN_ROOTS) {
+  for (const file of walkMd(root)) {
+    const text = readFileSync(file, 'utf8');
+    for (const m of text.matchAll(LINK_RE)) {
+      const href = m[2];
+      const resolved = resolveLink(file, href);
+      if (!resolved) continue;
+      checked += 1;
+      if (!existsSync(resolved)) {
+        const rel = file.slice(ROOT.length + 1).replace(/\\/g, '/');
+        console.error(`BROKEN: ${rel} → (${href})`);
+        errors += 1;
+      }
     }
   }
 }
@@ -62,4 +74,4 @@ if (errors) {
   console.error(`validate-doc-links: FAIL — ${errors} broken / ${checked} internal links`);
   process.exit(STRICT ? 1 : 0);
 }
-console.log(`validate-doc-links: OK — ${checked} internal links`);
+console.log(`validate-doc-links: OK — ${checked} internal links (docs + ImageWorks)`);
