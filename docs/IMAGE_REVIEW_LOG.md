@@ -71,7 +71,7 @@
 | IMG-061 | PASS | reviewed | 2026-06-29 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-062 | PASS | reviewed | 2026-06-22 | P2 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-063 | PASS | reviewed | 2026-06-29 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-064 | PASS | reviewed | 2026-06-29 | P2 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
+| IMG-064 | PASS | reviewed | 2026-06-30 | P2 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
 | IMG-065 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.1.2 | — |
 | IMG-066 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.1.2 | — |
 | IMG-067 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.1.2 | — |
@@ -1979,15 +1979,15 @@
 | 관련 계측기 | 분야별/항만·호안 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 Pillow/WebP PASS — 좌=육측·중=케이슨/안벽·우=해측으로 재작도, 조위선·G.W.L·간극수압 분리 |
+| 기술 오류 | v6 ai-reviewed HAR-Q01~03·육측|케이슨|해측·G.W.L≠간극·BORE-GL-01·LOGO-01 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex CAD redraw |
-| 검수일 | 2026-06-29 |
-| 금지 대조 | v4 Pillow/WebP — HAR-Q01~Q03 및 19-image-knowledge 대조 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v6 ai-reviewed — 3분할·조위·G.W.L·간극수압 분리·IPI GL 가시 |
 
 **금지 오류 대조:**
 
