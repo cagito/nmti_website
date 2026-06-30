@@ -106,7 +106,7 @@
 | IMG-098 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
 | IMG-099 | PASS | reviewed | 2026-06-30 | — | KCS 11 10 15:2025 §3.9.1.1 | — |
 | IMG-100 | PASS | reviewed | 2026-06-30 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
-| IMG-101 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-101 | PASS | reviewed | 2026-06-30 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-094 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
 | IMG-095 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
 | IMG-102 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
@@ -2890,15 +2890,15 @@
 | 관련 계측기 | 분야별/건축 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략 |
+| 기술 오류 | v5 ai-reviewed BLD-ADJ-01·DISP-ATS-01·와이어식주계측·P0-1 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v5 ai-reviewed — BLD-ADJ-01·와이어식·ATS inset만 |
 
 **금지 오류 대조:**
 
