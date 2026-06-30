@@ -3280,7 +3280,6 @@ const CONTENT = {
       "installation": [
         "IMG-096",
         "IMG-027",
-        "IMG-032",
         "IMG-030",
         "IMG-031"
       ],
@@ -10581,8 +10580,9 @@ const CONTENT = {
     },
     "sectionImages": {
       "installation": [
-        "IMG-032",
-        "IMG-027"
+        "IMG-027",
+        "IMG-030",
+        "IMG-031"
       ],
       "data": [
         "IMG-050"

@@ -3747,6 +3747,9 @@
     },
     "migrationStatus": "completed",
     "migrationCompletedDate": "2026-06-30",
+    "prohibitedVerified": true,
+    "prohibitedVerifiedDate": "2026-06-30",
+    "prohibitedVerifiedNote": "v5 ai-reviewed — 균열계·IPI·ATS·VW 라벨 없음 · 변형률+하중계+온도만",
     "imageKnowledgeTopic": "22-균열·변형률-계측-표현.md"
   },
   "IMG-083": {

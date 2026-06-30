@@ -293,7 +293,7 @@ export const LEAF_SECTIONS = {
     ],
     sectionImages: {
       principle: ['IMG-025'],
-      installation: ['IMG-096', 'IMG-027', 'IMG-032', 'IMG-030', 'IMG-031'],
+      installation: ['IMG-096', 'IMG-027', 'IMG-030', 'IMG-031'],
       data: ['IMG-050']
     }
   }

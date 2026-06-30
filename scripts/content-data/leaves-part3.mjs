@@ -1218,7 +1218,7 @@ export const LEAF_SECTIONS = {
       { q: '인접 부지 계측 범위는?', a: '영향권 내 건축물·옹벽·지하매설물 측점을 계획서에 포함합니다.' }
     ],
     sectionImages: {
-      installation: ['IMG-032', 'IMG-027'],
+      installation: ['IMG-027', 'IMG-030', 'IMG-031'],
       data: ['IMG-050']
     }
   },
