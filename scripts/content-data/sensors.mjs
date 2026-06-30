@@ -773,7 +773,7 @@ export const SENSOR_SECTIONS = {
     criteria: '<p><strong>설계예상변위</strong>·<strong>최대허용변위</strong> 기준을 적용합니다.</p>',
     faq: [
       { q: '터널 내공변위에 변위계만 쓰나요?', a: '전단면 프로파일은 내공변위계(Kit 체인)로 다수 측점 좌표를 누적하는 방식이 일반적입니다. 변위계는 국부 2점 상대변위에 적합합니다.' },
-      { q: '변위계와 자동 광파기?', a: '변위계는 국부 상대, 자동 광파기는 절대 좌표·특수구간 3D 보조에 적합합니다(KDS 4.1.5).' },
+      { q: '변위계와 광학 측량?', a: '변위계는 국부 상대 변위에 적합합니다. 터널·깊은 굴착 등 지하공사에서 절대 좌표·다점 광학측량 보조가 필요할 수 있습니다(KDS 4.1.5).' },
       { q: '앵커 느슨하면?', a: '허위 변위 발생. 정기 점검 필수.' },
       { q: 'LVDT와 동일 개념?', a: '변위-전압 변환 원리의 변위계가 LVDT류입니다. 용도·량정·설치 위치가 해석의 핵심입니다.' }
     ],
@@ -785,7 +785,7 @@ export const SENSOR_SECTIONS = {
   'sensors/deflection-gauge': {
     tagline: '접촉식 처짐계(LVDT·와이어) — ≠ GNSS 경간 중앙 hero',
     overview:
-      '<p><strong>처짐계</strong>는 거더·PSC 박스·보·슬래브 등 구조 부재의 <strong>연직 처짐량 δ</strong>를 <strong>접촉식</strong>으로 측정합니다. LVDT, 와이어, ring type 변위변환기·자동광파 보조 측점이 사용됩니다. <strong>침하계</strong>(지반·기초 침하)와 구분됩니다.</p><p>교량 <strong>경간 중앙 GNSS 처짐(ΔZ→δ)</strong> hero는 <a href="#fields/bridge/deflection">교량 처짐</a>(IMG-103) 전용입니다. 본 센서 페이지는 LVDT·와이어·광파 등 <strong>국부·재하시험·동적</strong> 처짐에 초점을 둡니다. 건축은 <a href="#fields/building/deflection">처짐</a> 항목과 연계합니다.</p>',
+      '<p><strong>처짐계</strong>는 거더·PSC 박스·보·슬래브 등 구조 부재의 <strong>연직 처짐량 δ</strong>를 <strong>접촉식</strong>으로 측정합니다. LVDT, 와이어, ring type 변위변환기·측량 프리즘 보조가 사용됩니다. <strong>침하계</strong>(지반·기초 침하)와 구분됩니다.</p><p>교량 <strong>경간 중앙 GNSS 처짐(ΔZ→δ)</strong> hero는 <a href="#fields/bridge/deflection">교량 처짐</a>(IMG-103) 전용입니다. 본 센서 페이지는 LVDT·와이어 등 <strong>국부·재하시험·동적</strong> 처짐에 초점을 둡니다. 건축은 <a href="#fields/building/deflection">처짐</a> 항목과 연계합니다.</p>',
     purpose: [
       { title: '처짐 δ', body: '휨·연직 변위 정량' },
       { title: '재하시험', body: '하중-처짐 관계' },
@@ -796,7 +796,7 @@ export const SENSOR_SECTIONS = {
       '강교·재하시험 처짐',
       '건축 보·슬래브 시공 처짐',
       '동적 처짐(풍·통행) 보조',
-      '자동광파기 보완 측점'
+      '측량 프리즘 보조 측점'
     ],
     principle:
       '<p>고정 앵커 대비 부재 <strong>연직 변위</strong>를 측정합니다. 교량 <strong>경간 중앙 GNSS</strong>는 ΔZ→δ 장기 모니터링(IMG-103)이고, 본 센서는 <strong>접촉식 국부 δ</strong>(IMG-104)입니다. mid-span은 설계 대표 위치, GNSS 「경간 중앙」은 교각↔교각 중앙 1점으로 구분합니다.</p>',
@@ -813,7 +813,7 @@ export const SENSOR_SECTIONS = {
         ['GNSS', '경간 중앙 상부 1점(교각↔교각)', 'ΔZ→δ', 'IMG-103', 'fields/bridge/deflection'],
         ['LVDT', 'mid-span·기준대', '국부 δ', 'IMG-104', 'sensors/deflection-gauge'],
         ['와이어', '하부·장경간', '국부 δ', 'IMG-104', 'sensors/deflection-gauge'],
-        ['자동광파', '프리즘 측점', '절대 좌표', '—', 'sensors/automatic-level']
+        ['측량 프리즘', '프리즘 측점', '절대 좌표', '—', 'sensors/automatic-level']
       ]
     },
     criteria: '<p>설계예상변위·최대허용변위·L/xxx는 계측관리계획·설계에 따릅니다.</p>',
@@ -880,17 +880,16 @@ export const SENSOR_SECTIONS = {
   'sensors/automated-total-station': {
     tagline: '원격 제어 광파 측량으로 3D 변위 자동 모니터링',
     overview:
-      '<p><strong>자동광파기</strong>는 원격 제어 토탈스테이션으로 프리즘·반사 타깃 3D 좌표를 반복 측정해 변위를 산정합니다. 철도, 교량, 건축물, 흙막이, 사면, 터널 지표침하에 적용합니다.</p>',
+      '<p><strong>자동광파기</strong>는 원격 제어 토탈스테이션으로 프리즘·반사 타깃 3D 좌표를 반복 측정해 변위를 산정합니다. <strong>주로 터널·깊은 굴착·흙막이</strong> 등 <strong>지반 하부 공사</strong> 중 다점 좌표 계측에 사용합니다(ATS-SUB-01).</p>',
     purpose: [
       { title: '3D 변위', body: '고빈도·고정밀 좌표' },
       { title: '자동화', body: '야간·원격 무인 계측' },
       { title: '다점', body: '망 전체 동시 관리' }
     ],
     applications: [
-      '흙막이·굴착 3D 변위',
-      '터널·교량 고정밀 모니터링',
-      '철도·건축물 변위',
-      '사면·지표 대규모 망'
+      '흙막이·깊은 굴착 3D 변위',
+      '터널 천단·지표 영향권 고정밀 모니터링',
+      '지하공사 중 다점 광학망'
     ],
     principle: '<p>기준점·측점 좌표 차이로 변위. 대기·시야·프리즘·기준점 안정성 영향.</p>',
     installation: [
@@ -930,7 +929,7 @@ export const SENSOR_SECTIONS = {
     heroCaption: 'GNSS 변위 계측 — 기준국·이동국·RTK·중앙 서버·3D 변위',
     tagline: '위성항법 기반 장기 3D 변위 모니터링',
     overview:
-      '<p><strong>GNSS</strong>(<strong>GPS</strong> 등 위성항법) 계측은 기준국·이동국 GNSS 안테나로 구조물·지반의 장기 <strong>3D 변위</strong>(ΔX·ΔY·ΔZ)를 측정합니다. 대형 <strong>사면</strong>, <strong>댐</strong>, <strong>교량</strong>, 지반침하, 장대 구조물·원거리 계측에 적용하며, 현장 구성은 <strong>기준국</strong>(안정 지반) + <strong>이동국</strong> 복수 측점 + <strong>RTK</strong>·차분 보정 + <strong>LTE</strong>·무선 → <strong>중앙 서버</strong> 수집·분석 흐름입니다.</p><p>Figure(IMG-043)은 현장 계측 계획서·<a href="/homepage/book/GNSS.pdf" target="_blank" rel="noopener noreferrer">GNSS 계측 시스템 구성(PDF)</a>과 동일한 개념(기준국·이동국·서버·무선·3D 변위)을 따릅니다. 단기 mm급·고빈도 변위는 <strong>자동광파기</strong>와 병행하는 경우가 많습니다.</p>',
+      '<p><strong>GNSS</strong>(<strong>GPS</strong> 등 위성항법) 계측은 기준국·이동국 GNSS 안테나로 구조물·지반의 장기 <strong>3D 변위</strong>(ΔX·ΔY·ΔZ)를 측정합니다. 대형 <strong>사면</strong>, <strong>댐</strong>, <strong>교량</strong>, 지반침하, 장대 구조물·원거리 계측에 적용하며, 현장 구성은 <strong>기준국</strong>(안정 지반) + <strong>이동국</strong> 복수 측점 + <strong>RTK</strong>·차분 보정 + <strong>LTE</strong>·무선 → <strong>중앙 서버</strong> 수집·분석 흐름입니다.</p><p>Figure(IMG-043)은 현장 계측 계획서·<a href="/homepage/book/GNSS.pdf" target="_blank" rel="noopener noreferrer">GNSS 계측 시스템 구성(PDF)</a>과 동일한 개념(기준국·이동국·서버·무선·3D 변위)을 따릅니다.</p>',
     purpose: [
       { title: '장기 추세', body: '월·년 단위 3D 변위·잔류침하 추세' },
       { title: '원거리·다점', body: '광파 시야 없이 다수 측점 동시 모니터링' },
@@ -963,9 +962,9 @@ export const SENSOR_SECTIONS = {
       ]
     },
     criteria:
-      '<p>장기 한계변위·변화속도 기준은 설계·KCS·발주처 기준을 따릅니다. 지표침하 연계 시 KCS 11 10 15 등 측정오차 요건을 확인합니다. 단기 고정밀·고빈도는 GNSS만으로 부족할 수 있어 자동광파기·지중경사계와 병행합니다.</p>',
+      '<p>장기 한계변위·변화속도 기준은 설계·KCS·발주처 기준을 따릅니다. 지표침하 연계 시 KCS 11 10 15 등 측정오차 요건을 확인합니다. 단기 고정밀·고빈도는 GNSS만으로 부족할 수 있어 변위계·지중경사계와 병행합니다.</p>',
     faq: [
-      { q: 'GNSS vs 자동광파기?', a: 'GNSS는 장기·원거리·다점 3D, 광파는 단기 mm급·고빈도. 병행하면 상호 보완됩니다.' },
+      { q: 'GNSS vs 변위계·침하계?', a: 'GNSS는 장기·원거리·다점 3D, 변위계·침하계는 국부·고빈도. 목적에 맞게 병행합니다.' },
       { q: 'GPS와 GNSS 차이?', a: 'GPS는 미국 위성군, GNSS는 GPS·GLONASS 등 통칭. 본 기술자료 GNSS는 다중 위성 차분 계측을 의미합니다.' },
       { q: '구름·수목·건물?', a: '가시성 저하·다중경로로 품질이 떨어집니다. 안테나 위치·마스크각·결측 처리 규칙이 중요합니다.' },
       { q: '기준국이 필요한가요?', a: 'RTK·네트워크 보정 시 기준국·가상기준점 품질이 정밀도를 좌우합니다. 가시위성·다중경로를 모니터링합니다.' }
