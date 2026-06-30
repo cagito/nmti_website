@@ -2,6 +2,11 @@
 > **image-knowledge:** [00-공통](../../../docs/image-knowledge/00-공통-이미지-작성-원칙.md) · [통신·게이트웨이-역할](../../../docs/image-knowledge/29-통신·게이트웨이-역할.md)
 <!-- /image-knowledge-links:v1 -->
 
+<!-- watermark-sync:v1 -->
+> **WATERMARK-01 (생성 금지):** NMTI 로고·워터마크·브랜드 마크·유사 로고·흰색 로고 박스를 **GenerateImage·AI·CAD 생성 단계에 넣지 않는다.** 출판용 워터마크는 `watermark-figures.bat` · `npm run watermark:figures` (`scripts/apply-figure-watermark.py`)로 **등록·배포 전 일괄 후처리**만 한다. 정본: [docs/183](../../../docs/183-이미지-생성-워터마크-금지-정본.md)
+<!-- /watermark-sync:v1 -->
+
+
 # IMG-046 — IoT 게이트웨이 구성도
 
 > **정본:** [docs/91 §10](../../../docs/91-Phase-AB-복붙-프롬프트-정본.md) · [redline v2](../redlines/IMG-046_redline_v2_외부PNG.md) · [84 AB-2g](../../../docs/84-외부-ZIP-신규-심각오류-10종-Phase-AB-수정계획.md)  

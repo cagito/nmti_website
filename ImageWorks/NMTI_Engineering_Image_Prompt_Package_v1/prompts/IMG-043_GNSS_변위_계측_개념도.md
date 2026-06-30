@@ -9,6 +9,11 @@
 > **image-knowledge:** [00-공통](../../../docs/image-knowledge/00-공통-이미지-작성-원칙.md) · [GNSS-변위-계측](../../../docs/image-knowledge/07-GNSS-변위-계측.md)
 <!-- /image-knowledge-links:v1 -->
 
+<!-- watermark-sync:v1 -->
+> **WATERMARK-01 (생성 금지):** NMTI 로고·워터마크·브랜드 마크·유사 로고·흰색 로고 박스를 **GenerateImage·AI·CAD 생성 단계에 넣지 않는다.** 출판용 워터마크는 `watermark-figures.bat` · `npm run watermark:figures` (`scripts/apply-figure-watermark.py`)로 **등록·배포 전 일괄 후처리**만 한다. 정본: [docs/183](../../../docs/183-이미지-생성-워터마크-금지-정본.md)
+<!-- /watermark-sync:v1 -->
+
+
 > **필수 참고:** [book/GNSS.pdf](../../../book/GNSS.pdf) · [07_GNSS_이미지_가이드.md](../07_GNSS_이미지_가이드.md)  
 > 규칙: [INSTRUMENTATION_DRAWING_RULES.md](../../../docs/INSTRUMENTATION_DRAWING_RULES.md) §3.13
 
