@@ -142,3 +142,72 @@ export function wrapIndented(content) {
   if (!content) return '';
   return '<div class="tech-section__indent">' + content + '</div>';
 }
+
+function cardBodyToHtml(body) {
+  const t = String(body || '').trim();
+  if (!t) return '';
+  return t.startsWith('<') ? tightenProse(t) : escapeHtml(tightenProse(t));
+}
+
+function renderLabeledItems(items, variant) {
+  const bullets = items
+    .map(function (item) {
+      if (!item.label && !item.body) return '';
+      return (
+        '<li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">' +
+        escapeHtml(item.label) +
+        '</strong><span class="tech-bullet-list__text">' +
+        item.body +
+        '</span></li>'
+      );
+    })
+    .filter(Boolean)
+    .join('');
+  if (!bullets) return '';
+  return (
+    '<ul class="tech-bullet-list tech-bullet-list--labeled tech-bullet-list--' +
+    escapeAttr(variant) +
+    '">' +
+    bullets +
+    '</ul>'
+  );
+}
+
+/** purpose 카드 배열 → 라벨+문장 불릿 */
+export function formatPurposeCards(cards) {
+  if (!Array.isArray(cards) || !cards.length) return '';
+  const items = cards.map(function (card) {
+    const label =
+      String(card.title || '') +
+      (card.signal && card.signal !== card.title ? ' · ' + card.signal : '');
+    return { label, body: cardBodyToHtml(card.body) };
+  });
+  return renderLabeledItems(items, 'purpose');
+}
+
+/** 시공 단계 표 → 불릿 */
+export function formatConstructionPhases(phases) {
+  if (!phases?.rows?.length) return '';
+  const items = phases.rows.map(function (row) {
+    const label = row[0] || '';
+    const rest = row.slice(1).filter(Boolean).join(' — ');
+    return label + (rest ? ': ' + rest : '');
+  });
+  return formatPlainBulletList(items, 'construction-phases');
+}
+
+/** HTML 설치 본문 — process-list ol 추출 후 불릿 변환 */
+export function formatInstallationHtml(html) {
+  let s = String(html || '');
+  const olMatch = s.match(/<ol\b[^>]*class="[^"]*process-list[^"]*"[^>]*>([\s\S]*?)<\/ol>/i);
+  let listHtml = '';
+  if (olMatch) {
+    const items = [...olMatch[1].matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].map(function (m) {
+      return m[1].trim();
+    });
+    s = s.replace(olMatch[0], '');
+    listHtml = formatPlainBulletList(items, 'installation');
+  }
+  const prose = formatStringSection('installation', s.trim());
+  return prose + listHtml;
+}

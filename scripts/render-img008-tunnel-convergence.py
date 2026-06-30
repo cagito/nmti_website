@@ -15,6 +15,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from lib.datalogger_draw import W, H, _hex, load_font, new_canvas  # noqa: E402
 from lib.render_guard import enforce_render_policy  # noqa: E402
 from lib.tunnel_convergence_draw import render_img008  # noqa: E402
+from lib.technology_image_backup import backup_and_unlink  # noqa: E402
 
 OUT = ROOT / "assets" / "images" / "technology"
 SOURCE = OUT / "source"
@@ -39,8 +40,8 @@ def save(img: Image.Image) -> None:
 def remove_legacy() -> None:
     for pattern in LEGACY_GLOBS:
         for p in list(OUT.glob(pattern)) + list(SOURCE.glob(pattern)):
-            if p.name != FILENAME:
-                p.unlink(missing_ok=True)
+            if p.name != FILENAME and p.is_file():
+                backup_and_unlink(p, OUT, reason="legacy-img008")
                 print(f"Removed legacy {p}")
 
 

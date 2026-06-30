@@ -540,34 +540,34 @@ export const INSTRUMENT_SECTIONS = {
     sectionImages: { principle: 'IMG-069' }
   },
   'instruments/modes/overview': {
-    tagline: '수동→자동→원격→스마트→AI 5단계 계측 방식 계층',
+    tagline: '수집·전송·운영 확장·런타임 모드 — KCS와 NMTI 운영 계층',
     overview:
-      '<p><strong>계측 방식</strong>은 현장에서 데이터를 취득·저장·전송·분석하는 운영 수준을 구분합니다. KCS는 <strong>수동계측</strong> 빈도를 기준으로 제시하며, 구간 특성에 따라 <strong>자동계측</strong>으로 전환할 수 있습니다. 그 위에 통신·플랫폼·AI 분석이 단계적으로 얹힙니다.</p><p>하위 방식은 상위에 포함됩니다. 예: 원격 자동계측은 자동 수집+통신이고, 스마트 계측은 여기에 경보·보고 운영이, AI 계측은 학습·예측 보조가 추가됩니다. 별도로 <strong>운영 모드</strong>(상시·이벤트·경보 상태)는 런타임 수집 주기·트리거·알림 동작을 설명합니다.</p>',
+      '<p><strong>계측 방식</strong>은 현장에서 데이터를 어떻게 취득·저장·전송·운영하는지를 구분하는 개념입니다. <strong>KDS·KCS</strong>는 <strong>수동계측</strong>·<strong>반자동계측</strong>·<strong>자동계측</strong> 등 <strong>데이터 수집방법</strong>과 계측 빈도를 기준으로 제시합니다. <strong>유선·무선·유·무선</strong>은 <strong>전송방법</strong>입니다.</p><p><strong>원격 자동계측</strong>·<strong>스마트 계측</strong>·<strong>AI 보조 분석</strong>은 KCS의 기본 계측방식 분류가 아니라, 자동 수집·전송 인프라 위에 얹는 <strong>NMTI 운영 확장 계층</strong>입니다. 별도로 <strong>운영 모드</strong>(<a href="#instruments/modes/normal-mode">상시</a>·<a href="#instruments/modes/realtime-mode">이벤트</a>·<a href="#instruments/modes/alarm-status">경보</a>)는 런타임 수집 주기·트리거·알림 동작을 설명합니다.</p><p><em>「수동→자동→원격→스마트→AI」 단일 진화 단계·상하 등급으로 표현하지 않습니다.</em></p>',
     purpose: [
-      { title: '단계 구분', body: '장비·인력·IT 요구 명확화' },
-      { title: '계획 수립', body: '계측관리계획서 방식 선정' },
-      { title: '병행', body: '수동 백업·교차 검증' },
-      { title: '확장', body: '단계적 자동화·원격화' }
+      { title: 'KCS 수집방법', body: '수동·반자동·자동 선정' },
+      { title: '전송·연동', body: '유선·무선·서버·표출' },
+      { title: '운영 확장', body: '원격·스마트·AI 보조 (법정 분류 아님)' },
+      { title: '병행·검증', body: '수동 백업·교차 확인' }
     ],
     siteLayout:
-      '<p>현장에서는 <strong>측점·센서</strong> → <strong>데이터로거</strong>(또는 수동 리드아웃) → <strong>통신</strong>(원격 시) → <strong>서버·대시보드</strong> 순으로 구성합니다. 수동만 운영하는 구간은 현장 기록·엑셀·보고서로 종료하고, 자동·원격 구간은 로거·전원·LTE를 계측함에 통합합니다.</p>',
+      '<p>현장 <strong>측점·센서</strong> → <strong>데이터로거</strong> 또는 <strong>수동 리드아웃</strong> → (선택) <strong>통신</strong> → <strong>서버·대시보드</strong>. 수동만 운영하는 구간은 현장 기록·보고서로 종료하고, 자동·원격 구간은 로거·전원·LTE를 계측함에 통합합니다.</p>',
     principle:
-      '<p>수동(현장 방문·기록) → 자동(로거·주기) → 원격(통신·서버) → 스마트(플랫폼·경보·보고) → AI(이상탐지·예측, HITL). 각 단계는 이전 단계 인프라를 전제로 합니다.</p>',
+      '<p><strong>① 데이터 수집방법 (KCS):</strong> 수동계측 · 반자동계측 · 자동계측</p><p><strong>② 데이터 전송방법:</strong> 유선 · 무선 · 유·무선 병행</p><p><strong>③ NMTI 운영 확장 (KCS 계측방식 분류 아님):</strong> 원격 자동계측 · 스마트 계측 · AI 보조 분석</p><p><strong>④ 운영 모드 (런타임):</strong> normal-mode · realtime-mode · alarm-status — 수집 주기·트리거·경보 상태</p>',
     installation: [
-      '공종·위험도·빈도 요구 분석',
-      '수동 기준선·초기치 확보',
-      '자동화 구간·센서·로거 설계',
-      '원격·스마트 플랫폼 요건 정의',
-      'AI 적용 시 데이터·라벨·검토 체계'
+      '공종·위험도·KCS 빈도 요구 분석',
+      '수동·자동 수집방법 및 초기치 확보',
+      '로거·센서·전원 설계 (자동 구간)',
+      '전송·플랫폼·경보 요건 정의 (원격·스마트)',
+      'AI 보조 적용 시 데이터·라벨·HITL 검토'
     ],
     data: {
-      headers: ['단계', '추가 능력', '대표 구성'],
+      headers: ['구분', '항목', '대표 구성'],
       rows: [
-        ['수동', '현장 측정', '리드아웃·수준·광파'],
-        ['자동', '주기 수집', '데이터로거·전원'],
-        ['원격', '원격 모니터링', 'LTE M2M·서버·웹'],
-        ['스마트', '운영 자동화', '경보·보고·로그'],
-        ['AI', '분석 보조', '모델·HITL']
+        ['KCS 수집', '수동계측', '리드아웃·수준·광파'],
+        ['KCS 수집', '반자동·자동계측', '데이터로거·전원·MUX'],
+        ['전송', '유선·무선', 'LTE M2M·VPN·게이트웨이'],
+        ['NMTI 확장', '원격·스마트·AI 보조', '서버·경보·모델(HITL)'],
+        ['런타임', 'normal·realtime·alarm', '주기·트리거·임계']
       ]
     },
     troubleshooting: {
@@ -579,19 +579,20 @@ export const INSTRUMENT_SECTIONS = {
         ['보고 지연', '운영 프로세스', '담당·권한·자동화 점검']
       ]
     },
-    criteria: '<p>방식 선정은 KCS 빈도·발주처 요건·위험도에 따릅니다. 상위 방식 도입 시에도 수동 검증 병행을 유지합니다.</p>',
+    criteria:
+      '<p>방식 선정은 KCS 빈도·발주처 요건·위험도에 따릅니다. 원격·스마트·AI는 <strong>운영 확장</strong>이며 KCS 계측방식 등급이 아닙니다. 자동·원격 구간에서도 수동 검증 병행을 유지합니다.</p>',
     faq: [
-      { q: '가장 높은 단계가 필수?', a: '아닙니다. 현장은 수동+자동, 자동+원격 등 조합이 일반적입니다.' },
+      { q: '5단계 화살표가 맞나요?', a: '아닙니다. KCS는 수집방법(수동·자동)을 기준으로 하고, 원격·스마트·AI는 운영 확장 계층입니다. 현장은 수동+자동, 자동+원격 등 조합이 일반적입니다.' },
       { q: 'AI가 관리기준 대체?', a: '아닙니다. 설계예상·최대허용변위 등 법정 기준을 보조합니다.' },
       { q: '수동 백업은?', a: '자동·원격 구간에서도 통신·센서 장애 대비 수동 측정 계획을 유지합니다.' },
-      { q: '단계를 한 번에 도입?', a: '아닙니다. 수동 기준선 확보 후 자동→원격→스마트 순으로 단계적 확장이 일반적입니다.' }
+      { q: '한 번에 전부 도입?', a: '아닙니다. 수동 기준선 확보 후 자동 수집·전송·플랫폼을 단계적으로 확장합니다.' }
     ],
     sectionImages: { principle: 'IMG-075' }
   },
   'instruments/modes/manual': {
-    tagline: '현장 방문·휴대 리드아웃 기반 계측',
+    tagline: 'KCS 수동계측 — 현장 방문·휴대 리드아웃',
     overview:
-      '<p><strong>수동 계측</strong>은 계측 담당자가 현장을 방문해 리드아웃기·수준기·광파기 등으로 측정값을 직접 취득·기록하는 방식입니다. KCS 계측 빈도 표에서 기본 기준으로 제시되며, <strong>자동계측</strong> 구간에서도 이상 작동 대비 수동 측정 병행이 요구됩니다.</p>',
+      '<p><strong>수동계측</strong>(KCS <strong>데이터 수집방법</strong>)은 계측 담당자가 현장을 방문해 리드아웃기·수준기·광파기 등으로 측정값을 직접 취득·기록하는 방식입니다. KCS 계측 빈도 표에서 기본 기준으로 제시되며, <strong>자동계측</strong> 구간에서도 이상 작동 대비 수동 측정 병행이 요구됩니다.</p><p>수동계측은 원격·스마트·AI보다 「낮은 단계」가 아니라, <strong>기준값 확인·정밀 검측·교차 검증</strong>에 필수인 수집방법입니다.</p>',
     purpose: [
       { title: '기준 확립', body: '초기치·정기 검측의 신뢰 기반' },
       { title: '검증', body: '자동계측값 교차 확인' },
@@ -636,18 +637,18 @@ export const INSTRUMENT_SECTIONS = {
     sectionImages: { principle: 'IMG-070' }
   },
   'instruments/modes/automatic': {
-    tagline: '데이터로거 기반 현장 자동 수집',
+    tagline: 'KCS 자동계측 — 수집·저장·(필요 시) 전송·표출 연계',
     overview:
-      '<p><strong>자동 계측</strong>은 <strong>데이터로거</strong>가 센서 신호를 설정 주기로 자동 수집·저장하는 방식입니다. KCS에서는 구간 특성에 따라 수동계측에서 <strong>자동계측</strong>으로 전환할 수 있으며, 고위험 구간에는 <strong>자동화 계측방법</strong> 적용을 검토합니다.</p>',
+      '<p><strong>자동계측</strong>(KCS <strong>데이터 수집방법</strong>)은 센서 데이터를 설정 주기로 자동 수집·저장하고, 필요 시 유선·무선 통신을 통해 서버로 전송하여 표출·경보·보고 체계와 연계하는 운용방식입니다.</p><p>KCS에서는 구간 특성에 따라 수동계측에서 자동계측으로 전환할 수 있으며, 실시간 감시·자동경보, 원격지·접근 곤란, 센서 다수·인력 부족 등에서 자동화를 검토합니다. 현장 <strong>데이터로거</strong>는 자동 수집의 핵심 장비이나, 자동계측 전체를 로컬 저장만으로 한정하지 않습니다.</p>',
     purpose: [
-      { title: '연속성', body: '야간·휴일·고빈도 데이터' },
+      { title: '연속 수집', body: '야간·휴일·고빈도 데이터' },
       { title: '객관성', body: '측정자 편차 감소' },
-      { title: '경보', body: '한계치 초과 자동 감지' }
+      { title: '연계', body: '통신·표출·경보·보고' }
     ],
     siteLayout:
-      '<p><strong>센서</strong> → <strong>데이터로거</strong> → 현장 SD 저장 → (선택) 통신. 무인 현장은 태양광·배터리·방수 함체와 함께 스캔 주기·경보 규칙을 설정합니다.</p>',
+      '<p><strong>센서</strong> → <strong>데이터로거</strong> → 로컬 저장 → (선택) <strong>유선·무선 통신</strong> → 서버·표출·경보. 무인 현장은 태양광·배터리·방수 함체와 함께 스캔 주기·경보 규칙을 설정합니다.</p>',
     principle:
-      '<p>센서 → 데이터로거 → (로컬 저장) → 필요 시 통신 모듈 순으로 구성합니다. 샘플링 주기·필터·캘리브레이션이 데이터 품질을 결정합니다. 무인 현장 전원은 <a href="/homepage/technology/instruments/power/solar-power/">태양광</a>·<a href="/homepage/technology/instruments/power/battery/">배터리</a> 설계가 핵심이며, AC 가능 구간은 <a href="/homepage/technology/instruments/power/overview/">전원 체계</a> 전체를 함께 검토합니다.</p>',
+      '<p>센서 → 데이터로거 → 로컬 저장 → (필요 시) 통신 → 서버·표출·경보·보고 순으로 운용합니다. 샘플링 주기·필터·캘리브레이션이 데이터 품질을 결정합니다. 무인 현장 전원은 <a href="/homepage/technology/instruments/power/solar-power/">태양광</a>·<a href="/homepage/technology/instruments/power/battery/">배터리</a> 설계가 핵심이며, AC 가능 구간은 <a href="/homepage/technology/instruments/power/overview/">전원 체계</a> 전체를 함께 검토합니다.</p>',
     installation: [
       '로거 채널·센서 매핑',
       '전원·태양광·배터리 설계',
@@ -675,17 +676,17 @@ export const INSTRUMENT_SECTIONS = {
     },
     criteria: '<p>결측률·센서 drift·전원 장애를 모니터링합니다. 이상 작동 시 수동 측정으로 검증합니다.</p>',
     faq: [
-      { q: '자동과 원격의 차이?', a: '자동은 현장 수집까지, 원격 자동계측은 통신·서버·대시보드까지 포함한 상위 개념입니다.' },
-      { q: '필수 구성품?', a: '센서, 데이터로거, 전원이 최소 구성이며 통신은 원격 연동 시 추가합니다.' },
+      { q: '자동과 원격의 차이?', a: '자동계측은 KCS 수집방법(현장 수집·저장·연계)입니다. 원격 자동계측은 통신·서버·대시보드까지 포함한 NMTI 운영 확장 개념입니다.' },
+      { q: '로거만 있으면 자동계측?', a: '로거는 핵심 장비입니다. 자동계측 운용은 수집·저장과 필요 시 전송·표출·경보·보고까지 포함합니다.' },
       { q: '스캔 주기는?', a: '위험도·KCS·관리기준에 따라 분~시간 단위를 설정합니다. MUX 사용 시 채널당 유효 주기를 검증합니다.' },
       { q: '수동 병행?', a: '이상 작동·통신 장애 대비 수동 측정을 계획서에 포함합니다.' }
     ],
     sectionImages: { principle: 'IMG-071', installation: 'IMG-047' }
   },
   'instruments/modes/remote-automatic': {
-    tagline: '통신·서버·대시보드까지 연결된 원격 자동계측',
+    tagline: 'NMTI 운영 확장 — 통신·서버·대시보드 원격 자동계측',
     overview:
-      '<p><strong>원격 자동계측</strong>은 현장 <strong>자동계측</strong> 데이터를 <strong>LTE M2M</strong>·유선 등으로 서버에 전송하고, 웹·모바일에서 실시간·주기 모니터링·경보하는 체계입니다. <strong>원격계측시스템</strong>이 대표 구현 형태입니다.</p>',
+      '<p><strong>원격 자동계측</strong>은 KCS 계측방식 분류가 아니라, 현장 <strong>자동계측</strong> 데이터를 <strong>LTE M2M</strong>·유선 등으로 서버에 전송하고 웹·모바일에서 모니터링·경보하는 <strong>NMTI 운영 확장 계층</strong>입니다. <strong>원격계측시스템</strong>이 대표 구현 형태입니다.</p>',
     purpose: [
       { title: '실시간성', body: '현장 없이 추세·경보 확인' },
       { title: '다현장', body: '중앙 통합 모니터링' },
@@ -720,7 +721,8 @@ export const INSTRUMENT_SECTIONS = {
         ['보안 이벤트', 'VPN·로그', '접근·패치']
       ]
     },
-    criteria: '<p>링크 가용성·경보 지연·데이터 무결성을 관리합니다. OT·IT 보안을 분리합니다.</p>',
+    criteria:
+      '<p>링크 가용성·경보 지연·데이터 무결성을 관리합니다. OT·IT 보안을 분리합니다. 원격 자동계측은 KCS 수집방법 등급이 아닌 운영 확장입니다.</p>',
     faq: [
       { q: '원격계측시스템과 동일?', a: '원격 자동계측은 방식(개념)이고, 원격계측시스템은 이를 구현하는 통합 장비·플랫폼입니다.' },
       { q: '수동 병행?', a: '통신·센서 장애 대비 수동 측정 계획을 유지하는 것이 KDS·KCS 원칙입니다.' },
@@ -734,9 +736,9 @@ export const INSTRUMENT_SECTIONS = {
     }
   },
   'instruments/modes/smart': {
-    tagline: '통합 플랫폼·자동 보고·단계별 경보',
+    tagline: 'NMTI 운영 확장 — 플랫폼·경보·자동 보고',
     overview:
-      '<p><strong>스마트 계측</strong>은 원격 자동계측에 웹 대시보드·이벤트 로그·자동 보고서·단계별 경보 프로세스를 결합해 운영 효율을 높인 체계입니다. 다수 센서·다현장 데이터를 한 화면에서 관리하고, 관리기준 초과 시 정의된 조치 흐름으로 연계합니다.</p>',
+      '<p><strong>스마트 계측</strong>은 KCS 공식 계측방식 분류가 아니라, 원격 자동계측에 웹 대시보드·이벤트 로그·자동 보고서·단계별 경보 프로세스를 결합한 <strong>NMTI 운영 확장 계층</strong>입니다. 다수 센서·다현장 데이터를 한 화면에서 관리하고, 관리기준 초과 시 정의된 조치 흐름으로 연계합니다.</p>',
     purpose: [
       { title: '가시성', body: '지도·목록·그래프 통합' },
       { title: '자동화', body: '보고서·이벤트 로그' },
@@ -773,7 +775,7 @@ export const INSTRUMENT_SECTIONS = {
       ]
     },
     faq: [
-      { q: '스마트와 AI 계측 차이?', a: '스마트는 규칙·기준 기반 자동화, AI 계측은 학습·예측·이상탐지를 추가한 확장 단계입니다.' },
+      { q: '스마트와 AI 보조 차이?', a: '스마트는 규칙·기준 기반 운영 자동화입니다. AI 보조 분석은 학습·예측·이상탐지를 추가한 확장입니다. 둘 다 KCS 계측방식 분류가 아닙니다.' },
       { q: '필수 요소?', a: '원격 자동계측 인프라 위에 플랫폼·기준·경보 프로세스가 갖춰져야 합니다.' },
       { q: '원격 자동과 차이?', a: '원격은 수집·전송·모니터링까지이고, 스마트는 경보 단계·보고·운영 프로세스가 플랫폼에 내장됩니다.' },
       { q: '관리기준은 어디서?', a: '설계도서·계측관리계획서·발주처 기준을 플랫폼에 매핑합니다. AI·스마트가 법정 기준을 대체하지 않습니다.' }
@@ -793,9 +795,9 @@ export const INSTRUMENT_SECTIONS = {
     }
   },
   'instruments/modes/ai': {
-    tagline: '학습·예측·이상탐지를 활용한 계측 데이터 분석',
+    tagline: 'NMTI AI 보조 분석 — 이상탐지·예측 (HITL)',
     overview:
-      '<p><strong>AI 계측</strong>은 축적된 계측 시계열에 머신러닝·통계 기법을 적용해 이상 패턴 탐지, 변위·침하 예측, 센서 고장·노이즈 구분, 관리기준 동적 조정을 지원하는 확장 단계입니다. 스마트 계측 플랫폼의 데이터 레이크·API 위에서 구현하는 것이 일반적입니다.</p>',
+      '<p><strong>AI 보조 분석</strong>은 KCS 계측방식이 아니라, 축적된 계측 시계열에 머신러닝·통계 기법을 적용해 이상 패턴 탐지, 변위·침하 예측, 센서 고장·노이즈 구분을 <strong>보조</strong>하는 NMTI 운영 확장입니다. 스마트 계측 플랫폼의 데이터 레이크·API 위에서 구현하는 것이 일반적이며, 관리기준·조치 판단을 AI 단독으로 확정하지 않습니다.</p>',
     purpose: [
       { title: '이상탐지', body: '복합 센서 동시 이상 포착' },
       { title: '예측', body: '추세·잔류 변위 예측' },
@@ -894,14 +896,14 @@ export const INSTRUMENT_SECTIONS = {
     ]
   },
   'instruments/modes/realtime-mode': {
-    tagline: '발파·급변·동적 이벤트 시 고속 연속 샘플링·즉시 전송',
+    tagline: '런타임 이벤트 모드 — 트리거·고속 샘플링 (이벤트별 상이)',
     overview:
-      '<p><strong>실시간·이벤트 계측 모드</strong>는 발파, 급격한 변위, 굴착 단계 변화 등 **Trigger Event** 발생 시 초당 수십~수백 Hz로 고속 샘플링하고 즉시 전송하는 동적 모드입니다. <strong>동적 데이터로거</strong>·<strong>진동계</strong>·트리거 DAQ가 대표 장비입니다.</p><p>타임라인 한 지점에서 **조밀한 샘플링선**·**impulse/spike 파형**·경보 대시보드로의 즉시 전송이 시각 핵심입니다. 번개·폭발 CG는 사용하지 않습니다.</p>',
+      '<p><strong>실시간·이벤트 계측 모드</strong>는 발파, 급격한 변위, 굴착 단계 변화 등 <strong>Trigger Event</strong> 발생 시 <strong>이벤트 유형에 맞는</strong> 고속 샘플링·즉시 전송을 수행하는 <strong>런타임 운영 모드</strong>입니다. 모든 이벤트가 수십~수백 Hz로 동일하지 않으며, 발파·진동·급변·관리자 명령 등 <strong>계획서에 정의한 rate·duration</strong>을 따릅니다.</p><p><strong>동적 데이터로거</strong>·<strong>진동계</strong>·트리거 DAQ가 대표 장비입니다. <a href="#instruments/modes/normal-mode">상시 모드</a>의 고정 주기 수집과 구분합니다.</p>',
     purpose: [
-      { title: '고속 샘플링', body: 'Trigger 후 연속 고주파 수집' },
-      { title: '이벤트 포착', body: '발파·급변·임계 초과 순간 기록' },
-      { title: '즉시 전송', body: '동적 벡터·파형 실시간 업로드' },
-      { title: '대조', body: 'normal-mode 평탄 추세와 명확히 구분' }
+      { title: '이벤트별 rate', body: '발파·급변·명령마다 상이' },
+      { title: '이벤트 포착', body: '트리거 전후 파형·peak' },
+      { title: '즉시 전송', body: '동적 벡터·경보 연동' },
+      { title: '복귀', body: 'normal-mode로 전환' }
     ],
     siteLayout:
       '<p>이벤트 발생: <strong>트리거</strong>(진동·임계·일정) → <strong>동적 DAQ/진동계</strong>(고속 샘플링) → 버퍼 저장 → <strong>실시간 서버·경보</strong>. 종료 후 <strong>normal-mode</strong> 복귀.</p>',
@@ -934,6 +936,7 @@ export const INSTRUMENT_SECTIONS = {
     },
     criteria: '<p>동적 모드 기준은 계약·법규·구조물·인체 진동 한계와 연동합니다. 파형 품질·클리핑·동기 오류를 검증합니다.</p>',
     faq: [
+      { q: '모든 이벤트가 100Hz?', a: '아닙니다. 발파·진동은 100Hz급이 흔하나, 급변·명령·구조 응답은 계획서·장비에 따라 1~100Hz 등으로 다릅니다.' },
       { q: '정적 로거로 충분한가요?', a: '발파·충격 이벤트는 동적 DAQ 또는 이벤트형 진동계가 필요합니다. 정적 Scan Interval만으로는 파형을 놓칩니다.' },
       { q: '터널 발파(097)와?', a: '097은 현장 PPV·영향권 Figure입니다. 본 모드는 **시스템 토폴로지**·고속 샘플링 전환(095)입니다.' },
       { q: 'normal-mode와 차이?', a: 'normal-mode는 안정 구간 고정 주기, realtime-mode는 이벤트·위험 구간 고속·트리거 수집입니다.' },
@@ -994,7 +997,7 @@ export const INSTRUMENT_SECTIONS = {
   'instruments/data-management': {
     tagline: '수집·저장·품질·보고·경보까지 계측 데이터 운영',
     overview:
-      '<p><strong>데이터 관리</strong>는 현장에서 수집된 계측값을 <strong>저장·검증·보고·경보</strong>까지 운영하는 계측 시스템 계층입니다. 센서·로거·통신 하드웨어와 별도로, <strong>결측·이상값 처리</strong>, 관리기준 대비 추세 분석, 자동 보고서, 담당자 알림을 체계화합니다.</p><p>NMTI는 제품 판매가 아니라 <strong>발주처·설계 기준에 맞는 데이터 운영 프로세스</strong> 구성·유지관리를 수행합니다. <strong>댐·제방 건설기간 계측</strong> 현장에서는 층별 침하·수압·온도 QC, 일·주 보고, 준공 시 운영기 안전관리 DB 이관을 같은 계층에서 운영합니다. 고급 통합·예측 분석은 필요 시 <a href="#instruments/modes/smart">스마트 계측</a>·<a href="#instruments/modes/ai">AI 계측</a> 항목으로 확장할 수 있습니다.</p>',
+      '<p><strong>데이터 관리</strong>는 현장에서 수집된 계측값을 <strong>저장·검증·보고·경보</strong>까지 운영하는 계측 시스템 계층입니다. 센서·로거·통신 하드웨어와 별도로, <strong>결측·이상값 처리</strong>, 관리기준 대비 추세 분석, 자동 보고서, 담당자 알림을 체계화합니다.</p><p>NMTI는 제품 판매가 아니라 <strong>발주처·설계 기준에 맞는 데이터 운영 프로세스</strong> 구성·유지관리를 수행합니다. <strong>댐·제방 건설중 계측</strong> 현장에서는 층별 침하·수압·온도 QC, 일·주 보고, 준공 시 운영기 안전관리 DB 이관을 같은 계층에서 운영합니다. 고급 통합·예측 분석은 필요 시 <a href="#instruments/modes/smart">스마트 계측</a>·<a href="#instruments/modes/ai">AI 계측</a> 항목으로 확장할 수 있습니다.</p>',
     purpose: [
       { title: '데이터 품질', body: '결측·드리프트·이상값 식별·보정' },
       { title: '보고·이력', body: '일·주·월 보고서·이벤트 로그' },

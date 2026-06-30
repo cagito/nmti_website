@@ -256,9 +256,10 @@ def write_stage3_prep(rows: list[dict], heroes: dict[str, str]) -> None:
         lines.append("")
     lines.extend(
         [
-            "완료 시: 체크 결과를 본 파일 하단 또는 `docs/book-plan-review-YYYY-MM.md`에 기록.",
+            "완료 시: [book-stage3-status.md](./book-stage3-status.md) (정본 — 본 파일은 자동 재생성).",
             "",
             "자동 1·2단계: [book-plan-review-2026-06.md](./book-plan-review-2026-06.md)",
+            "Phase L: [176-book-3단계-Phase-L-종료.md](./176-book-3단계-Phase-L-종료.md)",
         ]
     )
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")

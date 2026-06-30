@@ -2,10 +2,16 @@
 exports/rework-prompts/*.txt
 exports/rework-prompts/_INDEX.txt
 .cursor/locks/*.lock
+.git-sync-backup/
+.git-sync-last-run.json
+logs/git-sync/
 
 # WebP ?�영 ??technology/ 루트 PNG??register 부?�물·RaiDrive git mmap ?�발
 # ?�본: assets/images/technology/source/*.png
 assets/images/technology/*.png
+
+# 삭제 전 자동 백업 (scripts/lib/technology-image-backup.mjs)
+assets/images/technology/backup/
 
 # GitHub 100MB limit
 assets/images/technology/*.zip

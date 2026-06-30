@@ -16,7 +16,7 @@ const ALL_IDS = ['IMG-008', 'IMG-015', 'IMG-032', 'IMG-078', 'IMG-080'];
 const VERSION = {
   'IMG-008': 'v9',
   'IMG-015': 'v2',
-  'IMG-032': 'v2',
+  'IMG-032': 'v6',
   'IMG-078': 'v2',
   'IMG-080': 'v2',
 };

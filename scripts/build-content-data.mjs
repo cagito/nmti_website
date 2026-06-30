@@ -15,6 +15,8 @@ import { LEAF_OVERVIEW_EXTRA } from './content-data/leaves-extra.mjs';
 import { HELPERS } from './content-data/helpers-template.mjs';
 import { sourcesToJsonLd } from './lib/citation-jsonld.mjs';
 import { resolveStandardSources, sourcesToHtml } from './lib/resolve-citations.mjs';
+import { compactSections } from './lib/compact-action-phrase.mjs';
+import { normalizeSections } from './lib/normalize-sections.mjs';
 import { getNode } from '../js/technology/dictionary.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -30,7 +32,7 @@ const INTRO = {
     '구조물·공종별·계측센서별·계측 시스템 기술 자료 — 개요, 측정 원리, 설치, 데이터 해석, 관리기준을 정리합니다.',
   sections: {
     overview:
-      '<p>NMTI <strong>건설 계측 기술 자료</strong>는 토목·지반·구조 현장에서 필요한 <strong>구조물·공종별</strong> 계측 항목, <strong>계측센서</strong> 선정·설치·해석, <strong>계측 시스템</strong>(데이터 로거·통신·전원·원격 모니터링) 구성을 한곳에서 확인할 수 있는 엔지니어링 매뉴얼입니다. 센서 제조가 아닌 <strong>현장 조건별 선정·설치·자동화·유지관리·데이터 분석</strong> 관점으로 정리합니다.</p><p>좌측 메뉴에서 <strong>구조물·공종별</strong>·<strong>계측센서별</strong>·<strong>계측 시스템</strong>을 선택하면 공종별 위험요인, 센서 적용·설치, 수동·자동·원격 운영 방식을 확인할 수 있습니다.</p><p><strong>건설기간 계측:</strong> 시공·굴착·축조 단계의 통합 계측 — <a href="#fields/tunnel/construction-phase">터널</a> · <a href="#fields/railway/construction-phase">철도·고속철</a> · <a href="#fields/dam/construction-phase">댐·제방</a> (준공 후 운영기·안전관리 계측과 구분)</p><p><strong>구조물·공종:</strong> 가시설·흙막이, 터널, 교량, 사면, 연약 지반, 철도, 댐·제방, 항만·해안, 건축·인접 구조물</p><p><strong>계측센서:</strong> 지중경사계, 지하수위계, 간극수압계, 하중계 등 20종 — 적용 현장·설치·해석 중심</p><p><strong>계측 시스템:</strong> 계측 방식, 데이터 로거, 통신·전송, 전원 구성, 원격 모니터링, 데이터 관리</p>',
+      '<p>NMTI <strong>건설 계측 기술 자료</strong>는 토목·지반·구조 현장에서 필요한 <strong>구조물·공종별</strong> 계측 항목, <strong>계측센서</strong> 선정·설치·해석, <strong>계측 시스템</strong>(데이터 로거·통신·전원·원격 모니터링) 구성을 한곳에서 확인할 수 있는 엔지니어링 매뉴얼입니다. 센서 제조가 아닌 <strong>현장 조건별 선정·설치·자동화·유지관리·데이터 분석</strong> 관점으로 정리합니다.</p><p>좌측 메뉴에서 <strong>구조물·공종별</strong>·<strong>계측센서별</strong>·<strong>계측 시스템</strong>을 선택하면 공종별 위험요인, 센서 적용·설치, 수동·자동·원격 운영 방식을 확인할 수 있습니다.</p><p><strong>건설중 계측:</strong> 시공·굴착·축조 단계의 통합 계측 — <a href="#fields/tunnel/construction-phase">터널</a> · <a href="#fields/railway/construction-phase">철도·고속철</a> · <a href="#fields/dam/construction-phase">댐·제방</a> (준공 후 운영기·안전관리 계측과 구분)</p><p><strong>구조물·공종:</strong> 가시설·흙막이, 터널, 교량, 사면, 연약 지반, 철도, 댐·제방, 항만·해안, 건축·인접 구조물</p><p><strong>계측센서:</strong> 지중경사계, 지하수위계, 간극수압계, 하중계 등 20종 — 적용 현장·설치·해석 중심</p><p><strong>계측 시스템:</strong> 계측 방식, 데이터 로거, 통신·전송, 전원 구성, 원격 모니터링, 데이터 관리</p>',
     purpose: [
       {
         title: '현장 의사결정 지원',
@@ -47,8 +49,13 @@ const INTRO = {
     ],
     principle:
       '<p>모든 계측은 <strong>초기치 설정 → 반복 측정 → 변화량 산정 → 관리기준 비교 → 원인 분석</strong>의 흐름으로 운영됩니다. 측정 원리를 이해하면 데이터 이상 여부와 센서 고장을 구분하는 데 도움이 됩니다.</p>',
-    installation:
-      '<p>기술자료는 설치 절차를 공통 프로세스로 정리합니다. 현장별 상세 시방은 계측관리계획서와 설계도서를 우선 적용합니다.</p><ol class="process-list"><li>계측관리계획서·설계도서 검토</li><li>위험 단면·대표 측점 선정</li><li>센서 설치 및 초기치 확정</li><li>자동화·원격계측 구성</li><li>관리기준·경보 체계 운영</li></ol>',
+    installation: [
+      '계측관리계획서·설계도서 검토',
+      '위험 단면·대표 측점 선정',
+      '센서 설치 및 초기치 확정',
+      '자동화·원격계측 구성',
+      '관리기준·경보 체계 운영'
+    ],
     data: {
       headers: ['구분', '확인 항목', '실무 포인트'],
       rows: [
@@ -289,6 +296,13 @@ function ensureKcsOfficer(html) {
 }
 
 const contentMap = buildContentMap();
+
+for (const entry of Object.values(contentMap)) {
+  if (entry?.sections) {
+    normalizeSections(entry.sections);
+    compactSections(entry.sections);
+  }
+}
 
 // Category / sensor metaDescriptions
 for (const [id, entry] of Object.entries(contentMap)) {

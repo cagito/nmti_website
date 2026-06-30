@@ -10,14 +10,15 @@ import {
 } from '../js/technology/dictionary.js';
 import { getContentForNode } from '../js/technology/content-data.js';
 import { seoDisplayTitle, seoMetaDescription, seoPageTitle } from '../js/technology/seo-title.js';
+import { buildUnifiedSectionsHtml } from '../js/technology/unified-section-render.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SITE = 'https://www.nmti.co.kr';
 const techRoot = join(__dirname, '..', 'technology');
 const lastmod = new Date().toISOString().slice(0, 10);
 
-/** Full static page already exists — sitemap points here instead. */
-const SKIP_IDS = new Set(['sensors/inclinometer']);
+/** Previously skipped — now generated with unified section preview. */
+const SKIP_IDS = new Set([]);
 
 function escapeHtml(str) {
   return String(str)
@@ -36,6 +37,28 @@ function stripHtml(html) {
 
 function seoUrl(nodeId) {
   return SITE + nodePathSeo(nodeId);
+}
+
+function seoLinkBuilder(nodeId) {
+  return SITE + nodePathSeo(nodeId);
+}
+
+function renderSeoSectionFigure(image) {
+  if (!image || image.placeholder) return '';
+  const webp = image.src && String(image.src).endsWith('.webp') ? image.src : '';
+  if (!webp) return '';
+  const url = '/homepage/' + String(webp).replace(/^\//, '');
+  const alt = escapeHtml(image.alt || image.caption || '');
+  return (
+    '<figure class="tech-seo-figure">' +
+    '<img class="img-protected" draggable="false" data-img-protect src="' +
+    url +
+    '" alt="' +
+    alt +
+    '" loading="lazy" decoding="async">' +
+    (image.caption ? '<figcaption>' + escapeHtml(image.caption) + '</figcaption>' : '') +
+    '</figure>'
+  );
 }
 
 function breadcrumbSchema(nodeId, title) {
@@ -145,8 +168,11 @@ function renderPage(nodeId, content) {
   const canonical = seoUrl(nodeId);
   const spaUrl = SITE + nodePath(nodeId);
   const imageUrl = heroImageUrl(content);
-  const overview = content.sections?.overview || '';
-  const principle = content.sections?.principle || '';
+  const unifiedBody = buildUnifiedSectionsHtml(content, seoLinkBuilder, {
+    includeAppendix: true,
+    renderFigure: renderSeoSectionFigure,
+    sectionWrapClass: 'tech-section tech-section--numbered tech-seo-section'
+  });
   const crumbs = getBreadcrumb(nodeId);
 
   const graph = [
@@ -215,8 +241,8 @@ function renderPage(nodeId, content) {
     '  <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">\n' +
     '  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">\n' +
     '  <link rel="stylesheet" href="/homepage/css/style.css?v=46">\n' +
-    '  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">\n' +
-    '  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>\n' +
+    '  <link rel="stylesheet" href="/homepage/css/technology.css?v=11">\n' +
+    '  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.15rem;margin:2rem 0 .75rem;font-weight:800}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}.tech-seo-article{margin-top:1rem}.tech-seo-section{margin-top:0}.tech-seo-figure{margin:1rem 0}.tech-seo-figure figcaption{font-size:.9rem;color:#555;margin-top:.35rem}</style>\n' +
     '  <script type="application/ld+json">\n' +
     JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }, null, 2) +
     '\n  </script>\n' +
@@ -234,8 +260,9 @@ function renderPage(nodeId, content) {
     escapeHtml(desc) +
     '</p>\n' +
     heroFigureHtml(content) +
-    (overview ? '    <section><h2>개요</h2>' + overview + '</section>\n' : '') +
-    (principle ? '    <section><h2>측정 원리</h2>' + principle + '</section>\n' : '') +
+    '    <article class="tech-article tech-article--unified tech-seo-article">\n' +
+    unifiedBody +
+    '    </article>\n' +
     (content.sections?.sources ? '    ' + content.sections.sources.replace(/class="tech-sources"/g, 'class="tech-sources tech-sources--seo"') + '\n' : '') +
     '    <p class="cta"><a href="' +
     spaUrl +

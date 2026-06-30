@@ -30,7 +30,7 @@
 
 | # | Exit | 검증 |
 |---|------|------|
-| E1 | P0 3건 PNG redline **PASS** 서명 | [002 v5](../ImageWorks/.../IMG-002_redline_v5_외부PNG.md) · [096 v4](../ImageWorks/.../IMG-096_redline_v4_외부PNG.md) · [004 v2](../ImageWorks/.../IMG-004_redline_v2_외부PNG.md) |
+| E1 | P0 3건 PNG redline **PASS** 서명 | [002 v5](../ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/redlines/IMG-002_redline_v5_외부PNG.md) · [096 v4](../ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/redlines/IMG-096_redline_v4_외부PNG.md) · [004 v2](../ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/redlines/IMG-004_redline_v2_외부PNG.md) |
 | E2 | P1 9건 동일 | §3.2 · §3.3 표 |
 | E3 | `productionMethod: ai-reviewed` · `visualReview` 갱신 | `image-review-registry.json` |
 | E4 | `npm run verify:local` · `audit:images:strict` PASS | 배포 전 |

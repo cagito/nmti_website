@@ -77,7 +77,7 @@ export const CATEGORY_SECTIONS = {
   'fields/tunnel': {
     tagline: '굴착으로 인한 지반·지보재 변형을 측정하여 터널 안정성 검증',
     overview:
-      '<p><strong>터널</strong>은 굴착으로 인한 지반 및 지보재의 변형을 측정하여 터널 안정성과 주변 영향성을 검증하는 계측입니다(KDS 4.1.5). 지표 및 지중침하, <strong>내공변위</strong>, <strong>천단침하</strong>, <strong>지중변위</strong>, 록볼트 축력, 숏크리트 응력, 막장전방 선행변위가 주요 항목입니다.</p><p><strong>건설기간 계측</strong>(<a href="#fields/tunnel/construction-phase">시공 단계 통합</a>)은 준공·운영기와 구분하여 굴착·지보·라이닝 단계별 측점·보고·운행철도 상부 보호를 통합 관리합니다.</p><p>NATM 터널에서는 계측 결과로 지보 패턴과 굴착 방법을 조정하는 관찰시공이 중요합니다. <strong>내공변위계</strong>(상부 아치 전단면 프로파일), <strong>천단침하 측점</strong>(<strong>자동광파기</strong>·수준), <strong>지중변위계</strong>, <strong>지중경사계</strong>, 록볼트·숏크리트 계측을 <strong>동일 단면</strong>에서 통합합니다. 계측값은 <strong>막장거리</strong>와 함께 해석합니다.</p><p>KDS <strong>선택 항목</strong>(지반 수평변위·시설물 경사·발파진동·소음)은 <strong>발파진동·영향권</strong> 리프와 영향권 <strong>지중경사계</strong>·<strong>구조물경사계</strong>·<strong>진동계</strong> 항목에서 다룹니다. 소음은 진동·민원 기준과 현장 측정으로 관리합니다.</p>',
+      '<p><strong>터널</strong>은 굴착으로 인한 지반 및 지보재의 변형을 측정하여 터널 안정성과 주변 영향성을 검증하는 계측입니다(KDS 4.1.5). 지표 및 지중침하, <strong>내공변위</strong>, <strong>천단침하</strong>, <strong>지중변위</strong>, 록볼트 축력, 숏크리트 응력, 막장전방 선행변위가 주요 항목입니다.</p><p><strong>건설중 계측</strong>(<a href="#fields/tunnel/construction-phase">시공 단계 통합</a>)은 준공·운영기와 구분하여 굴착·지보·라이닝 단계별 측점·보고·운행철도 상부 보호를 통합 관리합니다.</p><p>NATM 터널에서는 계측 결과로 지보 패턴과 굴착 방법을 조정하는 관찰시공이 중요합니다. <strong>내공변위계</strong>(상부 아치 전단면 프로파일), <strong>천단침하 측점</strong>(<strong>자동광파기</strong>·수준), <strong>지중변위계</strong>, <strong>지중경사계</strong>, 록볼트·숏크리트 계측을 <strong>동일 단면</strong>에서 통합합니다. 계측값은 <strong>막장거리</strong>와 함께 해석합니다.</p><p>KDS <strong>선택 항목</strong>(지반 수평변위·시설물 경사·발파진동·소음)은 <strong>발파진동·영향권</strong> 리프와 영향권 <strong>지중경사계</strong>·<strong>구조물경사계</strong>·<strong>진동계</strong> 항목에서 다룹니다. 소음은 진동·민원 기준과 현장 측정으로 관리합니다.</p>',
     purpose: [
       { title: '내공변위', body: '<strong>내공변위계</strong>로 전단면 프로파일·단면 변형을 확인합니다.' },
       { title: '천단침하', body: '<strong>천단침하 측점</strong>(<strong>프리즘</strong>)과 <strong>자동광파기</strong>로 천단 연직 침하를 측정하고 지표침하와 비교합니다.' },
@@ -363,7 +363,7 @@ export const CATEGORY_SECTIONS = {
   'fields/railway': {
     tagline: '철도 노반·궤도 변위·진동을 고빈도 감시하여 운행 안전 확보',
     overview:
-      '<p><strong>철도</strong>는 철도 노반, 궤도, 인접 구조물의 침하·변위·진동을 감시하여 열차 운행 안전과 인접공사 영향을 관리하는 계측입니다. 철도는 허용 변위가 매우 작고 운행 안전과 직결되므로 고빈도 계측과 신속한 경보 체계가 중요합니다.</p><p><strong>건설기간 계측</strong>(<a href="#fields/railway/construction-phase">道床·노반·궤도 시공</a>)은 신규·개량·고속철 시공 단계를 운영기 노반·궤도 계측과 구분합니다.</p><p>인접 굴착, 터널 하부 통과, 노반 보강, 교량 접속부 등에서 <strong>자동광파기</strong>, <strong>침하계</strong>, <strong>진동계</strong>, <strong>GNSS</strong>를 활용합니다. 계측값은 선로 유지관리 기준·운행 제한 기준과 즉시 연계되며, 야간·휴일 자동화가 필수적입니다. 인접공사 계획과 계측 빈도·기준을 사전에 합의하는 것이 실무 핵심입니다.</p>',
+      '<p><strong>철도</strong>는 철도 노반, 궤도, 인접 구조물의 침하·변위·진동을 감시하여 열차 운행 안전과 인접공사 영향을 관리하는 계측입니다. 철도는 허용 변위가 매우 작고 운행 안전과 직결되므로 고빈도 계측과 신속한 경보 체계가 중요합니다.</p><p><strong>건설중 계측</strong>(<a href="#fields/railway/construction-phase">道床·노반·궤도 시공</a>)은 신규·개량·고속철 시공 단계를 운영기 노반·궤도 계측과 구분합니다.</p><p>인접 굴착, 터널 하부 통과, 노반 보강, 교량 접속부 등에서 <strong>자동광파기</strong>, <strong>침하계</strong>, <strong>진동계</strong>, <strong>GNSS</strong>를 활용합니다. 계측값은 선로 유지관리 기준·운행 제한 기준과 즉시 연계되며, 야간·휴일 자동화가 필수적입니다. 인접공사 계획과 계측 빈도·기준을 사전에 합의하는 것이 실무 핵심입니다.</p>',
     purpose: [
       { title: '노반 안정', body: '노반 침하·융기를 <strong>침하계</strong>, <strong>자동광파기</strong>로 고빈도 감시합니다.' },
       { title: '궤도 변위', body: '궤도 변위·선형 변화를 정밀 측량으로 관리합니다.' },
@@ -411,7 +411,7 @@ export const CATEGORY_SECTIONS = {
   'fields/dam': {
     tagline: '댐·제방 안전관리 — 저수위·침투·누수·변형 응답의 통합 계측',
     overview:
-      '<p><strong>댐 안전관리 계측 체계</strong>는 저수위 변화에 따른 제체·기초의 침투, 누수, 변형 응답을 종합 관찰하여 이상 징후를 조기에 판단하는 안전관리 시스템입니다. 계측 항목은 센서 설치 위치, 측정값, 해석값, 관리기준, 조치 절차가 상호 연계되도록 구성합니다.</p><p><strong>건설기간 계측</strong>(<a href="#fields/dam/construction-phase">축조·성토 단계</a>)은 준공 후 누수·간극수압 안전관리와 구분하며, 원격계측·데이터관리 SW로 QC·보고를 연계합니다.</p><p>본 계측 체계는 댐의 저수위 변화에 따른 제체 및 기초지반의 수리·역학적 응답을 관찰하기 위한 안전관리 시스템입니다. 주요 계측 항목은 <strong>저수위</strong>, <strong>간극수압</strong>, <strong>누수량</strong>, <strong>탁도</strong>, <strong>침하</strong>, <strong>수평변위</strong>이며, 각 계측값은 저수위·강우·지진 등 외력 조건과 연계하여 분석합니다.</p>',
+      '<p><strong>댐 안전관리 계측 체계</strong>는 저수위 변화에 따른 제체·기초의 침투, 누수, 변형 응답을 종합 관찰하여 이상 징후를 조기에 판단하는 안전관리 시스템입니다. 계측 항목은 센서 설치 위치, 측정값, 해석값, 관리기준, 조치 절차가 상호 연계되도록 구성합니다.</p><p><strong>건설중 계측</strong>(<a href="#fields/dam/construction-phase">축조·성토 단계</a>)은 준공 후 누수·간극수압 안전관리와 구분하며, 원격계측·데이터관리 SW로 QC·보고를 연계합니다.</p><p>본 계측 체계는 댐의 저수위 변화에 따른 제체 및 기초지반의 수리·역학적 응답을 관찰하기 위한 안전관리 시스템입니다. 주요 계측 항목은 <strong>저수위</strong>, <strong>간극수압</strong>, <strong>누수량</strong>, <strong>탁도</strong>, <strong>침하</strong>, <strong>수평변위</strong>이며, 각 계측값은 저수위·강우·지진 등 외력 조건과 연계하여 분석합니다.</p>',
     purpose: [
       { title: '수위·간극수압', body: '저수위 변화에 따른 제체·기초 <strong>간극수압</strong>과 수두 조건을 관리합니다.' },
       { title: '침투·누수', body: '<strong>간극수압계</strong>·해석 침윤선과 하류 <strong>누수량·탁도</strong>로 침투·누수 이상을 판단합니다.' },

@@ -8,12 +8,12 @@
 
 | ID | 등급 | status | 검수일 | P | cite (KDS/KCS) | requiresReaudit |
 |----|------|--------|--------|---|----------------|-----------------|
-| IMG-001 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-001 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-002 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-003 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-004 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-005 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-006 | PASS | reviewed | 2026-06-29 | — | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-006 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-007 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-008 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-009 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
@@ -22,17 +22,17 @@
 | IMG-012 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-013 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-014 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
-| IMG-015 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-015 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-016 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-017 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-018 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-019 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
-| IMG-020 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
+| IMG-020 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-021 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-022 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.6 · KCS 11 10 15:2025 §3 | — |
 | IMG-023 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.7 · KCS 11 10 15:2025 §3 | — |
-| IMG-024 | PASS | reviewed | 2026-06-28 | P0 | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 | — |
-| IMG-025 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-024 | PASS | reviewed | 2026-06-29 | P0 | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-025 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-026 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-027 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-028 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
@@ -42,7 +42,7 @@
 | IMG-032 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-033 | PASS | reviewed | 2026-06-26 | P0 | KCS 54 20 25:2018 §3.2 | — |
 | IMG-034 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-035 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-035 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-036 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-037 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-038 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
@@ -52,10 +52,10 @@
 | IMG-042 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-043 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-044 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-045 | PASS | reviewed | 2026-06-27 | P0 | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 | — |
+| IMG-045 | PASS | reviewed | 2026-06-29 | P0 | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 | — |
 | IMG-046 | PASS | reviewed | 2026-06-27 | P1 | KCS 11 10 15:2025 §3.1.2 · KCS 11 10 15:2025 §3.2.4 | — |
 | IMG-047 | PASS | reviewed | 2026-06-27 | P1 | KCS 11 10 15:2025 §3.1.2 | — |
-| IMG-048 | PASS | reviewed | 2026-06-27 | P1 | KCS 11 10 15:2025 §3.1.2 · KCS 11 10 15:2025 §3.2.4 | — |
+| IMG-048 | PASS | reviewed | 2026-06-29 | P1 | KCS 11 10 15:2025 §3.1.2 · KCS 11 10 15:2025 §3.2.4 | — |
 | IMG-049 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-050 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-051 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
@@ -65,10 +65,10 @@
 | IMG-055 | PASS | reviewed | 2026-06-27 | P1 | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
 | IMG-056 | PASS | reviewed | 2026-06-27 | P0 | — | — |
 | IMG-057 | PASS | reviewed | 2026-06-27 | — | — | — |
-| IMG-058 | PASS | reviewed | 2026-06-27 | P0 | KCS 11 10 15:2025 §3.1.2 | — |
+| IMG-058 | PASS | reviewed | 2026-06-29 | P0 | KCS 11 10 15:2025 §3.1.2 | — |
 | IMG-059 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-060 | PASS | reviewed | 2026-06-27 | P1 | — | — |
-| IMG-061 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
+| IMG-061 | PASS | reviewed | 2026-06-29 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-062 | PASS | reviewed | 2026-06-22 | P2 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-063 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-064 | PASS | reviewed | 2026-06-29 | P2 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
@@ -85,8 +85,8 @@
 | IMG-075 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
 | IMG-076 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 | — |
 | IMG-077 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.2.1 · KCS 11 10 15:2025 §3.2.3 | — |
-| IMG-078 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-079 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
+| IMG-078 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
+| IMG-079 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-080 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-081 | PASS | reviewed | 2026-06-29 | P0 | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-082 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
@@ -96,14 +96,14 @@
 | IMG-086 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
 | IMG-087 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
 | IMG-088 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
-| IMG-089 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-090 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-091 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-089 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-090 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-091 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-092 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.9 | — |
 | IMG-093 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.1.5 | — |
 | IMG-096 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-097 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 | — |
-| IMG-098 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
+| IMG-098 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
 | IMG-099 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.9.1.1 | — |
 | IMG-100 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-101 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
@@ -112,12 +112,12 @@
 | IMG-102 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3 · KDS 11 10 15:2025 §1.3 | — |
 | IMG-103 | PASS | reviewed | 2026-06-29 | — | KCS 24 99 05:2023 §3.2 · KDS 11 10 15:2025 §4.2.1.6 | — |
 | IMG-104 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.2.1.6 | — |
-| IMG-105 | PASS | reviewed | 2026-06-27 | — | KCS 24 99 05:2023 §3.2 · KDS 11 10 15:2025 §4.2.1.9 | — |
-| IMG-106 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.2.1.9 | — |
-| IMG-107 | PASS | reviewed | 2026-06-27 | — | KCS 24 99 05:2023 §3.2 | — |
-| IMG-108 | PASS | reviewed | 2026-06-27 | — | — | — |
-| IMG-109 | PASS | reviewed | 2026-06-27 | — | KCS 24 99 05:2023 §3.2 | — |
-| IMG-110 | PASS | reviewed | 2026-06-27 | — | KCS 24 99 05:2023 §3.2 | — |
+| IMG-105 | PASS | reviewed | 2026-06-29 | — | KCS 24 99 05:2023 §3.2 · KDS 11 10 15:2025 §4.2.1.9 | — |
+| IMG-106 | PASS | reviewed | 2026-06-29 | — | KDS 11 10 15:2025 §4.2.1.9 | — |
+| IMG-107 | PASS | reviewed | 2026-06-29 | — | KCS 24 99 05:2023 §3.2 | — |
+| IMG-108 | PASS | reviewed | 2026-06-29 | — | — | — |
+| IMG-109 | PASS | reviewed | 2026-06-29 | — | KCS 24 99 05:2023 §3.2 | — |
+| IMG-110 | PASS | reviewed | 2026-06-29 | — | KCS 24 99 05:2023 §3.2 | — |
 | IMG-111 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-112 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.1.7 · KCS 11 10 15:2025 §3 | — |
 | IMG-113 | PASS | reviewed | 2026-06-27 | — | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 | — |
@@ -138,14 +138,14 @@
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase 6 Q0: C0 지표면·1F·출입구 · C1~C4 INSTRUMENTATION §3.1 · render-p1 v8. |
+| 기술 오류 | v4 ai-reviewed G-01~15·3영역·BORE-GL-01·SETTLE-01 · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Phase 6 formal — Pillow v8·doc 19 Q0 |
-| 검수일 | 2026-06-22 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | EXC-05·§3.1.1 — 좌→우 단면·프리즘 측점·구조물경사계 표면 부착 |
 
 **금지 오류 대조:**
@@ -309,7 +309,7 @@
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v3 PASS — docs/58 · 4단계 굴착저면 · 7시 어스앵커 LC · Pillow render_img006 |
+| 기술 오류 | P0 v4 ai-reviewed — 4단계 굴착저면·어스앵커 LC만·ANC-CLOCK·운영루프 · prohibitedErrors 유지 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -448,7 +448,7 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v3 PASS — docs/116 사장교 10종 · Pillow render_img011 · BRI-OV-01~10 |
+| 기술 오류 | v4 ai-reviewed — Pillow R1. 사장교 10종 callout · ⑩-A/B 분리 · 로거·원격 흐름 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -456,7 +456,7 @@
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
 | 검수일 | 2026-06-29 |
-| 금지 대조 | v3 redline — docs/116 §8 10항 PASS |
+| 금지 대조 | v4 ai-reviewed — BRI-OV 10종·사장교 단일 (agent) |
 
 **금지 오류 대조:**
 
@@ -545,7 +545,7 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v2.1 BRI-EJ PASS — 양측 브라켓·핑거형 이음·보호박스 (docs/52·53) |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 와이어식 신축이음계·핑거형 이음·양측 브라켓·늘음/줄음, BRI-EJ-01~13. 정본 docs/52. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -576,14 +576,14 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략 |
+| 기술 오류 | v4 ai-reviewed DISP-ATS-01·BORE-GL-01·활동면추정·SLOPE-01 · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | Phase Z ZIP-AUD fix — Pillow v+1 |
 
 **금지 오류 대조:**
@@ -608,13 +608,13 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 Pillow/WebP PASS — 추정 원호활동면, 전단변형 집중 구간, 활동면 추정 구간, 안정해석 검토 모식도 분리. 최대변위=활동면 및 IPI 단독 확정 표현 제거 |
+| 기술 오류 | P0 v5 ai-reviewed — INTERP-01 추정 원호활동면·최대변위≠활동면·IPI 단독확정 금지 · prohibitedErrors 유지 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex CAD redraw |
+| 검수자 | agent |
 | 검수일 | 2026-06-29 |
 | 금지 대조 | v4 Pillow/WebP — INTERP-01, SLOPE-01, IPI-EMBED, G.W.L≠piezo, 최대변위=활동면 금지 대조 PASS |
 
@@ -732,8 +732,8 @@
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
@@ -831,14 +831,14 @@
 | 관련 계측기 | 분야별/댐 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 local-corrected PASS — v3 기준 제조사 문자 제거, 제목 보강, 침하 그래프 음수·하향 누적 보정 |
+| 기술 오류 | P0 v4 ai-reviewed — 필댐 6항목·DAM-01 침하·침윤선·V-notch·7단계 흐름 · prohibitedErrors 유지 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex local correction + visual review |
-| 검수일 | 2026-06-28 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | v4 local-corrected — DAM-01 침하 방향 보정, 제조사 문자 제거 |
 
 **금지 오류 대조:**
@@ -867,14 +867,14 @@
 | 관련 계측기 | 센서별/지중경사계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase 5 v2: IPI 다점·4홈 casing·안정층 Base·자동 로거 체인. 수동 프로브는 비교 inset만. |
+| 기술 오류 | v4 ai-reviewed IPI-4홈·BORE-GL-01·누적변위-깊이·AUTO-01 · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Phase 5 Pillow v2 — AUTO-01 IPI·datalogger chain |
-| 검수일 | 2026-06-22 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | §3.3·AUTO-01 — IPI hero · manual inset only |
 
 **금지 오류 대조:**
@@ -898,7 +898,7 @@
 | 관련 계측기 | 센서별/지중경사계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 3차 — A/B축 현장 방향 미연결. MAJOR_FIX. redline v2 미검수. docs/90 · docs/91 · interim body expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): Guide groove 4방향·Probe wheel, AXIS-01 A/B축 굴착방향 연결, 화면좌표≠현장축 경고. 정본 docs/142. ZIP-AUD-21 MAJOR_FIX 해소. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -987,7 +987,7 @@
 | 관련 계측기 | 센서별/지중경사계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P1 Sprint5 v3 — 변위집중≠활동면·간격변위 · docs/91 §2 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 누적·간격변위, 변위집중≠활동면, 단일IPI확정금지. 정본 docs/144. INTERP-01. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -1072,13 +1072,13 @@
 | 관련 계측기 | 센서별/침하계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | ai-reviewed PASS — Z-1c 연장봉 상단=기준점. 재작도: redline v2. SETTLE-01. |
+| 기술 오류 | v6 ai-reviewed — 침하판·연장봉·보호관·측정점≠기준점 SETTLE-01 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex CAD redraw |
+| 검수자 | agent |
 | 검수일 | 2026-06-29 |
 | 금지 대조 | Phase Z ZIP-AUD fix — Pillow v+1 |
 
@@ -1186,7 +1186,7 @@
 | 관련 계측기 | 센서별/변형률계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 4차 — 변형률=즉시 응력 판정. MAJOR_FIX. docs/92 Phase AC-2 · interim body expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 철근·강재 부착, 측정축, 중립축, 온도보정·E, 변형률≠즉시 안전판정. 정본 docs/141. ZIP-AUD-37 MAJOR_FIX 해소. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -1214,7 +1214,7 @@
 | 관련 계측기 | 센서별/균열계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 2차 — 균열폭만·전단단차회전 누락. MAJOR_FIX. redline v2 미검수. docs/81 AA-2e · docs/85 · interim body expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 ai-reviewed CRACK-01 · 균열폭+전단단차회전 한계 · docs/138 · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -1244,7 +1244,7 @@
 | 관련 계측기 | 센서별/구조물경사계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 2차 — 브라켓 무시·구조물 경사 단정. MAJOR_FIX. redline v2 미검수. docs/81 AA-2f · docs/85 · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 ai-reviewed TILT-STRUCT-01 · 강체 브라켓·국부 경사 · docs/139 · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -1356,7 +1356,7 @@
 | 관련 계측기 | 센서별/자동광파기 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 외부 ZIP 3차 — 기준망·후시점·기상보정 누락. MAJOR_FIX. redline v2 미검수. docs/90 · docs/91 · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 기준점·후시점·시준선·프리즘·ΔXΔY, 기상보정, 기준점이동 경고. 정본 docs/143. ZIP-AUD-27 MAJOR_FIX 해소. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -1387,15 +1387,15 @@
 | 관련 계측기 | 센서별/GNSS |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 Pillow/WebP PASS — 기준국은 안정 지반, 이동국은 계측 대상 2점 이상, RTK/차분·무선 통신·중앙 서버 흐름 분리 |
+| 기술 오류 | v5 ai-reviewed — Pillow R1. 기준국(안정 외부)·이동국 3점·RTK 보정·LTE→서버·ΔX/Y/Z |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex CAD redraw |
+| 검수자 | agent |
 | 검수일 | 2026-06-29 |
-| 금지 대조 | v4 Pillow/WebP — GNSS 기준국 직접 시준·광학식 측량 요소·제조사 표기 제거 |
+| 금지 대조 | v5 ai-reviewed — ZIP-AUD-07 보정정보/광학 시준 분리 (agent) |
 
 **금지 오류 대조:**
 
@@ -1447,14 +1447,14 @@
 | 관련 계측기 | 시스템/데이터로거 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P1-1 v3 ai-reviewed — LOGGER-SIG-01·센서입력·전원·통신·저장 · redline v2 · docs/91 |
+| 기술 오류 | v4 ai-reviewed LOGGER-SIG-01·P0-3함체·신호형식분리 · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
@@ -1534,14 +1534,14 @@
 | 관련 계측기 | 시스템/통신 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P1-1 v3 ai-reviewed — LTE-BUF-01·버퍼·APN/VPN·ACK · redline v2 · docs/97 |
+| 기술 오류 | v4 ai-reviewed LTE-BUF-01·GW-ROLE-01·APN/VPN/ACK · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
@@ -1811,14 +1811,14 @@
 | 관련 계측기 | 시스템/통합 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P1-1 v2 ai-reviewed — §4.13 E2E 5블록·solar · ARCH-01 |
+| 기술 오류 | v4 ai-reviewed ARCH-01·5계층E2E·전원·통신·모드·뇌금지 · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | ARCH-01~03 · INSTRUMENTATION §3.36 |
 
 **금지 오류 대조:**
@@ -1895,14 +1895,14 @@
 | 관련 계측기 | 분야/터널 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v2 TUN-CROWN PASS — 천단 측점·ATS, 와이어·앵커·로거 제거 (docs/50) |
+| 기술 오류 | v4 ai-reviewed TUN-CROWN·천단측점·ATS시준·와이어금지 · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | TUN-CROWN-01~12 redline v2 — 와이어·앵커·로거 0건 |
 
 **금지 오류 대조:**
@@ -2323,15 +2323,15 @@
 | 관련 계측기 | 분야별/터널 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | ai-reviewed PASS v2 — Z-1d 두부 LC=전체 축력. 재작도: redline v2. docs/77. |
+| 기술 오류 | v3 ai-reviewed — Pillow R1. 천단·어깨 볼트 암반 관입·축력계+변형률계·두부 LC≠전체 분포(Z-1d) |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent Phase Z |
-| 검수일 | 2026-06-26 |
-| 금지 대조 | Phase Z ZIP-AUD fix — Pillow v+1 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
+| 금지 대조 | v3 ai-reviewed — ZIP-AUD-09 Z-1d 두부/분포 분리 (agent) |
 
 **금지 오류 대조:**
 
@@ -2350,14 +2350,14 @@
 | 관련 계측기 | 분야별/터널 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | TUN-SC v3 — 암반|숏크리트|굴착 · SG 매립 |
+| 기술 오류 | v4 ai-reviewed TUN-SC·암반|숏크리트|굴착·SG매립·σ · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
@@ -2378,15 +2378,15 @@
 | 관련 계측기 | 분야별/터널 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | ai-reviewed PASS — Z-1e 1점 SG=전체 응력. 재작도: redline v2. docs/77. |
+| 기술 오류 | v5 ai-reviewed — Pillow R1 완료. H형강 스틸세트·천단·어깨·측벽 다점 SG·N/M 분리(Z-1e) |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex CAD redraw |
+| 검수자 | agent |
 | 검수일 | 2026-06-29 |
-| 금지 대조 | Phase Z ZIP-AUD fix — Pillow v+1 |
+| 금지 대조 | v5 ai-reviewed — ZIP-AUD-10 다점 SG·플랜지 내외측 (agent) |
 
 **금지 오류 대조:**
 
@@ -2586,14 +2586,14 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v3 ai-reviewed PASS — redline v2 서명 2026-06-27 · docs/88 |
+| 기술 오류 | v4 ai-reviewed SLO-TILT-01·pad·θ·지표경사계 · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | Phase B v3 ai-reviewed — redline 서명 |
 
 **금지 오류 대조:**
@@ -2617,14 +2617,14 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v5 ai-reviewed PASS — redline v2 서명 2026-06-27 · docs/88 |
+| 기술 오류 | v5 ai-reviewed SLO-WIRE-01·배면와이어·옹벽프리즘·ΔXΔY · 2026-06-29 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | Phase B v5 ai-reviewed — redline 서명 |
 
 **금지 오류 대조:**
@@ -2646,14 +2646,14 @@
 | 관련 계측기 | 계측기/센서 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v3 ai-reviewed PASS — redline v2 서명 2026-06-27 · docs/88 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): GL·well cap, 앵커3·로드·헤드, 축방향변위, ≠IPI·≠신축. 정본 docs/146. MPX-01~03. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-27 |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | Phase B v3 ai-reviewed — redline 서명 |
 
 **금지 오류 대조:**
@@ -2731,15 +2731,15 @@
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 Pillow/WebP PASS — 흙막이 굴착 배면 주변지반 4종 배치, H=굴착깊이, 지표침하 측점 표기, 옹벽·Sand Mat·침하판·슬립면 제거 |
+| 기술 오류 | v5 ai-reviewed — Pillow/CAD 와이어프레임 대체. SOE-SURR-01 4종·H=굴착깊이·BORE-GL-01·SETTLE-01. 옹벽·Sand Mat·슬립면 제거 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex CAD redraw |
+| 검수자 | agent |
 | 검수일 | 2026-06-29 |
-| 금지 대조 | v4 Pillow/WebP — SOE-SURR-01, SETTLE-01, BORE-GL-01, SOE-INST-01 대조 PASS |
+| 금지 대조 | v5 ai-reviewed — SOE-SURR-01, SETTLE-01, BORE-GL-01, SOE-INST-01 대조 (agent) |
 
 **금지 오류 대조:**
 
@@ -2795,14 +2795,14 @@
 | 관련 계측기 | 분야별/항만·호안 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | render-harbor-audit-fixes.py · HAR-01~04 수정 완료 |
+| 기술 오류 | P0 v3 ai-reviewed — HAR-01~04 외해·조위계·tidal lag G.W.L·관측공 screen/filter · prohibitedErrors 유지 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 | 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
 
 **금지 오류 대조:**
@@ -2989,7 +2989,7 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v3 GNSS PASS — docs/120 · Pillow render_img103 · 경간 상부 ΔZ→δ |
+| 기술 오류 | v5 GNSS ai-reviewed (2026-06-29): 경간=교각간, 이동국 경간중앙 1개, 1/4·3/4·교각 GNSS 금지, ΔZ→δ. 정본 docs/148 SPAN-MID-01. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -3005,6 +3005,8 @@
 - Y축 침하량
 - 하부 와이어식 처짐계 hero (DEF-GNSS-04)
 - 교각 측면/중간 GNSS (DEF-GNSS-05)
+- 1/4·3/4 경간 GNSS·복수 이동국 (SPAN-MID-01)
+- 교대↔교대 경간 표시
 - 와이어+GNSS 동시 주계측 (DEF-GNSS-06)
 - 생성 시 로고·워터마크
 
@@ -3020,7 +3022,7 @@
 | 관련 계측기 | 센서/처짐계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | AI Sprint2b — IMG-104 교량 확장 재작도 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 와이어식·LVDT 처짐 δ, ≠침하계, IMG-103 GNSS 분리. 정본 docs/150. BRI-DEF. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -3033,6 +3035,7 @@
 
 - 침하계·침하판
 - 지반 침하 단면
+- GNSS+와이어 동시 주계측 (DEF-GNSS-06)
 
 <a id="IMG-105"></a>
 
@@ -3046,19 +3049,22 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | AI Sprint2b — IMG-105 교량 확장 재작도 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 사장교 주케이블 케이블장력계·f→T·BRI-CT. 정본 docs/151. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 
 **금지 오류 대조:**
 
 - 어스앵커 로드셀
 - IMG-004 재사용
+- 진동현식·VW 라벨 (METHOD-01)
+- 흙막이·굴착 배경 (CT-BRI-02)
+- 임의 관리기준 장력표 (CT-BRI-04)
 
 <a id="IMG-106"></a>
 
@@ -3072,19 +3078,20 @@
 | 관련 계측기 | 센서/케이블장력계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | AI Sprint2b — IMG-106 교량 확장 재작도 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 주케이블 클램프·f→T·설치개념·BRI-CT. 정본 docs/155. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 
 **금지 오류 대조:**
 
 - 하중계=케이블장력
 - 버팀보 로드셀
+- 어스앵커 T/P (IMG-004)
 - 진동현식·VW 라벨 (METHOD-01)
 
 <a id="IMG-107"></a>
@@ -3099,19 +3106,22 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | AI Sprint2b — IMG-107 교량 확장 재작도 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): PSC·강재 휨 SG·ε→σ·전단 inset·BRI-STR. 정본 docs/152. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 
 **금지 오류 대조:**
 
 - 침하계 단면
 - 흙막이 배경
+- 숏크리트 hero (STR-BRI-03)
+- 무응력계=SG 동일 캡션 (STR-BRI-04)
+- 진동현식·VW 라벨 (METHOD-01)
 
 <a id="IMG-108"></a>
 
@@ -3125,18 +3135,22 @@
 | 관련 계측기 | 센서/무응력계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | AI Sprint2c — IMG-108 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 무응력계 ε₀·크리프보정·BRI-STR. 정본 docs/156. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 
 **금지 오류 대조:**
 
 - 일반 SG와 동일 캡션
+- 침하·지반 단면 (STR-BRI-01)
+- 숏크리트 hero (STR-BRI-03)
+- 지중경사계·균열계 hero
+- 진동현식·VW 라벨 (METHOD-01)
 
 <a id="IMG-109"></a>
 
@@ -3150,19 +3164,22 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | AI Sprint2c — IMG-109 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 주탑·교면 풍향풍속·BRI-WND. 정본 docs/153. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 
 **금지 오류 대조:**
 
 - 사면 강우 hero만
 - 지하수위계 단독
+- 풍향·풍속 벡터 없음 (WND-BRI-03)
+- 임의 풍하중 관리표 (WND-BRI-04)
+- 진동현식·VW 라벨 (METHOD-01)
 
 <a id="IMG-110"></a>
 
@@ -3176,14 +3193,14 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | AI Sprint2c — IMG-110 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 받침 슬라이드·회전·변위계·BRI-BRG. 정본 docs/154. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor Agent |
-| 검수일 | 2026-06-27 |
+| 검수자 | agent |
+| 검수일 | 2026-06-29 |
 
 **금지 오류 대조:**
 
@@ -3191,10 +3208,11 @@
 - 종·횡변위 제목
 - 신축이음 핑거형 hero
 - GNSS 절대좌표 혼합
+- 진동현식·VW 라벨 (METHOD-01)
 
 <a id="IMG-111"></a>
 
-### IMG-111 터널 건설기간 계측 개념도
+### IMG-111 터널 건설중 계측 개념도
 
 | 항목 | 내용 |
 |------|------|
@@ -3204,7 +3222,7 @@
 | 관련 계측기 | 분야별/터널 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 건설기간 계측 hero — ai-reviewed PNG 등록 |
+| 기술 오류 | 건설중 계측 hero — ai-reviewed · docs/153 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -3215,7 +3233,7 @@
 
 <a id="IMG-112"></a>
 
-### IMG-112 철도·고속철도 건설기간 계측 개념도
+### IMG-112 철도·고속철도 건설중 계측 개념도
 
 | 항목 | 내용 |
 |------|------|
@@ -3225,7 +3243,7 @@
 | 관련 계측기 | 분야별/철도 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 건설기간 계측 hero — ai-reviewed PNG 등록 |
+| 기술 오류 | 건설중 계측 hero — ai-reviewed · docs/153 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -3236,7 +3254,7 @@
 
 <a id="IMG-113"></a>
 
-### IMG-113 댐·제방 건설기간 계측 개념도
+### IMG-113 댐·제방 건설중 계측 개념도
 
 | 항목 | 내용 |
 |------|------|
@@ -3246,7 +3264,7 @@
 | 관련 계측기 | 분야별/댐 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | 건설기간 계측 hero — ai-reviewed PNG 등록 |
+| 기술 오류 | 건설중 계측 hero — ai-reviewed · docs/153 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |

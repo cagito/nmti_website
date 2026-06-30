@@ -21,8 +21,8 @@
   <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="/homepage/css/style.css?v=46">
-  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">
-  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=11">
+  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.15rem;margin:2rem 0 .75rem;font-weight:800}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}.tech-seo-article{margin-top:1rem}.tech-seo-section{margin-top:0}.tech-seo-figure{margin:1rem 0}.tech-seo-figure figcaption{font-size:.9rem;color:#555;margin-top:.35rem}</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,7 +66,7 @@
       "headline": "LTE M2M",
       "description": "LTE M2M의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
       "inLanguage": "ko-KR",
-      "dateModified": "2026-06-27",
+      "dateModified": "2026-06-30",
       "mainEntityOfPage": "https://www.nmti.co.kr/homepage/technology/instruments/communication/lte-remote/",
       "publisher": {
         "@type": "Organization",
@@ -144,8 +144,36 @@
     <h1>LTE M2M</h1>
     <p class="lead">LTE M2M의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.</p>
     <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-048_LTE-M2M-통신-구성도_센서로거모뎀서버웹모바일.webp" alt="LTE M2M 통신 구성도 - LTE M2M — 로컬 버퍼·재전송·APN·ACK (Phase AD)" width="1200" height="675" loading="lazy" decoding="async"><figcaption>LTE M2M 통신 구성도 — 로거·모뎀·망·서버·클라이언트</figcaption></figure>
-    <section><h2>개요</h2><p><strong>LTE M2M</strong>은 현장 데이터로거·IoT 게이트웨이에 연결된 <strong>LTE M2M 모뎀</strong>을 통해 계측 데이터를 이동통신망(M2M 전용 SIM·Cat-M/NB-IoT 등)으로 중앙 서버·클라우드에 전송하는 구성입니다. 인프라가 제한된 터널·굴착·사면 현장에서 <strong>원격 자동계측</strong>의 핵심 통신 수단입니다.</p></section>
-    <section><h2>측정 원리</h2><p><strong>LTE M2M 모뎀</strong>과 외부 안테나로 IP 링크를 구성하고, 로거(RS-232/Ethernet) 또는 게이트웨이가 TCP/UDP·MQTT 등으로 서버에 접속합니다. 다수 로거는 게이트웨이 뒤단 1회선 M2M, 단일 로거는 모뎀 직결을 선택합니다. 신호 약화 구간은 외부 안테나·중계기를 검토합니다.</p></section>
+    <article class="tech-article tech-article--unified tech-seo-article">
+<section class="tech-section tech-section--numbered tech-seo-section" id="overview" data-section="1">
+<h2 class="tech-section__title">1. 시스템 개요</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--overview"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">목적</strong><span class="tech-bullet-list__text"><strong>LTE M2M</strong>은 현장 데이터로거·IoT 게이트웨이에 연결된 <strong>LTE M2M 모뎀</strong>을 통해 계측 데이터를 이동통신망(M2M 전용 SIM·Cat-M/NB-IoT 등)으로 중앙 서버·클라우드에 전송하는 구성입니다. 인프라가 제한된 터널·굴착·사면 현장에서 <strong>원격 자동계측</strong>의 핵심 통신 수단입니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="purpose" data-section="2">
+<h2 class="tech-section__title">2. 구성 요소</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--labeled tech-bullet-list--purpose"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">M2M 무선 전송</strong><span class="tech-bullet-list__text">LTE M2M 모뎀·SIM으로 유선 공사 없이 실시간·주기 전송</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">원격 모니터링</strong><span class="tech-bullet-list__text">웹·모바일 대시보드 연동</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">경보</strong><span class="tech-bullet-list__text">SMS·푸시·이메일 연계</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="principle" data-section="3">
+<h2 class="tech-section__title">3. 현장 구성·원리</h2>
+<div class="tech-section__body">
+<figure class="tech-seo-figure"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-048_LTE-M2M-통신-구성도_센서로거모뎀서버웹모바일.webp" alt="LTE M2M 통신 구성도 - LTE M2M — 로컬 버퍼·재전송·APN·ACK (Phase AD)" loading="lazy" decoding="async"><figcaption>LTE M2M 통신 구성도 — 로거·모뎀·망·서버·클라이언트</figcaption></figure>
+<ul class="tech-bullet-list tech-bullet-list--siteLayout"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">구성 흐름</strong><span class="tech-bullet-list__text">현장 <strong>데이터로거</strong> 또는 <strong>IoT 게이트웨이</strong> → <strong>LTE M2M 모뎀</strong>(외부 안테나) → 이동통신망 → VPN·방화벽 → <strong>중앙 서버·DB</strong> → 웹·모바일 대시보드·경보.</span></li></ul><ul class="tech-bullet-list tech-bullet-list--principle"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">측정 대상</strong><span class="tech-bullet-list__text"><strong>LTE M2M 모뎀</strong>과 외부 안테나로 IP 링크를 구성하고, 로거(RS-232/Ethernet) 또는 게이트웨이가 TCP/UDP·MQTT 등으로 서버에 접속합니다. 다수 로거는 게이트웨이 뒤단 1회선 M2M, 단일 로거는 모뎀 직결을 선택합니다. 신호 약화 구간은 외부 안테나·중계기를 검토합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="installation" data-section="4">
+<h2 class="tech-section__title">4. 설치·운영</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--plain tech-bullet-list--installation"><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">M2M 요금제 · SIM · 통신사 다중화 검토</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">LTE M2M 모뎀 · 안테나 · 케이블 · 서지 보호 설치</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">VPN · 방화벽 · 고정 IP 또는 DDNS</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">전송 주기 · 패킷 압축 설정</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">통신 장애 시 로컬 버퍼 · 알림</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="management" data-section="5">
+<h2 class="tech-section__title">5. 데이터·관리</h2>
+<div class="tech-section__body">
+<table class="spec-table"><thead><tr><th scope="col">지표</th><th scope="col">목표</th><th scope="col">조치</th></tr></thead><tbody><tr><th scope="row">가용성</th><td>99%+</td><td>SIM · 안테나 · 모뎀 점검</td></tr><tr><th scope="row">지연</th><td>수초~수분</td><td>주기 조정</td></tr><tr><th scope="row">데이터량</th><td>M2M 요금 한도</td><td>압축 · 필터</td></tr><tr><th scope="row">보안</th><td>암호화</td><td>VPN 필수</td></tr></tbody></table><h3 class="tech-subheading">장애 유형 및 점검</h3><table class="spec-table"><thead><tr><th scope="col">증상</th><th scope="col">원인</th><th scope="col">조치</th></tr></thead><tbody><tr><th scope="row">링크 다운</th><td>SIM · 안테나 · 음영</td><td>안테나 · 중계 · 다중 SIM</td></tr><tr><th scope="row">패킷 손실</th><td>대역 · QoS</td><td>압축 · 주기 · 버퍼</td></tr><tr><th scope="row">지연 증가</th><td>서버 · VPN</td><td>경로 · 부하 점검</td></tr><tr><th scope="row">데이터 누락</th><td>로거 버퍼</td><td>재전송 · 로컬 SD 확인</td></tr></tbody></table><ul class="tech-bullet-list tech-bullet-list--criteria"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">기준 출처</strong><span class="tech-bullet-list__text">월 M2M 데이터 사용량·링크 다운타임·경보 지연을 모니터링합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--appendix" id="faq">
+<h2 class="tech-section__title">자주 묻는 질문</h2>
+<div class="tech-section__body"><div class="faq-list"><details class="faq-item"><summary>LTE M2M과 IoT 게이트웨이 차이는?</summary><div class="faq-item__body"><p>게이트웨이는 다로거 집계·프로토콜 변환, <strong>LTE M2M 모뎀</strong>은 셀룰러 송신 장치입니다. 규모에 따라 게이트웨이→모뎀 또는 로거→모뎀 직결을 선택합니다.</p></div></details><details class="faq-item"><summary>5G가 필요한가요?</summary><div class="faq-item__body"><p>대부분 계측은 LTE Cat-M·NB-IoT·일반 LTE M2M으로 충분합니다. 초고빈도·대용량 영상은 별도 검토합니다.</p></div></details><details class="faq-item"><summary>터널 내부는?</summary><div class="faq-item__body"><p>막장 근처·통신구·중계 안테나·광케이블 혼용 등 현장별 대안이 필요합니다.</p></div></details><details class="faq-item"><summary>SIM 다중화?</summary><div class="faq-item__body"><p>가용성 향상을 위해 이중 SIM·통신사 분산을 검토합니다. 링크 다운 시 로컬 버퍼가 필수입니다.</p></div></details></div></div></section>    </article>
     <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.1.2 — 계측시스템·원격 전송 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.4 — 알람경보 전송 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
     <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#instruments/communication/lte-remote">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
   </main>

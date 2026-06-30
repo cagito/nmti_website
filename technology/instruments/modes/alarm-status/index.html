@@ -21,8 +21,8 @@
   <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="/homepage/css/style.css?v=46">
-  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">
-  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=11">
+  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.15rem;margin:2rem 0 .75rem;font-weight:800}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}.tech-seo-article{margin-top:1rem}.tech-seo-section{margin-top:0}.tech-seo-figure{margin:1rem 0}.tech-seo-figure figcaption{font-size:.9rem;color:#555;margin-top:.35rem}</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,7 +66,7 @@
       "headline": "경보·알림 상태",
       "description": "경보·알림 상태의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
       "inLanguage": "ko-KR",
-      "dateModified": "2026-06-27",
+      "dateModified": "2026-06-30",
       "mainEntityOfPage": "https://www.nmti.co.kr/homepage/technology/instruments/modes/alarm-status/",
       "publisher": {
         "@type": "Organization",
@@ -144,8 +144,39 @@
     <h1>경보·알림 상태</h1>
     <p class="lead">경보·알림 상태의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.</p>
     <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-102_경보-알림-상태-제어-흐름도_threshold경광SMS.webp" alt="경보·알림 상태 제어 흐름도 - 3단계 threshold · Action 돌파 → 경광·SMS — ≠ SF UI" width="1200" height="675" loading="lazy" decoding="async"><figcaption>경보 상태 — Caution/Warning/Action → 알림</figcaption></figure>
-    <section><h2>개요</h2><p><strong>경보·알림 상태</strong>는 센서 값이 **관리기준치(주의·경고·위험/조치 3단계)** 를 초과했을 때 시스템이 비상 상태를 감지하고 **현장 경광등**·**SMS/푸시**·서버 알림을 즉시 발송하는 메커니즘입니다. SF형 경고창·네온 일러스트는 사용하지 않습니다.</p><p>그래프 상 **수평 threshold line**·데이터 plot의 **돌파 변곡점**·경광등·알림 블록으로 연결되는 **제어 흐름도**가 hero(102)의 핵심입니다. <strong>스마트 계측</strong>·IMG-054 경보 프로세스와 연계합니다.</p></section>
-    <section><h2>측정 원리</h2><p>로거 또는 서버 규칙 엔진이 실시간·배치 데이터를 기준과 비교합니다. Action 초과 시 Escalation chain(현장→감리→발주)으로 알림이 전달되며, 해제는 확인 측정·책임자 승인 후 처리합니다.</p></section>
+    <article class="tech-article tech-article--unified tech-seo-article">
+<section class="tech-section tech-section--numbered tech-seo-section" id="overview" data-section="1">
+<h2 class="tech-section__title">1. 시스템 개요</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--overview"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">목적</strong><span class="tech-bullet-list__text"><strong>경보·알림 상태</strong>는 센서 값이 **관리기준치(주의·경고·위험/조치 3단계)** 를 초과했을 때 시스템이 비상 상태를 감지하고 **현장 경광등**·**SMS/푸시**·서버 알림을 즉시 발송하는 메커니즘입니다. SF형 경고창·네온 일러스트는 사용하지 않습니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">적용 범위</strong><span class="tech-bullet-list__text">그래프 상 **수평 threshold line**·데이터 plot의 **돌파 변곡점**·경광등·알림 블록으로 연결되는 **제어 흐름도**가 hero(102)의 핵심입니다. <strong>스마트 계측</strong>·IMG-</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="purpose" data-section="2">
+<h2 class="tech-section__title">2. 구성 요소</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--labeled tech-bullet-list--purpose"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">3단계 기준</strong><span class="tech-bullet-list__text">Caution·Warning·Action 수평선</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">즉시 전파</strong><span class="tech-bullet-list__text">경광등·SMS·푸시 트리거</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">조치 연계</strong><span class="tech-bullet-list__text">공정 중지·현장 확인·보고</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">로그</strong><span class="tech-bullet-list__text">경보 이력·확인·해제 기록</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="principle" data-section="3">
+<h2 class="tech-section__title">3. 현장 구성·원리</h2>
+<div class="tech-section__body">
+<figure class="tech-seo-figure"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-054_경보-단계-프로세스_정상주의경고위험조치.webp" alt="경보 단계 프로세스 - 경보 프로세스 — QC·결측·현장확인·해제 (Phase AD)" loading="lazy" decoding="async"><figcaption>경보 단계 프로세스 — 정상-주의-경고-위험-조치 흐름</figcaption></figure>
+<ul class="tech-bullet-list tech-bullet-list--siteLayout"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">구성 흐름</strong><span class="tech-bullet-list__text">계측값 → <strong>기준 비교</strong>(로거/서버) → 임계 돌파 시 <strong>경광등</strong>·<strong>SMS/푸시</strong>·Escalation. 해제는 확인 측정·책임자 승인 후 처리합니다.</span></li></ul><ul class="tech-bullet-list tech-bullet-list--principle"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">측정 대상</strong><span class="tech-bullet-list__text">로거 또는 서버 규칙 엔진이 실시간·배치 데이터를 기준과 비교합니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">측정 원리</strong><span class="tech-bullet-list__text">Action 초과 시 Escalation chain(현장→감리→발주)으로 알림이 전달되며, 해제는 확인 측정·책임자 승인 후 처리합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="installation" data-section="4">
+<h2 class="tech-section__title">4. 설치·운영</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--plain tech-bullet-list--installation"><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">측점별 Caution/Warning/Action 임계값 설정</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">현장 경광등 · 무선 알림 수신기 배치</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">SMS · 이메일 · 앱 푸시 수신자 목록을 관리</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">경보 · 확인 · 해제 워크플로를 문서화</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">오경보 · 통신 장애 시 fallback을 정의</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="management" data-section="5">
+<h2 class="tech-section__title">5. 데이터·관리</h2>
+<div class="tech-section__body">
+<table class="spec-table"><thead><tr><th scope="col">단계</th><th scope="col">색</th><th scope="col">조치</th></tr></thead><tbody><tr><th scope="row">Caution</th><td>주의</td><td>관찰 강화</td></tr><tr><th scope="row">Warning</th><td>경고</td><td>현장 확인</td></tr><tr><th scope="row">Action</th><td>위험</td><td>공정 중지 검토</td></tr><tr><th scope="row">알림</th><td>SMS/푸시</td><td>Escalation</td></tr></tbody></table><h3 class="tech-subheading">장애 유형 및 점검</h3><table class="spec-table"><thead><tr><th scope="col">증상</th><th scope="col">점검</th><th scope="col">조치</th></tr></thead><tbody><tr><th scope="row">오경보 다발</th><td>필터 · 기준</td><td>임계값 · 이상값 규칙</td></tr><tr><th scope="row">경보 미발송</th><td>SMS · 수신자</td><td>게이트웨이 · 권한</td></tr><tr><th scope="row">해제 안 됨</th><td>워크플로</td><td>확인 측정 · 승인</td></tr><tr><th scope="row">통신 장애</th><td>로거 버퍼</td><td>fallback · 수동 확인</td></tr></tbody></table><ul class="tech-bullet-list tech-bullet-list--criteria"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">기준 출처</strong><span class="tech-bullet-list__text">관리기준은 설계예상변위·최대허용변위·계약·KCS를 따릅니다. 유지관리 통합계측에서는 설계 허용 대비 <strong>75%·90%</strong> 단계별 관찰·경보를 운영하기도 합니다. Action 초과 시 즉시 대응 절차를 가동합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--appendix" id="related">
+<h2 class="tech-section__title">관련 항목</h2>
+<div class="tech-section__body"><div class="inline-list"><span class="inline-list__label">관련 분야</span><ul class="tech-related"><li><a href="https://www.nmti.co.kr/homepage/technology/fields/structural-safety/" data-tech-route="fields/structural-safety">구조물 안전</a></li></ul></div><div class="inline-list"><span class="inline-list__label">관련 센서</span><ul class="tech-related"><li><a href="https://www.nmti.co.kr/homepage/technology/sensors/remote-monitoring-system/" data-tech-route="sensors/remote-monitoring-system">원격 모니터링</a></li><li><a href="https://www.nmti.co.kr/homepage/technology/sensors/datalogger/" data-tech-route="sensors/datalogger">데이터 로거 개요</a></li></ul></div></div></section>
+<section class="tech-section tech-section--appendix" id="faq">
+<h2 class="tech-section__title">자주 묻는 질문</h2>
+<div class="tech-section__body"><div class="faq-list"><details class="faq-item"><summary>IMG-054와 차이?</summary><div class="faq-item__body"><p>054는 정상→주의→경고→위험→조치 **프로세스** Figure입니다. 102는 threshold 돌파→경광·SMS **제어 흐름** hero입니다.</p></div></details><details class="faq-item"><summary>스마트 계측(073)?</summary><div class="faq-item__body"><p>073은 플랫폼·경보·보고 통합 개념입니다. alarm-status는 **기준 초과 비상 상태** 전용입니다.</p></div></details><details class="faq-item"><summary>유지관리 75%·90% 단계는?</summary><div class="faq-item__body"><p>설계예상·최대허용 대비 단계별 관찰·경보입니다. 대구 3호선 통합 유지관리 S/W·SMS와 같은 운영 맥락입니다.</p></div></details><details class="faq-item"><summary>normal-mode와 차이?</summary><div class="faq-item__body"><p>normal-mode는 안정 구간 정기 수집, alarm-status는 기준 초과·비상 경보·SMS·경광 등 즉시 조치 상태입니다.</p></div></details></div></div></section>    </article>
     <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3 — 계측 방식·빈도 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li><li class="tech-sources__item">· <strong>KDS 11 10 15:2025</strong>「지반계측」 §1.3 — 관리 용어·기준 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
     <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#instruments/modes/alarm-status">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
   </main>

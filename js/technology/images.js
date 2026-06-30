@@ -7,7 +7,7 @@ export const IMAGE_ASSETS = {
     caption: '가시설 계측 전체 개념도 — 굴착 단면과 대표 계측 항목(지중·수위·지보재·지표·인접구조물)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-001',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-001 · docs/51-계측-도면-검수-공통-원칙.md',
     prohibitedErrors: [
       '건물 기초 아래 굴착 공동·배면 빈 공간',
       '버팀보·굴착저가 배면·건물 아래',
@@ -21,11 +21,11 @@ export const IMAGE_ASSETS = {
   'IMG-002': {
     title: '흙막이 계측 설치 대표 단면도',
     webp: 'assets/images/technology/IMG-002_흙막이-계측-설치-대표-단면도.webp',
-    alt: '흙막이 계측 설치 대표 단면도 - [좌]인접건물|배면|벽체|[우]굴착 단면+11종 계측기(데이터로거 포함), 흐름도 금지',
-    caption: '흙막이 계측 설치 대표 단면도 — [좌]인접건물|배면|벽체·띠장|[우]굴착측 단면과 11종 계측기(데이터로거 포함) 배치',
+    alt: '흙막이 계측 설치 대표 단면도 - 배면지반 지하수 지보재 인접구조물 계측',
+    caption: '흙막이 계측 설치 대표 단면 — 11종·ANC-CLOCK (v6)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-002',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-002 · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
     prohibitedErrors: [
       '건물 기초 아래 굴착 공동·배면 빈 공간',
       '버팀보·굴착저가 배면·건물 아래',
@@ -76,7 +76,7 @@ export const IMAGE_ASSETS = {
     caption: '어스앵커 하중계 설치 개념도 — 굴착측 노출 앵커 두부 하중계(지지링·반력판–하중계–앵커헤드–강연선) 구성',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-004',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-004 · docs/164-IMG-004-v7-재생성-기록.md · docs/54-IMG-004-어스앵커-하중계-설치-표현-표준.md',
     prohibitedErrors: [
       '하중계를 지반 내부에 배치',
       '정착장·그라우트체 내부에 하중계',
@@ -123,10 +123,10 @@ export const IMAGE_ASSETS = {
     title: '굴착 단계별 계측 흐름도',
     webp: 'assets/images/technology/IMG-006_굴착-단계별-계측-흐름도_1단계최종굴착계측.webp',
     alt: '굴착 단계별 계측 흐름도 - 4단계 굴착저면·지중경사계·지하수위·어스앵커 하중계',
-    caption: '굴착 단계별 계측 흐름도 v3 — 4단계·IPI·G.W.L·어스앵커 LC(③④)',
+    caption: '굴착 단계별 계측 흐름도 v4 — 4단계·IPI·G.W.L·어스앵커 LC(③④)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-006',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-006 · docs/169-IMG-006-v4-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
     prohibitedErrors: [
       '버팀보·지반앵커·지보재 하중계',
       '수평(3·9시)·5시 앵커 관통',
@@ -160,8 +160,8 @@ export const IMAGE_ASSETS = {
   'IMG-008': {
     title: '터널 전단면 내공변위 측정시스템',
     webp: 'assets/images/technology/IMG-008_터널-전단면-내공변위-측정시스템_상부아치내공변위.webp',
-    alt: '터널 전단면 내공변위 측정시스템 - 내공변위계 Kit 체인으로 상부 아치 전단면 변위 프로파일 산정 원리 설명',
-    caption: '터널 전단면 내공변위 — 상부 아치 P1~P5 Kit, Extension Tube, 노반(도로·철도) 미계측',
+    alt: '터널 전단면 내공변위 측정시스템 - 전단면 내공변위계 P1~P11 대표 측점·측선으로 수렴·변형 해석',
+    caption: '터널 전단면 내공변위 — P1~P11 내공변위계·대표 측선·기준 측정선, 노반 미계측',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-008',
@@ -210,10 +210,10 @@ export const IMAGE_ASSETS = {
     title: '교량 계측 전체 개념도',
     webp: 'assets/images/technology/IMG-011_교량-계측-전체-개념도_상부구조교각교대기초.webp',
     alt: '교량 계측 전체 개념도 - 사장교형 10종(변형률·처짐·케이블장력·경사·기초침하 등)',
-    caption: '교량 계측 전체 개념도 v3 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측',
+    caption: '교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-011',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
     prohibitedErrors: [
       '흙막이·굴착 단면 (BRI-01)',
       '종·횡변위 3축 주계측',
@@ -297,7 +297,7 @@ export const IMAGE_ASSETS = {
     caption: '사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · (선택) 광학망',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-015',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-015 · docs/INSTRUMENTATION_DRAWING_RULES.md',
     prohibitedErrors: [
       '사면 꼭대기·활동 구간에 자동광파기 본체',
       '지중경사계 Base가 활동면만 간신히 통과',
@@ -318,7 +318,7 @@ export const IMAGE_ASSETS = {
     caption: '원호활동면 계측 해석도 — 원호파괴와 센서형 다단식 지중경사계 변위 프로파일 관계',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-016',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-016 · docs/167-IMG-016-v5-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
     prohibitedErrors: [
       '최대 변위 깊이 = 활동면 위치',
       '지중경사계 단독으로 원호활동면 확정',
@@ -326,7 +326,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'cad'
+    productionMethod: 'ai-reviewed'
   },
   'IMG-017': {
     title: '평면활동면 계측 해석도',
@@ -392,7 +392,7 @@ export const IMAGE_ASSETS = {
     caption: '압밀 침하 계측 개념도 — 시간-침하-간극수압 소산 관계',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-020',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-020 · docs/133-IMG-020-압밀-침하-계측-개념도-표현-표준.md',
     prohibitedErrors: [
       '기준점을 성토 영향권 안에 배치',
       '침하판 상단을 기준점으로 표기',
@@ -456,7 +456,7 @@ export const IMAGE_ASSETS = {
     caption: '댐 안전관리 계측 체계 — 필댐 6항목·7단계 데이터 흐름 (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-024',
+    reviewDoc: 'docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md',
     prohibitedErrors: [
       '침하 그래프 -20mm=경보 -60mm=관리기준 역전 (DAM-01)',
       '침윤선 파선과 피에조 수두 불일치 (DAM-02)',
@@ -481,7 +481,7 @@ export const IMAGE_ASSETS = {
     caption: '센서형 다단식 지중경사계 시스템 — IPI·케이싱(4홈)·안정층 Base·자동 데이터로거 체인',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-025',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-025 · docs/87-Phase-AA-MAJOR_FIX-복붙-프롬프트-정본.md',
     prohibitedErrors: [
       '지중경사계를 침하계처럼 표현',
       '「지중경사계」단독 Figure 라벨 — 센서형 다단식 전칭 필수',
@@ -609,14 +609,14 @@ export const IMAGE_ASSETS = {
     caption: '침하판·침하계 설치 개념도 — 성토 하부 침하판과 연장봉, 보호관 표시',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-032',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-032 · docs/170-IMG-032-v6-재생성-기록.md',
     prohibitedErrors: [
       '연장봉 상단을 기준점으로 표기',
       '측정점·안정 기준점 미분리'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'cad'
+    productionMethod: 'ai-reviewed'
   },
   'IMG-033': {
     title: '층별침하계 개념도',
@@ -625,7 +625,7 @@ export const IMAGE_ASSETS = {
     caption: '층별침하계 개념도 — 자석 링, 기준관, 층별 침하 측정 원리',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-033',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-033 · docs/136-IMG-033-층별침하계-개념도-표현-표준.md',
     prohibitedErrors: [
       '자석링을 로거 직결 전기센서처럼 표현',
       '기준관이 지반과 함께 침하',
@@ -642,7 +642,7 @@ export const IMAGE_ASSETS = {
     caption: '토압계 설치 — 벽체 배면 감지면과 토압 작용 방향(배면 지반→벽체)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-034',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-034 · docs/159-IMG-034-v3-재생성-기록.md',
     prohibitedErrors: [
       '감지면 방향 없는 원형 아이콘',
       '관측공 내부 설치',
@@ -661,7 +661,7 @@ export const IMAGE_ASSETS = {
     caption: '하중계 설치 — 버팀보 띠장 접합부(끝단) 축방향·어스앵커 두부 인장',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-035',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/165-IMG-035-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
     prohibitedErrors: [
       '버팀보 정중앙 하중계',
       '축방향과 무관한 설치',
@@ -803,7 +803,7 @@ export const IMAGE_ASSETS = {
     caption: 'GNSS 변위 계측 개념도 — 기준국·이동국·RTK·중앙 서버·3D 변위',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-043',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-043 · docs/161-IMG-043-v5-재생성-기록.md',
     prohibitedErrors: [
       '기준국을 변형 구간에 배치',
       '이동국·기준국 역할 역전',
@@ -815,7 +815,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'cad'
+    productionMethod: 'ai-reviewed'
   },
   'IMG-044': {
     title: '기상계측기 구성도',
@@ -841,7 +841,7 @@ export const IMAGE_ASSETS = {
     caption: '데이터로거 구성도 — 산업용 함체·센서입력·전원·통신·저장',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-045',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-045 · docs/91-Phase-AB-복붙-프롬프트-정본.md',
     prohibitedErrors: [
       '내부 CPU·저장·통신 블록 다이어그램만',
       '정사각 접속함·DATA LOGGER 세로 박스',
@@ -895,7 +895,7 @@ export const IMAGE_ASSETS = {
     caption: 'LTE M2M 통신 구성도 — 로거·모뎀·망·서버·클라이언트',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-048',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-048 · docs/image-knowledge/29-통신·게이트웨이-역할.md',
     prohibitedErrors: [
       'LTE 모뎀·통신사 브랜드 로고',
       '센서·로거 생략',
@@ -1062,7 +1062,7 @@ export const IMAGE_ASSETS = {
     caption: '원격계측 플랫폼 — 센서·데이터로거·통신·서버·DB·웹·모바일 계층 구조',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-058',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-058 · docs/image-knowledge/29-통신·게이트웨이-역할.md',
     prohibitedErrors: [
       '내부 CPU 블록만 표현',
       'CR1000X 실사·브랜드',
@@ -1113,7 +1113,7 @@ export const IMAGE_ASSETS = {
     caption: '터널 천단침하 계측 개념도 — 천단 측점·자동광파기·δ 침하',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-061',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-061 · docs/49-터널-천단침하-계측-표현-표준.md',
     prohibitedErrors: [
       '외부 수준점–천단 와이어·케이블 직결 (TUN-CROWN-01)',
       '천단침하계(앵커) 라이닝·지반 관통 (TUN-CROWN-02)',
@@ -1154,7 +1154,7 @@ export const IMAGE_ASSETS = {
     caption: '막장전방 선행변위 계측 — 막장 앞 지반 선행변위계·굴진 방향·막장거리',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-063',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-063 · docs/06-터널-히어로-및-콘텐츠-API.md',
     prohibitedErrors: [],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1372,7 +1372,7 @@ export const IMAGE_ASSETS = {
     caption: '록볼트 축력 — LC·굴착 단계별 추이',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-078',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-078 · docs/160-IMG-078-v3-재생성-기록.md',
     prohibitedErrors: [
       '두부 하중=P 전체 록볼트 축력',
       '축력분포·변형률계 미구분'
@@ -1388,7 +1388,7 @@ export const IMAGE_ASSETS = {
     caption: '숏크리트 응력·변형 — 매립 SG·응력계 (v3 AI)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-079',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-079 · docs/22-IMG-079-숏크리트-응력-변형-오류분석-및-재작업-계획.md',
     prohibitedErrors: [
       '숏크리트 응력계로 터널 전체 안정성 평가',
       '숏크리트 응력계=토압계',
@@ -1405,14 +1405,14 @@ export const IMAGE_ASSETS = {
     caption: '강지보 — 스틸 세트 변형률',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-080',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-080 · docs/163-IMG-080-v5-재생성-기록.md',
     prohibitedErrors: [
       '플랜지 일부 변형률만으로 전체 응력 대표',
       '내외측·다점 계측 미표시'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'cad'
+    productionMethod: 'ai-reviewed'
   },
   'IMG-081': {
     title: '기둥 축소량 계측 개념도',
@@ -1516,7 +1516,7 @@ export const IMAGE_ASSETS = {
     caption: '사면 지표경사 — pad tiltmeter · θ',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-089',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-089 · docs/INSTRUMENTATION_DRAWING_RULES.md',
     prohibitedErrors: [
       '지중경사계 보링 casing',
       '풍경화·숲',
@@ -1536,7 +1536,7 @@ export const IMAGE_ASSETS = {
     caption: '사면 구조물 변위 계측 — 배면 사면 와이어식 변위계 · 옹벽 프리즘 · ΔX/ΔY',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-090',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-090 · docs/129-사면-옹벽-와이어식-변위계-배면사면-표준.md',
     prohibitedErrors: [
       '옹벽 전면·벽체에 와이어식 변위계 부착 (SLO-WIRE-01)',
       'ATS만 hero — 와이어식 변위계 없음 (DISP-ATS-01)',
@@ -1554,7 +1554,7 @@ export const IMAGE_ASSETS = {
     caption: '다점지중변위계 — MPBX · 다점 강봉·앵커 cutaway',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-091',
+    reviewDoc: 'docs/146-IMG-091-MPBX-설치-개념도-표현-표준.md · docs/IMAGE_REVIEW_LOG.md#IMG-091',
     prohibitedErrors: [
       '지중경사계 혼동',
       '수평변위 화살표만',
@@ -1603,10 +1603,10 @@ export const IMAGE_ASSETS = {
     title: '가시설 주변지반 계측 설치 대표 단면도',
     webp: 'assets/images/technology/IMG-096_주변지반-계측-설치-대표-단면도_굴착영향권복합.webp',
     alt: '주변지반 계측 설치 대표 단면도 - 굴착 영향권, 센서형 다단식 지중경사계·침하·간극수압·지하수위',
-    caption: '가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v4)',
+    caption: '가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v5)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-096',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/158-IMG-096-v5-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
     prohibitedErrors: [
       '잠재 슬립면·활동면 원호 (MIX-01)',
       '옹벽형 영구 구조·캡 (MIX-01)',
@@ -1628,7 +1628,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'cad'
+    productionMethod: 'ai-reviewed'
   },
   'IMG-097': {
     title: '터널 발파진동·영향권 계측 개념도',
@@ -1650,7 +1650,7 @@ export const IMAGE_ASSETS = {
     caption: '항만 호안 조위·지하수 — H.W.L/L.W.L·stilling well·screen 관측공·tidal lag 침윤선',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-098',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-098 · docs/168-IMG-098-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
     prohibitedErrors: [
       'fields/harbor/tide-groundwater hero에 IMG-030(육상) 사용 (HAR-01)',
       '해수면·H.W.L/L.W.L·조위계 없음 (HAR-02)',
@@ -1763,17 +1763,19 @@ export const IMAGE_ASSETS = {
   'IMG-103': {
     title: '교량 상부구조 GNSS 처짐 계측도',
     webp: 'assets/images/technology/IMG-103_교량-상부구조-처짐-계측도_거더처짐계δ.webp',
-    alt: '교량 상부구조 GNSS 처짐 계측도 - 경간 상부 이동국 수직변위 ΔZ',
-    caption: '교량 GNSS 처짐 — 경간 상부 ΔZ·처짐량 δ (v3, 와이어식 hero 아님)',
+    alt: '교량 상부구조 GNSS 처짐 계측도 - 경간 중앙 이동국 1개 수직변위 ΔZ',
+    caption: '교량 GNSS 처짐 — 경간(교각↔교각) 중앙 이동국 1개·ΔZ→δ (v5)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-103',
+    reviewDoc: 'docs/148-IMG-103-교량-상부구조-GNSS-처짐-표현-표준.md · docs/151-IMG-103-GNSS-처짐계-정본-충돌-정리.md · docs/IMAGE_REVIEW_LOG.md#IMG-103',
     prohibitedErrors: [
       '침하판·지표침하계 hero',
       '성토 단면',
       'Y축 침하량',
       '하부 와이어식 처짐계 hero (DEF-GNSS-04)',
       '교각 측면/중간 GNSS (DEF-GNSS-05)',
+      '1/4·3/4 경간 GNSS·복수 이동국 (SPAN-MID-01)',
+      '교대↔교대 경간 표시',
       '와이어+GNSS 동시 주계측 (DEF-GNSS-06)',
       '생성 시 로고·워터마크'
     ],
@@ -1791,7 +1793,8 @@ export const IMAGE_ASSETS = {
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-104',
     prohibitedErrors: [
       '침하계·침하판',
-      '지반 침하 단면'
+      '지반 침하 단면',
+      'GNSS+와이어 동시 주계측 (DEF-GNSS-06)'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1800,14 +1803,17 @@ export const IMAGE_ASSETS = {
   'IMG-105': {
     title: '교량 케이블 장력 계측도',
     webp: 'assets/images/technology/IMG-105_교량-케이블장력-계측도_사장교주파수법.webp',
-    alt: '교량 케이블 장력 계측도 - 사장교·주파수법 · ≠앵커 로드셀',
-    caption: '케이블 장력 — f→T·주파수법',
+    alt: '교량 케이블 장력 계측도 - 사장교 주케이블 주파수법 장력 T',
+    caption: '교량 케이블 장력 — 주케이블 f→T·케이블장력계 (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-105',
     prohibitedErrors: [
       '어스앵커 로드셀',
-      'IMG-004 재사용'
+      'IMG-004 재사용',
+      '진동현식·VW 라벨 (METHOD-01)',
+      '흙막이·굴착 배경 (CT-BRI-02)',
+      '임의 관리기준 장력표 (CT-BRI-04)'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1816,14 +1822,15 @@ export const IMAGE_ASSETS = {
   'IMG-106': {
     title: '케이블장력계 설치 개념도',
     webp: 'assets/images/technology/IMG-106_케이블장력계-주파수법-설치-개념도.webp',
-    alt: '케이블장력계 설치 개념도 - 노출 케이블 ACC·주파수',
-    caption: '케이블장력계 — ≠하중계',
+    alt: '케이블장력계 설치 개념도 - 주케이블 주파수법 장력 측정',
+    caption: '케이블장력계 설치 — 주케이블 클램프·f→T (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-106',
     prohibitedErrors: [
       '하중계=케이블장력',
       '버팀보 로드셀',
+      '어스앵커 T/P (IMG-004)',
       '진동현식·VW 라벨 (METHOD-01)'
     ],
     wireframeReplace: false,
@@ -1833,14 +1840,17 @@ export const IMAGE_ASSETS = {
   'IMG-107': {
     title: '교량 변형률·응력 계측도',
     webp: 'assets/images/technology/IMG-107_교량-변형률-응력-계측도_PSC강재휨응력.webp',
-    alt: '교량 변형률·응력 계측도 - PSC·강재 휨·전단 SG',
-    caption: '교량 변형률 — 휨·전단·온도 보정',
+    alt: '교량 변형률·응력 계측도 - PSC·강재 휨 변형률계 및 전단 SG',
+    caption: '교량 변형률·응력 — 거더 SG 휨 ε→σ (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-107',
     prohibitedErrors: [
       '침하계 단면',
-      '흙막이 배경'
+      '흙막이 배경',
+      '숏크리트 hero (STR-BRI-03)',
+      '무응력계=SG 동일 캡션 (STR-BRI-04)',
+      '진동현식·VW 라벨 (METHOD-01)'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1849,13 +1859,17 @@ export const IMAGE_ASSETS = {
   'IMG-108': {
     title: '무응력계 설치 개념도',
     webp: 'assets/images/technology/IMG-108_무응력계-설치-개념도_크리프보정.webp',
-    alt: '무응력계 설치 개념도 - 크리프·건조수축 보정',
-    caption: '무응력계 — 응력 0 매립',
+    alt: '무응력계 설치 개념도 - 응력 0 기준 변형률 크리프 보정',
+    caption: '무응력계 설치 — ε₀·크리프·건조수축 보정 (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-108',
     prohibitedErrors: [
-      '일반 SG와 동일 캡션'
+      '일반 SG와 동일 캡션',
+      '침하·지반 단면 (STR-BRI-01)',
+      '숏크리트 hero (STR-BRI-03)',
+      '지중경사계·균열계 hero',
+      '진동현식·VW 라벨 (METHOD-01)'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1864,14 +1878,17 @@ export const IMAGE_ASSETS = {
   'IMG-109': {
     title: '교량 풍향·풍속 계측도',
     webp: 'assets/images/technology/IMG-109_교량-풍향풍속-계측도_주탑교면.webp',
-    alt: '교량 풍향·풍속 계측도 - 주탑·교면 · 진동 연계',
-    caption: '교량 풍하중 — 주탑·풍속 벡터',
+    alt: '교량 풍향·풍속 계측도 - 주탑 및 교면 풍속 풍향 계측',
+    caption: '교량 풍향·풍속 — 주탑·교면 풍향풍속계 (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-109',
     prohibitedErrors: [
       '사면 강우 hero만',
-      '지하수위계 단독'
+      '지하수위계 단독',
+      '풍향·풍속 벡터 없음 (WND-BRI-03)',
+      '임의 풍하중 관리표 (WND-BRI-04)',
+      '진동현식·VW 라벨 (METHOD-01)'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
@@ -1880,8 +1897,8 @@ export const IMAGE_ASSETS = {
   'IMG-110': {
     title: '교량 받침부 변위 계측도',
     webp: 'assets/images/technology/IMG-110_교량-받침부-변위-계측도_슬라이드회전.webp',
-    alt: '교량 받침부 변위 계측도 - 받침 슬라이드·회전 — ≠신축이음·3축 GNSS',
-    caption: '받침부 변위 — 슬라이드·회전',
+    alt: '교량 받침부 변위 계측도 - 받침 슬라이드 변위계',
+    caption: '교량 받침부 변위 — 슬라이드 Δx·회전 (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-110',
@@ -1889,30 +1906,31 @@ export const IMAGE_ASSETS = {
       'X/Y/Z 3축 주계측',
       '종·횡변위 제목',
       '신축이음 핑거형 hero',
-      'GNSS 절대좌표 혼합'
+      'GNSS 절대좌표 혼합',
+      '진동현식·VW 라벨 (METHOD-01)'
     ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
   },
   'IMG-111': {
-    title: '터널 건설기간 계측 개념도',
+    title: '터널 건설중 계측 개념도',
     webp: 'assets/images/technology/IMG-111_external.webp',
-    alt: '터널 건설기간 계측 개념도 - 굴착·지보 단계 내공·천단·지표 변위 — 운행철도 상부',
-    caption: '터널 건설기간 계측 — 내공·천단·지표',
+    alt: '터널 건설중 계측 개념도 - 굴착·지보 단계 내공·천단·지표 변위 — 운행철도 상부',
+    caption: '터널 건설중 계측 — 내공·천단·지표',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-111',
+    reviewDoc: 'docs/image-knowledge/IMG-111-터널-건설중-계측-개념도.md · docs/153-계측문서-용어-정본-건설중-계측.md · docs/IMAGE_REVIEW_LOG.md#IMG-111',
     prohibitedErrors: [],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
   },
   'IMG-112': {
-    title: '철도·고속철도 건설기간 계측 개념도',
+    title: '철도·고속철도 건설중 계측 개념도',
     webp: 'assets/images/technology/IMG-112_external.webp',
-    alt: '철도·고속철도 건설기간 계측 개념도 - 道床·노반·궤도 시공 단계 침하·변위',
-    caption: '철도 건설기간 계측 — 노반·궤도',
+    alt: '철도·고속철도 건설중 계측 개념도 - 道床·노반·궤도 시공 단계 침하·변위',
+    caption: '철도 건설중 계측 — 노반·궤도',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-112',
@@ -1922,10 +1940,10 @@ export const IMAGE_ASSETS = {
     productionMethod: 'ai-reviewed'
   },
   'IMG-113': {
-    title: '댐·제방 건설기간 계측 개념도',
+    title: '댐·제방 건설중 계측 개념도',
     webp: 'assets/images/technology/IMG-113_external.webp',
-    alt: '댐·제방 건설기간 계측 개념도 - 축조·성토 단계 수압·침하·로거 — ≠운영기 누수',
-    caption: '댐 건설기간 계측 — 축조·원격계측',
+    alt: '댐·제방 건설중 계측 개념도 - 축조·성토 단계 수압·침하·로거 — ≠운영기 누수',
+    caption: '댐 건설중 계측 — 축조·원격계측',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-113',

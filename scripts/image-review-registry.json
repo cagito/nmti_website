@@ -4,9 +4,9 @@
     "title": "가시설 계측 전체 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-001",
-    "reviewDate": "2026-06-22",
-    "reviewer": "Phase 6 formal — Pillow v8·doc 19 Q0",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-001 · docs/51-계측-도면-검수-공통-원칙.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P1",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -15,7 +15,7 @@
       "옥상 자동광파기 본체·「자동광파기 측정(프리즘)」 라벨",
       "구조물경사계 지반 속·말뚝 형태"
     ],
-    "notes": "Phase 6 Q0: C0 지표면·1F·출입구 · C1~C4 INSTRUMENTATION §3.1 · render-p1 v8.",
+    "notes": "v4 ai-reviewed G-01~15·3영역·BORE-GL-01·SETTLE-01 · 2026-06-29",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "EXC-05·§3.1.1 — 좌→우 단면·프리즘 측점·구조물경사계 표면 부착",
@@ -28,9 +28,9 @@
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed G-01~15·3영역·BORE-GL-01·SETTLE-01 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -41,7 +41,7 @@
         "V7"
       ]
     },
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "imageKnowledgeTopic": "18-계측계획·배치도면-표현.md"
   },
   "IMG-002": {
@@ -49,7 +49,7 @@
     "title": "흙막이 계측 설치 대표 단면도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-002",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-002 · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
     "reviewDate": "2026-06-22",
     "reviewer": "Phase 6 formal — v7 PNG·doc 19 Q1~Q7",
     "auditPriority": "P0",
@@ -91,9 +91,9 @@
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "W1 P0 v5 — redline v5 전면 재작성 · docs/52 · SOE-INST · ANC-CLOCK · agent PASS pending human pixel",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v6 ai-reviewed (2026-06-29): 전면재작성 docs/52·ANC-CLOCK·SOE-INST·11종 범례. 정본 docs/52.",
       "gates": [
         "V1",
         "V2",
@@ -104,10 +104,12 @@
         "V7"
       ]
     },
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "EXC-01~05·§3.1.1 — doc 19 Q1~Q7 육안 0건",
     "interimHeroExposedDate": "2026-06-27",
+    "caption": "흙막이 계측 설치 대표 단면 — 11종·ANC-CLOCK (v6)",
+    "alt": "흙막이 계측 설치 대표 단면도 - 배면지반 지하수 지보재 인접구조물 계측",
     "imageKnowledgeTopic": "03-지하굴착-흙막이-계측-단면.md"
   },
   "IMG-003": {
@@ -151,7 +153,7 @@
     "title": "어스앵커 하중계 설치 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-004",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-004 · docs/164-IMG-004-v7-재생성-기록.md · docs/54-IMG-004-어스앵커-하중계-설치-표현-표준.md",
     "reviewDate": "2026-06-22",
     "reviewer": "Phase 6 formal — Pillow v3·doc 26 EXC-01",
     "auditPriority": "P0",
@@ -181,9 +183,9 @@
     "renderScript": "render-retaining-audit-fixes.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "W1 P0 v3 — ANC-CLOCK · LC=굴착측 두부 · T/P 분리 · redline v2",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "P0 REGENERATE v7 — ANC-CLOCK 굴착측 두부 LC·T/P 사선축 · docs/54 · docs/130",
       "gates": [
         "V1",
         "V2",
@@ -195,7 +197,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "EXC-01·§3.2 — anchor_head_draw 5-panel",
     "interimHeroExposedDate": "2026-06-27",
@@ -234,9 +236,9 @@
     "renderScript": "render-retaining-audit-fixes.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "v4c SETTLE-01 — 배면 침하핀 제거, 영향권·변위방향만",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -248,7 +250,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "imageKnowledgeTopic": "17-건축공사-계측-배치.md"
   },
   "IMG-006": {
@@ -256,10 +258,10 @@
     "title": "굴착 단계별 계측 흐름도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-006",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-006 · docs/169-IMG-006-v4-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
     "reviewDate": "2026-06-29",
     "reviewer": "agent",
-    "auditPriority": null,
+    "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
       "버팀보·지반앵커·지보재 하중계",
@@ -269,8 +271,8 @@
       "누적변위 그래프·로거 제품 사진 hero",
       "생성 시 로고·워터마크"
     ],
-    "notes": "v3 PASS — docs/58 · 4단계 굴착저면 · 7시 어스앵커 LC · Pillow render_img006",
-    "caption": "굴착 단계별 계측 흐름도 v3 — 4단계·IPI·G.W.L·어스앵커 LC(③④)",
+    "notes": "P0 v4 ai-reviewed — 4단계 굴착저면·어스앵커 LC만·ANC-CLOCK·운영루프 · prohibitedErrors 유지",
+    "caption": "굴착 단계별 계측 흐름도 v4 — 4단계·IPI·G.W.L·어스앵커 LC(③④)",
     "alt": "굴착 단계별 계측 흐름도 - 4단계 굴착저면·지중경사계·지하수위·어스앵커 하중계",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
@@ -282,7 +284,7 @@
       "grade": "PASS",
       "reviewer": "agent",
       "date": "2026-06-29",
-      "notes": "v3 docs/58 — 4단계·7시 앵커 LC·운영루프",
+      "notes": "P0 REGENERATE v4 — 4단계 굴착저면·어스앵커 LC만·ANC-CLOCK·운영루프·범례정합",
       "gates": [
         "V1",
         "V2",
@@ -368,6 +370,7 @@
       "P1~P5만으로 전단면 대표 표현"
     ],
     "notes": "v10 ai-reviewed — 내공변위계 11점(P1~P11), 전단면 대표 측점·측선, 노반 Open. docs/126·redline v10.",
+    "caption": "터널 전단면 내공변위 — P1~P11 내공변위계·대표 측선·기준 측정선, 노반 미계측",
     "prohibitedVerified": true,
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
@@ -479,10 +482,10 @@
     "id": "IMG-011",
     "title": "교량 계측 전체 개념도",
     "alt": "교량 계측 전체 개념도 - 사장교형 10종(변형률·처짐·케이블장력·경사·기초침하 등)",
-    "caption": "교량 계측 전체 개념도 v3 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측",
+    "caption": "교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-011",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
     "reviewDate": "2026-06-29",
     "reviewer": "agent",
     "auditPriority": null,
@@ -495,7 +498,7 @@
       "우측 패널 내부 감사 코드 노출",
       "생성 시 로고·워터마크"
     ],
-    "notes": "v3 PASS — docs/116 사장교 10종 · Pillow render_img011 · BRI-OV-01~10",
+    "notes": "v4 ai-reviewed — Pillow R1. 사장교 10종 callout · ⑩-A/B 분리 · 로거·원격 흐름",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -505,7 +508,7 @@
       "grade": "PASS",
       "reviewer": "agent",
       "date": "2026-06-29",
-      "notes": "v3 사장교 10종 — docs/116 Pillow render_img011",
+      "notes": "v4 ai-reviewed hero — Pillow R1 sprint",
       "gates": [
         "V1",
         "V2",
@@ -521,7 +524,7 @@
     "renderScript": "render-bridge-overview.py",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-29",
-    "prohibitedVerifiedNote": "v3 redline — docs/116 §8 10항 PASS",
+    "prohibitedVerifiedNote": "v4 ai-reviewed — BRI-OV 10종·사장교 단일 (agent)",
     "imageKnowledgeTopic": "14-교량-계측시스템-설치.md"
   },
   "IMG-012": {
@@ -640,7 +643,7 @@
       "핑거형 신축이음 미표현 (BRI-EJ-05)",
       "부유 센서·지그 미표현 (BRI-EJ-04)"
     ],
-    "notes": "v2.1 BRI-EJ PASS — 양측 브라켓·핑거형 이음·보호박스 (docs/52·53)",
+    "notes": "v4 ai-reviewed (2026-06-29): 와이어식 신축이음계·핑거형 이음·양측 브라켓·늘음/줄음, BRI-EJ-01~13. 정본 docs/52.",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "BRI-EJ-01~12 redline v2 — 3축·흐름도·부유센서 0건",
@@ -651,9 +654,9 @@
     "hero": false,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "v2.1 BRI-EJ — 양측 브라켓·핑거형 이음·보호박스",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: 와이어식 신축이음계·핑거형 이음·양측 브라켓·늘음/줄음, BRI-EJ-01~13",
       "gates": [
         "V1",
         "V2",
@@ -665,7 +668,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "imageKnowledgeTopic": "23-신축·변위계-구조부재.md"
   },
   "IMG-015": {
@@ -675,9 +678,9 @@
     "title": "사면 계측 전체 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-015",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-015 · docs/INSTRUMENTATION_DRAWING_RULES.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -689,7 +692,7 @@
       "확정 원호 활동면",
       "활동면 아래 3~5m 일반값"
     ],
-    "notes": "DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략",
+    "notes": "v4 ai-reviewed DISP-ATS-01·BORE-GL-01·활동면추정·SLOPE-01 · 2026-06-29",
     "prohibitedVerified": true,
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
@@ -700,9 +703,9 @@
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed DISP-ATS-01·BORE-GL-01·활동면추정·SLOPE-01 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -713,7 +716,7 @@
         "V7"
       ]
     },
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-03",
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "Phase Z ZIP-AUD fix — Pillow v+1",
@@ -726,9 +729,9 @@
     "title": "원호활동면 계측 해석도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-016",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-016 · docs/167-IMG-016-v5-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
     "reviewDate": "2026-06-29",
-    "reviewer": "Codex CAD redraw",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -736,17 +739,17 @@
       "지중경사계 단독으로 원호활동면 확정",
       "추정선과 실측선 동일 의미"
     ],
-    "notes": "v4 Pillow/WebP PASS — 추정 원호활동면, 전단변형 집중 구간, 활동면 추정 구간, 안정해석 검토 모식도 분리. 최대변위=활동면 및 IPI 단독 확정 표현 제거",
+    "notes": "P0 v5 ai-reviewed — INTERP-01 추정 원호활동면·최대변위≠활동면·IPI 단독확정 금지 · prohibitedErrors 유지",
     "figureTier": "FT-B",
-    "productionMethod": "cad",
+    "productionMethod": "ai-reviewed",
     "productionMethodTarget": "cad",
     "migrationPhase": "P3",
     "hero": false,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Codex CAD redraw",
+      "reviewer": "agent",
       "date": "2026-06-29",
-      "notes": "CAD형 WebP 재작도 검수 완료 (IMG-016)",
+      "notes": "P0 REGENERATE v5 — INTERP-01 추정 원호활동면·최대변위≠활동면·IPI 단독확정 금지",
       "gates": [
         "V1",
         "V2",
@@ -884,7 +887,7 @@
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P3",
-    "hero": true,
+    "hero": false,
     "renderScript": "render-img019-soft-ground-layout.py",
     "caption": "연약지반 성토부 계측기 설치 배치도 v3 — IPI·piezo tip·지중침하·지하수위·토압",
     "alt": "연약지반 성토부 계측기 설치 배치도 - Sand Mat·지표침하판·핀·IPI·간극수압·지중침하",
@@ -917,9 +920,9 @@
     "title": "압밀 침하 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-020",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Cursor-Agent",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-020 · docs/133-IMG-020-압밀-침하-계측-개념도-표현-표준.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P1",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -937,7 +940,7 @@
       "grade": "PASS",
       "reviewer": "agent",
       "date": "2026-06-29",
-      "notes": "v4 ai-reviewed SETTLE-01 SOFT-CONS-01 BM+plate+u-t 2026-06-29",
+      "notes": "v4 ai-reviewed SETTLE-01 압밀침하·간극수압 그래프 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -1088,9 +1091,9 @@
     "title": "댐 안전관리 계측 체계도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-024",
-    "reviewDate": "2026-06-28",
-    "reviewer": "Codex local correction + visual review",
+    "reviewDoc": "docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -1106,7 +1109,7 @@
       "간극수압계가 누수량 직접 측정",
       "침투선을 실측값처럼 단정"
     ],
-    "notes": "v4 local-corrected PASS — v3 기준 제조사 문자 제거, 제목 보강, 침하 그래프 음수·하향 누적 보정",
+    "notes": "P0 v4 ai-reviewed — 필댐 6항목·DAM-01 침하·침윤선·V-notch·7단계 흐름 · prohibitedErrors 유지",
     "prohibitedVerified": true,
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
@@ -1116,12 +1119,21 @@
     "renderScript": "render-dam-audit-fixes.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Codex visual review",
-      "date": "2026-06-28",
-      "notes": "v4 local-corrected — 브랜드 문자 제거, 침하 카드 음수·하향 누적 표시"
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "P0 REGENERATE v4 — 필댐 6항목·침하 그래프 DAM-01·침윤선·V-notch·7단계 흐름",
+      "gates": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-34",
     "prohibitedVerifiedDate": "2026-06-28",
     "prohibitedVerifiedNote": "v4 local-corrected — DAM-01 침하 방향 보정, 제조사 문자 제거",
@@ -1135,9 +1147,9 @@
     "title": "지중경사계 시스템 구성도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-025",
-    "reviewDate": "2026-06-22",
-    "reviewer": "Phase 5 Pillow v2 — AUTO-01 IPI·datalogger chain",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-025 · docs/87-Phase-AA-MAJOR_FIX-복붙-프롬프트-정본.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P1",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -1148,7 +1160,7 @@
       "수평변위를 수직 침하로 표현",
       "수동 probe·리드아웃을 hero로 표현 (AUTO-01)"
     ],
-    "notes": "Phase 5 v2: IPI 다점·4홈 casing·안정층 Base·자동 로거 체인. 수동 프로브는 비교 inset만.",
+    "notes": "v4 ai-reviewed IPI-4홈·BORE-GL-01·누적변위-깊이·AUTO-01 · 2026-06-29",
     "prohibitedVerified": true,
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
@@ -1159,9 +1171,9 @@
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed IPI-4홈·BORE-GL-01·누적변위-깊이·AUTO-01 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -1172,7 +1184,7 @@
         "V7"
       ]
     },
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-16",
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "§3.3·AUTO-01 — IPI hero · manual inset only",
@@ -1196,7 +1208,7 @@
       "굴착·활동방향과 무관한 축 방향",
       "축 방향 설정 오류 경고 누락"
     ],
-    "notes": "외부 ZIP 3차 — A/B축 현장 방향 미연결. MAJOR_FIX. redline v2 미검수. docs/90 · docs/91 · interim body expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정",
+    "notes": "v4 ai-reviewed (2026-06-29): Guide groove 4방향·Probe wheel, AXIS-01 A/B축 굴착방향 연결, 화면좌표≠현장축 경고. 정본 docs/142. ZIP-AUD-21 MAJOR_FIX 해소.",
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -1204,9 +1216,9 @@
     "hero": false,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "ZIP AB Sprint10 v3 — AXIS-01 A/B축 현장 연결 · redline v2 · docs/91 §4",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: Guide groove 4방향·Probe wheel, AXIS-01 A/B축 굴착방향 연결, 화면좌표≠현장축 경고",
       "gates": [
         "V1",
         "V2",
@@ -1218,7 +1230,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-21",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-26",
@@ -1258,9 +1270,9 @@
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: 보링·외주 그라우트·케이싱·센서노드 분리, BORE-GL-01 well cap, Base 기준심도, 활동면, 수평변위→",
       "gates": [
         "V1",
         "V2",
@@ -1271,7 +1283,7 @@
         "V7"
       ]
     },
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-17",
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "§3.3.1·doc 17 — 활동면→·안정층 근입·다점 센서",
@@ -1342,7 +1354,7 @@
       "최대변위깊이=활동면",
       "단일 IPI 확정"
     ],
-    "notes": "P1 Sprint5 v3 — 변위집중≠활동면·간격변위 · docs/91 §2",
+    "notes": "v4 ai-reviewed (2026-06-29): 누적·간격변위, 변위집중≠활동면, 단일IPI확정금지. 정본 docs/144. INTERP-01.",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -1350,9 +1362,9 @@
     "hero": false,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1 v3 FT-C",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: 누적·간격변위 프로파일, 변위집중≠활동면, 단일IPI확정금지, INTERP-01",
       "gates": [
         "V1",
         "V2",
@@ -1364,7 +1376,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-23",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-26",
@@ -1401,9 +1413,9 @@
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: GL천공·well cap, G.W.L GL아래·관측공 수면, 필터·벤토나이트, ≠간극수압, WELL-01",
       "gates": [
         "V1",
         "V2",
@@ -1414,7 +1426,7 @@
         "V7"
       ]
     },
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-24",
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "§3.4·§3.24·AUTO-01",
@@ -1448,9 +1460,9 @@
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: 필터·그라우트·차수, G.W.L 참조만, ≠지하수위계, PIEZO-01",
       "gates": [
         "V1",
         "V2",
@@ -1461,7 +1473,7 @@
         "V7"
       ]
     },
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-35",
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "§3.5·§3.24 — sealed piezometer",
@@ -1473,26 +1485,26 @@
     "title": "침하판·침하계 설치 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-032",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-032 · docs/170-IMG-032-v6-재생성-기록.md",
     "reviewDate": "2026-06-29",
-    "reviewer": "Codex CAD redraw",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
       "연장봉 상단을 기준점으로 표기",
       "측정점·안정 기준점 미분리"
     ],
-    "notes": "ai-reviewed PASS — Z-1c 연장봉 상단=기준점. 재작도: redline v2. SETTLE-01.",
+    "notes": "v6 ai-reviewed — 침하판·연장봉·보호관·측정점≠기준점 SETTLE-01",
     "figureTier": "FT-A",
-    "productionMethod": "cad",
+    "productionMethod": "ai-reviewed",
     "productionMethodTarget": "cad",
     "migrationPhase": "P2",
     "hero": false,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Codex CAD redraw",
+      "reviewer": "agent",
       "date": "2026-06-29",
-      "notes": "CAD형 WebP 재작도 - 침하판·연장봉·보호관·침하 방향 표시, 연장봉 상단 기준점 오표현 제거",
+      "notes": "v6 SETTLE-01 침하판·연장봉·보호관·측정점≠기준점",
       "gates": [
         "V1",
         "V2",
@@ -1516,7 +1528,7 @@
     "title": "층별침하계 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-033",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-033 · docs/136-IMG-033-층별침하계-개념도-표현-표준.md",
     "reviewDate": "2026-06-26",
     "reviewer": "Cursor-Agent",
     "auditPriority": "P0",
@@ -1561,7 +1573,7 @@
     "title": "토압계 설치 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-034",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-034 · docs/159-IMG-034-v3-재생성-기록.md",
     "reviewDate": "2026-06-22",
     "reviewer": "Phase 5 Pillow v2 — sensing face·배면→벽체",
     "auditPriority": "P1",
@@ -1584,11 +1596,20 @@
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Human-Reviewer",
-      "date": "2026-06-26",
-      "notes": "Phase D FT-A/B ai-reviewed redline v2"
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v3 ai-reviewed hero — Pillow R1 sprint",
+      "gates": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ]
     },
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-05",
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "§3.6 — EPC sensing face toward structure",
@@ -1599,10 +1620,10 @@
     "title": "하중계 설치 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-035",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/165-IMG-035-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
     "reviewDate": "2026-06-22",
     "reviewer": "Phase 5 Pillow v2 — STR-01 strut vs anchor LC",
-    "auditPriority": "P1",
+    "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
       "버팀보 정중앙 하중계",
@@ -1620,9 +1641,9 @@
     "renderScript": "render-phase5-sensors.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "P0 REGENERATE v3 — ①띠장-버팀보 접합부 축압축 ②앵커두부 ANC-CLOCK T/P · docs/132 §5.1",
       "gates": [
         "V1",
         "V2",
@@ -1634,7 +1655,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-25",
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "§3.2·§3.7·STR-01",
@@ -1656,7 +1677,7 @@
       "게이지 방향 미표시",
       "온도보정·E·중립축 생략"
     ],
-    "notes": "외부 ZIP 4차 — 변형률=즉시 응력 판정. MAJOR_FIX. docs/92 Phase AC-2 · interim body expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정",
+    "notes": "v4 ai-reviewed (2026-06-29): 철근·강재 부착, 측정축, 중립축, 온도보정·E, 변형률≠즉시 안전판정. 정본 docs/141. ZIP-AUD-37 MAJOR_FIX 해소.",
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -1664,9 +1685,9 @@
     "hero": false,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: 철근·강재 표면 부착, 측정축, 중립축, 온도보정·E·σ=εE, 변형률≠즉시 안전판정",
       "gates": [
         "V1",
         "V2",
@@ -1678,7 +1699,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-37",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-26",
@@ -1751,7 +1772,7 @@
       "브라켓 처짐을 기준면으로 표현",
       "1점 경사로 전체 기울기 단정"
     ],
-    "notes": "외부 ZIP 2차 — 브라켓 무시·구조물 경사 단정. MAJOR_FIX. redline v2 미검수. docs/81 AA-2f · docs/85 · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정",
+    "notes": "v4 ai-reviewed TILT-STRUCT-01 · 강체 브라켓·국부 경사 · docs/139 · 2026-06-29",
     "prohibitedVerified": true,
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
@@ -1761,9 +1782,9 @@
     "renderScript": "render-p2-sensors.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "ZIP AA Sprint9 v3 — 구조물경사계 rigid bracket · hero · redline v2",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed TILT-STRUCT-01 rigid bracket local tilt 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -1775,7 +1796,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-19",
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "§10·IMAGE_REVIEW_LOG 육안 체크리스트 완료",
@@ -1932,7 +1953,7 @@
       "ATS 한 대가 절대변위 자동 확정",
       "후시점·기상보정 누락"
     ],
-    "notes": "외부 ZIP 3차 — 기준망·후시점·기상보정 누락. MAJOR_FIX. redline v2 미검수. docs/90 · docs/91 · interim hero expose (existing webp) · 2026-06-27 · ai-reviewed 재작도 예정",
+    "notes": "v4 ai-reviewed (2026-06-29): 기준점·후시점·시준선·프리즘·ΔXΔY, 기상보정, 기준점이동 경고. 정본 docs/143. ZIP-AUD-27 MAJOR_FIX 해소.",
     "prohibitedVerified": true,
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
@@ -1942,9 +1963,9 @@
     "renderScript": "render-p2-sensors.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "ZIP AB Sprint10 v3 — ATS-NET-01 기준망·시준 · hero · redline v2 · docs/91 §8",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: 기준점·후시점(시준선)·프리즘·ΔXΔY, 기상보정, 기준점이동 경고, ATS-NET-01",
       "gates": [
         "V1",
         "V2",
@@ -1956,7 +1977,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-27",
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "§10·IMAGE_REVIEW_LOG 육안 체크리스트 완료",
@@ -1968,9 +1989,9 @@
     "title": "GNSS 변위 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-043",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-043 · docs/161-IMG-043-v5-재생성-기록.md",
     "reviewDate": "2026-06-29",
-    "reviewer": "Codex CAD redraw",
+    "reviewer": "agent",
     "auditPriority": "P1",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -1982,18 +2003,18 @@
       "GNSS 기준국이 이동국 직접 시준",
       "광파 시준선 유사 점선"
     ],
-    "notes": "v4 Pillow/WebP PASS — 기준국은 안정 지반, 이동국은 계측 대상 2점 이상, RTK/차분·무선 통신·중앙 서버 흐름 분리",
+    "notes": "v5 ai-reviewed — Pillow R1. 기준국(안정 외부)·이동국 3점·RTK 보정·LTE→서버·ΔX/Y/Z",
     "prohibitedVerified": true,
     "figureTier": "FT-B",
-    "productionMethod": "cad",
+    "productionMethod": "ai-reviewed",
     "productionMethodTarget": "cad",
     "migrationPhase": "P2",
     "hero": true,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Codex CAD redraw",
+      "reviewer": "agent",
       "date": "2026-06-29",
-      "notes": "CAD형 WebP 재작도 검수 완료 (IMG-043)",
+      "notes": "v5 ai-reviewed hero — Pillow R1 sprint",
       "gates": [
         "V1",
         "V2",
@@ -2007,8 +2028,8 @@
     "migrationStatus": "completed",
     "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-07",
-    "prohibitedVerifiedDate": "2026-06-28",
-    "prohibitedVerifiedNote": "v4 Pillow/WebP — GNSS 기준국 직접 시준·광학식 측량 요소·제조사 표기 제거",
+    "prohibitedVerifiedDate": "2026-06-29",
+    "prohibitedVerifiedNote": "v5 ai-reviewed — ZIP-AUD-07 보정정보/광학 시준 분리 (agent)",
     "imageKnowledgeTopic": "07-GNSS-변위-계측.md"
   },
   "IMG-045": {
@@ -2016,9 +2037,9 @@
     "title": "데이터로거 구성도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-045",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-045 · docs/91-Phase-AB-복붙-프롬프트-정본.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -2030,7 +2051,7 @@
       "로거가 센서 종류 자동 처리",
       "신호 형식·여자전원 미구분"
     ],
-    "notes": "P1-1 v3 ai-reviewed — LOGGER-SIG-01·센서입력·전원·통신·저장 · redline v2 · docs/91",
+    "notes": "v4 ai-reviewed LOGGER-SIG-01·P0-3함체·신호형식분리 · 2026-06-29",
     "prohibitedVerified": true,
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
@@ -2040,9 +2061,9 @@
     "renderScript": "render-p3-platform.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1-1 — 데이터로거 함체·신호형식 분리",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed LOGGER-SIG-01·P0-3함체·신호형식분리 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -2054,7 +2075,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-29",
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "§10·IMAGE_REVIEW_LOG 육안 체크리스트 완료",
@@ -2113,9 +2134,9 @@
     "title": "LTE M2M 통신 구성도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-048",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-048 · docs/image-knowledge/29-통신·게이트웨이-역할.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P1",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -2127,7 +2148,7 @@
       "APN·VPN·ACK·방화벽 누락",
       "LTE 모뎀이 경보 판정"
     ],
-    "notes": "P1-1 v3 ai-reviewed — LTE-BUF-01·버퍼·APN/VPN·ACK · redline v2 · docs/97",
+    "notes": "v4 ai-reviewed LTE-BUF-01·GW-ROLE-01·APN/VPN/ACK · 2026-06-29",
     "prohibitedVerified": true,
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
@@ -2137,9 +2158,9 @@
     "renderScript": "render-p3-platform.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1-1 — LTE M2M·로컬저장·재전송",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed LTE-BUF-01·GW-ROLE-01·APN/VPN/ACK 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -2151,7 +2172,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-42",
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "§10·IMAGE_REVIEW_LOG 육안 체크리스트 완료",
@@ -2489,9 +2510,9 @@
     "title": "통합 계측 플랫폼 아키텍처",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-058",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-058 · docs/image-knowledge/29-통신·게이트웨이-역할.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -2500,7 +2521,7 @@
       "흙막이·터널 단면 주 화면",
       "뇌·홀로그램·SF UI"
     ],
-    "notes": "P1-1 v2 ai-reviewed — §4.13 E2E 5블록·solar · ARCH-01",
+    "notes": "v4 ai-reviewed ARCH-01·5계층E2E·전원·통신·모드·뇌금지 · 2026-06-29",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "ARCH-01~03 · INSTRUMENTATION §3.36",
@@ -2512,9 +2533,9 @@
     "renderScript": "render-p3-platform.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1-1 — 통합 플랫폼 5계층 아키텍처",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed ARCH-01·5계층E2E·전원·통신·모드·뇌금지 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -2526,7 +2547,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-27",
     "imageKnowledgeTopic": "29-통신·게이트웨이-역할.md"
@@ -2581,9 +2602,9 @@
     "title": "터널 천단침하 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-061",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Cursor-Agent",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-061 · docs/49-터널-천단침하-계측-표현-표준.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -2597,7 +2618,7 @@
       "천단·내공·지표·지중 혼동 (TUN-CROWN-08)",
       "데이터 흐름도 (TUN-CROWN-11)"
     ],
-    "notes": "v2 TUN-CROWN PASS — 천단 측점·ATS, 와이어·앵커·로거 제거 (docs/50)",
+    "notes": "v4 ai-reviewed TUN-CROWN·천단측점·ATS시준·와이어금지 · 2026-06-29",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "TUN-CROWN-01~12 redline v2 — 와이어·앵커·로거 0건",
@@ -2608,9 +2629,9 @@
     "hero": true,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "v2 TUN-CROWN — 천단 측점·ATS, 와이어·앵커·로거 제거",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed TUN-CROWN·천단측점·ATS시준·와이어금지 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -2622,7 +2643,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "imageKnowledgeTopic": "10-천단침하-계측.md"
   },
   "IMG-062": {
@@ -2654,9 +2675,9 @@
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: ①개방 관측공·G.W.L vs ②밀폐 필터·u, BORE-GL-01, EXC-03 이형, 배면 천공",
       "gates": [
         "V1",
         "V2",
@@ -2667,7 +2688,7 @@
         "V7"
       ]
     },
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "imageKnowledgeTopic": "04-지하수위계-관측공-설치.md"
   },
   "IMG-063": {
@@ -2675,13 +2696,13 @@
     "title": "막장전방 선행변위 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-063",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Cursor-Agent",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-063 · docs/06-터널-히어로-및-콘텐츠-API.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": null,
+    "notes": "v4 ai-reviewed 막장전방·선행변위계·굴진방향·막장거리 · 2026-06-29",
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -2689,9 +2710,9 @@
     "hero": true,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed 막장전방·선행변위계·굴진방향·막장거리 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -2703,7 +2724,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "imageKnowledgeTopic": "01-터널-내공변위-측정.md"
   },
   "IMG-064": {
@@ -3490,16 +3511,16 @@
     "title": "록볼트 축력 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-078",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Cursor-Agent Phase Z",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-078 · docs/160-IMG-078-v3-재생성-기록.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
       "두부 하중=P 전체 록볼트 축력",
       "축력분포·변형률계 미구분"
     ],
-    "notes": "ai-reviewed PASS v2 — Z-1d 두부 LC=전체 축력. 재작도: redline v2. docs/77.",
+    "notes": "v3 ai-reviewed — Pillow R1. 천단·어깨 볼트 암반 관입·축력계+변형률계·두부 LC≠전체 분포(Z-1d)",
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -3508,9 +3529,9 @@
     "renderScript": "render-tunnel-support-figures.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v3 ai-reviewed hero — Pillow R1 sprint",
       "gates": [
         "V1",
         "V2",
@@ -3522,11 +3543,11 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-09",
     "prohibitedVerified": true,
-    "prohibitedVerifiedDate": "2026-06-26",
-    "prohibitedVerifiedNote": "Phase Z ZIP-AUD fix — Pillow v+1",
+    "prohibitedVerifiedDate": "2026-06-29",
+    "prohibitedVerifiedNote": "v3 ai-reviewed — ZIP-AUD-09 Z-1d 두부/분포 분리 (agent)",
     "imageKnowledgeTopic": "11-터널-록볼트-숏크리트-계측.md"
   },
   "IMG-079": {
@@ -3534,9 +3555,9 @@
     "title": "숏크리트 응력·변형 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-079",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-079 · docs/22-IMG-079-숏크리트-응력-변형-오류분석-및-재작업-계획.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -3544,7 +3565,7 @@
       "숏크리트 응력계=토압계",
       "지반압 화살표와 센서 1:1 연결"
     ],
-    "notes": "TUN-SC v3 — 암반|숏크리트|굴착 · SG 매립",
+    "notes": "v4 ai-reviewed TUN-SC·암반|숏크리트|굴착·SG매립·σ · 2026-06-29",
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -3553,9 +3574,9 @@
     "renderScript": "render-tunnel-support-figures.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "AI Sprint2 — REGENERATE v4/v3 · ai-reviewed · human pixel review 권장",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed TUN-SC·암반|숏크리트|굴착·SG매립·σ 2026-06-29",
       "gates": [
         "V1",
         "V2",
@@ -3567,7 +3588,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-38",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-26",
@@ -3581,26 +3602,26 @@
     "title": "강지보 응력 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-080",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-080 · docs/163-IMG-080-v5-재생성-기록.md",
     "reviewDate": "2026-06-29",
-    "reviewer": "Codex CAD redraw",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
       "플랜지 일부 변형률만으로 전체 응력 대표",
       "내외측·다점 계측 미표시"
     ],
-    "notes": "ai-reviewed PASS — Z-1e 1점 SG=전체 응력. 재작도: redline v2. docs/77.",
+    "notes": "v5 ai-reviewed — Pillow R1 완료. H형강 스틸세트·천단·어깨·측벽 다점 SG·N/M 분리(Z-1e)",
     "figureTier": "FT-B",
-    "productionMethod": "cad",
+    "productionMethod": "ai-reviewed",
     "productionMethodTarget": "cad",
     "migrationPhase": "P2",
     "hero": true,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Codex CAD redraw",
+      "reviewer": "agent",
       "date": "2026-06-29",
-      "notes": "CAD형 WebP 재작도 - 터널 강지보 H형강, 천단·어깨·측벽 다점 SG, 플랜지 1점 대표 오류 제거",
+      "notes": "v5 ai-reviewed hero — Pillow R1 sprint 완료",
       "gates": [
         "V1",
         "V2",
@@ -3615,8 +3636,8 @@
     "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-10",
     "prohibitedVerified": true,
-    "prohibitedVerifiedDate": "2026-06-26",
-    "prohibitedVerifiedNote": "Phase Z ZIP-AUD fix — Pillow v+1",
+    "prohibitedVerifiedDate": "2026-06-29",
+    "prohibitedVerifiedNote": "v5 ai-reviewed — ZIP-AUD-10 다점 SG·플랜지 내외측 (agent)",
     "imageKnowledgeTopic": "11-터널-록볼트-숏크리트-계측.md"
   },
   "IMG-081": {
@@ -3924,13 +3945,13 @@
   "IMG-096": {
     "id": "IMG-096",
     "alt": "주변지반 계측 설치 대표 단면도 - 굴착 영향권, 센서형 다단식 지중경사계·침하·간극수압·지하수위",
-    "caption": "가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v4)",
+    "caption": "가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v5)",
     "title": "가시설 주변지반 계측 설치 대표 단면도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-096",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/158-IMG-096-v5-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
     "reviewDate": "2026-06-29",
-    "reviewer": "Codex CAD redraw",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -3952,19 +3973,19 @@
       "지표침하핀에 지표침하계 라벨",
       "잠재 슬립면 원호"
     ],
-    "notes": "v4 Pillow/WebP PASS — 흙막이 굴착 배면 주변지반 4종 배치, H=굴착깊이, 지표침하 측점 표기, 옹벽·Sand Mat·침하판·슬립면 제거",
+    "notes": "v5 ai-reviewed — Pillow/CAD 와이어프레임 대체. SOE-SURR-01 4종·H=굴착깊이·BORE-GL-01·SETTLE-01. 옹벽·Sand Mat·슬립면 제거",
     "prohibitedVerified": true,
     "figureTier": "FT-A",
-    "productionMethod": "cad",
+    "productionMethod": "ai-reviewed",
     "productionMethodTarget": "cad",
     "migrationPhase": "P1",
     "hero": true,
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Codex CAD redraw",
+      "reviewer": "agent",
       "date": "2026-06-29",
-      "notes": "CAD형 WebP 재작도 검수 완료 (IMG-096)",
+      "notes": "v5 ai-reviewed hero — Pillow R1 sprint",
       "gates": [
         "V1",
         "V2",
@@ -3977,7 +3998,7 @@
     },
     "migrationCompletedDate": "2026-06-29",
     "prohibitedVerifiedDate": "2026-06-28",
-    "prohibitedVerifiedNote": "v4 Pillow/WebP — SOE-SURR-01, SETTLE-01, BORE-GL-01, SOE-INST-01 대조 PASS",
+    "prohibitedVerifiedNote": "v5 ai-reviewed — SOE-SURR-01, SETTLE-01, BORE-GL-01, SOE-INST-01 대조 (agent)",
     "interimHeroExposedDate": "2026-06-27",
     "imageKnowledgeTopic": "03-지하굴착-흙막이-계측-단면.md"
   },
@@ -4016,10 +4037,10 @@
     "title": "항만 호안 조위·지하수 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-098",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Cursor-Agent",
-    "auditPriority": null,
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-098 · docs/168-IMG-098-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
+    "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
       "fields/harbor/tide-groundwater hero에 IMG-030(육상) 사용 (HAR-01)",
@@ -4027,7 +4048,7 @@
       "수평 G.W.L — tidal lag 곡선 아님 (HAR-03)",
       "관측공 불통 관 — screen·filter pack 없음 (HAR-04)"
     ],
-    "notes": "render-harbor-audit-fixes.py · HAR-01~04 수정 완료",
+    "notes": "P0 v3 ai-reviewed — HAR-01~04 외해·조위계·tidal lag G.W.L·관측공 screen/filter · prohibitedErrors 유지",
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "pillow",
@@ -4039,9 +4060,9 @@
     "prohibitedVerifiedNote": "§10·IMAGE_REVIEW_LOG 육안 체크리스트 완료",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-26",
-      "notes": "외부 PNG 등록 (ai-reviewed) — Phase 1~5 출판·기술 검수",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "P0 REGENERATE v3 — 외해 H.W.L/L.W.L·조위계·사석호안·매립 G.W.L tidal lag·관측공 screen/filter",
       "gates": [
         "V1",
         "V2",
@@ -4053,7 +4074,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "imageKnowledgeTopic": "19-항만·호안-계측-배치.md"
   },
   "IMG-099": {
@@ -4144,7 +4165,7 @@
     "migrationCompletedDate": "2026-06-26",
     "caption": "건축공사 계측 전체 개념도 — LVDT·변형률·균열·경사·하중 (KCS 3.9)",
     "alt": "건축공사 계측 전체 개념도 - KCS 3.9 처짐 축소 균열",
-    "imageKnowledgeTopic": "17-건축공사-계측-배치.md"
+    "imageKnowledgeTopic": "IMG-100-건축공사-계측-전체-개념도.md"
   },
   "IMG-101": {
     "id": "IMG-101",
@@ -4196,9 +4217,9 @@
     "title": "사면 지표경사 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-089",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Human-Reviewer",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-089 · docs/INSTRUMENTATION_DRAWING_RULES.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -4209,7 +4230,7 @@
       "pad 없이 지중 매설",
       "흙막이·교량 풍경 맥락"
     ],
-    "notes": "v3 ai-reviewed PASS — redline v2 서명 2026-06-27 · docs/88",
+    "notes": "v4 ai-reviewed SLO-TILT-01·pad·θ·지표경사계 · 2026-06-29",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-27",
     "prohibitedVerifiedNote": "Phase B v3 ai-reviewed — redline 서명",
@@ -4221,12 +4242,21 @@
     "renderScript": "render-sprint0-figures.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Human-Reviewer",
-      "date": "2026-06-27",
-      "notes": "Phase B v3 redline 서명"
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed SLO-TILT-01·pad·θ·지표경사계 2026-06-29",
+      "gates": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-27",
     "imageKnowledgeTopic": "13-사면·비탈면-계측-배치.md"
@@ -4236,9 +4266,9 @@
     "title": "사면 구조물 변위 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-090",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Human-Reviewer",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-090 · docs/129-사면-옹벽-와이어식-변위계-배면사면-표준.md",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -4247,7 +4277,7 @@
       "ATS 옹벽·사면 꼭대기 부착",
       "흙막이 굴착·교량 풍경 맥락"
     ],
-    "notes": "v5 ai-reviewed PASS — redline v2 서명 2026-06-27 · docs/88",
+    "notes": "v5 ai-reviewed SLO-WIRE-01·배면와이어·옹벽프리즘·ΔXΔY · 2026-06-29",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-27",
     "prohibitedVerifiedNote": "Phase B v5 ai-reviewed — redline 서명",
@@ -4259,12 +4289,21 @@
     "renderScript": "render-sprint0-figures.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Human-Reviewer",
-      "date": "2026-06-27",
-      "notes": "Phase B v5 redline 서명"
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v5 ai-reviewed SLO-WIRE-01·배면와이어·옹벽프리즘·ΔXΔY 2026-06-29",
+      "gates": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-27",
     "caption": "사면 구조물 변위 계측 — 배면 사면 와이어식 변위계 · 옹벽 프리즘 · ΔX/ΔY",
@@ -4276,8 +4315,8 @@
     "title": "다점지중변위계 (MPBX) 설치 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-091",
-    "reviewDate": "2026-06-27",
+    "reviewDoc": "docs/146-IMG-091-MPBX-설치-개념도-표현-표준.md · docs/IMAGE_REVIEW_LOG.md#IMG-091",
+    "reviewDate": "2026-06-29",
     "reviewer": "Human-Reviewer",
     "auditPriority": "P0",
     "requiresReaudit": false,
@@ -4289,7 +4328,7 @@
       "보링 GL well cap 누락 (P0-2)",
       "4홈 casing·프로브 휠 (MPX-01)"
     ],
-    "notes": "v3 ai-reviewed PASS — redline v2 서명 2026-06-27 · docs/88",
+    "notes": "v4 ai-reviewed (2026-06-29): GL·well cap, 앵커3·로드·헤드, 축방향변위, ≠IPI·≠신축. 정본 docs/146. MPX-01~03.",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-27",
     "prohibitedVerifiedNote": "Phase B v3 ai-reviewed — redline 서명",
@@ -4301,12 +4340,21 @@
     "renderScript": "render-sprint0-figures.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Human-Reviewer",
-      "date": "2026-06-27",
-      "notes": "Phase B v3 redline 서명"
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: GL·well cap, 앵커3·로드·헤드, 축방향변위, Base 안정층, ≠IPI·≠신축, MPX-01~03",
+      "gates": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-29",
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-27",
     "imageKnowledgeTopic": "25-MPBX·지중변위-표현.md"
@@ -4497,7 +4545,7 @@
     "title": "교량 상부구조 GNSS 처짐 계측도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-103",
+    "reviewDoc": "docs/148-IMG-103-교량-상부구조-GNSS-처짐-표현-표준.md · docs/151-IMG-103-GNSS-처짐계-정본-충돌-정리.md · docs/IMAGE_REVIEW_LOG.md#IMG-103",
     "reviewDate": "2026-06-29",
     "reviewer": "agent",
     "auditPriority": null,
@@ -4508,10 +4556,12 @@
       "Y축 침하량",
       "하부 와이어식 처짐계 hero (DEF-GNSS-04)",
       "교각 측면/중간 GNSS (DEF-GNSS-05)",
+      "1/4·3/4 경간 GNSS·복수 이동국 (SPAN-MID-01)",
+      "교대↔교대 경간 표시",
       "와이어+GNSS 동시 주계측 (DEF-GNSS-06)",
       "생성 시 로고·워터마크"
     ],
-    "notes": "v3 GNSS PASS — docs/120 · Pillow render_img103 · 경간 상부 ΔZ→δ",
+    "notes": "v5 GNSS ai-reviewed (2026-06-29): 경간=교각간, 이동국 경간중앙 1개, 1/4·3/4·교각 GNSS 금지, ΔZ→δ. 정본 docs/148 SPAN-MID-01.",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4524,7 +4574,7 @@
       "grade": "PASS",
       "reviewer": "agent",
       "date": "2026-06-29",
-      "notes": "v3 GNSS docs/120 Pillow render — DEF-GNSS-01~06",
+      "notes": "v5 GNSS: 경간=교각간, 이동국 경간중앙 1개만, 1/4·3/4·교각 GNSS 금지, ΔZ→δ, DEF-GNSS",
       "gates": [
         "V1",
         "V2",
@@ -4540,9 +4590,9 @@
     "wireframeClearedDate": "2026-06-26",
     "migrationStatus": "completed",
     "migrationCompletedDate": "2026-06-29",
-    "caption": "교량 GNSS 처짐 — 경간 상부 ΔZ·처짐량 δ (v3, 와이어식 hero 아님)",
-    "alt": "교량 상부구조 GNSS 처짐 계측도 - 경간 상부 이동국 수직변위 ΔZ",
-    "imageKnowledgeTopic": "14-교량-계측시스템-설치.md"
+    "caption": "교량 GNSS 처짐 — 경간(교각↔교각) 중앙 이동국 1개·ΔZ→δ (v5)",
+    "alt": "교량 상부구조 GNSS 처짐 계측도 - 경간 중앙 이동국 1개 수직변위 ΔZ",
+    "imageKnowledgeTopic": "14-교량-처짐-계측.md"
   },
   "IMG-104": {
     "id": "IMG-104",
@@ -4556,9 +4606,10 @@
     "requiresReaudit": false,
     "prohibitedErrors": [
       "침하계·침하판",
-      "지반 침하 단면"
+      "지반 침하 단면",
+      "GNSS+와이어 동시 주계측 (DEF-GNSS-06)"
     ],
-    "notes": "AI Sprint2b — IMG-104 교량 확장 재작도",
+    "notes": "v4 ai-reviewed (2026-06-29): 와이어식·LVDT 처짐 δ, ≠침하계, IMG-103 GNSS 분리. 정본 docs/150. BRI-DEF.",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4569,9 +4620,9 @@
     "prohibitedVerifiedDate": "2026-06-26",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1-C Sprint8 v3 — 처짐계 LVDT·와이어 · BRI-DEF · redline v2",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: 와이어식·LVDT 처짐계, δ 연직, ≠침하계, IMG-103 GNSS 분리, BRI-DEF",
       "gates": [
         "V1",
         "V2",
@@ -4586,8 +4637,8 @@
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-26",
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
-    "imageKnowledgeTopic": "09-변위·광학계측-표현-기준.md"
+    "migrationCompletedDate": "2026-06-29",
+    "imageKnowledgeTopic": "14-교량-처짐-계측.md"
   },
   "IMG-105": {
     "id": "IMG-105",
@@ -4595,15 +4646,18 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-105",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [
       "어스앵커 로드셀",
-      "IMG-004 재사용"
+      "IMG-004 재사용",
+      "진동현식·VW 라벨 (METHOD-01)",
+      "흙막이·굴착 배경 (CT-BRI-02)",
+      "임의 관리기준 장력표 (CT-BRI-04)"
     ],
-    "notes": "AI Sprint2b — IMG-105 교량 확장 재작도",
+    "notes": "v4 ai-reviewed (2026-06-29): 사장교 주케이블 케이블장력계·f→T·BRI-CT. 정본 docs/151.",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4614,9 +4668,9 @@
     "prohibitedVerifiedDate": "2026-06-26",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1-C Sprint8 v3 — 케이블장력 주파수법 · BRI-CT · hero",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed: 사장교 주케이블 케이블장력계·f→T·BRI-CT·METHOD-01",
       "gates": [
         "V1",
         "V2",
@@ -4631,7 +4685,9 @@
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-26",
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
+    "caption": "교량 케이블 장력 — 주케이블 f→T·케이블장력계 (v4)",
+    "alt": "교량 케이블 장력 계측도 - 사장교 주케이블 주파수법 장력 T",
     "imageKnowledgeTopic": "14-교량-계측시스템-설치.md"
   },
   "IMG-106": {
@@ -4640,16 +4696,17 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-106",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [
       "하중계=케이블장력",
       "버팀보 로드셀",
+      "어스앵커 T/P (IMG-004)",
       "진동현식·VW 라벨 (METHOD-01)"
     ],
-    "notes": "AI Sprint2b — IMG-106 교량 확장 재작도",
+    "notes": "v4 ai-reviewed (2026-06-29): 주케이블 클램프·f→T·설치개념·BRI-CT. 정본 docs/155.",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4660,9 +4717,9 @@
     "prohibitedVerifiedDate": "2026-06-26",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1-C Sprint8 v3 — 케이블장력계 설치 · METHOD-01",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed (2026-06-29): 주케이블 클램프·f→T·설치개념·BRI-CT. 정본 docs/155.",
       "gates": [
         "V1",
         "V2",
@@ -4677,7 +4734,9 @@
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-26",
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
+    "caption": "케이블장력계 설치 — 주케이블 클램프·f→T (v4)",
+    "alt": "케이블장력계 설치 개념도 - 주케이블 주파수법 장력 측정",
     "imageKnowledgeTopic": "14-교량-계측시스템-설치.md"
   },
   "IMG-107": {
@@ -4686,15 +4745,18 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-107",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [
       "침하계 단면",
-      "흙막이 배경"
+      "흙막이 배경",
+      "숏크리트 hero (STR-BRI-03)",
+      "무응력계=SG 동일 캡션 (STR-BRI-04)",
+      "진동현식·VW 라벨 (METHOD-01)"
     ],
-    "notes": "AI Sprint2b — IMG-107 교량 확장 재작도",
+    "notes": "v4 ai-reviewed (2026-06-29): PSC·강재 휨 SG·ε→σ·전단 inset·BRI-STR. 정본 docs/152.",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4705,9 +4767,9 @@
     "prohibitedVerifiedDate": "2026-06-26",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1-C Sprint8 v3 — PSC·강재 휨변형률 · hero",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed (2026-06-29): PSC·강재 휨 변형률계·ε→σ·전단 SG inset·BRI-STR. 정본 docs/152.",
       "gates": [
         "V1",
         "V2",
@@ -4722,7 +4784,9 @@
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-26",
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
+    "caption": "교량 변형률·응력 — 거더 SG 휨 ε→σ (v4)",
+    "alt": "교량 변형률·응력 계측도 - PSC·강재 휨 변형률계 및 전단 SG",
     "imageKnowledgeTopic": "14-교량-계측시스템-설치.md"
   },
   "IMG-108": {
@@ -4731,14 +4795,18 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-108",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [
-      "일반 SG와 동일 캡션"
+      "일반 SG와 동일 캡션",
+      "침하·지반 단면 (STR-BRI-01)",
+      "숏크리트 hero (STR-BRI-03)",
+      "지중경사계·균열계 hero",
+      "진동현식·VW 라벨 (METHOD-01)"
     ],
-    "notes": "AI Sprint2c — IMG-108",
+    "notes": "v4 ai-reviewed (2026-06-29): 무응력계 ε₀·크리프보정·BRI-STR. 정본 docs/156.",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4749,9 +4817,9 @@
     "prohibitedVerifiedDate": "2026-06-26",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1-C Sprint8 v3 — 무응력계·크리프 보정",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed (2026-06-29): 무응력계 ε₀·크리프보정·BRI-STR. 정본 docs/156.",
       "gates": [
         "V1",
         "V2",
@@ -4766,7 +4834,9 @@
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-26",
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
+    "caption": "무응력계 설치 — ε₀·크리프·건조수축 보정 (v4)",
+    "alt": "무응력계 설치 개념도 - 응력 0 기준 변형률 크리프 보정",
     "imageKnowledgeTopic": "22-균열·변형률-계측-표현.md"
   },
   "IMG-109": {
@@ -4775,15 +4845,18 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-109",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [
       "사면 강우 hero만",
-      "지하수위계 단독"
+      "지하수위계 단독",
+      "풍향·풍속 벡터 없음 (WND-BRI-03)",
+      "임의 풍하중 관리표 (WND-BRI-04)",
+      "진동현식·VW 라벨 (METHOD-01)"
     ],
-    "notes": "AI Sprint2c — IMG-109",
+    "notes": "v4 ai-reviewed (2026-06-29): 주탑·교면 풍향풍속·BRI-WND. 정본 docs/153.",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4794,9 +4867,9 @@
     "prohibitedVerifiedDate": "2026-06-26",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1-C Sprint8 v3 — 교량 풍향·풍속 · hero",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed (2026-06-29): 주탑·교면 풍향풍속·BRI-WND. 정본 docs/153.",
       "gates": [
         "V1",
         "V2",
@@ -4811,7 +4884,9 @@
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-26",
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
+    "caption": "교량 풍향·풍속 — 주탑·교면 풍향풍속계 (v4)",
+    "alt": "교량 풍향·풍속 계측도 - 주탑 및 교면 풍속 풍향 계측",
     "imageKnowledgeTopic": "14-교량-계측시스템-설치.md"
   },
   "IMG-110": {
@@ -4820,17 +4895,18 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-110",
-    "reviewDate": "2026-06-27",
-    "reviewer": "Cursor Agent",
+    "reviewDate": "2026-06-29",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [
       "X/Y/Z 3축 주계측",
       "종·횡변위 제목",
       "신축이음 핑거형 hero",
-      "GNSS 절대좌표 혼합"
+      "GNSS 절대좌표 혼합",
+      "진동현식·VW 라벨 (METHOD-01)"
     ],
-    "notes": "AI Sprint2c — IMG-110",
+    "notes": "v4 ai-reviewed (2026-06-29): 받침 슬라이드·회전·변위계·BRI-BRG. 정본 docs/154.",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4841,9 +4917,9 @@
     "prohibitedVerifiedDate": "2026-06-26",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "P1-C Sprint8 v3 — 받침부 슬라이드·회전 · hero (085 대체)",
+      "reviewer": "agent",
+      "date": "2026-06-29",
+      "notes": "v4 ai-reviewed (2026-06-29): 받침 슬라이드·회전·변위계·BRI-BRG. 정본 docs/154.",
       "gates": [
         "V1",
         "V2",
@@ -4858,21 +4934,23 @@
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-26",
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-29",
+    "caption": "교량 받침부 변위 — 슬라이드 Δx·회전 (v4)",
+    "alt": "교량 받침부 변위 계측도 - 받침 슬라이드 변위계",
     "imageKnowledgeTopic": "14-교량-계측시스템-설치.md"
   },
   "IMG-111": {
     "id": "IMG-111",
-    "title": "터널 건설기간 계측 개념도",
+    "title": "터널 건설중 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-111",
+    "reviewDoc": "docs/image-knowledge/IMG-111-터널-건설중-계측-개념도.md · docs/153-계측문서-용어-정본-건설중-계측.md · docs/IMAGE_REVIEW_LOG.md#IMG-111",
     "reviewDate": "2026-06-27",
     "reviewer": "Cursor-Agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "건설기간 계측 hero — ai-reviewed PNG 등록",
+    "notes": "건설중 계측 hero — ai-reviewed · docs/153",
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4884,7 +4962,7 @@
       "grade": "PASS",
       "reviewer": "Cursor-Agent",
       "date": "2026-06-27",
-      "notes": "터널 건설기간 계측 hero — ai-reviewed",
+      "notes": "터널 건설중 계측 hero — ai-reviewed",
       "gates": [
         "V1",
         "V2",
@@ -4895,11 +4973,11 @@
         "V7"
       ]
     },
-    "imageKnowledgeTopic": "01-터널-내공변위-측정.md"
+    "imageKnowledgeTopic": "IMG-111-터널-건설중-계측-개념도.md"
   },
   "IMG-112": {
     "id": "IMG-112",
-    "title": "철도·고속철도 건설기간 계측 개념도",
+    "title": "철도·고속철도 건설중 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-112",
@@ -4908,7 +4986,7 @@
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "건설기간 계측 hero — ai-reviewed PNG 등록",
+    "notes": "건설중 계측 hero — ai-reviewed · docs/153",
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4920,7 +4998,7 @@
       "grade": "PASS",
       "reviewer": "Cursor-Agent",
       "date": "2026-06-27",
-      "notes": "철도 건설기간 계측 hero",
+      "notes": "철도 건설중 계측 hero",
       "gates": [
         "V1",
         "V2",
@@ -4931,11 +5009,11 @@
         "V7"
       ]
     },
-    "imageKnowledgeTopic": "20-철도·궤도-계측-표현.md"
+    "imageKnowledgeTopic": "IMG-112-철도-건설중-계측-개념도.md"
   },
   "IMG-113": {
     "id": "IMG-113",
-    "title": "댐·제방 건설기간 계측 개념도",
+    "title": "댐·제방 건설중 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-113",
@@ -4944,7 +5022,7 @@
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "건설기간 계측 hero — ai-reviewed PNG 등록",
+    "notes": "건설중 계측 hero — ai-reviewed · docs/153",
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4956,7 +5034,7 @@
       "grade": "PASS",
       "reviewer": "Cursor-Agent",
       "date": "2026-06-27",
-      "notes": "댐 건설기간 계측 hero",
+      "notes": "댐 건설중 계측 hero",
       "gates": [
         "V1",
         "V2",
@@ -4967,6 +5045,6 @@
         "V7"
       ]
     },
-    "imageKnowledgeTopic": "15-댐-계측-배치.md"
+    "imageKnowledgeTopic": "IMG-113-댐-건설중-계측-개념도.md"
   }
 }

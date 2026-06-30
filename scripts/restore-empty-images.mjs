@@ -9,11 +9,11 @@ import {
   readdirSync,
   existsSync,
   statSync,
-  unlinkSync,
 } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { spawnSync } from 'child_process';
+import { backupAndDeleteTechnologyImage } from './lib/technology-image-backup.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const techDir = join(root, 'assets', 'images', 'technology');
@@ -147,7 +147,7 @@ for (const png of list(techDir, /^IMG-\d{3}_.+\.png$/i)) {
     console.log('[dry-run] delete root png', png);
   } else {
     try {
-      unlinkSync(join(techDir, png));
+      backupAndDeleteTechnologyImage(join(techDir, png), { reason: 'restore-empty-root-png' });
       console.log('deleted root png', png);
     } catch {
       /* ignore */

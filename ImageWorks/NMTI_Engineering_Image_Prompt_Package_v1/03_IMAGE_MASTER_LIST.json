@@ -16,7 +16,7 @@
     "purpose": "[좌]인접건물|배면|벽체|[우]굴착 단면+11종 계측기(데이터로거 포함), 흐름도 금지",
     "priority": "A",
     "prompt_file": "prompts/IMG-002_흙막이_벽체_계측_배치도.md",
-    "caption": "흙막이 계측 설치 대표 단면도 — [좌]인접건물|배면|벽체·띠장|[우]굴착측 단면과 11종 계측기(데이터로거 포함) 배치",
+    "caption": "흙막이 계측 설치 대표 단면 — 11종·ANC-CLOCK (v6)",
     "standard_ref_node": "fields/retaining-excavation"
   },
   {
@@ -56,7 +56,7 @@
     "purpose": "1~최종 굴착 단계별 단면·계측 운영 루프·누적변위 (끝단 하중계)",
     "priority": "B",
     "prompt_file": "prompts/IMG-006_굴착_단계별_계측_흐름도.md",
-    "caption": "굴착 단계별 계측 흐름도 — 단계별 굴착·계측·판정·누적 변위 예시",
+    "caption": "굴착 단계별 계측 흐름도 v4 — 4단계·IPI·G.W.L·어스앵커 LC(③④)",
     "standard_ref_node": "fields/retaining-excavation"
   },
   {
@@ -73,10 +73,10 @@
     "id": "IMG-008",
     "category": "분야별/터널",
     "title": "터널 전단면 내공변위 측정시스템",
-    "purpose": "내공변위계 Kit 체인으로 상부 아치 전단면 변위 프로파일 산정 원리 설명",
+    "purpose": "전단면 내공변위계 P1~P11 대표 측점·측선으로 수렴·변형 해석",
     "priority": "A",
     "prompt_file": "prompts/IMG-008_터널_전단면_내공변위_측정시스템.md",
-    "caption": "터널 전단면 내공변위 — 상부 아치 P1~P5 Kit, Extension Tube, 노반(도로·철도) 미계측",
+    "caption": "터널 전단면 내공변위 — P1~P11 내공변위계·대표 측선·기준 측정선, 노반 미계측",
     "standard_ref_node": "fields/tunnel/convergence"
   },
   {
@@ -106,7 +106,7 @@
     "purpose": "상부구조, 교각, 교대, 기초 계측 항목 정리",
     "priority": "A",
     "prompt_file": "prompts/IMG-011_교량_계측_전체_개념도.md",
-    "caption": "교량 계측 전체 개념도 — 상부구조·교각·교대·기초, 10종 계측(⑥ 케이블장력계·④ 처짐계 등)",
+    "caption": "교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측",
     "standard_ref_node": "fields/bridge"
   },
   {
@@ -146,7 +146,7 @@
     "purpose": "사면 활동면, 센서형 다단식 지중경사계, 지하수위계 배치",
     "priority": "A",
     "prompt_file": "prompts/IMG-015_사면_계측_전체_개념도.md",
-    "caption": "사면 계측 전체 개념도 — 활동면·센서형 다단식 지중경사계(기반암 근입)·G.W.L·간극수압·프리즘·부동점 자동광파기",
+    "caption": "사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · (선택) 광학망",
     "standard_ref_node": "fields/slope"
   },
   {
@@ -186,7 +186,7 @@
     "purpose": "성토·연약지층 계측기 실제 설치 배치 2D 단면 (SOFT-LAYOUT-01)",
     "priority": "A",
     "prompt_file": "prompts/IMG-019_연약지반_계측_전체_개념도.md",
-    "caption": "연약지반 성토부 계측기 설치 배치도 — 지표침하·IPI·piezo·G.W.L·토압",
+    "caption": "연약지반 성토부 계측기 설치 배치도 v3 — IPI·piezo tip·지중침하·지하수위·토압",
     "standard_ref_node": "fields/soft-ground"
   },
   {
@@ -236,7 +236,7 @@
     "purpose": "필댐 6항목·침윤선·누수·데이터 흐름",
     "priority": "B",
     "prompt_file": "prompts/IMG-024_댐_계측_개념도.md",
-    "caption": "댐 안전관리 계측 체계도 — 필댐 6항목·침윤선·누수·데이터 흐름",
+    "caption": "댐 안전관리 계측 체계 — 필댐 6항목·7단계 데이터 흐름 (v4)",
     "standard_ref_node": "fields/dam"
   },
   {
@@ -286,7 +286,7 @@
     "purpose": "Incremental/Cumulative 변위 그래프와 활동면",
     "priority": "A",
     "prompt_file": "prompts/IMG-029_지중경사계_데이터_해석도.md",
-    "caption": "센서형 다단식 지중경사계 데이터 해석도 — Incremental/Cumulative 변위 그래프와 활동면",
+    "caption": "센서형 다단식 지중경사계 데이터 해석도 — 변위 집중·활동면 추정 분리",
     "standard_ref_node": "sensors/inclinometer"
   },
   {
@@ -787,7 +787,7 @@
     "purpose": "변형률계 매립·라이닝 부담",
     "priority": "A",
     "prompt_file": "prompts/IMG-079_숏크리트_응력_변형_계측_개념도.md",
-    "caption": "숏크리트 — 변형률계 매립·응력 발현",
+    "caption": "숏크리트 응력·변형 — 매립 SG·응력계 (v3 AI)",
     "standard_ref_node": "fields/tunnel/shotcrete"
   },
   {
@@ -897,7 +897,7 @@
     "purpose": "옹벽·낙석방지 구조물 — 프리즘·ATS",
     "priority": "A",
     "prompt_file": "prompts/IMG-090_사면_구조물_변위_계측_개념도.md",
-    "caption": "사면 구조물 변위 — 프리즘·ATS·부동점",
+    "caption": "사면 구조물 변위 계측 — 배면 사면 와이어식 변위계 · 옹벽 프리즘 · ΔX/ΔY",
     "standard_ref_node": "fields/slope/structural-displacement"
   },
   {
@@ -940,7 +940,7 @@
     "prompt_version": "v4",
     "standard_ref": "docs/57-IMG-096-가시설-주변지반-계측-표현-표준.md",
     "rework_plan": "docs/110-IMG-096-옹벽삭제-가시설-주변지반-재작업-계획.md",
-    "caption": "주변지반 — 센서형 다단식 지중경사계·침하·간극수압·지하수위 4종 동시 배치·H·2H",
+    "caption": "가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v5)",
     "standard_ref_node": "fields/retaining-excavation/surrounding-ground"
   },
   {
@@ -980,7 +980,7 @@
     "purpose": "KCS 3.9 처짐·축소·균열·주변건물·응력 통합",
     "priority": "A",
     "prompt_file": "prompts/IMG-100_건축공사_계측_전체_개념도.md",
-    "caption": "건축공사 계측 — KCS 3.9 5항목 통합 개념도",
+    "caption": "건축공사 계측 전체 개념도 — LVDT·변형률·균열·경사·하중 (KCS 3.9)",
     "standard_ref_node": "fields/building"
   },
   {
@@ -990,7 +990,7 @@
     "purpose": "신축 현장·인접 건물 균열·경사·ATS",
     "priority": "A",
     "prompt_file": "prompts/IMG-101_건축공사_주변건물_계측_개념도.md",
-    "caption": "건축공사 주변건물 — 신축·인접 균열·경사·ATS",
+    "caption": "건축공사 주변건물 계측 — 균열·경사·와이어식 변위(주)",
     "standard_ref_node": "fields/building/adjacent-building"
   },
   {
@@ -1030,7 +1030,7 @@
     "purpose": "경간 상부 GNSS 이동국 · 수직변위 ΔZ → 처짐량 δ — ≠와이어식 hero",
     "priority": "A",
     "prompt_file": "prompts/IMG-103_교량_상부구조_처짐_계측도.md",
-    "caption": "교량 GNSS 처짐 — 경간 상부 ΔZ·처짐량 δ (v3)",
+    "caption": "교량 GNSS 처짐 — 경간(교각↔교각) 중앙 이동국 1개·ΔZ→δ (v5)",
     "standard_ref_node": "fields/bridge/deflection"
   },
   {
@@ -1050,7 +1050,7 @@
     "purpose": "사장교·주파수법 · ≠앵커 로드셀",
     "priority": "A",
     "prompt_file": "prompts/IMG-105_교량_케이블장력_계측도.md",
-    "caption": "케이블 장력 — f→T·주파수법",
+    "caption": "교량 케이블 장력 — 주케이블 f→T·케이블장력계 (v4)",
     "standard_ref_node": "fields/bridge/cable-tension"
   },
   {
@@ -1060,7 +1060,7 @@
     "purpose": "노출 케이블 ACC·주파수",
     "priority": "A",
     "prompt_file": "prompts/IMG-106_케이블장력계_설치_개념도.md",
-    "caption": "케이블장력계 — ≠하중계",
+    "caption": "케이블장력계 설치 — 주케이블 클램프·f→T (v4)",
     "standard_ref_node": "sensors/cable-tension-meter"
   },
   {
@@ -1070,7 +1070,7 @@
     "purpose": "PSC·강재 휨·전단 SG",
     "priority": "A",
     "prompt_file": "prompts/IMG-107_교량_변형률_응력_계측도.md",
-    "caption": "교량 변형률 — 휨·전단·온도 보정",
+    "caption": "교량 변형률·응력 — 거더 SG 휨 ε→σ (v4)",
     "standard_ref_node": "fields/bridge/strain-stress"
   },
   {
@@ -1080,7 +1080,7 @@
     "purpose": "크리프·건조수축 보정",
     "priority": "B",
     "prompt_file": "prompts/IMG-108_무응력계_설치_개념도.md",
-    "caption": "무응력계 — 응력 0 매립",
+    "caption": "무응력계 설치 — ε₀·크리프·건조수축 보정 (v4)",
     "standard_ref_node": "sensors/stress-free-strain-gauge"
   },
   {
@@ -1090,7 +1090,7 @@
     "purpose": "주탑·교면 · 진동 연계",
     "priority": "A",
     "prompt_file": "prompts/IMG-109_교량_풍향풍속_계측도.md",
-    "caption": "교량 풍하중 — 주탑·풍속 벡터",
+    "caption": "교량 풍향·풍속 — 주탑·교면 풍향풍속계 (v4)",
     "standard_ref_node": "fields/bridge/wind"
   },
   {
@@ -1100,37 +1100,37 @@
     "purpose": "받침 슬라이드·회전 — ≠신축이음·3축 GNSS",
     "priority": "A",
     "prompt_file": "prompts/IMG-110_교량_받침부_변위_계측도.md",
-    "caption": "받침부 변위 — 슬라이드·회전",
+    "caption": "교량 받침부 변위 — 슬라이드 Δx·회전 (v4)",
     "standard_ref_node": "fields/bridge/bearing-displacement"
   },
   {
     "id": "IMG-111",
     "category": "분야별/터널",
-    "title": "터널 건설기간 계측 개념도",
+    "title": "터널 건설중 계측 개념도",
     "purpose": "굴착·지보 단계 내공·천단·지표 변위 — 운행철도 상부",
     "priority": "A",
     "prompt_file": "prompts/IMG-111_터널_건설기간_계측_개념도.md",
-    "caption": "터널 건설기간 계측 — 내공·천단·지표",
+    "caption": "터널 건설중 계측 — 내공·천단·지표",
     "standard_ref_node": "fields/tunnel"
   },
   {
     "id": "IMG-112",
     "category": "분야별/철도",
-    "title": "철도·고속철도 건설기간 계측 개념도",
+    "title": "철도·고속철도 건설중 계측 개념도",
     "purpose": "道床·노반·궤도 시공 단계 침하·변위",
     "priority": "A",
     "prompt_file": "prompts/IMG-112_철도_건설기간_계측_개념도.md",
-    "caption": "철도 건설기간 계측 — 노반·궤도",
-    "standard_ref_node": "fields/railway"
+    "caption": "철도 건설중 계측 — 노반·궤도",
+    "standard_ref_node": "fields/railway/construction-phase"
   },
   {
     "id": "IMG-113",
     "category": "분야별/댐",
-    "title": "댐·제방 건설기간 계측 개념도",
+    "title": "댐·제방 건설중 계측 개념도",
     "purpose": "축조·성토 단계 수압·침하·로거 — ≠운영기 누수",
     "priority": "A",
     "prompt_file": "prompts/IMG-113_댐_건설기간_계측_개념도.md",
-    "caption": "댐 건설기간 계측 — 축조·원격계측",
-    "standard_ref_node": "fields/dam"
+    "caption": "댐 건설중 계측 — 축조·원격계측",
+    "standard_ref_node": "fields/dam/construction-phase"
   }
 ]

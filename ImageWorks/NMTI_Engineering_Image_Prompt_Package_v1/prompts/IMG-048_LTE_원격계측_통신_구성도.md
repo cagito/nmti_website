@@ -1,5 +1,9 @@
 # IMG-048 — LTE M2M 통신 구성도
 
+<!-- image-knowledge-links:v1 -->
+> **image-knowledge:** [00-공통](../../../docs/image-knowledge/00-공통-이미지-작성-원칙.md) · [통신·게이트웨이-역할](../../../docs/image-knowledge/29-통신·게이트웨이-역할.md)
+<!-- /image-knowledge-links:v1 -->
+
 **node:** `instruments/communication/lte-remote`
 **목적:** LTE M2M — 로컬 버퍼·재전송·APN·ACK (Phase AD)
 
@@ -24,3 +28,24 @@ NMTI 홈페이지 기술자료용 2D 기술 개념도. 주제는 "LTE M2M 통신
 
 ※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.
 <!-- /citation-sync:v1 -->
+
+<!-- image-rules-sync:v1 -->
+## 실행 규칙
+
+> **book/image-knowledge:** `docs/image-knowledge/29-통신·게이트웨이-역할.md` · §5·§6
+
+**반드시 그릴 요소:**
+- **순서 화살표:** 계측 센서 → **데이터로거** → **IoT 게이트웨이** → 서버.
+- **로거:** 「수집·저장·1차 변환」 · **함체** 실루엣(P0-3).
+- **GW:** 「중계·변환·재전송」 · **버퍼** (로컬 저장과 구분).
+- **시간 동기** · **GW ≠ 판정** callout.
+- (048) **LTE** · (058) **전원·통신·모드** 계층.
+
+**절대 금지:**
+- **뇌·AI 회로** · **사이버펑크 구름**.
+- **빈 접속함** = 로거.
+- **게이트웨이 = 데이터로거** 라벨.
+- **관리기준선** 을 GW 블록 **내부**에.
+- **브랜드** CR1000X·Cisco·特定 LTE 모듈.
+<!-- /image-rules-sync:v1 -->
+

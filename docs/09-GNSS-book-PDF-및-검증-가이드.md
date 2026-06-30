@@ -76,7 +76,7 @@ npm run build:images
 npm run audit:book
 ```
 
-book 현장 도면 3단계 수동 QA: [book-plan-stage3-prep.md](./book-plan-stage3-prep.md) — GNSS.pdf ↔ IMG-043 픽셀·범례.
+book 현장 도면 3단계 QA: [book-plan-stage3-prep.md](./book-plan-stage3-prep.md) — GNSS.pdf ↔ IMG-043 · `npm run audit:img043`
 
 ---
 
@@ -88,7 +88,7 @@ book 현장 도면 3단계 수동 QA: [book-plan-stage3-prep.md](./book-plan-sta
 
 | 파일 | 역할 |
 |------|------|
-| [scripts/canonical-image-png.json](../scripts/canonical-image-png.json) | render 스크립트 기준 **공식 파일명** (IMG-001~088 일부) |
+| [scripts/canonical-image-webp.json](../scripts/canonical-image-webp.json) | render 스크립트 기준 **공식 파일명** (IMG-001~088 일부) |
 | [scripts/generate-image-assets.mjs](../scripts/generate-image-assets.mjs) | canonical 우선 → `source/` 일치 → 최신 mtime |
 | [scripts/validate-image-master.mjs](../scripts/validate-image-master.mjs) | ID당 PNG **1개** · canonical 파일 **존재** 검사 |
 
@@ -97,7 +97,7 @@ book 현장 도면 3단계 수동 QA: [book-plan-stage3-prep.md](./book-plan-sta
 1. `assets/images/technology/source/`에 원본 저장 (선택)
 2. canonical 파일명으로 `assets/images/technology/`에 배치
 3. 구버전 중복 PNG **삭제** (같은 ID 접두사)
-4. `canonical-image-png.json`에 파일명 등록 (render 산출물이면 이미 있음)
+4. `canonical-image-webp.json`에 파일명 등록 (render 산출물이면 이미 있음)
 5. `python scripts/convert-technology-webp.py`
 6. `npm run build:images`
 7. `npm run verify:local`
@@ -228,6 +228,6 @@ node scripts/list-deploy-manifest.mjs --write   # book/GNSS.pdf 포함
 | 일자 | 내용 |
 |------|------|
 | 2026-06-25 | GNSS 콘텐츠·IMG-043·`audit:book` GNSS 체크 |
-| 2026-06-25 | `canonical-image-png.json` · 중복 PNG 검증·정리 |
+| 2026-06-25 | `canonical-image-webp.json` · 중복 WebP 검증·정리 |
 | 2026-06-25 | `verify:deploy` · manifest `book/GNSS.pdf` |
 | 2026-06-25 | **최종 문서** [10-최종-완료-및-운영-가이드.md](./10-최종-완료-및-운영-가이드.md) |

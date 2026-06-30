@@ -18,6 +18,22 @@ function escapeRe(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+function normalizeBullet(s) {
+  return s.replace(/\*\*/g, '').replace(/\s+/g, '').toLowerCase();
+}
+
+function uniqueBullets(bullets) {
+  const seen = new Set();
+  const out = [];
+  for (const b of bullets) {
+    const key = normalizeBullet(b);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(b);
+  }
+  return out;
+}
+
 function extractBullets(text, sectionNum) {
   const re = new RegExp(
     `## ${sectionNum}\\. [^\r\n]+\r?\n\r?\n([\\s\\S]*?)(?=\r?\n## |$)`
@@ -28,11 +44,12 @@ function extractBullets(text, sectionNum) {
     /<!-- kds-promoted:v1 -->[\s\S]*?<!-- \/kds-promoted:v1 -->/g,
     ''
   );
-  return section
+  const bullets = section
     .split(/\r?\n/)
     .map((l) => l.trim())
     .filter((l) => l.startsWith('- '))
     .map((l) => l.replace(/^- /, ''));
+  return uniqueBullets(bullets);
 }
 
 function buildRulesBlock(topicFile) {

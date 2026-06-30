@@ -21,8 +21,8 @@
   <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="/homepage/css/style.css?v=46">
-  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">
-  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=11">
+  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.15rem;margin:2rem 0 .75rem;font-weight:800}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}.tech-seo-article{margin-top:1rem}.tech-seo-section{margin-top:0}.tech-seo-figure{margin:1rem 0}.tech-seo-figure figcaption{font-size:.9rem;color:#555;margin-top:.35rem}</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,7 +66,7 @@
       "headline": "자동 계측",
       "description": "자동 계측의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
       "inLanguage": "ko-KR",
-      "dateModified": "2026-06-27",
+      "dateModified": "2026-06-30",
       "mainEntityOfPage": "https://www.nmti.co.kr/homepage/technology/instruments/modes/automatic/",
       "publisher": {
         "@type": "Organization",
@@ -135,8 +135,37 @@
     <h1>자동 계측</h1>
     <p class="lead">자동 계측의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.</p>
     <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-071_자동-계측-개념도_로거현장저장주기.webp" alt="자동 계측 개념도 - 데이터로거·현장 저장·수집 주기" width="1200" height="675" loading="lazy" decoding="async"><figcaption>자동 계측 — 로거·주기 수집·현장 저장</figcaption></figure>
-    <section><h2>개요</h2><p><strong>자동 계측</strong>은 <strong>데이터로거</strong>가 센서 신호를 설정 주기로 자동 수집·저장하는 방식입니다. KCS에서는 구간 특성에 따라 수동계측에서 <strong>자동계측</strong>으로 전환할 수 있으며, 고위험 구간에는 <strong>자동화 계측방법</strong> 적용을 검토합니다.</p></section>
-    <section><h2>측정 원리</h2><p>센서 → 데이터로거 → (로컬 저장) → 필요 시 통신 모듈 순으로 구성합니다. 샘플링 주기·필터·캘리브레이션이 데이터 품질을 결정합니다. 무인 현장 전원은 <a href="/homepage/technology/instruments/power/solar-power/">태양광</a>·<a href="/homepage/technology/instruments/power/battery/">배터리</a> 설계가 핵심이며, AC 가능 구간은 <a href="/homepage/technology/instruments/power/overview/">전원 체계</a> 전체를 함께 검토합니다.</p></section>
+    <article class="tech-article tech-article--unified tech-seo-article">
+<section class="tech-section tech-section--numbered tech-seo-section" id="overview" data-section="1">
+<h2 class="tech-section__title">1. 시스템 개요</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--overview"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">목적</strong><span class="tech-bullet-list__text"><strong>자동 계측</strong>은 <strong>데이터로거</strong>가 센서 신호를 설정 주기로 자동 수집·저장하는 방식입니다. KCS에서는 구간 특성에 따라 수동계측에서 <strong>자동계측</strong>으로 전환할 수 있으며, 고위험 구간에는 <strong>자동화 계측방법</strong> 적용을 검토합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="purpose" data-section="2">
+<h2 class="tech-section__title">2. 구성 요소</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--labeled tech-bullet-list--purpose"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">연속성</strong><span class="tech-bullet-list__text">야간·휴일·고빈도 데이터</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">객관성</strong><span class="tech-bullet-list__text">측정자 편차 감소</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">경보</strong><span class="tech-bullet-list__text">한계치 초과 자동 감지</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="principle" data-section="3">
+<h2 class="tech-section__title">3. 현장 구성·원리</h2>
+<div class="tech-section__body">
+<figure class="tech-seo-figure"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-071_자동-계측-개념도_로거현장저장주기.webp" alt="자동 계측 개념도 - 데이터로거·현장 저장·수집 주기" loading="lazy" decoding="async"><figcaption>자동 계측 — 로거·주기 수집·현장 저장</figcaption></figure>
+<ul class="tech-bullet-list tech-bullet-list--siteLayout"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">구성 흐름</strong><span class="tech-bullet-list__text"><strong>센서</strong> → <strong>데이터로거</strong> → 현장 SD 저장 → (선택) 통신. 무인 현장은 태양광·배터리·방수 함체와 함께 스캔 주기·경보 규칙을 설정합니다.</span></li></ul><ul class="tech-bullet-list tech-bullet-list--principle"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">측정 대상</strong><span class="tech-bullet-list__text">센서 → 데이터로거 → (로컬 저장) → 필요 시 통신 모듈 순으로 구성합니다. 샘플링 주기·필터·캘리브레이션이 데이터 품질을 결정합니다. 무인 현장 전원은 <a href="/homepage/technology/instruments/power/solar-power/">태양광</a>·<a href="/homepage/technology/instruments/power/battery/">배터리</a> 설계가 핵심이며, AC 가능 구간은 <a href="/homepage/technology/instruments/power/overview/">전원 체계</a> 전체를 함께 검토합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="installation" data-section="4">
+<h2 class="tech-section__title">4. 설치·운영</h2>
+<div class="tech-section__body">
+<figure class="tech-seo-figure"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-047_태양광-전원-시스템-구성도_패널컨트롤러배터리로거.webp" alt="태양광 전원 시스템 구성도 - 태양광 전원 — 부하·자율운전일·LVD·SPD·접지 (Phase AD)" loading="lazy" decoding="async"><figcaption>태양광 전원 시스템 구성도 — 부하·충전·배터리·보호·로거</figcaption></figure>
+<ul class="tech-bullet-list tech-bullet-list--plain tech-bullet-list--installation"><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">로거 채널 · 센서 매핑</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">전원 · 태양광 · 배터리 설계</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">수집 주기 · 경보 조건 설정</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">초기치 · 영점 안정화</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">수동계측 백업 절차 유지</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="management" data-section="5">
+<h2 class="tech-section__title">5. 데이터·관리</h2>
+<div class="tech-section__body">
+<table class="spec-table"><thead><tr><th scope="col">요소</th><th scope="col">설정</th><th scope="col">해석</th></tr></thead><tbody><tr><th scope="row">주기</th><td>1분~1일</td><td>위험도</td></tr><tr><th scope="row">필터</th><td>스파이크 제거</td><td>오경보</td></tr><tr><th scope="row">동기</th><td>공정 일지</td><td>원인</td></tr><tr><th scope="row">백업</th><td>SD · 중복</td><td>손실 방지</td></tr></tbody></table><h3 class="tech-subheading">장애 유형 및 점검</h3><table class="spec-table"><thead><tr><th scope="col">증상</th><th scope="col">점검</th><th scope="col">조치</th></tr></thead><tbody><tr><th scope="row">결측 증가</th><td>전원 · SD</td><td>배터리 · 카드</td></tr><tr><th scope="row">드리프트</th><td>센서 · 온도</td><td>재교정</td></tr><tr><th scope="row">오경보</th><td>필터 · 기준</td><td>임계값 조정</td></tr><tr><th scope="row">통신 없음</th><td>로컬 저장</td><td>수동 백업 절차</td></tr></tbody></table><ul class="tech-bullet-list tech-bullet-list--criteria"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">기준 출처</strong><span class="tech-bullet-list__text">결측률·센서 drift·전원 장애를 모니터링합니다. 이상 작동 시 수동 측정으로 검증합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--appendix" id="faq">
+<h2 class="tech-section__title">자주 묻는 질문</h2>
+<div class="tech-section__body"><div class="faq-list"><details class="faq-item"><summary>자동과 원격의 차이?</summary><div class="faq-item__body"><p>자동은 현장 수집까지, 원격 자동계측은 통신·서버·대시보드까지 포함한 상위 개념입니다.</p></div></details><details class="faq-item"><summary>필수 구성품?</summary><div class="faq-item__body"><p>센서, 데이터로거, 전원이 최소 구성이며 통신은 원격 연동 시 추가합니다.</p></div></details><details class="faq-item"><summary>스캔 주기는?</summary><div class="faq-item__body"><p>위험도·KCS·관리기준에 따라 분~시간 단위를 설정합니다. MUX 사용 시 채널당 유효 주기를 검증합니다.</p></div></details><details class="faq-item"><summary>수동 병행?</summary><div class="faq-item__body"><p>이상 작동·통신 장애 대비 수동 측정을 계획서에 포함합니다.</p></div></details></div></div></section>    </article>
     <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2 — 자동계측 전환 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
     <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#instruments/modes/automatic">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
   </main>

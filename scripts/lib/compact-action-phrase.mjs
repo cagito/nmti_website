@@ -127,14 +127,32 @@ export function compactNarrativeHtml(html) {
   });
 }
 
+function compactInlineHtml(html) {
+  if (!html || typeof html !== 'string') return html;
+  let s = html;
+  for (const [re, rep] of VERB_TAIL) {
+    s = s.replace(re, rep);
+  }
+  return s.replace(/\s{2,}/gu, ' ').trim();
+}
+
 /** @param {Record<string, unknown>} sections */
 export function compactSections(sections) {
   if (!sections || typeof sections !== 'object') return;
 
+  if (Array.isArray(sections.purpose)) {
+    for (const card of sections.purpose) {
+      if (!card || typeof card !== 'object') continue;
+      if (typeof card.title === 'string') card.title = compactActionPhrase(card.title);
+      if (typeof card.signal === 'string') card.signal = compactActionPhrase(card.signal);
+      if (typeof card.body === 'string') {
+        card.body = /<p\b/i.test(card.body) ? compactNarrativeHtml(card.body) : compactInlineHtml(card.body);
+      }
+    }
+  }
+
   if (Array.isArray(sections.installation)) {
     sections.installation = sections.installation.map(compactActionPhrase);
-  } else if (typeof sections.installation === 'string') {
-    sections.installation = compactNarrativeHtml(sections.installation);
   }
 
   if (Array.isArray(sections.applications)) {
@@ -145,11 +163,15 @@ export function compactSections(sections) {
     sections.criteria = sections.criteria.map(compactActionPhrase);
   }
 
-  for (const key of NARRATIVE_KEYS) {
-    if (key === 'installation' || key === 'criteria') continue;
-    const val = sections[key];
-    if (typeof val === 'string' && val.trim()) {
-      sections[key] = compactNarrativeHtml(val);
+  for (const tableKey of ['data', 'constructionPhases', 'troubleshooting']) {
+    const table = sections[tableKey];
+    if (table && Array.isArray(table.rows)) {
+      table.rows = table.rows.map(function (row) {
+        return row.map(function (cell) {
+          if (typeof cell !== 'string') return cell;
+          return cell.includes('<') ? compactInlineHtml(cell) : compactActionPhrase(cell);
+        });
+      });
     }
   }
 }

@@ -1,6 +1,6 @@
-# IMG-043 — GNSS 변위 계측 개념도 (v2)
+# IMG-043 — GNSS 변위 계측 개념도 (v5 ai-reviewed)
 
-> **Phase Z (2026-06-26):** [docs/77](../../../docs/77-외부-ZIP-전수검수-신규-심각오류-10종-및-수정계획.md) · Pillow `render-phase-z.py` · **PASS**
+> **판정:** **v5 PASS (ai-reviewed)** — Pillow R1 sprint · book/GNSS.pdf · ZIP-AUD-07
 
 > **AI (docs/36):** [§4.5⑧](../../docs/36-AI-이미지-생성-엔지니어링-프롬프트-가이드.md) · Prefix §2.1
 

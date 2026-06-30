@@ -35,7 +35,7 @@ export const TREE = [
           { id: 'fields/tunnel/shotcrete', label: '숏크리트' },
           { id: 'fields/tunnel/blast-vibration', label: '발파진동·영향권' },
           { id: 'fields/tunnel/steel-support', label: '강지보 응력' },
-          { id: 'fields/tunnel/construction-phase', label: '건설기간 계측' }
+          { id: 'fields/tunnel/construction-phase', label: '건설중 계측' }
         ]
       },
       {
@@ -96,7 +96,7 @@ export const TREE = [
           { id: 'fields/railway/track-settlement', label: '노반침하' },
           { id: 'fields/railway/track-displacement', label: '궤도변위' },
           { id: 'fields/railway/adjacent-construction', label: '인접공사 영향' },
-          { id: 'fields/railway/construction-phase', label: '건설기간 계측' }
+          { id: 'fields/railway/construction-phase', label: '건설중 계측' }
         ]
       },
       {
@@ -112,7 +112,7 @@ export const TREE = [
           { id: 'fields/dam/temperature', label: '온도' },
           { id: 'fields/dam/seismic', label: '지진' },
           { id: 'fields/dam/river-levee', label: '하천제방' },
-          { id: 'fields/dam/construction-phase', label: '건설기간 계측' }
+          { id: 'fields/dam/construction-phase', label: '건설중 계측' }
         ]
       },
       {
@@ -456,7 +456,7 @@ function buildNodes() {
     'fields/tunnel/construction-phase': {
       ...nodes['fields/tunnel/construction-phase'],
       keywords: [
-        '건설기간 계측',
+        '건설중 계측',
         '터널 시공 계측',
         'railway tunnel monitoring',
         'tunnel monitoring'
@@ -476,7 +476,7 @@ function buildNodes() {
         'fields/railway/construction-phase'
       ],
       metaDescription:
-        '터널 건설기간 계측 — 굴착·지보·라이닝 단계별 내공·천단·지표 변위와 운행철도 구간 보호. Railway tunnel monitoring during construction.'
+        '터널 건설중 계측 — 굴착·지보·라이닝 단계별 내공·천단·지표 변위와 운행철도 구간 보호. Railway tunnel monitoring during construction.'
     },
     'fields/bridge': {
       ...nodes['fields/bridge'],
@@ -644,12 +644,12 @@ function buildNodes() {
       ],
       imageId: 'IMG-023',
       metaDescription:
-        '철도·고속철도 계측 — 노반·궤도 변위, 건설기간·운영기 계측, 인접공사 연계를 정리한 기술자료입니다.'
+        '철도·고속철도 계측 — 노반·궤도 변위, 건설중·운영기 계측, 인접공사 연계를 정리한 기술자료입니다.'
     },
     'fields/railway/construction-phase': {
       ...nodes['fields/railway/construction-phase'],
       keywords: [
-        '건설기간 계측',
+        '건설중 계측',
         '고속철도 계측',
         'high-speed railway monitoring',
         'HSR monitoring',
@@ -668,7 +668,7 @@ function buildNodes() {
         'fields/tunnel/construction-phase'
       ],
       metaDescription:
-        '철도·고속철도 건설기간 계측 — 노반·궤도 시공 단계별 침하·변위와 인접공사 연계. High-speed railway monitoring during construction.'
+        '철도·고속철도 건설중 계측 — 노반·궤도 시공 단계별 침하·변위와 인접공사 연계. High-speed railway monitoring during construction.'
     },
     'fields/dam': {
       ...nodes['fields/dam'],
@@ -719,7 +719,7 @@ function buildNodes() {
     'fields/dam/construction-phase': {
       ...nodes['fields/dam/construction-phase'],
       keywords: [
-        '건설기간 계측',
+        '건설중 계측',
         '댐 축조 계측',
         'dam construction monitoring',
         'dam construction monitoring software',
@@ -740,7 +740,7 @@ function buildNodes() {
         'instruments/data-management'
       ],
       metaDescription:
-        '댐·제방 건설기간 계측 — 축조·성토 단계 변위·수압·온도와 원격계측 SW 연계. Dam construction monitoring and integrated monitoring software.'
+        '댐·제방 건설중 계측 — 축조·성토 단계 변위·수압·온도와 원격계측 SW 연계. Dam construction monitoring and integrated monitoring software.'
     },
     'fields/harbor': {
       ...nodes['fields/harbor'],
@@ -1014,7 +1014,7 @@ function buildNodes() {
     },
     'sensors/remote-monitoring-system': {
       ...nodes['sensors/remote-monitoring-system'],
-      keywords: ['자동화계측', '건설기간 계측'],
+      keywords: ['자동화계측', '건설중 계측'],
       relatedSensors: ['sensors/datalogger', 'sensors/automated-total-station'],
       relatedFields: [
         'fields/dam/construction-phase',
@@ -1025,7 +1025,7 @@ function buildNodes() {
     },
     'instruments/data-management': {
       ...nodes['instruments/data-management'],
-      keywords: ['건설기간 계측', 'dam monitoring software'],
+      keywords: ['건설중 계측', 'dam monitoring software'],
       relatedFields: [
         'fields/dam/construction-phase',
         'sensors/remote-monitoring-system'
@@ -1306,16 +1306,18 @@ export const KEYWORD_MAP = {
   GNSS: 'sensors/gnss',
   GPS: 'sensors/gnss',
   RTK: 'sensors/gnss',
+  '건설중 계측': 'intro',
+  '건설중': 'intro',
+  '터널 건설중 계측': 'fields/tunnel/construction-phase',
+  '철도 건설중 계측': 'fields/railway/construction-phase',
+  '댐 건설중 계측': 'fields/dam/construction-phase',
+  '댐·제방 건설중 계측': 'fields/dam/construction-phase',
+  /* legacy autolink (deprecated 표기 — docs/153) */
   '건설기간 계측': 'intro',
   '건설기간': 'intro',
   '터널 건설기간 계측': 'fields/tunnel/construction-phase',
   '철도 건설기간 계측': 'fields/railway/construction-phase',
   '댐 건설기간 계측': 'fields/dam/construction-phase',
-  '건설기중 계측': 'intro',
-  '건설기중': 'intro',
-  '터널 건설기중 계측': 'fields/tunnel/construction-phase',
-  '철도 건설기중 계측': 'fields/railway/construction-phase',
-  '댐 건설기중 계측': 'fields/dam/construction-phase',
   '고속철도 계측': 'fields/railway/construction-phase',
   '고속철': 'fields/railway/construction-phase',
   'railway tunnel monitoring': 'fields/tunnel/construction-phase',

@@ -21,8 +21,8 @@
   <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="/homepage/css/style.css?v=46">
-  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">
-  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=11">
+  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.15rem;margin:2rem 0 .75rem;font-weight:800}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}.tech-seo-article{margin-top:1rem}.tech-seo-section{margin-top:0}.tech-seo-figure{margin:1rem 0}.tech-seo-figure figcaption{font-size:.9rem;color:#555;margin-top:.35rem}</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,7 +66,7 @@
       "headline": "사면 지표경사",
       "description": "사면 지표경사의 측정 목적, 적용 현장, 설치, 데이터 해석, 유지관리 및 관련 센서를 정리한 기술 자료입니다.",
       "inLanguage": "ko-KR",
-      "dateModified": "2026-06-27",
+      "dateModified": "2026-06-30",
       "mainEntityOfPage": "https://www.nmti.co.kr/homepage/technology/fields/slope/surface-tilt/",
       "publisher": {
         "@type": "Organization",
@@ -144,8 +144,39 @@
     <h1>지표경사</h1>
     <p class="lead">사면 지표경사의 측정 목적, 적용 현장, 설치, 데이터 해석, 유지관리 및 관련 센서를 정리한 기술 자료입니다.</p>
     <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-089_사면-지표경사-계측-개념도_지표경사계pad콘크리트.webp" alt="사면 지표경사 계측 개념도 - 지표 pad tiltmeter — θ · ≠ 지중경사계" width="1200" height="675" loading="lazy" decoding="async"><figcaption>사면 지표경사 — pad tiltmeter · θ</figcaption></figure>
-    <section><h2>개요</h2><p><strong>지표경사</strong> 계측은 사면 표면·옹벽 상부 등에 설치한 <strong>지표경사계</strong>(틸트미터)로 기울기 변화를 측정합니다. 보링식 <strong>지중경사계</strong>와 달리 표면 패드에 고정하며, 국부 전도·배수 불량·동결·침식 징후를 조기에 포착합니다.</p><p>지표 균열·소규모 변위보다 전체 기울기 추세를 보는 항목으로, <strong>지중경사계</strong>·<strong>지하수위계</strong>와 병행합니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 사면 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p></section>
-    <section><h2>측정 원리</h2><p>지표경사계는 중력 기준 기울기(각도 또는 sinθ)를 측정합니다. 온도·진동 영향을 분리하고, 강우·수위 이벤트와 시간 동기화합니다.</p></section>
+    <article class="tech-article tech-article--unified tech-seo-article">
+<section class="tech-section tech-section--numbered tech-seo-section" id="overview" data-section="1">
+<h2 class="tech-section__title">1. 계측 개요</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--overview"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">목적</strong><span class="tech-bullet-list__text"><strong>지표경사</strong> 계측은 사면 표면·옹벽 상부 등에 설치한 <strong>지표경사계</strong>(틸트미터)로 기울기 변화를 측정합니다. 보링식 <strong>지중경사계</strong>와 달리 표면 패드에 고정하며, 국부 전도·배수 불량·동결·침식 징후를 조기에 포착합니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">적용 범위</strong><span class="tech-bullet-list__text">지표 균열·소규모 변위보다 전체 기울기 추세를 보는 항목으로, <strong>지중경사계</strong>·<strong>지하수위계</strong>와 병행합니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">주요 구성</strong><span class="tech-bullet-list__text">계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 사면 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="purpose" data-section="2">
+<h2 class="tech-section__title">2. 주요 계측 항목</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--labeled tech-bullet-list--purpose"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">전도 감시</strong><span class="tech-bullet-list__text">표면 기울기·변화율 추적</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">국부 이상</strong><span class="tech-bullet-list__text">배수·침식·동결 등 지표 원인을 포착합니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">구조물 연계</strong><span class="tech-bullet-list__text">옹벽·석축 상부 안정 확인</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="principle" data-section="3">
+<h2 class="tech-section__title">3. 대표 단면·원리</h2>
+<div class="tech-section__body">
+<figure class="tech-seo-figure"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-089_사면-지표경사-계측-개념도_지표경사계pad콘크리트.webp" alt="사면 지표경사 계측 개념도 - 지표 pad tiltmeter — θ · ≠ 지중경사계" loading="lazy" decoding="async"><figcaption>사면 지표경사 — pad tiltmeter · θ</figcaption></figure>
+<ul class="tech-bullet-list tech-bullet-list--principle"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">측정 대상</strong><span class="tech-bullet-list__text">지표경사계는 중력 기준 기울기(각도 또는 sinθ)를 측정합니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">측정 원리</strong><span class="tech-bullet-list__text">온도·진동 영향을 분리하고, 강우·수위 이벤트와 시간 동기화합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="installation" data-section="4">
+<h2 class="tech-section__title">4. 설치·운영</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--plain tech-bullet-list--installation"><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">사면 상부 · 옹벽 crest 등 대표 위치에 패드 기초를 조성</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">지표경사계를 수평 패드에 고정 · 방향 기록</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">케이블 보호 · 방수 처리를</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">강우 · 지하수위 계측과 동일 단면에 배치</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">초기치 안정 후 정기 · 집중 계측 실시</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">지중경사계 · 표면 변위 측점과 데이터 연동</span></li></ul><ul class="tech-bullet-list tech-bullet-list--plain tech-bullet-list--construction-phases"><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">설치 · 초기: 지표경사계 기준선 — 패드 안정 · 방향</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">우기: 강우 · 수위 연계 — 기울기 가속</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">건기: 온도 · 건조 수축 — 정상 범위</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">보강 후: 기울기 감소 — 대책 효과</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">장기: 누적 기울기 — 잔류 안정</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="management" data-section="5">
+<h2 class="tech-section__title">5. 해석·관리</h2>
+<div class="tech-section__body">
+<table class="spec-table"><thead><tr><th scope="col">패턴</th><th scope="col">연계</th><th scope="col">판단</th></tr></thead><tbody><tr><th scope="row">강우 후 증가</th><td>지하수위 · 지중변위</td><td>배수 · 활동</td></tr><tr><th scope="row">단방향 기울기</th><td>옹벽 · 균열</td><td>국부 불안정</td></tr><tr><th scope="row">급격 변화</th><td>이벤트</td><td>즉시 점검</td></tr><tr><th scope="row">장기 완만</th><td>온도</td><td>정상 추세</td></tr></tbody></table><ul class="tech-bullet-list tech-bullet-list--criteria"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">기준 출처</strong><span class="tech-bullet-list__text">사면 관리기준은 설계 안정율, 붕괴 위험 등급, 인접 시설물에 따라 설정합니다. <strong>설계예상변위</strong>·<strong>최대허용변위</strong>, 변위속도·강우 후 반응 기준을 병행합니다. 한계 초과 시 대피·공사 중지·보강을 검토하는 관리 단계를 운영할 수 있습니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--appendix" id="related">
+<h2 class="tech-section__title">관련 항목</h2>
+<div class="tech-section__body"><div class="inline-list"><span class="inline-list__label">관련 센서</span><ul class="tech-related"><li><a href="https://www.nmti.co.kr/homepage/technology/sensors/tilt-meter/" data-tech-route="sensors/tilt-meter">구조물경사계</a></li></ul></div></div></section>
+<section class="tech-section tech-section--appendix" id="faq">
+<h2 class="tech-section__title">자주 묻는 질문</h2>
+<div class="tech-section__body"><div class="faq-list"><details class="faq-item"><summary>지표경사계와 지중경사계 차이는?</summary><div class="faq-item__body"><p>지표경사계는 표면 패드 기울기, 지중경사계는 심도별 수평변위입니다. 함께 쓰면 표면·심부 거동을 구분합니다.</p></div></details><details class="faq-item"><summary>패드 기초가 중요한 이유는?</summary><div class="faq-item__body"><p>센서는 패드와 함께 움직입니다. 침하·전도가 패드에 포함되므로 기초 안정화가 필수입니다.</p></div></details><details class="faq-item"><summary>온도 보정이 필요한가요?</summary><div class="faq-item__body"><p>고정밀 장기 추세에서는 온도 영향을 보정합니다. 계획서·제조사 권장에 따릅니다.</p></div></details><details class="faq-item"><summary>경보 기준은?</summary><div class="faq-item__body"><p>설계·계측관리계획서에 따릅니다. 변화율·누적 기울기와 지중변위를 함께 판단합니다.</p></div></details></div></div></section>    </article>
     <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KDS 11 10 15:2025</strong>「지반계측」 §4.1.2 — 사면·절토 계측 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3 — 시공 중 계측 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
     <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#fields/slope/surface-tilt">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
   </main>

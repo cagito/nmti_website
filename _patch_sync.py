@@ -1,3 +1,5 @@
+# DEPRECATED — injects git stash + reset --hard. Use git-sync.bat (newest-wins) instead.
+# See scripts/deprecated/git-sync-patch-README.md
 import sys
 
 path = sys.argv[1]

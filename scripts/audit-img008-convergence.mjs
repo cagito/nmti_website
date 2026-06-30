@@ -43,7 +43,8 @@ const forbidden = [
   ['P1–P8', '8지점 표기'],
   ['360°', '360도 폐합'],
   ['360도', '360도 폐합'],
-  ['진동현식', '금지 용어']
+  ['진동현식', '금지 용어'],
+  ['P1~P5만', '5점만으로 전단면 대표'],
 ];
 
 for (const [term, reason] of forbidden) {
@@ -53,11 +54,10 @@ for (const [term, reason] of forbidden) {
 // "ACE" alone — only flag ACE-TCS / ACE as product (already covered); skip bare ACE in unrelated words
 
 const required = [
-  ['상부 아치', '아치형 배치'],
+  ['P1~P11', '11점 전단면 내공변위계'],
+  ['대표 측선', '수평·수직·대각 측선'],
   ['노반', '하부 노반 표기'],
   ['미계측', '노반 미계측'],
-  ['P1~P5', '5지점 개방 체인'],
-  ['개방', 'Closed Loop 아님 명시'],
   ['건축한계', 'Clearance Envelope'],
   ['기준 측정선', '초기 형상 기준'],
   ['측선', '측점 간 내공변위'],
@@ -76,4 +76,4 @@ if (issues.length) {
   issues.forEach((i) => console.log(' -', i));
   process.exit(1);
 }
-console.log('audit-img008: OK (IMG-008 upper-arch, no 360°/ACE/P8)');
+console.log('audit-img008: OK (IMG-008 P1~P11 full section, no 360°/ACE/P8)');

@@ -18,6 +18,7 @@ import { atomicWriteUtf8 } from './lib/atomic-write.mjs';
 import { runLocked } from './lib/run-locked.mjs';
 import { clearWireframeReplace } from './lib/wireframe-gate.mjs';
 import { loadCanonicalMap, canonicalWebpName } from './lib/canonical-image.mjs';
+import { backupTechnologyImage } from './lib/technology-image-backup.mjs';
 
 const require = createRequire(import.meta.url);
 let sizeOf;
@@ -163,6 +164,8 @@ if (args.dryRun) {
 
 function registerMain() {
 mkdirSync(SOURCE_DIR, { recursive: true });
+if (existsSync(destAsset)) backupTechnologyImage(destAsset, { reason: 'register-replace' });
+if (existsSync(destSource)) backupTechnologyImage(destSource, { reason: 'register-replace' });
 copyFileSync(args.input, destAsset);
 copyFileSync(args.input, destSource);
 

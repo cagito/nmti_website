@@ -21,8 +21,8 @@
   <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="/homepage/css/style.css?v=46">
-  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">
-  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=11">
+  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.15rem;margin:2rem 0 .75rem;font-weight:800}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}.tech-seo-article{margin-top:1rem}.tech-seo-section{margin-top:0}.tech-seo-figure{margin:1rem 0}.tech-seo-figure figcaption{font-size:.9rem;color:#555;margin-top:.35rem}</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,7 +66,7 @@
       "headline": "동적 데이터 로거",
       "description": "동적 데이터 로거의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
       "inLanguage": "ko-KR",
-      "dateModified": "2026-06-27",
+      "dateModified": "2026-06-30",
       "mainEntityOfPage": "https://www.nmti.co.kr/homepage/technology/instruments/datalogger/dynamic/",
       "publisher": {
         "@type": "Organization",
@@ -144,8 +144,39 @@
     <h1>동적 데이터 로거</h1>
     <p class="lead">동적 데이터 로거의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.</p>
     <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-076_동적-데이터로거-구성도_모듈형DAQ고속샘플링.webp" alt="동적 데이터로거 구성도 - 모듈형 DAQ·고속 동시 샘플링·IEPE 입력" width="1200" height="675" loading="lazy" decoding="async"><figcaption>동적 DAQ — 모듈형 섀시·이더넷 스트리밍·파형 분석</figcaption></figure>
-    <section><h2>개요</h2><p><strong>동적 데이터로거</strong>는 발파·교통·지진·구조물 동적 응답처럼 <strong>밀리초~kHz 대역</strong>에서 변하는 신호를 연속·동시 샘플링하는 고속 데이터 수집(DAQ) 시스템입니다. 정적 로거의 분 단위 스캔과 달리, 채널별 고정 샘플링률로 파형·스펙트럼·피크값(PPV)을 산출합니다.</p><p>본 기술자료에서는 오스트리아 <strong>Gantner Instruments</strong> 제품군을 대표 사례로 설명합니다. 모듈형 메인프레임·I/O 모듈·이더넷 스트리밍 구조는 교량·터널·건물 <strong>구조 건전성 모니터링(SHM)</strong>·발파진동·재하시험 현장에서 널리 참고됩니다.</p></section>
-    <section><h2>측정 원리</h2><p>Gantner 계열 DAQ는 <strong>모듈형 섀시</strong>에 아날로그·디지털 I/O 카드를 장착하고, 이더넷으로 PC 또는 현장 서버에 데이터를 전송합니다. <strong>IEPE</strong> 가속도계·변형률계·마이크로폰 등 동적 센서는 전원 공급·임피던스 매칭이 내장된 입력 모듈에 직접 연결합니다.</p><p>샘플링 클럭이 모든 채널을 동기화하므로 상관·전달함수·모드 분석에 유리합니다. 대용량 버퍼·SSD·NAS에 원시 파형을 저장하고, 애플리케이션(GI.bench·TestSuite 등)에서 FFT·필터·PPV·관리기준 비교를 수행합니다. 정적 로거와 달리 <strong>연속 전력·데이터 대역폭</strong> 요구가 크므로 AC 전원·고속 LAN 설계가 중요합니다.</p></section>
+    <article class="tech-article tech-article--unified tech-seo-article">
+<section class="tech-section tech-section--numbered tech-seo-section" id="overview" data-section="1">
+<h2 class="tech-section__title">1. 시스템 개요</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--overview"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">목적</strong><span class="tech-bullet-list__text"><strong>동적 데이터로거</strong>는 발파·교통·지진·구조물 동적 응답처럼 <strong>밀리초~kHz 대역</strong>에서 변하는 신호를 연속·동시 샘플링하는 고속 데이터 수집(DAQ) 시스템입니다. 정적 로거의 분 단위 스캔과 달리, 채널별 고정 샘플링률로 파형·스펙트럼·피크값(PPV)을 산출합니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">적용 범위</strong><span class="tech-bullet-list__text">본 기술자료에서는 오스트리아 <strong>Gantner Instruments</strong> 제품군을 대표 사례로 설명합니다. 모듈형 메인프레임·I/O 모듈·이더넷 스트리밍 구조는 교량·터널·건물 <strong>구조 건전성 모니터링(SHM)</strong>·발파진동·재하시험 현장에서 널리 참고됩니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="purpose" data-section="2">
+<h2 class="tech-section__title">2. 구성 요소</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--labeled tech-bullet-list--purpose"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">고속 샘플링</strong><span class="tech-bullet-list__text">수백 Hz~수십 kHz 연속 기록</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">동시 채널</strong><span class="tech-bullet-list__text">다채널 가속도·변형률 동기 수집</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">이벤트</strong><span class="tech-bullet-list__text">트리거·사전·사후 버퍼 기록</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">실시간</strong><span class="tech-bullet-list__text">PC·서버로 스트리밍·분석</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="principle" data-section="3">
+<h2 class="tech-section__title">3. 현장 구성·원리</h2>
+<div class="tech-section__body">
+<figure class="tech-seo-figure"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-076_동적-데이터로거-구성도_모듈형DAQ고속샘플링.webp" alt="동적 데이터로거 구성도 - 모듈형 DAQ·고속 동시 샘플링·IEPE 입력" loading="lazy" decoding="async"><figcaption>동적 DAQ — 모듈형 섀시·이더넷 스트리밍·파형 분석</figcaption></figure>
+<ul class="tech-bullet-list tech-bullet-list--siteLayout"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">구성 흐름</strong><span class="tech-bullet-list__text"><strong>동적 센서</strong>(IEPE 가속도계 등) → <strong>DAQ 모듈·섀시</strong> → <strong>PC/서버</strong>(이더넷) → 이벤트 저장·분석. 정적 로거와 <strong>별도 체계</strong>로 두고 GPS 시간 동기·트리거 버퍼로 발파·교통 이벤트를 포착합니다.</span></li></ul><ul class="tech-bullet-list tech-bullet-list--principle"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">측정 대상</strong><span class="tech-bullet-list__text">Gantner 계열 DAQ는 <strong>모듈형 섀시</strong>에 아날로그·디지털 I/O 카드를 장착하고, 이더넷으로 PC 또는 현장 서버에 데이터를 전송합니다. <strong>IEPE</strong> 가속도계·변형률계·마이크로폰 등 동적 센서는 전원 공급·임피던스 매칭이 내장된 입력 모듈에 직접 연결합니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">측정 원리</strong><span class="tech-bullet-list__text">샘플링 클럭이 모든 채널을 동기화하므로 상관·전달함수·모드 분석에 유리합니다. 대용량 버퍼·SSD·NAS에 원시 파형을 저장하고, 애플리케이션(GI.bench·TestSuite 등)에서 FFT·필터·PPV·관리기준 비교를 수행합니다. 정적 로거와 달리 <strong>연속 전력·데이터 대역폭</strong> 요구가 크므로 AC 전원·고속 LAN 설계가 중요합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="installation" data-section="4">
+<h2 class="tech-section__title">4. 설치·운영</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--plain tech-bullet-list--installation"><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">측정 목적 · 대역 · 채널 수에 따른 모듈 · 샘플링률 선정</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">IEPE 가속도계 · 케이블 · 접지 · 노이즈 차폐</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">섀시 · PC · 스위치 · UPS · 접지 단일점</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">트리거 조건 · 버퍼 길이 · 저장 경로 설정</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">초기 기준 파형 · 교정 · 클리핑 · 포화 점검</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">발주 · 민원 기준(PPV 등)과 연동한 보고 체계</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="management" data-section="5">
+<h2 class="tech-section__title">5. 데이터·관리</h2>
+<div class="tech-section__body">
+<table class="spec-table"><thead><tr><th scope="col">구분</th><th scope="col">Gantner형 DAQ</th><th scope="col">정적 로거 대비</th></tr></thead><tbody><tr><th scope="row">샘플링</th><td>수백 Hz~kHz</td><td>분~시간 스캔</td></tr><tr><th scope="row">센서</th><td>IEPE 가속도 · 동적 변형</td><td>변위 · 수위 · 하중</td></tr><tr><th scope="row">연결</th><td>이더넷 · USB 고속</td><td>RS-485 · SDI-12 · 저속</td></tr><tr><th scope="row">데이터량</th><td>GB/일 · 이벤트 버퍼</td><td>MB/일 · 시계열</td></tr><tr><th scope="row">분석</th><td>FFT · PPV · 모드</td><td>추세 · 변화량</td></tr></tbody></table><h3 class="tech-subheading">장애 유형 및 점검</h3><table class="spec-table"><thead><tr><th scope="col">증상</th><th scope="col">점검</th><th scope="col">조치</th></tr></thead><tbody><tr><th scope="row">클리핑</th><td>입력 범위 · 게인</td><td>재설정 · 센서 교체</td></tr><tr><th scope="row">노이즈</th><td>접지 · 케이블</td><td>차폐 · 단일점 접지</td></tr><tr><th scope="row">동기 오류</th><td>GPS · 클럭</td><td>시간 태그 재동기</td></tr><tr><th scope="row">이벤트 누락</th><td>트리거 · 버퍼</td><td>임계값 · 버퍼 길이 조정</td></tr></tbody></table><ul class="tech-bullet-list tech-bullet-list--criteria"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">기준 출처</strong><span class="tech-bullet-list__text">샘플링률(나이퀴스트)·클리핑·SNR·동기·시간 태그를 정기 점검합니다. PPV·가속도 관리기준은 인체·구조·민원 기준을 구분 적용합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--appendix" id="related">
+<h2 class="tech-section__title">관련 항목</h2>
+<div class="tech-section__body"><div class="inline-list"><span class="inline-list__label">관련 센서</span><ul class="tech-related"><li><a href="https://www.nmti.co.kr/homepage/technology/sensors/vibration-meter/" data-tech-route="sensors/vibration-meter">진동계</a></li><li><a href="https://www.nmti.co.kr/homepage/technology/sensors/strain-gauge/" data-tech-route="sensors/strain-gauge">변형률계</a></li></ul></div></div></section>
+<section class="tech-section tech-section--appendix" id="faq">
+<h2 class="tech-section__title">자주 묻는 질문</h2>
+<div class="tech-section__body"><div class="faq-list"><details class="faq-item"><summary>Gantner만 사용하나요?</summary><div class="faq-item__body"><p>Gantner는 본 문서의 설명 기준 제품입니다. NI·HBM 등 동급 DAQ도 동일 원리로 선정·운용합니다.</p></div></details><details class="faq-item"><summary>정적 로거로 진동 측정?</summary><div class="faq-item__body"><p>저주파(0.1Hz 미만) 추세는 가능하나 발파·교통 진동 파형·PPV는 동적 DAQ가 필요합니다.</p></div></details><details class="faq-item"><summary>터널·교량 적용?</summary><div class="faq-item__body"><p>발파 영향권·교량 통과·지진 이벤트 계측에 배치하며, 정적 침하·내공변위 로거와 시간 동기화해 해석합니다.</p></div></details><details class="faq-item"><summary>GPS 시간 동기?</summary><div class="faq-item__body"><p>다채널·다현장 이벤트 상관에 PTP·GPS 타임스탬프를 사용합니다. 정적 로거와 동기 규칙을 문서화합니다.</p></div></details></div></div></section>    </article>
     <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.1 — 데이터로거 선정 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.3 — 온도 범위 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
     <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#instruments/datalogger/dynamic">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
   </main>

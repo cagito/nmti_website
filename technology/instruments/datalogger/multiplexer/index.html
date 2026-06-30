@@ -21,8 +21,8 @@
   <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="/homepage/css/style.css?v=46">
-  <link rel="stylesheet" href="/homepage/css/technology.css?v=8">
-  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.2rem;margin:2rem 0 .75rem}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}</style>
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=11">
+  <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.15rem;margin:2rem 0 .75rem;font-weight:800}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}.tech-seo-article{margin-top:1rem}.tech-seo-section{margin-top:0}.tech-seo-figure{margin:1rem 0}.tech-seo-figure figcaption{font-size:.9rem;color:#555;margin-top:.35rem}</style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,7 +66,7 @@
       "headline": "멀티플렉서",
       "description": "멀티플렉서의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
       "inLanguage": "ko-KR",
-      "dateModified": "2026-06-27",
+      "dateModified": "2026-06-30",
       "mainEntityOfPage": "https://www.nmti.co.kr/homepage/technology/instruments/datalogger/multiplexer/",
       "publisher": {
         "@type": "Organization",
@@ -144,8 +144,39 @@
     <h1>멀티플렉서</h1>
     <p class="lead">멀티플렉서의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.</p>
     <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-077_멀티플렉서-구성도_체인센서순차스캔.webp" alt="멀티플렉서(MUX) 구성도 - 체인 센서·순차 스캔·정적 로거 채널 확장" width="1200" height="675" loading="lazy" decoding="async"><figcaption>MUX — 지중경사·VW 체인 → 순차 스캔 → 정적 로거</figcaption></figure>
-    <section><h2>개요</h2><p><strong>멀티플렉서(MUX)</strong>는 정적 데이터로거의 제한된 아날로그 입력을 확장해, 다수 센서 신호를 <strong>순차 스캔</strong>으로 로거에 전달하는 장치입니다. <strong>지중경사계</strong> 깊이별 소자·VW <strong>간극수압계</strong>·다점 변위 센서처럼 채널 수가 많은 체인형 센서에 필수적입니다.</p><p>센서 체인 → MUX → 데이터로거 순으로 연결하며, 로거가 MUX 채널을 제어해 한 번에 하나(또는 소수)의 센서를 읽습니다. 본 페이지 Figure(IMG-077)처럼 체인형 센서 종단이 MUX를 거쳐 로거로 수렴하는 토폴로지가 표준입니다.</p></section>
-    <section><h2>측정 원리</h2><p>MUX는 아날로그 스위치 배열로 공용 Excitation·Sense 라인을 센서마다 전환합니다. 로거 프로그램에서 채널 목록·안정화 시간(settling time)·Excitation 시간을 설정합니다. 스캔 주기 = (채널 수 × 채널당 읽기 시간)이므로, 깊이 30m 지중경사계(30소자)는 MUX 지연이 전체 주기를 좌우합니다.</p><p>배선은 <strong>체인(직렬)</strong> 토폴로지가 일반적이며, 중앙 허브에서 별도 방사형 배선은 피합니다. MUX·로거·센서 Excitation 전압·케이블 저항·접지 루프를 함께 점검합니다.</p></section>
+    <article class="tech-article tech-article--unified tech-seo-article">
+<section class="tech-section tech-section--numbered tech-seo-section" id="overview" data-section="1">
+<h2 class="tech-section__title">1. 시스템 개요</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--overview"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">목적</strong><span class="tech-bullet-list__text"><strong>멀티플렉서(MUX)</strong>는 정적 데이터로거의 제한된 아날로그 입력을 확장해, 다수 센서 신호를 <strong>순차 스캔</strong>으로 로거에 전달하는 장치입니다. <strong>지중경사계</strong> 깊이별 소자·VW <strong>간극수압계</strong>·다점 변위 센서처럼 채널 수가 많은 체인형 센서에 필수적입니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">적용 범위</strong><span class="tech-bullet-list__text">센서 체인 → MUX → 데이터로거 순으로 연결하며, 로거가 MUX 채널을 제어해 한 번에 하나(또는 소수)의 센서를 읽습니다. 본 페이지 Figure(IMG-077)처럼 체인형 센서 종단이 MUX를 거쳐 로거로 수렴하는 토폴로지가 표준입니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="purpose" data-section="2">
+<h2 class="tech-section__title">2. 구성 요소</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--labeled tech-bullet-list--purpose"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">채널 확장</strong><span class="tech-bullet-list__text">16·32·48채널 이상 스캔</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">체인 센서</strong><span class="tech-bullet-list__text">지중경사·다점 VW 연결</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">비용 효율</strong><span class="tech-bullet-list__text">로거 본체 채널 절약</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">현장 배선</strong><span class="tech-bullet-list__text">센서 측 다심 케이블 수렴</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="principle" data-section="3">
+<h2 class="tech-section__title">3. 현장 구성·원리</h2>
+<div class="tech-section__body">
+<figure class="tech-seo-figure"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-077_멀티플렉서-구성도_체인센서순차스캔.webp" alt="멀티플렉서(MUX) 구성도 - 체인 센서·순차 스캔·정적 로거 채널 확장" loading="lazy" decoding="async"><figcaption>MUX — 지중경사·VW 체인 → 순차 스캔 → 정적 로거</figcaption></figure>
+<ul class="tech-bullet-list tech-bullet-list--siteLayout"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">구성 흐름</strong><span class="tech-bullet-list__text"><strong>체인형 센서</strong>(지중경사·VW 다점) → <strong>MUX</strong> → <strong>정적 데이터로거</strong>. 체인 종단이 MUX로 수렴한 뒤 로거 아날로그 입력으로 순차 스캔합니다. 스캔 주기 = 채널 수 × 채널당 읽기 시간입니다.</span></li></ul><ul class="tech-bullet-list tech-bullet-list--principle"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">측정 대상</strong><span class="tech-bullet-list__text">MUX는 아날로그 스위치 배열로 공용 Excitation·Sense 라인을 센서마다 전환합니다. 로거 프로그램에서 채널 목록·안정화 시간(settling time)·Excitation 시간을 설정합니다. 스캔 주기 = (채널 수 × 채널당 읽기 시간)이므로, 깊이 30m 지중경사계(30소자)는 MUX 지연이 전체 주기를 좌우합니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">측정 원리</strong><span class="tech-bullet-list__text">배선은 <strong>체인(직렬)</strong> 토폴로지가 일반적이며, 중앙 허브에서 별도 방사형 배선은 피합니다. MUX·로거·센서 Excitation 전압·케이블 저항·접지 루프를 함께 점검합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="installation" data-section="4">
+<h2 class="tech-section__title">4. 설치·운영</h2>
+<div class="tech-section__body">
+<ul class="tech-bullet-list tech-bullet-list--plain tech-bullet-list--installation"><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">센서 체인 · 채널 수 · Excitation 요구 확인</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">MUX–로거 호환(제어 포트 · 전압) 확인</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">체인 종단 · 중간 접속 · 방수 처리</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">스캔 테이블 · 안정화 · 필터 설정</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">초기치 전 채널 노이즈 · 단선 점검</span></li><li class="tech-bullet-list__item tech-bullet-list__item--plain"><span class="tech-bullet-list__text">스캔 주기가 계측 빈도 요구 충족 검증</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--numbered tech-seo-section" id="management" data-section="5">
+<h2 class="tech-section__title">5. 데이터·관리</h2>
+<div class="tech-section__body">
+<table class="spec-table"><thead><tr><th scope="col">항목</th><th scope="col">설계</th><th scope="col">유의</th></tr></thead><tbody><tr><th scope="row">채널 수</th><td>16/32/48+</td><td>로거 · MUX 정격</td></tr><tr><th scope="row">토폴로지</th><td>체인 → MUX → 로거</td><td>허브 별선 지양</td></tr><tr><th scope="row">주기</th><td>채널×읽기시간</td><td>KCS 빈도</td></tr><tr><th scope="row">Excitation</th><td>VW · 저항식</td><td>케이블 저항</td></tr><tr><th scope="row">고장</th><td>채널별 단선</td><td>체인 전체 영향 최소화</td></tr></tbody></table><h3 class="tech-subheading">장애 유형 및 점검</h3><table class="spec-table"><thead><tr><th scope="col">증상</th><th scope="col">점검</th><th scope="col">조치</th></tr></thead><tbody><tr><th scope="row">특정 채널 결측</th><td>MUX · 케이블 · 센서</td><td>단선 위치 추정 · 교체</td></tr><tr><th scope="row">스캔 지연</th><td>채널 수 · 안정화 시간</td><td>테이블 · 주기 재설계</td></tr><tr><th scope="row">노이즈 증가</th><td>Excitation · 접지</td><td>케이블 · 접속 점검</td></tr><tr><th scope="row">전 채널 이상</th><td>로거 · MUX 전원</td><td>전압 · 퓨즈 확인</td></tr></tbody></table><ul class="tech-bullet-list tech-bullet-list--criteria"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">기준 출처</strong><span class="tech-bullet-list__text">채널별 결측·노이즈·스캔 지연을 모니터링합니다. MUX 또는 체인 단선 시 인접 채널 교차 확인으로 고장 위치를 추정합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</span></li></ul>
+</div></section>
+<section class="tech-section tech-section--appendix" id="related">
+<h2 class="tech-section__title">관련 항목</h2>
+<div class="tech-section__body"><div class="inline-list"><span class="inline-list__label">관련 센서</span><ul class="tech-related"><li><a href="https://www.nmti.co.kr/homepage/technology/sensors/inclinometer/" data-tech-route="sensors/inclinometer">지중경사계</a></li><li><a href="https://www.nmti.co.kr/homepage/technology/sensors/piezometer/" data-tech-route="sensors/piezometer">간극수압계</a></li></ul></div></div></section>
+<section class="tech-section tech-section--appendix" id="faq">
+<h2 class="tech-section__title">자주 묻는 질문</h2>
+<div class="tech-section__body"><div class="faq-list"><details class="faq-item"><summary>MUX 없이 지중경사계?</summary><div class="faq-item__body"><p>소자 수가 로거 채널 이내이면 직결 가능하나, 심도 10m 이상 체인은 MUX가 일반적입니다.</p></div></details><details class="faq-item"><summary>동적 DAQ에 MUX?</summary><div class="faq-item__body"><p>고속 동시 샘플링이 목적이면 MUX 순차 스캔은 부적합합니다. 동적은 전용 다채널 입력 모듈을 사용합니다.</p></div></details><details class="faq-item"><summary>대표 제품?</summary><div class="faq-item__body"><p>정적 로거·MUX 조합은 제조사별 배선 가이드를 따릅니다. 본 Figure는 특정 브랜드가 아닌 범용 산업용 외형을 사용합니다.</p></div></details><details class="faq-item"><summary>스캔 지연은?</summary><div class="faq-item__body"><p>MUX 순차 읽기로 한 주기가 길어질 수 있습니다. 채널당 유효 주기가 목표 빈도를 만족하는지 검증합니다.</p></div></details></div></div></section>    </article>
     <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.1 — 데이터로거 선정 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.3 — 온도 범위 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
     <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#instruments/datalogger/multiplexer">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
   </main>

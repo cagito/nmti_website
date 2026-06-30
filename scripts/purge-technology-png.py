@@ -20,6 +20,9 @@ ROOT = Path(__file__).resolve().parent.parent
 IMG_DIR = ROOT / "assets" / "images" / "technology"
 PNG_RE = re.compile(r"^IMG-\d{3}_.+\.png$", re.IGNORECASE)
 
+sys.path.insert(0, str(Path(__file__).resolve().parent / "lib"))
+from technology_image_backup import backup_and_unlink  # noqa: E402
+
 
 def convert_if_needed(png: Path, quality: int = 85) -> Path | None:
     webp = png.with_suffix(".webp")
@@ -64,7 +67,7 @@ def main() -> int:
             if args.dry_run:
                 print("[dry-run] would delete", png.relative_to(ROOT))
             else:
-                png.unlink(missing_ok=True)
+                backup_and_unlink(png, IMG_DIR, reason="purge-png", dry_run=False)
                 deleted += 1
                 print("Deleted", png.relative_to(ROOT))
         else:

@@ -2,7 +2,7 @@
 
 이 저장소(`homepage/`) 작업 시 **반드시** 아래를 따릅니다.
 
-**최종 상태·운영:** [docs/10-최종-완료-및-운영-가이드.md](./docs/10-최종-완료-및-운영-가이드.md) (115노드 · SEO 114 · 마스터 102 · WebP 102 · verify:local PASS)
+**최종 상태·운영:** [docs/10-최종-완료-및-운영-가이드.md](./docs/10-최종-완료-및-운영-가이드.md) · [178 통합 Exit](./docs/178-통합-프로그램-Exit.md) (126노드 · WebP 112 · `verify:local` PASS)
 
 ### 다중 Cursor 동시 작업 (LOCK-01)
 
@@ -13,6 +13,20 @@
 - registry 패치: `npm run lock:acquire -- registry --task "..."` → 작업 → `npm run lock:release -- registry`
 - Figure 등록: `register:figure` 가 **full** 잠금 자동 적용 (`--no-lock` 은 CI 전용)
 - 창 구분: `$env:CURSOR_LOCK_OWNER = "cursor-A"` (PowerShell, 창마다 다르게)
+
+### git-sync (newest-wins — 로컬 ↔ GitHub)
+
+> **정본:** `git-sync.bat` · `scripts/git-sync-newest.mjs`
+
+- **목적:** 추적 파일마다 **로컬·origin/main 중 더 최신** 쪽을 선택 → 필요 시 auto commit/push.
+- **금지:** `git reset --hard` · `git stash` (과거 `_patch_sync*.py` 패치 **사용 금지**).
+- **실행:** `git-sync.bat` (60초 루프) · `npm run sync:git` · 판정만 `npm run sync:git:dry`
+- **환경:** `GIT_SYNC_AUTO_COMMIT=1` · `GIT_SYNC_AUTO_PUSH=1` · `RUN_BUILD=auto` (이미지/registry 변경 시만 `build:images`)
+- **보호 (Strong mode, 기본):** 미커밋 변경 → **절대 take-remote 안 함** · 커밋 시각 차 **2분 이내 → skip** · **FTP mtime 미사용**(커밋 시각+미커밋만) · push 실패+ahead → 원격 덮기 차단 · merge도 차단 · remote 덮기 전 `.git-sync-backup/` 일괄 백업 · LOCK held → exit 3
+- **위험 opt-in:** `GIT_SYNC_AGGRESSIVE=1` 또는 `--aggressive` · `GIT_SYNC_FORCE_REMOTE=1`(미커밋도 원격 허용)
+- **로그:** `logs/git-sync/` · 마지막 결과 `.git-sync-last-run.json`
+- merge/rebase 진행 중 → sync 중단(exit 2) — `git rebase --abort` 또는 `--continue` 후 재시도
+- **테스트:** `npm run test:git-sync`
 
 ## 용어 기준 (KDS/KCS — 콘텐츠 최상위 규칙)
 
@@ -95,7 +109,7 @@ npm run validate:instr-image-knowledge
 - **BRI-FND:** 교량 기초 **침하 측점·지표침하계·ATS** 분리 — IMG-013 [47](./docs/47-교량-기초-침하-계측-표현-표준.md) · **v2 PASS** [48](./docs/48-IMG-013-교량-기초-침하-수정계획.md) ✅
 - **BRI-EJ:** 교량 **신축이음량·신축이음계** — IMG-014 [52](./docs/52-교량-신축이음계-계측-표현-표준.md) · **v2 PASS** [53](./docs/53-IMG-014-신축이음계-수정계획.md) ✅ · `deck-displacement`(종·횡변위) **노드 삭제**
 - **BRI-DEF/CT/STR/WND/BRG:** 교량 확장 5종 hero — IMG-103·105·107·109·110 **PASS** [64](./docs/64-교량-확장-Figure-5종-통합-구현계획.md) · [73 구현완료](./docs/73-대구통합계측-준공보고서-구현-완료-보고.md) · [68](./docs/68-교량-처짐-계측-표현-표준.md)~[72](./docs/72-교량-받침부-변위-계측-표현-표준.md) · **상위 노출** [78](./docs/78-교량-계측-케이블장력-노출·연계-보강-계획.md) · [79 완료](./docs/79-교량-케이블장력-노출-보강-구현-완료-보고.md)
-- **IMG-103:** 교량 상부구조 **GNSS 처짐 v3 PASS** — 경간 상부 ΔZ→δ · [120](./docs/120-IMG-103-교량-GNSS-처짐-v3-표현-표준.md) · 와이어식 hero **아님** (IMG-104 별도)
+- **IMG-103:** 교량 상부구조 **GNSS 처짐 PASS** — 경간 중앙 상부 ΔZ→δ · [148](./docs/148-IMG-103-교량-상부구조-GNSS-처짐-표현-표준.md) · 와이어식 hero **아님** (IMG-104 별도) · deprecated [120](./docs/120-IMG-103-교량-GNSS-처짐-v3-표현-표준.md)
 - **IMG-011:** 교량 계측 **전체 개념도 v3 PASS** — 사장교 10종 · [116](./docs/116-IMG-011-교량-계측-전체-개념도-v3-표현-표준.md) · BRI-OV-01~10
 - **IMG-011:** 교량 **전체 개념도 v2** — 10종 callout · `fields/bridge` hero [74](./docs/76-IMG-011-교량-전체-개념도-v2-수정계획.md) · `npm run render:bridge-overview` ✅
 - **외부 공학 검증 대조·Phase 5~8:** [docs/30-외부공학검증대조](./docs/30-NMTI-건설계측-기술자료-외부공학검증-대조-및-수정계획.md)
@@ -173,7 +187,8 @@ node scripts/generate-sitemap-technology.mjs
 
 - **canonical WebP:** `scripts/canonical-image-webp.json` — 동일 IMG-ID 중복 시 공식 파일명 우선 (`generate-image-assets.mjs`). 교체 후 `validate-image-master.mjs` · 상세 [docs/09-GNSS-book-PDF-및-검증-가이드.md](./docs/09-GNSS-book-PDF-및-검증-가이드.md) §3
 - **WebP-only:** `assets/images/technology/` 전체 PNG **금지** · `python scripts/purge-technology-png.py` · [TECHNICAL §3](./docs/TECHNICAL_IMAGE_STANDARD.md)
-- **통합 검증:** `npm run verify:local` (배포 전) · `npm run verify:content` (재작도 중) · `npm run rework:prompt` (Figure 복붙) · `npm run verify:deploy` · `npm run verify:production` (**13건**, FTP 후)
+- **삭제 백업:** `technology/` Figure 삭제·교체 전 **`assets/images/technology/backup/`** 에 타임스탬프 복사 — `npm run delete:tech-image` · `.cursor/rules/technology-image-backup.mdc`
+- **통합 검증:** `npm run verify:local` (배포 전) · `npm run verify:content` (재작도 중) · `npm run verify:deploy` · `npm run verify:production` (**28/28**, FTP 후) · Exit [178](./docs/178-통합-프로그램-Exit.md)
 
 ### ⛔ 기술자료 이미지 (필독 — 생성·수정 전)
 

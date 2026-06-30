@@ -10,7 +10,7 @@ import { getContentForNode } from '../js/technology/content-data.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
 
-const SKIP = new Set(['sensors/inclinometer', 'intro']);
+const SKIP = new Set(['intro']);
 
 let failed = 0;
 

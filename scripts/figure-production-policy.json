@@ -125,7 +125,7 @@
     "IMG-011": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "pillow",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
       "hero": true,
       "renderScript": "render-bridge-overview.py"
@@ -161,7 +161,7 @@
     },
     "IMG-016": {
       "tier": "FT-B",
-      "currentMethod": "cad",
+      "currentMethod": "ai-reviewed",
       "targetMethod": "cad",
       "migrationPhase": "P3",
       "hero": false
@@ -278,7 +278,7 @@
     },
     "IMG-032": {
       "tier": "FT-A",
-      "currentMethod": "cad",
+      "currentMethod": "ai-reviewed",
       "targetMethod": "cad",
       "migrationPhase": "P2",
       "hero": false
@@ -360,7 +360,7 @@
     },
     "IMG-043": {
       "tier": "FT-B",
-      "currentMethod": "cad",
+      "currentMethod": "ai-reviewed",
       "targetMethod": "cad",
       "migrationPhase": "P2",
       "hero": true
@@ -469,7 +469,7 @@
     },
     "IMG-058": {
       "tier": "FT-C",
-      "currentMethod": "pillow",
+      "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
       "hero": true,
@@ -640,7 +640,7 @@
     },
     "IMG-080": {
       "tier": "FT-B",
-      "currentMethod": "cad",
+      "currentMethod": "ai-reviewed",
       "targetMethod": "cad",
       "migrationPhase": "P2",
       "hero": true
@@ -710,7 +710,7 @@
     },
     "IMG-096": {
       "tier": "FT-A",
-      "currentMethod": "cad",
+      "currentMethod": "ai-reviewed",
       "targetMethod": "cad",
       "migrationPhase": "P1",
       "hero": true
@@ -903,10 +903,5 @@
       "migrationPhase": "P3",
       "hero": true
     }
-  },
-  "IMG-016": {
-    "currentMethod": "pillow",
-    "targetMethod": "pillow",
-    "renderScript": "render-img016-circular-slip-v4.py"
   }
 }

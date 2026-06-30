@@ -1,4 +1,10 @@
 {
-  "issue_count": 0,
-  "issues": []
+  "issue_count": 1,
+  "issues": [
+    {
+      "cat": "구조/운영",
+      "item": "지중경사계 이중 콘텐츠",
+      "detail": "SPA+정적 canonical 정책 미충족 — detailLink·SKIP_IDS·sitemap 점검"
+    }
+  ]
 }

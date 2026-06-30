@@ -2,22 +2,28 @@
 set -u
 
 # ============================================================
-# NMTI website git sync helper (Git Bash / macOS / Linux)
-# - Pulls latest main branch every 60 seconds.
-# - Press r during wait to run immediately.
-# - Press q to quit.
-# - Image transfer rule:
-#     ChatGPT uploads text staging files such as *.webp.b64.part001.
-#     git-sync merges parts and decodes them into same-name *.webp files locally.
-# - This script does NOT render images on every sync cycle.
+# NMTI website git sync helper (newest-wins)
+# - Syncs local and origin/main by per-file timestamp (newest wins).
+# - Auto commit + push when local is newer. Backup before remote overwrite.
+# - No git reset --hard, no stash.
+# - Press r during wait to run immediately. Press q to quit.
+# - WebP staging: *.webp.b64.part* -> decode to *.webp
+# - Strong mode (default): uncommitted never take-remote · ±2min ambiguous skip · no FTP mtime
+# - Opt-out: GIT_SYNC_AGGRESSIVE=1 · Override: GIT_SYNC_FORCE_REMOTE=1 (dangerous)
+#
+# Env: GIT_SYNC_AUTO_COMMIT GIT_SYNC_AUTO_PUSH GIT_SYNC_CONSERVATIVE GIT_SYNC_AMBIGUITY_SEC RUN_BUILD
 # ============================================================
 
 BRANCH="${BRANCH:-main}"
 WAIT_SECONDS="${WAIT_SECONDS:-60}"
 IMAGE_ROOT="${IMAGE_ROOT:-assets/images/technology}"
-RUN_BUILD="${RUN_BUILD:-1}"
+RUN_BUILD="${RUN_BUILD:-auto}"
 RUN_VERIFY="${RUN_VERIFY:-0}"
 DELETE_STAGING_AFTER_APPLY="${DELETE_STAGING_AFTER_APPLY:-0}"
+GIT_SYNC_AUTO_COMMIT="${GIT_SYNC_AUTO_COMMIT:-1}"
+GIT_SYNC_AUTO_PUSH="${GIT_SYNC_AUTO_PUSH:-1}"
+GIT_SYNC_CONSERVATIVE="${GIT_SYNC_CONSERVATIVE:-1}"
+GIT_SYNC_AMBIGUITY_SEC="${GIT_SYNC_AMBIGUITY_SEC:-120}"
 
 cd "$(dirname "$0")"
 
@@ -32,7 +38,7 @@ decode_base64_to_file() {
 }
 
 apply_text_staging() {
-  echo "[2/5] Apply text-based WebP staging files..."
+  echo "[2/6] Apply text-based WebP staging files..."
 
   if [ ! -d "$IMAGE_ROOT" ]; then
     echo "[SKIP] image root not found: $IMAGE_ROOT"
@@ -132,7 +138,7 @@ for src in root.rglob("*"):
         target = src.with_name(base + ".webp")
         b64 = re.sub(r"\s+", "", src.read_text(encoding="utf-8"))
         data = base64.b64decode(b64, validate=True)
-        write_webp(target, data, None, str(src))
+        write_webp(target, data, meta=None, label=str(src))
         changed += 1
         if delete_after:
             src.unlink(missing_ok=True)
@@ -143,36 +149,56 @@ print(f"[WEBP] staged replacements: {changed}")
 PY
 }
 
+should_run_build() {
+  if [ "$RUN_BUILD" = "1" ]; then
+    return 0
+  fi
+  if [ "$RUN_BUILD" = "auto" ]; then
+    node scripts/git-sync-should-build.mjs
+    return $?
+  fi
+  return 1
+}
+
 run_once() {
   echo
   echo "============================================================"
-  echo "[$(date '+%Y-%m-%d %H:%M:%S')] git-sync start"
+  echo "[$(date '+%Y-%m-%d %H:%M:%S')] git-sync start (newest-wins)"
   echo "============================================================"
 
-  echo "[1/5] Pull latest source..."
-  if ! git pull origin "$BRANCH"; then
-    echo "[ERROR] git pull failed."
+  echo "[1/6] Newest-wins git sync..."
+  if ! node scripts/git-sync-newest.mjs; then
+    rc=$?
+    if [ "$rc" -eq 2 ]; then
+      echo "[WARN] merge/rebase in progress — resolve manually"
+      return 2
+    fi
+    if [ "$rc" -eq 3 ]; then
+      echo "[WARN] workspace lock held — npm run lock:status"
+      return 3
+    fi
+    echo "[ERROR] git-sync-newest failed"
     return 1
   fi
 
   apply_text_staging || return 1
 
   echo
-  echo "[3/5] Install npm dependencies if node_modules is missing..."
+  echo "[3/6] Install npm dependencies if node_modules is missing..."
   if [ ! -d "node_modules" ]; then
     npm install || echo "[WARN] npm install failed. Continue."
   fi
 
   echo
-  echo "[4/5] Build images..."
-  if [ "$RUN_BUILD" = "1" ]; then
+  echo "[4/6] Build images (conditional)..."
+  if should_run_build; then
     npm run build:images || echo "[WARN] npm run build:images failed. Continue."
   else
-    echo "[SKIP] RUN_BUILD=0"
+    echo "[SKIP] RUN_BUILD=$RUN_BUILD — no image/registry changes this cycle"
   fi
 
   echo
-  echo "[5/5] Verify content..."
+  echo "[5/6] Verify content..."
   if [ "$RUN_VERIFY" = "1" ]; then
     npm run verify:content || echo "[WARN] npm run verify:content failed. Continue."
   else
@@ -180,8 +206,8 @@ run_once() {
   fi
 
   echo
-  echo "[STATUS]"
-  git status --short
+  echo "[6/6] Status"
+  git status -sb
 
   echo
   echo "[$(date '+%Y-%m-%d %H:%M:%S')] git-sync done"

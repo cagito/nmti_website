@@ -1,3 +1,6 @@
+> **⚠️ v6 정본:** [IMG-032_redline_v6_외부PNG.md](./IMG-032_redline_v6_외부PNG.md) · [docs/170](../../../docs/170-IMG-032-v6-재생성-기록.md)  
+> v2는 일반형 scaffold — v6는 **침하판·연장봉·보호관·측정점≠기준점** (SETTLE-01).
+
 <!-- redline-scaffold:v1 -->
 # IMG-032 redline — 침하판·침하계 설치 개념도 (외부 PNG)
 

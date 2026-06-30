@@ -24,6 +24,7 @@ from lib.platform_draw import (  # noqa: E402
     render_img056,
     render_img058,
 )
+from lib.technology_image_backup import backup_and_unlink  # noqa: E402
 
 OUT = ROOT / "assets" / "images" / "technology"
 SOURCE = OUT / "source"
@@ -52,8 +53,8 @@ def save(img: Image.Image, filename: str) -> Path:
 def remove_legacy_img048() -> None:
     for folder in (OUT, SOURCE):
         legacy = folder / LEGACY_IMG048
-        if legacy.exists():
-            legacy.unlink()
+        if legacy.is_file():
+            backup_and_unlink(legacy, OUT, reason="legacy-img048")
             print(f"Removed legacy {legacy}")
 
 
