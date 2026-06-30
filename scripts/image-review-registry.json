@@ -2733,8 +2733,8 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-064",
-    "reviewDate": "2026-06-29",
-    "reviewer": "Codex CAD redraw",
+    "reviewDate": "2026-06-30",
+    "reviewer": "agent",
     "auditPriority": "P2",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -2743,20 +2743,20 @@
       "지하수위계를 벽체 부착으로 표현",
       "간극수압계를 관측공으로 표현"
     ],
-    "notes": "v4 Pillow/WebP PASS — 좌=육측·중=케이슨/안벽·우=해측으로 재작도, 조위선·G.W.L·간극수압 분리",
+    "notes": "v6 ai-reviewed HAR-Q01~03·육측|케이슨|해측·G.W.L≠간극·BORE-GL-01·LOGO-01 2026-06-30",
     "prohibitedVerified": true,
-    "prohibitedVerifiedDate": "2026-06-28",
-    "prohibitedVerifiedNote": "v4 Pillow/WebP — HAR-Q01~Q03 및 19-image-knowledge 대조",
+    "prohibitedVerifiedDate": "2026-06-30",
+    "prohibitedVerifiedNote": "v6 ai-reviewed — 3분할·조위·G.W.L·간극수압 분리·IPI GL 가시",
     "figureTier": "FT-A",
-    "productionMethod": "cad",
-    "productionMethodTarget": "cad",
+    "productionMethod": "ai-reviewed",
+    "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P2",
     "hero": true,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Codex CAD redraw",
-      "date": "2026-06-29",
-      "notes": "CAD형 WebP 재작도 검수 완료 (IMG-064)",
+      "reviewer": "agent",
+      "date": "2026-06-30",
+      "notes": "v6 ai-reviewed HAR-Q01~03·육측|케이슨|해측·G.W.L≠간극·BORE-GL-01·LOGO-01 2026-06-30",
       "gates": [
         "V1",
         "V2",
@@ -2768,7 +2768,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-29",
+    "migrationCompletedDate": "2026-06-30",
     "imageKnowledgeTopic": "19-항만·호안-계측-배치.md"
   },
   "IMG-065": {

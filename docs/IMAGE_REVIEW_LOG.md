@@ -89,7 +89,7 @@
 | IMG-079 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-080 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-081 | PASS | reviewed | 2026-06-30 | P0 | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
-| IMG-082 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-082 | PASS | reviewed | 2026-06-30 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-083 | PASS | reviewed | 2026-06-26 | — | KCS 54 20 25:2018 §3.2 | — |
 | IMG-084 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
 | IMG-085 | DELETE | rejected | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
@@ -2433,14 +2433,20 @@
 | 관련 계측기 | 분야별/건축 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | render-building-audit-fixes.py v2 — LC·SG·하중변형 그래프 |
+| 기술 오류 | v5 ai-reviewed 변형률+하중계+온도·하중ε그래프·LOGO-01 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Cursor-Agent |
-| 검수일 | 2026-06-26 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
+
+**금지 오류 대조:**
+
+- 균열계 hero 혼입 (IMG-037 분리)
+- IPI·와이어식·ATS 혼입
+- VW·진동현식 METHOD-01 라벨
 
 <a id="IMG-083"></a>
 

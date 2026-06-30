@@ -1176,7 +1176,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'cad'
+    productionMethod: 'ai-reviewed'
   },
   'IMG-065': {
     title: '현장 계측 전원 통합 구성도',
@@ -1439,7 +1439,11 @@ export const IMAGE_ASSETS = {
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-082',
-    prohibitedErrors: [],
+    prohibitedErrors: [
+      '균열계 hero 혼입 (IMG-037 분리)',
+      'IPI·와이어식·ATS 혼입',
+      'VW·진동현식 METHOD-01 라벨'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'
