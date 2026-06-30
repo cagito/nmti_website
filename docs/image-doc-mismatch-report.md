@@ -5,19 +5,40 @@
 | 심각도 | 건수 |
 |--------|------|
 | **mismatch** (명확 불일치) | 0 |
-| **review** (PASS vs 문서 C·금지요소) | 0 |
-| **warn** | 11 |
+| **review** (PASS vs 문서 C·금지요소) | 1 |
+| **warn** | 14 |
 | **info** | 1 |
 
 ---
 
+## 조건부 PASS
+
+### REVIEW · `IMG-082`
+
+PASS이나 금지 오류 3종 등록 — PNG가 실제로 회피했는지 육안·체크리스트 확인 필요
+- 균열계 hero 혼입 (IMG-037 분리)
+- IPI·와이어식·ATS 혼입
+- VW·진동현식 METHOD-01 라벨
+
 ## 마스터-caption
+
+### WARN · `IMG-011`
+
+03_IMAGE_MASTER_LIST caption ≠ images.js caption
+- master: 교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측…
+- images: 교량 계측 전체 개념도 v5 — 사장교·상부구조→받침→교각/교대→기초·10종 계측…
 
 ### WARN · `IMG-016`
 
 03_IMAGE_MASTER_LIST caption ≠ images.js caption
 - master: 원호활동면 계측 해석도 — 원호파괴와 센서형 다단식 지중경사계 변위 프로파일 관계…
 - images: 원호활동면 — IPI 프로파일·활동면 추정 후보 (단독 확정 금지)…
+
+### WARN · `IMG-019`
+
+03_IMAGE_MASTER_LIST caption ≠ images.js caption
+- master: 연약지반 성토부 계측기 설치 배치도 v3 — IPI·piezo tip·지중침하·지하수위·토압…
+- images: 연약지반 성토부 계측기 설치 배치도 v4 — IPI·piezo tip·지중침하·지하수위·토압…
 
 ### WARN · `IMG-070`
 
@@ -70,6 +91,12 @@
 마스터 title "계측 방식 5단계 계층도" ≠ images.js "계측 방식 3층 분류도"
 
 ## 마스터-caption
+
+### WARN · `IMG-096`
+
+03_IMAGE_MASTER_LIST caption ≠ images.js caption
+- master: 가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v5)…
+- images: 가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v6)…
 
 ### WARN · `IMG-104`
 
