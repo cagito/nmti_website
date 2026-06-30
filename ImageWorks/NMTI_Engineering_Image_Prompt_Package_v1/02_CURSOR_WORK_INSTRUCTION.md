@@ -111,7 +111,7 @@ ALT = CSV의 Title + " - " + Purpose (`generate-image-assets.mjs`가 생성)
 ### 사면 리프 (IMG-089·090) — PNG pending
 
 - **089** `fields/slope/surface-tilt` — 지표 **pad** tiltmeter · θ · **≠ 지중경사계**
-- **090** `fields/slope/structural-displacement` — 옹벽 **와이어식 변위계 주** · (선택) ATS inset · [127 DISP-ATS-01](../../docs/127-변위계측-자동광파기-남용방지-및-와이어식-우선-표준.md)
+- **090** `fields/slope/structural-displacement` — 옹벽 **와이어식 변위계 주** · 프리즘(옹벽) · **ATS 금지** · [129](../../docs/129-사면-옹벽-와이어식-변위계-배면사면-표준.md)
 - docs/36 §4.3②③ · §5.1 Feedback Loop
 
 ### 철도 리프 (IMG-023 · §4.10①)
@@ -160,7 +160,10 @@ ALT = CSV의 Title + " - " + Purpose (`generate-image-assets.mjs`가 생성)
 - **078** 록볼트 — 암반 **방사형** · VW 축력계 · [21 계획](../../docs/21-IMG-078-009-록볼트-축력-오류분석-및-재작업-계획.md)
 - **079** 숏크리트 — 응력계 **라이닝 내부 매립** · [22 계획](../../docs/22-IMG-079-숏크리트-응력-변형-오류분석-및-재작업-계획.md)
 
-### 사면 계측 (IMG-015) — 필수 참고 (v2 재생성)
+### 사면 계측 (IMG-015) — ATS-SUB-01 P2
+
+- 프롬프트: `prompts/IMG-015_사면_계측_전체_개념도.md` **v5** — ATS inset **삭제**
+- **015** `fields/slope` — IPI·수위·침하 **주** · 프리즘(선택) · **ATS 없음**
 - **횡단 개념도.** 좌: 사면·지층·활동면 | 우: **부동점 자동광파기**(사면 밖) + 시준선 → 사면 **프리즘**
 - **치명 금지:** 사면 꼭대기 광파기, 경사계 Base 활동면만 통과, 간극수압 G.W.L 위, 변위 화살표 지그재그
 - 공통 원칙: [INSTRUMENTATION_DRAWING_RULES.md](../../docs/INSTRUMENTATION_DRAWING_RULES.md) §공통·§3.12
