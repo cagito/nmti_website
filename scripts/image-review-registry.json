@@ -237,8 +237,8 @@
     "visualReview": {
       "grade": "PASS",
       "reviewer": "agent",
-      "date": "2026-06-29",
-      "notes": "v4 ai-reviewed 2026-06-29",
+      "date": "2026-06-30",
+      "notes": "ATS-SUB-01 P1 v5 — ATS·시준선 제거 · 입면/단면 분할 · 프리즘·균열·경사 · 배면 지표침하 측점 · docs/207",
       "gates": [
         "V1",
         "V2",
@@ -250,7 +250,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-29",
+    "migrationCompletedDate": "2026-06-30",
     "imageKnowledgeTopic": "17-건축공사-계측-배치.md"
   },
   "IMG-006": {
