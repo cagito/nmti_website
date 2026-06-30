@@ -103,7 +103,7 @@ export const IMAGE_ASSETS = {
     caption: '주변건물 균열·경사 계측도 — 굴착 주변 건물의 균열계와 경사계 배치',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-005',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-005 · docs/203-IMG-005-v4c-재생성-기록.md · docs/56 · docs/202 · docs/181 §IMG-005',
     prohibitedErrors: [
       '건물↔벽체 이격 L 구간 허공·배면 토사 없음',
       '건물 기초가 굴착저 높이 — 원 지표면 위 안착 아님',
@@ -164,7 +164,7 @@ export const IMAGE_ASSETS = {
     caption: '터널 전단면 내공변위 — P1~P11 내공변위계·대표 측선·기준 측정선, 노반 미계측',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-008',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-008 · docs/126-IMG-008-터널-내공변위-디자인-redline-및-생성프롬프트.md · docs/202',
     prohibitedErrors: [
       '천단침하계처럼 상하 측정',
       'ACE-TCS를 2점 거리만으로 표현',
@@ -297,7 +297,7 @@ export const IMAGE_ASSETS = {
     caption: '사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · (선택) 광학망',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-015 · docs/INSTRUMENTATION_DRAWING_RULES.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-015 · docs/205-IMG-015-v4-재생성-기록.md · docs/INSTRUMENTATION_DRAWING_RULES.md · docs/202',
     prohibitedErrors: [
       '사면 꼭대기·활동 구간에 자동광파기 본체',
       '지중경사계 Base가 활동면만 간신히 통과',
@@ -609,7 +609,7 @@ export const IMAGE_ASSETS = {
     caption: '침하판·침하계 설치 개념도 — 성토 하부 침하판과 연장봉, 보호관 표시',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-032 · docs/170-IMG-032-v6-재생성-기록.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-032 · docs/170-IMG-032-v6-재생성-기록.md · docs/202',
     prohibitedErrors: [
       '연장봉 상단을 기준점으로 표기',
       '측정점·안정 기준점 미분리'
@@ -661,7 +661,7 @@ export const IMAGE_ASSETS = {
     caption: '하중계 설치 — 버팀보 띠장 접합부(끝단) 축방향·어스앵커 두부 인장',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/191-IMG-035-v4-재생성-기록.md · docs/180 · docs/181 §IMG-035',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/191-IMG-035-v4-재생성-기록.md · docs/202 · docs/180 · docs/181 §IMG-035',
     prohibitedErrors: [
       '버팀보 정중앙 하중계',
       '축방향과 무관한 설치',
@@ -1374,7 +1374,7 @@ export const IMAGE_ASSETS = {
     caption: '록볼트 축력 — LC·굴착 단계별 추이',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-078 · docs/160-IMG-078-v3-재생성-기록.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-078 · docs/160-IMG-078-v3-재생성-기록.md · docs/202',
     prohibitedErrors: [
       '두부 하중=P 전체 록볼트 축력',
       '축력분포·변형률계 미구분'
@@ -1616,7 +1616,7 @@ export const IMAGE_ASSETS = {
     caption: '가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v6)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/192-IMG-096-v6-재생성-기록.md · docs/57 · docs/180',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/192-IMG-096-v6-재생성-기록.md · docs/202 · docs/57 · docs/180',
     prohibitedErrors: [
       '잠재 슬립면·활동면 원호 (MIX-01)',
       '옹벽형 영구 구조·캡 (MIX-01)',
@@ -1668,7 +1668,7 @@ export const IMAGE_ASSETS = {
     caption: '항만 호안 조위·지하수 — H.W.L/L.W.L·stilling well·screen 관측공·tidal lag 침윤선',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-098 · docs/168-IMG-098-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-098 · docs/168-IMG-098-v3-재생성-기록.md · docs/202 · docs/132-계측이미지-분야별-금지표현-정본.md',
     prohibitedErrors: [
       'fields/harbor/tide-groundwater hero에 IMG-030(육상) 사용 (HAR-01)',
       '해수면·H.W.L/L.W.L·조위계 없음 (HAR-02)',
@@ -1686,7 +1686,7 @@ export const IMAGE_ASSETS = {
     caption: '건축 구조물 처짐 — RC 보·슬래브·LVDT·처짐량(δ) 그래프·설계 허용치',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-099',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-099 · docs/204-IMG-099-v5-재생성-기록.md · docs/202',
     prohibitedErrors: [
       'fields/building/deflection hero에 IMG-050·032·033(침하) 사용 (DEF-01)',
       '성토체·연약지반 단면 (DEF-02)',
@@ -1785,7 +1785,7 @@ export const IMAGE_ASSETS = {
     caption: '교량 GNSS 처짐 — 경간(교각↔교각) 중앙 이동국 1개·ΔZ→δ (v5)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/148-IMG-103-교량-상부구조-GNSS-처짐-표현-표준.md · docs/151-IMG-103-GNSS-처짐계-정본-충돌-정리.md · docs/IMAGE_REVIEW_LOG.md#IMG-103',
+    reviewDoc: 'docs/148-IMG-103-교량-상부구조-GNSS-처짐-표현-표준.md · docs/151-IMG-103-GNSS-처짐계-정본-충돌-정리.md · docs/202 · docs/IMAGE_REVIEW_LOG.md#IMG-103',
     prohibitedErrors: [
       '침하판·지표침하계 hero',
       '성토 단면',
