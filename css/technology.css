@@ -436,6 +436,45 @@
   color: var(--text-muted);
 }
 
+.tech-seo-article .tech-section--appendix {
+  margin-top: 32px;
+}
+
+.tech-seo-article .faq-list {
+  display: grid;
+  gap: 10px;
+}
+
+.tech-seo-article .faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  background: var(--bg-elevated);
+}
+
+.tech-seo-article .faq-item summary {
+  cursor: pointer;
+  padding: 12px 14px;
+  font-weight: 700;
+  color: var(--text-title);
+}
+
+.tech-seo-article .faq-item__body {
+  padding: 0 14px 12px;
+  color: var(--text-body);
+}
+
+.tech-seo-article .inline-list {
+  margin-bottom: 16px;
+}
+
+.tech-seo-article .inline-list__label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--text-mid);
+}
+
 /* In-page section nav (1~5) */
 .tech-section-nav {
   margin: 20px 0 28px;

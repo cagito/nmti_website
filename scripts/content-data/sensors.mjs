@@ -783,9 +783,9 @@ export const SENSOR_SECTIONS = {
     }
   },
   'sensors/deflection-gauge': {
-    tagline: '구조 부재 연직 처짐(δ) 측정 — ≠ 침하계',
+    tagline: '접촉식 처짐계(LVDT·와이어) — ≠ GNSS 경간 중앙 hero',
     overview:
-      '<p><strong>처짐계</strong>는 거더·PSC 박스·보·슬래브 등 구조 부재의 <strong>연직 처짐량 δ</strong>를 측정합니다. LVDT, 와이어, ring type 변위변환기 등이 사용됩니다. <strong>침하계</strong>(지반·기초 침하)와 구분됩니다.</p><p>교량은 <a href="#fields/bridge/deflection">처짐</a>, 건축은 <a href="#fields/building/deflection">처짐</a> 항목과 연계합니다.</p>',
+      '<p><strong>처짐계</strong>는 거더·PSC 박스·보·슬래브 등 구조 부재의 <strong>연직 처짐량 δ</strong>를 <strong>접촉식</strong>으로 측정합니다. LVDT, 와이어, ring type 변위변환기·자동광파 보조 측점이 사용됩니다. <strong>침하계</strong>(지반·기초 침하)와 구분됩니다.</p><p>교량 <strong>경간 중앙 GNSS 처짐(ΔZ→δ)</strong> hero는 <a href="#fields/bridge/deflection">교량 처짐</a>(IMG-103) 전용입니다. 본 센서 페이지는 LVDT·와이어·광파 등 <strong>국부·재하시험·동적</strong> 처짐에 초점을 둡니다. 건축은 <a href="#fields/building/deflection">처짐</a> 항목과 연계합니다.</p>',
     purpose: [
       { title: '처짐 δ', body: '휨·연직 변위 정량' },
       { title: '재하시험', body: '하중-처짐 관계' },
@@ -798,41 +798,37 @@ export const SENSOR_SECTIONS = {
       '동적 처짐(풍·통행) 보조',
       '자동광파기 보완 측점'
     ],
-    principle: '<p>고정 앵커 대비 부재 연직 변위를 측정합니다. 온도·초기치 보정이 필수입니다.</p>',
+    principle:
+      '<p>고정 앵커 대비 부재 <strong>연직 변위</strong>를 측정합니다. 교량 <strong>경간 중앙 GNSS</strong>는 ΔZ→δ 장기 모니터링(IMG-103)이고, 본 센서는 <strong>접촉식 국부 δ</strong>(IMG-104)입니다. mid-span은 설계 대표 위치, GNSS 「경간 중앙」은 교각↔교각 중앙 1점으로 구분합니다.</p>',
     installation: [
-      'mid-span·1/4 span 등 대표 위치',
-      '고정 앵커·센서 본체 설치',
+      '설계·시방 대표 위치(주로 mid-span)에 고정 앵커·센서 본체를 설치합니다.',
       '온도 채널 연동',
       '케이블 보호·방수',
       '초기치·재현성 확인',
       '데이터로거·원격 연동'
     ],
     data: {
-      headers: ['구분', '센서', '금지 혼동'],
+      headers: ['구분', '측정 위치', '물리량', 'Figure', 'nodeId'],
       rows: [
-        ['교량 처짐', '처짐계·LVDT', '침하계 아님'],
-        ['건축 처짐', 'LVDT·광파', '지반 침하 아님'],
-        ['동적', '고속 샘플링', '진동계 병행'],
-        ['절대', '광파·프리즘', '국부 δ 보완']
+        ['GNSS', '경간 중앙 상부 1점(교각↔교각)', 'ΔZ→δ', 'IMG-103', 'fields/bridge/deflection'],
+        ['LVDT', 'mid-span·기준대', '국부 δ', 'IMG-104', 'sensors/deflection-gauge'],
+        ['와이어', '하부·장경간', '국부 δ', 'IMG-104', 'sensors/deflection-gauge'],
+        ['자동광파', '프리즘 측점', '절대 좌표', '—', 'sensors/automatic-level']
       ]
     },
     criteria: '<p>설계예상변위·최대허용변위·L/xxx는 계측관리계획·설계에 따릅니다.</p>',
     faq: [
       { q: '침하계와 같나요?', a: '아닙니다. 처짐계는 구조 부재, 침하계는 지반·기초입니다.' },
       { q: '변위계로 대체?', a: '국부 연직 처짐에는 처짐계·LVDT가 정밀합니다. 받침 상대변위는 변위계 항목입니다.' },
+      { q: '교량 GNSS 처짐과 차이?', a: '교량 hero(IMG-103)는 경간 중앙 GNSS 1점·ΔZ→δ입니다. 처짐계는 LVDT·와이어 등 접촉식 국부 δ에 쓰입니다.' },
       { q: '와이어·레이저?', a: '장경간·가시거리 조건에서 대체 가능합니다. 현장별 시방을 따릅니다.' },
-      { q: '교량 mid-span만?', a: '대표 처짐은 mid-span·1/4 span 등 설계·시방 위치에 설치합니다. 광파기 측점과 교차 검증합니다.' }
+      { q: 'mid-span 위치?', a: '대표 처짐은 설계·시방 위치(주로 mid-span)에 설치합니다. GNSS 경간 중앙 1점과 역할을 구분합니다.' }
     ],
     sectionImages: {
       installation: {
         id: 'IMG-104',
-        caption: '처짐계 설치 — LVDT·와이어 (≠침하판)',
+        caption: '처짐계 설치 — LVDT·와이어 (≠침하판·≠GNSS hero)',
         figureNo: 2
-      },
-      principle: {
-        id: 'IMG-103',
-        caption: '교량 처짐 δ — 거더·광파 보조',
-        figureNo: 3
       }
     }
   },

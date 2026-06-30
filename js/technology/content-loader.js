@@ -1,6 +1,6 @@
 import { getNode } from './dictionary.js';
 import { getContentForNode } from './content-data.js';
-import { buildUnifiedSectionsHtml } from './unified-section-render.mjs';
+import { buildSectionNavHtml, buildUnifiedSectionsHtml } from './unified-section-render.mjs';
 import { formatPurposeCards } from './section-format.js';
 import {
   UNIFIED_KEYS,
@@ -32,7 +32,7 @@ export function renderContent(container, data, linkBuilder) {
     html.push(renderFigure(data.heroImage));
   }
 
-  html.push(renderSectionNav(data));
+  html.push(buildSectionNavHtml(data));
 
   html.push(
     buildUnifiedSectionsHtml(data, linkBuilder, {
@@ -64,28 +64,6 @@ export function renderContent(container, data, linkBuilder) {
 
   html.push('</article>');
   container.innerHTML = html.join('\n');
-}
-
-function renderSectionNav(data) {
-  const titles = unifiedTitlesFor(data);
-  const items = UNIFIED_KEYS.map(function (key, index) {
-    if (!hasUnifiedContent(key, data)) return '';
-    return (
-      '<li class="tech-section-nav__item"><a class="tech-section-nav__link" href="#' +
-      key +
-      '">' +
-      escapeHtml(String(index + 1) + '. ' + titles[index]) +
-      '</a></li>'
-    );
-  })
-    .filter(Boolean)
-    .join('');
-  if (!items) return '';
-  return (
-    '<nav class="tech-section-nav" aria-label="본문 목차"><ol class="tech-section-nav__list">' +
-    items +
-    '</ol></nav>'
-  );
 }
 
 /** @deprecated — formatPurposeCards 사용 */
@@ -163,5 +141,5 @@ function escapeAttr(str) {
   return escapeHtml(str);
 }
 
-export { buildUnifiedSectionsHtml } from './unified-section-render.mjs';
+export { buildSectionNavHtml, buildUnifiedSectionsHtml } from './unified-section-render.mjs';
 export { UNIFIED_KEYS, hasUnifiedContent, missingUnifiedSections, unifiedTitlesFor } from './unified-sections.mjs';

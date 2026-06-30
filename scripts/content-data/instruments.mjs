@@ -542,7 +542,7 @@ export const INSTRUMENT_SECTIONS = {
   'instruments/modes/overview': {
     tagline: '수집·전송·운영 확장·런타임 모드 — KCS와 NMTI 운영 계층',
     overview:
-      '<p><strong>계측 방식</strong>은 현장에서 데이터를 어떻게 취득·저장·전송·운영하는지를 구분하는 개념입니다. <strong>KDS·KCS</strong>는 <strong>수동계측</strong>·<strong>반자동계측</strong>·<strong>자동계측</strong> 등 <strong>데이터 수집방법</strong>과 계측 빈도를 기준으로 제시합니다. <strong>유선·무선·유·무선</strong>은 <strong>전송방법</strong>입니다.</p><p><strong>원격 자동계측</strong>·<strong>스마트 계측</strong>·<strong>AI 보조 분석</strong>은 KCS의 기본 계측방식 분류가 아니라, 자동 수집·전송 인프라 위에 얹는 <strong>NMTI 운영 확장 계층</strong>입니다. 별도로 <strong>운영 모드</strong>(<a href="#instruments/modes/normal-mode">상시</a>·<a href="#instruments/modes/realtime-mode">이벤트</a>·<a href="#instruments/modes/alarm-status">경보</a>)는 런타임 수집 주기·트리거·알림 동작을 설명합니다.</p><p><em>「수동→자동→원격→스마트→AI」 단일 진화 단계·상하 등급으로 표현하지 않습니다.</em></p>',
+      '<p><strong>계측 방식</strong>은 현장에서 데이터를 어떻게 취득·저장·전송·운영하는지를 구분하는 개념입니다. <strong>KDS·KCS</strong>는 <strong>수동계측</strong>·<strong>반자동계측</strong>·<strong>자동계측</strong> 등 <strong>데이터 수집방법</strong>과 계측 빈도를 기준으로 제시합니다. <strong>유선·무선·유·무선</strong>은 <strong>전송방법</strong>입니다.</p><p><strong>원격 자동계측</strong>·<strong>스마트 계측</strong>·<strong>AI 보조 분석</strong>은 KCS의 기본 계측방식 분류가 아니라, 자동 수집·전송 인프라 위에 얹는 <strong>NMTI 운영 확장 계층</strong>입니다. 별도로 <strong>운영 모드</strong>(<a href="#instruments/modes/normal-mode">상시</a>·<a href="#instruments/modes/realtime-mode">이벤트</a>·<a href="#instruments/modes/alarm-status">경보</a>)는 런타임 수집 주기·트리거·알림 동작을 설명합니다.</p><p><em>단일 「5단계 진화」 화살표·상하 등급으로 표현하지 않습니다.</em></p>',
     purpose: [
       { title: 'KCS 수집방법', body: '수동·반자동·자동 선정' },
       { title: '전송·연동', body: '유선·무선·서버·표출' },
@@ -587,7 +587,13 @@ export const INSTRUMENT_SECTIONS = {
       { q: '수동 백업은?', a: '자동·원격 구간에서도 통신·센서 장애 대비 수동 측정 계획을 유지합니다.' },
       { q: '한 번에 전부 도입?', a: '아닙니다. 수동 기준선 확보 후 자동 수집·전송·플랫폼을 단계적으로 확장합니다.' }
     ],
-    sectionImages: { principle: 'IMG-075' }
+    sectionImages: {
+      principle: {
+        id: 'IMG-075',
+        caption: '계측 방식 — KCS 수집·전송·NMTI 확장·런타임 (MOD-01)',
+        figureNo: 2
+      }
+    }
   },
   'instruments/modes/manual': {
     tagline: 'KCS 수동계측 — 현장 방문·휴대 리드아웃',
@@ -634,7 +640,13 @@ export const INSTRUMENT_SECTIONS = {
       { q: '초기치는 몇 회?', a: '안정화를 위해 반복 측정 후 재현성을 확인합니다. 공정·날씨를 일지에 남깁니다.' },
       { q: '자동값과 편차 시?', a: '교차 측정·영점·케이블을 점검합니다. 어느 쪽이 이상인지 원인을 구분합니다.' }
     ],
-    sectionImages: { principle: 'IMG-070' }
+    sectionImages: {
+      principle: {
+        id: 'IMG-070',
+        caption: 'KCS 수동계측 — 현장 방문·리드아웃·교차 검증',
+        figureNo: 2
+      }
+    }
   },
   'instruments/modes/automatic': {
     tagline: 'KCS 자동계측 — 수집·저장·(필요 시) 전송·표출 연계',
@@ -681,7 +693,14 @@ export const INSTRUMENT_SECTIONS = {
       { q: '스캔 주기는?', a: '위험도·KCS·관리기준에 따라 분~시간 단위를 설정합니다. MUX 사용 시 채널당 유효 주기를 검증합니다.' },
       { q: '수동 병행?', a: '이상 작동·통신 장애 대비 수동 측정을 계획서에 포함합니다.' }
     ],
-    sectionImages: { principle: 'IMG-071', installation: 'IMG-047' }
+    sectionImages: {
+      principle: {
+        id: 'IMG-071',
+        caption: 'KCS 자동계측 — 수집·저장·(선택) 전송',
+        figureNo: 2
+      },
+      installation: 'IMG-047'
+    }
   },
   'instruments/modes/remote-automatic': {
     tagline: 'NMTI 운영 확장 — 통신·서버·대시보드 원격 자동계측',
@@ -730,7 +749,11 @@ export const INSTRUMENT_SECTIONS = {
       { q: 'LTE만으로 충분?', a: '단일 현장·소규모는 가능하나, 다현장·게이트웨이·보안 요건에 따라 구성을 확장합니다.' }
     ],
     sectionImages: {
-      principle: 'IMG-072',
+      principle: {
+        id: 'IMG-072',
+        caption: 'NMTI 운영 확장 — LTE·서버·원격 모니터링',
+        figureNo: 2
+      },
       installation: 'IMG-048',
       data: 'IMG-056'
     }
@@ -781,7 +804,11 @@ export const INSTRUMENT_SECTIONS = {
       { q: '관리기준은 어디서?', a: '설계도서·계측관리계획서·발주처 기준을 플랫폼에 매핑합니다. AI·스마트가 법정 기준을 대체하지 않습니다.' }
     ],
     sectionImages: {
-      principle: 'IMG-073',
+      principle: {
+        id: 'IMG-073',
+        caption: 'NMTI 스마트 계측 — 플랫폼·단계별 경보 (KCS 분류 아님)',
+        figureNo: 2
+      },
       criteria: {
         id: 'IMG-054',
         caption: '경보 단계 프로세스 — 정상·주의·경고·위험',
@@ -840,7 +867,11 @@ export const INSTRUMENT_SECTIONS = {
       { q: 'HITL이란?', a: 'Human-in-the-loop — AI 결과를 담당자가 검토·승인한 뒤 경보·조치에 반영합니다.' }
     ],
     sectionImages: {
-      principle: 'IMG-074',
+      principle: {
+        id: 'IMG-074',
+        caption: 'AI 보조 분석 — HITL·법정기준 보조 (≠ KCS 계측방식)',
+        figureNo: 2
+      },
       data: {
         id: 'IMG-060',
         caption: '데이터 품질관리 흐름 — 수집·검증·보정·분석·보고',
@@ -997,7 +1028,7 @@ export const INSTRUMENT_SECTIONS = {
   'instruments/data-management': {
     tagline: '수집·저장·품질·보고·경보까지 계측 데이터 운영',
     overview:
-      '<p><strong>데이터 관리</strong>는 현장에서 수집된 계측값을 <strong>저장·검증·보고·경보</strong>까지 운영하는 계측 시스템 계층입니다. 센서·로거·통신 하드웨어와 별도로, <strong>결측·이상값 처리</strong>, 관리기준 대비 추세 분석, 자동 보고서, 담당자 알림을 체계화합니다.</p><p>NMTI는 제품 판매가 아니라 <strong>발주처·설계 기준에 맞는 데이터 운영 프로세스</strong> 구성·유지관리를 수행합니다. <strong>댐·제방 건설중 계측</strong> 현장에서는 층별 침하·수압·온도 QC, 일·주 보고, 준공 시 운영기 안전관리 DB 이관을 같은 계층에서 운영합니다. 고급 통합·예측 분석은 필요 시 <a href="#instruments/modes/smart">스마트 계측</a>·<a href="#instruments/modes/ai">AI 계측</a> 항목으로 확장할 수 있습니다.</p>',
+      '<p><strong>데이터 관리</strong>는 현장에서 수집된 계측값을 <strong>저장·검증·보고·경보</strong>까지 운영하는 계측 시스템 계층입니다. 센서·로거·통신 하드웨어와 별도로, <strong>결측·이상값 처리</strong>, 관리기준 대비 추세 분석, 자동 보고서, 담당자 알림을 체계화합니다.</p><p>NMTI는 제품 판매가 아니라 <strong>발주처·설계 기준에 맞는 데이터 운영 프로세스</strong> 구성·유지관리를 수행합니다. <strong>댐·제방 건설중 계측</strong> 현장에서는 층별 침하·수압·온도 QC, 일·주 보고, 준공 시 운영기 안전관리 DB 이관을 같은 계층에서 운영합니다. 고급 통합·예측 분석은 필요 시 <a href="#instruments/modes/smart">스마트 계측</a>·<a href="#instruments/modes/ai">AI 보조 분석</a> 항목으로 확장할 수 있습니다.</p>',
     purpose: [
       { title: '데이터 품질', body: '결측·드리프트·이상값 식별·보정' },
       { title: '보고·이력', body: '일·주·월 보고서·이벤트 로그' },
@@ -1038,7 +1069,7 @@ export const INSTRUMENT_SECTIONS = {
       '<p>데이터 관리 기준은 계측관리계획서·발주처 지침·KCS 보고·경보 요건을 따릅니다. 관리기준 수치는 설계도서를 우선 적용하며, 원격 플랫폼의 1차·2차 임계 매핑은 <a href="#sensors/remote-monitoring-system">원격계측시스템</a>·<a href="#instruments/modes/alarm-status">경보·알림 상태</a>와 정합합니다.</p>',
     faq: [
       {
-        q: '스마트·AI 계측과의 차이?',
+        q: '스마트·AI 보조와의 차이?',
         a: '데이터 관리는 **운영·품질·보고·경보**의 기본 계층입니다. 스마트·AI는 통합 플랫폼·예측 분석 등 확장 기능으로, 프로젝트 요구 시 추가합니다.'
       },
       {

@@ -21,7 +21,7 @@
   <link rel="icon" href="/homepage/assets/favicon.svg?v=2" type="image/svg+xml">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="/homepage/css/style.css?v=46">
-  <link rel="stylesheet" href="/homepage/css/technology.css?v=11">
+  <link rel="stylesheet" href="/homepage/css/technology.css?v=12">
   <style>.tech-seo{max-width:48rem;margin:0 auto;padding:2rem 1.25rem 4rem;font-size:1.05rem;line-height:1.75}.tech-seo h1{font-size:clamp(1.5rem,4vw,2rem);margin:1rem 0}.tech-seo h2{font-size:1.15rem;margin:2rem 0 .75rem;font-weight:800}.tech-seo .breadcrumb{font-size:.9rem;color:#555;margin-bottom:1rem}.tech-seo .breadcrumb a{color:inherit}.tech-seo .lead{color:#333;margin-bottom:1.5rem}.tech-seo .cta{margin-top:2rem;padding:1rem 1.25rem;background:#f4f7fb;border-radius:.5rem}.tech-seo img{max-width:100%;height:auto;border-radius:.35rem}.tech-seo-hero{margin:1.25rem 0 1.75rem;position:relative}.tech-seo-hero figcaption{margin-top:.5rem;font-size:.9rem;color:#555}.tech-seo-article{margin-top:1rem}.tech-seo-section{margin-top:0}.tech-seo-figure{margin:1rem 0}.tech-seo-figure figcaption{font-size:.9rem;color:#555;margin-top:.35rem}</style>
   <script type="application/ld+json">
 {
@@ -101,6 +101,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "모든 이벤트가 100Hz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "아닙니다. 발파·진동은 100Hz급이 흔하나, 급변·명령·구조 응답은 계획서·장비에 따라 1~100Hz 등으로 다릅니다."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "정적 로거로 충분한가요?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -144,16 +152,16 @@
     <h1>실시간·이벤트 계측</h1>
     <p class="lead">실시간·이벤트 계측의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.</p>
     <figure class="tech-seo-hero" data-watermark-baked="1"><img class="img-protected" draggable="false" data-img-protect src="/homepage/assets/images/technology/IMG-095_실시간-이벤트-계측-모드-토폴로지_고속샘플링impulse.webp" alt="실시간·이벤트 계측 모드 토폴로지 - Trigger Event · 고속 샘플링 · impulse 파형 — ≠ 번개 CG" width="1200" height="675" loading="lazy" decoding="async"><figcaption>이벤트 계측 — High-Speed Real-time Mode</figcaption></figure>
-    <article class="tech-article tech-article--unified tech-seo-article">
+<nav class="tech-section-nav" aria-label="본문 목차"><ol class="tech-section-nav__list"><li class="tech-section-nav__item"><a class="tech-section-nav__link" href="#overview">1. 시스템 개요</a></li><li class="tech-section-nav__item"><a class="tech-section-nav__link" href="#purpose">2. 구성 요소</a></li><li class="tech-section-nav__item"><a class="tech-section-nav__link" href="#principle">3. 현장 구성·원리</a></li><li class="tech-section-nav__item"><a class="tech-section-nav__link" href="#installation">4. 설치·운영</a></li><li class="tech-section-nav__item"><a class="tech-section-nav__link" href="#management">5. 데이터·관리</a></li></ol></nav>    <article class="tech-article tech-article--unified tech-seo-article">
 <section class="tech-section tech-section--numbered tech-seo-section" id="overview" data-section="1">
 <h2 class="tech-section__title">1. 시스템 개요</h2>
 <div class="tech-section__body">
-<ul class="tech-bullet-list tech-bullet-list--overview"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">목적</strong><span class="tech-bullet-list__text"><strong>실시간·이벤트 계측 모드</strong>는 발파, 급격한 변위, 굴착 단계 변화 등 **Trigger Event** 발생 시 초당 수십~수백 Hz로 고속 샘플링하고 즉시 전송하는 동적 모드입니다. <strong>동적 데이터로거</strong>·<strong>진동계</strong>·트리거 DAQ가 대표 장비입니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">적용 범위</strong><span class="tech-bullet-list__text">타임라인 한 지점에서 **조밀한 샘플링선**·**impulse/spike 파형**·경보 대시보드로의 즉시 전송이 시각 핵심입니다. 번개·폭발 CG는 사용하지 않습니다.</span></li></ul>
+<ul class="tech-bullet-list tech-bullet-list--overview"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">목적</strong><span class="tech-bullet-list__text"><strong>실시간·이벤트 계측 모드</strong>는 발파, 급격한 변위, 굴착 단계 변화 등 <strong>Trigger Event</strong> 발생 시 <strong>이벤트 유형에 맞는</strong> 고속 샘플링·즉시 전송을 수행하는 <strong>런타임 운영 모드</strong>입니다. 모든 이벤트가 수십~수백 Hz로 동일하지 않으며, 발파·진동·급변·관리자 명령 등 <strong>계획서에 정의한 rate·duration</strong>을 따릅니다.</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">적용 범위</strong><span class="tech-bullet-list__text"><strong>동적 데이터로거</strong>·<strong>진동계</strong>·트리거 DAQ가 대표 장비입니다. <a href="#instruments/modes/normal-mode">상시 모드</a>의 고정 주기 수집과 구분합니다.</span></li></ul>
 </div></section>
 <section class="tech-section tech-section--numbered tech-seo-section" id="purpose" data-section="2">
 <h2 class="tech-section__title">2. 구성 요소</h2>
 <div class="tech-section__body">
-<ul class="tech-bullet-list tech-bullet-list--labeled tech-bullet-list--purpose"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">고속 샘플링</strong><span class="tech-bullet-list__text">Trigger 후 연속 고주파 수집</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">이벤트 포착</strong><span class="tech-bullet-list__text">발파·급변·임계 초과 순간 기록</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">즉시 전송</strong><span class="tech-bullet-list__text">동적 벡터·파형 실시간 업로드</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">대조</strong><span class="tech-bullet-list__text">normal-mode 평탄 추세와 명확히 구분</span></li></ul>
+<ul class="tech-bullet-list tech-bullet-list--labeled tech-bullet-list--purpose"><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">이벤트별 rate</strong><span class="tech-bullet-list__text">발파·급변·명령마다 상이</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">이벤트 포착</strong><span class="tech-bullet-list__text">트리거 전후 파형·peak</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">즉시 전송</strong><span class="tech-bullet-list__text">동적 벡터·경보 연동</span></li><li class="tech-bullet-list__item"><strong class="tech-bullet-list__label">복귀</strong><span class="tech-bullet-list__text">normal-mode로 전환</span></li></ul>
 </div></section>
 <section class="tech-section tech-section--numbered tech-seo-section" id="principle" data-section="3">
 <h2 class="tech-section__title">3. 현장 구성·원리</h2>
@@ -175,7 +183,7 @@
 <div class="tech-section__body"><div class="inline-list"><span class="inline-list__label">관련 분야</span><ul class="tech-related"><li><a href="https://www.nmti.co.kr/homepage/technology/fields/tunnel/blast-vibration/" data-tech-route="fields/tunnel/blast-vibration">발파진동·영향권</a></li><li><a href="https://www.nmti.co.kr/homepage/technology/fields/bridge/vibration/" data-tech-route="fields/bridge/vibration">진동</a></li></ul></div><div class="inline-list"><span class="inline-list__label">관련 센서</span><ul class="tech-related"><li><a href="https://www.nmti.co.kr/homepage/technology/sensors/vibration-meter/" data-tech-route="sensors/vibration-meter">진동계</a></li><li><a href="https://www.nmti.co.kr/homepage/technology/instruments/datalogger/dynamic/" data-tech-route="instruments/datalogger/dynamic">동적 데이터 로거</a></li></ul></div></div></section>
 <section class="tech-section tech-section--appendix" id="faq">
 <h2 class="tech-section__title">자주 묻는 질문</h2>
-<div class="tech-section__body"><div class="faq-list"><details class="faq-item"><summary>정적 로거로 충분한가요?</summary><div class="faq-item__body"><p>발파·충격 이벤트는 동적 DAQ 또는 이벤트형 진동계가 필요합니다. 정적 Scan Interval만으로는 파형을 놓칩니다.</p></div></details><details class="faq-item"><summary>터널 발파(097)와?</summary><div class="faq-item__body"><p>097은 현장 PPV·영향권 Figure입니다. 본 모드는 **시스템 토폴로지**·고속 샘플링 전환(095)입니다.</p></div></details><details class="faq-item"><summary>normal-mode와 차이?</summary><div class="faq-item__body"><p>normal-mode는 안정 구간 고정 주기, realtime-mode는 이벤트·위험 구간 고속·트리거 수집입니다.</p></div></details><details class="faq-item"><summary>전환 기준은?</summary><div class="faq-item__body"><p>관리기준 비율·발파 일정·담당자 수동 전환 등을 계획서에 정의합니다.</p></div></details></div></div></section>    </article>
+<div class="tech-section__body"><div class="faq-list"><details class="faq-item"><summary>모든 이벤트가 100Hz?</summary><div class="faq-item__body"><p>아닙니다. 발파·진동은 100Hz급이 흔하나, 급변·명령·구조 응답은 계획서·장비에 따라 1~100Hz 등으로 다릅니다.</p></div></details><details class="faq-item"><summary>정적 로거로 충분한가요?</summary><div class="faq-item__body"><p>발파·충격 이벤트는 동적 DAQ 또는 이벤트형 진동계가 필요합니다. 정적 Scan Interval만으로는 파형을 놓칩니다.</p></div></details><details class="faq-item"><summary>터널 발파(097)와?</summary><div class="faq-item__body"><p>097은 현장 PPV·영향권 Figure입니다. 본 모드는 **시스템 토폴로지**·고속 샘플링 전환(095)입니다.</p></div></details><details class="faq-item"><summary>normal-mode와 차이?</summary><div class="faq-item__body"><p>normal-mode는 안정 구간 고정 주기, realtime-mode는 이벤트·위험 구간 고속·트리거 수집입니다.</p></div></details><details class="faq-item"><summary>전환 기준은?</summary><div class="faq-item__body"><p>관리기준 비율·발파 일정·담당자 수동 전환 등을 계획서에 정의합니다.</p></div></details></div></div></section>    </article>
     <div class="tech-sources tech-sources--seo" id="sources"><h2 class="tech-sources__title">근거 기준</h2><ul class="tech-sources__list"><li class="tech-sources__item">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3 — 계측 방식·빈도 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li><li class="tech-sources__item">· <strong>KDS 11 10 15:2025</strong>「지반계측」 §1.3 — 관리 용어·기준 <span class="tech-sources__publisher">(국가건설기준센터(KCSC))</span></li></ul><p class="tech-sources__disclaimer">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>
     <p class="cta"><a href="https://www.nmti.co.kr/homepage/technology/#instruments/modes/realtime-mode">인터랙티브 기술자료에서 전체 보기</a> · <a href="https://www.nmti.co.kr/homepage/technology/">기술자료 목록</a></p>
   </main>

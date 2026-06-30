@@ -5,8 +5,8 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-001 · docs/51-계측-도면-검수-공통-원칙.md",
-    "reviewDate": "2026-06-29",
-    "reviewer": "agent",
+    "reviewDate": "2026-06-22",
+    "reviewer": "Phase 6 formal — Pillow v8·doc 19 Q0",
     "auditPriority": "P1",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -15,7 +15,7 @@
       "옥상 자동광파기 본체·「자동광파기 측정(프리즘)」 라벨",
       "구조물경사계 지반 속·말뚝 형태"
     ],
-    "notes": "v4 ai-reviewed G-01~15·3영역·BORE-GL-01·SETTLE-01 · 2026-06-29",
+    "notes": "Phase 6 Q0: C0 지표면·1F·출입구 · C1~C4 INSTRUMENTATION §3.1 · render-p1 v8.",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-22",
     "prohibitedVerifiedNote": "EXC-05·§3.1.1 — 좌→우 단면·프리즘 측점·구조물경사계 표면 부착",
@@ -49,7 +49,7 @@
     "title": "흙막이 계측 설치 대표 단면도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-002 · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-002 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-002 · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
     "reviewDate": "2026-06-22",
     "reviewer": "Phase 6 formal — v7 PNG·doc 19 Q1~Q7",
     "auditPriority": "P0",
@@ -153,7 +153,7 @@
     "title": "어스앵커 하중계 설치 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-004 · docs/164-IMG-004-v7-재생성-기록.md · docs/54-IMG-004-어스앵커-하중계-설치-표현-표준.md",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-004 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-004 · docs/164-IMG-004-v7-재생성-기록.md · docs/54-IMG-004-어스앵커-하중계-설치-표현-표준.md",
     "reviewDate": "2026-06-22",
     "reviewer": "Phase 6 formal — Pillow v3·doc 26 EXC-01",
     "auditPriority": "P0",
@@ -258,7 +258,7 @@
     "title": "굴착 단계별 계측 흐름도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-006 · docs/169-IMG-006-v4-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-006 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-006 · docs/169-IMG-006-v4-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
     "reviewDate": "2026-06-29",
     "reviewer": "agent",
     "auditPriority": "P0",
@@ -485,7 +485,7 @@
     "caption": "교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
     "reviewDate": "2026-06-29",
     "reviewer": "agent",
     "auditPriority": null,
@@ -724,12 +724,12 @@
   },
   "IMG-016": {
     "id": "IMG-016",
-    "alt": "원호활동면 계측 해석도 - 원호파괴와 센서형 다단식 지중경사계 변위 프로파일 관계",
-    "caption": "원호활동면 계측 해석도 — 원호파괴와 센서형 다단식 지중경사계 변위 프로파일 관계",
+    "alt": "원호활동면 계측 해석 - IPI 변위 프로파일·활동면 추정 후보",
+    "caption": "원호활동면 — IPI 프로파일·활동면 추정 후보 (단독 확정 금지)",
     "title": "원호활동면 계측 해석도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-016 · docs/167-IMG-016-v5-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-016 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-016 · docs/167-IMG-016-v5-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
     "reviewDate": "2026-06-29",
     "reviewer": "agent",
     "auditPriority": "P0",
@@ -739,7 +739,7 @@
       "지중경사계 단독으로 원호활동면 확정",
       "추정선과 실측선 동일 의미"
     ],
-    "notes": "P0 v5 ai-reviewed — INTERP-01 추정 원호활동면·최대변위≠활동면·IPI 단독확정 금지 · prohibitedErrors 유지",
+    "notes": "P0 v5 ai-reviewed — INTERP-01 추정 원호활동면·최대변위≠활동면·IPI 단독확정 금지 · prohibitedErrors 유지 · 179 §9 caption sync 2026-06-30",
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "cad",
@@ -1091,7 +1091,7 @@
     "title": "댐 안전관리 계측 체계도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md",
+    "reviewDoc": "docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-024 · docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md",
     "reviewDate": "2026-06-29",
     "reviewer": "agent",
     "auditPriority": "P0",
@@ -1148,8 +1148,8 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-025 · docs/87-Phase-AA-MAJOR_FIX-복붙-프롬프트-정본.md",
-    "reviewDate": "2026-06-29",
-    "reviewer": "agent",
+    "reviewDate": "2026-06-22",
+    "reviewer": "Phase 5 Pillow v2 — AUTO-01 IPI·datalogger chain",
     "auditPriority": "P1",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -1160,7 +1160,7 @@
       "수평변위를 수직 침하로 표현",
       "수동 probe·리드아웃을 hero로 표현 (AUTO-01)"
     ],
-    "notes": "v4 ai-reviewed IPI-4홈·BORE-GL-01·누적변위-깊이·AUTO-01 · 2026-06-29",
+    "notes": "Phase 5 v2: IPI 다점·4홈 casing·안정층 Base·자동 로거 체인. 수동 프로브는 비교 inset만.",
     "prohibitedVerified": true,
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
@@ -1620,7 +1620,7 @@
     "title": "하중계 설치 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/165-IMG-035-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-035 · docs/165-IMG-035-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md",
     "reviewDate": "2026-06-22",
     "reviewer": "Phase 5 Pillow v2 — STR-01 strut vs anchor LC",
     "auditPriority": "P0",
@@ -2999,7 +2999,7 @@
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "P0 Sprint2 v2 — 현장방문·리드아웃·측정일지 · redline v2 · docs/36 §4.8② · Phase D W10 — redline v2 PASS · docs/113",
+    "notes": "P0 Sprint2 v2 — 현장방문·리드아웃·측정일지 · redline v2 · docs/36 §4.8② · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -3019,7 +3019,9 @@
     "prohibitedVerifiedNote": "Phase D W10 — redline v2 PASS · docs/113",
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-27",
-    "imageKnowledgeTopic": "28-경보·그래프·대시보드-표현.md"
+    "imageKnowledgeTopic": "28-경보·그래프·대시보드-표현.md",
+    "alt": "KCS 수동계측 개념도 - 현장 방문·리드아웃·측정일지",
+    "caption": "KCS 수동계측 — 현장 방문·휴대 장비·교차 검증"
   },
   "IMG-071": {
     "id": "IMG-071",
@@ -3032,7 +3034,7 @@
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "P0 Sprint2 v2 — 센서→로거→현장저장·수집주기 · redline v2 · Phase D W10 — redline v2 PASS · docs/113",
+    "notes": "P0 Sprint2 v2 — 센서→로거→현장저장·수집주기 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -3052,7 +3054,9 @@
     "prohibitedVerifiedNote": "Phase D W10 — redline v2 PASS · docs/113",
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-27",
-    "imageKnowledgeTopic": "28-경보·그래프·대시보드-표현.md"
+    "imageKnowledgeTopic": "28-경보·그래프·대시보드-표현.md",
+    "alt": "KCS 자동계측 개념도 - 센서·로거·수집·저장·(선택) 전송",
+    "caption": "KCS 자동계측 — 수집·저장·(선택) 전송·표출 연계"
   },
   "IMG-072": {
     "id": "IMG-072",
@@ -3065,7 +3069,7 @@
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "P0 Sprint2 v2 — 현장→LTE→서버→대시보드 · redline v2 · Phase D W10 — redline v2 PASS · docs/113",
+    "notes": "P0 Sprint2 v2 — 현장→LTE→서버→대시보드 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -3085,7 +3089,9 @@
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-27",
     "prohibitedVerifiedNote": "Phase D W10 — redline v2 PASS · docs/113",
-    "imageKnowledgeTopic": "29-통신·게이트웨이-역할.md"
+    "imageKnowledgeTopic": "29-통신·게이트웨이-역할.md",
+    "alt": "NMTI 원격 자동계측 - 현장·LTE·서버·웹 모니터링",
+    "caption": "NMTI 운영 확장 — LTE·서버·원격 모니터링 (KCS 분류 아님)"
   },
   "IMG-073": {
     "id": "IMG-073",
@@ -3098,7 +3104,7 @@
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "P0 Sprint2 v2 — 플랫폼·경보·보고·로그 · redline v2 · Phase D W10 — redline v2 PASS · docs/113",
+    "notes": "P0 Sprint2 v2 — 플랫폼·경보·보고·로그 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -3118,7 +3124,9 @@
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-27",
     "prohibitedVerifiedNote": "Phase D W10 — redline v2 PASS · docs/113",
-    "imageKnowledgeTopic": "29-통신·게이트웨이-역할.md"
+    "imageKnowledgeTopic": "29-통신·게이트웨이-역할.md",
+    "alt": "NMTI 스마트 계측 - 플랫폼·경보·보고·이벤트 로그",
+    "caption": "NMTI 운영 확장 — 플랫폼·단계별 경보 (KCS 분류 아님)"
   },
   "IMG-074": {
     "id": "IMG-074",
@@ -3131,7 +3139,7 @@
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "P0 Sprint2 v2 — 이상탐지·HITL 검토 · redline v2 · 뇌 금지 · Phase D W10 — redline v2 PASS · docs/113",
+    "notes": "P0 Sprint2 v2 — 이상탐지·HITL 검토 · redline v2 · 뇌 금지 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -3151,7 +3159,9 @@
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-27",
     "prohibitedVerifiedNote": "Phase D W10 — redline v2 PASS · docs/113",
-    "imageKnowledgeTopic": "28-경보·그래프·대시보드-표현.md"
+    "imageKnowledgeTopic": "28-경보·그래프·대시보드-표현.md",
+    "alt": "AI 보조 분석 개념도 - 이상탐지·HITL·법정기준 비대체",
+    "caption": "AI 보조 분석 — HITL·법정기준 보조 (≠ KCS 계측방식)"
   },
   "IMG-075": {
     "id": "IMG-075",
@@ -3164,7 +3174,7 @@
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "P0 Sprint2 v2 — 5단계 계층·포함관계 · redline v2 · Phase D W10 — redline v2 PASS · docs/113",
+    "notes": "P0 Sprint2 v2 — 5단계 계층·포함관계 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합)",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -3184,7 +3194,9 @@
     "prohibitedVerifiedNote": "Phase D W10 — redline v2 PASS · docs/113",
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-27",
-    "imageKnowledgeTopic": "28-경보·그래프·대시보드-표현.md"
+    "imageKnowledgeTopic": "28-경보·그래프·대시보드-표현.md",
+    "alt": "계측 방식 3층 분류 - KCS 수집·전송·NMTI 확장·런타임 모드",
+    "caption": "계측 방식 — KCS 수집·전송·NMTI 확장·런타임 (≠ 5단계 등급)"
   },
   "IMG-076": {
     "id": "IMG-076",
@@ -3949,7 +3961,7 @@
     "title": "가시설 주변지반 계측 설치 대표 단면도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/158-IMG-096-v5-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-096 · docs/158-IMG-096-v5-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
     "reviewDate": "2026-06-29",
     "reviewer": "agent",
     "auditPriority": "P0",
@@ -4609,7 +4621,7 @@
       "지반 침하 단면",
       "GNSS+와이어 동시 주계측 (DEF-GNSS-06)"
     ],
-    "notes": "v4 ai-reviewed (2026-06-29): 와이어식·LVDT 처짐 δ, ≠침하계, IMG-103 GNSS 분리. 정본 docs/150. BRI-DEF.",
+    "notes": "v4 ai-reviewed (2026-06-29): 와이어식·LVDT 처짐 δ, ≠침하계, IMG-103 GNSS 분리. 정본 docs/150. BRI-DEF. · 179 §9 caption sync 2026-06-30",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4638,7 +4650,9 @@
     "wireframeClearedDate": "2026-06-26",
     "migrationStatus": "completed",
     "migrationCompletedDate": "2026-06-29",
-    "imageKnowledgeTopic": "14-교량-처짐-계측.md"
+    "imageKnowledgeTopic": "14-교량-처짐-계측.md",
+    "alt": "처짐계 설치 개념도 - LVDT·와이어·국부 처짐 (≠ IMG-103 GNSS)",
+    "caption": "처짐계 설치 — LVDT·와이어 접촉식 δ (≠ GNSS hero·≠침하계)"
   },
   "IMG-105": {
     "id": "IMG-105",

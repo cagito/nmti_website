@@ -766,7 +766,7 @@ const CONTENT = {
     "tagline": "교량 상부구조·교각·교대·기초의 변위·경사·진동을 통합 평가",
     "metaDescription": "교량 계측의 정의, 계측 목적, 측정 원리, 설치 방법, 데이터 해석, 관리기준 및 관련 센서를 정리한 기술자료입니다.",
     "sections": {
-      "overview": "<p><strong>교량</strong>은 교량 상부구조, 교각, 교대, 기초의 변위·경사·진동·응답을 측정하여 구조 안전성과 사용성을 평가하는 계측입니다. 교량은 차량하중, 온도 변화, 풍하중, 지반 침하, 지진·진동 영향에 따라 장·단기 거동이 발생합니다.</p><p>시공 중에는 가설 단계와 하중 재분배를 확인하고, 공용 중에는 구조물의 장기 변위와 이상 진동을 감시합니다. <strong>구조물경사계</strong>, <strong>변위계</strong>, <strong>처짐계</strong>, <strong>신축이음계</strong>, <strong>변형률계</strong>, <strong>케이블장력계</strong>, <strong>무응력계</strong>, <strong>진동계</strong>, <strong>풍향풍속계</strong>, <strong>지표침하계</strong>, <strong>GNSS</strong>, <strong>자동광파기</strong>를 교량 형식·목적에 맞게 조합합니다. 현수·사장·아치교는 <strong>케이블 장력</strong>이 핵심 항목입니다. 온도에 따른 정상 신축과 비정상 변형을 구분하는 것이 해석의 출발점입니다.</p>",
+      "overview": "<p><strong>교량</strong>은 상부구조·교각·교대·기초의 변위·경사·진동·응력을 측정하여 구조 안전성과 사용성을 평가하는 계측입니다. 차량하중, 온도, 풍하동, 지반 침하, 지진·진동에 따른 장·단기 거동을 구분해 해석합니다.</p><p>센서는 <strong>부재·위치·물리량</strong>에 맞게 선정하며, 아래 <strong>매핑 표</strong>와 각 리프 nodeId를 기준으로 조합합니다. 현수·사장·아치교는 <strong>케이블 장력</strong>이 핵심이고, 상부구조 처짐은 <strong>경간 중앙 GNSS(ΔZ→δ)</strong>와 <strong>접촉식 처짐계</strong>를 역할 분리합니다.</p>",
       "purpose": [
         {
           "title": "교량 통합 평가",
@@ -800,8 +800,9 @@ const CONTENT = {
         {
           "title": "상부구조 처짐",
           "accent": "displacement",
-          "body": "처짐을 <strong>처짐계</strong>·<strong>변위계</strong>로 감시합니다.",
+          "body": "경간 중앙 <strong>GNSS</strong> ΔZ→δ(hero)와 <strong>처짐계</strong> 국부 δ를 분리합니다.",
           "sensors": [
+            "sensors/gnss",
             "sensors/deflection-gauge"
           ]
         },
@@ -856,15 +857,15 @@ const CONTENT = {
           ]
         }
       ],
-      "principle": "<p>교량 계측은 정적 변위(침하, 경사, 신축이음량, 처짐)와 동적 응답(진동·풍하동)을 구분합니다. 현수·사장·아치교는 <strong>케이블 장력</strong>(주파수법·가속 픽업)을 온도·풍·진동 데이터와 함께 해석합니다. 온도·일교차에 따른 신축이음량 변화는 정상 범주이나, 급격한 증가·비대칭 변형은 구조적 이상 징후일 수 있습니다. 재하시험 시에는 <strong>변형률계</strong>와 변위계로 하중-변형 관계를 확인합니다.</p>",
+      "principle": "<p>교량 계측은 <strong>정적 변위</strong>(침하·경사·신축·처짐)와 <strong>동적 응답</strong>(진동·풍하동)을 구분합니다. 처짐은 <a href=\"#fields/bridge/deflection\">경간 중앙 GNSS</a>(장기 ΔZ)와 <a href=\"#sensors/deflection-gauge\">접촉식 처짐계</a>(국부 δ)를 혼동하지 않습니다. 온도·일교차 신축은 정상 범주이나 급격한 증가·비대칭은 이상 징후일 수 있습니다.</p>",
       "installation": [
-        "계측 목적(시공 · 공용 · 재하시험) 기준 — 측점 · 센서 종류 선정",
-        "교각 · 교대에 구조물경사계 · 변위계를 설치 · 기준점을 안정화",
-        "신축이음부에 신축이음계를 배치 · 온도 보정 기준 마련",
-        "현수 · 사장 · 아치 · 닐슨교는 케이블 노출부에 케이블장력계를 설치 · 긴장 · 조정 후 기준 장력 기록",
-        "기초 · 교대 주변에 지표침하계 또는 GNSS 설치",
-        "진동 · 동적 특성 평가가 필요하면 진동계를 차량 통과 구간에 배치",
-        "자동광파기 · 원격계측으로 장기 모니터링 체계 구축"
+        "계측 목적(시공 · 공용 · 재하시험)과 아래 매핑 표에서 부재 · 물리량별 nodeId 선정",
+        "교각 · 교대: 구조물경사계 · 변위계 — fields/bridge/pier · abutment",
+        "상부구조 처짐: 경간 중앙 GNSS 1점 — fields/bridge/deflection",
+        "국부 · 재하시험 처짐: LVDT · 와이어 — sensors/deflection-gauge",
+        "현수 · 사장 · 아치: 케이블장력계 — fields/bridge/cable-tension",
+        "신축이음 · 받침 · 기초침하 · 풍 · 진동: 매핑 표 nodeId 참조",
+        "자동광파 · 원격계측으로 장기 모니터링 체계 구축"
       ],
       "constructionPhases": {
         "headers": [
@@ -907,40 +908,89 @@ const CONTENT = {
       },
       "data": {
         "headers": [
-          "관심 항목",
-          "주요 센서",
-          "해석 포인트"
+          "부재",
+          "위치",
+          "물리량",
+          "대표 센서",
+          "nodeId"
         ],
         "rows": [
           [
-            "교각 경사",
-            "구조물경사계",
-            "부등침하 · 기초 불안 징후"
+            "거더 · 상부구조",
+            "경간 중앙 상부",
+            "처짐 δ(ΔZ)",
+            "GNSS",
+            "fields/bridge/deflection"
           ],
           [
-            "처짐 · 변형률",
-            "처짐계 · 변형률계",
-            "L/600 · 휨응력 · 크리프 보정"
+            "거더 · 슬래브",
+            "mid-span · 기준대",
+            "처짐 δ",
+            "LVDT · 와이어",
+            "sensors/deflection-gauge"
           ],
           [
-            "케이블 장력",
+            "교각",
+            "상부 · 기초 연결",
+            "경사 · 변위",
+            "구조물경사계 · 변위계",
+            "fields/bridge/pier"
+          ],
+          [
+            "교대",
+            "받침 · 이음부",
+            "경사 · 변위",
+            "구조물경사계 · 변위계",
+            "fields/bridge/abutment"
+          ],
+          [
+            "PSC · 강재",
+            "휨 · 전단부",
+            "변형률 · 응력",
+            "변형률계 · 무응력계",
+            "fields/bridge/strain-stress"
+          ],
+          [
+            "주케이블",
+            "케이블 노출부",
+            "인장력 T",
             "케이블장력계",
-            "주파수법 · 장력 추세"
+            "fields/bridge/cable-tension"
           ],
           [
-            "신축이음량",
+            "받침",
+            "슬라이드 · 회전",
+            "상대변위",
+            "변위계",
+            "fields/bridge/bearing-displacement"
+          ],
+          [
+            "신축이음",
+            "이음부",
+            "신축량",
             "신축이음계",
-            "늘음량(+)/줄음량(−) · 온도 연계"
+            "fields/bridge/expansion-joint"
           ],
           [
-            "받침 · 기초",
-            "변위계 · 침하계",
-            "슬라이드 · 부등침하"
+            "기초",
+            "교각 · 교대 하부",
+            "침하",
+            "지표침하계 · GNSS",
+            "fields/bridge/foundation-settlement"
           ],
           [
-            "풍 · 동적",
-            "풍향풍속계 · 진동계",
-            "풍하동 · 고유진동수 변화"
+            "교면 · 주탑",
+            "풍하동 구간",
+            "풍 · 진동",
+            "풍향풍속 · 진동계",
+            "fields/bridge/wind · vibration"
+          ],
+          [
+            "전체",
+            "",
+            "온도 · 지진",
+            "온도계 · 진동계",
+            "fields/bridge/temperature · seismic"
           ]
         ]
       },
@@ -956,7 +1006,11 @@ const CONTENT = {
         },
         {
           "q": "처짐과 기초침하를 어떻게 구분하나요?",
-          "a": "처짐계는 거더·교면 연직변위(δ)이고, 기초침하는 지표침하계·광파·GNSS로 교각·교대 기초를 봅니다. 해석·관리기준을 분리합니다."
+          "a": "경간 중앙 GNSS·처짐계는 거더·교면 δ(상부구조)이고, 기초침하는 지표침하계·GNSS로 교각·교대 기초를 봅니다. nodeId·관리기준을 분리합니다."
+        },
+        {
+          "q": "GNSS 처짐과 처짐계 차이?",
+          "a": "deflection=경간 중앙 GNSS 1점·ΔZ→δ(IMG-103). deflection-gauge=LVDT·와이어 국부 δ(IMG-104). 매핑 표 참조."
         },
         {
           "q": "대구 3호선 유지관리 사례와의 관계는?",
@@ -1634,7 +1688,7 @@ const CONTENT = {
     "tagline": "댐·제방 안전관리 — 저수위·침투·누수·변형 응답의 통합 계측",
     "metaDescription": "댐 안전관리 계측 체계 — 저수위·간극수압·누수·침하·변위를 연계하여 이상징후를 조기 판단하는 기술자료입니다.",
     "sections": {
-      "overview": "<p><strong>댐 안전관리 계측 체계</strong>는 저수위 변화에 따른 제체·기초의 침투, 누수, 변형 응답을 종합 관찰하여 이상 징후를 조기에 판단하는 안전관리 시스템입니다. 계측 항목은 센서 설치 위치, 측정값, 해석값, 관리기준, 조치 절차가 상호 연계되도록 구성합니다.</p><p><strong>건설중 계측</strong>(<a href=\"#fields/dam/construction-phase\">축조·성토 단계</a>)은 준공 후 누수·간극수압 안전관리와 구분하며, 원격계측·데이터관리 SW로 QC·보고를 연계합니다.</p><p>본 계측 체계는 댐의 저수위 변화에 따른 제체 및 기초지반의 수리·역학적 응답을 관찰하기 위한 안전관리 시스템입니다. 주요 계측 항목은 <strong>저수위</strong>, <strong>간극수압</strong>, <strong>누수량</strong>, <strong>탁도</strong>, <strong>침하</strong>, <strong>수평변위</strong>이며, 각 계측값은 저수위·강우·지진 등 외력 조건과 연계하여 분석합니다.</p>",
+      "overview": "<p><strong>댐 안전관리 계측 체계</strong>는 저수위 변화에 따른 제체·기초의 침투, 누수, 변형 응답을 종합 관찰하여 이상 징후를 조기에 판단하는 안전관리 시스템입니다. 계측 항목은 센서 설치 위치, 측정값, 해석값, 관리기준, 조치 절차가 상호 연계되도록 구성합니다.</p><p><strong>건설중 계측</strong>(<a href=\"#fields/dam/construction-phase\">축조·성토 단계</a>)은 준공 후 누수·간극수압 안전관리와 구분하며, 원격계측·데이터관리 SW로 QC·보고를 연계합니다.</p><p><strong>수리 해석 용어:</strong> <strong>filter tip</strong>(필터 구간 끝)=간극수압 측정 지점이며 침윤선과 동일하지 않습니다. <strong>piezometric head</strong>(간극수압 수두)는 관측공·필터 위치의 수압을 뜻하며 <strong>지하수위(G.W.L)</strong>와 구분합니다. 침윤선은 간극수압·수위·지층 데이터를 종합해 <strong>추정</strong>합니다.</p>",
       "purpose": [
         {
           "title": "수위 · 간극수압",
@@ -5202,29 +5256,29 @@ const CONTENT = {
     "id": "fields/bridge/deflection",
     "title": "처짐",
     "sections": {
-      "overview": "<p><strong>교량 처짐</strong> 계측은 거더·PSC 박스·교면의 <strong>휨 연직변위(δ)</strong>를 <strong>처짐계</strong>, LVDT, 와이어·레이저, 자동광파기로 측정합니다(KDS 11 10 15 §4.2.1.6 · KCS 24 99 05). 기초침하·지표침하와 구분되는 <strong>상부구조</strong> 항목입니다.</p><p>정적·동적 처짐을 병행하며, 온도·크리프·활하중을 분리해 해석합니다. 유지관리에서는 경간 대비 허용 처짐(예: L/600)을 설계·계측계획에 따릅니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 교량 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p>",
+      "overview": "<p><strong>교량 상부구조 처짐</strong> 계측은 인접 <strong>교각 중심선 사이 경간</strong>의 <strong>경간 중앙 상부</strong>에 <strong>GNSS 이동국 1개</strong>를 두고, 수직 위치 변화 <strong>ΔZ</strong>를 <strong>처짐량 δ</strong>로 해석하는 장기 모니터링입니다(KDS 11 10 15 · KCS 24 99 05). <strong>기초침하</strong>·<strong>지표침하</strong>와 구분되는 상부구조 항목입니다.</p><p><strong>GNSS 기준국</strong>은 교량 영향권 밖 안정 지반에 설치합니다. LVDT·와이어식 <strong>처짐계</strong>·1/4 경간 측점은 본 노드 hero가 아니며 <a href=\"#sensors/deflection-gauge\">처짐계</a>·<a href=\"#sensors/gnss\">GNSS</a> 센서 페이지에서 다룹니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 교량 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p>",
       "purpose": [
         {
-          "title": "사용성",
-          "body": "교면 연직변위·강성 저하 징후를 감시합니다."
-        },
-        {
-          "title": "구조 검증",
-          "body": "재하시험·시공 단계 처짐을 설계와 비교합니다."
+          "title": "경간 중앙 δ",
+          "body": "경간=교각↔교각, 이동국=경간 중앙 1점의 ΔZ→δ 추적"
         },
         {
           "title": "장기 추세",
-          "body": "크리프·손상에 따른 처짐 증가 추적"
+          "body": "온도·크리프·활하중을 분리해 처짐 증가 징후를 감시합니다."
+        },
+        {
+          "title": "구조 검증",
+          "body": "재하시험·공용 전환 시 설계 허용 처짐과 비교합니다."
         }
       ],
-      "principle": "<p>처짐 δ는 mid-span·1/4 span 등 대표 단면에서 측정합니다. ring type 변위변환기·LVDT·광파 측량이 사용됩니다. 동적 처짐은 진동·풍하동 이벤트와 연계하며, 사장·현수교는 <strong>케이블 장력</strong> 변화와 함께 해석합니다.</p>",
+      "principle": "<p><strong>경간</strong>은 좌·우 <strong>교각 중심선</strong> 사이만 표시합니다(교대↔교대 전체 아님). <strong>GNSS 이동국</strong>은 <strong>경간 중앙 상부 1개</strong>만 배치하며 분할 경간·교각·교대 위 이동국은 사용하지 않습니다. 처짐 δ는 해당 이동국의 <strong>ΔZ(t0→t1)</strong>입니다. 그래프는 경간 중앙 ΔZ–시간입니다.</p><p>동적 처짐·국부 휨은 <a href=\"#sensors/deflection-gauge\">접촉식 처짐계</a>·<a href=\"#fields/bridge/vibration\">진동</a>과 병행할 수 있으나 hero Figure(IMG-103)는 GNSS 중앙 1점 전용입니다.</p>",
       "installation": [
-        "주경간 중앙 · 1/4 경간에 처짐계 또는 측량 프리즘 배치",
-        "온도 센서 · 기상 데이터와 연동",
-        "초기치 · 온도 보정 기준을 확립",
-        "자동광파기로 절대 처짐을 보완",
-        "정적 · 동적 로거 채널을 구분",
-        "기초침하 · 교각 경사와 교차 검토"
+        "경간=인접 교각 중심선 사이로 정의 · Mid-Span 위치 확정",
+        "경간 중앙 상부(상판 · 거더)에 GNSS 이동국 1개 설치",
+        "교량 영향권 밖 안정 지반에 GNSS 기준국 1개 설치",
+        "온도 · 기상 데이터와 연동 · 초기치 · 기준선을 확립",
+        "ΔZ → δ 해석 · 보고 주기를 계측관리계획에 따릅니다",
+        "기초침하 · 교각 경사와 교차 검토(별도 nodeId)"
       ],
       "constructionPhases": {
         "headers": [
@@ -5235,7 +5289,7 @@ const CONTENT = {
         "rows": [
           [
             "가설 · 시공",
-            "거더 처짐",
+            "경간 중앙 ΔZ",
             "가설 하중 · 온도"
           ],
           [
@@ -5245,18 +5299,18 @@ const CONTENT = {
           ],
           [
             "공용 개시",
-            "정적 δ",
-            "기준선"
+            "정적 ΔZ",
+            "기준선 · 기준국"
           ],
           [
             "풍 · 통행",
-            "동적 δ",
-            "이벤트 분리"
+            "이벤트 ΔZ",
+            "동적 항목과 분리"
           ],
           [
             "유지관리",
             "추세",
-            "L/xxx 대비"
+            "L/xxx · 비대칭"
           ]
         ]
       },
@@ -5273,7 +5327,7 @@ const CONTENT = {
             "정상"
           ],
           [
-            "단조 증가",
+            "단조 ΔZ 증가",
             "크리프 · 손상",
             "조사"
           ],
@@ -5285,27 +5339,27 @@ const CONTENT = {
           [
             "비대칭",
             "부등침하",
-            "기초 · 교각"
+            "기초 · 교각 연계"
           ]
         ]
       },
       "criteria": "<p>교량 관리기준은 설계, 교량 형식, 교통량, 하부 지반 조건에 따라 설정합니다. 시공 중 가설 변위, 공용 중 장기 침하·경사, 재하시험 시 허용 변형률을 각각 적용합니다. 진동은 구조물 기준과 인체·민원 기준을 구분합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
       "faq": [
         {
-          "q": "처짐계와 침하계 차이는?",
-          "a": "처짐계는 거더·교면 구조 처짐, 침하계는 지반·기초 수직변위입니다. nodeId·Figure가 분리됩니다."
+          "q": "왜 경간 중앙 GNSS 1개인가요?",
+          "a": "IMG-103 hero·DEF-GNSS 정본에 따라 경간=교각↔교각, 이동국=경간 중앙 1점, δ=ΔZ입니다. 분할 경간·복수 이동국은 본 노드 범위가 아닙니다."
+        },
+        {
+          "q": "처짐계·LVDT는 어디서 보나요?",
+          "a": "국부 연직 처짐·재하시험·동적 처짐은 sensors/deflection-gauge(IMG-104)와 building/deflection을 참고합니다."
         },
         {
           "q": "L/600 기준은 어디서 오나요?",
-          "a": "설계·계측관리계획·유지관리 매뉴얼에 따릅니다. 대구 3호선 준공보고서 §5.3.6 예시가 있습니다."
+          "a": "설계·계측관리계획·유지관리 매뉴얼에 따릅니다."
         },
         {
-          "q": "광파와 처짐계 병행 이유는?",
-          "a": "광파는 절대 좌표·장거리, 처짐계는 국부 연직변위에 유리합니다. 목적에 맞게 조합합니다."
-        },
-        {
-          "q": "건축 처짐과 같나요?",
-          "a": "원리는 유사하나 교량은 거더·PSC·재하시험 맥락입니다. 건축은 fields/building/deflection을 봅니다."
+          "q": "GNSS와 광파·처짐계 병행?",
+          "a": "GNSS는 경간 중앙 장기 ΔZ, 광파·처짐계는 국부·절대 보완에 쓰입니다. 역할을 분리해 해석합니다."
         }
       ],
       "sources": "<div class=\"tech-sources\" id=\"sources\"><h2 class=\"tech-sources__title\">근거 기준</h2><ul class=\"tech-sources__list\"><li class=\"tech-sources__item\">· <strong>KCS 24 99 05:2023</strong>「교량계측시설」 §3.2 — 처짐 계측 <span class=\"tech-sources__publisher\">(국가건설기준센터(KCSC))</span></li><li class=\"tech-sources__item\">· <strong>KDS 11 10 15:2025</strong>「지반계측」 §4.2.1.6 — 교량 정·동적 처짐 <span class=\"tech-sources__publisher\">(국가건설기준센터(KCSC))</span></li></ul><p class=\"tech-sources__disclaimer\">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>"
@@ -5313,13 +5367,8 @@ const CONTENT = {
     "sectionImages": {
       "principle": {
         "id": "IMG-103",
-        "caption": "교량 상부구조 처짐 — δ·처짐계·광파",
+        "caption": "교량 상부구조 GNSS 처짐 — 경간 중앙 1점·ΔZ→δ·기준국 영향권 밖",
         "figureNo": 2
-      },
-      "installation": {
-        "id": "IMG-104",
-        "caption": "처짐계 설치 — LVDT·와이어 (≠침하계)",
-        "figureNo": 3
       }
     },
     "metaDescription": "처짐의 측정 목적, 적용 현장, 설치, 데이터 해석, 유지관리 및 관련 센서를 정리한 기술 자료입니다.",
@@ -7144,29 +7193,29 @@ const CONTENT = {
     "id": "fields/slope/slip-surface",
     "title": "활동면",
     "sections": {
-      "overview": "<p><strong>활동면</strong> 계측은 사면 내부 전단 활동 예상면의 위치·변위를 <strong>지중경사계</strong>, <strong>간극수압계</strong>로 추정·검증합니다. 활동면은 변위가 집중되는 곡선 형태로 지중경사계 프로파일에 나타납니다.</p><p>원호·평면 활동 가정과 계측 데이터를 비교해 안정율·보강 설계를 검증합니다.</p><p>활동면 추정은 단일 계측일이 아닌 복수 시점의 지중경사계 프로파일 비교로 신뢰도가 높아집니다. 간극수압계가 활동면 상부에 설치된 경우 수압-변위 동시 상승은 전단 강도 저하를 강하게 시사합니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 사면 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p>",
+      "overview": "<p><strong>활동면</strong> 계측은 사면 내부 전단 활동 <strong>추정 후보</strong>의 위치·변위를 <strong>센서형 다단식 지중경사계</strong>, <strong>간극수압계</strong>, 지표변위·균열·침하·지하수위·현장관찰을 종합해 검증합니다. 지중경사계 프로파일의 전단변형 집중 구간은 <strong>활동면 추정 후보</strong>일 뿐, 단일 계측만으로 확정하지 않습니다.</p><p>원호·평면 활동 가정과 계측 데이터를 비교해 안정율·보강 설계를 점검합니다.</p><p>활동면 추정은 단일 계측일이 아닌 복수 시점의 지중경사계 프로파일 비교로 신뢰도가 높아집니다. 간극수압계가 활동면 상부에 설치된 경우 수압-변위 동시 상승은 전단 강도 저하를 강하게 시사합니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 사면 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p>",
       "purpose": [
         {
-          "title": "위치 추정",
-          "body": "변위 집중 심도로 활동면을 추정합니다."
+          "title": "후보 추정",
+          "body": "변위 집중 심도를 활동면 추정 후보로 기록합니다."
         },
         {
           "title": "진행 판단",
-          "body": "활동면 깊이 변화·속도 추적"
+          "body": "후보 심도·변위속도 변화 추적"
         },
         {
           "title": "설계 검증",
-          "body": "보강 후 활동면 이동 여부 확인"
+          "body": "보강 후 후보 이동·속도 감소 여부 확인"
         }
       ],
-      "principle": "<p>활동면에서 전단 변형이 집중되며 지중경사계는 해당 심도에서 변위 기울기가 최대입니다. 간극수압은 활동면 상부에서 높을 수 있습니다.</p>",
+      "principle": "<p>활동면에서 전단 변형이 집중될 수 있으며 지중경사계는 해당 심도에서 변위 기울기가 클 수 있습니다. 간극수압·지하수위·강우·균열·지표변위와 함께 해석해야 하며, 단일 IPI 최대 기울기만으로 활동면을 확정하지 않습니다.</p>",
       "installation": [
-        "예상 활동면 관통 단면에 지중경사계 설치",
+        "예상 활동면 관통 단면에 센서형 다단식 지중경사계 설치",
         "활동면 상 · 하부에 간극수압계 배치",
-        "표면 변위 측점을 보완",
-        "강우 · 지하수위 계측을 동시에 운영",
+        "표면 변위 측점 · 지하수위 · 강우 계측을 동시에 운영",
+        "현장관찰 · 균열 · 침하 데이터와 시간 동기화",
         "위험 시 계측 빈도를 높",
-        "해석 소프트웨어와 프로파일을 비교"
+        "해석 소프트웨어와 프로파일을 비교 · 후보를 정교화"
       ],
       "constructionPhases": {
         "headers": [
@@ -7178,12 +7227,12 @@ const CONTENT = {
           [
             "초기",
             "지중경사 프로파일",
-            "설계 활동면 가정"
+            "설계 가정 vs 후보"
           ],
           [
             "강우 · 우기",
             "집중 심도 · 속도",
-            "활동면 후보"
+            "후보 정교화"
           ],
           [
             "가속 시",
@@ -7212,12 +7261,12 @@ const CONTENT = {
           [
             "변위 집중 심도",
             "지중경사계",
-            "활동면 후보"
+            "활동면 추정 후보"
           ],
           [
             "상부 간극수압",
             "간극수압계",
-            "전단 저항"
+            "전단 저항 보조"
           ],
           [
             "속도 증가",
@@ -7235,7 +7284,7 @@ const CONTENT = {
       "faq": [
         {
           "q": "활동면은 한 번에 확정되나요?",
-          "a": "계측 데이터가 축적되면서 추정이 정교해집니다. 초기에는 설계 가정과 병행합니다."
+          "a": "아닙니다. IPI 집중 심도는 추정 후보며, 지질·수압·균열·침하·현장관찰을 종합해 정교화합니다."
         },
         {
           "q": "평면·원호 중 어떤 모델?",
@@ -7243,7 +7292,7 @@ const CONTENT = {
         },
         {
           "q": "보강 후 활동면이 이동하나요?",
-          "a": "변위 집중 심도·속도 변화로 보강 효과를 판단합니다. 이동·재형성 시 추가 대책을 검토합니다."
+          "a": "변위 집중 심도·속도 변화로 보강 효과를 판단합니다. 후보 이동·재형성 시 추가 대책을 검토합니다."
         },
         {
           "q": "간극수압계는 어디에 두나요?",
@@ -7254,11 +7303,15 @@ const CONTENT = {
     },
     "sectionImages": {
       "principle": [
-        "IMG-016",
+        {
+          "id": "IMG-016",
+          "caption": "원호활동면 — IPI 프로파일·활동면 추정 후보",
+          "figureNo": 2
+        },
         {
           "id": "IMG-017",
           "caption": "평면활동면 해석 — 암반 사면 평면 파괴",
-          "figureNo": 2
+          "figureNo": 3
         }
       ]
     },
@@ -9411,7 +9464,7 @@ const CONTENT = {
     "id": "fields/dam/leakage",
     "title": "침투·누수",
     "sections": {
-      "overview": "<p><strong>댐 누수</strong> 계측은 제체·기초·배수층을 통한 침투수량·탁도·수위 변화를 유량계·<strong>지하수위계</strong>로 감시합니다. 누수량 급증·탁도 증가·비정상 수위는 내부 침식·댐체 손상 징후일 수 있습니다.</p><p>정상 운영 시 계절·수위별 패턴을 축적하고 이탈을 감지합니다.</p><p>누수 계측은 정상 운영 수위별 유량 기준선을 통계적으로 구축합니다. 지진·홍수·수위 급변 후 집중 관찰 기간을 두고, 탁도·온도·전기 전도도 등 보조 지표로 침식·필터 이상을 구분합니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 댐·제방 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p>",
+      "overview": "<p><strong>댐 누수</strong> 계측은 제체·기초·배수층을 통한 침투수량·탁도·수위 변화를 <strong>하류 배수갤러리·집수부·측수로·계측정</strong>의 유량계·<strong>지하수위계</strong>로 감시합니다. 누수량 급증·탁도 증가·비정상 수위는 내부 침식·댐체 손상 징후일 수 있습니다.</p><p>정상 운영 시 계절·수위별 패턴을 축적하고 이탈을 감지합니다. 센서를 제체 내부에 무작위로 박아 넣는 표현은 사용하지 않습니다.</p><p>누수 계측은 정상 운영 수위별 유량 기준선을 통계적으로 구축합니다. 지진·홍수·수위 급변 후 집중 관찰 기간을 두고, 탁도·온도·전기 전도도 등 보조 지표로 침식·필터 이상을 구분합니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 댐·제방 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p>",
       "purpose": [
         {
           "title": "누수량",
@@ -9428,7 +9481,7 @@ const CONTENT = {
       ],
       "principle": "<p>댐 침투는 수두에 비례하는 경향이 있으나 경로·공극 변화에 민감합니다. 정상 패턴 대비 이탈이 핵심입니다.</p>",
       "installation": [
-        "배수갤러리 · 계측정 · 우회 누수 경로에 유량계 설치",
+        "하류 배수갤러리 · 집수부 · 측수로 · 계측정에 유량계 설치",
         "제체 · 기초 관측공에 지하수위계를 둡니다",
         "수위 · 강우와 시간 동기화",
         "정상 운영 데이터를 수위별로 분류",
@@ -9544,7 +9597,7 @@ const CONTENT = {
     "id": "fields/dam/pore-pressure",
     "title": "수위·수압",
     "sections": {
-      "overview": "<p><strong>댐·제방 간극수압</strong>은 제체·기초·배수층 내부 수압을 <strong>간극수압계</strong>로 측정합니다. 수위 상승 시 간극수압 분포 변화는 제체·기초 안정 평가의 핵심입니다.</p><p>정상 수위-압력 관계를 확립하고 이탈·비대칭 상승을 감시합니다.</p><p>댐 간극수압은 수위 상승·하강 주기마다 히스테리시스 패턴이 형성됩니다. 패턴 이탈·비대칭 상승은 배수층·필터 막힘·집중 침투를 시사하며, 안전 점검 등급과 연동해 조치 우선순위를 정합니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 댐·제방 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p>",
+      "overview": "<p><strong>댐·제방 간극수압</strong>은 제체·기초·배수층 내부 수압을 <strong>간극수압계</strong>로 측정합니다. <strong>filter tip</strong>(필터 구간 끝)은 간극수압 측정 지점이며 <strong>침윤선과 동일하지 않습니다</strong>. <strong>piezometric head</strong>는 필터 위치의 수압을 뜻하며 <strong>지하수위(G.W.L)</strong>·저수위와 구분합니다.</p><p>수위 상승 시 간극수압 분포 변화는 제체·기초 안정 평가의 핵심입니다. 정상 수위-압력 관계를 확립하고 이탈·비대칭 상승을 감시합니다.</p><p>댐 간극수압은 수위 상승·하강 주기마다 히스테리시스 패턴이 형성됩니다. 패턴 이탈·비대칭 상승은 배수층·필터 막힘·집중 침투를 시사하며, 안전 점검 등급과 연동해 조치 우선순위를 정합니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 댐·제방 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p>",
       "purpose": [
         {
           "title": "수압 분포",
@@ -9631,7 +9684,7 @@ const CONTENT = {
           ]
         ]
       },
-      "criteria": "<p>댐 관리기준은 댐 안전점검 규정·설계 기준·과거 데이터 기반 통계적 한계를 적용합니다. 수위별·계절별 정상 범위를 설정하고 이탈 시 등급별 조치를 실시합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
+      "criteria": "<p>filter tip=간극수압 측정 지점(≠침윤선). piezometric head≠G.W.L. 관리기준은 설계·댐 안전점검 규정·과거 데이터를 따릅니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
       "faq": [
         {
           "q": "간극수압이 수위보다 빨리 오르면?",
@@ -9692,7 +9745,7 @@ const CONTENT = {
     "id": "fields/dam/settlement",
     "title": "침하",
     "sections": {
-      "overview": "<p><strong>댐·제방 침하</strong>는 제체 크레스트·익스트·기초의 수직 변형을 <strong>침하계</strong>, <strong>GNSS</strong>로 장기 추적합니다. 압밀·크리프·수위 변화·지진 후 침하는 제체 안정성 지표입니다.</p><p>부등침하는 변위계·경사와 연계됩니다.</p><p>댐 침하는 준공 후 수년~수십년에 걸쳐 진행될 수 있어 동일 측점의 장기 연속성이 중요합니다. 제체·기초 침하 차이가 커지면 비대칭 변형·균열 가능성을 검토하고, 수위·온도와 상관 분석합니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 댐·제방 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p>",
+      "overview": "<p><strong>댐·제방 침하</strong>는 제체 크레스트·익스트·기초의 수직 변형을 <strong>침하계</strong>, <strong>GNSS</strong>로 장기 추적합니다. 압밀·크리프·수위 변화·지진 후 침하는 제체 안정성 지표입니다.</p><p>부등침하는 변위계·경사와 연계됩니다. 침하량 <strong>증가(아래 방향)</strong>는 그래프에서 시간에 따라 값이 커지는 방향이며, 관리기준 초과 시 단계별 조치를 검토합니다.</p><p>댐 침하는 준공 후 수년~수십년에 걸쳐 진행될 수 있어 동일 측점의 장기 연속성이 중요합니다. 제체·기초 침하 차이가 커지면 비대칭 변형·균열 가능성을 검토하고, 수위·온도와 상관 분석합니다.</p><p>계측 데이터는 <strong>계측책임자</strong>가 검토하는 계측관리계획서의 계측 빈도·<strong>설계예상변위</strong>·<strong>최대허용변위</strong>와 연계하여 운영합니다. 댐·제방 현장에서는 추세·변화속도·인접 센서의 동시 변화를 우선 검토하며, 현장별 상세 시방·허용값은 설계도서와 발주처 기준을 따릅니다.</p>",
       "purpose": [
         {
           "title": "장기 침하",
@@ -9779,7 +9832,7 @@ const CONTENT = {
           ]
         ]
       },
-      "criteria": "<p>댐 관리기준은 댐 안전점검 규정·설계 기준·과거 데이터 기반 통계적 한계를 적용합니다. 수위별·계절별 정상 범위를 설정하고 이탈 시 등급별 조치를 실시합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
+      "criteria": "<p>침하 그래프는 시간(가로)·침하량 증가=아래 방향(세로)을 명시합니다. 관리기준 초과·속도 가속 시 단계별 조치를 검토합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
       "faq": [
         {
           "q": "침하가 계속되면?",
@@ -14970,9 +15023,9 @@ const CONTENT = {
   "sensors/deflection-gauge": {
     "id": "sensors/deflection-gauge",
     "title": "처짐계",
-    "tagline": "구조 부재 연직 처짐(δ) 측정 — ≠ 침하계",
+    "tagline": "접촉식 처짐계(LVDT·와이어) — ≠ GNSS 경간 중앙 hero",
     "sections": {
-      "overview": "<p><strong>처짐계</strong>는 거더·PSC 박스·보·슬래브 등 구조 부재의 <strong>연직 처짐량 δ</strong>를 측정합니다. LVDT, 와이어, ring type 변위변환기 등이 사용됩니다. <strong>침하계</strong>(지반·기초 침하)와 구분됩니다.</p><p>교량은 <a href=\"#fields/bridge/deflection\">처짐</a>, 건축은 <a href=\"#fields/building/deflection\">처짐</a> 항목과 연계합니다.</p>",
+      "overview": "<p><strong>처짐계</strong>는 거더·PSC 박스·보·슬래브 등 구조 부재의 <strong>연직 처짐량 δ</strong>를 <strong>접촉식</strong>으로 측정합니다. LVDT, 와이어, ring type 변위변환기·자동광파 보조 측점이 사용됩니다. <strong>침하계</strong>(지반·기초 침하)와 구분됩니다.</p><p>교량 <strong>경간 중앙 GNSS 처짐(ΔZ→δ)</strong> hero는 <a href=\"#fields/bridge/deflection\">교량 처짐</a>(IMG-103) 전용입니다. 본 센서 페이지는 LVDT·와이어·광파 등 <strong>국부·재하시험·동적</strong> 처짐에 초점을 둡니다. 건축은 <a href=\"#fields/building/deflection\">처짐</a> 항목과 연계합니다.</p>",
       "purpose": [
         {
           "title": "처짐 δ",
@@ -14995,40 +15048,49 @@ const CONTENT = {
         "자동광파기 보완 측점"
       ],
       "installation": [
-        "mid-span · 1/4 span 등 대표 위치",
-        "고정 앵커 · 센서 본체 설치",
+        "설계 · 시방 대표 위치(주로 mid-span)에 고정 앵커 · 센서 본체 설치",
         "온도 채널 연동",
         "케이블 보호 · 방수",
         "초기치 · 재현성 확인",
         "데이터로거 · 원격 연동"
       ],
-      "principle": "<p>고정 앵커 대비 부재 연직 변위를 측정합니다. 온도·초기치 보정이 필수입니다.</p>",
+      "principle": "<p>고정 앵커 대비 부재 <strong>연직 변위</strong>를 측정합니다. 교량 <strong>경간 중앙 GNSS</strong>는 ΔZ→δ 장기 모니터링(IMG-103)이고, 본 센서는 <strong>접촉식 국부 δ</strong>(IMG-104)입니다. mid-span은 설계 대표 위치, GNSS 「경간 중앙」은 교각↔교각 중앙 1점으로 구분합니다.</p>",
       "data": {
         "headers": [
           "구분",
-          "센서",
-          "금지 혼동"
+          "측정 위치",
+          "물리량",
+          "Figure",
+          "nodeId"
         ],
         "rows": [
           [
-            "교량 처짐",
-            "처짐계 · LVDT",
-            "침하계 아님"
+            "GNSS",
+            "경간 중앙 상부 1점(교각↔교각)",
+            "ΔZ → δ",
+            "IMG-103",
+            "fields/bridge/deflection"
           ],
           [
-            "건축 처짐",
-            "LVDT · 광파",
-            "지반 침하 아님"
+            "LVDT",
+            "mid-span · 기준대",
+            "국부 δ",
+            "IMG-104",
+            "sensors/deflection-gauge"
           ],
           [
-            "동적",
-            "고속 샘플링",
-            "진동계 병행"
+            "와이어",
+            "하부 · 장경간",
+            "국부 δ",
+            "IMG-104",
+            "sensors/deflection-gauge"
           ],
           [
-            "절대",
-            "광파 · 프리즘",
-            "국부 δ 보완"
+            "자동광파",
+            "프리즘 측점",
+            "절대 좌표",
+            "",
+            "sensors/automatic-level"
           ]
         ]
       },
@@ -15043,12 +15105,16 @@ const CONTENT = {
           "a": "국부 연직 처짐에는 처짐계·LVDT가 정밀합니다. 받침 상대변위는 변위계 항목입니다."
         },
         {
+          "q": "교량 GNSS 처짐과 차이?",
+          "a": "교량 hero(IMG-103)는 경간 중앙 GNSS 1점·ΔZ→δ입니다. 처짐계는 LVDT·와이어 등 접촉식 국부 δ에 쓰입니다."
+        },
+        {
           "q": "와이어·레이저?",
           "a": "장경간·가시거리 조건에서 대체 가능합니다. 현장별 시방을 따릅니다."
         },
         {
-          "q": "교량 mid-span만?",
-          "a": "대표 처짐은 mid-span·1/4 span 등 설계·시방 위치에 설치합니다. 광파기 측점과 교차 검증합니다."
+          "q": "mid-span 위치?",
+          "a": "대표 처짐은 설계·시방 위치(주로 mid-span)에 설치합니다. GNSS 경간 중앙 1점과 역할을 구분합니다."
         }
       ],
       "sources": "<div class=\"tech-sources\" id=\"sources\"><h2 class=\"tech-sources__title\">근거 기준</h2><ul class=\"tech-sources__list\"><li class=\"tech-sources__item\">· <strong>KDS 11 10 15:2025</strong>「지반계측」 §4.2.1.6 — 처짐계·변위변환기 <span class=\"tech-sources__publisher\">(국가건설기준센터(KCSC))</span></li></ul><p class=\"tech-sources__disclaimer\">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>"
@@ -15056,13 +15122,8 @@ const CONTENT = {
     "sectionImages": {
       "installation": {
         "id": "IMG-104",
-        "caption": "처짐계 설치 — LVDT·와이어 (≠침하판)",
+        "caption": "처짐계 설치 — LVDT·와이어 (≠침하판·≠GNSS hero)",
         "figureNo": 2
-      },
-      "principle": {
-        "id": "IMG-103",
-        "caption": "교량 처짐 δ — 거더·광파 보조",
-        "figureNo": 3
       }
     },
     "metaDescription": "처짐계의 측정 목적, 적용 현장, 설치, 원리, 데이터 해석 및 관련 공종을 정리한 기술 자료입니다.",
@@ -17587,67 +17648,67 @@ const CONTENT = {
   "instruments/modes/overview": {
     "id": "instruments/modes/overview",
     "title": "계측 방식 개요",
-    "tagline": "수동→자동→원격→스마트→AI 5단계 계측 방식 계층",
+    "tagline": "수집·전송·운영 확장·런타임 모드 — KCS와 NMTI 운영 계층",
     "sections": {
-      "overview": "<p><strong>계측 방식</strong>은 현장에서 데이터를 취득·저장·전송·분석하는 운영 수준을 구분합니다. KCS는 <strong>수동계측</strong> 빈도를 기준으로 제시하며, 구간 특성에 따라 <strong>자동계측</strong>으로 전환할 수 있습니다. 그 위에 통신·플랫폼·AI 분석이 단계적으로 얹힙니다.</p><p>하위 방식은 상위에 포함됩니다. 예: 원격 자동계측은 자동 수집+통신이고, 스마트 계측은 여기에 경보·보고 운영이, AI 계측은 학습·예측 보조가 추가됩니다. 별도로 <strong>운영 모드</strong>(상시·이벤트·경보 상태)는 런타임 수집 주기·트리거·알림 동작을 설명합니다.</p>",
+      "overview": "<p><strong>계측 방식</strong>은 현장에서 데이터를 어떻게 취득·저장·전송·운영하는지를 구분하는 개념입니다. <strong>KDS·KCS</strong>는 <strong>수동계측</strong>·<strong>반자동계측</strong>·<strong>자동계측</strong> 등 <strong>데이터 수집방법</strong>과 계측 빈도를 기준으로 제시합니다. <strong>유선·무선·유·무선</strong>은 <strong>전송방법</strong>입니다.</p><p><strong>원격 자동계측</strong>·<strong>스마트 계측</strong>·<strong>AI 보조 분석</strong>은 KCS의 기본 계측방식 분류가 아니라, 자동 수집·전송 인프라 위에 얹는 <strong>NMTI 운영 확장 계층</strong>입니다. 별도로 <strong>운영 모드</strong>(<a href=\"#instruments/modes/normal-mode\">상시</a>·<a href=\"#instruments/modes/realtime-mode\">이벤트</a>·<a href=\"#instruments/modes/alarm-status\">경보</a>)는 런타임 수집 주기·트리거·알림 동작을 설명합니다.</p><p><em>단일 「5단계 진화」 화살표·상하 등급으로 표현하지 않습니다.</em></p>",
       "purpose": [
         {
-          "title": "단계 구분",
-          "body": "장비·인력·IT 요구 명확화"
+          "title": "KCS 수집방법",
+          "body": "수동·반자동·자동 선정"
         },
         {
-          "title": "계획 수립",
-          "body": "계측관리계획서 방식 선정"
+          "title": "전송 · 연동",
+          "body": "유선·무선·서버·표출"
         },
         {
-          "title": "병행",
-          "body": "수동 백업·교차 검증"
+          "title": "운영 확장",
+          "body": "원격·스마트·AI 보조 (법정 분류 아님)"
         },
         {
-          "title": "확장",
-          "body": "단계적 자동화·원격화"
+          "title": "병행 · 검증",
+          "body": "수동 백업·교차 확인"
         }
       ],
-      "siteLayout": "<p>현장에서는 <strong>측점·센서</strong> → <strong>데이터로거</strong>(또는 수동 리드아웃) → <strong>통신</strong>(원격 시) → <strong>서버·대시보드</strong> 순으로 구성합니다. 수동만 운영하는 구간은 현장 기록·엑셀·보고서로 종료하고, 자동·원격 구간은 로거·전원·LTE를 계측함에 통합합니다.</p>",
+      "siteLayout": "<p>현장 <strong>측점·센서</strong> → <strong>데이터로거</strong> 또는 <strong>수동 리드아웃</strong> → (선택) <strong>통신</strong> → <strong>서버·대시보드</strong>. 수동만 운영하는 구간은 현장 기록·보고서로 종료하고, 자동·원격 구간은 로거·전원·LTE를 계측함에 통합합니다.</p>",
       "installation": [
-        "공종 · 위험도 · 빈도 요구 분석",
-        "수동 기준선 · 초기치 확보",
-        "자동화 구간 · 센서 · 로거 설계",
-        "원격 · 스마트 플랫폼 요건 정의",
-        "AI 적용 시 데이터 · 라벨 · 검토 체계"
+        "공종 · 위험도 · KCS 빈도 요구 분석",
+        "수동 · 자동 수집방법 및 초기치 확보",
+        "로거 · 센서 · 전원 설계 (자동 구간)",
+        "전송 · 플랫폼 · 경보 요건 정의 (원격 · 스마트)",
+        "AI 보조 적용 시 데이터 · 라벨 · HITL 검토"
       ],
-      "principle": "<p>수동(현장 방문·기록) → 자동(로거·주기) → 원격(통신·서버) → 스마트(플랫폼·경보·보고) → AI(이상탐지·예측, HITL). 각 단계는 이전 단계 인프라를 전제로 합니다.</p>",
+      "principle": "<p><strong>① 데이터 수집방법 (KCS):</strong> 수동계측 · 반자동계측 · 자동계측</p><p><strong>② 데이터 전송방법:</strong> 유선 · 무선 · 유·무선 병행</p><p><strong>③ NMTI 운영 확장 (KCS 계측방식 분류 아님):</strong> 원격 자동계측 · 스마트 계측 · AI 보조 분석</p><p><strong>④ 운영 모드 (런타임):</strong> normal-mode · realtime-mode · alarm-status — 수집 주기·트리거·경보 상태</p>",
       "data": {
         "headers": [
-          "단계",
-          "추가 능력",
+          "구분",
+          "항목",
           "대표 구성"
         ],
         "rows": [
           [
-            "수동",
-            "현장 측정",
+            "KCS 수집",
+            "수동계측",
             "리드아웃 · 수준 · 광파"
           ],
           [
-            "자동",
-            "주기 수집",
-            "데이터로거 · 전원"
+            "KCS 수집",
+            "반자동 · 자동계측",
+            "데이터로거 · 전원 · MUX"
           ],
           [
-            "원격",
-            "원격 모니터링",
-            "LTE M2M · 서버 · 웹"
+            "전송",
+            "유선 · 무선",
+            "LTE M2M · VPN · 게이트웨이"
           ],
           [
-            "스마트",
-            "운영 자동화",
-            "경보 · 보고 · 로그"
+            "NMTI 확장",
+            "원격 · 스마트 · AI 보조",
+            "서버 · 경보 · 모델(HITL)"
           ],
           [
-            "AI",
-            "분석 보조",
-            "모델 · HITL"
+            "런타임",
+            "normal · realtime · alarm",
+            "주기 · 트리거 · 임계"
           ]
         ]
       },
@@ -17680,11 +17741,11 @@ const CONTENT = {
           ]
         ]
       },
-      "criteria": "<p>방식 선정은 KCS 빈도·발주처 요건·위험도에 따릅니다. 상위 방식 도입 시에도 수동 검증 병행을 유지합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
+      "criteria": "<p>방식 선정은 KCS 빈도·발주처 요건·위험도에 따릅니다. 원격·스마트·AI는 <strong>운영 확장</strong>이며 KCS 계측방식 등급이 아닙니다. 자동·원격 구간에서도 수동 검증 병행을 유지합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
       "faq": [
         {
-          "q": "가장 높은 단계가 필수?",
-          "a": "아닙니다. 현장은 수동+자동, 자동+원격 등 조합이 일반적입니다."
+          "q": "5단계 화살표가 맞나요?",
+          "a": "아닙니다. KCS는 수집방법(수동·자동)을 기준으로 하고, 원격·스마트·AI는 운영 확장 계층입니다. 현장은 수동+자동, 자동+원격 등 조합이 일반적입니다."
         },
         {
           "q": "AI가 관리기준 대체?",
@@ -17695,14 +17756,18 @@ const CONTENT = {
           "a": "자동·원격 구간에서도 통신·센서 장애 대비 수동 측정 계획을 유지합니다."
         },
         {
-          "q": "단계를 한 번에 도입?",
-          "a": "아닙니다. 수동 기준선 확보 후 자동→원격→스마트 순으로 단계적 확장이 일반적입니다."
+          "q": "한 번에 전부 도입?",
+          "a": "아닙니다. 수동 기준선 확보 후 자동 수집·전송·플랫폼을 단계적으로 확장합니다."
         }
       ],
       "sources": "<div class=\"tech-sources\" id=\"sources\"><h2 class=\"tech-sources__title\">근거 기준</h2><ul class=\"tech-sources__list\"><li class=\"tech-sources__item\">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3 — 계측 방식·빈도 <span class=\"tech-sources__publisher\">(국가건설기준센터(KCSC))</span></li><li class=\"tech-sources__item\">· <strong>KDS 11 10 15:2025</strong>「지반계측」 §1.3 — 관리 용어·기준 <span class=\"tech-sources__publisher\">(국가건설기준센터(KCSC))</span></li></ul><p class=\"tech-sources__disclaimer\">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>"
     },
     "sectionImages": {
-      "principle": "IMG-075"
+      "principle": {
+        "id": "IMG-075",
+        "caption": "계측 방식 — KCS 수집·전송·NMTI 확장·런타임 (≠ 5단계 등급)",
+        "figureNo": 2
+      }
     },
     "metaDescription": "계측 방식 개요의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
     "standardSources": [
@@ -17743,9 +17808,9 @@ const CONTENT = {
   "instruments/modes/manual": {
     "id": "instruments/modes/manual",
     "title": "수동 계측",
-    "tagline": "현장 방문·휴대 리드아웃 기반 계측",
+    "tagline": "KCS 수동계측 — 현장 방문·휴대 리드아웃",
     "sections": {
-      "overview": "<p><strong>수동 계측</strong>은 계측 담당자가 현장을 방문해 리드아웃기·수준기·광파기 등으로 측정값을 직접 취득·기록하는 방식입니다. KCS 계측 빈도 표에서 기본 기준으로 제시되며, <strong>자동계측</strong> 구간에서도 이상 작동 대비 수동 측정 병행이 요구됩니다.</p>",
+      "overview": "<p><strong>수동계측</strong>(KCS <strong>데이터 수집방법</strong>)은 계측 담당자가 현장을 방문해 리드아웃기·수준기·광파기 등으로 측정값을 직접 취득·기록하는 방식입니다. KCS 계측 빈도 표에서 기본 기준으로 제시되며, <strong>자동계측</strong> 구간에서도 이상 작동 대비 수동 측정 병행이 요구됩니다.</p><p>수동계측은 원격·스마트·AI보다 「낮은 단계」가 아니라, <strong>기준값 확인·정밀 검측·교차 검증</strong>에 필수인 수집방법입니다.</p>",
       "purpose": [
         {
           "title": "기준 확립",
@@ -17849,7 +17914,11 @@ const CONTENT = {
       "sources": "<div class=\"tech-sources\" id=\"sources\"><h2 class=\"tech-sources__title\">근거 기준</h2><ul class=\"tech-sources__list\"><li class=\"tech-sources__item\">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 표 3.5-1 — 수동계측 빈도 <span class=\"tech-sources__publisher\">(국가건설기준센터(KCSC))</span></li></ul><p class=\"tech-sources__disclaimer\">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>"
     },
     "sectionImages": {
-      "principle": "IMG-070"
+      "principle": {
+        "id": "IMG-070",
+        "caption": "KCS 수동계측 — 현장 방문·리드아웃·교차 검증",
+        "figureNo": 2
+      }
     },
     "metaDescription": "수동 계측의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
     "standardSources": [
@@ -17875,12 +17944,12 @@ const CONTENT = {
   "instruments/modes/automatic": {
     "id": "instruments/modes/automatic",
     "title": "자동 계측",
-    "tagline": "데이터로거 기반 현장 자동 수집",
+    "tagline": "KCS 자동계측 — 수집·저장·(필요 시) 전송·표출 연계",
     "sections": {
-      "overview": "<p><strong>자동 계측</strong>은 <strong>데이터로거</strong>가 센서 신호를 설정 주기로 자동 수집·저장하는 방식입니다. KCS에서는 구간 특성에 따라 수동계측에서 <strong>자동계측</strong>으로 전환할 수 있으며, 고위험 구간에는 <strong>자동화 계측방법</strong> 적용을 검토합니다.</p>",
+      "overview": "<p><strong>자동계측</strong>(KCS <strong>데이터 수집방법</strong>)은 센서 데이터를 설정 주기로 자동 수집·저장하고, 필요 시 유선·무선 통신을 통해 서버로 전송하여 표출·경보·보고 체계와 연계하는 운용방식입니다.</p><p>KCS에서는 구간 특성에 따라 수동계측에서 자동계측으로 전환할 수 있으며, 실시간 감시·자동경보, 원격지·접근 곤란, 센서 다수·인력 부족 등에서 자동화를 검토합니다. 현장 <strong>데이터로거</strong>는 자동 수집의 핵심 장비이나, 자동계측 전체를 로컬 저장만으로 한정하지 않습니다.</p>",
       "purpose": [
         {
-          "title": "연속성",
+          "title": "연속 수집",
           "body": "야간·휴일·고빈도 데이터"
         },
         {
@@ -17888,11 +17957,11 @@ const CONTENT = {
           "body": "측정자 편차 감소"
         },
         {
-          "title": "경보",
-          "body": "한계치 초과 자동 감지"
+          "title": "연계",
+          "body": "통신·표출·경보·보고"
         }
       ],
-      "siteLayout": "<p><strong>센서</strong> → <strong>데이터로거</strong> → 현장 SD 저장 → (선택) 통신. 무인 현장은 태양광·배터리·방수 함체와 함께 스캔 주기·경보 규칙을 설정합니다.</p>",
+      "siteLayout": "<p><strong>센서</strong> → <strong>데이터로거</strong> → 로컬 저장 → (선택) <strong>유선·무선 통신</strong> → 서버·표출·경보. 무인 현장은 태양광·배터리·방수 함체와 함께 스캔 주기·경보 규칙을 설정합니다.</p>",
       "installation": [
         "로거 채널 · 센서 매핑",
         "전원 · 태양광 · 배터리 설계",
@@ -17900,7 +17969,7 @@ const CONTENT = {
         "초기치 · 영점 안정화",
         "수동계측 백업 절차 유지"
       ],
-      "principle": "<p>센서 → 데이터로거 → (로컬 저장) → 필요 시 통신 모듈 순으로 구성합니다. 샘플링 주기·필터·캘리브레이션이 데이터 품질을 결정합니다. 무인 현장 전원은 <a href=\"/homepage/technology/instruments/power/solar-power/\">태양광</a>·<a href=\"/homepage/technology/instruments/power/battery/\">배터리</a> 설계가 핵심이며, AC 가능 구간은 <a href=\"/homepage/technology/instruments/power/overview/\">전원 체계</a> 전체를 함께 검토합니다.</p>",
+      "principle": "<p>센서 → 데이터로거 → 로컬 저장 → (필요 시) 통신 → 서버·표출·경보·보고 순으로 운용합니다. 샘플링 주기·필터·캘리브레이션이 데이터 품질을 결정합니다. 무인 현장 전원은 <a href=\"/homepage/technology/instruments/power/solar-power/\">태양광</a>·<a href=\"/homepage/technology/instruments/power/battery/\">배터리</a> 설계가 핵심이며, AC 가능 구간은 <a href=\"/homepage/technology/instruments/power/overview/\">전원 체계</a> 전체를 함께 검토합니다.</p>",
       "data": {
         "headers": [
           "요소",
@@ -17963,11 +18032,11 @@ const CONTENT = {
       "faq": [
         {
           "q": "자동과 원격의 차이?",
-          "a": "자동은 현장 수집까지, 원격 자동계측은 통신·서버·대시보드까지 포함한 상위 개념입니다."
+          "a": "자동계측은 KCS 수집방법(현장 수집·저장·연계)입니다. 원격 자동계측은 통신·서버·대시보드까지 포함한 NMTI 운영 확장 개념입니다."
         },
         {
-          "q": "필수 구성품?",
-          "a": "센서, 데이터로거, 전원이 최소 구성이며 통신은 원격 연동 시 추가합니다."
+          "q": "로거만 있으면 자동계측?",
+          "a": "로거는 핵심 장비입니다. 자동계측 운용은 수집·저장과 필요 시 전송·표출·경보·보고까지 포함합니다."
         },
         {
           "q": "스캔 주기는?",
@@ -17981,7 +18050,11 @@ const CONTENT = {
       "sources": "<div class=\"tech-sources\" id=\"sources\"><h2 class=\"tech-sources__title\">근거 기준</h2><ul class=\"tech-sources__list\"><li class=\"tech-sources__item\">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2 — 자동계측 전환 <span class=\"tech-sources__publisher\">(국가건설기준센터(KCSC))</span></li></ul><p class=\"tech-sources__disclaimer\">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>"
     },
     "sectionImages": {
-      "principle": "IMG-071",
+      "principle": {
+        "id": "IMG-071",
+        "caption": "KCS 자동계측 — 수집·저장·(선택) 전송",
+        "figureNo": 2
+      },
       "installation": "IMG-047"
     },
     "metaDescription": "자동 계측의 구성, 설치, 운영, 데이터 흐름 및 현장 유지관리를 정리한 기술 자료입니다.",
@@ -18008,9 +18081,9 @@ const CONTENT = {
   "instruments/modes/remote-automatic": {
     "id": "instruments/modes/remote-automatic",
     "title": "원격 자동계측",
-    "tagline": "통신·서버·대시보드까지 연결된 원격 자동계측",
+    "tagline": "NMTI 운영 확장 — 통신·서버·대시보드 원격 자동계측",
     "sections": {
-      "overview": "<p><strong>원격 자동계측</strong>은 현장 <strong>자동계측</strong> 데이터를 <strong>LTE M2M</strong>·유선 등으로 서버에 전송하고, 웹·모바일에서 실시간·주기 모니터링·경보하는 체계입니다. <strong>원격계측시스템</strong>이 대표 구현 형태입니다.</p>",
+      "overview": "<p><strong>원격 자동계측</strong>은 KCS 계측방식 분류가 아니라, 현장 <strong>자동계측</strong> 데이터를 <strong>LTE M2M</strong>·유선 등으로 서버에 전송하고 웹·모바일에서 모니터링·경보하는 <strong>NMTI 운영 확장 계층</strong>입니다. <strong>원격계측시스템</strong>이 대표 구현 형태입니다.</p>",
       "purpose": [
         {
           "title": "실시간성",
@@ -18092,7 +18165,7 @@ const CONTENT = {
           ]
         ]
       },
-      "criteria": "<p>링크 가용성·경보 지연·데이터 무결성을 관리합니다. OT·IT 보안을 분리합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
+      "criteria": "<p>링크 가용성·경보 지연·데이터 무결성을 관리합니다. OT·IT 보안을 분리합니다. 원격 자동계측은 KCS 수집방법 등급이 아닌 운영 확장입니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
       "faq": [
         {
           "q": "원격계측시스템과 동일?",
@@ -18114,7 +18187,11 @@ const CONTENT = {
       "sources": "<div class=\"tech-sources\" id=\"sources\"><h2 class=\"tech-sources__title\">근거 기준</h2><ul class=\"tech-sources__list\"><li class=\"tech-sources__item\">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.1.2 — 원격 전송·시스템 구축 <span class=\"tech-sources__publisher\">(국가건설기준센터(KCSC))</span></li></ul><p class=\"tech-sources__disclaimer\">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>"
     },
     "sectionImages": {
-      "principle": "IMG-072",
+      "principle": {
+        "id": "IMG-072",
+        "caption": "NMTI 운영 확장 — LTE·서버·원격 모니터링",
+        "figureNo": 2
+      },
       "installation": "IMG-048",
       "data": "IMG-056"
     },
@@ -18142,9 +18219,9 @@ const CONTENT = {
   "instruments/modes/smart": {
     "id": "instruments/modes/smart",
     "title": "스마트 계측",
-    "tagline": "통합 플랫폼·자동 보고·단계별 경보",
+    "tagline": "NMTI 운영 확장 — 플랫폼·경보·자동 보고",
     "sections": {
-      "overview": "<p><strong>스마트 계측</strong>은 원격 자동계측에 웹 대시보드·이벤트 로그·자동 보고서·단계별 경보 프로세스를 결합해 운영 효율을 높인 체계입니다. 다수 센서·다현장 데이터를 한 화면에서 관리하고, 관리기준 초과 시 정의된 조치 흐름으로 연계합니다.</p>",
+      "overview": "<p><strong>스마트 계측</strong>은 KCS 공식 계측방식 분류가 아니라, 원격 자동계측에 웹 대시보드·이벤트 로그·자동 보고서·단계별 경보 프로세스를 결합한 <strong>NMTI 운영 확장 계층</strong>입니다. 다수 센서·다현장 데이터를 한 화면에서 관리하고, 관리기준 초과 시 정의된 조치 흐름으로 연계합니다.</p>",
       "purpose": [
         {
           "title": "가시성",
@@ -18229,8 +18306,8 @@ const CONTENT = {
       "criteria": "<p>경보 정확도·오경보율·보고 적시성을 KPI로 관리합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
       "faq": [
         {
-          "q": "스마트와 AI 계측 차이?",
-          "a": "스마트는 규칙·기준 기반 자동화, AI 계측은 학습·예측·이상탐지를 추가한 확장 단계입니다."
+          "q": "스마트와 AI 보조 차이?",
+          "a": "스마트는 규칙·기준 기반 운영 자동화입니다. AI 보조 분석은 학습·예측·이상탐지를 추가한 확장입니다. 둘 다 KCS 계측방식 분류가 아닙니다."
         },
         {
           "q": "필수 요소?",
@@ -18248,7 +18325,11 @@ const CONTENT = {
       "sources": "<div class=\"tech-sources\" id=\"sources\"><h2 class=\"tech-sources__title\">근거 기준</h2><ul class=\"tech-sources__list\"><li class=\"tech-sources__item\">· <strong>KCS 11 10 15:2025</strong>「시공 중 지반계측」 §3.2.4 — 알람·경보 운영 (기준 연계) <span class=\"tech-sources__grade\">[D]</span> <span class=\"tech-sources__publisher\">(국가건설기준센터(KCSC))</span></li></ul><p class=\"tech-sources__disclaimer\">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>"
     },
     "sectionImages": {
-      "principle": "IMG-073",
+      "principle": {
+        "id": "IMG-073",
+        "caption": "NMTI 스마트 계측 — 플랫폼·단계별 경보 (KCS 분류 아님)",
+        "figureNo": 2
+      },
       "criteria": {
         "id": "IMG-054",
         "caption": "경보 단계 프로세스 — 정상·주의·경고·위험",
@@ -18286,9 +18367,9 @@ const CONTENT = {
   "instruments/modes/ai": {
     "id": "instruments/modes/ai",
     "title": "AI 계측",
-    "tagline": "학습·예측·이상탐지를 활용한 계측 데이터 분석",
+    "tagline": "NMTI AI 보조 분석 — 이상탐지·예측 (HITL)",
     "sections": {
-      "overview": "<p><strong>AI 계측</strong>은 축적된 계측 시계열에 머신러닝·통계 기법을 적용해 이상 패턴 탐지, 변위·침하 예측, 센서 고장·노이즈 구분, 관리기준 동적 조정을 지원하는 확장 단계입니다. 스마트 계측 플랫폼의 데이터 레이크·API 위에서 구현하는 것이 일반적입니다.</p>",
+      "overview": "<p><strong>AI 보조 분석</strong>은 KCS 계측방식이 아니라, 축적된 계측 시계열에 머신러닝·통계 기법을 적용해 이상 패턴 탐지, 변위·침하 예측, 센서 고장·노이즈 구분을 <strong>보조</strong>하는 NMTI 운영 확장입니다. 스마트 계측 플랫폼의 데이터 레이크·API 위에서 구현하는 것이 일반적이며, 관리기준·조치 판단을 AI 단독으로 확정하지 않습니다.</p>",
       "purpose": [
         {
           "title": "이상탐지",
@@ -18392,7 +18473,11 @@ const CONTENT = {
       "sources": "<div class=\"tech-sources\" id=\"sources\"><h2 class=\"tech-sources__title\">근거 기준</h2><ul class=\"tech-sources__list\"><li class=\"tech-sources__item\">· <strong>KDS 11 10 15:2025</strong>「지반계측」 — 일반 관행 — 기준 보조·예측 분석 <span class=\"tech-sources__grade\">[E]</span> <span class=\"tech-sources__publisher\">(국가건설기준센터(KCSC))</span></li></ul><p class=\"tech-sources__disclaimer\">※ 본 자료는 건설기준(KDS/KCS) 해설이며, 구체적 관리기준·허용값·시공 상세는 설계도서, 계측관리계획서, 발주처 지침을 우선 적용합니다.</p></div>"
     },
     "sectionImages": {
-      "principle": "IMG-074",
+      "principle": {
+        "id": "IMG-074",
+        "caption": "AI 보조 분석 — HITL·법정기준 보조 (≠ KCS 계측방식)",
+        "figureNo": 2
+      },
       "data": {
         "id": "IMG-060",
         "caption": "데이터 품질관리 흐름 — 수집·검증·보정·분석·보고",
@@ -18561,25 +18646,25 @@ const CONTENT = {
   "instruments/modes/realtime-mode": {
     "id": "instruments/modes/realtime-mode",
     "title": "실시간·이벤트 계측",
-    "tagline": "발파·급변·동적 이벤트 시 고속 연속 샘플링·즉시 전송",
+    "tagline": "런타임 이벤트 모드 — 트리거·고속 샘플링 (이벤트별 상이)",
     "sections": {
-      "overview": "<p><strong>실시간·이벤트 계측 모드</strong>는 발파, 급격한 변위, 굴착 단계 변화 등 **Trigger Event** 발생 시 초당 수십~수백 Hz로 고속 샘플링하고 즉시 전송하는 동적 모드입니다. <strong>동적 데이터로거</strong>·<strong>진동계</strong>·트리거 DAQ가 대표 장비입니다.</p><p>타임라인 한 지점에서 **조밀한 샘플링선**·**impulse/spike 파형**·경보 대시보드로의 즉시 전송이 시각 핵심입니다. 번개·폭발 CG는 사용하지 않습니다.</p>",
+      "overview": "<p><strong>실시간·이벤트 계측 모드</strong>는 발파, 급격한 변위, 굴착 단계 변화 등 <strong>Trigger Event</strong> 발생 시 <strong>이벤트 유형에 맞는</strong> 고속 샘플링·즉시 전송을 수행하는 <strong>런타임 운영 모드</strong>입니다. 모든 이벤트가 수십~수백 Hz로 동일하지 않으며, 발파·진동·급변·관리자 명령 등 <strong>계획서에 정의한 rate·duration</strong>을 따릅니다.</p><p><strong>동적 데이터로거</strong>·<strong>진동계</strong>·트리거 DAQ가 대표 장비입니다. <a href=\"#instruments/modes/normal-mode\">상시 모드</a>의 고정 주기 수집과 구분합니다.</p>",
       "purpose": [
         {
-          "title": "고속 샘플링",
-          "body": "Trigger 후 연속 고주파 수집"
+          "title": "이벤트별 rate",
+          "body": "발파·급변·명령마다 상이"
         },
         {
           "title": "이벤트 포착",
-          "body": "발파·급변·임계 초과 순간 기록"
+          "body": "트리거 전후 파형·peak"
         },
         {
           "title": "즉시 전송",
-          "body": "동적 벡터·파형 실시간 업로드"
+          "body": "동적 벡터·경보 연동"
         },
         {
-          "title": "대조",
-          "body": "normal-mode 평탄 추세와 명확히 구분"
+          "title": "복귀",
+          "body": "normal-mode로 전환"
         }
       ],
       "siteLayout": "<p>이벤트 발생: <strong>트리거</strong>(진동·임계·일정) → <strong>동적 DAQ/진동계</strong>(고속 샘플링) → 버퍼 저장 → <strong>실시간 서버·경보</strong>. 종료 후 <strong>normal-mode</strong> 복귀.</p>",
@@ -18651,6 +18736,10 @@ const CONTENT = {
       },
       "criteria": "<p>동적 모드 기준은 계약·법규·구조물·인체 진동 한계와 연동합니다. 파형 품질·클리핑·동기 오류를 검증합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
       "faq": [
+        {
+          "q": "모든 이벤트가 100Hz?",
+          "a": "아닙니다. 발파·진동은 100Hz급이 흔하나, 급변·명령·구조 응답은 계획서·장비에 따라 1~100Hz 등으로 다릅니다."
+        },
         {
           "q": "정적 로거로 충분한가요?",
           "a": "발파·충격 이벤트는 동적 DAQ 또는 이벤트형 진동계가 필요합니다. 정적 Scan Interval만으로는 파형을 놓칩니다."
@@ -18863,7 +18952,7 @@ const CONTENT = {
     "title": "데이터 관리",
     "tagline": "수집·저장·품질·보고·경보까지 계측 데이터 운영",
     "sections": {
-      "overview": "<p><strong>데이터 관리</strong>는 현장에서 수집된 계측값을 <strong>저장·검증·보고·경보</strong>까지 운영하는 계측 시스템 계층입니다. 센서·로거·통신 하드웨어와 별도로, <strong>결측·이상값 처리</strong>, 관리기준 대비 추세 분석, 자동 보고서, 담당자 알림을 체계화합니다.</p><p>NMTI는 제품 판매가 아니라 <strong>발주처·설계 기준에 맞는 데이터 운영 프로세스</strong> 구성·유지관리를 수행합니다. <strong>댐·제방 건설중 계측</strong> 현장에서는 층별 침하·수압·온도 QC, 일·주 보고, 준공 시 운영기 안전관리 DB 이관을 같은 계층에서 운영합니다. 고급 통합·예측 분석은 필요 시 <a href=\"#instruments/modes/smart\">스마트 계측</a>·<a href=\"#instruments/modes/ai\">AI 계측</a> 항목으로 확장할 수 있습니다.</p>",
+      "overview": "<p><strong>데이터 관리</strong>는 현장에서 수집된 계측값을 <strong>저장·검증·보고·경보</strong>까지 운영하는 계측 시스템 계층입니다. 센서·로거·통신 하드웨어와 별도로, <strong>결측·이상값 처리</strong>, 관리기준 대비 추세 분석, 자동 보고서, 담당자 알림을 체계화합니다.</p><p>NMTI는 제품 판매가 아니라 <strong>발주처·설계 기준에 맞는 데이터 운영 프로세스</strong> 구성·유지관리를 수행합니다. <strong>댐·제방 건설중 계측</strong> 현장에서는 층별 침하·수압·온도 QC, 일·주 보고, 준공 시 운영기 안전관리 DB 이관을 같은 계층에서 운영합니다. 고급 통합·예측 분석은 필요 시 <a href=\"#instruments/modes/smart\">스마트 계측</a>·<a href=\"#instruments/modes/ai\">AI 보조 분석</a> 항목으로 확장할 수 있습니다.</p>",
       "purpose": [
         {
           "title": "데이터 품질",
@@ -18957,7 +19046,7 @@ const CONTENT = {
       "criteria": "<p>데이터 관리 기준은 계측관리계획서·발주처 지침·KCS 보고·경보 요건을 따릅니다. 관리기준 수치는 설계도서를 우선 적용하며, 원격 플랫폼의 1차·2차 임계 매핑은 <a href=\"#sensors/remote-monitoring-system\">원격계측시스템</a>·<a href=\"#instruments/modes/alarm-status\">경보·알림 상태</a>와 정합합니다. KCS에 따라 현장 <strong>계측책임자</strong>가 계측관리계획서·측정·보고·기준 초과 대응을 총괄합니다.</p>",
       "faq": [
         {
-          "q": "스마트·AI 계측과의 차이?",
+          "q": "스마트·AI 보조와의 차이?",
           "a": "데이터 관리는 **운영·품질·보고·경보**의 기본 계층입니다. 스마트·AI는 통합 플랫폼·예측 분석 등 확장 기능으로, 프로젝트 요구 시 추가합니다."
         },
         {

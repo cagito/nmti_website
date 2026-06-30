@@ -148,7 +148,7 @@ export const CATEGORY_SECTIONS = {
     heroCaption:
       '교량 계측 전체 개념도 — 10종 센서(변형률·처짐·케이블 장력·풍하동·받침 등)',
     overview:
-      '<p><strong>교량</strong>은 교량 상부구조, 교각, 교대, 기초의 변위·경사·진동·응답을 측정하여 구조 안전성과 사용성을 평가하는 계측입니다. 교량은 차량하중, 온도 변화, 풍하중, 지반 침하, 지진·진동 영향에 따라 장·단기 거동이 발생합니다.</p><p>시공 중에는 가설 단계와 하중 재분배를 확인하고, 공용 중에는 구조물의 장기 변위와 이상 진동을 감시합니다. <strong>구조물경사계</strong>, <strong>변위계</strong>, <strong>처짐계</strong>, <strong>신축이음계</strong>, <strong>변형률계</strong>, <strong>케이블장력계</strong>, <strong>무응력계</strong>, <strong>진동계</strong>, <strong>풍향풍속계</strong>, <strong>지표침하계</strong>, <strong>GNSS</strong>, <strong>자동광파기</strong>를 교량 형식·목적에 맞게 조합합니다. 현수·사장·아치교는 <strong>케이블 장력</strong>이 핵심 항목입니다. 온도에 따른 정상 신축과 비정상 변형을 구분하는 것이 해석의 출발점입니다.</p>',
+      '<p><strong>교량</strong>은 상부구조·교각·교대·기초의 변위·경사·진동·응력을 측정하여 구조 안전성과 사용성을 평가하는 계측입니다. 차량하중, 온도, 풍하동, 지반 침하, 지진·진동에 따른 장·단기 거동을 구분해 해석합니다.</p><p>센서는 <strong>부재·위치·물리량</strong>에 맞게 선정하며, 아래 <strong>매핑 표</strong>와 각 리프 nodeId를 기준으로 조합합니다. 현수·사장·아치교는 <strong>케이블 장력</strong>이 핵심이고, 상부구조 처짐은 <strong>경간 중앙 GNSS(ΔZ→δ)</strong>와 <strong>접촉식 처짐계</strong>를 역할 분리합니다.</p>',
     purpose: [
       {
         title: '교량 통합 평가',
@@ -159,7 +159,7 @@ export const CATEGORY_SECTIONS = {
       },
       { title: '교각·교대 거동', accent: 'displacement', body: '변위·경사를 <strong>구조물경사계</strong>, <strong>변위계</strong>로 확인합니다.', sensors: ['sensors/tilt-meter', 'sensors/displacement-transducer'] },
       { title: '변형률·응력', accent: 'structure', body: 'PSC·강재 휨응력을 <strong>변형률계</strong>·<strong>무응력계</strong>로 관리합니다.', sensors: ['sensors/strain-gauge', 'sensors/stress-free-strain-gauge'] },
-      { title: '상부구조 처짐', accent: 'displacement', body: '처짐을 <strong>처짐계</strong>·<strong>변위계</strong>로 감시합니다.', sensors: ['sensors/deflection-gauge'] },
+      { title: '상부구조 처짐', accent: 'displacement', body: '경간 중앙 <strong>GNSS</strong> ΔZ→δ(hero)와 <strong>처짐계</strong> 국부 δ를 분리합니다.', sensors: ['sensors/gnss', 'sensors/deflection-gauge'] },
       { title: '케이블 장력', accent: 'load', body: '사장·아치 케이블을 <strong>케이블장력계</strong>로 추적합니다.', sensors: ['sensors/cable-tension-meter'] },
       { title: '받침부 변위', accent: 'displacement', body: '받침 슬라이드·회전을 <strong>변위계</strong>로 확인합니다.', sensors: ['sensors/displacement-transducer'] },
       { title: '신축이음량', accent: 'displacement', body: '이음부 상대 신축량을 <strong>신축이음계</strong>로 측정합니다.', sensors: ['sensors/joint-meter'] },
@@ -168,15 +168,15 @@ export const CATEGORY_SECTIONS = {
       { title: '동적 응답', accent: 'vibration', body: '차량·환경 진동을 <strong>진동계</strong>로 분석하고 유지관리 데이터를 축적합니다.', sensors: ['sensors/vibration-meter'] }
     ],
     principle:
-      '<p>교량 계측은 정적 변위(침하, 경사, 신축이음량, 처짐)와 동적 응답(진동·풍하동)을 구분합니다. 현수·사장·아치교는 <strong>케이블 장력</strong>(주파수법·가속 픽업)을 온도·풍·진동 데이터와 함께 해석합니다. 온도·일교차에 따른 신축이음량 변화는 정상 범주이나, 급격한 증가·비대칭 변형은 구조적 이상 징후일 수 있습니다. 재하시험 시에는 <strong>변형률계</strong>와 변위계로 하중-변형 관계를 확인합니다.</p>',
+      '<p>교량 계측은 <strong>정적 변위</strong>(침하·경사·신축·처짐)와 <strong>동적 응답</strong>(진동·풍하동)을 구분합니다. 처짐은 <a href="#fields/bridge/deflection">경간 중앙 GNSS</a>(장기 ΔZ)와 <a href="#sensors/deflection-gauge">접촉식 처짐계</a>(국부 δ)를 혼동하지 않습니다. 온도·일교차 신축은 정상 범주이나 급격한 증가·비대칭은 이상 징후일 수 있습니다.</p>',
     installation: [
-      '계측 목적(시공·공용·재하시험)에 따라 측점·센서 종류를 선정합니다.',
-      '교각·교대에 구조물경사계·변위계를 설치하고 기준점을 안정화합니다.',
-      '신축이음부에 신축이음계를 배치하고 온도 보정 기준을 마련합니다.',
-      '현수·사장·아치·닐슨교는 케이블 노출부에 케이블장력계를 설치하고 긴장·조정 후 기준 장력을 기록합니다.',
-      '기초·교대 주변에 지표침하계 또는 GNSS를 설치합니다.',
-      '진동·동적 특성 평가가 필요하면 진동계를 차량 통과 구간에 배치합니다.',
-      '자동광파기·원격계측으로 장기 모니터링 체계를 구축합니다.'
+      '계측 목적(시공·공용·재하시험)과 아래 매핑 표에서 부재·물리량별 nodeId를 선정합니다.',
+      '교각·교대: 구조물경사계·변위계 — fields/bridge/pier · abutment',
+      '상부구조 처짐: 경간 중앙 GNSS 1점 — fields/bridge/deflection',
+      '국부·재하시험 처짐: LVDT·와이어 — sensors/deflection-gauge',
+      '현수·사장·아치: 케이블장력계 — fields/bridge/cable-tension',
+      '신축이음·받침·기초침하·풍·진동: 매핑 표 nodeId 참조',
+      '자동광파·원격계측으로 장기 모니터링 체계를 구축합니다.'
     ],
     constructionPhases: {
       headers: ['단계', '중점 계측 항목', '확인 사항'],
@@ -190,14 +190,19 @@ export const CATEGORY_SECTIONS = {
       ]
     },
     data: {
-      headers: ['관심 항목', '주요 센서', '해석 포인트'],
+      headers: ['부재', '위치', '물리량', '대표 센서', 'nodeId'],
       rows: [
-        ['교각 경사', '구조물경사계', '부등침하·기초 불안 징후'],
-        ['처짐·변형률', '처짐계·변형률계', 'L/600·휨응력·크리프 보정'],
-        ['케이블 장력', '케이블장력계', '주파수법·장력 추세'],
-        ['신축이음량', '신축이음계', '늘음량(+)/줄음량(−)·온도 연계'],
-        ['받침·기초', '변위계·침하계', '슬라이드·부등침하'],
-        ['풍·동적', '풍향풍속계·진동계', '풍하동·고유진동수 변화']
+        ['거더·상부구조', '경간 중앙 상부', '처짐 δ(ΔZ)', 'GNSS', 'fields/bridge/deflection'],
+        ['거더·슬래브', 'mid-span·기준대', '처짐 δ', 'LVDT·와이어', 'sensors/deflection-gauge'],
+        ['교각', '상부·기초 연결', '경사·변위', '구조물경사계·변위계', 'fields/bridge/pier'],
+        ['교대', '받침·이음부', '경사·변위', '구조물경사계·변위계', 'fields/bridge/abutment'],
+        ['PSC·강재', '휨·전단부', '변형률·응력', '변형률계·무응력계', 'fields/bridge/strain-stress'],
+        ['주케이블', '케이블 노출부', '인장력 T', '케이블장력계', 'fields/bridge/cable-tension'],
+        ['받침', '슬라이드·회전', '상대변위', '변위계', 'fields/bridge/bearing-displacement'],
+        ['신축이음', '이음부', '신축량', '신축이음계', 'fields/bridge/expansion-joint'],
+        ['기초', '교각·교대 하부', '침하', '지표침하계·GNSS', 'fields/bridge/foundation-settlement'],
+        ['교면·주탑', '풍하동 구간', '풍·진동', '풍향풍속·진동계', 'fields/bridge/wind · vibration'],
+        ['전체', '—', '온도·지진', '온도계·진동계', 'fields/bridge/temperature · seismic']
       ]
     },
     criteria:
@@ -205,7 +210,8 @@ export const CATEGORY_SECTIONS = {
     faq: [
       { q: '시공 중과 공용 중 계측의 차이는?', a: '시공 중에는 가설·콘크리트 양생·하중 재분배를, 공용 중에는 장기 침하·피로·온도 신축·이상 진동을 중점으로 봅니다.' },
       { q: '신축이음량이 크게 나오면?', a: '온도·계절 변화에 따른 정상 신축인지, 지지 조건 악화·구속 부족인지 과거 데이터·온도와 함께 판단합니다.' },
-      { q: '처짐과 기초침하를 어떻게 구분하나요?', a: '처짐계는 거더·교면 연직변위(δ)이고, 기초침하는 지표침하계·광파·GNSS로 교각·교대 기초를 봅니다. 해석·관리기준을 분리합니다.' },
+      { q: '처짐과 기초침하를 어떻게 구분하나요?', a: '경간 중앙 GNSS·처짐계는 거더·교면 δ(상부구조)이고, 기초침하는 지표침하계·GNSS로 교각·교대 기초를 봅니다. nodeId·관리기준을 분리합니다.' },
+      { q: 'GNSS 처짐과 처짐계 차이?', a: 'deflection=경간 중앙 GNSS 1점·ΔZ→δ(IMG-103). deflection-gauge=LVDT·와이어 국부 δ(IMG-104). 매핑 표 참조.' },
       { q: '대구 3호선 유지관리 사례와의 관계는?', a: '변형률·처짐·신축이음·케이블 장력·풍하동 등 10종 센서 통합 모니터링 사례입니다. 현장별 형식·기준은 설계·계측관리계획서를 따릅니다.' },
       {
         q: '단순 교량에도 케이블 장력이 필요한가요?',
@@ -411,7 +417,7 @@ export const CATEGORY_SECTIONS = {
   'fields/dam': {
     tagline: '댐·제방 안전관리 — 저수위·침투·누수·변형 응답의 통합 계측',
     overview:
-      '<p><strong>댐 안전관리 계측 체계</strong>는 저수위 변화에 따른 제체·기초의 침투, 누수, 변형 응답을 종합 관찰하여 이상 징후를 조기에 판단하는 안전관리 시스템입니다. 계측 항목은 센서 설치 위치, 측정값, 해석값, 관리기준, 조치 절차가 상호 연계되도록 구성합니다.</p><p><strong>건설중 계측</strong>(<a href="#fields/dam/construction-phase">축조·성토 단계</a>)은 준공 후 누수·간극수압 안전관리와 구분하며, 원격계측·데이터관리 SW로 QC·보고를 연계합니다.</p><p>본 계측 체계는 댐의 저수위 변화에 따른 제체 및 기초지반의 수리·역학적 응답을 관찰하기 위한 안전관리 시스템입니다. 주요 계측 항목은 <strong>저수위</strong>, <strong>간극수압</strong>, <strong>누수량</strong>, <strong>탁도</strong>, <strong>침하</strong>, <strong>수평변위</strong>이며, 각 계측값은 저수위·강우·지진 등 외력 조건과 연계하여 분석합니다.</p>',
+      '<p><strong>댐 안전관리 계측 체계</strong>는 저수위 변화에 따른 제체·기초의 침투, 누수, 변형 응답을 종합 관찰하여 이상 징후를 조기에 판단하는 안전관리 시스템입니다. 계측 항목은 센서 설치 위치, 측정값, 해석값, 관리기준, 조치 절차가 상호 연계되도록 구성합니다.</p><p><strong>건설중 계측</strong>(<a href="#fields/dam/construction-phase">축조·성토 단계</a>)은 준공 후 누수·간극수압 안전관리와 구분하며, 원격계측·데이터관리 SW로 QC·보고를 연계합니다.</p><p><strong>수리 해석 용어:</strong> <strong>filter tip</strong>(필터 구간 끝)=간극수압 측정 지점이며 침윤선과 동일하지 않습니다. <strong>piezometric head</strong>(간극수압 수두)는 관측공·필터 위치의 수압을 뜻하며 <strong>지하수위(G.W.L)</strong>와 구분합니다. 침윤선은 간극수압·수위·지층 데이터를 종합해 <strong>추정</strong>합니다.</p>',
     purpose: [
       { title: '수위·간극수압', body: '저수위 변화에 따른 제체·기초 <strong>간극수압</strong>과 수두 조건을 관리합니다.' },
       { title: '침투·누수', body: '<strong>간극수압계</strong>·해석 침윤선과 하류 <strong>누수량·탁도</strong>로 침투·누수 이상을 판단합니다.' },

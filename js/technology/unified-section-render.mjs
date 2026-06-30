@@ -188,6 +188,29 @@ function renderSectionFigure(image, renderFigure) {
   return renderFigure(image);
 }
 
+/** @param {object} data */
+export function buildSectionNavHtml(data) {
+  const titles = unifiedTitlesFor(data);
+  const items = UNIFIED_KEYS.map(function (key, index) {
+    if (!hasUnifiedContent(key, data)) return '';
+    return (
+      '<li class="tech-section-nav__item"><a class="tech-section-nav__link" href="#' +
+      key +
+      '">' +
+      escapeHtml(String(index + 1) + '. ' + titles[index]) +
+      '</a></li>'
+    );
+  })
+    .filter(Boolean)
+    .join('');
+  if (!items) return '';
+  return (
+    '<nav class="tech-section-nav" aria-label="본문 목차"><ol class="tech-section-nav__list">' +
+    items +
+    '</ol></nav>'
+  );
+}
+
 /**
  * @param {object} data
  * @param {(nodeId: string) => string} linkBuilder
