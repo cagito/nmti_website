@@ -22,10 +22,10 @@ export const IMAGE_ASSETS = {
     title: '흙막이 계측 설치 대표 단면도',
     webp: 'assets/images/technology/IMG-002_흙막이-계측-설치-대표-단면도.webp',
     alt: '흙막이 계측 설치 대표 단면도 - 배면지반 지하수 지보재 인접구조물 계측',
-    caption: '흙막이 계측 설치 대표 단면 — 11종·ANC-CLOCK (v6)',
+    caption: '흙막이 계측 설치 대표 단면 — SOE 3분할·ANC-CLOCK·11종 (v8)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-002 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-002 · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-002 · docs/199-IMG-002-v8-재생성-기록.md · docs/52 · docs/180 · docs/181 §IMG-002',
     prohibitedErrors: [
       '건물 기초 아래 굴착 공동·배면 빈 공간',
       '버팀보·굴착저가 배면·건물 아래',
@@ -123,10 +123,10 @@ export const IMAGE_ASSETS = {
     title: '굴착 단계별 계측 흐름도',
     webp: 'assets/images/technology/IMG-006_굴착-단계별-계측-흐름도_1단계최종굴착계측.webp',
     alt: '굴착 단계별 계측 흐름도 - 4단계 굴착저면·지중경사계·지하수위·어스앵커 하중계',
-    caption: '굴착 단계별 계측 흐름도 v4 — 4단계·IPI·G.W.L·어스앵커 LC(③④)',
+    caption: '굴착 단계별 계측 흐름도 v5 — 4단계·IPI·G.W.L·어스앵커 LC(③④)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-006 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-006 · docs/169-IMG-006-v4-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-006 · docs/200-IMG-006-v5-재생성-기록.md · docs/58 · docs/180 · docs/181 §IMG-006',
     prohibitedErrors: [
       '버팀보·지반앵커·지보재 하중계',
       '수평(3·9시)·5시 앵커 관통',
@@ -335,7 +335,7 @@ export const IMAGE_ASSETS = {
     caption: '평면활동면 계측 해석도 — 암반사면 평면파괴와 계측기 배치',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-017',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-017 · docs/193-IMG-017-v6-재생성-기록.md · docs/184',
     prohibitedErrors: [
       '무한사면 안정식으로 활동면 확정',
       '변위 최대지점 = 평면활동면 단정',
@@ -770,7 +770,7 @@ export const IMAGE_ASSETS = {
     caption: '진동계 설치 개념도 — 구조물 또는 지반 진동 센서와 3축 방향',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-041',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-041 · docs/194-IMG-041-v6-재생성-기록.md · docs/184',
     prohibitedErrors: [
       '가속도(m/s² 또는 mm/s) 혼합 표기'
     ],
@@ -1187,7 +1187,7 @@ export const IMAGE_ASSETS = {
     caption: '현장 계측 전원 통합 구성도 — 무인 구간·AC 구간·공용 배터리',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-065',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-065 · docs/195-IMG-065-v3-재생성-기록.md · docs/184',
     prohibitedErrors: [],
     wireframeReplace: false,
     requiresReaudit: false,

@@ -9,11 +9,11 @@
 | ID | 등급 | status | 검수일 | P | cite (KDS/KCS) | requiresReaudit |
 |----|------|--------|--------|---|----------------|-----------------|
 | IMG-001 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-002 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-002 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-003 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-004 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-004 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-005 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-006 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
+| IMG-006 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-007 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-008 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-009 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
@@ -42,7 +42,7 @@
 | IMG-032 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-033 | PASS | reviewed | 2026-06-26 | P0 | KCS 54 20 25:2018 §3.2 | — |
 | IMG-034 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-035 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-035 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-036 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-037 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-038 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
@@ -72,7 +72,7 @@
 | IMG-062 | PASS | reviewed | 2026-06-22 | P2 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-063 | PASS | reviewed | 2026-06-29 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-064 | PASS | reviewed | 2026-06-30 | P2 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
-| IMG-065 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.1.2 | — |
+| IMG-065 | PASS | reviewed | 2026-06-30 | — | KCS 11 10 15:2025 §3.1.2 | — |
 | IMG-066 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.1.2 | — |
 | IMG-067 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.1.2 | — |
 | IMG-068 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.1.2 | — |
@@ -167,15 +167,15 @@
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | PNG canonical v7 · 11종·②③ 이형·앵커 두부·토압 방향. legacySvgSource 수정 금지 (doc 16). |
+| 기술 오류 | v8 ai-reviewed P0 REGENERATE (2026-06-30) — SOE 3분할·ANC-CLOCK·LC 굴착측 두부·G.W.L 차수/양수·piezo≠piezometer·앵커+버팀보 역할 구분 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Phase 6 formal — v7 PNG·doc 19 Q1~Q7 |
-| 검수일 | 2026-06-22 |
-| 금지 대조 | EXC-01~05·§3.1.1 — doc 19 Q1~Q7 육안 0건 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v8 ai-reviewed — ANC-CLOCK·piezo≠piezo·G.W.L 차수/양수·SOE 3분할 |
 
 **금지 오류 대조:**
 
@@ -237,14 +237,14 @@
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | S1-B v8 ai-reviewed PASS (2026-06-30) — ANC-CLOCK 굴착측 두부 LC·반력판-LC-헤드·T/P 분리·자유장/정착장 · prohibitedErrors 유지 |
+| 기술 오류 | v3: 굴착측 두부 조립(지지링·반력판–LC–헤드)·T/P 분리·정착장 내부 금지. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | agent |
-| 검수일 | 2026-06-30 |
+| 검수자 | Phase 6 formal — Pillow v3·doc 26 EXC-01 |
+| 검수일 | 2026-06-22 |
 | 금지 대조 | EXC-01·§3.2 — anchor_head_draw 5-panel |
 
 **금지 오류 대조:**
@@ -309,15 +309,15 @@
 | 관련 계측기 | 분야별/가시설 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 v4 ai-reviewed — 4단계 굴착저면·어스앵커 LC만·ANC-CLOCK·운영루프 · prohibitedErrors 유지 |
+| 기술 오류 | v5 ai-reviewed P0 (2026-06-30) — 4단계 굴착저면·어스앵커 LC만·ANC-CLOCK·운영루프·IMG-002/004 역할분리 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
-| 검수일 | 2026-06-29 |
-| 금지 대조 | §10·IMAGE_REVIEW_LOG 육안 체크리스트 완료 |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v5 ai-reviewed — 버팀보 LC·로거 hero·002 중복 없음 |
 
 **금지 오류 대조:**
 
@@ -608,7 +608,7 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | S1-A v6 ai-reviewed PASS (2026-06-30) — INTERP-01 추정 원호활동면·전단변형 집중 구간·안정해석 검토 분리·단일 IPI 확정 금지 · prohibitedErrors 유지 |
+| 기술 오류 | S1-A v6 ai-reviewed PASS (2026-06-30) — INTERP-01 추정 원호활동면·전단변형 집중 구간·안정해석 검토 분리·단일 IPI 확정 금지 · prohibitedErrors 유지 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -636,7 +636,7 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v5 ai-reviewed INTERP-01 — 추정 평면활동면·안정성 검토식·IPI 3소·G.W.L·U 분리 · ≠활동면 확정 · LOGO-01 |
+| 기술 오류 | v6 ai-reviewed PASS (2026-06-30) — INTERP-01·IPI 3소 BORE-GL-01·안정성 검토식 분리 · prohibitedErrors 유지 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -1157,14 +1157,14 @@
 | 관련 계측기 | 센서별/하중계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 ai-reviewed PASS (2026-06-30) — STR-01·LOAD-02 버팀보 접합부 LC·앵커 ANC-CLOCK T/P · prohibitedErrors 유지 |
+| 기술 오류 | Phase 5 v2: ① 띠장-버팀보 접합부 축압축 ② 앵커 두부 LC. |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | agent |
-| 검수일 | 2026-06-30 |
+| 검수자 | Phase 5 Pillow v2 — STR-01 strut vs anchor LC |
+| 검수일 | 2026-06-22 |
 | 금지 대조 | §3.2·§3.7·STR-01 |
 
 **금지 오류 대조:**
@@ -1332,7 +1332,7 @@
 | 관련 계측기 | 센서별/진동계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v5 ai-reviewed — 구조물 고정형·지반 매설형·3축 측정축·가속도(m/s²·gal·g) vs PPV(mm/s) 분리 · ≠097 · LOGO-01 |
+| 기술 오류 | v6 ai-reviewed PASS (2026-06-30) — 구조물/지반 매설형·짧은 well·가속도 vs PPV 분리 · ≠097 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2010,14 +2010,14 @@
 | 관련 계측기 | 시스템/전원 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | render:power v2 — 주·백업·보조·DC분배·LVD · docs/112 §11 · interim FT-C PASS |
+| 기술 오류 | v3 ai-reviewed PASS (2026-06-30) — FT-C 전원 블록도·함체 실루엣·태양광/풍력/AC/배터리/LVD |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
 
 <a id="IMG-066"></a>
 
@@ -2139,7 +2139,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 현장방문·리드아웃·측정일지 · redline v2 · docs/36 §4.8② · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 Sprint2 v2 — 현장방문·리드아웃·측정일지 · redline v2 · docs/36 §4.8② · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2161,7 +2161,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 센서→로거→현장저장·수집주기 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 Sprint2 v2 — 센서→로거→현장저장·수집주기 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2183,7 +2183,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 현장→LTE→서버→대시보드 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 Sprint2 v2 — 현장→LTE→서버→대시보드 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2205,7 +2205,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 플랫폼·경보·보고·로그 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 Sprint2 v2 — 플랫폼·경보·보고·로그 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2217,7 +2217,7 @@
 
 <a id="IMG-074"></a>
 
-### IMG-074 AI 계측 개념도
+### IMG-074 AI 보조 분석 개념도
 
 | 항목 | 내용 |
 |------|------|
@@ -2227,7 +2227,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 이상탐지·HITL 검토 · redline v2 · 뇌 금지 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 Sprint2 v2 — 이상탐지·HITL 검토 · redline v2 · 뇌 금지 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2239,7 +2239,7 @@
 
 <a id="IMG-075"></a>
 
-### IMG-075 계측 방식 5단계 계층도
+### IMG-075 계측 방식 3층 분류도
 
 | 항목 | 내용 |
 |------|------|
@@ -2249,7 +2249,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 5단계 계층·포함관계 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) |
+| 기술 오류 | P0 Sprint2 v2 — 5단계 계층·포함관계 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2443,6 +2443,7 @@
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
 | 검수일 | 2026-06-30 |
+| 금지 대조 | v5 ai-reviewed — 균열계·IPI·ATS·VW 라벨 없음 · 변형률+하중계+온도만 |
 
 **금지 오류 대조:**
 
@@ -3046,7 +3047,7 @@
 | 관련 계측기 | 센서/처짐계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 ai-reviewed (2026-06-29): 와이어식·LVDT 처짐 δ, ≠침하계, IMG-103 GNSS 분리. 정본 docs/150. BRI-DEF. · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 와이어식·LVDT 처짐 δ, ≠침하계, IMG-103 GNSS 분리. 정본 docs/150. BRI-DEF. · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
