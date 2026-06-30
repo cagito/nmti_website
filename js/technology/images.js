@@ -1694,7 +1694,7 @@ export const IMAGE_ASSETS = {
     caption: '건축공사 계측 전체 개념도 — LVDT·변형률·균열·경사·하중 (KCS 3.9)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/image-knowledge/IMG-100-건축공사-계측-전체-개념도.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-100',
     prohibitedErrors: [
       'fields/building hero에 IMG-022 사용 (BLD-H-01)',
       '침하계·성토 Figure — 건축 hero 금지'

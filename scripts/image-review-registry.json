@@ -4219,21 +4219,21 @@
       "fields/building/adjacent-building hero에 IMG-005 사용 (BLD-ADJ-01)",
       "굴착 흙막이·버팀보 주 배경"
     ],
-    "notes": "DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략",
+    "notes": "v5 ai-reviewed BLD-ADJ-01·DISP-ATS-01·와이어식주계측·P0-1 2026-06-30",
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
-    "productionMethodTarget": "pillow",
+    "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P1",
     "hero": true,
     "renderScript": "render-building-audit-fixes.py",
     "prohibitedVerified": true,
-    "prohibitedVerifiedDate": "2026-06-26",
-    "prohibitedVerifiedNote": "§10·IMAGE_REVIEW_LOG 육안 체크리스트 완료",
+    "prohibitedVerifiedDate": "2026-06-30",
+    "prohibitedVerifiedNote": "v5 ai-reviewed — BLD-ADJ-01·와이어식·ATS inset만",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor Agent",
-      "date": "2026-06-27",
-      "notes": "DISP-ATS-01 v4 — 와이어식·센서 주계측 · ATS 보조·생략",
+      "reviewer": "agent",
+      "date": "2026-06-30",
+      "notes": "v5 ai-reviewed BLD-ADJ-01·DISP-ATS-01·와이어식주계측·P0-1 2026-06-30",
       "gates": [
         "V1",
         "V2",
@@ -4245,7 +4245,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-30",
     "caption": "건축공사 주변건물 계측 — 균열·경사·와이어식 변위(주)",
     "alt": "건축공사 주변건물 계측 - 신축 현장 인접 건물 균열 경사",
     "imageKnowledgeTopic": "17-건축공사-계측-배치.md"
