@@ -8,7 +8,7 @@
 | ID | 판정 | 사유 | 조치 |
 |----|------|------|------|
 | **IMG-112** | **REGENERATE** | v1 **ATS·프리즘 hero** — RAIL-CONST-01 · DISP-ATS-01 | **v2 PASS** |
-| IMG-111 | 유지 | 내공·천단·지표 분리 양호 · 제목「시공단계」→「건설중」은 선택 polish | 보류 |
+| IMG-111 | **v2 PASS** | v1 제목「시공단계」·침하핀 혼동 | **v2** 건설중 제목·3영역 분리 |
 | IMG-113 | 유지 | 센서·로거 구성 양호 · 제목「건설기준」→「건설중」은 선택 polish | 보류 |
 
 ## IMG-112 v2
@@ -18,6 +18,12 @@
 - **변경:** ATS·프리즘 제거 → 노반·기초 침하계 + 경사계(레일 web) + 데이터로거
 - **제목:** `철도·고속철도 건설중 계측 개념도`
 
+## IMG-111 v2
+
+- **source:** `assets/images/technology/source/IMG-111_터널-건설중-계측-개념도_v2.webp`
+- **canonical:** `IMG-111_external.webp`
+- **변경:** 제목·패널 **건설중** · 내공변위·천단침하·지표침하 3영역 분리
+
 ## Exit
 
-- [x] `register:figure` · `sync:images` · `audit:images` · `validate:ats-scope:strict`
+- [x] IMG-112 v2 · IMG-111 v2 — `register:figure` · `sync:images` · `audit:images`
