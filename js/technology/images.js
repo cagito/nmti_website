@@ -103,7 +103,7 @@ export const IMAGE_ASSETS = {
     caption: '주변건물 균열·경사 계측도 — 굴착 주변 건물의 균열계와 경사계 배치',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-005 · docs/203-IMG-005-v4c-재생성-기록.md · docs/56 · docs/202 · docs/181 §IMG-005',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-005 · docs/209-ATS-SUB-01-P1-재생성-기록.md · docs/56 · docs/207 · docs/181 §IMG-005',
     prohibitedErrors: [
       '건물↔벽체 이격 L 구간 허공·배면 토사 없음',
       '건물 기초가 굴착저 높이 — 원 지표면 위 안착 아님',
@@ -233,7 +233,7 @@ export const IMAGE_ASSETS = {
     caption: '교각 변위·경사 계측도 — 교각 상하부 경사계와 변위계 설치 표현',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-012',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-012 · docs/209-ATS-SUB-01-P1-재생성-기록.md · docs/45 · docs/207',
     prohibitedErrors: [
       '교각 측면 단독 수평 변위계 (BRI-PIER-01)',
       '변위계에 기준·상대측정 대상 없음 (BRI-PIER-02)',
@@ -255,7 +255,7 @@ export const IMAGE_ASSETS = {
     caption: '교량 기초 침하 계측 배치도 — 침하 측점·지표침하계·자동광파기·지하수위계(보조)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-013',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-013 · docs/209-ATS-SUB-01-P1-재생성-기록.md · docs/47 · docs/207',
     prohibitedErrors: [
       '기초 모서리 「침하계」 T자·작은 장치 (BRI-FND-01)',
       '침하 측점·지표침하계 미구분 (BRI-FND-02~03)',
@@ -294,10 +294,10 @@ export const IMAGE_ASSETS = {
     title: '사면 계측 전체 개념도',
     webp: 'assets/images/technology/IMG-015_사면-계측-전체-개념도_활동면지중경사계지하수위계.webp',
     alt: '사면 계측 전체 개념도 - 활동면, 센서형 다단식 지중경사계, 지하수위계 배치',
-    caption: '사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · (선택) 광학망',
+    caption: '사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · 프리즘(선택)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-015 · docs/205-IMG-015-v4-재생성-기록.md · docs/INSTRUMENTATION_DRAWING_RULES.md · docs/202',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-015 · docs/211-ATS-SUB-01-P2-재생성-기록.md · docs/205 · docs/INSTRUMENTATION_DRAWING_RULES.md',
     prohibitedErrors: [
       '사면 꼭대기·활동 구간에 자동광파기 본체',
       '지중경사계 Base가 활동면만 간신히 통과',
@@ -1546,7 +1546,7 @@ export const IMAGE_ASSETS = {
     caption: '사면 구조물 변위 계측 — 배면 사면 와이어식 변위계 · 옹벽 프리즘 · ΔX/ΔY',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-090 · docs/129-사면-옹벽-와이어식-변위계-배면사면-표준.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-090 · docs/211-ATS-SUB-01-P2-재생성-기록.md · docs/129-사면-옹벽-와이어식-변위계-배면사면-표준.md',
     prohibitedErrors: [
       '옹벽 전면·벽체에 와이어식 변위계 부착 (SLO-WIRE-01)',
       'ATS만 hero — 와이어식 변위계 없음 (DISP-ATS-01)',

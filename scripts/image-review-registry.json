@@ -674,12 +674,12 @@
   "IMG-015": {
     "id": "IMG-015",
     "alt": "사면 계측 전체 개념도 - 활동면, 센서형 다단식 지중경사계, 지하수위계 배치",
-    "caption": "사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · (선택) 광학망",
+    "caption": "사면 계측 전체 개념도 — IPI·침하계·지하수위·간극수압(주) · 프리즘(선택)",
     "title": "사면 계측 전체 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-015 · docs/205-IMG-015-v4-재생성-기록.md · docs/INSTRUMENTATION_DRAWING_RULES.md · docs/202",
-    "reviewDate": "2026-06-29",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-015 · docs/211-ATS-SUB-01-P2-재생성-기록.md · docs/205 · docs/INSTRUMENTATION_DRAWING_RULES.md",
+    "reviewDate": "2026-06-30",
     "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
@@ -692,7 +692,7 @@
       "확정 원호 활동면",
       "활동면 아래 3~5m 일반값"
     ],
-    "notes": "v4 ai-reviewed DISP-ATS-01·BORE-GL-01·활동면추정·SLOPE-01 · 2026-06-29",
+    "notes": "ATS-SUB-01 P2 v5 ai-reviewed (2026-06-30) — ATS inset·시준선 제거 · BORE-GL-01·활동면추정",
     "prohibitedVerified": true,
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
@@ -704,8 +704,8 @@
     "visualReview": {
       "grade": "PASS",
       "reviewer": "agent",
-      "date": "2026-06-29",
-      "notes": "v4 ai-reviewed DISP-ATS-01·BORE-GL-01·활동면추정·SLOPE-01 2026-06-29",
+      "date": "2026-06-30",
+      "notes": "ATS-SUB-01 P2 v5",
       "gates": [
         "V1",
         "V2",
@@ -716,7 +716,7 @@
         "V7"
       ]
     },
-    "migrationCompletedDate": "2026-06-29",
+    "migrationCompletedDate": "2026-06-30",
     "zipAuditId": "ZIP-AUD-03",
     "prohibitedVerifiedDate": "2026-06-26",
     "prohibitedVerifiedNote": "Phase Z ZIP-AUD fix — Pillow v+1",
@@ -4326,8 +4326,8 @@
     "title": "사면 구조물 변위 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-090 · docs/129-사면-옹벽-와이어식-변위계-배면사면-표준.md",
-    "reviewDate": "2026-06-29",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-090 · docs/211-ATS-SUB-01-P2-재생성-기록.md · docs/129-사면-옹벽-와이어식-변위계-배면사면-표준.md",
+    "reviewDate": "2026-06-30",
     "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
@@ -4337,7 +4337,7 @@
       "ATS 옹벽·사면 꼭대기 부착",
       "흙막이 굴착·교량 풍경 맥락"
     ],
-    "notes": "v5 ai-reviewed SLO-WIRE-01·배면와이어·옹벽프리즘·ΔXΔY · 2026-06-29",
+    "notes": "ATS-SUB-01 P2 v6 ai-reviewed (2026-06-30) — SLO-WIRE-01 · 와이어 배면 · 프리즘 옹벽 · ATS 없음",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-27",
     "prohibitedVerifiedNote": "Phase B v5 ai-reviewed — redline 서명",
@@ -4350,8 +4350,8 @@
     "visualReview": {
       "grade": "PASS",
       "reviewer": "agent",
-      "date": "2026-06-29",
-      "notes": "v5 ai-reviewed SLO-WIRE-01·배면와이어·옹벽프리즘·ΔXΔY 2026-06-29",
+      "date": "2026-06-30",
+      "notes": "ATS-SUB-01 P2 v6",
       "gates": [
         "V1",
         "V2",
@@ -4363,7 +4363,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-29",
+    "migrationCompletedDate": "2026-06-30",
     "wireframeReplaceDate": "2026-06-26",
     "wireframeClearedDate": "2026-06-27",
     "caption": "사면 구조물 변위 계측 — 배면 사면 와이어식 변위계 · 옹벽 프리즘 · ΔX/ΔY",

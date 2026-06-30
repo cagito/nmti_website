@@ -22,7 +22,7 @@
 | IMG-012 | PASS | reviewed | 2026-06-30 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-013 | PASS | reviewed | 2026-06-30 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-014 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
-| IMG-015 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-015 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-016 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-017 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-018 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
@@ -97,7 +97,7 @@
 | IMG-087 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
 | IMG-088 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.2 | — |
 | IMG-089 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-090 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-090 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-091 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-092 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.9 | — |
 | IMG-093 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.1.5 | — |
@@ -576,14 +576,14 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 ai-reviewed DISP-ATS-01·BORE-GL-01·활동면추정·SLOPE-01 · 2026-06-29 |
+| 기술 오류 | ATS-SUB-01 P2 v5 ai-reviewed (2026-06-30) — ATS inset·시준선 제거 · BORE-GL-01·활동면추정 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
-| 검수일 | 2026-06-29 |
+| 검수일 | 2026-06-30 |
 | 금지 대조 | Phase Z ZIP-AUD fix — Pillow v+1 |
 
 **금지 오류 대조:**
@@ -2632,14 +2632,14 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v5 ai-reviewed SLO-WIRE-01·배면와이어·옹벽프리즘·ΔXΔY · 2026-06-29 |
+| 기술 오류 | ATS-SUB-01 P2 v6 ai-reviewed (2026-06-30) — SLO-WIRE-01 · 와이어 배면 · 프리즘 옹벽 · ATS 없음 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
-| 검수일 | 2026-06-29 |
+| 검수일 | 2026-06-30 |
 | 금지 대조 | Phase B v5 ai-reviewed — redline 서명 |
 
 **금지 오류 대조:**
