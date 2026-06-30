@@ -24,7 +24,7 @@
 | IMG-014 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-015 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-016 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
-| IMG-017 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
+| IMG-017 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-018 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 §4.1.2 · KCS 11 10 15:2025 §3 | — |
 | IMG-019 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-020 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
@@ -48,7 +48,7 @@
 | IMG-038 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-039 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-040 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-041 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-041 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-042 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-043 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-044 | PASS | reviewed | 2026-06-27 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
@@ -636,15 +636,15 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 Pillow/WebP PASS — 추정 평면활동면, 안정성 검토식, IPI 프로파일, G.W.L·간극수압 병행 검토 분리 |
+| 기술 오류 | v5 ai-reviewed INTERP-01 — 추정 평면활동면·안정성 검토식·IPI 3소·G.W.L·U 분리 · ≠활동면 확정 · LOGO-01 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex CAD redraw |
-| 검수일 | 2026-06-29 |
-| 금지 대조 | v4 Pillow/WebP — 해석식=활동면 확정, 변위 최대=평면활동면 단정, IPI 단독 확정 표현 제거 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v5 ai-reviewed — INTERP-01·해석식≠계측산정·변위최대≠활동면·U≠단순상향 |
 
 **금지 오류 대조:**
 
@@ -1332,15 +1332,15 @@
 | 관련 계측기 | 센서별/진동계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 Pillow/WebP PASS — 구조물 고정형과 지반 매설형 분리, 가속도(m/s²·gal·g)와 PPV(mm/s) 단위 분리 |
+| 기술 오류 | v5 ai-reviewed — 구조물 고정형·지반 매설형·3축 측정축·가속도(m/s²·gal·g) vs PPV(mm/s) 분리 · ≠097 · LOGO-01 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex CAD redraw |
-| 검수일 | 2026-06-29 |
-| 금지 대조 | v4 Pillow/WebP — 가속도 단위 mm/s 혼입 제거, 그래프 축 분리 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v5 ai-reviewed — ZIP-AUD-06 단위 혼합 제거·097 영향권·로거 hero 금지 |
 
 **금지 오류 대조:**
 

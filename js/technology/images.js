@@ -191,7 +191,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'cad'
+    productionMethod: 'ai-reviewed'
   },
   'IMG-010': {
     title: '터널 지표침하 계측도',
@@ -776,7 +776,7 @@ export const IMAGE_ASSETS = {
     ],
     wireframeReplace: false,
     requiresReaudit: false,
-    productionMethod: 'cad'
+    productionMethod: 'ai-reviewed'
   },
   'IMG-042': {
     title: '자동광파기 계측 개념도',
