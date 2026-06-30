@@ -102,7 +102,7 @@
 | IMG-092 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.9 | — |
 | IMG-093 | PASS | reviewed | 2026-06-27 | — | KDS 11 10 15:2025 §4.1.5 | — |
 | IMG-096 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
-| IMG-097 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 | — |
+| IMG-097 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 §4.1.5 | — |
 | IMG-098 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.8 · KCS 11 10 15:2025 §3 | — |
 | IMG-099 | PASS | reviewed | 2026-06-26 | — | KCS 11 10 15:2025 §3.9.1.1 | — |
 | IMG-100 | PASS | reviewed | 2026-06-27 | — | KCS 11 10 15:2025 §3.9 · KDS 11 10 15:2025 §4.1 | — |
@@ -608,7 +608,7 @@
 | 관련 계측기 | 분야별/사면 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 v5 ai-reviewed — INTERP-01 추정 원호활동면·최대변위≠활동면·IPI 단독확정 금지 · prohibitedErrors 유지 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 v5 ai-reviewed — INTERP-01 추정 원호활동면·최대변위≠활동면·IPI 단독확정 금지 · prohibitedErrors 유지 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2137,7 +2137,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 현장방문·리드아웃·측정일지 · redline v2 · docs/36 §4.8② · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 Sprint2 v2 — 현장방문·리드아웃·측정일지 · redline v2 · docs/36 §4.8② · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2159,7 +2159,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 센서→로거→현장저장·수집주기 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 Sprint2 v2 — 센서→로거→현장저장·수집주기 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2181,7 +2181,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 현장→LTE→서버→대시보드 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 Sprint2 v2 — 현장→LTE→서버→대시보드 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2203,7 +2203,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 플랫폼·경보·보고·로그 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 Sprint2 v2 — 플랫폼·경보·보고·로그 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2225,7 +2225,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 이상탐지·HITL 검토 · redline v2 · 뇌 금지 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | P0 Sprint2 v2 — 이상탐지·HITL 검토 · redline v2 · 뇌 금지 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2247,7 +2247,7 @@
 | 관련 계측기 | 시스템/계측방식 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 Sprint2 v2 — 5단계 계층·포함관계 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) |
+| 기술 오류 | P0 Sprint2 v2 — 5단계 계층·포함관계 · redline v2 · Phase D W10 — redline v2 PASS · docs/113 · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) · 179 §9 caption sync 2026-06-30 · pixel 5단계 ladder REGENERATE 권장(캡션만 정합) |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
@@ -2773,15 +2773,25 @@
 | 관련 계측기 | 분야별/터널 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 |
+| 기술 오류 | v4 ai-reviewed BLAST-01·영향권점선·진동계다점·3축·동적DAQ·교량금지 · 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Human-Reviewer |
-| 검수일 | 2026-06-26 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
 | 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
+
+**금지 오류 대조:**
+
+- 교량 deck·교각 hero
+- 발파원·막장·영향권 미표현
+- 진동계 1대만 구조물 정면 hero
+- 내공변위계·수렴 hero 혼합
+- ATS·프리즘 발파 대체
+- 확정 영향권 실선
+- IMG-041·086 재사용
 
 <a id="IMG-098"></a>
 
@@ -3022,7 +3032,7 @@
 | 관련 계측기 | 센서/처짐계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 ai-reviewed (2026-06-29): 와이어식·LVDT 처짐 δ, ≠침하계, IMG-103 GNSS 분리. 정본 docs/150. BRI-DEF. · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
+| 기술 오류 | v4 ai-reviewed (2026-06-29): 와이어식·LVDT 처짐 δ, ≠침하계, IMG-103 GNSS 분리. 정본 docs/150. BRI-DEF. · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 · 179 §9 caption sync 2026-06-30 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |

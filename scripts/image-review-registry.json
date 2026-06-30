@@ -4019,13 +4019,21 @@
     "title": "터널 발파진동·영향권 계측 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-097",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Human-Reviewer",
-    "auditPriority": null,
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-097 · docs/23-IMG-097-터널-발파진동-영향권-오류분석-및-재작업-계획.md · docs/image-knowledge/16-발파진동-소음-계측.md",
+    "reviewDate": "2026-06-30",
+    "reviewer": "agent",
+    "auditPriority": "P1",
     "requiresReaudit": false,
-    "prohibitedErrors": [],
-    "notes": "Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113 · Phase D W10 — redline v2 PASS · docs/113",
+    "prohibitedErrors": [
+      "교량 deck·교각 hero",
+      "발파원·막장·영향권 미표현",
+      "진동계 1대만 구조물 정면 hero",
+      "내공변위계·수렴 hero 혼합",
+      "ATS·프리즘 발파 대체",
+      "확정 영향권 실선",
+      "IMG-041·086 재사용"
+    ],
+    "notes": "v4 ai-reviewed BLAST-01·영향권점선·진동계다점·3축·동적DAQ·교량금지 · 2026-06-30",
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -4033,15 +4041,24 @@
     "hero": true,
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Human-Reviewer",
-      "date": "2026-06-26",
-      "notes": "Phase D FT-A/B ai-reviewed redline v2"
+      "reviewer": "agent",
+      "date": "2026-06-30",
+      "notes": "v4 ai-reviewed BLAST-01·영향권점선·진동계다점·3축·동적DAQ·교량금지 2026-06-29",
+      "gates": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7"
+      ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-26",
+    "migrationCompletedDate": "2026-06-30",
     "prohibitedVerified": true,
-    "prohibitedVerifiedDate": "2026-06-26",
-    "prohibitedVerifiedNote": "Phase D W10 — redline v2 PASS · docs/113",
+    "prohibitedVerifiedDate": "2026-06-30",
+    "prohibitedVerifiedNote": "v4 ai-reviewed — redline Q1~Q8 · image-knowledge 16",
     "imageKnowledgeTopic": "16-발파진동-소음-계측.md"
   },
   "IMG-098": {
