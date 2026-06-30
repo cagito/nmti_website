@@ -1713,8 +1713,8 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-037",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Cursor-Agent",
+    "reviewDate": "2026-06-30",
+    "reviewer": "agent",
     "auditPriority": "P1",
     "requiresReaudit": false,
     "prohibitedErrors": [
@@ -1724,19 +1724,19 @@
       "균열폭 변화=균열 길이 증가 동일 표기",
       "전단·단차·회전을 균열계로 대체"
     ],
-    "notes": "v4 ai-reviewed CRACK-01 · 균열폭+전단단차회전 한계 · docs/138 · 2026-06-29",
+    "notes": "v5 ai-reviewed CRACK-01·LOGO-01·균열폭δ수직·docs/138 2026-06-30",
     "prohibitedVerified": true,
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P2",
-    "hero": false,
+    "hero": true,
     "renderScript": "render-p2-sensors.py",
     "visualReview": {
       "grade": "PASS",
       "reviewer": "agent",
-      "date": "2026-06-29",
-      "notes": "v4 ai-reviewed CRACK-01 균열폭+전단단차회전한계 2026-06-29",
+      "date": "2026-06-30",
+      "notes": "v5 ai-reviewed CRACK-01·LOGO-01·균열폭δ수직 2026-06-30",
       "gates": [
         "V1",
         "V2",
@@ -1748,10 +1748,10 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-29",
+    "migrationCompletedDate": "2026-06-30",
     "zipAuditId": "ZIP-AUD-18",
-    "prohibitedVerifiedDate": "2026-06-26",
-    "prohibitedVerifiedNote": "§10·IMAGE_REVIEW_LOG 육안 체크리스트 완료",
+    "prohibitedVerifiedDate": "2026-06-30",
+    "prohibitedVerifiedNote": "v5 ai-reviewed — CRACK-01·측정축 수직·전단단차회전 별도",
     "interimBodyExposedDate": "2026-06-27",
     "imageKnowledgeTopic": "22-균열·변형률-계측-표현.md"
   },

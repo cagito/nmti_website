@@ -14,6 +14,7 @@
     "list:anc-clock-figures": "node scripts/list-anc-clock-figures.mjs",
     "audit:image-doc": "node scripts/audit-image-doc-mismatch.mjs",
     "sync:prompt-v2": "node scripts/sync-imageworks-prompt-v2.mjs",
+    "sync:prompt-watermark": "node scripts/sync-prompt-watermark.mjs",
     "ci:images": "npm run audit:images:strict",
     "render:p1": "python scripts/render-p1-blockers.py",
     "render:svg": "python -c \"import sys; print('BLOCKED: see docs/16-기술자료-이미지-에이전트-SVG-생성-금지.md', file=sys.stderr); sys.exit(2)\"",

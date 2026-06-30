@@ -3,6 +3,7 @@ setlocal EnableExtensions
 
 REM ============================================================
 REM NMTI 기술자료 Figure 워터마크 일괄 적용 (WATERMARK-01)
+REM - AI/CAD/GenerateImage 생성 단계에는 로고·워터마크 넣지 않음 (docs/183)
 REM - 원본 보관: assets/images/technology/original/ (최초 1회, 덮어쓰기 없음)
 REM - 배포본은 original/ 또는 source/ 에서 읽어 워터마크 합성
 REM
