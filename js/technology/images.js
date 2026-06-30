@@ -661,7 +661,7 @@ export const IMAGE_ASSETS = {
     caption: '하중계 설치 — 버팀보 띠장 접합부(끝단) 축방향·어스앵커 두부 인장',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-035 · docs/165-IMG-035-v3-재생성-기록.md · docs/132-계측이미지-분야별-금지표현-정본.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-035 · docs/191-IMG-035-v4-재생성-기록.md · docs/180 · docs/181 §IMG-035',
     prohibitedErrors: [
       '버팀보 정중앙 하중계',
       '축방향과 무관한 설치',

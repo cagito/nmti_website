@@ -42,7 +42,7 @@
 | IMG-032 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-033 | PASS | reviewed | 2026-06-26 | P0 | KCS 54 20 25:2018 §3.2 | — |
 | IMG-034 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
-| IMG-035 | PASS | reviewed | 2026-06-22 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
+| IMG-035 | PASS | reviewed | 2026-06-30 | P0 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-036 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-037 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-038 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
@@ -1157,14 +1157,14 @@
 | 관련 계측기 | 센서별/하중계 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | Phase 5 v2: ① 띠장-버팀보 접합부 축압축 ② 앵커 두부 LC. |
+| 기술 오류 | v4 ai-reviewed PASS (2026-06-30) — STR-01·LOAD-02 버팀보 접합부 LC·앵커 ANC-CLOCK T/P · prohibitedErrors 유지 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Phase 5 Pillow v2 — STR-01 strut vs anchor LC |
-| 검수일 | 2026-06-22 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
 | 금지 대조 | §3.2·§3.7·STR-01 |
 
 **금지 오류 대조:**

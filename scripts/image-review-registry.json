@@ -3985,12 +3985,12 @@
   "IMG-096": {
     "id": "IMG-096",
     "alt": "주변지반 계측 설치 대표 단면도 - 굴착 영향권, 센서형 다단식 지중경사계·침하·간극수압·지하수위",
-    "caption": "가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v5)",
+    "caption": "가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v6)",
     "title": "가시설 주변지반 계측 설치 대표 단면도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-096 · docs/158-IMG-096-v5-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
-    "reviewDate": "2026-06-29",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/192-IMG-096-v6-재생성-기록.md · docs/57 · docs/180",
+    "reviewDate": "2026-06-30",
     "reviewer": "agent",
     "auditPriority": "P0",
     "requiresReaudit": false,
@@ -4013,19 +4013,19 @@
       "지표침하핀에 지표침하계 라벨",
       "잠재 슬립면 원호"
     ],
-    "notes": "v5 ai-reviewed — Pillow/CAD 와이어프레임 대체. SOE-SURR-01 4종·H=굴착깊이·BORE-GL-01·SETTLE-01. 옹벽·Sand Mat·슬립면 제거",
+    "notes": "v6 ai-reviewed PASS (2026-06-30) — SOE-SURR-01 4종·H=굴착깊이·BORE-GL-01·옹벽/Sand Mat/슬립면 금지 · prohibitedErrors 유지",
     "prohibitedVerified": true,
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
-    "productionMethodTarget": "cad",
+    "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P1",
     "hero": true,
     "migrationStatus": "completed",
     "visualReview": {
       "grade": "PASS",
       "reviewer": "agent",
-      "date": "2026-06-29",
-      "notes": "v5 ai-reviewed hero — Pillow R1 sprint",
+      "date": "2026-06-30",
+      "notes": "P0 v6 ai-reviewed — SOE-SURR-01·4종만·옹벽/Sand Mat 금지·BORE-GL-01·H=굴착깊이 · docs/57",
       "gates": [
         "V1",
         "V2",
@@ -4036,7 +4036,7 @@
         "V7"
       ]
     },
-    "migrationCompletedDate": "2026-06-29",
+    "migrationCompletedDate": "2026-06-30",
     "prohibitedVerifiedDate": "2026-06-28",
     "prohibitedVerifiedNote": "v5 ai-reviewed — SOE-SURR-01, SETTLE-01, BORE-GL-01, SOE-INST-01 대조 (agent)",
     "interimHeroExposedDate": "2026-06-27",
