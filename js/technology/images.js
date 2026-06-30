@@ -1637,8 +1637,16 @@ export const IMAGE_ASSETS = {
     caption: '발파진동·영향권 — PPV·민감 구역 진동 모니터링',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-097',
-    prohibitedErrors: [],
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-097 · docs/23-IMG-097-터널-발파진동-영향권-오류분석-및-재작업-계획.md · docs/image-knowledge/16-발파진동-소음-계측.md',
+    prohibitedErrors: [
+      '교량 deck·교각 hero',
+      '발파원·막장·영향권 미표현',
+      '진동계 1대만 구조물 정면 hero',
+      '내공변위계·수렴 hero 혼합',
+      'ATS·프리즘 발파 대체',
+      '확정 영향권 실선',
+      'IMG-041·086 재사용'
+    ],
     wireframeReplace: false,
     requiresReaudit: false,
     productionMethod: 'ai-reviewed'

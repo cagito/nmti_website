@@ -2781,7 +2781,7 @@
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
 | 검수일 | 2026-06-30 |
-| 금지 대조 | Phase D W10 — redline v2 PASS · docs/113 |
+| 금지 대조 | v4 ai-reviewed — redline Q1~Q8 · image-knowledge 16 |
 
 **금지 오류 대조:**
 
