@@ -485,11 +485,11 @@
     "caption": "교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md · docs/185-IMG-024-011-최우선-재작도-실행계획.md",
     "reviewDate": "2026-06-29",
     "reviewer": "agent",
-    "auditPriority": null,
-    "requiresReaudit": false,
+    "auditPriority": "P0",
+    "requiresReaudit": true,
     "prohibitedErrors": [
       "흙막이·굴착 단면 (BRI-01)",
       "종·횡변위 3축 주계측",
@@ -498,7 +498,7 @@
       "우측 패널 내부 감사 코드 노출",
       "생성 시 로고·워터마크"
     ],
-    "notes": "v4 ai-reviewed — Pillow R1. 사장교 10종 callout · ⑩-A/B 분리 · 로거·원격 흐름",
+    "notes": "S0-B — v5 REGENERATE 대기 · BRI-OV 10종·부재 대응·BRI-01 · docs/185",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -524,7 +524,7 @@
     "renderScript": "render-bridge-overview.py",
     "prohibitedVerified": true,
     "prohibitedVerifiedDate": "2026-06-29",
-    "prohibitedVerifiedNote": "v4 ai-reviewed — BRI-OV 10종·사장교 단일 (agent)",
+    "prohibitedVerifiedNote": "S0-B — 교량 hero 픽셀 회귀 검수 FAIL 시 v5 전면 재작성",
     "imageKnowledgeTopic": "14-교량-계측시스템-설치.md"
   },
   "IMG-012": {
@@ -1091,11 +1091,11 @@
     "title": "댐 안전관리 계측 체계도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-024 · docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md",
+    "reviewDoc": "docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-024 · docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md · docs/185-IMG-024-011-최우선-재작도-실행계획.md",
     "reviewDate": "2026-06-29",
     "reviewer": "agent",
     "auditPriority": "P0",
-    "requiresReaudit": false,
+    "requiresReaudit": true,
     "prohibitedErrors": [
       "침하 그래프 -20mm=경보 -60mm=관리기준 역전 (DAM-01)",
       "침윤선 파선과 피에조 수두 불일치 (DAM-02)",
@@ -1109,7 +1109,7 @@
       "간극수압계가 누수량 직접 측정",
       "침투선을 실측값처럼 단정"
     ],
-    "notes": "P0 v4 ai-reviewed — 필댐 6항목·DAM-01 침하·침윤선·V-notch·7단계 흐름 · prohibitedErrors 유지",
+    "notes": "S0-A 최우선 — v5 REGENERATE 대기 · DAM-01 침하역전·DAM-02 침윤선·DAM-03 piezo·DAM-LEAK 누수 · docs/185",
     "prohibitedVerified": true,
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
@@ -1136,7 +1136,7 @@
     "migrationCompletedDate": "2026-06-29",
     "zipAuditId": "ZIP-AUD-34",
     "prohibitedVerifiedDate": "2026-06-28",
-    "prohibitedVerifiedNote": "v4 local-corrected — DAM-01 침하 방향 보정, 제조사 문자 제거",
+    "prohibitedVerifiedNote": "S0-A — 픽셀 회귀 검수 FAIL 시 v5 전면 재작성 (prohibitedErrors 유지)",
     "interimHeroExposedDate": "2026-06-27",
     "caption": "댐 안전관리 계측 체계 — 필댐 6항목·7단계 데이터 흐름 (v4)",
     "imageKnowledgeTopic": "15-댐-계측-배치.md"
