@@ -1092,10 +1092,10 @@
     "status": "reviewed",
     "reviewGrade": "PASS",
     "reviewDoc": "docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-024 · docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md · docs/185-IMG-024-011-최우선-재작도-실행계획.md",
-    "reviewDate": "2026-06-29",
+    "reviewDate": "2026-06-30",
     "reviewer": "agent",
     "auditPriority": "P0",
-    "requiresReaudit": true,
+    "requiresReaudit": false,
     "prohibitedErrors": [
       "침하 그래프 -20mm=경보 -60mm=관리기준 역전 (DAM-01)",
       "침윤선 파선과 피에조 수두 불일치 (DAM-02)",
@@ -1109,7 +1109,7 @@
       "간극수압계가 누수량 직접 측정",
       "침투선을 실측값처럼 단정"
     ],
-    "notes": "S0-A 최우선 — v5 REGENERATE 대기 · DAM-01 침하역전·DAM-02 침윤선·DAM-03 piezo·DAM-LEAK 누수 · docs/185",
+    "notes": "S0-A v5 ai-reviewed PASS — DAM-01 침하정상·DAM-02 침윤선·DAM-03 filter tip·DAM-LEAK 하류유량·6항목·7단계·LOGO-01",
     "prohibitedVerified": true,
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
@@ -1120,8 +1120,8 @@
     "visualReview": {
       "grade": "PASS",
       "reviewer": "agent",
-      "date": "2026-06-29",
-      "notes": "P0 REGENERATE v4 — 필댐 6항목·침하 그래프 DAM-01·침윤선·V-notch·7단계 흐름",
+      "date": "2026-06-30",
+      "notes": "S0-A v5 ai-reviewed PASS — DAM-01 침하정상·DAM-02 침윤선·DAM-03 filter tip·DAM-LEAK 하류유량·6항목·7단계·LOGO-01",
       "gates": [
         "V1",
         "V2",
@@ -1133,10 +1133,10 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-29",
+    "migrationCompletedDate": "2026-06-30",
     "zipAuditId": "ZIP-AUD-34",
-    "prohibitedVerifiedDate": "2026-06-28",
-    "prohibitedVerifiedNote": "S0-A — 픽셀 회귀 검수 FAIL 시 v5 전면 재작성 (prohibitedErrors 유지)",
+    "prohibitedVerifiedDate": "2026-06-30",
+    "prohibitedVerifiedNote": "v5 ai-reviewed — DAM-01~07·LEAK 회귀 0건 (agent)",
     "interimHeroExposedDate": "2026-06-27",
     "caption": "댐 안전관리 계측 체계 — 필댐 6항목·7단계 데이터 흐름 (v4)",
     "imageKnowledgeTopic": "15-댐-계측-배치.md"

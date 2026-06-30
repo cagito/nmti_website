@@ -213,7 +213,7 @@ export const IMAGE_ASSETS = {
     caption: '교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md · docs/185-IMG-024-011-최우선-재작도-실행계획.md',
     prohibitedErrors: [
       '흙막이·굴착 단면 (BRI-01)',
       '종·횡변위 3축 주계측',
@@ -223,7 +223,7 @@ export const IMAGE_ASSETS = {
       '생성 시 로고·워터마크'
     ],
     wireframeReplace: false,
-    requiresReaudit: false,
+    requiresReaudit: true,
     productionMethod: 'ai-reviewed'
   },
   'IMG-012': {
@@ -456,7 +456,7 @@ export const IMAGE_ASSETS = {
     caption: '댐 안전관리 계측 체계 — 필댐 6항목·7단계 데이터 흐름 (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-024 · docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md',
+    reviewDoc: 'docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-024 · docs/152-IMG-024-댐-피에조-침윤선-정합성-수정계획.md · docs/IMAGE_REVIEW_LOG.md#IMG-024 · docs/166-IMG-024-v4-재생성-기록.md · docs/39-IMG-024-댐-안전관리-계측-체계도-전면-수정-계획.md · docs/185-IMG-024-011-최우선-재작도-실행계획.md',
     prohibitedErrors: [
       '침하 그래프 -20mm=경보 -60mm=관리기준 역전 (DAM-01)',
       '침윤선 파선과 피에조 수두 불일치 (DAM-02)',

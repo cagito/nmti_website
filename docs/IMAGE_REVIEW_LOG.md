@@ -16,9 +16,9 @@
 | IMG-006 | PASS | reviewed | 2026-06-29 | P0 | KDS 11 10 15:2025 §4.1.1 · KCS 11 10 15:2025 §3 | — |
 | IMG-007 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-008 | PASS | reviewed | 2026-06-27 | P0 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-009 | PASS | reviewed | 2026-06-29 | P1 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
+| IMG-009 | PASS | reviewed | 2026-06-30 | P1 | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
 | IMG-010 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.5 · KCS 11 10 15:2025 표 3.5-1 | — |
-| IMG-011 | PASS | reviewed | 2026-06-29 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-011 | PASS | reviewed | 2026-06-29 | P0 | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | 예 |
 | IMG-012 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-013 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-014 | PASS | reviewed | 2026-06-26 | — | KCS 24 99 05:2023 §3.1 · KDS 11 10 15:2025 §4.1 | — |
@@ -31,7 +31,7 @@
 | IMG-021 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-022 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.6 · KCS 11 10 15:2025 §3 | — |
 | IMG-023 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.7 · KCS 11 10 15:2025 §3 | — |
-| IMG-024 | PASS | reviewed | 2026-06-29 | P0 | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 | — |
+| IMG-024 | PASS | reviewed | 2026-06-29 | P0 | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 | 예 |
 | IMG-025 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-026 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-027 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
@@ -401,15 +401,15 @@
 | 관련 계측기 | 분야별/터널 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 Pillow/WebP PASS — IMG-009는 지보재 계측 위치 보조도, 록볼트 축력(IMG-078)·숏크리트 응력(IMG-079) 전용 Figure와 분리 |
+| 기술 오류 | v5 ai-reviewed 경량 배치 개요 — LC3+응력계2 매립·볼트 암반향 T·시공순서 · hero=078/079 · LOGO-01 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
 | 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
-| 검수자 | Codex CAD redraw |
-| 검수일 | 2026-06-29 |
-| 금지 대조 | v4 Pillow/WebP — 숏크리트 계기 공중 부유 제거, 록볼트 축력·숏크리트 응력 역할 분리 |
+| 검수자 | agent |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v5 ai-reviewed — 360°·중심수렴·응력계 부유·그래프 과부하 제거 |
 
 **금지 오류 대조:**
 
@@ -448,15 +448,15 @@
 | 관련 계측기 | 분야별/교량 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | v4 ai-reviewed — Pillow R1. 사장교 10종 callout · ⑩-A/B 분리 · 로거·원격 흐름 |
+| 기술 오류 | S0-B — v5 REGENERATE 대기 · BRI-OV 10종·부재 대응·BRI-01 · docs/185 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
-| 수정 지시 | — |
+| 수정 지시 | INSTRUMENTATION_DRAWING_RULES 재검수 |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
 | 검수일 | 2026-06-29 |
-| 금지 대조 | v4 ai-reviewed — BRI-OV 10종·사장교 단일 (agent) |
+| 금지 대조 | S0-B — 교량 hero 픽셀 회귀 검수 FAIL 시 v5 전면 재작성 |
 
 **금지 오류 대조:**
 
@@ -831,15 +831,15 @@
 | 관련 계측기 | 분야별/댐 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | P0 v4 ai-reviewed — 필댐 6항목·DAM-01 침하·침윤선·V-notch·7단계 흐름 · prohibitedErrors 유지 |
+| 기술 오류 | S0-A 최우선 — v5 REGENERATE 대기 · DAM-01 침하역전·DAM-02 침윤선·DAM-03 piezo·DAM-LEAK 누수 · docs/185 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
-| 수정 지시 | — |
+| 수정 지시 | INSTRUMENTATION_DRAWING_RULES 재검수 |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
 | 검수일 | 2026-06-29 |
-| 금지 대조 | v4 local-corrected — DAM-01 침하 방향 보정, 제조사 문자 제거 |
+| 금지 대조 | S0-A — 픽셀 회귀 검수 FAIL 시 v5 전면 재작성 (prohibitedErrors 유지) |
 
 **금지 오류 대조:**
 
