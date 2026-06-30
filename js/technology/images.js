@@ -277,7 +277,7 @@ export const IMAGE_ASSETS = {
     caption: '교량 신축이음량 — 신축이음계·늘음량·줄음량',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-014',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-014 · docs/52-교량-신축이음계-계측-표현-표준.md · docs/214-IMG-014-v5-재생성-기록.md',
     prohibitedErrors: [
       'X/Y/Z 3축 변위 표현 (BRI-EJ-01)',
       '종·횡·개폐량 병렬 주계측 (BRI-EJ-01)',
@@ -365,7 +365,7 @@ export const IMAGE_ASSETS = {
     title: '연약지반 성토부 계측기 설치 배치도',
     webp: 'assets/images/technology/IMG-019_연약지반-계측-전체-개념도_성토침하간극수압측방유동.webp',
     alt: '연약지반 성토부 계측기 설치 배치도 - Sand Mat·지표침하판·핀·IPI·간극수압·지중침하',
-    caption: '연약지반 성토부 계측기 설치 배치도 v4 — IPI·piezo tip·지중침하·지하수위·토압',
+    caption: '연약지반 성토부 계측기 설치 배치도 — IPI·piezo tip·지중침하·지하수위·토압',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-019 · docs/109-IMG-019-연약지반-성토부-계측기-설치-배치도-표현-표준.md · docs/189-IMG-019-v4-재생성-기록.md · docs/184',
@@ -805,7 +805,7 @@ export const IMAGE_ASSETS = {
     caption: 'GNSS 변위 계측 개념도 — 기준국·이동국·RTK·중앙 서버·3D 변위',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-043 · docs/161-IMG-043-v5-재생성-기록.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-043 · docs/216-IMG-043-v6-재생성-기록.md',
     prohibitedErrors: [
       '기준국을 변형 구간에 배치',
       '이동국·기준국 역할 역전',
@@ -1407,7 +1407,7 @@ export const IMAGE_ASSETS = {
     caption: '강지보 — 스틸 세트 변형률',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-080 · docs/163-IMG-080-v5-재생성-기록.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-080 · docs/217-IMG-080-v6-재생성-기록.md',
     prohibitedErrors: [
       '플랜지 일부 변형률만으로 전체 응력 대표',
       '내외측·다점 계측 미표시'
@@ -1900,7 +1900,7 @@ export const IMAGE_ASSETS = {
     caption: '교량 풍향·풍속 — 주탑·교면 풍향풍속계 (v4)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-109',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-109 · docs/71-교량-풍하동-계측-표현-표준.md · docs/218-IMG-109-교량-풍향풍속-표현-표준.md',
     prohibitedErrors: [
       '사면 강우 hero만',
       '지하수위계 단독',

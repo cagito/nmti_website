@@ -124,6 +124,17 @@ const checks = [
     must: ['IMG-002', 'tech-seo-hero', '인접 구조물 | 배면'],
     mustNot: ['IMG-001_가시설']
   },
+  {
+    name: 'INCL-SEO slope 링크',
+    url: BASE + '/homepage/technology/fields/slope/',
+    must: ['사면', 'tech-seo-hero'],
+    mustNot: ['/homepage/technology/sensors/inclinometer/']
+  },
+  {
+    name: 'INCL-SEO dup SEO 없음',
+    url: BASE + '/homepage/technology/sensors/inclinometer/',
+    expectNotOk: true
+  },
   // Phase 4 bridge BRI-01 — og:image ≠ 굴착·흙막이 Figure
   {
     name: '교량 교대 BRI SEO',
@@ -199,6 +210,19 @@ async function verifyPdf(url) {
 let failed = 0;
 for (const c of checks) {
   try {
+    if (c.expectNotOk) {
+      const res = await fetch(c.url, {
+        headers: { 'User-Agent': 'NMTI-verify/1.0' },
+        redirect: 'follow'
+      });
+      if (res.ok) {
+        failed++;
+        console.log('FAIL', c.name, c.url, '— should not return', res.status);
+      } else {
+        console.log('OK  ', c.name);
+      }
+      continue;
+    }
     if (c.pdf) {
       await verifyPdf(c.url);
       console.log('OK  ', c.name);

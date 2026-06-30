@@ -203,8 +203,25 @@ if (kcsGround.includes('계측책임자') && !content.includes('계측책임자'
   add('KCS 용어 누락', '계측책임자', 'KCS 1.3에 정의, 기술자료 본문에 거의 미사용');
 }
 
-// inclinometer dual path
-add('구조/운영', '지중경사계 이중 콘텐츠', '/homepage/sensors/inclinometer/ 정적 페이지 + SPA — 동기화·canonical 분리');
+// inclinometer dual path — canonical = /homepage/sensors/inclinometer/ ; SPA summary only (SKIP_IDS)
+const inclStatic = path.join(ROOT, 'sensors/inclinometer/index.html');
+const inclSeoDup = path.join(ROOT, 'technology/sensors/inclinometer/index.html');
+const sitemap = fs.existsSync(path.join(ROOT, 'sitemap.xml'))
+  ? fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf8')
+  : '';
+const inclOk =
+  fs.existsSync(inclStatic) &&
+  content.includes('detailLink') &&
+  content.includes('/homepage/sensors/inclinometer/') &&
+  !fs.existsSync(inclSeoDup) &&
+  sitemap.includes('/homepage/sensors/inclinometer/');
+if (!inclOk) {
+  add(
+    '구조/운영',
+    '지중경사계 이중 콘텐츠',
+    'SPA+정적 canonical 정책 미충족 — detailLink·SKIP_IDS·sitemap 점검'
+  );
+}
 
 // validate term guide vs book PDF count
 if (!fs.existsSync(path.join(BOOK, 'KDS 11 10 15 지반계측(25.12).pdf'))) {

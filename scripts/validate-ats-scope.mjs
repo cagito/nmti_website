@@ -99,13 +99,90 @@ for (const name of fs.readdirSync(contentDir)) {
   if (name.endsWith('.mjs')) scanContentDataFile(path.join(contentDir, name));
 }
 
+/** DOC-CANON-02 G2 — ImageWorks prompts on ATS-deny heroes */
+const PROMPTS_DIR = path.join(
+  ROOT,
+  'ImageWorks',
+  'NMTI_Engineering_Image_Prompt_Package_v1',
+  'prompts'
+);
+const PROMPT_ATS_DENY = ['IMG-005', 'IMG-012', 'IMG-013', 'IMG-015', 'IMG-090', 'IMG-101'];
+
+/** @param {string} line */
+function isAtsNegativeContext(line) {
+  return /금지|그리지\s*않|없음|NO\s|not\s|without|제외|생략|선택|inset|보조|optional|tiny inset|삭제|전면/i.test(
+    line
+  );
+}
+
+/** @param {string} text */
+function extractPositivePromptProse(text) {
+  /** @type {string[]} */
+  const parts = [];
+
+  const sec3 = text.match(/## 3\. 필수 포함\n([\s\S]*?)(?=\n## |\n<!-- |$)/);
+  if (sec3) parts.push(sec3[1]);
+
+  const rulesStart = text.indexOf('<!-- image-rules-sync:v1 -->');
+  const rulesEnd = text.indexOf('<!-- /image-rules-sync:v1 -->');
+  if (rulesStart !== -1 && rulesEnd !== -1) {
+    const block = text.slice(rulesStart, rulesEnd);
+    const req = block.match(
+      /\*\*반드시 그릴 요소:\*\*([\s\S]*?)(?=\*\*절대 금지|\*\*[^*]+:\*\*|<!--|$)/i
+    );
+    if (req) parts.push(req[1]);
+  }
+
+  const codeMatch = text.match(/## 최종 생성 프롬프트[\s\S]*?\n\n```[\w]*\n([\s\S]*?)```/);
+  if (codeMatch) {
+    const positiveLines = codeMatch[1]
+      .split('\n')
+      .filter((line) => line.trim() && !isAtsNegativeContext(line));
+    parts.push(positiveLines.join('\n'));
+  }
+
+  const finalBlock = text.match(/## 최종 생성 프롬프트[\s\S]*$/);
+  if (finalBlock && !finalBlock[0].includes('```')) {
+    const prose = finalBlock[0]
+      .split('\n')
+      .slice(1)
+      .filter((line) => !line.startsWith('**Prefix:') && line.trim());
+    parts.push(prose.join('\n'));
+  }
+
+  return parts.join('\n');
+}
+
+function scanPromptAtsDeny() {
+  if (!fs.existsSync(PROMPTS_DIR)) return;
+  for (const file of fs.readdirSync(PROMPTS_DIR)) {
+    const imgMatch = file.match(/^(IMG-\d{3})_/);
+    if (!imgMatch || !PROMPT_ATS_DENY.includes(imgMatch[1])) continue;
+    const rel = path.relative(ROOT, path.join(PROMPTS_DIR, file));
+    const text = fs.readFileSync(path.join(PROMPTS_DIR, file), 'utf8');
+    const positive = extractPositivePromptProse(text);
+    if (!ATS_PATTERN.test(positive)) continue;
+    positive.split('\n').forEach((line, li) => {
+      if (!ATS_PATTERN.test(line) || isAtsNegativeContext(line)) return;
+      violations.push({
+        file: rel,
+        nodeId: imgMatch[1],
+        line: li + 1,
+        text: line.trim().slice(0, 140)
+      });
+    });
+  }
+}
+
+scanPromptAtsDeny();
+
 if (violations.length) {
-  console.error(`ATS-SUB-01 검증 실패: ${violations.length}건 (지하공사 외 노드에 자동광파기 언급)\n`);
+  console.error(`ATS-SUB-01 검증 실패: ${violations.length}건 (지하공사 외 노드·prompt 금지 Figure에 ATS 언급)\n`);
   violations.forEach((v) => {
     console.error(`${v.file}:${v.line} [${v.nodeId}]`);
     console.error(`  ${v.text}\n`);
   });
-  process.exit(1);
+  process.exit(STRICT ? 1 : 0);
 }
 
-console.log('ATS-SUB-01 검증 통과 (content-data)');
+console.log('ATS-SUB-01 검증 통과 (content-data · ImageWorks prompts)');

@@ -139,6 +139,26 @@ function seoRelPath(nodeId) {
   return nodePathSeo(nodeId).replace(/^\/homepage\//, '') + 'index.html';
 }
 
+check('INCL-SEO inclinometer canonical', () => {
+  const dup = join(ROOT, 'technology/sensors/inclinometer/index.html');
+  if (existsSync(dup)) {
+    return fail('INCL-SEO', 'duplicate technology/sensors/inclinometer/ — run npm run build:seo');
+  }
+  if (!existsSync(join(ROOT, 'sensors/inclinometer/index.html'))) {
+    return fail('INCL-SEO', 'missing sensors/inclinometer/index.html');
+  }
+  const js = read('js/technology/content-data.js');
+  if (!js.includes('detailLink') || !js.includes('/homepage/sensors/inclinometer/')) {
+    return fail('INCL-SEO', 'sensors/inclinometer detailLink missing in content-data.js');
+  }
+  const bad = '/homepage/technology/sensors/inclinometer/';
+  const sample = read('technology/fields/slope/index.html');
+  if (sample.includes(bad)) {
+    return fail('INCL-SEO', 'wrong inclinometer href in SEO pages — run npm run build:seo');
+  }
+  return ok('INCL-SEO inclinometer canonical');
+});
+
 check('Bridge BRI SEO (13 nodes)', () => {
   const problems = [];
   for (const nodeId of BRIDGE_NODE_IDS) {

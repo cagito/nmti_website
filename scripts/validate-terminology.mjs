@@ -73,6 +73,21 @@ const SKIP_PATH_PARTS = [
   `${path.sep}redlines${path.sep}`
 ];
 
+/** @type {{ pattern: RegExp, message: string }[]} */
+const FILENAME_RULES = [
+  {
+    pattern: /건설기간_계측_개념도\.md$/,
+    message: '153: prompt 파일명 「건설기간」→「건설중」 (docs/153-계측문서-용어-정본-건설중-계측.md)'
+  }
+];
+
+const PROMPTS_DIR = path.join(
+  ROOT,
+  'ImageWorks',
+  'NMTI_Engineering_Image_Prompt_Package_v1',
+  'prompts'
+);
+
 function walk(dir, files = []) {
   if (!fs.existsSync(dir)) return files;
   for (const name of fs.readdirSync(dir)) {
@@ -124,6 +139,21 @@ function scanFile(file) {
       }
     }
   });
+}
+
+if (fs.existsSync(PROMPTS_DIR)) {
+  for (const name of fs.readdirSync(PROMPTS_DIR)) {
+    if (!name.endsWith('.md')) continue;
+    for (const rule of FILENAME_RULES) {
+      if (!rule.pattern.test(name)) continue;
+      violations.push({
+        file: path.relative(ROOT, path.join(PROMPTS_DIR, name)),
+        line: 0,
+        message: rule.message,
+        text: name
+      });
+    }
+  }
 }
 
 if (violations.length) {

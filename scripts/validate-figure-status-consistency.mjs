@@ -33,8 +33,14 @@ const WATCH = [
   { id: 'IMG-013', prompt: 'IMG-013_교량_기초_침하_계측도.md' },
   { id: 'IMG-015', prompt: 'IMG-015_사면_계측_전체_개념도.md' },
   { id: 'IMG-016', prompt: 'IMG-016_원호활동면_계측_해석도.md' },
+  { id: 'IMG-017', prompt: 'IMG-017_평면활동면_계측_해석도.md' },
+  { id: 'IMG-064', prompt: 'IMG-064_항만-호안-계측-전체-개념도.md' },
+  { id: 'IMG-041', prompt: 'IMG-041_진동계_설치_개념도.md' },
   { id: 'IMG-090', prompt: 'IMG-090_사면_구조물_변위_계측_개념도.md' },
-  { id: 'IMG-096', prompt: 'IMG-096_주변지반_계측_설치_대표_단면도.md' }
+  { id: 'IMG-096', prompt: 'IMG-096_주변지반_계측_설치_대표_단면도.md' },
+  { id: 'IMG-111', prompt: 'IMG-111_터널_건설중_계측_개념도.md' },
+  { id: 'IMG-112', prompt: 'IMG-112_철도_건설중_계측_개념도.md' },
+  { id: 'IMG-113', prompt: 'IMG-113_댐_건설중_계측_개념도.md' }
 ];
 
 /** @type {string[]} */

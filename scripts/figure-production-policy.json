@@ -1,6 +1,6 @@
 {
   "$schema": "figure-production-policy v1",
-  "description": "Figure tier (FT) and allowed production methods. Source of truth for audit:figure-production.",
+  "description": "Figure tier (FT) and allowed production methods. Source of truth for audit:figure-production. Pillow production removed 2026-06-29 — ai-reviewed / cad only.",
   "tiers": {
     "FT-A": {
       "label": "단면·설치 CAD",
@@ -29,19 +29,18 @@
     "FT-C": {
       "label": "블록·흐름·그래프·UI",
       "allowedMethods": [
-        "pillow",
         "cad",
         "ai-reviewed"
       ],
       "forbiddenMethods": [
-        "agent-svg"
+        "agent-svg",
+        "pillow"
       ]
     }
   },
   "methods": {
     "cad": "인간 CAD / Illustrator / Inkscape → PNG",
     "ai-reviewed": "ImageWorks 프롬프트 + redline + 인간 기술·출판 검수 → PNG",
-    "pillow": "scripts/lib/*_draw.py (FT-C만)",
     "agent-svg": "에이전트·render-svg-figures (전면 금지)",
     "one-shot-ai": "redline·체크리스트 없이 1-shot GenerateImage (금지)"
   },
@@ -51,16 +50,14 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-p1-blockers.py"
+      "hero": true
     },
     "IMG-002": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-retaining-audit-fixes.py"
+      "hero": true
     },
     "IMG-003": {
       "tier": "FT-A",
@@ -74,24 +71,21 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-retaining-audit-fixes.py"
+      "hero": true
     },
     "IMG-005": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": false,
-      "renderScript": "render-retaining-audit-fixes.py"
+      "hero": false
     },
     "IMG-006": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-datalogger-figures.py"
+      "hero": false
     },
     "IMG-007": {
       "tier": "FT-A",
@@ -105,13 +99,12 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-img008-tunnel-convergence.py"
+      "hero": true
     },
     "IMG-009": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
       "hero": false
     },
@@ -127,8 +120,7 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-bridge-overview.py"
+      "hero": true
     },
     "IMG-012": {
       "tier": "FT-A",
@@ -156,20 +148,19 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-p1-blockers.py"
+      "hero": true
     },
     "IMG-016": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P3",
       "hero": false
     },
     "IMG-017": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P3",
       "hero": false
     },
@@ -220,16 +211,14 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-dam-audit-fixes.py"
+      "hero": true
     },
     "IMG-025": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-phase5-sensors.py"
+      "hero": true
     },
     "IMG-026": {
       "tier": "FT-B",
@@ -243,8 +232,7 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-inclinometer-ground.py"
+      "hero": true
     },
     "IMG-028": {
       "tier": "FT-B",
@@ -265,21 +253,19 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-phase5-sensors.py"
+      "hero": true
     },
     "IMG-031": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-phase5-sensors.py"
+      "hero": true
     },
     "IMG-032": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
       "hero": false
     },
@@ -295,16 +281,14 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-phase5-sensors.py"
+      "hero": true
     },
     "IMG-035": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
-      "hero": true,
-      "renderScript": "render-phase5-sensors.py"
+      "hero": true
     },
     "IMG-036": {
       "tier": "FT-A",
@@ -318,35 +302,33 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
-      "hero": false,
-      "renderScript": "render-p2-sensors.py"
+      "hero": false
     },
     "IMG-038": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
-      "hero": true,
-      "renderScript": "render-p2-sensors.py"
+      "hero": true
     },
     "IMG-039": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
       "hero": false
     },
     "IMG-040": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
       "hero": false
     },
     "IMG-041": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
       "hero": false
     },
@@ -355,13 +337,12 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
-      "hero": true,
-      "renderScript": "render-p2-sensors.py"
+      "hero": true
     },
     "IMG-043": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
       "hero": true
     },
@@ -377,8 +358,7 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-p3-platform.py"
+      "hero": true
     },
     "IMG-046": {
       "tier": "FT-C",
@@ -392,16 +372,14 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-power-figures.py"
+      "hero": false
     },
     "IMG-048": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-p3-platform.py"
+      "hero": true
     },
     "IMG-049": {
       "tier": "FT-C",
@@ -457,8 +435,7 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-p3-platform.py"
+      "hero": false
     },
     "IMG-057": {
       "tier": "FT-C",
@@ -472,8 +449,7 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-p3-platform.py"
+      "hero": true
     },
     "IMG-059": {
       "tier": "FT-C",
@@ -501,8 +477,7 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": false,
-      "renderScript": "render-phase5-remainder.py"
+      "hero": false
     },
     "IMG-063": {
       "tier": "FT-A",
@@ -514,7 +489,7 @@
     "IMG-064": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
       "hero": true
     },
@@ -523,132 +498,117 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-power-figures.py"
+      "hero": false
     },
     "IMG-066": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-power-figures.py"
+      "hero": false
     },
     "IMG-067": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-power-figures.py"
+      "hero": false
     },
     "IMG-068": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-power-figures.py"
+      "hero": false
     },
     "IMG-069": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-power-figures.py"
+      "hero": false
     },
     "IMG-070": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-modes-figures.py"
+      "hero": false
     },
     "IMG-071": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-modes-figures.py"
+      "hero": false
     },
     "IMG-072": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-modes-figures.py"
+      "hero": false
     },
     "IMG-073": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-modes-figures.py"
+      "hero": false
     },
     "IMG-074": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-modes-figures.py"
+      "hero": false
     },
     "IMG-075": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-modes-figures.py"
+      "hero": false
     },
     "IMG-076": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-datalogger-system-figures.py"
+      "hero": false
     },
     "IMG-077": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-datalogger-system-figures.py"
+      "hero": false
     },
     "IMG-078": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
-      "hero": true,
-      "renderScript": "render-tunnel-support-figures.py"
+      "hero": true
     },
     "IMG-079": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
-      "hero": true,
-      "renderScript": "render-tunnel-support-figures.py"
+      "hero": true
     },
     "IMG-080": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
       "hero": true
     },
     "IMG-081": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P3",
       "hero": false
     },
@@ -657,61 +617,54 @@
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P3",
-      "hero": false,
-      "renderScript": "render-field-heroes.py"
+      "hero": false
     },
     "IMG-083": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P3",
-      "hero": false,
-      "renderScript": "render-field-heroes.py"
+      "hero": false
     },
     "IMG-084": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P3",
-      "hero": false,
-      "renderScript": "render-field-heroes.py"
+      "hero": false
     },
     "IMG-085": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
-      "hero": true,
-      "renderScript": "render-field-heroes.py"
+      "hero": true
     },
     "IMG-086": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P2",
-      "hero": true,
-      "renderScript": "render-field-heroes.py"
+      "hero": true
     },
     "IMG-087": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P3",
-      "hero": false,
-      "renderScript": "render-field-heroes.py"
+      "hero": false
     },
     "IMG-088": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P3",
-      "hero": false,
-      "renderScript": "render-field-heroes.py"
+      "hero": false
     },
     "IMG-096": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "cad",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
       "hero": true
     },
@@ -725,162 +678,142 @@
     "IMG-098": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "pillow",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-harbor-audit-fixes.py"
+      "hero": true
     },
     "IMG-099": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "pillow",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-building-audit-fixes.py"
+      "hero": true
     },
     "IMG-100": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "pillow",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-building-audit-fixes.py"
+      "hero": true
     },
     "IMG-101": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
-      "targetMethod": "pillow",
+      "targetMethod": "ai-reviewed",
       "migrationPhase": "P1",
-      "hero": true,
-      "renderScript": "render-building-audit-fixes.py"
+      "hero": true
     },
     "IMG-089": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P5",
-      "hero": true,
-      "renderScript": "render-sprint0-figures.py"
+      "hero": true
     },
     "IMG-090": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P5",
-      "hero": true,
-      "renderScript": "render-sprint0-figures.py"
+      "hero": true
     },
     "IMG-091": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P5",
-      "hero": true,
-      "renderScript": "render-sprint0-figures.py"
+      "hero": true
     },
     "IMG-092": {
       "tier": "FT-A",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P5",
-      "hero": true,
-      "renderScript": "render-sprint0-figures.py"
+      "hero": true
     },
     "IMG-093": {
       "tier": "FT-B",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P5",
-      "hero": true,
-      "renderScript": "render-sprint0-figures.py"
+      "hero": true
     },
     "IMG-094": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-sprint0-figures.py"
+      "hero": true
     },
     "IMG-095": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-sprint0-figures.py"
+      "hero": true
     },
     "IMG-102": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-sprint0-figures.py"
+      "hero": true
     },
     "IMG-103": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-bridge-daegu-figures.py"
+      "hero": true
     },
     "IMG-104": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-bridge-daegu-figures.py"
+      "hero": false
     },
     "IMG-105": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-bridge-daegu-figures.py"
+      "hero": true
     },
     "IMG-106": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-bridge-daegu-figures.py"
+      "hero": false
     },
     "IMG-107": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-bridge-daegu-figures.py"
+      "hero": true
     },
     "IMG-108": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": false,
-      "renderScript": "render-bridge-daegu-figures.py"
+      "hero": false
     },
     "IMG-109": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-bridge-daegu-figures.py"
+      "hero": true
     },
     "IMG-110": {
       "tier": "FT-C",
       "currentMethod": "ai-reviewed",
       "targetMethod": "ai-reviewed",
       "migrationPhase": "P4",
-      "hero": true,
-      "renderScript": "render-bridge-daegu-figures.py"
+      "hero": true
     },
     "IMG-111": {
       "tier": "FT-A",

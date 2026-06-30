@@ -63,8 +63,8 @@ if (!corpus.includes('/homepage/book/GNSS.pdf')) {
 const guide = read('ImageWorks/NMTI_Engineering_Image_Prompt_Package_v1/07_GNSS_이미지_가이드.md');
 if (!guide.includes('IMG-043')) add('07_GNSS guide must reference IMG-043');
 
-if (reg?.reviewDoc && !reg.reviewDoc.includes('161-IMG-043')) {
-  add('registry reviewDoc should link docs/161');
+if (reg?.reviewDoc && !/161-IMG-043|216-IMG-043/.test(reg.reviewDoc)) {
+  add('registry reviewDoc should link docs/161 or docs/216 (GNSS 재생성 기록)');
 }
 
 if (issues.length) {
@@ -72,4 +72,4 @@ if (issues.length) {
   issues.forEach((i) => console.log(' -', i));
   process.exit(1);
 }
-console.log('audit-img043: OK (GNSS · 기준국·이동국·RTK · IMG-043 v5)');
+console.log('audit-img043: OK (GNSS · 기준국·이동국·RTK · IMG-043 v6)');

@@ -186,7 +186,7 @@
     "purpose": "성토·연약지층 계측기 실제 설치 배치 2D 단면 (SOFT-LAYOUT-01)",
     "priority": "A",
     "prompt_file": "prompts/IMG-019_연약지반_계측_전체_개념도.md",
-    "caption": "연약지반 성토부 계측기 설치 배치도 v4 — IPI·piezo tip·지중침하·지하수위·토압",
+    "caption": "연약지반 성토부 계측기 설치 배치도 — IPI·piezo tip·지중침하·지하수위·토압",
     "standard_ref_node": "fields/soft-ground"
   },
   {
@@ -1109,7 +1109,7 @@
     "title": "터널 건설중 계측 개념도",
     "purpose": "굴착·지보 단계 내공·천단·지표 변위 — 운행철도 상부",
     "priority": "A",
-    "prompt_file": "prompts/IMG-111_터널_건설기간_계측_개념도.md",
+    "prompt_file": "prompts/IMG-111_터널_건설중_계측_개념도.md",
     "caption": "터널 건설중 계측 — 내공·천단·지표",
     "standard_ref_node": "fields/tunnel"
   },
@@ -1119,7 +1119,7 @@
     "title": "철도·고속철도 건설중 계측 개념도",
     "purpose": "道床·노반·궤도 시공 단계 침하·변위",
     "priority": "A",
-    "prompt_file": "prompts/IMG-112_철도_건설기간_계측_개념도.md",
+    "prompt_file": "prompts/IMG-112_철도_건설중_계측_개념도.md",
     "caption": "철도 건설중 계측 — 노반·궤도",
     "standard_ref_node": "fields/railway/construction-phase"
   },
@@ -1129,7 +1129,7 @@
     "title": "댐·제방 건설중 계측 개념도",
     "purpose": "축조·성토 단계 수압·침하·로거 — ≠운영기 누수",
     "priority": "A",
-    "prompt_file": "prompts/IMG-113_댐_건설기간_계측_개념도.md",
+    "prompt_file": "prompts/IMG-113_댐_건설중_계측_개념도.md",
     "caption": "댐 건설중 계측 — 축조·원격계측",
     "standard_ref_node": "fields/dam/construction-phase"
   }

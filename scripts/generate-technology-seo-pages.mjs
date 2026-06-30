@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from 'fs';
+import { mkdirSync, writeFileSync, unlinkSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import {
@@ -17,8 +17,28 @@ const SITE = 'https://www.nmti.co.kr';
 const techRoot = join(__dirname, '..', 'technology');
 const lastmod = new Date().toISOString().slice(0, 10);
 
-/** Previously skipped — now generated with unified section preview. */
-const SKIP_IDS = new Set([]);
+/**
+ * SEO 정적 페이지 생략 — canonical은 별도 정적 경로.
+ * @see docs/book-web-consistency-audit.md §7.2
+ * @see scripts/generate-sitemap-technology.mjs (sensors/inclinometer → /homepage/sensors/inclinometer/)
+ */
+const SKIP_IDS = new Set(['sensors/inclinometer']);
+
+/** Canonical 정적 URL — inclinometer만 legacy `/sensors/` 경로. */
+const INCLINOMETER_CANONICAL = '/homepage/sensors/inclinometer/';
+
+function seoPublicPath(nodeId) {
+  if (nodeId === 'sensors/inclinometer') return INCLINOMETER_CANONICAL;
+  return nodePathSeo(nodeId);
+}
+
+function seoUrl(nodeId) {
+  return SITE + seoPublicPath(nodeId);
+}
+
+function seoLinkBuilder(nodeId) {
+  return seoUrl(nodeId);
+}
 
 function escapeHtml(str) {
   return String(str)
@@ -33,14 +53,6 @@ function stripHtml(html) {
     .replace(/<[^>]+>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
-}
-
-function seoUrl(nodeId) {
-  return SITE + nodePathSeo(nodeId);
-}
-
-function seoLinkBuilder(nodeId) {
-  return SITE + nodePathSeo(nodeId);
 }
 
 function renderSeoSectionFigure(image) {
@@ -69,7 +81,7 @@ function breadcrumbSchema(nodeId, title) {
       const hash = c.href.match(/#(.+)$/);
       item.item =
         hash && c.href.includes('/technology/')
-          ? SITE + nodePathSeo(hash[1])
+          ? SITE + seoPublicPath(hash[1])
           : SITE + c.href;
     } else if (i === crumbs.length - 1) {
       item.item = seoUrl(nodeId);
@@ -190,7 +202,7 @@ function renderPage(nodeId, content) {
       if (!c.href) return '<span>' + escapeHtml(c.label) + '</span>';
       const href =
         c.href.includes('/technology/#') || c.href.includes('/technology#')
-          ? SITE + nodePathSeo(c.href.split('#')[1])
+          ? SITE + seoPublicPath(c.href.split('#')[1])
           : SITE + c.href;
       return '<a href="' + escapeHtml(href) + '">' + escapeHtml(c.label) + '</a>';
     })
@@ -308,3 +320,9 @@ getAllContentNodeIds().forEach(function (nodeId) {
 });
 
 console.log('Wrote', count, 'SEO pages under technology/');
+
+const inclDup = join(techRoot, 'sensors/inclinometer/index.html');
+if (existsSync(inclDup)) {
+  unlinkSync(inclDup);
+  console.log('Removed stale duplicate:', 'technology/sensors/inclinometer/index.html');
+}
