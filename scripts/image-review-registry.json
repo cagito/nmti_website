@@ -774,7 +774,7 @@
     "title": "평면활동면 계측 해석도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-017",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-017 · docs/193-IMG-017-v6-재생성-기록.md · docs/184",
     "reviewDate": "2026-06-30",
     "reviewer": "agent",
     "auditPriority": "P0",
@@ -784,7 +784,7 @@
       "변위 최대지점 = 평면활동면 단정",
       "간극수압 U 단순 상향 화살표만"
     ],
-    "notes": "v5 ai-reviewed INTERP-01 — 추정 평면활동면·안정성 검토식·IPI 3소·G.W.L·U 분리 · ≠활동면 확정 · LOGO-01",
+    "notes": "v6 ai-reviewed PASS (2026-06-30) — INTERP-01·IPI 3소 BORE-GL-01·안정성 검토식 분리 · prohibitedErrors 유지",
     "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -794,7 +794,7 @@
       "grade": "PASS",
       "reviewer": "agent",
       "date": "2026-06-30",
-      "notes": "v5 ai-reviewed INTERP-01 — 추정 평면활동면·안정성 검토식·IPI 3소·G.W.L·U 분리 · ≠활동면 확정 · LOGO-01",
+      "notes": "P2 v6 ai-reviewed — INTERP-01 추정 평면활동면·IPI 3소 BORE-GL-01·안정성 검토식 분리 · docs/184",
       "gates": [
         "V1",
         "V2",
@@ -1900,7 +1900,7 @@
     "title": "진동계 설치 개념도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-041",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-041 · docs/194-IMG-041-v6-재생성-기록.md · docs/184",
     "reviewDate": "2026-06-30",
     "reviewer": "agent",
     "auditPriority": "P1",
@@ -1908,7 +1908,7 @@
     "prohibitedErrors": [
       "가속도(m/s² 또는 mm/s) 혼합 표기"
     ],
-    "notes": "v5 ai-reviewed — 구조물 고정형·지반 매설형·3축 측정축·가속도(m/s²·gal·g) vs PPV(mm/s) 분리 · ≠097 · LOGO-01",
+    "notes": "v6 ai-reviewed PASS (2026-06-30) — 구조물/지반 매설형·짧은 well·가속도 vs PPV 분리 · ≠097",
     "figureTier": "FT-A",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -1918,7 +1918,7 @@
       "grade": "PASS",
       "reviewer": "agent",
       "date": "2026-06-30",
-      "notes": "v5 ai-reviewed — 구조물 고정형·지반 매설형·3축 측정축·가속도(m/s²·gal·g) vs PPV(mm/s) 분리 · ≠097 · LOGO-01",
+      "notes": "P2 v6 ai-reviewed — 구조물/지반 매설형·짧은 well·가속도 vs PPV 분리 · docs/184",
       "gates": [
         "V1",
         "V2",
@@ -2778,13 +2778,13 @@
     "title": "현장 계측 전원 통합 구성도",
     "status": "reviewed",
     "reviewGrade": "PASS",
-    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-065",
-    "reviewDate": "2026-06-26",
-    "reviewer": "Human-Reviewer",
+    "reviewDoc": "docs/IMAGE_REVIEW_LOG.md#IMG-065 · docs/195-IMG-065-v3-재생성-기록.md · docs/184",
+    "reviewDate": "2026-06-30",
+    "reviewer": "agent",
     "auditPriority": null,
     "requiresReaudit": false,
     "prohibitedErrors": [],
-    "notes": "render:power v2 — 주·백업·보조·DC분배·LVD · docs/112 §11 · interim FT-C PASS",
+    "notes": "v3 ai-reviewed PASS (2026-06-30) — FT-C 전원 블록도·함체 실루엣·태양광/풍력/AC/배터리/LVD",
     "figureTier": "FT-C",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
@@ -2793,9 +2793,9 @@
     "renderScript": "render-power-figures.py",
     "visualReview": {
       "grade": "PASS",
-      "reviewer": "Cursor-Agent",
-      "date": "2026-06-27",
-      "notes": "P1 pillow batch — source PNG upgrade docs/122",
+      "reviewer": "agent",
+      "date": "2026-06-30",
+      "notes": "P2 v3 ai-reviewed — FT-C 전원 블록도·함체 실루엣·태양광/풍력/AC/배터리/LVD · docs/184",
       "gates": [
         "V1",
         "V2",
@@ -2807,7 +2807,7 @@
       ]
     },
     "migrationStatus": "completed",
-    "migrationCompletedDate": "2026-06-27",
+    "migrationCompletedDate": "2026-06-30",
     "imageKnowledgeTopic": "08-데이터로거-계측시스템-구성.md"
   },
   "IMG-066": {

@@ -1613,10 +1613,10 @@ export const IMAGE_ASSETS = {
     title: '가시설 주변지반 계측 설치 대표 단면도',
     webp: 'assets/images/technology/IMG-096_주변지반-계측-설치-대표-단면도_굴착영향권복합.webp',
     alt: '주변지반 계측 설치 대표 단면도 - 굴착 영향권, 센서형 다단식 지중경사계·침하·간극수압·지하수위',
-    caption: '가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v5)',
+    caption: '가시설 주변지반 — IPI·침하핀·간극수압·지하수위 4종 · H=굴착깊이 (v6)',
     status: 'reviewed',
     reviewGrade: 'PASS',
-    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-096 · docs/158-IMG-096-v5-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md',
+    reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-096 · docs/192-IMG-096-v6-재생성-기록.md · docs/57 · docs/180',
     prohibitedErrors: [
       '잠재 슬립면·활동면 원호 (MIX-01)',
       '옹벽형 영구 구조·캡 (MIX-01)',
