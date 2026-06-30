@@ -3679,7 +3679,7 @@
       "크리프·건조수축·탄성축소 단순화"
     ],
     "notes": "v5 ai-reviewed 층별변형률+온도·상대측점·축소그래프·P0-1 2026-06-30",
-    "figureTier": "FT-A",
+    "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P3",
@@ -3724,7 +3724,7 @@
       "VW·진동현식 METHOD-01 라벨"
     ],
     "notes": "v5 ai-reviewed 변형률+하중계+온도·하중ε그래프·LOGO-01 2026-06-30",
-    "figureTier": "FT-A",
+    "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P3",
@@ -3802,7 +3802,7 @@
       "ATS·교량·댐 혼입"
     ],
     "notes": "v6 ai-reviewed HAR-STR-01·δxyz·반력계모서리·평면inset·LOGO-01 2026-06-30",
-    "figureTier": "FT-A",
+    "figureTier": "FT-B",
     "productionMethod": "ai-reviewed",
     "productionMethodTarget": "ai-reviewed",
     "migrationPhase": "P3",
