@@ -31,7 +31,7 @@
 | IMG-021 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.4 · KCS 11 10 15:2025 §3 | — |
 | IMG-022 | PASS | reviewed | 2026-06-26 | — | KDS 11 10 15:2025 §4.1.6 · KCS 11 10 15:2025 §3 | — |
 | IMG-023 | PASS | reviewed | 2026-06-26 | P0 | KDS 11 10 15:2025 §4.1.7 · KCS 11 10 15:2025 §3 | — |
-| IMG-024 | PASS | reviewed | 2026-06-29 | P0 | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 | 예 |
+| IMG-024 | PASS | reviewed | 2026-06-30 | P0 | KCS 54 20 25:2018 §3 · KDS 11 10 15:2025 §4.1 | — |
 | IMG-025 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-026 | PASS | reviewed | 2026-06-26 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
 | IMG-027 | PASS | reviewed | 2026-06-22 | P1 | KDS 11 10 15:2025 표 4.1-1 · KCS 11 10 15:2025 §3.2 | — |
@@ -831,15 +831,15 @@
 | 관련 계측기 | 분야별/댐 |
 | 검수 등급 | **PASS** |
 | status | reviewed |
-| 기술 오류 | S0-A 최우선 — v5 REGENERATE 대기 · DAM-01 침하역전·DAM-02 침윤선·DAM-03 piezo·DAM-LEAK 누수 · docs/185 |
+| 기술 오류 | S0-A v5 ai-reviewed PASS — DAM-01 침하정상·DAM-02 침윤선·DAM-03 filter tip·DAM-LEAK 하류유량·6항목·7단계·LOGO-01 |
 | 설치 위치 오류 | — |
 | 방향 오류 | — |
 | 용어 오류 | — |
-| 수정 지시 | INSTRUMENTATION_DRAWING_RULES 재검수 |
+| 수정 지시 | — |
 | 재생성 프롬프트 | [IMAGE_REGENERATION_PROMPTS.md](./IMAGE_REGENERATION_PROMPTS.md) |
 | 검수자 | agent |
-| 검수일 | 2026-06-29 |
-| 금지 대조 | S0-A — 픽셀 회귀 검수 FAIL 시 v5 전면 재작성 (prohibitedErrors 유지) |
+| 검수일 | 2026-06-30 |
+| 금지 대조 | v5 ai-reviewed — DAM-01~07·LEAK 회귀 0건 (agent) |
 
 **금지 오류 대조:**
 

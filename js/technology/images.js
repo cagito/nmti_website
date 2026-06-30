@@ -210,7 +210,7 @@ export const IMAGE_ASSETS = {
     title: '교량 계측 전체 개념도',
     webp: 'assets/images/technology/IMG-011_교량-계측-전체-개념도_상부구조교각교대기초.webp',
     alt: '교량 계측 전체 개념도 - 사장교형 10종(변형률·처짐·케이블장력·경사·기초침하 등)',
-    caption: '교량 계측 전체 개념도 v4 — 사장교·상부구조→받침→교각/교대→기초, 10종 계측',
+    caption: '교량 계측 전체 개념도 v5 — 사장교·상부구조→받침→교각/교대→기초·10종 계측',
     status: 'reviewed',
     reviewGrade: 'PASS',
     reviewDoc: 'docs/IMAGE_REVIEW_LOG.md#IMG-011 · docs/180-technology-이미지-전수-재검수-수정계획.md · docs/181-이미지별-계측오류-금지조건-정본.md#img-011 · docs/162-IMG-011-v4-재생성-기록.md · docs/130-기술자료-이미지-전수감사-디자인원칙-수정계획.md · docs/185-IMG-024-011-최우선-재작도-실행계획.md',
@@ -223,7 +223,7 @@ export const IMAGE_ASSETS = {
       '생성 시 로고·워터마크'
     ],
     wireframeReplace: false,
-    requiresReaudit: true,
+    requiresReaudit: false,
     productionMethod: 'ai-reviewed'
   },
   'IMG-012': {
